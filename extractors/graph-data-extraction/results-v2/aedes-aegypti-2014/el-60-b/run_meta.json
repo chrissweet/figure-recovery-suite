@@ -1,0 +1,21 @@
+{
+  "chart_type": "3-point scatter + black trend line",
+  "calibration": {
+    "x_axis": "value = 0.036176·col + 6.483232",
+    "y_axis": "value = -0.002446·row + 1.149266"
+  },
+  "method": "§2 scatter: HSV color mask + CC centroid, integer-x snap; trend line traced from black mask after dilated marker subtraction, per-column median row, linear fit, endpoints at visible mask extent.",
+  "params": {
+    "marker_color_dilation_px": 9,
+    "min_run_pixels": 20
+  },
+  "declared_layers": [
+    {"idx": 0, "type": "Scatter Plot", "series": ["24C", "27C", "30C"]},
+    {"idx": 1, "type": "Line Graph", "series": ["Trend Line"]}
+  ],
+  "declared_series_count": 4,
+  "rendered_series_count": 4,
+  "counts": {"24C": 1, "27C": 1, "30C": 1, "Trend Line": 2},
+  "phase4_match": true,
+  "phase4_evidence": "Trend line endpoints (12.959, 0.003) → (30.070, 0.692) vs ground truth (12.903, 0.0064) → (30.069, 0.7057). No legend rendered (original has none)."
+}

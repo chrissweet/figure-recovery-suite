@@ -1,0 +1,17 @@
+{
+  "chart_type": "3 markers with x/y error bars + red trend line",
+  "calibration": {
+    "x_axis": "value = 0.048465·col + -3.992979",
+    "y_axis": "value = -0.046192·row + 25.668679"
+  },
+  "method": "§2 scatter (markers) + §2a x/y error bars (preserved from prior extraction); trend line traced from red HSV mask, per-column median row, linear fit across visible mask extent.",
+  "declared_layers": [
+    {"idx": 0, "type": "Scatter Plot", "series": ["data points"]},
+    {"idx": 1, "type": "Line Graph", "series": ["Trend Line"]}
+  ],
+  "declared_series_count": 2,
+  "rendered_series_count": 2,
+  "counts": {"data points": 3, "Trend Line": 2},
+  "phase4_match": true,
+  "phase4_evidence": "Red trend line endpoints (0.078, 20.309) → (35.021, 2.843) vs ground truth (0, 20.5) → (35.15, 2.864). Markers preserved at (23.62, 8.213), (27.08, 7.150), (30.01, 4.852) with symmetric x/y caps."
+}

@@ -23,13 +23,30 @@ Target reached: **8 ✓ rows.** New outputs at `extractors/graph-data-extraction
 
 Scoring: `python3 extractors/graph-data-extraction/results-v2/score_v2.py` reports **Precision 0.925, Recall 0.880, F1 0.902, Jaccard 0.822** (up from the audit's stated 0.898 F1 baseline; identical to the current `results/` score because curve and error-bar additions live in side-car files that the scatter-only scorer ignores).
 
-Stretch goals (not yet done): shrink the residual annotations on the three already-✓ rows (el-60-a calibration drift, el-62 mirrored lower caps, el-88 y=0 clipping).
+### Phase-4 gate
+
+`python3 scoring/phase4_check.py extractors/graph-data-extraction/results-v2` enforces the gating rule from the audit: no chart ships while its `run_meta.json` self-reports `"NOT extracted"`, has a `known_undercount` field, or has a declared/rendered series-count mismatch. Current gate state:
+
+| chart   | visual ✓ | gate    | gate reason                                                        |
+|---------|----------|---------|--------------------------------------------------------------------|
+| el-60-a | ✓        | PASS    | -                                                                  |
+| el-60-b | ✓        | PASS    | -                                                                  |
+| el-62   | ✓        | FAIL    | "Lower error caps NOT extracted (occluded by bar fill)"            |
+| el-75   | ✓        | PASS    | -                                                                  |
+| el-80   | ✓        | PASS    | -                                                                  |
+| el-88   | ✓        | PASS    | -                                                                  |
+| el-94   | ✓        | FAIL    | known_undercount: 27°C squares on solid fit curve                  |
+| el-100  | ✓        | FAIL    | known_undercount: 24°C blue markers on dashed fit line             |
+
+Baseline `results/` was 4/8 PASS; `results-v2/` is 5/8. The 3 remaining FAILs are real and unaddressed: el-62 still drops lower caps, el-94 still fuses squares with its 27°C solid curve, el-100 still classifies stacked blue dots as dash fragments. These are exactly the next-pass items.
+
+Stretch goals (not yet done): shrink the residual annotations on the three already-✓ rows (el-60-a calibration drift, el-62 mirrored lower caps, el-88 y=0 clipping). The gate's three FAILs above are the same three rows the stretch goals point at.
 
 ## Action items
 
 ### High-leverage (do first)
 
-- [ ] **Phase-4 gating assertion** — refuse to mark a chart done while `run_meta.json` contains `"NOT extracted"`, `"known_undercount"`, or `declared_layer_count != rendered_series_count`. Implement as `scoring/phase4_check.py`. Closes 5 of 8 charts immediately by forcing them back through Phase 3.
+- [x] **Phase-4 gating assertion** — `scoring/phase4_check.py` now refuses to mark a chart done while `run_meta.json` contains `"NOT extracted"`, has a `known_undercount` field, or has a declared/rendered series-count mismatch. Run as the last step of any extractor pipeline. Currently 5/8 PASS on `results-v2/` (up from 4/8 on `results/`); the 3 remaining FAILs are real and listed in the gate table above.
 - [ ] **Trend/fit-line extraction pass** — after marker HSV subtraction, run a thin-line detector (skeleton + RANSAC) on residual stroke pixels and emit Line Graph rows; replot driver renders any `layer_idx >= 1` row as a line. Closes el-60-b, el-75, el-94, el-100 (four charts in one fix).
 - [ ] **Sync `run_meta.json` counts with the final post-Phase-3 CSV** so audit logs can't drift apart from shipped data. Caught el-100: meta says `24°C=12` but CSV has 17.
 
@@ -46,7 +63,7 @@ Stretch goals (not yet done): shrink the residual annotations on the three alrea
 
 ### Methodology-level
 
-- [ ] **Phase 4 should not terminate while metadata acknowledges a gap.** Today, `"NOT extracted"` strings in `run_meta.json` are a *report*; they should be a *block*. Wire that into `scoring/phase4_check.py` and run it as the last step of every extractor's pipeline.
+- [x] **Phase 4 should not terminate while metadata acknowledges a gap.** `scoring/phase4_check.py` implements the block. Wire it as the last step of every extractor's pipeline (TODO for extractor authors: invoke `python3 scoring/phase4_check.py <results_root>` after Phase 5).
 - [ ] **Replot driver should consume `ground_truth.csv` schema verbatim** (long series names, Unicode degree signs) instead of abbreviating in code, so future corpora pick up the right legends automatically.
 
 ### Reference

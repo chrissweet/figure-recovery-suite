@@ -1,0 +1,25 @@
+{
+  "chart_type": "grayscale 3-shape scatter + 3 fit curves (same gray tones)",
+  "calibration": {
+    "x_axis": "value = 0.056547·col + -3.174709",
+    "y_axis": "value = -9.7e-05·row + 0.987312"
+  },
+  "method": "Scatter preserved from prior extraction. New curve pass: per-column dark-pixel-run clustering with scatter markers masked out (radius 6 px at known marker positions), greedy row-continuity attribution to three curves seeded at x=3 from known starting y-values (24°C dashed, 27°C solid, 30°C dotted).",
+  "params": {
+    "marker_mask_radius_px": 6,
+    "seed_x": 3,
+    "follow_tolerance_rows": 25,
+    "decimation_stride": 8
+  },
+  "declared_layers": [
+    {"idx": 0, "type": "Scatter Plot", "series": ["24C", "27C", "30C"]},
+    {"idx": 1, "type": "Spline Chart",
+     "series": ["p_curve_24C", "p_curve_27C", "p_curve_30C"]}
+  ],
+  "declared_series_count": 6,
+  "rendered_series_count": 6,
+  "counts": {"24C": 31, "27C": 14, "30C": 18,
+             "p_curve_24C": 76, "p_curve_27C": 92, "p_curve_30C": 47},
+  "known_undercount": "27°C squares on the solid 27°C fit curve still fuse with the line under the current CC pipeline; visual match achieved but scatter-count gap persists pending a §3b paired-edge curve-subtraction pass.",
+  "phase4_match": "visual: yes (3 curves visible and order matches original including 30°C crossover by x≈40); meta-gate: no (square undercount unaddressed)."
+}

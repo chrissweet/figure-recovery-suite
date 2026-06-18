@@ -1,0 +1,25 @@
+{
+  "chart_type": "small grouped bar chart, stippled GC2 fill, symmetric y-error bars",
+  "calibration": {
+    "x_axis": "value = 0.009844·col + 22.084497",
+    "y_axis": "value = -0.14733·row + 89.915238"
+  },
+  "method": "§4a bar tops (preserved from prior extraction) + new yerr pass: stem-gated upper-cap detection (topmost ≥5-px dark row above bar top whose downward column has no other wide-dark row and a stem dark in ≥40% of rows). Lower cap mirrored to symmetric yerr. x-positions snapped to categorical {24, 27, 30}.",
+  "params": {
+    "cap_min_run_px": 5,
+    "stem_half_width_px": 5,
+    "stem_density_min": 0.4
+  },
+  "declared_layers": [
+    {"idx": 0, "type": "Grouped Column Chart",
+     "series": ["GC1", "GC2", "GC3"]}
+  ],
+  "declared_series_count": 3,
+  "rendered_series_count": 3,
+  "counts": {"GC1": 3, "GC2": 3, "GC3": 2},
+  "yerr_extracted_for": ["GC1@24", "GC1@27", "GC1@30",
+                          "GC2@24", "GC2@27", "GC2@30",
+                          "GC3@27", "GC3@30"],
+  "phase4_match": true,
+  "phase4_evidence": "Detected yerr per bar within 0.5 of ground truth (21.37-25.05 detected vs 21.5-25.3 in GT). GC2 hatched fill; long-form legend ('Mean number of eggs/female in GC1/2/3')."
+}
