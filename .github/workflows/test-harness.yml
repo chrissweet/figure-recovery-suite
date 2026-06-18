@@ -1,0 +1,50 @@
+name: test-harness
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install jq + PyYAML (Linux)
+        if: matrix.os == 'ubuntu-latest'
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y jq python3-yaml python3-pip
+
+      - name: Install PyYAML (macOS)
+        if: matrix.os == 'macos-latest'
+        run: pip3 install --break-system-packages pyyaml
+
+      - name: Install rdflib + pyshacl (Linux)
+        if: matrix.os == 'ubuntu-latest'
+        run: pip3 install --break-system-packages rdflib pyshacl
+
+      - name: Install rdflib + pyshacl (macOS)
+        if: matrix.os == 'macos-latest'
+        run: pip3 install --break-system-packages rdflib pyshacl
+
+      - name: Verify dependencies
+        run: |
+          bash --version | head -1
+          jq --version
+          git --version
+          python3 --version
+          python3 -c 'import yaml; print("yaml", yaml.__version__)'
+          python3 -c 'import rdflib; print("rdflib", rdflib.__version__)'
+          python3 -c 'import pyshacl; print("pyshacl", pyshacl.__version__)'
+
+      - name: Run test harness
+        env:
+          MVP_TEMPLATE_LOCAL: ${{ github.workspace }}
+        run: ./scripts/test/run.sh

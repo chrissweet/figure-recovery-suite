@@ -1,0 +1,29 @@
+__pycache__
+
+# Wiki sub-repo: separate git repo with its own remote; cloned by
+# wiki/init-wiki.sh (use --github when the wiki has a GitHub Wiki remote).
+# Listed here so the main repo does not pick it up as untracked content.
+wiki/*.wiki/
+
+# Per-user Claude Code overrides (settings.local.json is the conventional
+# local-override file; never share it).
+.claude/settings.local.json
+
+# Per-user Claude Code hooks installed by setup.sh --hook are opt-in and
+# typically per-machine; uncomment the line below if your team agrees not
+# to share them.
+# .claude/hooks/
+
+# Python virtualenv created by uv venv
+.venv/
+
+# Per-project sync log produced by scripts/update-from-template.sh
+# Keep this in git if you want a permanent trail of template syncs;
+# uncomment the line below if you prefer it local-only.
+# .llm-wiki-template-log.md
+
+# Dev-mode self-dogfooding artifacts (template contributors only) live in
+# .git/info/exclude on the dev-self clone, not here. `scripts/instantiate.sh
+# --dev-self` writes them there (idempotent). They are deliberately NOT in
+# the tracked .gitignore because leading-slash anchors would resolve to a
+# derived project's own root and start matching its real files.

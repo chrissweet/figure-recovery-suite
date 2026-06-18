@@ -1,0 +1,41 @@
+---
+description: Run a health check on the wiki. Surfaces orphan pages, dead links, stale claims, missing frontmatter, untyped pages, and concepts that lack their own page. Reports findings and offers fixes.
+alwaysApply: false
+---
+
+# Wiki: lint
+
+The wiki is a compounding artifact. Over time it accretes orphans, broken links, and stale claims that contradict newer pages. A periodic lint pass keeps it healthy. Defer to `wiki/{{REPO_NAME}}.wiki/SCHEMA_{{REPO_NAME}}.md` for the precise conventions.
+
+## What to check
+
+Walk the wiki directory and report on each, with affected pages and a proposed fix:
+
+1. **Orphan pages.** No inbound links from other pages or from `index_{{REPO_NAME}}.md`. Link them or flag for archival.
+2. **Dead links.** `[Display](Page-Name)` or `[[Page-Name]]` pointing to files that do not exist. Fix or remove.
+3. **Stale claims.** Pages whose claims are superseded by newer pages or current code/results. Update the page or add a pointer to the superseding page.
+4. **Missing frontmatter.** Pages without a frontmatter block, or missing required fields (`type:`, `up:`). Infer and add.
+5. **`type: untyped` pages.** Assign a proper type if now obvious.
+6. **Missing concept pages.** Concepts mentioned in multiple bodies without their own page. Promote.
+7. **Missing cross-references.** Pages that should link bidirectionally but don't.
+8. **Index gaps.** Pages in the wiki but not in `index_{{REPO_NAME}}.md`.
+9. **Naming convention.** Filenames should be `Title-Case-Hyphenated.md`.
+10. **Special-file integrity.** `Home_…md`, `index_…md`, `log_…md`, `SCHEMA_…md`, `Home.md` redirect all present and well-formed.
+
+## Procedure
+
+1. Read `index_{{REPO_NAME}}.md` to get the canonical list of pages.
+2. List all `.md` files in the wiki directory.
+3. Scan systematically, collect findings.
+4. Report findings to the user grouped by check type, with one or two example pages per finding.
+5. Ask which findings to fix in this pass. Lint is incremental.
+6. For accepted fixes, apply them with cross-reference repair in both directions, update `index_{{REPO_NAME}}.md` as needed, and append a `## [YYYY-MM-DD] lint | Subject` entry to `log_{{REPO_NAME}}.md`. The first bullet of that entry is the attribution line `- by: <name> via cursor`, where `<name>` is the output of `git config user.name` in the wiki repo (read it, do not invent it). See "Log Entry Attribution" in `SCHEMA_{{REPO_NAME}}.md`.
+7. **Finish the cycle.** Commit in the wiki's own git repo in two steps, without asking. One commit per log entry keeps `git blame` on the log a faithful per-entry record (see "Log Entry Attribution" in SCHEMA):
+   ```
+   git -C wiki/{{REPO_NAME}}.wiki add <lint-fix-and-index-files>
+   git -C wiki/{{REPO_NAME}}.wiki commit -m "lint: <summary>"
+   git -C wiki/{{REPO_NAME}}.wiki add log_{{REPO_NAME}}.md
+   git -C wiki/{{REPO_NAME}}.wiki commit -m "log: lint <summary>"
+   ```
+
+Honest reporting: do not paper over contradictions. If two pages disagree and current code/results decide between them, update the loser and link to the winner.

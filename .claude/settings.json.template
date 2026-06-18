@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd wiki/{{REPO_NAME}}.wiki && git status:*)",
+      "Bash(cd wiki/{{REPO_NAME}}.wiki && git diff:*)",
+      "Bash(cd wiki/{{REPO_NAME}}.wiki && git log:*)",
+      "Bash(cd wiki/{{REPO_NAME}}.wiki && git add:*)",
+      "Bash(cd wiki/{{REPO_NAME}}.wiki && git commit *)",
+      "Bash(git -C wiki/{{REPO_NAME}}.wiki status:*)",
+      "Bash(git -C wiki/{{REPO_NAME}}.wiki diff:*)",
+      "Bash(git -C wiki/{{REPO_NAME}}.wiki log:*)",
+      "Bash(git -C wiki/{{REPO_NAME}}.wiki add:*)",
+      "Bash(git -C wiki/{{REPO_NAME}}.wiki commit *)",
+      "Bash(./scripts/kg/build-graph.sh)",
+      "Bash(./wiki/init-wiki.sh)",
+      "Bash(./wiki/init-wiki.sh *)",
+      "Bash(./wiki/agents/claude-code/setup.sh)",
+      "Bash(./wiki/agents/claude-code/setup.sh *)",
+      "Bash(.venv/bin/python *)",
+      "Bash(uv run python *)"
+    ]
+  }
+}
