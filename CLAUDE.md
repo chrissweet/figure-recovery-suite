@@ -18,6 +18,12 @@ figure-recovery-suite: Evaluation harness for fine tuneing graph extraction
 
 A benchmark and evaluation harness for recovering numeric data from figures in scientific papers: charts today,  schematics and tables as the corpus grows. Each test figure ships with ground-truth coordinates, a pixel-frame calibration, and a worked  example so downstream consumers can verify the math against the image. Extraction methods plug in as subdirectories and are scored  against ground truth with one consistent rubric (TP/FN/FP within per-axis tolerance, plus Precision / Recall / F1 / Jaccard at the corpus level), so vision pipelines, learned models, MLLM-based methods, and human annotations can be compared apples-to-apples on the same data. The first extractor included is the graph-data-extraction Claude Code skill, benchmarked at F1 = 0.90 on the initial 8-chart corpus.
 
+## Open refinement work — read first
+
+A workflow-driven Phase-4 audit (2026-06-18) found that, despite the headline F1 = 0.90, **5 of 8 charts on the `aedes-aegypti-2014` corpus have severity-high mismatches** the TP/FN/FP scorer doesn't see: missing trend lines, missing fit curves, missing error bars, bar-x drift. The extractor's `run3_meta.json` files self-report several of these gaps ("trend line NOT extracted", "Lower error caps NOT extracted") and ship anyway, which means the methodology's Phase-4 close-the-loop step has degenerated from iterative refinement into one-shot reporting.
+
+If you're picking up this project, **start at `TODOS.md`** in the repo root — 12 concrete refinements ranked by leverage, with a per-chart breakdown. The audit narrative is at [Phase-4-Audit-2026-06-18](wiki/figure-recovery-suite.wiki/Phase-4-Audit-2026-06-18.md) in the wiki; raw audit JSON at `docs/audits/phase4-audit-2026-06-18.json`. The single highest-leverage fix is the **Phase-4 gating assertion** (refuse to mark a chart done while metadata acknowledges a gap) — it would force-loop 5 of 8 charts back into Phase 3 immediately.
+
 ## Conventions when editing
 
 Add project-specific conventions here as they emerge. Examples to

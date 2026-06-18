@@ -1,0 +1,318 @@
+{
+  "audit_date": "2026-06-18",
+  "methodology": "Workflow-driven Phase-4 audit: 8 chart-audit agents in parallel + 1 synthesizer.",
+  "corpus": "aedes-aegypti-2014",
+  "extractor": "graph-data-extraction",
+  "per_chart_audits": [
+    {
+      "chart_id": "el-60-a",
+      "matches_original_well": true,
+      "mismatches_found": [
+        {
+          "kind": "other",
+          "description": "The raw extraction (data.csv intermediate) contains a 27th spurious row at 27C, x=12.95, y=0.6336 that appears to be a duplicate detection near the day-13 green square; it was filtered out of the final ground_truth.csv (26 rows) but the run3 raw extraction still surfaced it. Count is fine in the deliverable but the dedup is a hidden post-process rather than a clean extraction.",
+          "severity": "low"
+        },
+        {
+          "kind": "calibration_drift",
+          "description": "Several 27C x-coordinates land slightly off integer days in the raw CSV (e.g. 3.405, 13.932, 15.797, 19.628, 21.561) before integer snapping. After snap-to-integer this is hidden, but it indicates ~0.4 day calibration drift on the right half of the x-axis.",
+          "severity": "low"
+        },
+        {
+          "kind": "legend_issue",
+          "description": "Legend exclusion box in metadata (rows 30-120, cols 565-620) is tight; original legend visually extends to about col 650 and row 130, so a slightly wider exclusion would be safer for similar charts.",
+          "severity": "low"
+        }
+      ],
+      "refinements_suggested": [
+        "Add an explicit dedup step in the marker-on-line extractor (snap to integer day, then keep max-area connected component per (series, day)) so the raw data.csv matches ground_truth.csv without a hidden filter.",
+        "Refit the x-axis calibration using two well-separated tick centers (e.g. x=3 and x=21) rather than a single endpoint; the 0.033503 slope is drifting ~0.4 day by x=22.",
+        "Widen the legend_exclusion box to rows 25-135, cols 555-660 to provide margin against similar Excel-style legends in the corpus."
+      ],
+      "evidence_for_iterative_refinement": "Yes: Phase 4 would catch the spurious duplicate 27C detection at x=12.95 and the systematic x-axis calibration drift on the right side, both of which are real signals worth fixing even though the final integer-snapped output looks clean."
+    },
+    {
+      "chart_id": "el-60-b",
+      "matches_original_well": false,
+      "mismatches_found": [
+        {
+          "kind": "missing_series",
+          "description": "The black linear trend line spanning roughly (13 C, 0.0) to (30 C, 0.71) in the original is absent from the replot. The ground_truth.csv encodes it as a Line Graph layer with two endpoints, but the extractor's data.csv contains only the three scatter points. The run3_meta.json explicitly states 'trend line NOT extracted'.",
+          "severity": "high"
+        },
+        {
+          "kind": "legend_issue",
+          "description": "The replot adds an explicit legend box (24C / 27C / 30C) in the upper-right corner; the original figure has no legend, the series are identified only by marker shape and color in-plot. This is a stylistic deviation but not a data error.",
+          "severity": "low"
+        },
+        {
+          "kind": "calibration_drift",
+          "description": "Minor x-axis drift on the 24C point (extracted 23.99 vs ground truth 24.00) and the 27C point (extracted 26.98 vs ground truth 27.059). Within expected pixel-quantization tolerance but visible if overplotted.",
+          "severity": "low"
+        }
+      ],
+      "refinements_suggested": [
+        "Add a trend-line extraction pass: after the scatter HSV masks are subtracted, run a thin-line detector (e.g. morphological skeleton + Hough or a 1-pixel-wide black mask with RANSAC line fit) on the residual black pixels inside the plot box, then store the two endpoints as a Line Graph layer (matching the ground_truth.csv schema already in use).",
+        "Suppress the auto-generated legend when the source figure has no legend region detected. A simple heuristic: only emit a matplotlib legend if more than N>=2 series are present AND a legend bounding box was detected in Phase 1; otherwise place inline shape annotations or omit.",
+        "Tighten centroid recovery by using a sub-pixel centroid (intensity-weighted moments on the masked blob) instead of an integer CC centroid; this should pull the 27C point back from 26.98 toward the true 27.0 and similarly de-bias the 24C reading."
+      ],
+      "evidence_for_iterative_refinement": "Yes, this chart is strong evidence for Phase 4: a side-by-side compare would immediately flag the missing trend line (which the metadata even self-reports as not extracted) and the spurious legend, both of which a close-the-loop refinement step should detect and fix."
+    },
+    {
+      "chart_id": "el-62",
+      "matches_original_well": true,
+      "mismatches_found": [
+        {
+          "kind": "calibration_drift",
+          "description": "Extracted x-coordinates are pixel-center decimals (23.34, 26.33, 29.33, 24.01, 27.66, 30.66) rather than snapped to the categorical tick labels (24, 27, 30). This causes GC1 bars to sit slightly left of the 24/27/30 ticks and GC3 bars at 27.66 and 30.66 to sit visibly right of the ticks in the replot.",
+          "severity": "low"
+        },
+        {
+          "kind": "other",
+          "description": "Error bars in original are asymmetric (extend both above and below bar top, e.g. GC2 at 24C reaches ~9.9 up and ~3.1 down), but extracted y_lo equals the bar height in every row, so the replot shows only upward whiskers. The metadata explicitly notes 'Lower error caps NOT extracted (occluded by bar fill).'",
+          "severity": "medium"
+        },
+        {
+          "kind": "legend_issue",
+          "description": "Replot legend uses bare 'GC1/GC2/GC3' labels rather than the original 'Mean duration of GC1/GC2/GC3'. The ground_truth.csv carries the long form; replot script appears to truncate.",
+          "severity": "low"
+        },
+        {
+          "kind": "position_error",
+          "description": "GC3 upper error cap at 27C is slightly shorter in the replot (top ~7.65) than the original (top ~8.0); GT y_hi=7.65 vs original ~8.0 suggests a small cap-detection miss of ~0.35 days.",
+          "severity": "low"
+        }
+      ],
+      "refinements_suggested": [
+        "Snap extracted x-centers to nearest tick-label value when the chart_type is 'grouped bar chart' and the offset is < half the bar group width, so GC1/GC2/GC3 share the same temperature category.",
+        "When lower error caps are occluded by bar fill, mirror the detected upper cap distance to populate y_lo = mean - (y_hi - mean), and flag the row with a 'mirrored_lower_cap' provenance field instead of collapsing y_lo onto the bar top.",
+        "Have the replot script consume the full series name from ground_truth.csv ('Mean duration of GC1') rather than abbreviating, or drive legend text from the layer metadata's series field directly.",
+        "Loosen the cap_min_run from 3 to 2 pixels (or expand the vertical search band above the bar) for short error bars like GC3 at 27C, where the cap is narrow and currently under-extends by ~5%."
+      ],
+      "evidence_for_iterative_refinement": "Yes, this chart provides concrete Phase-4 evidence: the side-by-side comparison surfaces a real, fixable issue (asymmetric error bars collapsed to upward-only because lower caps are occluded by bar fills), already self-flagged in run3_meta.json but not yet corrected, which is exactly the kind of mismatch a close-the-loop step should catch and repair via cap-mirroring."
+    },
+    {
+      "chart_id": "el-75",
+      "matches_original_well": false,
+      "mismatches_found": [
+        {
+          "kind": "missing_series",
+          "description": "The red linear trend line (from approximately (0, 20.5) to (35.15, 2.86)) present in the original is entirely absent from the replot. Ground truth CSV includes it as a Line Graph layer and run3_meta.json describes 'red trend line', but the extracted data.csv only contains the 3 scatter points and no line endpoints.",
+          "severity": "high"
+        },
+        {
+          "kind": "legend_issue",
+          "description": "Minor: replot omits axis ticks/grid styling and axis-edge tick marks visible in the original (cosmetic only).",
+          "severity": "low"
+        }
+      ],
+      "refinements_suggested": [
+        "Extend the extractor's output schema so the trend line layer (its two endpoints) is written into data.csv alongside the scatter points, then have the replot driver render a line plot for any 'Line Graph' / 'Trend Line' rows.",
+        "In the replot script, detect a series with marker_type='none' and a non-empty color and draw it with ax.plot(...) using the listed color (#FF0000) instead of silently dropping it.",
+        "Add a sanity check in Phase 4 that compares len(layers in meta) vs len(series rendered in replot); flag and emit a warning when a declared trend line is missing from the output."
+      ],
+      "evidence_for_iterative_refinement": "Yes, this chart is strong evidence the Phase-4 close-the-loop step is valuable: the replot visibly drops the red trend line that the extractor itself documented in metadata, a regression a visual diff would immediately flag and that no numeric-only check on the 3 marker points would catch."
+    },
+    {
+      "chart_id": "el-80",
+      "matches_original_well": false,
+      "mismatches_found": [
+        {
+          "kind": "missing_series",
+          "description": "Original shows error bars on every bar (symmetric, large, ~+/-20 to +/-25 units), but replot omits error bars entirely.",
+          "severity": "high"
+        },
+        {
+          "kind": "calibration_drift",
+          "description": "Extracted data.csv lists temperatures as 23.33, 26.35, 29.34, 24.0, 27.02, 30.01, 27.67, 30.68 instead of the clean categorical values 24/27/30. Ground truth correctly uses integer category labels; the extractor is treating an ordinal/categorical x-axis as continuous and decoding bar centers via the pixel calibration, which drifts off the tick label positions.",
+          "severity": "medium"
+        },
+        {
+          "kind": "count_mismatch",
+          "description": "data.csv has 8 rows (GC1:3, GC2:3, GC3:2) which matches the run3_meta counts, but the ground_truth.csv shows GC3 has 2 entries (at 27 and 30) and the extractor correctly skipped GC3@24, so the visible bar count is right; however the replot rendering shows the 24C group has a gap where GC3 would sit but no visual indicator that this is intentional vs missing.",
+          "severity": "low"
+        },
+        {
+          "kind": "legend_issue",
+          "description": "Original legend labels are 'Mean number of eggs/female in GC1/GC2/GC3' with marker swatches matching dark/light/medium gray; replot uses abbreviated 'GC1/GC2/GC3' labels. Color mapping appears correct (GC1 dark, GC2 light, GC3 medium gray) but the GC2 stippled/hatched fill from the original is rendered as a solid light gray in the replot.",
+          "severity": "medium"
+        },
+        {
+          "kind": "visual_artifact",
+          "description": "Original GC2 bars have a distinctive stippled/dotted fill pattern (noted in run metadata as 'stippled GC2 fill'); replot renders GC2 as a flat light-gray fill losing that visual cue.",
+          "severity": "low"
+        }
+      ],
+      "refinements_suggested": [
+        "Add error bar extraction: detect vertical whisker caps (short horizontal runs of dark pixels above/below bar tops) and a vertical stem, then emit error_y_plus/error_y_minus in data.csv and render yerr in the replot.",
+        "Snap x positions to categorical tick labels when the x-axis OCR finds discrete numeric ticks (24, 27, 30): replace continuous calibration output with the nearest tick label rather than the raw pixel-derived value.",
+        "Apply a hatch pattern (e.g. matplotlib hatch='...') to the GC2 bars in the replot when the metadata flags 'stippled GC2 fill', preserving the visual encoding from the source figure.",
+        "Use the original legend strings ('Mean number of eggs/female in GC{1,2,3}') from ground_truth.csv 'series' column rather than abbreviating to 'GC1/GC2/GC3' in the replot legend.",
+        "When a series is missing at a category (GC3 @ 24), explicitly emit a NaN row or annotate the gap in the replot so reviewers can distinguish 'not measured' from 'extractor missed it'."
+      ],
+      "evidence_for_iterative_refinement": "Yes: this chart cleanly shows two fixable Phase-4 catches, missing error bars on every bar and continuous-vs-categorical x-axis drift in data.csv, both of which a visual diff against the original would flag immediately and both have concrete code-level fixes."
+    },
+    {
+      "chart_id": "el-88",
+      "matches_original_well": true,
+      "mismatches_found": [
+        {
+          "kind": "count_mismatch",
+          "description": "Original 24C series has ~30 black-disk markers (continuous down to ~0.21 at day ~37) but extracted CSV has only 29 24C points. The replot looks visually faithful but a small marker near (25.7, 0.476) appears slightly under-captured; close enough that it is borderline.",
+          "severity": "low"
+        },
+        {
+          "kind": "count_mismatch",
+          "description": "30C diamond count in extracted CSV is 22, but the original chart shows a 0,0-like point at day ~40 (the diamond sitting at y=0 on the x-axis). The replot omits that x=39.925, y=0 anchor point even though it is present in data.csv (the replot likely auto-clipped or dropped y=0). Visually the bottom-axis tail diamond in original is not reproduced.",
+          "severity": "medium"
+        },
+        {
+          "kind": "legend_issue",
+          "description": "Original legend is on the right margin outside the plot box; replot moves legend inside the plot area (top-right). Functionally equivalent but layout differs.",
+          "severity": "low"
+        },
+        {
+          "kind": "visual_artifact",
+          "description": "30C diamonds in the extracted data use color #ADD8E6 (light blue) for storage, but the replot renders them as open/white diamonds with black edge, which is actually the correct visual choice and matches the original; flag only as a metadata inconsistency between color field and rendered glyph.",
+          "severity": "low"
+        },
+        {
+          "kind": "position_error",
+          "description": "A handful of 24C disks in the data.csv have y-values ~0.01-0.02 higher than ground_truth.csv (e.g., extracted 0.9817 vs GT 0.9991 at day ~8.8, 0.7491 vs 0.7607 at day ~11.75). Small calibration drift on the y-axis, within ~2% of the axis range.",
+          "severity": "low"
+        }
+      ],
+      "refinements_suggested": [
+        "Drop the y=0 clipping step in the replot routine, or explicitly include points where y rounds to 0 so the 30C tail diamond at (~40, 0) is rendered.",
+        "Refine the 30C diamond color metadata: replace #ADD8E6 with an explicit 'facecolor=white, edgecolor=black' designation in the CSV (e.g., color column = #FFFFFF with a separate edge_color column) so downstream consumers don't mislabel the open glyphs as filled light-blue.",
+        "Add a small y-axis recalibration step (1-2 px shift) by anchoring on the topmost 24C disk at y=1.00 instead of letting the linear fit float; that would close the ~0.015 systematic offset visible in the 24C series.",
+        "Place the legend outside the axes (bbox_to_anchor right margin) in the replot to better mirror the original layout.",
+        "Re-scan the 24C disk strip between days 24-28 with a slightly smaller erosion kernel (3x3 instead of 4x4) to catch the borderline disk near (25.7, 0.476) and confirm full count of 30 markers."
+      ],
+      "evidence_for_iterative_refinement": "Yes: the missing 30C tail point at y=0 and the ~1.5% systematic y-offset on the 24C series are exactly the kind of small but real defects a Phase-4 close-the-loop comparison would surface and prompt a quick re-extract."
+    },
+    {
+      "chart_id": "el-94",
+      "matches_original_well": false,
+      "mismatches_found": [
+        {
+          "kind": "missing_series",
+          "description": "Three fit curves (dashed p-curve for 24C, solid p-curve for 27C, dotted p-curve for 30C) are present in the original but completely absent from the replot. The replot shows only the scatter markers, no curves of any color or style.",
+          "severity": "high"
+        },
+        {
+          "kind": "count_mismatch",
+          "description": "27C gray squares are severely under-counted. The original shows a dense row of ~22-24 squares spanning x~14 to x~38 (roughly one per integer day), but only 14 squares are recovered (meta.json explicitly flags this as a known undercount due to filled gray squares fusing with the solid 27C fit curve into elongated connected components).",
+          "severity": "high"
+        },
+        {
+          "kind": "count_mismatch",
+          "description": "24C filled circles span 8.7 to 38.1 in the extracted CSV but the original shows the last circle sits near x~37; an extra point at x=38.09 and an x=36.13 outlier (y=0.9745) appear that look like they were mis-attributed from a 30C diamond or 27C square that sat near the converging cluster around x=35-38.",
+          "severity": "medium"
+        },
+        {
+          "kind": "position_error",
+          "description": "Top-right cluster (x ~ 33-38) in the replot has overlapping circles, squares, and diamonds at near-identical y values. In the original these three series visibly separate (27C squares peak slightly higher, 30C diamonds cross above 27C around x=37). The extracted y-values for 24C circles in that region are pulled up to ~0.974-0.975, suggesting series cross-attribution where curves and series overlap.",
+          "severity": "medium"
+        },
+        {
+          "kind": "legend_issue",
+          "description": "Replot legend only lists the three scatter series (24C, 27C, 30C) and omits the three fit-curve entries (p curve for 24C/27C/30C) that the ground_truth.csv stores as Spline Chart rows.",
+          "severity": "medium"
+        },
+        {
+          "kind": "visual_artifact",
+          "description": "Lower-left portion of the original chart (x=1 to x=10, y=0.93 to 0.96) contains the dashed and dotted curve tails plus their early values, none of which are reproduced. The replot's lowest y is 0.956, missing the y range 0.93-0.955 entirely.",
+          "severity": "low"
+        }
+      ],
+      "refinements_suggested": [
+        "Add a curve-extraction pass that runs after the marker-subtraction step: trace the three line styles (dash, solid, dot) by their stroke patterns and emit Spline Chart rows for p curve for 24C/27C/30C rather than discarding them after the subtraction-for-marker-cleaning step.",
+        "For 27C square recovery on the solid 27C fit curve, lower the connected-component min-area threshold and apply a horizontal opening kernel (e.g., 1x5) to split fused square+line CCs before counting; alternatively, after subtracting the solid curve, dilate the residual squares with a 2x2 kernel to restore their original footprint before labeling.",
+        "Tighten the 24C cluster filter near x=35-38 by enforcing a per-series aspect ratio/fill check, so that gray-filled squares and open diamonds in the overlap zone are not relabeled as black circles (e.g., reject CCs whose interior mean intensity is above 0.4 from the circle class).",
+        "Render fit curves and add their legend entries in replot.py so the replot's legend mirrors the original's six-entry legend, making missing curves immediately obvious in the audit.",
+        "Expand the y-axis crop window in the calibration step to keep rows down to y=0.93 in scope so the dashed/dotted curve tails on the lower left can be detected and traced."
+      ],
+      "evidence_for_iterative_refinement": "Yes, el-94 is strong evidence that Phase-4 close-the-loop catches real problems: it surfaces a self-acknowledged 27C undercount, totally missing fit curves, and overlap-zone series cross-attribution that would all silently pass a counts-only check."
+    },
+    {
+      "chart_id": "el-100",
+      "matches_original_well": false,
+      "mismatches_found": [
+        {
+          "kind": "missing_series",
+          "description": "The replot is scatter-only and omits the three fit curves (blue dashed 'IF for 24\u00b0C', green solid 'IF for 27\u00b0C', red dotted 'IF for 30\u00b0C'). The extracted data.csv DOES contain Line Graph rows for these series (layer_idx=1), so the loss is in the rendering step, not extraction. The legend in the original lists six entries, the replot legend lists only three.",
+          "severity": "high"
+        },
+        {
+          "kind": "count_mismatch",
+          "description": "24\u00b0C marker count is low. Original shows ~17 blue dots (a dense vertical column around x\u22480.34-0.36 plus the lower-x markers); data.csv has 17 blue scatter rows but the replot renders only ~14 visible blue circles, and importantly the meta.json records counts=12 (an older state) while the CSV has 17. The known_undercount note ('blue markers on the dashed line classify as dash fragments') confirms blue points along the fit line are still being lost during extraction.",
+          "severity": "medium"
+        },
+        {
+          "kind": "count_mismatch",
+          "description": "27\u00b0C square count is slightly off: original shows ~17 green squares, data.csv contains 18 green scatter rows including a spurious row (0.6452, 0.248) that sits at y\u22480.25 (far below the data cluster) and is clearly a stray pickup, likely from the axis label '0,0' tick text or a small marker remnant. The replot does not visibly render this stray because it falls outside the dense region but it pollutes the CSV.",
+          "severity": "medium"
+        },
+        {
+          "kind": "calibration_drift",
+          "description": "Vertical positions in the 27\u00b0C cluster appear shifted downward by ~1 unit in the replot vs the original (e.g., top green squares in original reach ~24-25, replot tops out near 23.7-24). y-axis calibration coefficient (-0.04908\u00b7row + 27.995901) is plausible but the upper-right green cluster looks ~0.5-1 unit lower than the original. Mild.",
+          "severity": "low"
+        },
+        {
+          "kind": "legend_issue",
+          "description": "Replot legend uses ASCII '24C/27C/30C' instead of '24\u00b0C/27\u00b0C/30\u00b0C' from the original, and drops the three 'IF for ...' fit-line entries entirely.",
+          "severity": "low"
+        },
+        {
+          "kind": "visual_artifact",
+          "description": "Stray green square row at (0.6452, 0.248) in data.csv. This is a phantom point near the x-axis baseline, almost certainly a misclassified tick/axis-label fragment that survived the area+density filter.",
+          "severity": "medium"
+        }
+      ],
+      "refinements_suggested": [
+        "In the replot script, render layer_idx=1 rows as connected line segments grouped by series (with dashed style for 24\u00b0C, solid for 27\u00b0C, dotted for 30\u00b0C) so the three fit curves reappear in the legend and on the canvas.",
+        "Lower the blue erode_kernel from 4 to 2-3 and/or relax the aspect_ratio_max from 2.5 to ~3.5 specifically inside the bounding box of the dashed-blue fit fragment column (x in [0.30, 0.40]) so blue dots stacked on the dashed line are not misclassified as dash fragments. Alternatively, after dash-fragment classification, run a second pass that promotes any CC whose centroid lies within 3 px of an isolated blue circular blob back to scatter.",
+        "Add a y>min_data_y guard (e.g., reject any extracted point whose y is more than 2 units below the lowest gridline tick on its color) to drop the (0.6452, 0.248) stray green square. Equivalently, widen the legend/axis exclusion mask: exclude rows 0-25 above and rows 540-580 (the bottom axis band) from scatter detection.",
+        "Use Unicode degree sign in the legend labels by parsing series names with raw='24\u00b0C' rather than the ASCII-folded '24C', so the replot legend matches the original.",
+        "Re-fit the y-axis calibration using the gridline detector against the visible labels 0,0 / 10,0 / 20,0 (note European decimal comma) rather than only the top/bottom extremes; the current (-0.04908, 27.996) drifts ~0.5-1 unit near the top of the plot.",
+        "Update run3_meta.json counts (currently 24C=12) to reflect the post-Phase-3 CSV (24C=17, 27C=18, 30C=20) so the audit log and the data stay in sync; the divergence itself suggests a missing write step at the end of Phase 3."
+      ],
+      "evidence_for_iterative_refinement": "Yes, this chart is strong evidence the Phase-4 close-the-loop step is valuable: it surfaces three concrete defects (entirely missing fit-curve series in the replot, a phantom (0.6452, 0.248) green stray, and a documented 24\u00b0C undercount whose blue-dot-on-dashed-line root cause is already self-reported in run3_meta.json), each of which is invisible from CSV inspection alone but obvious from the side-by-side comparison."
+    }
+  ],
+  "synthesis": {
+    "phase4_is_iterative_in_methodology": true,
+    "evidence_summary": "Across 8 audited charts, only 2 (el-60-a, el-62) and arguably el-88 read as broadly faithful to the original; the remaining 5 (el-60-b, el-75, el-80, el-94, el-100) carry severity-high mismatches that are precisely the kind a side-by-side Phase-4 diff would catch. The dominant recurring defects are (1) trend/fit curves declared in ground_truth.csv or run3_meta.json but absent from the replot (el-60-b, el-75, el-94, el-100), (2) error bars missing or one-sided when occlusion hides lower caps (el-62, el-80), (3) bar x-positions left on continuous pixel calibration instead of snapped to categorical ticks 24/27/30 (el-62, el-80), (4) abbreviated/auto-generated legends that do not mirror the source figure (el-62, el-80, el-94, el-100), and (5) under-counts when markers fuse with fit-line strokes (el-94 27C, el-100 24C). Multiple meta files self-report the defect (e.g. 'trend line NOT extracted', 'Lower error caps NOT extracted', 'blue markers on the dashed line classify as dash fragments'), which is the clearest sign that Phase 3 ran, logged the gap, and stopped, rather than looping back through Phase 4 until the replot actually matched.",
+    "charts_that_look_clean": [
+      "el-60-a",
+      "el-62",
+      "el-88"
+    ],
+    "charts_with_refinement_opportunities": [
+      "el-60-b",
+      "el-75",
+      "el-80",
+      "el-94",
+      "el-100",
+      "el-62",
+      "el-88",
+      "el-60-a"
+    ],
+    "overall_assessment": "The methodology is designed for iterative Phase 4 to Phase 3 to Phase 4 convergence (the SOP literally says 'Repeat Phase 3 fix to Phase 4 re-plot until the reconstruction matches', and on this corpus Phase 4 already caught two real bugs that Phase 3 alone could not), but in practice for the current run it has degenerated into a one-shot visual check. The smoking gun is that multiple run3_meta.json files self-report defects ('trend line NOT extracted', 'Lower error caps NOT extracted', 'blue markers on the dashed line classify as dash fragments', el-100 counts logged as 24C=12 while the CSV holds 17) and then ship anyway. A truly iterative Phase 4 would not allow a run to terminate while its own metadata acknowledges a missing series or a known undercount. So: the methodology is iterative on paper and was iterative during the initial corpus pass, but the current artifacts show it acting as a single-pass audit that records gaps instead of closing them.",
+    "concrete_next_actions": [
+      "Add a trend/fit-line extraction and rendering pass: after marker HSV subtraction, run a thin-line detector (skeleton plus Hough or RANSAC on residual stroke pixels) and write Line Graph / Spline Chart rows; in replot.py, render any layer_idx>=1 row with the listed dash/solid/dot style. Closes el-60-b, el-75, el-94, el-100.",
+      "Add a Phase 4 gating assertion: refuse to mark a chart done while run_meta.json contains 'NOT extracted', 'known_undercount', or while declared layer count != rendered series count. Force a Phase 3 to Phase 4 re-loop instead of shipping a self-reported gap.",
+      "For bar charts, snap extracted x-centroids to the nearest categorical tick label (24/27/30) when chart_type is grouped/bar and offset is below half the group width. Fixes el-62 and el-80 x-axis drift.",
+      "When lower error-bar caps are occluded by bar fill, mirror the detected upper cap (y_lo = mean - (y_hi - mean)) and tag the row with a 'mirrored_lower_cap' provenance flag rather than collapsing y_lo onto the bar top. Fixes el-62, partially el-80.",
+      "Add a vertical-whisker-cap detector (short horizontal dark runs above/below bar tops with a connecting stem) and emit yerr in data.csv plus render via ax.bar(yerr=...). Fixes el-80.",
+      "Drive legend text from ground_truth.csv's series column verbatim ('Mean duration of GC1', 'Mean number of eggs/female in GC1', '24 deg C / IF for 24 deg C') and use Unicode degree sign; suppress the auto legend when the source figure has no legend region. Fixes el-60-b spurious legend and el-62/el-80/el-94/el-100 abbreviation issues.",
+      "Resolve marker-on-line undercounts: after subtracting fit-curve strokes, dilate residual marker blobs with a 2x2 kernel and lower min-area threshold; for el-100 specifically relax the blue erode_kernel from 4 to 2-3 and raise aspect_ratio_max so blue dots stacked on the dashed fit line are not classified as dash fragments. Fixes el-94 27C and el-100 24C undercounts.",
+      "Add a stray-point guard that rejects any scatter row whose y is more than ~2 units below the lowest gridline tick for its color, and widen legend/axis exclusion masks (e.g. rows 25-135, cols 555-660 for Excel-style legends; bottom 540-580 band). Fixes el-100 phantom green at (0.6452, 0.248) and the el-60-a tight legend box.",
+      "Drop the y=0 clipping step in the replot routine so anchor points like the el-88 30C tail diamond at (~40, 0) actually render.",
+      "Re-fit axis calibrations on two well-separated tick centers rather than endpoints (el-60-a x drift, el-88 24C ~1.5% y offset, el-100 27C cluster ~0.5-1 unit drop), and use sub-pixel intensity-weighted centroids instead of integer CC centers (el-60-b 27C at 26.98).",
+      "Add a Phase-4 length check: assert len(layers in meta) == len(distinct series rendered in replot.png) and warn on mismatch; this single check would have flagged el-60-b, el-75, el-94, and el-100 immediately.",
+      "Sync run_meta.json counts with the final post-Phase-3 CSV at the end of each run (el-100 meta says 24C=12 but CSV has 17), so audit logs and shipped data cannot drift apart."
+    ]
+  }
+}
