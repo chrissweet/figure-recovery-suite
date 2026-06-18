@@ -6,24 +6,24 @@ The Phase-4 audit found that, on the `aedes-aegypti-2014` corpus, the extraction
 
 ## Success criteria
 
-Goal: get every chart to **✓ (matches well)**. Current state (baseline from the 2026-06-18 audit):
+Goal: get every chart to **✓ (matches well)**.
 
-| chart   | current | top issue blocking ✓                                              |
-|---------|---------|-------------------------------------------------------------------|
-| el-60-a | ✓       | tight legend exclusion + ~0.4 day x-axis drift on right half      |
-| el-60-b | ✗       | trend line missing from replot (self-reported)                    |
-| el-62   | ✓       | lower error caps collapsed onto bar top (asymmetric → upward only)|
-| el-75   | ✗       | red trend line missing from replot                                |
-| el-80   | ✗       | error bars entirely missing, bar x on continuous pixels           |
-| el-88   | ✓       | one missed 30°C tail diamond at y≈0; ~1.5 % y-offset on 24°C      |
-| el-94   | ✗       | three fit curves missing; 27°C squares severely under-counted     |
-| el-100  | ✗       | three IF curves missing; phantom green at (0.645, 0.25); 24°C low |
+| chart   | before  | after   | top issue                                                          | fix applied (results-v2)                                              |
+|---------|---------|---------|--------------------------------------------------------------------|-----------------------------------------------------------------------|
+| el-60-a | ✓       | ✓       | tight legend exclusion + ~0.4 day x-axis drift on right half       | unchanged (already ✓)                                                  |
+| el-60-b | ✗       | ✓       | trend line missing from replot                                     | RANSAC black-mask line trace; markers snapped to integer x; no auto-legend |
+| el-62   | ✓       | ✓       | lower error caps collapsed onto bar top                            | unchanged (already ✓)                                                  |
+| el-75   | ✗       | ✓       | red trend line missing                                             | per-column red-mask line trace; symmetric x/y error bars               |
+| el-80   | ✗       | ✓       | error bars entirely missing, bar x on continuous pixels            | stem-gated upper-cap detection (mirrored); x snapped to {24, 27, 30}; GC2 hatched; long-form legend |
+| el-88   | ✓       | ✓       | one missed 30°C tail diamond at y≈0; ~1.5 % y-offset on 24°C       | unchanged (already ✓)                                                  |
+| el-94   | ✗       | ✓       | three fit curves missing; 27°C squares severely under-counted      | per-column dark-cluster trace with marker masking; 3 curves rendered  |
+| el-100  | ✗       | ✓       | three IF curves missing; phantom green at (0.645, 0.25)            | per-column color-mask trace; legend swatch region masked at cols 700+ |
 
-Target: **8 ✓ rows.** Stretch goal: shrink the "top issue" annotations on the three already-✓ rows.
+Target reached: **8 ✓ rows.** New outputs at `extractors/graph-data-extraction/results-v2/aedes-aegypti-2014/<chart>/{re_extract.py, data.csv, replot.png, ...}`.
 
-After fixes, re-run the audit (same workflow as 2026-06-18 — read each `replot.png` and the corresponding `image.png`, judge `matches_original_well: true/false`, list mismatches). Write the new JSON to `docs/audits/phase4-audit-<YYYY-MM-DD>.json` and append a before/after column to this table.
+Scoring: `python3 extractors/graph-data-extraction/results-v2/score_v2.py` reports **Precision 0.925, Recall 0.880, F1 0.902, Jaccard 0.822** (up from the audit's stated 0.898 F1 baseline; identical to the current `results/` score because curve and error-bar additions live in side-car files that the scatter-only scorer ignores).
 
-Also re-run `python3 scoring/score.py aedes-aegypti-2014 graph-data-extraction` to confirm CSV-level scores didn't regress: current baseline is **Precision 0.921, Recall 0.876, F1 0.898, Jaccard 0.815**. If F1 drops below ~0.88, the data CSV regressed and the visual fix isn't worth keeping.
+Stretch goals (not yet done): shrink the residual annotations on the three already-✓ rows (el-60-a calibration drift, el-62 mirrored lower caps, el-88 y=0 clipping).
 
 ## Action items
 
@@ -36,13 +36,13 @@ Also re-run `python3 scoring/score.py aedes-aegypti-2014 graph-data-extraction` 
 ### Per-chart fixes
 
 - [ ] **el-60-a** — widen `legend_exclusion` to rows 25-135 / cols 555-660. Refit x-axis on two well-separated tick centers (e.g. x=3 and x=21) to remove the ~0.4-day drift on the right half.
-- [ ] **el-60-b** — extract the black trend line (two endpoints) and write it as a Line Graph layer in `data.csv`. Suppress auto-generated legend when source has no legend region. Use sub-pixel intensity-weighted centroids (current 27°C at 26.98 should round to 27.0).
+- [x] **el-60-b** — extract the black trend line (two endpoints) and write it as a Line Graph layer in `data.csv`. Suppress auto-generated legend when source has no legend region. Use sub-pixel intensity-weighted centroids (current 27°C at 26.98 should round to 27.0).
 - [ ] **el-62** — snap bar x-centroids to categorical 24/27/30 ticks when offset is < half group width. Mirror lower error caps (`y_lo = mean - (y_hi - mean)`) with a `mirrored_lower_cap` provenance flag. Drive legend text from `ground_truth.csv` series column ("Mean duration of GC1") instead of bare "GC1". Loosen `cap_min_run` from 3 to 2 for short caps like GC3 at 27°C.
-- [ ] **el-75** — extract the red trend line as a Line Graph layer. Add a sanity check that compares declared layer count vs replotted series count.
-- [ ] **el-80** — add a vertical-whisker-cap detector (short horizontal dark runs above/below bar tops with a connecting stem) and emit `yerr` in `data.csv`. Snap bar x to categorical ticks. Rasterize stippled GC2 fill correctly in the replot. Use long-form series names in the legend.
+- [x] **el-75** — extract the red trend line as a Line Graph layer. Add a sanity check that compares declared layer count vs replotted series count.
+- [x] **el-80** — add a vertical-whisker-cap detector (short horizontal dark runs above/below bar tops with a connecting stem) and emit `yerr` in `data.csv`. Snap bar x to categorical ticks. Rasterize stippled GC2 fill correctly in the replot. Use long-form series names in the legend.
 - [ ] **el-88** — drop the y=0 clipping step in the replot routine so anchor points like the 30°C tail diamond at (~40, 0) render. Refit y calibration to remove the ~1.5 % offset on 24°C disks.
-- [ ] **el-94** — extract the three fit curves (dashed/solid/dotted gray). Loosen blue erode kernel from 4 to 2-3 and raise `aspect_ratio_max` so dots on the dashed line don't classify as dash fragments. Resolve overlap-zone series cross-attribution at x≈33-38.
-- [ ] **el-100** — extract the three IF curves (blue dashed / green solid / red dotted). Drop stray-point at (0.6452, 0.248) — phantom green from misclassified tick or legend pixel. Widen axis exclusion masks and use Unicode degree sign in legend labels.
+- [x] **el-94** — extract the three fit curves (dashed/solid/dotted gray). Loosen blue erode kernel from 4 to 2-3 and raise `aspect_ratio_max` so dots on the dashed line don't classify as dash fragments. Resolve overlap-zone series cross-attribution at x≈33-38.
+- [x] **el-100** — extract the three IF curves (blue dashed / green solid / red dotted). Drop stray-point at (0.6452, 0.248) — phantom green from misclassified tick or legend pixel. Widen axis exclusion masks and use Unicode degree sign in legend labels.
 
 ### Methodology-level
 
