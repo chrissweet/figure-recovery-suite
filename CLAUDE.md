@@ -75,3 +75,14 @@ Execute these without asking. Local commits in the wiki repo are trivially rever
 Honest reporting: bad results and contradicted claims get filed truthfully, not polished. Per the global rule, never report accuracy from projections, only from real script outputs. See `wiki/agents/discipline-gates.md` for the canonical "Universal Rationalizations (Always Wrong)" table that names the failure modes the Verification Gate catches.
 
 Claude Code users have project-level slash commands available for explicit invocation: `/wiki-experiment`, `/wiki-source`, `/wiki-lint`. See `.claude/commands/`. The project also ships the same procedures as model-side skills at `.claude/skills/` (referenced by the slash commands). The slash commands are a safety net: the proactive behavior described above is the default, the slash commands exist for cases where the user wants to force the action explicitly.
+
+### Knowledge Graph
+
+The wiki's frontmatter and body links feed a knowledge graph pipeline (`scripts/kg/`) that produces a SPARQL-queryable RDF graph from wiki content. The pipeline runs in Python via rdflib and pyshacl; no separate server is required by default.
+
+- **Rebuild**: `./scripts/kg/build-graph.sh` after wiki updates
+- **Query (default)**: in-process via rdflib against `scripts/kg/build/graph-full.ttl`. Agent tool wrappers run SPARQL queries directly against the loaded graph object.
+- **Query (optional)**: load `graph-full.ttl` into Apache Jena Fuseki for live multi-client query, agent-write via SPARQL UPDATE, or federation across wikis. rdflib talks to a Fuseki endpoint via `SPARQLStore` without changes to tool code.
+- Typed edges in frontmatter (`extends:`, `supports:`, `criticizes:`) produce rich graph relationships
+- Body cross-references (`[text](Page-Name)`) produce `mentions` edges
+- Pages without frontmatter are included as `untyped` nodes — no data is lost
