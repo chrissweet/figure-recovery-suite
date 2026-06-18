@@ -1,0 +1,21 @@
+{
+  "chart_type": "grayscale 3-shape scatter + 3 fit curves (same gray tones)",
+  "calibration": {
+    "x_axis": "value = 0.056547\u00b7col + -3.174709",
+    "y_axis": "value = -9.7e-05\u00b7row + 0.987312"
+  },
+  "method": "Same pipeline as el-88, but the fit-curve subtraction (\u00a73b) is essential here: without it, the dotted curves register as phantom open markers. Known limitation: filled gray squares sitting on the solid 27\u00b0C fit curve fuse into elongated CCs and are still under-counted.",
+  "params": {
+    "thin_h": 3,
+    "marker_span": [
+      4,
+      13
+    ]
+  },
+  "counts": {
+    "24C": 31,
+    "27C": 14,
+    "30C": 18
+  },
+  "known_undercount": "27\u00b0C squares on the solid 27\u00b0C fit curve."
+}

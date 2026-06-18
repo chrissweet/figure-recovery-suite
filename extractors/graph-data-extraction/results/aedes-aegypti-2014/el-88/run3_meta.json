@@ -1,0 +1,18 @@
+{
+  "chart_type": "grayscale 3-shape scatter (filled disk / gray square / open diamond)",
+  "calibration": {
+    "x_axis": "value = 0.064303\u00b7col + -3.614709",
+    "y_axis": "value = -0.001853\u00b7row + 1.053524"
+  },
+  "method": "\u00a72b grayscale-shape classifier: (1) detect 24\u00b0C disks via gray<50 + 4\u00d74 erode + CC; (2) subtract disks from wider gray<200 mask (no fit-curve subtraction needed here); (3) CC classify by density (>0.55 + area>30 \u2192 square; 0.15-0.5 + area 12-90 \u2192 diamond); (4) dedup diamonds against disks/squares within 5px.",
+  "params": {
+    "erode_kernel_for_disks": "4\u00d74",
+    "density_square": ">0.55",
+    "density_diamond": "0.15-0.5"
+  },
+  "counts": {
+    "24C": 30,
+    "27C": 25,
+    "30C": 22
+  }
+}

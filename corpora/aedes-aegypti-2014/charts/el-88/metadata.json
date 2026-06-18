@@ -1,0 +1,19 @@
+{
+  "paper_id": "e9d2f862-1273-47c2-a91f-95b0c6c6f8bd",
+  "element_id": "el-88",
+  "page": 13,
+  "chart_type": "Scatter Plot",
+  "chart_title": "Untitled",
+  "x_axis_label": "Age of females in days",
+  "y_axis_label": "",
+  "caption": "Fig 6. Survival of females of Aedes aegypti in laboratory conditions at constant temperatures of \\(24^{\\circ}C\\) , \\(27^{\\circ}C\\) and \\(30^{\\circ}C\\) plotted against the age of females.",
+  "short_title": "Female survival rate by age and temperature",
+  "is_subfigure": true,
+  "n_points": 75,
+  "calibration_version": 2,
+  "calibration_updated_at": "2026-06-17T20:55:14.710319+00:00",
+  "source_doi": null,
+  "source_citation": null,
+  "source_license": null,
+  "source_title": "Parity and Longevity of Aedes aegypti According to Temperatures in Controlled Conditions and Consequences on Dengue Transmission Risks"
+}

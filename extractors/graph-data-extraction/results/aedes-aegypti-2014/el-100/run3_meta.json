@@ -1,0 +1,24 @@
+{
+  "chart_type": "3-color scatter + 3 dashed/solid fit lines in same colors",
+  "calibration": {
+    "x_axis": "value = 0.001318\u00b7col + -0.073362",
+    "y_axis": "value = -0.04908\u00b7row + 27.995901"
+  },
+  "method": "\u00a72 scatter + aspect-ratio dashed-fragment filter (>2.5) + solid-line density+area filter (density<0.25 \u2227 area>200 \u2192 line) + k-means split only when CC is square-ish and dense.",
+  "params": {
+    "erode_kernel": {
+      "blue": 4,
+      "green": 4,
+      "red": 3
+    },
+    "aspect_ratio_max": 2.5,
+    "solid_line_density_max": 0.25,
+    "solid_line_area_min": 200
+  },
+  "counts": {
+    "24C": 12,
+    "27C": 19,
+    "30C": 20
+  },
+  "known_undercount": "Blue markers that sit on the dashed blue fit line classify as dash fragments."
+}

@@ -1,0 +1,19 @@
+{
+  "paper_id": "e9d2f862-1273-47c2-a91f-95b0c6c6f8bd",
+  "element_id": "el-94",
+  "page": 14,
+  "chart_type": "Combo",
+  "chart_title": "Probability of daily survival (p)",
+  "x_axis_label": "Age of females in days",
+  "y_axis_label": "Probability of daily survival (p)",
+  "caption": "Fig 7. Probability of daily survival of females of Aedes aegypti in laboratory conditions at constant temperatures of \\(24^{\\circ}C\\) , \\(27^{\\circ}C\\) and \\(30^{\\circ}C\\) plotted against the age.",
+  "short_title": "Daily survival probability by age and temperature",
+  "is_subfigure": true,
+  "n_points": 159,
+  "calibration_version": 2,
+  "calibration_updated_at": "2026-06-17T20:57:00.239376+00:00",
+  "source_doi": null,
+  "source_citation": null,
+  "source_license": null,
+  "source_title": "Parity and Longevity of Aedes aegypti According to Temperatures in Controlled Conditions and Consequences on Dengue Transmission Risks"
+}

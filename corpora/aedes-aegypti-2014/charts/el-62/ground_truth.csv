@@ -1,0 +1,9 @@
+layer_idx,layer_type,series,x,y,marker_type,color,error_x_plus,error_x_minus,error_y_plus,error_y_minus
+,Grouped Column Chart,Mean duration of GC1,24,8.928,,#335989,,,2.67,2.67
+,Grouped Column Chart,Mean duration of GC2,24,6.496,,#667d2f,,,3.392,3.392
+,Grouped Column Chart,Mean duration of GC1,27,7.485,,#335989,,,2.67,2.67
+,Grouped Column Chart,Mean duration of GC2,27,6.309,,#667d2f,,,3.37,3.37
+,Grouped Column Chart,Mean duration of GC3,27,6.479,,#e09e9e,,,1.152,1.152
+,Grouped Column Chart,Mean duration of GC1,30,5.17,,#335989,,,2.664,2.664
+,Grouped Column Chart,Mean duration of GC2,30,4.424,,#667d2f,,,3.38,3.38
+,Grouped Column Chart,Mean duration of GC3,30,3,,#e09e9e,,,1.152,1.152

@@ -1,0 +1,18 @@
+{
+  "chart_type": "small grouped bar chart, stippled GC2 fill",
+  "calibration": {
+    "x_axis": "value = 0.009844\u00b7col + 22.084497",
+    "y_axis": "value = -0.14733\u00b7row + 89.915238"
+  },
+  "method": "\u00a74a bar top via dark outline (horizontal run \u226540 of gray<160 in cx\u00b128 band); GC2 stippled fill detected by outline, not by interior CC",
+  "params": {
+    "outline_dark_thr": 160,
+    "min_run": 40,
+    "search_band": "cx\u00b128"
+  },
+  "counts": {
+    "GC1": 3,
+    "GC2": 3,
+    "GC3": 2
+  }
+}

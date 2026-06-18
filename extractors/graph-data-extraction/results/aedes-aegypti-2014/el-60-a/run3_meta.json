@@ -1,0 +1,18 @@
+{
+  "chart_type": "3-color line plot, markers at integer days",
+  "calibration": {
+    "x_axis": "value = 0.033503\u00b7col + -3.224314",
+    "y_axis": "value = -0.002808\u00b7row + 1.216004"
+  },
+  "method": "\u00a73a marker-on-line: HSV color mask + 5\u00d75 erosion + CC centroid, snap x to integer day",
+  "params": {
+    "erode_kernel": "5\u00d75",
+    "min_area": 30
+  },
+  "legend_exclusion": "rows 30-120, cols 565-620",
+  "counts": {
+    "24C": 6,
+    "27C": 14,
+    "30C": 6
+  }
+}

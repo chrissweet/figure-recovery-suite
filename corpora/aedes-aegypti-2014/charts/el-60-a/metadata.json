@@ -1,0 +1,19 @@
+{
+  "paper_id": "e9d2f862-1273-47c2-a91f-95b0c6c6f8bd",
+  "element_id": "el-60-a",
+  "page": 8,
+  "chart_type": "Line Graph",
+  "chart_title": "Untitled",
+  "x_axis_label": "Time after the blood-meal (days)",
+  "y_axis_label": "Percentage of parous females",
+  "caption": null,
+  "short_title": "Parity rate over time by temperature",
+  "is_subfigure": true,
+  "n_points": 26,
+  "calibration_version": 3,
+  "calibration_updated_at": "2026-06-17T20:26:27.804938+00:00",
+  "source_doi": null,
+  "source_citation": null,
+  "source_license": null,
+  "source_title": "Parity and Longevity of Aedes aegypti According to Temperatures in Controlled Conditions and Consequences on Dengue Transmission Risks"
+}

@@ -1,0 +1,19 @@
+{
+  "paper_id": "e9d2f862-1273-47c2-a91f-95b0c6c6f8bd",
+  "element_id": "el-100",
+  "page": 15,
+  "chart_type": "Combo",
+  "chart_title": "Expectation of Iinfective life for 50% of females",
+  "x_axis_label": "Parity rate",
+  "y_axis_label": "",
+  "caption": "Fig 8. Expectation of infective life (l) in days for \\(50\\%\\) of the females of Aedes aegypti females according to the EIP at constant temperatures of \\(24^{\\circ}C\\) , \\(27^{\\circ}C\\) and \\(30^{\\circ}C\\) , plotted against the parity rates.",
+  "short_title": "Infective life expectation versus parity rate by temperature",
+  "is_subfigure": true,
+  "n_points": 101,
+  "calibration_version": 2,
+  "calibration_updated_at": "2026-06-17T21:24:55.279527+00:00",
+  "source_doi": null,
+  "source_citation": null,
+  "source_license": null,
+  "source_title": "Parity and Longevity of Aedes aegypti According to Temperatures in Controlled Conditions and Consequences on Dengue Transmission Risks"
+}

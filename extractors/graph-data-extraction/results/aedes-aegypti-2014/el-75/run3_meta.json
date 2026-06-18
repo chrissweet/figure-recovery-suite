@@ -1,0 +1,11 @@
+{
+  "chart_type": "3 markers with x and y error bars + red trend line",
+  "calibration": {
+    "x_axis": "value = 0.048465\u00b7col + -3.992979",
+    "y_axis": "value = -0.046192\u00b7row + 25.668679"
+  },
+  "method": "\u00a72 scatter (markers) + \u00a72a error bars (walk_with_gap, \u00b13 col/row strip, gap=15)",
+  "counts": {
+    "data points": 3
+  }
+}

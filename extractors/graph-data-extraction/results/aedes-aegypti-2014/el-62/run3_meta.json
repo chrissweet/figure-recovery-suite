@@ -1,0 +1,19 @@
+{
+  "chart_type": "grouped bar chart, error bars",
+  "calibration": {
+    "x_axis": "value = 0.009983\u00b7col + 21.680537",
+    "y_axis": "value = -0.028829\u00b7row + 16.415132"
+  },
+  "method": "\u00a74 bar fills via HSV; \u00a74b upper error caps detected by horizontal black runs above bar top",
+  "params": {
+    "bar_min_area": 500,
+    "cap_min_run": 3,
+    "min_above_bar": 5
+  },
+  "counts": {
+    "GC1": 3,
+    "GC2": 3,
+    "GC3": 2
+  },
+  "note": "Lower error caps NOT extracted (occluded by bar fill)."
+}

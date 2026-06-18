@@ -1,0 +1,973 @@
+{
+  "set": "paper-atomizer-eval/chart-extraction (paper e9d2f862-1273-47c2-a91f-95b0c6c6f8bd)",
+  "n_charts": 8,
+  "format_version": "1.0",
+  "description": "Aggregated plot-frame calibration for the 8-chart test corpus. Each chart entry contains the pixel bounding box of the visible plot region ('plot_frame_box', with offset and size), the per-axis pixels-per-coordinate-unit ratios, and the closed-form formulas for converting any (x, y) data coordinate to a (col, row) pixel coordinate in that chart's image.png. A worked example is included for each chart so the formula can be sanity-checked visually.",
+  "usage": {
+    "step_1": "Pick a chart by id (e.g. 'el-62'). Open charts['el-62'].",
+    "step_2": "Read 'plot_frame_box.offset' = top-left corner of the plot in image.png.",
+    "step_3": "Read 'pixels_per_coordinate_unit.x' and '.y' to know the px/data-unit ratios.",
+    "step_4": "Use 'data_to_pixel_formula' to convert any (x_value, y_value) into the (col, row) pixel coordinate inside image.png. The 'worked_example' shows the calculation for one known point."
+  },
+  "summary_table": [
+    {
+      "chart_id": "el-60-a",
+      "title": "Parity rate over time by temperature",
+      "image_size": "870x563",
+      "plot_frame_offset": [
+        111,
+        6
+      ],
+      "plot_frame_size": [
+        759,
+        427
+      ],
+      "pixels_per_x_unit": 29.8481,
+      "pixels_per_y_unit": 356.1254,
+      "x_unit_label": "pixels per day",
+      "y_unit_label": "pixels per fraction-unit",
+      "data_range": {
+        "x_min": 1,
+        "x_max": 23,
+        "y_min": 0.0,
+        "y_max": 1.0
+      }
+    },
+    {
+      "chart_id": "el-60-b",
+      "title": "Maximum parity rate as a function of temperature",
+      "image_size": "870x563",
+      "plot_frame_offset": [
+        97,
+        0
+      ],
+      "plot_frame_size": [
+        771,
+        470
+      ],
+      "pixels_per_x_unit": 27.6426,
+      "pixels_per_y_unit": 408.8307,
+      "x_unit_label": "pixels per \u00b0C",
+      "y_unit_label": "pixels per fraction-unit",
+      "data_range": {
+        "x_min": 10,
+        "x_max": 35,
+        "y_min": 0.0,
+        "y_max": 1.0
+      }
+    },
+    {
+      "chart_id": "el-62",
+      "title": "Gonotrophic cycle duration at different temperatures",
+      "image_size": "989x637",
+      "plot_frame_offset": [
+        83,
+        14
+      ],
+      "plot_frame_size": [
+        902,
+        557
+      ],
+      "pixels_per_x_unit": 100.1703,
+      "pixels_per_y_unit": 34.6873,
+      "x_unit_label": "pixels per \u00b0C",
+      "y_unit_label": "pixels per day",
+      "data_range": {
+        "x_min": 24,
+        "x_max": 30,
+        "y_min": 0.0,
+        "y_max": 16.0
+      }
+    },
+    {
+      "chart_id": "el-75",
+      "title": "Gonotrophic cycle duration versus temperature",
+      "image_size": "924x637",
+      "plot_frame_offset": [
+        82,
+        14
+      ],
+      "plot_frame_size": [
+        827,
+        543
+      ],
+      "pixels_per_x_unit": 20.6334,
+      "pixels_per_y_unit": 21.6488,
+      "x_unit_label": "pixels per \u00b0C",
+      "y_unit_label": "pixels per day",
+      "data_range": {
+        "x_min": 0,
+        "x_max": 40,
+        "y_min": 0.0,
+        "y_max": 25.0
+      }
+    },
+    {
+      "chart_id": "el-80",
+      "title": "Female fecundity at different temperatures by group",
+      "image_size": "964x702",
+      "plot_frame_offset": [
+        42,
+        3
+      ],
+      "plot_frame_size": [
+        916,
+        609
+      ],
+      "pixels_per_x_unit": 101.5847,
+      "pixels_per_y_unit": 6.7875,
+      "x_unit_label": "pixels per \u00b0C",
+      "y_unit_label": "pixels per egg",
+      "data_range": {
+        "x_min": 24,
+        "x_max": 30,
+        "y_min": 0.0,
+        "y_max": 80.0
+      }
+    },
+    {
+      "chart_id": "el-88",
+      "title": "Female survival rate by age and temperature",
+      "image_size": "993x638",
+      "plot_frame_offset": [
+        56,
+        24
+      ],
+      "plot_frame_size": [
+        930,
+        545
+      ],
+      "pixels_per_x_unit": 15.5514,
+      "pixels_per_y_unit": 539.6654,
+      "x_unit_label": "pixels per day",
+      "y_unit_label": "pixels per fraction-unit",
+      "data_range": {
+        "x_min": 0,
+        "x_max": 50,
+        "y_min": 0.0,
+        "y_max": 1.0
+      }
+    },
+    {
+      "chart_id": "el-94",
+      "title": "Daily survival probability by age and temperature",
+      "image_size": "965x660",
+      "plot_frame_offset": [
+        56,
+        8
+      ],
+      "plot_frame_size": [
+        903,
+        583
+      ],
+      "pixels_per_x_unit": 17.6844,
+      "pixels_per_y_unit": 10309.2784,
+      "x_unit_label": "pixels per day",
+      "y_unit_label": "pixels per probability-unit",
+      "data_range": {
+        "x_min": 0,
+        "x_max": 50,
+        "y_min": 0.93,
+        "y_max": 0.98
+      }
+    },
+    {
+      "chart_id": "el-100",
+      "title": "Infective life expectation versus parity rate by temperature",
+      "image_size": "935x654",
+      "plot_frame_offset": [
+        56,
+        8
+      ],
+      "plot_frame_size": [
+        874,
+        563
+      ],
+      "pixels_per_x_unit": 758.7253,
+      "pixels_per_y_unit": 20.3749,
+      "x_unit_label": "pixels per parity-rate-unit",
+      "y_unit_label": "pixels per day",
+      "data_range": {
+        "x_min": 0,
+        "x_max": 1.0,
+        "y_min": 0.0,
+        "y_max": 20.0
+      }
+    }
+  ],
+  "charts": {
+    "el-60-a": {
+      "folder": "e9d2f862-1273-47c2-a91f-95b0c6c6f8bd__el-60-a",
+      "image_path_relative": "e9d2f862-1273-47c2-a91f-95b0c6c6f8bd__el-60-a/image.png",
+      "title": "Parity rate over time by temperature",
+      "image": "image.png",
+      "image_size": {
+        "width": 870,
+        "height": 563
+      },
+      "plot_frame_box": {
+        "offset": {
+          "x": 111,
+          "y": 6
+        },
+        "size": {
+          "width": 759,
+          "height": 427
+        },
+        "left": 111,
+        "top": 6,
+        "right": 869,
+        "bottom": 432,
+        "description": "Pixel bounding box of the visible plot region in image.png. Origin (0,0) is the top-left of the image; y grows downward. 'offset' is the top-left corner of the box in image coordinates; 'size' is its width and height in pixels. Detected by finding the y-axis line (left), x-axis line (bottom), and the bounding box of non-white pixels inside the L-shaped quadrant (top, right)."
+      },
+      "pixels_per_coordinate_unit": {
+        "x": 29.8481,
+        "y": 356.1254,
+        "x_unit_label": "pixels per day",
+        "y_unit_label": "pixels per fraction-unit",
+        "description": "How many image pixels equal one unit of x or y in data coordinates."
+      },
+      "data_to_pixel_formula": {
+        "col": "col = (x_value - -3.224314) / 0.033503",
+        "row": "row = (y_value - 1.216004) / -0.002808",
+        "explanation": "Convert any (x, y) data coordinate to a (col, row) pixel coordinate in image.png. Derived from the linear axis calibration fit during extraction."
+      },
+      "data_range": {
+        "x_min": 1,
+        "x_max": 23,
+        "y_min": 0.0,
+        "y_max": 1.0
+      },
+      "axis_calibration": {
+        "x_axis": {
+          "formula": "value = 0.033503 * col + -3.224314",
+          "m": 0.033503,
+          "b": -3.224314,
+          "inverse": "col = (value - -3.224314) / 0.033503"
+        },
+        "y_axis": {
+          "formula": "value = -0.002808 * row + 1.216004",
+          "m": -0.002808,
+          "b": 1.216004,
+          "inverse": "row = (value - 1.216004) / -0.002808"
+        }
+      },
+      "worked_example": {
+        "scenario": "Top of the 27\u00b0C marker at day 6 (parous-female fraction 0.3611).",
+        "input": {
+          "x": 6,
+          "y": 0.3611
+        },
+        "compute": [
+          "col = (6 - -3.224314) / 0.033503 = 275.3",
+          "row = (0.3611 - 1.216004) / -0.002808 = 304.5"
+        ],
+        "result": {
+          "col": 275,
+          "row": 304
+        },
+        "verification": "This (col, row) should land on the green 27\u00b0C square at x=6 days."
+      },
+      "detection_internals": {
+        "y_axis_col_detected": 111,
+        "x_axis_row_detected": 432,
+        "all_interior_v_lines": [
+          111
+        ],
+        "all_interior_h_lines": [
+          432,
+          530
+        ],
+        "legend_exclusion_used_for_frame": [
+          30,
+          120,
+          565,
+          620
+        ]
+      },
+      "data_extent_box": {
+        "left": 126,
+        "right": 783,
+        "top": 77,
+        "bottom": 433,
+        "width": 658,
+        "height": 357,
+        "description": "Pixel bounding box of the labeled data tick range (x=1..23, y=0.0..1.0). For bar charts the bars extend past this box."
+      }
+    },
+    "el-60-b": {
+      "folder": "e9d2f862-1273-47c2-a91f-95b0c6c6f8bd__el-60-b",
+      "image_path_relative": "e9d2f862-1273-47c2-a91f-95b0c6c6f8bd__el-60-b/image.png",
+      "title": "Maximum parity rate as a function of temperature",
+      "image": "image.png",
+      "image_size": {
+        "width": 870,
+        "height": 563
+      },
+      "plot_frame_box": {
+        "offset": {
+          "x": 97,
+          "y": 0
+        },
+        "size": {
+          "width": 771,
+          "height": 470
+        },
+        "left": 97,
+        "top": 0,
+        "right": 867,
+        "bottom": 469,
+        "description": "Pixel bounding box of the visible plot region in image.png. Origin (0,0) is the top-left of the image; y grows downward. 'offset' is the top-left corner of the box in image coordinates; 'size' is its width and height in pixels. Detected by finding the y-axis line (left), x-axis line (bottom), and the bounding box of non-white pixels inside the L-shaped quadrant (top, right)."
+      },
+      "pixels_per_coordinate_unit": {
+        "x": 27.6426,
+        "y": 408.8307,
+        "x_unit_label": "pixels per \u00b0C",
+        "y_unit_label": "pixels per fraction-unit",
+        "description": "How many image pixels equal one unit of x or y in data coordinates."
+      },
+      "data_to_pixel_formula": {
+        "col": "col = (x_value - 6.483232) / 0.036176",
+        "row": "row = (y_value - 1.149266) / -0.002446",
+        "explanation": "Convert any (x, y) data coordinate to a (col, row) pixel coordinate in image.png. Derived from the linear axis calibration fit during extraction."
+      },
+      "data_range": {
+        "x_min": 10,
+        "x_max": 35,
+        "y_min": 0.0,
+        "y_max": 1.0
+      },
+      "axis_calibration": {
+        "x_axis": {
+          "formula": "value = 0.036176 * col + 6.483232",
+          "m": 0.036176,
+          "b": 6.483232,
+          "inverse": "col = (value - 6.483232) / 0.036176"
+        },
+        "y_axis": {
+          "formula": "value = -0.002446 * row + 1.149266",
+          "m": -0.002446,
+          "b": 1.149266,
+          "inverse": "row = (value - 1.149266) / -0.002446"
+        }
+      },
+      "worked_example": {
+        "scenario": "The 30\u00b0C marker (red diamond) at 30 \u00b0C, max parity rate 0.6455.",
+        "input": {
+          "x": 30,
+          "y": 0.6455
+        },
+        "compute": [
+          "col = (30 - 6.483232) / 0.036176 = 650.1",
+          "row = (0.6455 - 1.149266) / -0.002446 = 206.0"
+        ],
+        "result": {
+          "col": 650,
+          "row": 206
+        },
+        "verification": "This (col, row) should land on the red 30\u00b0C diamond."
+      },
+      "detection_internals": {
+        "y_axis_col_detected": 97,
+        "x_axis_row_detected": 469,
+        "all_interior_v_lines": [
+          97
+        ],
+        "all_interior_h_lines": [
+          469
+        ],
+        "legend_exclusion_used_for_frame": null
+      },
+      "data_extent_box": {
+        "left": 97,
+        "right": 788,
+        "top": 61,
+        "bottom": 470,
+        "width": 692,
+        "height": 410,
+        "description": "Pixel bounding box of the labeled data tick range (x=10..35, y=0.0..1.0). For bar charts the bars extend past this box."
+      }
+    },
+    "el-62": {
+      "folder": "e9d2f862-1273-47c2-a91f-95b0c6c6f8bd__el-62",
+      "image_path_relative": "e9d2f862-1273-47c2-a91f-95b0c6c6f8bd__el-62/image.png",
+      "title": "Gonotrophic cycle duration at different temperatures",
+      "image": "image.png",
+      "image_size": {
+        "width": 989,
+        "height": 637
+      },
+      "plot_frame_box": {
+        "offset": {
+          "x": 83,
+          "y": 14
+        },
+        "size": {
+          "width": 902,
+          "height": 557
+        },
+        "left": 83,
+        "top": 14,
+        "right": 984,
+        "bottom": 570,
+        "description": "Pixel bounding box of the visible plot region in image.png. Origin (0,0) is the top-left of the image; y grows downward. 'offset' is the top-left corner of the box in image coordinates; 'size' is its width and height in pixels. Detected by finding the y-axis line (left), x-axis line (bottom), and the bounding box of non-white pixels inside the L-shaped quadrant (top, right)."
+      },
+      "pixels_per_coordinate_unit": {
+        "x": 100.1703,
+        "y": 34.6873,
+        "x_unit_label": "pixels per \u00b0C",
+        "y_unit_label": "pixels per day",
+        "description": "How many image pixels equal one unit of x or y in data coordinates."
+      },
+      "data_to_pixel_formula": {
+        "col": "col = (x_value - 21.680537) / 0.009983",
+        "row": "row = (y_value - 16.415132) / -0.028829",
+        "explanation": "Convert any (x, y) data coordinate to a (col, row) pixel coordinate in image.png. Derived from the linear axis calibration fit during extraction."
+      },
+      "data_range": {
+        "x_min": 24,
+        "x_max": 30,
+        "y_min": 0.0,
+        "y_max": 16.0
+      },
+      "axis_calibration": {
+        "x_axis": {
+          "formula": "value = 0.009983 * col + 21.680537",
+          "m": 0.009983,
+          "b": 21.680537,
+          "inverse": "col = (value - 21.680537) / 0.009983"
+        },
+        "y_axis": {
+          "formula": "value = -0.028829 * row + 16.415132",
+          "m": -0.028829,
+          "b": 16.415132,
+          "inverse": "row = (value - 16.415132) / -0.028829"
+        }
+      },
+      "worked_example": {
+        "scenario": "Top of the 27\u00b0C GC1 bar (mean duration 7.485 days).",
+        "input": {
+          "x": 27,
+          "y": 7.485
+        },
+        "compute": [
+          "col = (27 - 21.680537) / 0.009983 = 532.9",
+          "row = (7.485 - 16.415132) / -0.028829 = 309.8"
+        ],
+        "result": {
+          "col": 533,
+          "row": 310
+        },
+        "verification": "This (col, row) should land on top of the dark-blue middle bar."
+      },
+      "detection_internals": {
+        "y_axis_col_detected": 83,
+        "x_axis_row_detected": 570,
+        "all_interior_v_lines": [
+          83,
+          166,
+          233,
+          466,
+          533
+        ],
+        "all_interior_h_lines": [
+          570
+        ],
+        "legend_exclusion_used_for_frame": [
+          20,
+          160,
+          680,
+          980
+        ]
+      }
+    },
+    "el-75": {
+      "folder": "e9d2f862-1273-47c2-a91f-95b0c6c6f8bd__el-75",
+      "image_path_relative": "e9d2f862-1273-47c2-a91f-95b0c6c6f8bd__el-75/image.png",
+      "title": "Gonotrophic cycle duration versus temperature",
+      "image": "image.png",
+      "image_size": {
+        "width": 924,
+        "height": 637
+      },
+      "plot_frame_box": {
+        "offset": {
+          "x": 82,
+          "y": 14
+        },
+        "size": {
+          "width": 827,
+          "height": 543
+        },
+        "left": 82,
+        "top": 14,
+        "right": 908,
+        "bottom": 556,
+        "description": "Pixel bounding box of the visible plot region in image.png. Origin (0,0) is the top-left of the image; y grows downward. 'offset' is the top-left corner of the box in image coordinates; 'size' is its width and height in pixels. Detected by finding the y-axis line (left), x-axis line (bottom), and the bounding box of non-white pixels inside the L-shaped quadrant (top, right)."
+      },
+      "pixels_per_coordinate_unit": {
+        "x": 20.6334,
+        "y": 21.6488,
+        "x_unit_label": "pixels per \u00b0C",
+        "y_unit_label": "pixels per day",
+        "description": "How many image pixels equal one unit of x or y in data coordinates."
+      },
+      "data_to_pixel_formula": {
+        "col": "col = (x_value - -3.992979) / 0.048465",
+        "row": "row = (y_value - 25.668679) / -0.046192",
+        "explanation": "Convert any (x, y) data coordinate to a (col, row) pixel coordinate in image.png. Derived from the linear axis calibration fit during extraction."
+      },
+      "data_range": {
+        "x_min": 0,
+        "x_max": 40,
+        "y_min": 0.0,
+        "y_max": 25.0
+      },
+      "axis_calibration": {
+        "x_axis": {
+          "formula": "value = 0.048465 * col + -3.992979",
+          "m": 0.048465,
+          "b": -3.992979,
+          "inverse": "col = (value - -3.992979) / 0.048465"
+        },
+        "y_axis": {
+          "formula": "value = -0.046192 * row + 25.668679",
+          "m": -0.046192,
+          "b": 25.668679,
+          "inverse": "row = (value - 25.668679) / -0.046192"
+        }
+      },
+      "worked_example": {
+        "scenario": "The middle data point (27\u00b0C, mean GC 7.155 days).",
+        "input": {
+          "x": 27.039,
+          "y": 7.155
+        },
+        "compute": [
+          "col = (27.039 - -3.992979) / 0.048465 = 640.3",
+          "row = (7.155 - 25.668679) / -0.046192 = 400.8"
+        ],
+        "result": {
+          "col": 640,
+          "row": 401
+        },
+        "verification": "This (col, row) should land on the middle black marker."
+      },
+      "detection_internals": {
+        "y_axis_col_detected": 82,
+        "x_axis_row_detected": 556,
+        "all_interior_v_lines": [
+          82
+        ],
+        "all_interior_h_lines": [
+          556
+        ],
+        "legend_exclusion_used_for_frame": null
+      },
+      "data_extent_box": {
+        "left": 82,
+        "right": 908,
+        "top": 14,
+        "bottom": 556,
+        "width": 827,
+        "height": 543,
+        "description": "Pixel bounding box of the labeled data tick range (x=0..40, y=0.0..25.0). For bar charts the bars extend past this box."
+      }
+    },
+    "el-80": {
+      "folder": "e9d2f862-1273-47c2-a91f-95b0c6c6f8bd__el-80",
+      "image_path_relative": "e9d2f862-1273-47c2-a91f-95b0c6c6f8bd__el-80/image.png",
+      "title": "Female fecundity at different temperatures by group",
+      "image": "image.png",
+      "image_size": {
+        "width": 964,
+        "height": 702
+      },
+      "plot_frame_box": {
+        "offset": {
+          "x": 42,
+          "y": 3
+        },
+        "size": {
+          "width": 916,
+          "height": 609
+        },
+        "left": 42,
+        "top": 3,
+        "right": 957,
+        "bottom": 611,
+        "description": "Pixel bounding box of the visible plot region in image.png. Origin (0,0) is the top-left of the image; y grows downward. 'offset' is the top-left corner of the box in image coordinates; 'size' is its width and height in pixels. Detected by finding the y-axis line (left), x-axis line (bottom), and the bounding box of non-white pixels inside the L-shaped quadrant (top, right)."
+      },
+      "pixels_per_coordinate_unit": {
+        "x": 101.5847,
+        "y": 6.7875,
+        "x_unit_label": "pixels per \u00b0C",
+        "y_unit_label": "pixels per egg",
+        "description": "How many image pixels equal one unit of x or y in data coordinates."
+      },
+      "data_to_pixel_formula": {
+        "col": "col = (x_value - 22.084497) / 0.009844",
+        "row": "row = (y_value - 89.915238) / -0.14733",
+        "explanation": "Convert any (x, y) data coordinate to a (col, row) pixel coordinate in image.png. Derived from the linear axis calibration fit during extraction."
+      },
+      "data_range": {
+        "x_min": 24,
+        "x_max": 30,
+        "y_min": 0.0,
+        "y_max": 80.0
+      },
+      "axis_calibration": {
+        "x_axis": {
+          "formula": "value = 0.009844 * col + 22.084497",
+          "m": 0.009844,
+          "b": 22.084497,
+          "inverse": "col = (value - 22.084497) / 0.009844"
+        },
+        "y_axis": {
+          "formula": "value = -0.14733 * row + 89.915238",
+          "m": -0.14733,
+          "b": 89.915238,
+          "inverse": "row = (value - 89.915238) / -0.14733"
+        }
+      },
+      "worked_example": {
+        "scenario": "Top of the 27\u00b0C GC2 bar (mean eggs/female 32.5).",
+        "input": {
+          "x": 27,
+          "y": 32.5
+        },
+        "compute": [
+          "col = (27 - 22.084497) / 0.009844 = 499.3",
+          "row = (32.5 - 89.915238) / -0.14733 = 389.7"
+        ],
+        "result": {
+          "col": 499,
+          "row": 390
+        },
+        "verification": "This (col, row) should land on top of the middle light-gray bar in the 27\u00b0C group."
+      },
+      "detection_internals": {
+        "y_axis_col_detected": 42,
+        "x_axis_row_detected": 611,
+        "all_interior_v_lines": [
+          42,
+          127,
+          431,
+          736
+        ],
+        "all_interior_h_lines": [
+          611
+        ],
+        "legend_exclusion_used_for_frame": [
+          20,
+          160,
+          600,
+          960
+        ]
+      },
+      "data_extent_box": {
+        "left": 195,
+        "right": 804,
+        "top": 67,
+        "bottom": 610,
+        "width": 610,
+        "height": 544,
+        "description": "Pixel bounding box of the labeled data tick range (x=24..30, y=0.0..80.0). For bar charts the bars extend past this box."
+      }
+    },
+    "el-88": {
+      "folder": "e9d2f862-1273-47c2-a91f-95b0c6c6f8bd__el-88",
+      "image_path_relative": "e9d2f862-1273-47c2-a91f-95b0c6c6f8bd__el-88/image.png",
+      "title": "Female survival rate by age and temperature",
+      "image": "image.png",
+      "image_size": {
+        "width": 993,
+        "height": 638
+      },
+      "plot_frame_box": {
+        "offset": {
+          "x": 56,
+          "y": 24
+        },
+        "size": {
+          "width": 930,
+          "height": 545
+        },
+        "left": 56,
+        "top": 24,
+        "right": 985,
+        "bottom": 568,
+        "description": "Pixel bounding box of the visible plot region in image.png. Origin (0,0) is the top-left of the image; y grows downward. 'offset' is the top-left corner of the box in image coordinates; 'size' is its width and height in pixels. Detected by finding the y-axis line (left), x-axis line (bottom), and the bounding box of non-white pixels inside the L-shaped quadrant (top, right)."
+      },
+      "pixels_per_coordinate_unit": {
+        "x": 15.5514,
+        "y": 539.6654,
+        "x_unit_label": "pixels per day",
+        "y_unit_label": "pixels per fraction-unit",
+        "description": "How many image pixels equal one unit of x or y in data coordinates."
+      },
+      "data_to_pixel_formula": {
+        "col": "col = (x_value - -3.614709) / 0.064303",
+        "row": "row = (y_value - 1.053524) / -0.001853",
+        "explanation": "Convert any (x, y) data coordinate to a (col, row) pixel coordinate in image.png. Derived from the linear axis calibration fit during extraction."
+      },
+      "data_range": {
+        "x_min": 0,
+        "x_max": 50,
+        "y_min": 0.0,
+        "y_max": 1.0
+      },
+      "axis_calibration": {
+        "x_axis": {
+          "formula": "value = 0.064303 * col + -3.614709",
+          "m": 0.064303,
+          "b": -3.614709,
+          "inverse": "col = (value - -3.614709) / 0.064303"
+        },
+        "y_axis": {
+          "formula": "value = -0.001853 * row + 1.053524",
+          "m": -0.001853,
+          "b": 1.053524,
+          "inverse": "row = (value - 1.053524) / -0.001853"
+        }
+      },
+      "worked_example": {
+        "scenario": "24\u00b0C filled-disk marker at day 14 (survival 0.5817).",
+        "input": {
+          "x": 14,
+          "y": 0.5817
+        },
+        "compute": [
+          "col = (14 - -3.614709) / 0.064303 = 273.9",
+          "row = (0.5817 - 1.053524) / -0.001853 = 254.6"
+        ],
+        "result": {
+          "col": 274,
+          "row": 255
+        },
+        "verification": "This (col, row) should land on a black filled circle around mid-plot."
+      },
+      "detection_internals": {
+        "y_axis_col_detected": 56,
+        "x_axis_row_detected": 568,
+        "all_interior_v_lines": [
+          56
+        ],
+        "all_interior_h_lines": [
+          568
+        ],
+        "legend_exclusion_used_for_frame": [
+          280,
+          400,
+          870,
+          980
+        ]
+      },
+      "data_extent_box": {
+        "left": 56,
+        "right": 834,
+        "top": 29,
+        "bottom": 569,
+        "width": 779,
+        "height": 541,
+        "description": "Pixel bounding box of the labeled data tick range (x=0..50, y=0.0..1.0). For bar charts the bars extend past this box."
+      }
+    },
+    "el-94": {
+      "folder": "e9d2f862-1273-47c2-a91f-95b0c6c6f8bd__el-94",
+      "image_path_relative": "e9d2f862-1273-47c2-a91f-95b0c6c6f8bd__el-94/image.png",
+      "title": "Daily survival probability by age and temperature",
+      "image": "image.png",
+      "image_size": {
+        "width": 965,
+        "height": 660
+      },
+      "plot_frame_box": {
+        "offset": {
+          "x": 56,
+          "y": 8
+        },
+        "size": {
+          "width": 903,
+          "height": 583
+        },
+        "left": 56,
+        "top": 8,
+        "right": 958,
+        "bottom": 590,
+        "description": "Pixel bounding box of the visible plot region in image.png. Origin (0,0) is the top-left of the image; y grows downward. 'offset' is the top-left corner of the box in image coordinates; 'size' is its width and height in pixels. Detected by finding the y-axis line (left), x-axis line (bottom), and the bounding box of non-white pixels inside the L-shaped quadrant (top, right)."
+      },
+      "pixels_per_coordinate_unit": {
+        "x": 17.6844,
+        "y": 10309.2784,
+        "x_unit_label": "pixels per day",
+        "y_unit_label": "pixels per probability-unit",
+        "description": "How many image pixels equal one unit of x or y in data coordinates."
+      },
+      "data_to_pixel_formula": {
+        "col": "col = (x_value - -3.174709) / 0.056547",
+        "row": "row = (y_value - 0.987312) / -9.7e-05",
+        "explanation": "Convert any (x, y) data coordinate to a (col, row) pixel coordinate in image.png. Derived from the linear axis calibration fit during extraction."
+      },
+      "data_range": {
+        "x_min": 0,
+        "x_max": 50,
+        "y_min": 0.93,
+        "y_max": 0.98
+      },
+      "axis_calibration": {
+        "x_axis": {
+          "formula": "value = 0.056547 * col + -3.174709",
+          "m": 0.056547,
+          "b": -3.174709,
+          "inverse": "col = (value - -3.174709) / 0.056547"
+        },
+        "y_axis": {
+          "formula": "value = -9.7e-05 * row + 0.987312",
+          "m": -9.7e-05,
+          "b": 0.987312,
+          "inverse": "row = (value - 0.987312) / -9.7e-05"
+        }
+      },
+      "worked_example": {
+        "scenario": "24\u00b0C filled-disk marker at day 20 (daily survival p = 0.9685).",
+        "input": {
+          "x": 20,
+          "y": 0.9685
+        },
+        "compute": [
+          "col = (20 - -3.174709) / 0.056547 = 409.8",
+          "row = (0.9685 - 0.987312) / -9.7e-05 = 193.9"
+        ],
+        "result": {
+          "col": 410,
+          "row": 194
+        },
+        "verification": "This (col, row) should land on a black filled circle around day 20."
+      },
+      "detection_internals": {
+        "y_axis_col_detected": 56,
+        "x_axis_row_detected": 590,
+        "all_interior_v_lines": [
+          56
+        ],
+        "all_interior_h_lines": [
+          590
+        ],
+        "legend_exclusion_used_for_frame": [
+          200,
+          470,
+          700,
+          960
+        ]
+      },
+      "data_extent_box": {
+        "left": 56,
+        "right": 940,
+        "top": 75,
+        "bottom": 591,
+        "width": 885,
+        "height": 517,
+        "description": "Pixel bounding box of the labeled data tick range (x=0..50, y=0.93..0.98). For bar charts the bars extend past this box."
+      }
+    },
+    "el-100": {
+      "folder": "e9d2f862-1273-47c2-a91f-95b0c6c6f8bd__el-100",
+      "image_path_relative": "e9d2f862-1273-47c2-a91f-95b0c6c6f8bd__el-100/image.png",
+      "title": "Infective life expectation versus parity rate by temperature",
+      "image": "image.png",
+      "image_size": {
+        "width": 935,
+        "height": 654
+      },
+      "plot_frame_box": {
+        "offset": {
+          "x": 56,
+          "y": 8
+        },
+        "size": {
+          "width": 874,
+          "height": 563
+        },
+        "left": 56,
+        "top": 8,
+        "right": 929,
+        "bottom": 570,
+        "description": "Pixel bounding box of the visible plot region in image.png. Origin (0,0) is the top-left of the image; y grows downward. 'offset' is the top-left corner of the box in image coordinates; 'size' is its width and height in pixels. Detected by finding the y-axis line (left), x-axis line (bottom), and the bounding box of non-white pixels inside the L-shaped quadrant (top, right)."
+      },
+      "pixels_per_coordinate_unit": {
+        "x": 758.7253,
+        "y": 20.3749,
+        "x_unit_label": "pixels per parity-rate-unit",
+        "y_unit_label": "pixels per day",
+        "description": "How many image pixels equal one unit of x or y in data coordinates."
+      },
+      "data_to_pixel_formula": {
+        "col": "col = (x_value - -0.073362) / 0.001318",
+        "row": "row = (y_value - 27.995901) / -0.04908",
+        "explanation": "Convert any (x, y) data coordinate to a (col, row) pixel coordinate in image.png. Derived from the linear axis calibration fit during extraction."
+      },
+      "data_range": {
+        "x_min": 0,
+        "x_max": 1.0,
+        "y_min": 0.0,
+        "y_max": 20.0
+      },
+      "axis_calibration": {
+        "x_axis": {
+          "formula": "value = 0.001318 * col + -0.073362",
+          "m": 0.001318,
+          "b": -0.073362,
+          "inverse": "col = (value - -0.073362) / 0.001318"
+        },
+        "y_axis": {
+          "formula": "value = -0.04908 * row + 27.995901",
+          "m": -0.04908,
+          "b": 27.995901,
+          "inverse": "row = (value - 27.995901) / -0.04908"
+        }
+      },
+      "worked_example": {
+        "scenario": "27\u00b0C green-square marker at parity rate 0.471, life expectancy 21.0 days.",
+        "input": {
+          "x": 0.471,
+          "y": 21.0
+        },
+        "compute": [
+          "col = (0.471 - -0.073362) / 0.001318 = 413.0",
+          "row = (21.0 - 27.995901) / -0.04908 = 142.5"
+        ],
+        "result": {
+          "col": 413,
+          "row": 143
+        },
+        "verification": "This (col, row) should land on one of the green 27\u00b0C squares in the upper band."
+      },
+      "detection_internals": {
+        "y_axis_col_detected": 56,
+        "x_axis_row_detected": 570,
+        "all_interior_v_lines": [
+          56
+        ],
+        "all_interior_h_lines": [
+          570
+        ],
+        "legend_exclusion_used_for_frame": [
+          150,
+          540,
+          760,
+          840
+        ]
+      },
+      "data_extent_box": {
+        "left": 56,
+        "right": 814,
+        "top": 163,
+        "bottom": 570,
+        "width": 759,
+        "height": 408,
+        "description": "Pixel bounding box of the labeled data tick range (x=0..1.0, y=0.0..20.0). For bar charts the bars extend past this box."
+      }
+    }
+  }
+}

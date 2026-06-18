@@ -1,0 +1,17 @@
+{
+  "chart_type": "3-point scatter + black trend line",
+  "calibration": {
+    "x_axis": "value = 0.036176\u00b7col + 6.483232",
+    "y_axis": "value = -0.002446\u00b7row + 1.149266"
+  },
+  "method": "\u00a72 scatter: HSV color mask + CC centroid; trend line NOT extracted",
+  "params": {
+    "erode_kernel": "none",
+    "min_area": 20
+  },
+  "counts": {
+    "24C": 1,
+    "27C": 1,
+    "30C": 1
+  }
+}

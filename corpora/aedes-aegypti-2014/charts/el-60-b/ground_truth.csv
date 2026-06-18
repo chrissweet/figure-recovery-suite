@@ -1,0 +1,6 @@
+layer_idx,layer_type,series,x,y,marker_type,color,error_x_plus,error_x_minus,error_y_plus,error_y_minus
+0,Scatter Plot,Series 1,24,0.3627,circle,#0000FF,,,,
+0,Scatter Plot,Series 2,27.059,0.7173,square,#008000,,,,
+0,Scatter Plot,Series 3,30.08,0.6455,diamond,#FF0000,,,,
+1,Line Graph,Trend Line,12.903,0.0064,none,#000000,,,,
+1,Line Graph,Trend Line,30.069,0.7057,none,#000000,,,,

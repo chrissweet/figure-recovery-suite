@@ -1,0 +1,14 @@
+{
+  "selector_rect": {
+    "x": 0.08487649493002973,
+    "y": 0.02056004013013133,
+    "w": 0.9127028760580042,
+    "h": 0.8759511858864919
+  },
+  "axis_calibration": null,
+  "corner_calibration": null,
+  "marking_method": "rectangle",
+  "points": [],
+  "version": 1,
+  "updated_at": "2026-06-17T19:21:07.795215+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "paper_id": "e9d2f862-1273-47c2-a91f-95b0c6c6f8bd",
+  "element_id": "el-60-b",
+  "page": 8,
+  "chart_type": "Combo",
+  "chart_title": "Untitled",
+  "x_axis_label": "Temperatures (\u00b0C)",
+  "y_axis_label": "Maximum Parity Rate",
+  "caption": null,
+  "short_title": "Maximum parity rate as a function of temperature",
+  "is_subfigure": true,
+  "n_points": 5,
+  "calibration_version": 1,
+  "calibration_updated_at": "2026-06-17T19:19:09.986454+00:00",
+  "source_doi": null,
+  "source_citation": null,
+  "source_license": null,
+  "source_title": "Parity and Longevity of Aedes aegypti According to Temperatures in Controlled Conditions and Consequences on Dengue Transmission Risks"
+}
