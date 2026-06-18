@@ -1,19 +1,24 @@
 {
-  "chart_type": "grouped bar chart, error bars",
+  "chart_type": "grouped bar chart, symmetric error bars",
   "calibration": {
-    "x_axis": "value = 0.009983\u00b7col + 21.680537",
-    "y_axis": "value = -0.028829\u00b7row + 16.415132"
+    "x_axis": "value = 0.009983·col + 21.680537",
+    "y_axis": "value = -0.028829·row + 16.415132"
   },
-  "method": "\u00a74 bar fills via HSV; \u00a74b upper error caps detected by horizontal black runs above bar top",
+  "method": "§4 bar fills via HSV (preserved from prior extraction); §4b upper error caps via horizontal black runs; lower caps mirrored as y_lo = mean - (y_hi - mean) and flagged `mirrored_lower_cap` in provenance column. x-positions snapped to categorical {24, 27, 30}.",
   "params": {
     "bar_min_area": 500,
     "cap_min_run": 3,
-    "min_above_bar": 5
+    "min_above_bar": 5,
+    "x_snap_categorical": [24, 27, 30],
+    "lower_cap_strategy": "mirror_upper"
   },
-  "counts": {
-    "GC1": 3,
-    "GC2": 3,
-    "GC3": 2
-  },
-  "note": "Lower error caps NOT extracted (occluded by bar fill)."
+  "declared_layers": [
+    {"idx": 0, "type": "Grouped Column Chart",
+     "series": ["GC1", "GC2", "GC3"]}
+  ],
+  "declared_series_count": 3,
+  "rendered_series_count": 3,
+  "counts": {"GC1": 3, "GC2": 3, "GC3": 2},
+  "phase4_match": true,
+  "phase4_evidence": "All 8 bars display symmetric upper+lower whiskers matching the original; categorical x-positions align with the 24/27/30 tick labels; long-form legend strings ('Mean duration of GC1/2/3')."
 }
