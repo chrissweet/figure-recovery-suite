@@ -1,0 +1,31 @@
+layer_idx,layer_type,series,x,y
+0,Grouped Column Chart,CPU_value,0.0,22.0
+0,Grouped Column Chart,CPU_value,1.0,31.0
+0,Grouped Column Chart,CPU_value,2.0,45.0
+0,Grouped Column Chart,CPU_value,3.0,18.0
+0,Grouped Column Chart,CPU_value,4.0,28.0
+1,StackedSegmentLayer,CPU_cum_top,0.0,22.0
+1,StackedSegmentLayer,CPU_cum_top,1.0,31.0
+1,StackedSegmentLayer,CPU_cum_top,2.0,45.0
+1,StackedSegmentLayer,CPU_cum_top,3.0,18.0
+1,StackedSegmentLayer,CPU_cum_top,4.0,28.0
+0,Grouped Column Chart,Memory_value,0.0,15.0
+0,Grouped Column Chart,Memory_value,1.0,22.0
+0,Grouped Column Chart,Memory_value,2.0,28.0
+0,Grouped Column Chart,Memory_value,3.0,12.0
+0,Grouped Column Chart,Memory_value,4.0,35.0
+1,StackedSegmentLayer,Memory_cum_top,0.0,37.0
+1,StackedSegmentLayer,Memory_cum_top,1.0,53.0
+1,StackedSegmentLayer,Memory_cum_top,2.0,73.0
+1,StackedSegmentLayer,Memory_cum_top,3.0,30.0
+1,StackedSegmentLayer,Memory_cum_top,4.0,63.0
+0,Grouped Column Chart,IO Wait_value,0.0,8.0
+0,Grouped Column Chart,IO Wait_value,1.0,12.0
+0,Grouped Column Chart,IO Wait_value,2.0,18.0
+0,Grouped Column Chart,IO Wait_value,3.0,5.0
+0,Grouped Column Chart,IO Wait_value,4.0,22.0
+1,StackedSegmentLayer,IO Wait_cum_top,0.0,45.0
+1,StackedSegmentLayer,IO Wait_cum_top,1.0,65.0
+1,StackedSegmentLayer,IO Wait_cum_top,2.0,91.0
+1,StackedSegmentLayer,IO Wait_cum_top,3.0,35.0
+1,StackedSegmentLayer,IO Wait_cum_top,4.0,85.0

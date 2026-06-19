@@ -1,0 +1,25 @@
+{
+  "chart_id": "06-scatter-asym-errbars",
+  "feature_stressed": "asymmetric x AND y error bars on every point. Stress for \u00a74 cap detection (both axes, lower\u2260upper).",
+  "chart_type": "scatter_errbars",
+  "x_scale": "linear",
+  "y_scale": "linear",
+  "x_axis_title": "Drive current (mA)",
+  "y_axis_title": "Photon count (\u00d710\u00b3 / s)",
+  "x_axis_unit": "mA",
+  "y_axis_unit": "x10^3 / s",
+  "decimal_separator": ".",
+  "panel_id": null,
+  "chart_title": "Synthetic #6 \u2014 scatter with asymmetric x/y error bars",
+  "series_legend": [
+    {
+      "series_id": "Measurement",
+      "color": "#1f77b4",
+      "marker_style": "filled_circle",
+      "source_label": "Measurement"
+    }
+  ],
+  "generator": "/Users/csweet1/Documents/projects/CRS_research/figure-recovery-suite/corpora/synthetic-r4-1/generators/06_scatter_asym_errbars.py",
+  "seed": 4256,
+  "cap_test": "For each i: marker centroid at (x[i], y[i]); four caps at (x[i]-xerr_lo[i], y[i]), (x[i]+xerr_hi[i], y[i]), (x[i], y[i]+yerr_hi[i]), (x[i], y[i]-yerr_lo[i]). All visible (capsize=4)."
+}

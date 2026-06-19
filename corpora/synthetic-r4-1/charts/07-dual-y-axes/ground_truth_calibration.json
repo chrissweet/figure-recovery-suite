@@ -1,0 +1,70 @@
+{
+  "image": "image.png",
+  "image_size": {
+    "width": 750,
+    "height": 450
+  },
+  "plot_frame_box": {
+    "offset": {
+      "x": 66,
+      "y": 37
+    },
+    "size": {
+      "width": 622,
+      "height": 355
+    },
+    "left": 66,
+    "top": 37,
+    "right": 688,
+    "bottom": 392,
+    "description": "Plot region in image pixel coords. Derived directly from matplotlib's axes bbox."
+  },
+  "data_range": {
+    "x_min": 0.0,
+    "x_max": 10.0,
+    "y_min_left": 0.3,
+    "y_max_left": 1.2,
+    "y_min_right": 7.0,
+    "y_max_right": 13.0
+  },
+  "axis_calibration": {
+    "x_axis": {
+      "scale": "linear",
+      "formula": "value = 0.016088\u00b7pixel + -1.068308",
+      "m": 0.01608831,
+      "b": -1.06830827,
+      "inverse": "pixel = (value - -1.068308) / 0.016088",
+      "unit_label": "pixels per linear x-unit"
+    },
+    "y_axis_left": {
+      "scale": "linear",
+      "formula": "value = -0.002540\u00b7pixel + 1.294811",
+      "m": -0.00253958,
+      "b": 1.2948111,
+      "inverse": "pixel = (value - 1.294811) / -0.002540",
+      "unit_label": "pixels per linear y-unit"
+    },
+    "y_axis_right": {
+      "scale": "linear",
+      "formula": "value = -0.016931\u00b7pixel + 13.632074",
+      "m": -0.01693055,
+      "b": 13.63207399,
+      "inverse": "pixel = (value - 13.632074) / -0.016931",
+      "unit_label": "pixels per linear y-unit"
+    }
+  },
+  "detection_internals": {
+    "y_axis_col_detected_left": 66,
+    "y_axis_col_detected_right": 688,
+    "x_axis_row_detected": 392,
+    "source": "synthetic (matplotlib transforms, two axes)"
+  },
+  "data_extent_box": {
+    "left": 66,
+    "right": 688,
+    "top": 37,
+    "bottom": 392,
+    "width": 622,
+    "height": 355
+  }
+}

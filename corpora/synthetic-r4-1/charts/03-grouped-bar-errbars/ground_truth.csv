@@ -1,0 +1,46 @@
+layer_idx,layer_type,series,x,y
+0,Grouped Column Chart,Baseline,-0.25,42.0
+0,Grouped Column Chart,Baseline,0.75,45.0
+0,Grouped Column Chart,Baseline,1.75,49.0
+0,Grouped Column Chart,Baseline,2.75,51.0
+0,Grouped Column Chart,Baseline,3.75,54.0
+1,ErrorBarLayer,Baseline_err_upper,-0.25,44.5
+1,ErrorBarLayer,Baseline_err_upper,0.75,47.7
+1,ErrorBarLayer,Baseline_err_upper,1.75,52.0
+1,ErrorBarLayer,Baseline_err_upper,2.75,54.2
+1,ErrorBarLayer,Baseline_err_upper,3.75,57.5
+1,ErrorBarLayer,Baseline_err_lower,-0.25,39.0
+1,ErrorBarLayer,Baseline_err_lower,0.75,41.8
+1,ErrorBarLayer,Baseline_err_lower,1.75,45.5
+1,ErrorBarLayer,Baseline_err_lower,2.75,47.3
+1,ErrorBarLayer,Baseline_err_lower,3.75,50.0
+0,Grouped Column Chart,Tuned,0.0,58.0
+0,Grouped Column Chart,Tuned,1.0,63.0
+0,Grouped Column Chart,Tuned,2.0,67.0
+0,Grouped Column Chart,Tuned,3.0,70.0
+0,Grouped Column Chart,Tuned,4.0,74.0
+1,ErrorBarLayer,Tuned_err_upper,0.0,61.5
+1,ErrorBarLayer,Tuned_err_upper,1.0,66.8
+1,ErrorBarLayer,Tuned_err_upper,2.0,71.0
+1,ErrorBarLayer,Tuned_err_upper,3.0,74.2
+1,ErrorBarLayer,Tuned_err_upper,4.0,78.5
+1,ErrorBarLayer,Tuned_err_lower,0.0,53.5
+1,ErrorBarLayer,Tuned_err_lower,1.0,58.2
+1,ErrorBarLayer,Tuned_err_lower,2.0,62.0
+1,ErrorBarLayer,Tuned_err_lower,3.0,64.8
+1,ErrorBarLayer,Tuned_err_lower,4.0,68.5
+0,Grouped Column Chart,Tuned+JIT,0.25,71.0
+0,Grouped Column Chart,Tuned+JIT,1.25,78.0
+0,Grouped Column Chart,Tuned+JIT,2.25,82.0
+0,Grouped Column Chart,Tuned+JIT,3.25,85.0
+0,Grouped Column Chart,Tuned+JIT,4.25,89.0
+1,ErrorBarLayer,Tuned+JIT_err_upper,0.25,75.0
+1,ErrorBarLayer,Tuned+JIT_err_upper,1.25,82.2
+1,ErrorBarLayer,Tuned+JIT_err_upper,2.25,86.5
+1,ErrorBarLayer,Tuned+JIT_err_upper,3.25,89.8
+1,ErrorBarLayer,Tuned+JIT_err_upper,4.25,94.0
+1,ErrorBarLayer,Tuned+JIT_err_lower,0.25,65.5
+1,ErrorBarLayer,Tuned+JIT_err_lower,1.25,72.2
+1,ErrorBarLayer,Tuned+JIT_err_lower,2.25,76.0
+1,ErrorBarLayer,Tuned+JIT_err_lower,3.25,78.8
+1,ErrorBarLayer,Tuned+JIT_err_lower,4.25,82.5

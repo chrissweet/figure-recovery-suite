@@ -1,0 +1,35 @@
+{
+  "chart_id": "02-simple-bar",
+  "feature_stressed": "single-series vertical bar chart, baseline for bar_top predicate",
+  "chart_type": "bar",
+  "x_scale": "linear",
+  "y_scale": "linear",
+  "x_axis_title": "Pipeline stage",
+  "y_axis_title": "Throughput (req/s)",
+  "x_axis_unit": null,
+  "y_axis_unit": "req/s",
+  "decimal_separator": ".",
+  "panel_id": null,
+  "chart_title": "Synthetic #2 \u2014 single-series vertical bars",
+  "x_categories": [
+    "Alpha",
+    "Bravo",
+    "Charlie",
+    "Delta",
+    "Echo",
+    "Foxtrot"
+  ],
+  "bar_width": 0.65,
+  "series_legend": [
+    {
+      "series_id": "Throughput",
+      "color": "#2ca02c",
+      "fill_style": "solid",
+      "edge_color": "#000000",
+      "source_label": "Throughput"
+    }
+  ],
+  "generator": "/Users/csweet1/Documents/projects/CRS_research/figure-recovery-suite/corpora/synthetic-r4-1/generators/02_simple_bar.py",
+  "seed": 4253,
+  "bar_top_test": "For each (x_position, value) in GT, the predicate (value \u2212 by) / my should land within \u03b5 of the topmost stroke row inside the bar's column span [col_center \u2212 bar_width_px/2, col_center + bar_width_px/2]."
+}

@@ -1,0 +1,41 @@
+layer_idx,layer_type,series,x,y
+0,Scatter Plot,Measurement,2.0,8.297872090494327
+0,Scatter Plot,Measurement,6.0,10.255676279723385
+0,Scatter Plot,Measurement,10.0,12.639472437615032
+0,Scatter Plot,Measurement,14.0,12.910737085428854
+0,Scatter Plot,Measurement,18.0,14.999073565745045
+0,Scatter Plot,Measurement,22.0,17.718615614536386
+0,Scatter Plot,Measurement,26.0,22.81931568738213
+0,Scatter Plot,Measurement,30.0,27.83000216061152
+1,ErrorBarLayer,x_err_left,1.4,8.297872090494327
+1,ErrorBarLayer,x_err_left,5.2,10.255676279723385
+1,ErrorBarLayer,x_err_left,9.0,12.639472437615032
+1,ErrorBarLayer,x_err_left,12.8,12.910737085428854
+1,ErrorBarLayer,x_err_left,16.6,14.999073565745045
+1,ErrorBarLayer,x_err_left,20.4,17.718615614536386
+1,ErrorBarLayer,x_err_left,24.2,22.81931568738213
+1,ErrorBarLayer,x_err_left,28.0,27.83000216061152
+1,ErrorBarLayer,x_err_right,2.38,8.297872090494327
+1,ErrorBarLayer,x_err_right,6.54,10.255676279723385
+1,ErrorBarLayer,x_err_right,10.7,12.639472437615032
+1,ErrorBarLayer,x_err_right,14.86,12.910737085428854
+1,ErrorBarLayer,x_err_right,19.02,14.999073565745045
+1,ErrorBarLayer,x_err_right,23.18,17.718615614536386
+1,ErrorBarLayer,x_err_right,27.34,22.81931568738213
+1,ErrorBarLayer,x_err_right,31.5,27.83000216061152
+1,ErrorBarLayer,y_err_upper,2.0,8.957872090494327
+1,ErrorBarLayer,y_err_upper,6.0,11.035676279723384
+1,ErrorBarLayer,y_err_upper,10.0,13.539472437615032
+1,ErrorBarLayer,y_err_upper,14.0,13.930737085428854
+1,ErrorBarLayer,y_err_upper,18.0,16.139073565745043
+1,ErrorBarLayer,y_err_upper,22.0,18.978615614536388
+1,ErrorBarLayer,y_err_upper,26.0,24.19931568738213
+1,ErrorBarLayer,y_err_upper,30.0,29.33000216061152
+1,ErrorBarLayer,y_err_lower,2.0,7.197872090494327
+1,ErrorBarLayer,y_err_lower,6.0,8.955676279723384
+1,ErrorBarLayer,y_err_lower,10.0,11.139472437615032
+1,ErrorBarLayer,y_err_lower,14.0,11.210737085428853
+1,ErrorBarLayer,y_err_lower,18.0,13.099073565745044
+1,ErrorBarLayer,y_err_lower,22.0,15.618615614536386
+1,ErrorBarLayer,y_err_lower,26.0,20.51931568738213
+1,ErrorBarLayer,y_err_lower,30.0,25.33000216061152
