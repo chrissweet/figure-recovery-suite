@@ -1,0 +1,342 @@
+{
+  "n_artifacts": 20,
+  "summary": {
+    "pass": 17,
+    "fail": 3,
+    "by_type": {
+      "frame_box": {
+        "pass": 0,
+        "fail": 1
+      },
+      "axis_line": {
+        "pass": 0,
+        "fail": 2
+      },
+      "tick_center": {
+        "pass": 12,
+        "fail": 0
+      },
+      "marker_centroid": {
+        "pass": 3,
+        "fail": 0
+      },
+      "line_endpoint": {
+        "pass": 2,
+        "fail": 0
+      }
+    }
+  },
+  "epsilon_px": {
+    "frame_box": 2,
+    "axis_line": 2,
+    "tick_center": 5,
+    "legend_box": 15,
+    "marker_centroid": 3,
+    "line_endpoint": 10,
+    "line_sample": 3,
+    "bar_top": 2,
+    "error_cap": 3
+  },
+  "results": [
+    {
+      "type": "frame_box",
+      "id": "main",
+      "left": 97,
+      "top": 0,
+      "right": 867,
+      "bottom": 469,
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "edges": {
+          "top": 0.031,
+          "bottom": 0.036,
+          "left": 0.038,
+          "right": 1.0
+        },
+        "n_good_edges": 1
+      }
+    },
+    {
+      "type": "axis_line",
+      "id": "y_axis",
+      "orientation": "vertical",
+      "fixed": 97,
+      "extent": [
+        0,
+        469
+      ],
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "axis_dark_fraction": 0.009
+      }
+    },
+    {
+      "type": "axis_line",
+      "id": "x_axis",
+      "orientation": "horizontal",
+      "fixed": 469,
+      "extent": [
+        97,
+        867
+      ],
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "axis_dark_fraction": 0.014
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_10",
+      "axis": "x",
+      "col": 97,
+      "row": 487,
+      "value": 10,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 79
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_15",
+      "axis": "x",
+      "col": 235,
+      "row": 487,
+      "value": 15,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 61
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_20",
+      "axis": "x",
+      "col": 373,
+      "row": 487,
+      "value": 20,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 89
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_25",
+      "axis": "x",
+      "col": 511,
+      "row": 487,
+      "value": 25,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 82
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_30",
+      "axis": "x",
+      "col": 650,
+      "row": 487,
+      "value": 30,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 88
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_35",
+      "axis": "x",
+      "col": 788,
+      "row": 487,
+      "value": 35,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 78
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_0.0",
+      "axis": "y",
+      "col": 67,
+      "row": 469,
+      "value": 0.0,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 48
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_0.2",
+      "axis": "y",
+      "col": 67,
+      "row": 388,
+      "value": 0.2,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 96
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_0.4",
+      "axis": "y",
+      "col": 67,
+      "row": 306,
+      "value": 0.4,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 89
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_0.6000000000000001",
+      "axis": "y",
+      "col": 67,
+      "row": 224,
+      "value": 0.6,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 101
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_0.8",
+      "axis": "y",
+      "col": 67,
+      "row": 142,
+      "value": 0.8,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 114
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_1.0",
+      "axis": "y",
+      "col": 67,
+      "row": 61,
+      "value": 1.0,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "24C_24.0_0.3592",
+      "series": "24C",
+      "x": 24.0,
+      "y": 0.3592,
+      "col": 484,
+      "row": 323,
+      "color": [
+        0,
+        0,
+        255
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 118
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "27C_27.0_0.7078",
+      "series": "27C",
+      "x": 27.0,
+      "y": 0.7078,
+      "col": 567,
+      "row": 180,
+      "color": [
+        0,
+        255,
+        0
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 121
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "30C_30.0_0.6429",
+      "series": "30C",
+      "x": 30.0,
+      "y": 0.6429,
+      "col": 650,
+      "row": 207,
+      "color": [
+        255,
+        0,
+        0
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 109
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Trend Line_left",
+      "series": "Trend Line",
+      "x": 12.958736,
+      "y": 0.0025356586631137823,
+      "col": 179,
+      "row": 468,
+      "color": [
+        0,
+        0,
+        0
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "dark_in_window": 45
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Trend Line_right",
+      "series": "Trend Line",
+      "x": 30.069984,
+      "y": 0.6923698434465915,
+      "col": 652,
+      "row": 186,
+      "color": [
+        0,
+        0,
+        0
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "dark_in_window": 31
+      }
+    }
+  ]
+}
