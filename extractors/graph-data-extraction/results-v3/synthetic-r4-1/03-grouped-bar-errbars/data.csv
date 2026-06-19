@@ -1,0 +1,46 @@
+layer_idx,layer_type,series,x,y
+0,Grouped Column Chart,Baseline,0.7500,41.82
+0,Grouped Column Chart,Baseline,1.7515,44.62
+0,Grouped Column Chart,Baseline,2.7529,48.65
+0,Grouped Column Chart,Baseline,3.7471,50.83
+0,Grouped Column Chart,Baseline,4.7485,53.62
+0,Grouped Column Chart,Tuned,0.9985,57.66
+0,Grouped Column Chart,Tuned,2.0000,62.63
+0,Grouped Column Chart,Tuned,3.0015,66.67
+0,Grouped Column Chart,Tuned,3.9993,69.77
+0,Grouped Column Chart,Tuned,4.9971,73.81
+0,Grouped Column Chart,Tuned+JIT,1.2507,70.70
+0,Grouped Column Chart,Tuned+JIT,2.2485,77.85
+0,Grouped Column Chart,Tuned+JIT,3.2500,81.57
+0,Grouped Column Chart,Tuned+JIT,4.2515,84.68
+0,Grouped Column Chart,Tuned+JIT,5.2493,88.72
+1,ErrorBarLayer,Baseline,0.7500,44.62
+1,ErrorBarLayer,Baseline,0.7500,39.03
+1,ErrorBarLayer,Baseline,1.7515,47.72
+1,ErrorBarLayer,Baseline,1.7515,41.82
+1,ErrorBarLayer,Baseline,2.7529,52.07
+1,ErrorBarLayer,Baseline,2.7529,45.55
+1,ErrorBarLayer,Baseline,3.7471,54.24
+1,ErrorBarLayer,Baseline,3.7471,47.41
+1,ErrorBarLayer,Baseline,4.7485,57.66
+1,ErrorBarLayer,Baseline,4.7485,49.90
+1,ErrorBarLayer,Tuned,0.9985,61.39
+1,ErrorBarLayer,Tuned,0.9985,53.62
+1,ErrorBarLayer,Tuned,2.0000,66.67
+1,ErrorBarLayer,Tuned,2.0000,58.28
+1,ErrorBarLayer,Tuned,3.0015,71.01
+1,ErrorBarLayer,Tuned,3.0015,62.01
+1,ErrorBarLayer,Tuned,3.9993,74.12
+1,ErrorBarLayer,Tuned,3.9993,64.80
+1,ErrorBarLayer,Tuned,4.9971,78.47
+1,ErrorBarLayer,Tuned,4.9971,68.53
+1,ErrorBarLayer,Tuned+JIT,1.2507,75.05
+1,ErrorBarLayer,Tuned+JIT,1.2507,65.42
+1,ErrorBarLayer,Tuned+JIT,2.2485,82.19
+1,ErrorBarLayer,Tuned+JIT,2.2485,72.26
+1,ErrorBarLayer,Tuned+JIT,3.2500,86.54
+1,ErrorBarLayer,Tuned+JIT,3.2500,75.98
+1,ErrorBarLayer,Tuned+JIT,4.2515,89.96
+1,ErrorBarLayer,Tuned+JIT,4.2515,78.78
+1,ErrorBarLayer,Tuned+JIT,5.2493,94.00
+1,ErrorBarLayer,Tuned+JIT,5.2493,82.50

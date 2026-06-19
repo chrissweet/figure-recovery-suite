@@ -1,0 +1,36 @@
+{
+  "chart_id": "01-linear-scatter",
+  "feature_stressed": "baseline / harness sanity",
+  "chart_type": "scatter",
+  "x_scale": "linear",
+  "y_scale": "linear",
+  "x_axis_title": "Time (s)",
+  "y_axis_title": "Concentration (mol/L)",
+  "x_axis_unit": "s",
+  "y_axis_unit": "mol/L",
+  "decimal_separator": ".",
+  "panel_id": null,
+  "chart_title": "Synthetic #01 \u2014 linear scatter",
+  "series_legend": [
+    {
+      "series_id": "A",
+      "color": "C0",
+      "marker_shape": "o",
+      "source_label": "Series A"
+    },
+    {
+      "series_id": "B",
+      "color": "C1",
+      "marker_shape": "s",
+      "source_label": "Series B"
+    },
+    {
+      "series_id": "C",
+      "color": "C2",
+      "marker_shape": "D",
+      "source_label": "Series C"
+    }
+  ],
+  "generator": "/Users/csweet1/Documents/projects/CRS_research/figure-recovery-suite/corpora/synthetic-r4-1/generators/01_linear_scatter.py",
+  "seed": 4242
+}

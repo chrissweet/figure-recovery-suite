@@ -1,0 +1,36 @@
+{
+  "chart_id": "09-open-markers-with-fit",
+  "feature_stressed": "open markers fused with a same-color solid fit curve through every point. \u00a73b per-column thin-run subtraction with paired-edge preservation is the test.",
+  "chart_type": "scatter_with_fit",
+  "x_scale": "linear",
+  "y_scale": "linear",
+  "x_axis_title": "Independent x",
+  "y_axis_title": "Response y",
+  "x_axis_unit": null,
+  "y_axis_unit": null,
+  "decimal_separator": ".",
+  "panel_id": null,
+  "chart_title": "Synthetic #9 \u2014 open circles fused with same-color fit line",
+  "fit_params": {
+    "slope": 1.76143428613806,
+    "intercept": 4.000653383447408
+  },
+  "series_legend": [
+    {
+      "series_id": "Measurement",
+      "color": "#1f77b4",
+      "marker_style": "open_circle",
+      "marker_edge_color": "#1f77b4",
+      "source_label": "Measurement"
+    },
+    {
+      "series_id": "Linear fit",
+      "color": "#1f77b4",
+      "line_style": "solid",
+      "source_label": "Linear fit"
+    }
+  ],
+  "generator": "/Users/csweet1/Documents/projects/CRS_research/figure-recovery-suite/corpora/synthetic-r4-1/generators/09_open_markers_with_fit.py",
+  "seed": 4259,
+  "subtraction_test": "A naive `mask = (gray < 120) & color_match` will fuse every marker with the fit line \u2014 the fit line passes through the marker centroid and connects the top arc to the bottom arc. After \u00a73b column-wise thin-run subtraction with paired-edge preservation, the markers should survive as ring-shaped CCs and the fit line should be removed."
+}

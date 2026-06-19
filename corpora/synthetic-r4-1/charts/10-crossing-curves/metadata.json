@@ -1,0 +1,35 @@
+{
+  "chart_id": "10-crossing-curves",
+  "feature_stressed": "two same-color curves crossing once",
+  "chart_type": "line",
+  "x_scale": "linear",
+  "y_scale": "linear",
+  "x_axis_title": "Independent variable x",
+  "y_axis_title": "Response y",
+  "x_axis_unit": null,
+  "y_axis_unit": null,
+  "decimal_separator": ".",
+  "panel_id": null,
+  "chart_title": "Synthetic #10 \u2014 crossing curves, same color",
+  "series_legend": [
+    {
+      "series_id": "rising",
+      "color": "#1f77b4",
+      "line_style": "solid",
+      "source_label": "Series A (rising)"
+    },
+    {
+      "series_id": "falling",
+      "color": "#1f77b4",
+      "line_style": "solid",
+      "source_label": "Series B (falling)"
+    }
+  ],
+  "generator": "/Users/csweet1/Documents/projects/CRS_research/figure-recovery-suite/corpora/synthetic-r4-1/generators/10_crossing_curves.py",
+  "seed": 4252,
+  "crossing": {
+    "x": 6.2019,
+    "y": 4.8991,
+    "note": "Single intersection. Per-column-median trace from the original \u00a73 recipe will visibly mis-attribute in the ~0.5-unit x neighbourhood of the crossing; trace_with_continuity() (seeded at the leftmost column, tracked by trajectory slope) should follow each curve through."
+  }
+}

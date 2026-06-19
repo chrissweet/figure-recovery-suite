@@ -197,50 +197,43 @@ def resample(pts, xmax, step):
 ```
 Where two series overlap, the median row picks one of them per column — note in the caveats that overlapping segments are approximate. The legend will contaminate columns it covers; see Hazards.
 
-### Curve-crossing failure (added 2026-06-19 after el-94 TDD pass)
+### Curve-crossing failure (added 2026-06-19 after el-94 TDD pass; implementation refined after synthetic-r4-1 chart #10)
 
 Per-column-median is greedy and **fails at curve crossings**: when two same-color curves cross at column c, the column contains two thin runs at different rows and the median collapses both into the wrong y. The matched-frame overlay test on el-94 surfaced this directly — the 30 °C dotted curve trace was *clean* from x = 3 to x = 20 and then *chaotic* from x = 23 to x = 30, where it crosses the dashed 24 °C curve.
 
-Fix: track each curve's row trajectory across columns and prefer the per-column run whose row best matches the trajectory's local slope, falling back to the median only when there is exactly one run.
+**Working implementation: `scripts/trace_curves.py`.** Two functions:
 
-```python
-def trace_with_continuity(mask, x0, x1, top, bot, seed_rows):
-    """Trace N curves simultaneously using row-continuity from seed_rows.
-    seed_rows: list of starting (col, row) per curve at the leftmost column."""
-    curves = [[(s[0], s[1])] for s in seed_rows]
-    last_row = [s[1] for s in seed_rows]
-    for c in range(x0 + 3, x1 - 2):
-        rr = np.where(mask[top:bot, c] > 0)[0]
-        if len(rr) == 0:
-            continue
-        # Cluster contiguous rows into runs; one centroid per run.
-        runs = []
-        cur = [rr[0]]
-        for r in rr[1:]:
-            if r == cur[-1] + 1:
-                cur.append(r)
-            else:
-                runs.append(top + int(np.mean(cur))); cur = [r]
-        runs.append(top + int(np.mean(cur)))
-        # Assign each curve to the nearest available run.
-        used = [False] * len(runs)
-        for i, lr in enumerate(last_row):
-            best, best_i = 999, None
-            for j, run_row in enumerate(runs):
-                if used[j]: continue
-                d = abs(run_row - lr)
-                if d < best:
-                    best, best_i = d, j
-            if best_i is not None and best < 20:
-                used[best_i] = True
-                curves[i].append((col2x(c), row2y(runs[best_i])))
-                last_row[i] = runs[best_i]
-    return curves
-```
+- `trace_per_column_median(mask, …)` — the original §3 trace, kept as a baseline.
+- `trace_with_continuity(mask, …, seeds, slope_window=10, max_step_per_col=30)` — the fix.
 
-`seed_rows` come from the legend swatches (each line style's left endpoint sits next to its label) or from manual eyeballing of the leftmost column where each curve is unambiguous. The cost is one pass with O(N_curves × N_columns) attribution. The win is correct trajectory through crossings.
+The continuity tracker, in plain language:
 
-Validated on el-94 (2026-06-19): the per-column-median trace had visible chaos at x = 23-30; the trajectory-tracked version follows each curve smoothly through the crossing.
+1. **Seed each curve** at a known (col, row) on the leftmost column where the curves are unambiguous (legend swatches give this for free; manual eyeballing of the leftmost data column also works).
+2. **Per column, find runs** (contiguous stretches of mask pixels, one centroid per run).
+3. **Predict each curve's next row** from its last clean trajectory — slope averaged over the trailing `slope_window` non-merged points. Using clean-only slope means the merge zone doesn't corrupt the trajectory.
+4. **If `len(runs) ≥ len(curves)`, solve for the unique pairwise assignment** that minimises total absolute deviation from predictions. For 2 curves this is a 2-permutation pick. The unique-assignment step is the bit the original spec missed: without it, when curves' predictions are close, both pick the same run and the two curves merge for the rest of the trace.
+5. **If `len(runs) < len(curves)`, the curves are visually merged** at this column. Each curve takes the nearest single run, AND the slope window is pinned to pre-merge data so the trajectory survives the merge.
+6. **Per-curve seed-column guard** (added 2026-06-19 after el-94 real-corpus validation). When curves have *different* leftmost columns (e.g., el-94's 24 °C / 27 °C curves begin near col 92 but the 30 °C curve starts at col 116), the trace must not assign pre-seed runs to a curve that hasn't started yet. Track `seed_cols[ci]` per curve and skip prediction/assignment for any curve where `c < seed_cols[ci]`. Without this guard, the late-starting curve picks up runs from the *other* curves at earlier columns and the trajectory is wrong from frame zero. The chart 10 synthetic didn't surface this because both curves share a seed column, x = 0; the el-94 corpus did.
+
+Validated on synthetic-r4-1 chart #10 (two same-color crossing lines, validated 2026-06-19):
+
+| trace | falling mean &#124;Δy&#124; | rising mean &#124;Δy&#124; |
+|---|---|---|
+| per-column-median (original §3) | 1.540 | 1.748 |
+| trace_with_continuity (greedy NN — earlier spec) | 1.047 | 0.023 |
+| **trace_with_continuity (unique pair — current)** | **0.014** | **0.023** |
+
+70× improvement on both curves vs. the naive trace; the unique-pair version is the one the skill ships. Cost: one pass with O(N_curves × N_columns) attribution plus O(N_curves²) per column for the assignment. For 2 curves this is trivial; for larger N use a small Hungarian-algorithm solver. See `scripts/trace_curves.py` for the runnable implementation and a `run_test(chart_dir)` harness that compares both algorithms against ground truth.
+
+Validated on real corpus el-94 (three fit curves, two of which cross around x ≈ 23-30, validated 2026-06-19):
+
+| curve | v2 (per-column-median + greedy NN) mean &#124;Δy&#124; | v3 (trace_with_continuity, unique pair + seed-col guard) mean &#124;Δy&#124; |
+|---|---|---|
+| 24 °C dashed | 0.00029 | 0.00030 |
+| 27 °C solid | 0.00022 | 0.00023 |
+| 30 °C dotted | 0.00053 | 0.00095 |
+
+Means are roughly comparable, but v3 covers the entire x range cleanly (504 to 564 traced points per curve) including the crossing region the audit flagged as "chaotic" on v2. The overlay at `extractors/graph-data-extraction/results-v3/aedes-aegypti-2014/el-94/trace_v3_overlay.png` shows the qualitative difference: v2 mis-attributes around x = 25-30 where 30 °C crosses 24 °C; v3 follows each curve through cleanly.
 
 ## 3b. Subtracting a fit curve before extracting markers
 

@@ -51,6 +51,20 @@ DEFAULT_TOLS = {
     "el-88":    {"x_tol": 1.0,  "y_tol": 0.03},
     "el-94":    {"x_tol": 1.0,  "y_tol": 0.003},
     "el-100":   {"x_tol": 0.03, "y_tol": 1.0},
+    # synthetic-r4-1 — per-chart tolerances picked from each chart's y range
+    "01-linear-scatter":      {"x_tol": 0.3, "y_tol": 0.5},
+    "02-simple-bar":          {"x_tol": 0.5, "y_tol": 0.5},
+    # Categorical-x charts: extractor's group index (0 vs 1) is convention-
+    # dependent. Widen x_tol to 1.5 to accept either convention as a TP if
+    # y matches. Anything wider lets adjacent groups masquerade as matches.
+    "03-grouped-bar-errbars": {"x_tol": 1.5, "y_tol": 2.0},
+    "04-log-y-line":          {"x_tol": 0.5, "y_tol": 0.5},
+    "05-stacked-bar":         {"x_tol": 1.5, "y_tol": 2.0},
+    "06-scatter-asym-errbars":{"x_tol": 1.0, "y_tol": 1.0},
+    "07-dual-y-axes":         {"x_tol": 0.3, "y_tol": 0.5},
+    "08-percent-scinot-ticks":{"x_tol": 0.05, "y_tol": 100000.0},
+    "09-open-markers-with-fit":{"x_tol": 0.3, "y_tol": 0.5},
+    "10-crossing-curves":     {"x_tol": 0.3, "y_tol": 0.3},
 }
 
 X_CANDIDATES = ["x", "time_days", "temperature_C", "age_days", "parity_rate"]
@@ -76,11 +90,20 @@ def find_col(header, candidates):
     return None
 
 
+def _layer_bucket(layer):
+    """Route a layer_type string into one of three buckets."""
+    if "Line" in layer or "Spline" in layer:
+        return "curves"
+    if "Error" in layer or "ErrorBar" in layer or "errbar" in layer.lower():
+        return "errbars"
+    return "points"
+
+
 def load_gt_split(gt_path):
-    """Split GT rows by layer type into 'point_like' (scatter/bar) and
-    'curve_like' (line/spline). Returns dict series -> list of dicts."""
-    point_like = {}
-    curve_like = {}
+    """Split GT rows by layer type into three buckets: points (scatter / bar
+    tops), curves (line / spline / fit), and errbars (ErrorBarLayer rows).
+    Returns (points, curves, errbars) — each a dict series -> list of dicts."""
+    points = {}; curves = {}; errbars = {}
     with open(gt_path) as f:
         for r in csv.DictReader(f):
             try:
@@ -91,26 +114,27 @@ def load_gt_split(gt_path):
             row["_x"] = x; row["_y"] = y
             layer = (r.get("layer_type") or "").strip()
             series = (r.get("series") or "default").strip()
-            target = curve_like if ("Line" in layer or "Spline" in layer) else point_like
-            target.setdefault(canon(series), []).append(row)
-    for d in (point_like, curve_like):
+            bucket = _layer_bucket(layer)
+            d = {"points": points, "curves": curves, "errbars": errbars}[bucket]
+            d.setdefault(canon(series), []).append(row)
+    for d in (points, curves, errbars):
         for k in d:
             d[k].sort(key=lambda rr: rr["_x"])
-    return point_like, curve_like
+    return points, curves, errbars
 
 
 def load_extractor_main(data_path):
-    """Read data.csv. Returns (point_like, curve_like) — two dicts mapping
+    """Read data.csv. Returns (points, curves, errbars) — three dicts mapping
     series -> list of rows. Layered v3 schema (layer_idx, layer_type, …)
-    routes Line Graph / Spline Chart rows to curve_like; everything else
-    (or unlayered v1/v2 schemas) goes to point_like."""
-    point_like, curve_like = {}, {}
+    routes Line Graph / Spline Chart rows to curves, ErrorBarLayer rows to
+    errbars; everything else (or unlayered v1/v2 schemas) goes to points."""
+    points, curves, errbars = {}, {}, {}
     if not os.path.exists(data_path):
-        return point_like, curve_like
+        return points, curves, errbars
     with open(data_path) as f:
         rows = list(csv.DictReader(f))
     if not rows:
-        return point_like, curve_like
+        return points, curves, errbars
     header = rows[0].keys()
     xc = find_col(header, X_CANDIDATES)
     yc = find_col(header, Y_CANDIDATES)
@@ -120,7 +144,7 @@ def load_extractor_main(data_path):
     hi_c = find_col(header, ERR_HI_CANDIDATES)
     sym_c = find_col(header, ERR_SYM_CANDIDATES)
     if xc is None or yc is None:
-        return point_like, curve_like
+        return points, curves, errbars
     for r in rows:
         try:
             x = float(r[xc]); y = float(r[yc])
@@ -142,12 +166,13 @@ def load_extractor_main(data_path):
             except ValueError: pass
         # Route by layer_type when present.
         layer = (r.get(lc) or "") if lc else ""
-        target = curve_like if ("Line" in layer or "Spline" in layer) else point_like
-        target.setdefault(s, []).append(row)
-    for d in (point_like, curve_like):
+        bucket = _layer_bucket(layer)
+        d = {"points": points, "curves": curves, "errbars": errbars}[bucket]
+        d.setdefault(s, []).append(row)
+    for d in (points, curves, errbars):
         for s in d:
             d[s].sort(key=lambda rr: rr["_x"])
-    return point_like, curve_like
+    return points, curves, errbars
 
 
 def load_extractor_curves(chart_dir):
@@ -194,12 +219,23 @@ def map_series(mine_keys, gt_keys, chart_id):
                 if mk in order and order.index(mk) < len(gt_sorted)}
     if chart_id == "el-75":
         return None  # caller pools all points
+    # Pass 1: exact match wins outright.
     mapping = {}
+    used_gt = set()
     for mk in mine_keys:
-        for gk in gt_keys:
-            if mk == gk or mk in gk or gk in mk:
-                mapping[mk] = gk
-                break
+        if mk in gt_keys:
+            mapping[mk] = mk
+            used_gt.add(mk)
+    # Pass 2: substring match, preferring longer GT keys (so "tunedjit"
+    # picks "tunedjit" over "tuned"). Skip GT keys already claimed.
+    for mk in mine_keys:
+        if mk in mapping: continue
+        candidates = [gk for gk in gt_keys
+                       if gk not in used_gt and (mk in gk or gk in mk)]
+        if candidates:
+            gk = max(candidates, key=len)
+            mapping[mk] = gk
+            used_gt.add(gk)
     return mapping
 
 
@@ -355,13 +391,45 @@ def score_curves_layer(mine_curves, gt_curves, x_tol, y_tol):
             "gt_n": tot_gt, "mine_n": tot_mine, "by_series": by_series}
 
 
-def score_errbars_layer(mine, gt, chart_id, x_tol, y_tol):
-    """For each GT row carrying error_y_plus / error_y_minus, check that the
-    matched extractor row has y_lo / y_hi within y_tol of GT's expected lo/hi.
-    One TP per row when BOTH bars match. One FN when extractor row is missing
-    error fields or the values are outside tolerance."""
+def score_errbars_layer(mine_pt, gt_pt, mine_eb, gt_eb,
+                         chart_id, x_tol, y_tol):
+    """Two schemas supported:
+
+    A) **Legacy y_lo/y_hi columns** on point-like rows (aedes corpus). For
+       each GT point-like row with error_y_plus/error_y_minus, check that
+       the matched extractor row has y_lo / y_hi within y_tol of GT's
+       expected lo/hi. One TP per row when BOTH bars match.
+
+    B) **ErrorBarLayer rows** (synthetic corpus). Each cap is its own row at
+       its data-space (x, y). Pool GT errbar rows and extractor errbar
+       rows across all series (cap-direction names don't carry meaning to
+       the pixel test) and pair-match by (x, y) within tolerance.
+
+    The result aggregates TP/FN/FP from whichever schema fired (or both)."""
+
+    tot_tp = tot_fn = tot_fp = 0
+    tot_gt = tot_mine = 0
+    by_series = {}
+
+    # --- Schema B: ErrorBarLayer rows ---
+    gt_eb_pts = []
+    for vs in gt_eb.values():
+        for r in vs: gt_eb_pts.append((r["_x"], r["_y"]))
+    mine_eb_pts = []
+    for vs in mine_eb.values():
+        for r in vs: mine_eb_pts.append((r["_x"], r["_y"]))
+    if gt_eb_pts or mine_eb_pts:
+        tp, fn, fp = pair_points(sorted(mine_eb_pts), sorted(gt_eb_pts),
+                                  x_tol, y_tol)
+        tot_tp += tp; tot_fn += fn; tot_fp += fp
+        tot_gt += len(gt_eb_pts); tot_mine += len(mine_eb_pts)
+        by_series["errbar_caps_pooled"] = {
+            "schema": "ErrorBarLayer", "tp": tp, "fn": fn, "fp": fp,
+            "gt_n": len(gt_eb_pts), "mine_n": len(mine_eb_pts)}
+
+    # --- Schema A: y_lo/y_hi columns on point rows ---
     gt_with_err = []
-    for series, rows in gt.items():
+    for series, rows in gt_pt.items():
         for r in rows:
             ep = r.get("error_y_plus") or ""
             em = r.get("error_y_minus") or ""
@@ -372,41 +440,31 @@ def score_errbars_layer(mine, gt, chart_id, x_tol, y_tol):
             if ep_v <= 0 and em_v <= 0:
                 continue
             gt_with_err.append((series, r["_x"], r["_y"], ep_v, em_v))
-    if not gt_with_err:
-        return {"tp": 0, "fn": 0, "fp": 0, "gt_n": 0, "mine_n": 0,
-                "by_series": {}}
-    mapping = map_series(mine, gt, chart_id) or {}
-    # Build inverse mapping for lookup
-    gt_to_mine = {gk: mk for mk, gk in mapping.items()}
-    tot_tp = tot_fn = 0
-    tot_gt = len(gt_with_err); tot_mine = 0
-    by_series = {}
-    for gseries, gx, gy, ep, em in gt_with_err:
-        mk = gt_to_mine.get(gseries)
-        matched = False
-        if mk and mk in mine:
-            for r in mine[mk]:
-                if abs(r["_x"] - gx) > x_tol:
-                    continue
-                if abs(r["_y"] - gy) > y_tol:
-                    continue
-                lo = r.get("_y_lo"); hi = r.get("_y_hi")
-                if lo is None or hi is None:
+    if gt_with_err:
+        mapping = map_series(mine_pt, gt_pt, chart_id) or {}
+        gt_to_mine = {gk: mk for mk, gk in mapping.items()}
+        for gseries, gx, gy, ep, em in gt_with_err:
+            mk = gt_to_mine.get(gseries)
+            matched = False
+            if mk and mk in mine_pt:
+                for r in mine_pt[mk]:
+                    if abs(r["_x"] - gx) > x_tol: continue
+                    if abs(r["_y"] - gy) > y_tol: continue
+                    lo = r.get("_y_lo"); hi = r.get("_y_hi")
+                    if lo is None or hi is None: break
+                    exp_hi = gy + ep; exp_lo = gy - em
+                    if abs(hi - exp_hi) <= y_tol and abs(lo - exp_lo) <= y_tol:
+                        matched = True
+                    tot_mine += 1
                     break
-                exp_hi = gy + ep
-                exp_lo = gy - em
-                if abs(hi - exp_hi) <= y_tol and abs(lo - exp_lo) <= y_tol:
-                    matched = True
-                tot_mine += 1
-                break
-        if matched:
-            tot_tp += 1
-        else:
-            tot_fn += 1
-        by_series.setdefault(gseries, {"tp": 0, "fn": 0, "fp": 0})
-        by_series[gseries]["tp" if matched else "fn"] += 1
-        by_series[gseries]["fp"] = 0
-    return {"tp": tot_tp, "fn": tot_fn, "fp": 0,
+            tot_tp += int(matched)
+            tot_fn += int(not matched)
+            tot_gt += 1
+            by_series.setdefault(gseries, {"schema": "y_lo/y_hi",
+                                            "tp": 0, "fn": 0, "fp": 0})
+            by_series[gseries]["tp" if matched else "fn"] += 1
+
+    return {"tp": tot_tp, "fn": tot_fn, "fp": tot_fp,
             "gt_n": tot_gt, "mine_n": tot_mine, "by_series": by_series}
 
 
@@ -432,8 +490,8 @@ def score_chart(corpus_id, extractor, chart_id, tols, results_dir):
         return {"error": f"missing extractor dir: {extr_dir}"}
     x_tol = tols.get(chart_id, {"x_tol": 1.0, "y_tol": 0.05})["x_tol"]
     y_tol = tols.get(chart_id, {"x_tol": 1.0, "y_tol": 0.05})["y_tol"]
-    gt_pt, gt_cv = load_gt_split(gt_path)
-    mine_pt, mine_cv_layered = load_extractor_main(data_path)
+    gt_pt, gt_cv, gt_eb = load_gt_split(gt_path)
+    mine_pt, mine_cv_layered, mine_eb = load_extractor_main(data_path)
     mine_cv_sidecar = load_extractor_curves(extr_dir)
     # Merge layered curves (from data.csv layer 1) with side-car curves.
     # Side-cars dominate if both define the same series.
@@ -450,7 +508,8 @@ def score_chart(corpus_id, extractor, chart_id, tols, results_dir):
         norm_curves[s].sort()
     scatter = score_points_layer(mine_pt, gt_pt, chart_id, x_tol, y_tol)
     curves = score_curves_layer(norm_curves, gt_cv, x_tol, y_tol)
-    errbars = score_errbars_layer(mine_pt, gt_pt, chart_id, x_tol, y_tol)
+    errbars = score_errbars_layer(mine_pt, gt_pt, mine_eb, gt_eb,
+                                    chart_id, x_tol, y_tol)
     return {
         "x_tol": x_tol, "y_tol": y_tol,
         "scatter": {"summary": f1_block(scatter["tp"], scatter["fn"],

@@ -1,0 +1,59 @@
+{
+  "image": "image.png",
+  "image_size": {
+    "width": 700,
+    "height": 450
+  },
+  "plot_frame_box": {
+    "offset": {
+      "x": 62,
+      "y": 37
+    },
+    "size": {
+      "width": 623,
+      "height": 355
+    },
+    "left": 62,
+    "top": 37,
+    "right": 685,
+    "bottom": 392,
+    "description": "Plot region in image pixel coords. Derived directly from matplotlib's axes bbox."
+  },
+  "data_range": {
+    "x_min": -0.2,
+    "x_max": 10.2,
+    "y_min": 0.0,
+    "y_max": 10.0
+  },
+  "axis_calibration": {
+    "x_axis": {
+      "scale": "linear",
+      "formula": "value = 0.016691\u00b7pixel + -1.233208",
+      "m": 0.01669081,
+      "b": -1.23320777,
+      "inverse": "pixel = (value - -1.233208) / 0.016691",
+      "unit_label": "pixels per linear x-unit"
+    },
+    "y_axis": {
+      "scale": "linear",
+      "formula": "value = -0.028218\u00b7pixel + 11.053457",
+      "m": -0.02821759,
+      "b": 11.05345665,
+      "inverse": "pixel = (value - 11.053457) / -0.028218",
+      "unit_label": "pixels per linear y-unit"
+    }
+  },
+  "detection_internals": {
+    "y_axis_col_detected": 62,
+    "x_axis_row_detected": 392,
+    "source": "synthetic (matplotlib transforms)"
+  },
+  "data_extent_box": {
+    "left": 62,
+    "right": 685,
+    "top": 37,
+    "bottom": 392,
+    "width": 623,
+    "height": 355
+  }
+}

@@ -1,0 +1,321 @@
+{
+  "n_artifacts": 17,
+  "summary": {
+    "pass": 17,
+    "fail": 0,
+    "by_type": {
+      "frame_box": {
+        "pass": 1,
+        "fail": 0
+      },
+      "axis_line": {
+        "pass": 2,
+        "fail": 0
+      },
+      "tick_center": {
+        "pass": 8,
+        "fail": 0
+      },
+      "line_endpoint": {
+        "pass": 2,
+        "fail": 0
+      },
+      "line_sample": {
+        "pass": 4,
+        "fail": 0
+      }
+    }
+  },
+  "epsilon_px": {
+    "frame_box": 2,
+    "axis_line": 2,
+    "tick_center": 5,
+    "legend_box": 15,
+    "marker_centroid": 3,
+    "line_endpoint": 10,
+    "line_sample": 3,
+    "bar_top": 2,
+    "error_cap": 3
+  },
+  "results": [
+    {
+      "type": "frame_box",
+      "id": "main",
+      "left": 66,
+      "top": 37,
+      "right": 715,
+      "bottom": 392,
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "edges": {
+          "top": 1.0,
+          "bottom": 1.0,
+          "left": 1.0,
+          "right": 1.0
+        },
+        "n_good_edges": 4
+      }
+    },
+    {
+      "type": "axis_line",
+      "id": "y_axis",
+      "orientation": "vertical",
+      "fixed": 66,
+      "extent": [
+        37,
+        392
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "axis_dark_fraction": 1.0
+      }
+    },
+    {
+      "type": "axis_line",
+      "id": "x_axis",
+      "orientation": "horizontal",
+      "fixed": 392,
+      "extent": [
+        66,
+        715
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "axis_dark_fraction": 1.0
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_0.0",
+      "axis": "x",
+      "col": 66,
+      "row": 410,
+      "value": 0.0,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 79
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_0.2",
+      "axis": "x",
+      "col": 196,
+      "row": 410,
+      "value": 0.2,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 96
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_0.4",
+      "axis": "x",
+      "col": 325,
+      "row": 410,
+      "value": 0.4,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 120
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_0.6000000000000001",
+      "axis": "x",
+      "col": 455,
+      "row": 410,
+      "value": 0.6,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 112
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_0.8",
+      "axis": "x",
+      "col": 585,
+      "row": 410,
+      "value": 0.8,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 94
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_1.0",
+      "axis": "x",
+      "col": 715,
+      "row": 410,
+      "value": 1.0,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 90
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_0.0",
+      "axis": "y",
+      "col": 36,
+      "row": 391,
+      "value": 0.0,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 27
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_10000000.0",
+      "axis": "y",
+      "col": 36,
+      "row": 36,
+      "value": 10000000.0,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 24
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Throughput_left",
+      "series": "Throughput",
+      "x": 0.0517,
+      "y": 1509860.0,
+      "col": 99,
+      "row": 338,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 75,
+        "dark": 52,
+        "colored": 75
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Throughput_right",
+      "series": "Throughput",
+      "x": 0.951,
+      "y": 8605630.0,
+      "col": 683,
+      "row": 86,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 75,
+        "dark": 52,
+        "colored": 75
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Throughput_mid_1",
+      "series": "Throughput",
+      "x": 0.1903,
+      "y": 2098590.0,
+      "col": 189,
+      "row": 317,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 49,
+        "dark": 45,
+        "colored": 49
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Throughput_mid_2",
+      "series": "Throughput",
+      "x": 0.3971,
+      "y": 3625350.0,
+      "col": 323,
+      "row": 263,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 49,
+        "dark": 45,
+        "colored": 49
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Throughput_mid_3",
+      "series": "Throughput",
+      "x": 0.6049,
+      "y": 5180280.0,
+      "col": 458,
+      "row": 208,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 49,
+        "dark": 45,
+        "colored": 49
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Throughput_mid_4",
+      "series": "Throughput",
+      "x": 0.8128,
+      "y": 7115490.0,
+      "col": 593,
+      "row": 139,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 49,
+        "dark": 46,
+        "colored": 49
+      }
+    }
+  ]
+}

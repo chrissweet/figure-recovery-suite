@@ -114,6 +114,20 @@ def col2x(c): return 10**(ax_x[0]*c + ax_x[1])
 
 Check by confirming midpoints land where expected (e.g. the pixel halfway between the 1 and 100 ticks should map near 10).
 
+**Record the scale in `calibration.json` (added 2026-06-19 after synthetic-r4-1 chart #4 round-trip).** The `axis_calibration.{x,y}_axis` block must carry an explicit `scale` field — `"linear"` or `"log10"` — so downstream consumers (scorer, verifier, replot driver) know which formula to use. The `write_calibration.py` script accepts `x_scale=` / `y_scale=` kwargs for exactly this purpose:
+
+```python
+from write_calibration import write_calibration
+write_calibration(image_path, out_path,
+                  x_axis=(mx, bx), y_axis=(my, by),
+                  x_data_range=(1, 1000), y_data_range=(0, 100),
+                  x_scale="log10",            # <-- new
+                  y_scale="linear",
+                  ...)
+```
+
+Without the `scale` field, a calibration written from a log-axis fit (`m, b` in log space) will be MISREAD by every existing consumer as linear — producing a 30-100 %-per-tick misread on every value. The synthetic-r4-1 chart #4 (validated 2026-06-19) catches this with the per-element verifier: an axis predicate that respects `scale` passes, one that doesn't fails 0/4 on line endpoints. Schema back-compat: missing `scale` defaults to `"linear"`, so the aedes-aegypti-2014 corpus (written before this field existed) continues to work.
+
 ## 7. Multi-panel figures
 
 `group(vcols)` returning four x-values means two side-by-side panels: panel A `[x0,x1]`, panel B `[x2,x3]`. Calibrate and extract each panel independently — they often share the y-axis but have different x-ranges (e.g. an L2 panel 0-250 and an L-infinity panel 0-15). Detect each panel's own x ticks within its own column span.

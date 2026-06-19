@@ -1,0 +1,62 @@
+{
+  "chart_id": "08-percent-scinot-ticks",
+  "feature_stressed": "percent x-axis ticks (\"20%\", \"40%\", \u2026) + scientific-notation y-axis with an offset label (e.g. \"1e7\" above the y axis).",
+  "chart_type": "line",
+  "x_scale": "linear",
+  "y_scale": "linear",
+  "x_axis_title": "Saturation fraction",
+  "y_axis_title": "Photon yield (cps)",
+  "x_axis_unit": "%",
+  "y_axis_unit": "cps",
+  "decimal_separator": ".",
+  "panel_id": null,
+  "chart_title": "Synthetic #8 \u2014 percent x ticks + sci-notation y ticks",
+  "series_legend": [
+    {
+      "series_id": "Throughput",
+      "color": "#1f77b4",
+      "marker_style": "filled_circle",
+      "line_style": "solid",
+      "source_label": "Throughput"
+    }
+  ],
+  "generator": "/Users/csweet1/Documents/projects/CRS_research/figure-recovery-suite/corpora/synthetic-r4-1/generators/08_percent_scinot_ticks.py",
+  "seed": 4258,
+  "tick_test": {
+    "x_ticks_data": [
+      0.0,
+      0.2,
+      0.4,
+      0.6000000000000001,
+      0.8,
+      1.0
+    ],
+    "x_tick_labels_rendered": [
+      "0%",
+      "20%",
+      "40%",
+      "60%",
+      "80%",
+      "100%"
+    ],
+    "x_label_parse": "Strip trailing '%' and divide by 100 to recover data value, OR (if x_axis_unit is '%') leave the value as-is.",
+    "y_ticks_data": [
+      0.0,
+      2000000.0,
+      4000000.0,
+      6000000.0,
+      8000000.0,
+      10000000.0
+    ],
+    "y_tick_labels_rendered": [
+      "0.0",
+      "0.2",
+      "0.4",
+      "0.6",
+      "0.8",
+      "1.0"
+    ],
+    "y_offset_text": "1e7",
+    "y_label_parse": "Tick labels are plain numbers (e.g. \"2\", \"4\", \u2026) but the y-axis carries an offset label such as \"1e6\" or \"1e7\" near the top of the axis; the actual value at a tick is `label_value \u00d7 parse(offset)`."
+  }
+}

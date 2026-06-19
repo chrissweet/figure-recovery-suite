@@ -1,0 +1,38 @@
+{
+  "chart_id": "07-dual-y-axes",
+  "feature_stressed": "dual y-axes (twin axes). Each series binds to a specific axis; mis-assignment produces wildly wrong numbers.",
+  "chart_type": "dual_y_line",
+  "x_scale": "linear",
+  "y_scale_left": "linear",
+  "y_scale_right": "linear",
+  "x_axis_title": "Time (min)",
+  "y_axis_title_left": "Drive current (A)",
+  "y_axis_title_right": "Cell voltage (V)",
+  "x_axis_unit": "min",
+  "y_axis_unit_left": "A",
+  "y_axis_unit_right": "V",
+  "decimal_separator": ".",
+  "panel_id": null,
+  "chart_title": "Synthetic #7 \u2014 dual y-axes",
+  "series_legend": [
+    {
+      "series_id": "Drive current (A)",
+      "color": "#1f77b4",
+      "marker_style": "filled_circle",
+      "line_style": "solid",
+      "axis": "left",
+      "source_label": "Drive current (A)"
+    },
+    {
+      "series_id": "Cell voltage (V)",
+      "color": "#d62728",
+      "marker_style": "filled_square",
+      "line_style": "dashed",
+      "axis": "right",
+      "source_label": "Cell voltage (V)"
+    }
+  ],
+  "generator": "/Users/csweet1/Documents/projects/CRS_research/figure-recovery-suite/corpora/synthetic-r4-1/generators/07_dual_y_axes.py",
+  "seed": 4257,
+  "axis_assignment_test": "Each series' (x, y) must be calibrated with the correct y axis (left for current, right for voltage). The legend marker colors match the axis tick label colors, which is the primary signal for the assignment."
+}

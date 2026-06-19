@@ -1,0 +1,52 @@
+{
+  "chart_id": "03-grouped-bar-errbars",
+  "feature_stressed": "grouped bars (multi-bar-per-x position) + asymmetric error caps. Directly mirrors the el-62 / el-80 verifier failures.",
+  "chart_type": "grouped_bar",
+  "x_scale": "linear",
+  "y_scale": "linear",
+  "x_axis_title": "Benchmark window",
+  "y_axis_title": "Throughput (kops/s)",
+  "x_axis_unit": null,
+  "y_axis_unit": "kops/s",
+  "decimal_separator": ".",
+  "panel_id": null,
+  "chart_title": "Synthetic #3 \u2014 grouped bars, asymmetric error bars",
+  "x_categories": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5"
+  ],
+  "bar_width": 0.25,
+  "n_series_per_group": 3,
+  "series_offsets": [
+    -0.25,
+    0.0,
+    0.25
+  ],
+  "series_legend": [
+    {
+      "series_id": "Baseline",
+      "color": "#1f77b4",
+      "fill_style": "solid",
+      "source_label": "Baseline"
+    },
+    {
+      "series_id": "Tuned",
+      "color": "#ff7f0e",
+      "fill_style": "solid",
+      "source_label": "Tuned"
+    },
+    {
+      "series_id": "Tuned+JIT",
+      "color": "#2ca02c",
+      "fill_style": "solid",
+      "source_label": "Tuned+JIT"
+    }
+  ],
+  "generator": "/Users/csweet1/Documents/projects/CRS_research/figure-recovery-suite/corpora/synthetic-r4-1/generators/03_grouped_bar_errbars.py",
+  "seed": 4254,
+  "bar_top_test": "For each (bar_center_x, value) in GT, col = (bar_center_x \u2212 bx) / mx must land within \u03b5 of the topmost stroke row inside the bar's column span. If the extractor uses col = (group_index \u2212 bx) / mx instead, ALL three series collapse to the same column at each group's center, and the predicate will pick whichever bar happens to be at that column. This is the el-62/el-80 failure mode.",
+  "error_cap_test": "Each upper cap should be at row = (value + yerr_upper \u2212 by) / my centered at the bar's column. Lower caps mirror at (value \u2212 yerr_lower \u2212 by) / my. Cap width \u2248 4 px (capsize=4)."
+}

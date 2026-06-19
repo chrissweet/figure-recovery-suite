@@ -1,0 +1,50 @@
+{
+  "chart_id": "05-stacked-bar",
+  "feature_stressed": "stacked bar segment boundaries. Extractor must walk each bar column and detect color changes to recover per-segment values.",
+  "chart_type": "stacked_bar",
+  "x_scale": "linear",
+  "y_scale": "linear",
+  "x_axis_title": "Service",
+  "y_axis_title": "Utilisation (% of node)",
+  "x_axis_unit": "% of node",
+  "y_axis_unit": "%",
+  "decimal_separator": ".",
+  "panel_id": null,
+  "chart_title": "Synthetic #5 \u2014 stacked bars",
+  "x_categories": [
+    "Web",
+    "API",
+    "Worker",
+    "Cron",
+    "DB"
+  ],
+  "bar_width": 0.6,
+  "series_order_bottom_to_top": [
+    "CPU",
+    "Memory",
+    "IO Wait"
+  ],
+  "series_legend": [
+    {
+      "series_id": "CPU",
+      "color": "#1f77b4",
+      "fill_style": "solid",
+      "source_label": "CPU"
+    },
+    {
+      "series_id": "Memory",
+      "color": "#ff7f0e",
+      "fill_style": "solid",
+      "source_label": "Memory"
+    },
+    {
+      "series_id": "IO Wait",
+      "color": "#2ca02c",
+      "fill_style": "solid",
+      "source_label": "IO Wait"
+    }
+  ],
+  "generator": "/Users/csweet1/Documents/projects/CRS_research/figure-recovery-suite/corpora/synthetic-r4-1/generators/05_stacked_bar.py",
+  "seed": 4255,
+  "boundary_test": "For each x and each segment k, the cumulative_top in GT layer 1 should match the row of the color-change boundary at that column (within \u03b5). Per-segment values are the differences."
+}
