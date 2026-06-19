@@ -128,7 +128,27 @@ For error bars whose lower half is occluded by the bar fill in a bar chart, see 
 
 ## 2b. Grayscale-shape scatter (no color cue)
 
-Series distinguished only by marker shape. The classifier discriminates by CC area and density on the black-pixel mask. The legend usually shows three shape glyphs — *filled black disk*, *filled gray square*, *outlined diamond* — but the actual chart-area rendering of "diamond" varies by chart family: el-88 (validated 2026-06-19) draws diamonds as a thin black outline around a **light-gray fill** (gray ≈ 205–230), not a hollow white interior. The classifier still works because it analyses the black-mask CC's density (filled disk ≈ 0.8, outline-only ≈ 0.3 for either hollow or gray-filled interior), but the descriptive label "open" is not literally accurate everywhere — pixel-probe one marker before tuning thresholds.
+Series distinguished only by marker shape. The classifier discriminates by CC area and density on the black-pixel mask. The legend usually shows three shape glyphs — *filled black disk*, *filled gray square*, *outlined diamond* — but the actual chart-area rendering of "diamond" varies by chart family.
+
+**Pixel-probe discipline (mandatory, added 2026-06-19, generalised after el-94 TDD pass):** before tuning any threshold for a grayscale-shape chart, sample the actual pixel content at one known marker position and read off the gray values. Two charts in the same corpus may render "diamond" differently:
+
+| chart | 30 °C marker rendering | source pixel values |
+|---|---|---|
+| el-88 | thin black outline around a **light-gray fill** | outline gray ≈ 25-75, interior gray ≈ 205-230 |
+| el-94 | thin black outline around a **white interior** (truly "open") | outline gray ≈ 25-75, interior gray ≈ 255 |
+
+Same legend symbol (◇), two different pixel realities. The CC-density classifier on the black mask works for either case because the outline density is similar (≈ 0.3), but threshold tuning for the *interior* (`mid = (gray >= 60) & (gray <= 210)`) succeeds on el-88 and fails on el-94. Pixel-probe first; assume nothing from the legend symbol.
+
+```python
+# Probe one marker by computing its predicted pixel from data.csv, then read.
+import cv2
+img = cv2.imread('image.png')
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+# data row: 30°C at (40, 0.15), calibration col=662 row=488
+print(gray[481:495, 655:669])    # 14x14 around the marker
+```
+
+If the interior pixel is white (≥230) you have a hollow diamond; if it's light gray (~200-230) you have a filled diamond; in either case the CC-density classifier handles it but the `mid` mask thresholds need to match.
 
 ```python
 # 24°C: solid black disk (gray < 50), area ~80 after no erosion
@@ -176,6 +196,51 @@ def resample(pts, xmax, step):
     return out
 ```
 Where two series overlap, the median row picks one of them per column — note in the caveats that overlapping segments are approximate. The legend will contaminate columns it covers; see Hazards.
+
+### Curve-crossing failure (added 2026-06-19 after el-94 TDD pass)
+
+Per-column-median is greedy and **fails at curve crossings**: when two same-color curves cross at column c, the column contains two thin runs at different rows and the median collapses both into the wrong y. The matched-frame overlay test on el-94 surfaced this directly — the 30 °C dotted curve trace was *clean* from x = 3 to x = 20 and then *chaotic* from x = 23 to x = 30, where it crosses the dashed 24 °C curve.
+
+Fix: track each curve's row trajectory across columns and prefer the per-column run whose row best matches the trajectory's local slope, falling back to the median only when there is exactly one run.
+
+```python
+def trace_with_continuity(mask, x0, x1, top, bot, seed_rows):
+    """Trace N curves simultaneously using row-continuity from seed_rows.
+    seed_rows: list of starting (col, row) per curve at the leftmost column."""
+    curves = [[(s[0], s[1])] for s in seed_rows]
+    last_row = [s[1] for s in seed_rows]
+    for c in range(x0 + 3, x1 - 2):
+        rr = np.where(mask[top:bot, c] > 0)[0]
+        if len(rr) == 0:
+            continue
+        # Cluster contiguous rows into runs; one centroid per run.
+        runs = []
+        cur = [rr[0]]
+        for r in rr[1:]:
+            if r == cur[-1] + 1:
+                cur.append(r)
+            else:
+                runs.append(top + int(np.mean(cur))); cur = [r]
+        runs.append(top + int(np.mean(cur)))
+        # Assign each curve to the nearest available run.
+        used = [False] * len(runs)
+        for i, lr in enumerate(last_row):
+            best, best_i = 999, None
+            for j, run_row in enumerate(runs):
+                if used[j]: continue
+                d = abs(run_row - lr)
+                if d < best:
+                    best, best_i = d, j
+            if best_i is not None and best < 20:
+                used[best_i] = True
+                curves[i].append((col2x(c), row2y(runs[best_i])))
+                last_row[i] = runs[best_i]
+    return curves
+```
+
+`seed_rows` come from the legend swatches (each line style's left endpoint sits next to its label) or from manual eyeballing of the leftmost column where each curve is unambiguous. The cost is one pass with O(N_curves × N_columns) attribution. The win is correct trajectory through crossings.
+
+Validated on el-94 (2026-06-19): the per-column-median trace had visible chaos at x = 23-30; the trajectory-tracked version follows each curve smoothly through the crossing.
 
 ## 3b. Subtracting a fit curve before extracting markers
 
