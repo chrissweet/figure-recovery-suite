@@ -73,7 +73,7 @@ Independently of the GT scoring, the per-element verifier checks whether each de
 
 \
 
-![el-60-a matched-frame overlay](../extractors/graph-data-extraction/results-v3/aedes-aegypti-2014/el-60-a/overlay.png){width=80%}
+![el-60-a — original (left) vs matched-frame overlay (right)](figs/el-60-a_compare.png){width=100%}
 
 **Calibration**
 
@@ -98,7 +98,7 @@ Perfect on scatter. The Line Graph layer adds 26 rows scored as a curve layer; a
 
 \
 
-![el-60-b matched-frame overlay](../extractors/graph-data-extraction/results-v2/aedes-aegypti-2014/el-60-b/replot.png){width=70%}
+![el-60-b — original (left) vs reconstruction (right)](figs/el-60-b_compare.png){width=100%}
 
 **Calibration**
 
@@ -124,7 +124,7 @@ Perfect, with the trend line layer now graded.
 
 \
 
-![el-62 matched-frame replot](../extractors/graph-data-extraction/results-v2/aedes-aegypti-2014/el-62/replot.png){width=80%}
+![el-62 — original (left) vs reconstruction (right)](figs/el-62_compare.png){width=100%}
 
 **Calibration**
 
@@ -149,7 +149,7 @@ Perfect on bar tops. Mean |Δx| ≈ 0.67 for GC1 and GC3 reflects the bar-within
 
 \
 
-![el-75 matched-frame replot](../extractors/graph-data-extraction/results-v2/aedes-aegypti-2014/el-75/replot.png){width=80%}
+![el-75 — original (left) vs reconstruction (right)](figs/el-75_compare.png){width=100%}
 
 **Calibration**
 
@@ -173,7 +173,7 @@ Perfect, including the now-graded trend line.
 
 \
 
-![el-80 matched-frame replot](../extractors/graph-data-extraction/results-v2/aedes-aegypti-2014/el-80/replot.png){width=80%}
+![el-80 — original (left) vs reconstruction (right)](figs/el-80_compare.png){width=100%}
 
 **Calibration**
 
@@ -198,7 +198,7 @@ Perfect on bar tops. Same x-offset convention as el-62. yerr now extracted (ever
 
 \
 
-![el-88 matched-frame overlay](../extractors/graph-data-extraction/results-v3/aedes-aegypti-2014/el-88/overlay.png){width=80%}
+![el-88 — original (left) vs matched-frame overlay (right)](figs/el-88_compare.png){width=100%}
 
 **Calibration**
 
@@ -230,7 +230,7 @@ Perfect after the phantom-row drop. (Previous r3 had 24 °C +2 FP, 30 °C 2/2 fa
 
 \
 
-![el-94 matched-frame overlay after audit-row-7 fix](../extractors/graph-data-extraction/results-v3/aedes-aegypti-2014/el-94/overlay_v3.png){width=80%}
+![el-94 — original (left) vs matched-frame overlay after audit-row-7 fix (right)](figs/el-94_compare.png){width=100%}
 
 **Calibration**
 
@@ -266,7 +266,7 @@ Fit curves traced via the v2 per-column median trace (works in the bulk; the el-
 
 \
 
-![el-100 matched-frame replot](../extractors/graph-data-extraction/results-v2/aedes-aegypti-2014/el-100/replot.png){width=80%}
+![el-100 — original (left) vs reconstruction (right)](figs/el-100_compare.png){width=100%}
 
 **Calibration**
 
