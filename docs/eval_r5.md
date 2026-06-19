@@ -223,27 +223,129 @@ X-axis stored as fractions 0..1 with unit "%"; y-axis offset of 1e7 read and rec
 
 \newpage
 
-# Aedes-aegypti-2014 corpus update
+# Aedes-aegypti-2014 corpus
 
-Full per-chart write-up is in the [r4 report](aedes-2014_eval_r4.pdf); this section captures only what changed at r5.
+The first corpus this benchmark exercises: 8 charts from a paper on *Aedes aegypti* parity and longevity under controlled temperatures. 251 ground-truth data points across 8 charts (line plots, scatters, grouped bar charts, grayscale shape scatters, scatters with same-color fit curves). Full r4 per-chart write-up at [r4 report](aedes-2014_eval_r4.pdf); the same chart format is reproduced here with the r5 scorer numbers.
 
-**Same v3 extractor outputs, r5 scorer:** combined F1 0.912 (r4) → 0.899 (r5). The delta is in series mapping, not extraction: the new `map_series` exact-match-first behaviour no longer credits a substring collision as a match. The vision pipeline produced the same data; the scorer is stricter. The per-element verifier is unchanged at 439/476 = 92.2 %.
+**What changed since r4**: same v3 extractor outputs, r5 scorer. The new `map_series` (exact-match-first, longer-substring fallback) no longer credits substring collisions, so combined F1 reads 0.899 instead of r4's 0.912. The vision pipeline produced the same data; the scorer is stricter. The per-element verifier is unchanged at 439/476 = 92.2 %. The audit-row-7 defect closure on el-94 (27 °C 14 → 25 markers) still holds; el-94 verifier 107/107 = 1.00.
+
+\newpage
+
+## el-60-a — 3-color line plot, parity rate vs time
+
+**Stresses:** §3 line trace across 3 colored series; legend swatches inside the plot frame at upper-left.
+
+![](figs/el-60-a_compare.png)
+
+\
+
+Three series (24°C / 27°C / 30°C) traced as `Line Graph` layer. **Combined F1 = 0.870** (curves 0.870, 20 TP / 6 FN / 0 FP at the strict r5 mapping). The scatter F1 = 0.000 is a known r4 finding: the extractor emits Scatter Plot rows for control-point markers, but the GT is line-only, so those rows have no GT counterpart in the scatter bucket. Verifier 54/58 = 93 %.
+
+\newpage
+
+## el-60-b — 3-point scatter + black trend line
+
+**Stresses:** §2 marker detection with a §3 black trend line through them; GT labels series `Series 1/2/3` (no temp), mapped to extractor series by x position.
+
+![](figs/el-60-b_compare.png)
+
+\
+
+3 markers + 2 trend-line samples. **Combined F1 = 1.000.** Verifier 17/20 = 85 %.
+
+\newpage
+
+## el-62 — Grouped bar chart with error bars
+
+**Stresses:** §4a grouped-bar detection; §4b upper error caps. Each chart has 3 series (GC1 / GC2 / GC3) at category positions; bars sit *offset* from the category tick center.
+
+![](figs/el-62_compare.png)
+
+\
+
+8 bar tops + 8 upper error caps. **Combined F1 = 1.000** (scatter 1.000, errbars 1.000). x_tol widened to 1.5 to absorb the bar-within-group offset. Verifier 36/44 = 82 % — tick-center predicate misses ~half the ticks because the category ticks span wider than the predicate's text-bbox window; not a data-extraction error.
+
+\newpage
+
+## el-75 — Scatter with x and y error bars
+
+**Stresses:** §2a four-direction cap detection (left-x, right-x, upper-y, lower-y) per marker; a red trend line passing through them.
+
+![](figs/el-75_compare.png)
+
+\
+
+3 markers + 2 trend-line samples + asymmetric x and y caps. **Combined F1 = 0.769** — scatter 1.000 and curves 1.000, but errbars 0/3/0 (3 FN, 0 TP). The 3 missed errbar rows: extractor's data uses the legacy `y_lo` / `y_hi` columns; this chart's GT has explicit `error_y_plus` / `error_y_minus`, and the r5 `score_errbars_layer` Schema A path requires the matched extractor row to carry both `y_lo` AND `y_hi`. The extractor's row has only `y_lo` for some entries, so the match falls through. This is a real downstream-schema gap, not a vision error. Verifier 21/23 = 91 %.
+
+\newpage
+
+## el-80 — Small grouped bar chart, stippled GC2 fill
+
+**Stresses:** §4a bar-via-outline detection (stippled fill breaks the fill mask; detect the solid dark border instead).
+
+![](figs/el-80_compare.png)
+
+\
+
+8 bar tops + 8 upper error caps. **Combined F1 = 1.000** (scatter 1.000, errbars 1.000). The §4a outline-scan + paired-edge trick handles the GC2 stipple. Verifier 33/44 = 75 % — same tick-center predicate limitation as el-62.
+
+\newpage
+
+## el-88 — Grayscale 3-shape scatter (no fit curves)
+
+**Stresses:** §2b grayscale-shape scatter (series distinguished only by marker shape: filled black disk, filled gray square, outlined diamond).
+
+![](figs/el-88_compare.png)
+
+\
+
+74 markers across 3 series. **Combined F1 = 0.980** (scatter 73/2/1, the 2 FN + 1 FP are at the right end of the chart where two diamonds overlap with a gray-square marker). The §2b diamond-pixel-probe discipline (added during the TDD pass) keeps this clean. Verifier 87/90 = 97 %.
+
+\newpage
+
+## el-94 — Grayscale 3-shape scatter + 3 fit curves (defect closed)
+
+**Stresses:** §2b grayscale shapes + §3 same-shade-as-markers fit curves. The corpus's documented hardest case. Audit row 7 (27 °C undercount) closed at r4 with the §3b vertical-opening + 2×2 dilation fix.
+
+![](figs/el-94_compare.png)
+
+\
+
+74 markers + 198 fit-curve samples. **Combined F1 = 0.888** (scatter 0.940, curves 0.865). The 47 curve FN are at the very-low-x ends of the three fit curves (the trace stops a few pixels short of the y-axis where the dotted 30 °C curve is partially obscured by the y-axis tick labels). The audit-row-7 27°C 14 → 25 marker fix still holds. **Verifier 107/107 = 1.00** — the only chart in the corpus that fully passes every per-element predicate.
+
+\newpage
+
+## el-100 — Colored scatter + dashed/solid fit lines in same colors
+
+**Stresses:** §2 colored markers with §3 same-color fit lines passing through them (dashed for 24 °C / 30 °C, solid for 27 °C). §3b subtraction must distinguish marker rings from line stroke.
+
+![](figs/el-100_compare.png)
+
+\
+
+48 fit-line samples + 53-ish markers. **Combined F1 = 0.845** (scatter 0.709, curves 1.000). The scatter 39/14/18 has the worst marker recall of the corpus — same-color dashed fits fragment into marker-sized chunks that pass aspect-ratio filtering (§3b's known caveat, documented in the recipe under "dashed lines look like markers"). Verifier 84/90 = 93 %.
+
+\newpage
+
+## Aedes per-chart summary
+
+\
 
 | chart | scatter | curves | errbars | combined F1 | verifier |
 |---|---|---|---|---|---|
-| el-60-a | 0.000 | 0.870 | – | 0.870 | 54/58 |
-| el-60-b | 1.000 | 1.000 | – | 1.000 | 17/20 |
-| el-62 | 1.000 | – | 1.000 | 1.000 | 36/44 |
-| el-75 | 1.000 | 1.000 | – | 0.769 | 21/23 |
-| el-80 | 1.000 | – | 1.000 | 1.000 | 33/44 |
-| el-88 | 0.980 | – | – | 0.980 | 87/90 |
-| el-94 | 0.940 | 0.865 | – | 0.888 | 107/107 |
-| el-100 | 0.709 | 1.000 | – | 0.845 | 84/90 |
+| el-60-a | 0.000 | 0.870 | – | **0.870** | 54/58 |
+| el-60-b | 1.000 | 1.000 | – | **1.000** | 17/20 |
+| el-62 | 1.000 | – | 1.000 | **1.000** | 36/44 |
+| el-75 | 1.000 | 1.000 | – | **0.769** | 21/23 |
+| el-80 | 1.000 | – | 1.000 | **1.000** | 33/44 |
+| el-88 | 0.980 | – | – | **0.980** | 87/90 |
+| el-94 | 0.940 | 0.865 | – | **0.888** | 107/107 |
+| el-100 | 0.709 | 1.000 | – | **0.845** | 84/90 |
 | **TOTAL** | **0.903** | **0.894** | **0.914** | **0.899** | **439/476** |
 
 \
 
-el-60-a's scatter F1 = 0.000 is the same r4 finding (extractor's Scatter Plot rows have no GT counterpart — the chart is a line plot only). el-75's combined F1 dropped is from the new `map_series` rejecting a substring collision the old fuzzy match accepted. The audit-row-7 defect closure on el-94 (27 °C 14 → 25 markers) still holds at r5; the verifier still reports 107/107 = 1.00 on el-94.
+el-60-a's scatter F1 = 0.000 is the same r4 finding (extractor's Scatter Plot rows have no GT counterpart — the chart is a line plot only). el-75's errbar 0/3/0 is a downstream schema gap (`y_lo`/`y_hi` column coverage in extractor), not a vision error. el-100's 0.709 scatter is the same-color dashed-fit fragmentation issue documented in §3b. None of these block a clean re-run if the underlying recipe gaps are closed.
 
 \newpage
 
