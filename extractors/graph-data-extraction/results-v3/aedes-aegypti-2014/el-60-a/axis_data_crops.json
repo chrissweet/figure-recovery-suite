@@ -1,0 +1,92 @@
+{
+  "image": "image.png",
+  "image_size": {
+    "width": 870,
+    "height": 563
+  },
+  "plot_frame": {
+    "left": 111,
+    "top": 6,
+    "right": 869,
+    "bottom": 432
+  },
+  "crops": {
+    "x_tick_strip": {
+      "rows": [
+        434,
+        466
+      ],
+      "cols": [
+        106,
+        870
+      ]
+    },
+    "y_tick_strip": {
+      "rows": [
+        1,
+        437
+      ],
+      "cols": [
+        56,
+        109
+      ]
+    },
+    "x_axis_title": {
+      "rows": [
+        467,
+        507
+      ],
+      "cols": [
+        106,
+        870
+      ]
+    },
+    "y_axis_title": {
+      "rows": [
+        1,
+        437
+      ],
+      "cols": [
+        0,
+        56
+      ]
+    },
+    "panel_label": {
+      "rows": [
+        0,
+        46
+      ],
+      "cols": [
+        809,
+        870
+      ]
+    }
+  },
+  "claimed_data_csv_columns": [
+    "series",
+    "time_days",
+    "percentage_parous_females"
+  ],
+  "claimed_x_labels": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13,
+    15,
+    17,
+    19,
+    21,
+    23
+  ],
+  "claimed_y_labels": [
+    1.0,
+    0.8,
+    0.6,
+    0.4,
+    0.2,
+    0.0
+  ]
+}

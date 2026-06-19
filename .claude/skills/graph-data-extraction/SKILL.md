@@ -38,6 +38,7 @@ The process is always the same five phases regardless of chart type. Phases 1-2 
 - If the figure is inside a PDF, render the page at 300 DPI rather than using the embedded thumbnail: `pdftoppm -png -r 300 -f <page> -l <page> input.pdf out`. Higher DPI means more pixels per data unit, which directly reduces reading error.
 - `view` the image yourself first. Confirm it actually contains a chart with quantitative axes, identify the chart type, the axis ranges, the series and their colors, and note hazards: a legend box sitting over the data, dense/overlapping markers, log axes, gridlines that share a color with a series.
 - Crop to the single plot panel you're extracting (multi-panel figures: do one panel at a time). Save the crop; you'll reference its pixel coordinates throughout.
+- **Record source-text metadata now, while you have the image in front of you.** Write a draft `chart_metadata.json` with the full axis titles (verbatim, including any qualifier like "after the blood-meal"), unit strings, decimal locale, panel ID, and the legend's series-to-color mapping. The schema is in Phase 5. Treat this as part of the deliverable, not as a comment: a `data.csv` whose column name is `time_days` is not a substitute for an axis title "Time after the blood-meal (days)" — the column name elides context the source intends.
 
 ### Phase 2 — Calibrate pixel space to data space
 
@@ -89,6 +90,7 @@ This loop is iterative. Repeat Phase 3 fix → Phase 4 re-plot until the reconst
 
 - Write the data to CSV in `/mnt/user-data/outputs/` (one column per axis/series; for resampled curves, a shared x column plus one column per series). If you discovered and repaired occlusions in Phase 4, make sure the delivered CSV reflects the corrected values, and say so — earlier intermediate CSVs are superseded.
 - **Write a `calibration.json` next to the CSV** capturing the plot geometry: image size, the rectangle enclosing the axes and plot (pixel bounding box), the data tick range and its corresponding pixel box, and the linear axis calibration. Downstream consumers often need the plot region in pixel coords to re-render or to align with other extractions. Use `scripts/write_calibration.py` (programmatic API or CLI) to produce this consistently — don't roll your own format.
+- **Write a `chart_metadata.json` next to the CSV** capturing the caption-layer data from the source figure. Schema below. This is a required deliverable, not optional: column names in `data.csv` (`time_days`, `parity_rate`) compress the source's full axis text and lose qualifiers; without `chart_metadata.json`, a downstream consumer cannot answer "what variable is this?" without re-opening the image.
 - Save the reconstruction as PNG (and PDF if the user might want vector) so the user can see the loop was closed.
 - Present files with `present_files`.
 
@@ -131,6 +133,44 @@ The `calibration.json` schema:
 A colleague needs three things to find any point in pixel coords: the plot frame's `offset`, the `pixels_per_coordinate_unit` ratio, and the data range — all top-level fields. The full formula is also written out in `data_to_pixel_formula` so the conversion is two arithmetic lines, no calibration math required. The `worked_example` confirms the formula on one known point.
 
 For a corpus of charts, bundle the per-chart `calibration.json` files into one set-wide `set_calibration.json` with a `summary_table` (for quick scanning) and a `charts` dict keyed by chart-id. An example is at `docs/example_set_calibration.json`.
+
+### `chart_metadata.json` (caption-layer data; required deliverable as of 2026-06-19)
+
+```json
+{
+  "panel_id": "A",                   // top-corner label of multi-panel figures, or null
+  "source_citation": null,           // DOI, paper, page; null if unknown
+  "x_axis": {
+    "title":  "Time after the blood-meal",
+    "unit":   "days",
+    "title_verbatim": "Time after the blood-meal (days)",
+    "decimal_separator": "."          // source's printed convention, may differ from value parsing
+  },
+  "y_axis": {
+    "title":  "Percentage of parous females",
+    "unit":   null,
+    "title_verbatim": "Percentage of parous females",
+    "decimal_separator": ","          // European convention; "0,80" not "0.80"
+  },
+  "series_legend": [
+    {"series_id": "24C", "source_label": "24°C", "color": "#0000FF",
+     "marker_shape": "circle"},
+    {"series_id": "27C", "source_label": "27°C", "color": "#00FF00",
+     "marker_shape": "square"},
+    {"series_id": "30C", "source_label": "30°C", "color": "#FF0000",
+     "marker_shape": "diamond"}
+  ],
+  "chart_title": null,                // central title, distinct from panel ID
+  "notes": "Excel-style chart; legend at top-right inside plot area."
+}
+```
+
+How to fill it: in Phase 1, crop the four regions of interest (x-tick strip just below the axis, y-tick strip just left of the axis, x-axis title band below the ticks, y-axis title band rotated to the left margin, plus the panel-label corner and the legend area), `view` each crop, transcribe the printed text verbatim, and capture series colors by sampling pixels at the legend swatches. The matched-frame TDD pass on el-60-a (2026-06-19) demonstrates a working crop-and-read procedure; see `extractors/graph-data-extraction/results-v3/aedes-aegypti-2014/el-60-a/axis_data.py` for a reusable script template.
+
+The values matter:
+- `title_verbatim` and `decimal_separator` are what a faithful matched-frame re-render needs.
+- `series_legend.color` lets a downstream consumer reproduce the series-to-color mapping without re-opening the image.
+- `source_citation` is provenance — fill it when you know it; explicit `null` is better than implicit absence.
 
 ## Always state the caveats
 
