@@ -1,8 +1,8 @@
 {
-  "n_artifacts": 23,
+  "n_artifacts": 26,
   "summary": {
-    "pass": 10,
-    "fail": 13,
+    "pass": 25,
+    "fail": 1,
     "by_type": {
       "frame_box": {
         "pass": 1,
@@ -13,16 +13,16 @@
         "fail": 0
       },
       "tick_center": {
-        "pass": 7,
-        "fail": 1
+        "pass": 11,
+        "fail": 0
       },
       "line_endpoint": {
-        "pass": 0,
-        "fail": 4
+        "pass": 3,
+        "fail": 1
       },
       "line_sample": {
-        "pass": 0,
-        "fail": 8
+        "pass": 8,
+        "fail": 0
       }
     }
   },
@@ -170,8 +170,21 @@
       "id": "y_0.1",
       "axis": "y",
       "col": 47,
-      "row": 294,
+      "row": 391,
       "value": 0.1,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 47
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_1",
+      "axis": "y",
+      "col": 47,
+      "row": 303,
+      "value": 1,
       "pass": true,
       "epsilon_px": 5,
       "info": {
@@ -180,15 +193,41 @@
     },
     {
       "type": "tick_center",
-      "id": "y_1000.0",
+      "id": "y_10",
       "axis": "y",
       "col": 47,
-      "row": -88294,
-      "value": 1000.0,
-      "pass": false,
+      "row": 214,
+      "value": 10,
+      "pass": true,
       "epsilon_px": 5,
       "info": {
-        "reason": "out of image"
+        "dark_pixels": 41
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_100",
+      "axis": "y",
+      "col": 47,
+      "row": 125,
+      "value": 100,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 41
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_1000",
+      "axis": "y",
+      "col": 47,
+      "row": 37,
+      "value": 1000,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 41
       }
     },
     {
@@ -198,12 +237,14 @@
       "x": 0.5,
       "y": 77.8801,
       "col": 106,
-      "row": -6596,
+      "row": 135,
       "color": null,
-      "pass": false,
+      "pass": true,
       "epsilon_px": 10,
       "info": {
-        "reason": "out of image"
+        "stroke_in_window": 36,
+        "dark": 23,
+        "colored": 36
       }
     },
     {
@@ -213,12 +254,14 @@
       "x": 10.0,
       "y": 0.6738,
       "col": 656,
-      "row": 243,
+      "row": 318,
       "color": null,
-      "pass": false,
+      "pass": true,
       "epsilon_px": 10,
       "info": {
-        "dark_in_window": 0
+        "stroke_in_window": 34,
+        "dark": 22,
+        "colored": 34
       }
     },
     {
@@ -228,12 +271,14 @@
       "x": 2.4322,
       "y": 29.6383,
       "col": 218,
-      "row": -2322,
+      "row": 172,
       "color": null,
-      "pass": false,
+      "pass": true,
       "epsilon_px": 3,
       "info": {
-        "reason": "out of image"
+        "stroke_in_window": 21,
+        "dark": 14,
+        "colored": 21
       }
     },
     {
@@ -243,12 +288,14 @@
       "x": 4.3644,
       "y": 11.2793,
       "col": 329,
-      "row": -696,
+      "row": 209,
       "color": null,
-      "pass": false,
+      "pass": true,
       "epsilon_px": 3,
       "info": {
-        "reason": "out of image"
+        "stroke_in_window": 21,
+        "dark": 14,
+        "colored": 21
       }
     },
     {
@@ -258,12 +305,14 @@
       "x": 6.2966,
       "y": 4.2925,
       "col": 441,
-      "row": -77,
+      "row": 247,
       "color": null,
-      "pass": false,
+      "pass": true,
       "epsilon_px": 3,
       "info": {
-        "reason": "out of image"
+        "stroke_in_window": 21,
+        "dark": 14,
+        "colored": 21
       }
     },
     {
@@ -273,12 +322,14 @@
       "x": 8.2288,
       "y": 1.6336,
       "col": 553,
-      "row": 158,
+      "row": 284,
       "color": null,
-      "pass": false,
+      "pass": true,
       "epsilon_px": 3,
       "info": {
-        "dark_in_window": 0
+        "stroke_in_window": 21,
+        "dark": 14,
+        "colored": 21
       }
     },
     {
@@ -288,12 +339,14 @@
       "x": 0.5,
       "y": 1515.7166,
       "col": 106,
-      "row": -133985,
+      "row": 21,
       "color": null,
       "pass": false,
       "epsilon_px": 10,
       "info": {
-        "reason": "out of image"
+        "stroke_in_window": 0,
+        "dark": 0,
+        "colored": 0
       }
     },
     {
@@ -303,12 +356,14 @@
       "x": 10.0,
       "y": 12.5594,
       "col": 656,
-      "row": -809,
+      "row": 205,
       "color": null,
-      "pass": false,
+      "pass": true,
       "epsilon_px": 10,
       "info": {
-        "reason": "out of image"
+        "stroke_in_window": 14,
+        "dark": 0,
+        "colored": 14
       }
     },
     {
@@ -318,12 +373,14 @@
       "x": 2.4322,
       "y": 120.6064,
       "col": 218,
-      "row": -10382,
+      "row": 118,
       "color": null,
-      "pass": false,
+      "pass": true,
       "epsilon_px": 3,
       "info": {
-        "reason": "out of image"
+        "stroke_in_window": 16,
+        "dark": 0,
+        "colored": 16
       }
     },
     {
@@ -333,12 +390,14 @@
       "x": 4.3644,
       "y": 47.3249,
       "col": 329,
-      "row": -3889,
+      "row": 154,
       "color": null,
-      "pass": false,
+      "pass": true,
       "epsilon_px": 3,
       "info": {
-        "reason": "out of image"
+        "stroke_in_window": 17,
+        "dark": 0,
+        "colored": 17
       }
     },
     {
@@ -348,12 +407,14 @@
       "x": 6.2966,
       "y": 26.3269,
       "col": 441,
-      "row": -2029,
+      "row": 177,
       "color": null,
-      "pass": false,
+      "pass": true,
       "epsilon_px": 3,
       "info": {
-        "reason": "out of image"
+        "stroke_in_window": 6,
+        "dark": 0,
+        "colored": 6
       }
     },
     {
@@ -363,12 +424,14 @@
       "x": 8.2288,
       "y": 17.1566,
       "col": 553,
-      "row": -1216,
+      "row": 193,
       "color": null,
-      "pass": false,
+      "pass": true,
       "epsilon_px": 3,
       "info": {
-        "reason": "out of image"
+        "stroke_in_window": 17,
+        "dark": 0,
+        "colored": 17
       }
     }
   ]

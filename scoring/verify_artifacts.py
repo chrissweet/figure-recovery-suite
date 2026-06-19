@@ -57,6 +57,37 @@ EPSILON_PX = {
 }
 
 
+# ---------- Scale-aware data → pixel projection ----------
+
+def data_to_pixel(value, m, b, scale):
+    """Convert a data-space `value` to a pixel coord using axis calibration.
+
+    For linear axes: pixel = (value - b) / m.
+    For log10 axes:  pixel = (log10(value) - b) / m.
+
+    Synthetic-corpus chart 04 (log-y line plot) surfaced this in the harness
+    round-trip — the verifier without this routing scored 0/4 line endpoints
+    because the y prediction was the linear formula on a log axis.
+    """
+    if scale == "log10":
+        if value <= 0:
+            return None
+        try:
+            v = float(np.log10(value))
+        except (TypeError, ValueError):
+            return None
+    else:
+        v = float(value)
+    return (v - b) / m
+
+
+def axis_scale(cal_axis):
+    """Read the `scale` field from a calibration axis block, defaulting to
+    "linear" for back-compat with calibrations that predate the field
+    (e.g. the aedes-aegypti-2014 corpus written before synthetic-r4-1)."""
+    return cal_axis.get("scale", "linear")
+
+
 # ---------- Artifact derivation ----------
 
 def derive_artifacts(chart_dir):
@@ -79,10 +110,15 @@ def derive_artifacts(chart_dir):
 
     pf = cal["plot_frame_box"]
     de = cal.get("data_extent_box", pf)
-    mx = cal["axis_calibration"]["x_axis"]["m"]
-    bx = cal["axis_calibration"]["x_axis"]["b"]
-    my = cal["axis_calibration"]["y_axis"]["m"]
-    by = cal["axis_calibration"]["y_axis"]["b"]
+    x_ax = cal["axis_calibration"]["x_axis"]
+    y_ax = cal["axis_calibration"]["y_axis"]
+    mx, bx = x_ax["m"], x_ax["b"]
+    my, by = y_ax["m"], y_ax["b"]
+    x_scale = axis_scale(x_ax)
+    y_scale = axis_scale(y_ax)
+
+    def col_of(x):  return data_to_pixel(x, mx, bx, x_scale)
+    def row_of(y):  return data_to_pixel(y, my, by, y_scale)
 
     # 1. Frame box.
     arts.append({"type": "frame_box", "id": "main",
@@ -128,13 +164,34 @@ def derive_artifacts(chart_dir):
     # epsilon for tick_center already accounts for this.
     x_label_row = pf["bottom"] + 18
     y_label_col = pf["left"] - 30
-    for tv in axis_ticks(dr.get("x_min"), dr.get("x_max")):
-        col = (tv - bx) / mx
+    # For log axes, generate ticks at powers of 10 (matplotlib's default
+    # major-tick locator on log axes). axis_ticks() picks linear-friendly
+    # steps so it doesn't produce the right set on log; override here.
+    def log_decades(lo, hi):
+        if lo is None or hi is None or lo <= 0 or hi <= 0:
+            return []
+        d_lo = int(np.floor(np.log10(lo)))
+        d_hi = int(np.ceil(np.log10(hi)))
+        return [10 ** d for d in range(d_lo, d_hi + 1)
+                if lo <= 10 ** d <= hi]
+
+    x_ticks = (log_decades(dr.get("x_min"), dr.get("x_max")) if
+               x_scale == "log10" else
+               axis_ticks(dr.get("x_min"), dr.get("x_max")))
+    y_ticks = (log_decades(dr.get("y_min"), dr.get("y_max")) if
+               y_scale == "log10" else
+               axis_ticks(dr.get("y_min"), dr.get("y_max")))
+    for tv in x_ticks:
+        col = col_of(tv)
+        if col is None:
+            continue
         arts.append({"type": "tick_center", "id": f"x_{tv}", "axis": "x",
                       "col": int(col), "row": x_label_row,
                       "value": round(tv, 4)})
-    for tv in axis_ticks(dr.get("y_min"), dr.get("y_max")):
-        row = (tv - by) / my
+    for tv in y_ticks:
+        row = row_of(tv)
+        if row is None:
+            continue
         arts.append({"type": "tick_center", "id": f"y_{tv}", "axis": "y",
                       "col": y_label_col, "row": int(row),
                       "value": round(tv, 4)})
@@ -177,7 +234,9 @@ def derive_artifacts(chart_dir):
             x = float(r[xc]); y = float(r[yc])
         except (TypeError, ValueError):
             continue
-        col = (x - bx) / mx; row = (y - by) / my
+        col = col_of(x); row = row_of(y)
+        if col is None or row is None:
+            continue
         series = r.get(sc, "default") if sc else "default"
         layer = (r.get(lc) or "Scatter Plot") if lc else "Scatter Plot"
         if "Line" in layer or "Spline" in layer:
@@ -193,8 +252,9 @@ def derive_artifacts(chart_dir):
             if lo_c and r.get(lo_c) and hi_c and r.get(hi_c):
                 try:
                     y_lo = float(r[lo_c]); y_hi = float(r[hi_c])
-                    row_lo = (y_lo - by) / my
-                    row_hi = (y_hi - by) / my
+                    row_lo = row_of(y_lo); row_hi = row_of(y_hi)
+                    if row_lo is None or row_hi is None:
+                        continue
                     arts.append({"type": "error_cap", "id": f"{series}_{x}_upper",
                                   "series": series, "x": x, "y": y_hi,
                                   "col": int(col), "row": int(row_hi),
@@ -375,9 +435,20 @@ def check_line_endpoint(img, art, eps):
 
 
 def check_line_sample(img, art, eps):
-    """A line_sample passes if the source has a dark / series-colored stroke
-    within ±eps of (col, row)."""
+    """A line_sample passes if the source has a stroke within ±eps of
+    (col, row). Strokes count if they're (a) dark (gray < 120 — black lines,
+    deep colors) OR (b) saturated and at least moderately non-background
+    (HSV sat > 60 AND gray < 220 — catches matplotlib's lighter palette
+    colors like C4 purple, gray ≈ 126).
+
+    Surfaced by synthetic-r4-1 chart #4 round-trip: the `power_law` series
+    is drawn in C4 (#9467bd) which has gray ≈ 126, just above the prior
+    `< 120` threshold. All 6 of its predictions failed even though every
+    pixel was on the line — the predicate didn't see "lines" in that
+    color range. Saturated-but-not-dark is a real chart stroke pattern.
+    """
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
     H, W = gray.shape
     c, r = art["col"], art["row"]
     half = max(eps, 3)
@@ -385,9 +456,16 @@ def check_line_sample(img, art, eps):
     r0 = max(0, r - half); r1 = min(H, r + half + 1)
     if c0 >= c1 or r0 >= r1:
         return False, {"reason": "out of image"}
-    win = gray[r0:r1, c0:c1]
-    n_dark = int((win < 120).sum())
-    return n_dark >= 3, {"dark_in_window": n_dark}
+    win_g = gray[r0:r1, c0:c1]
+    win_s = hsv[r0:r1, c0:c1, 1]
+    is_dark = (win_g < 120)
+    is_colored = (win_s > 60) & (win_g < 220)
+    n_stroke = int((is_dark | is_colored).sum())
+    return n_stroke >= 3, {
+        "stroke_in_window": n_stroke,
+        "dark": int(is_dark.sum()),
+        "colored": int(is_colored.sum()),
+    }
 
 
 def check_bar_top(img, art, eps):
