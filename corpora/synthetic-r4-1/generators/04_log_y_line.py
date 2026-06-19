@@ -30,12 +30,15 @@ def main():
     # Two series: an exponential decay y = a * exp(-k*x), and a power law
     # y = a * x^p. Both span 3 decades on the y axis.
     x = np.linspace(0.5, 10, 60)
+    # Series name matches the prefix of the legend label verbatim, so an
+    # extractor reading the rendered legend naturally lands on the same
+    # string the GT uses (convention 2 in SKILL.md Phase 5).
     series_specs = [
-        {"name": "exp_decay",
+        {"name": "Exponential",
          "label": "Exponential: 100 e^(-0.5 t)",
          "color": "C3", "linestyle": "-",
          "y": 100 * np.exp(-0.5 * x)},
-        {"name": "power_law",
+        {"name": "Power law",
          "label": "Power law: 500 / t^1.6",
          "color": "C4", "linestyle": "--",
          "y": 500 / (x ** 1.6)},

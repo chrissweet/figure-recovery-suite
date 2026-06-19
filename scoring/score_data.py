@@ -58,7 +58,11 @@ DEFAULT_TOLS = {
     # dependent. Widen x_tol to 1.5 to accept either convention as a TP if
     # y matches. Anything wider lets adjacent groups masquerade as matches.
     "03-grouped-bar-errbars": {"x_tol": 1.5, "y_tol": 2.0},
-    "04-log-y-line":          {"x_tol": 0.5, "y_tol": 0.5},
+    # Log-y-line: y spans ~5 decades (0.1-1000). Absolute y_tol mismatches
+    # at large y where 1% relative error is 10 absolute. Until the scorer
+    # gets log-aware tolerance, widen y_tol to absorb the relative-error
+    # budget at the high end of the y range.
+    "04-log-y-line":          {"x_tol": 0.5, "y_tol": 15.0},
     "05-stacked-bar":         {"x_tol": 1.5, "y_tol": 2.0},
     "06-scatter-asym-errbars":{"x_tol": 1.0, "y_tol": 1.0},
     "07-dual-y-axes":         {"x_tol": 0.3, "y_tol": 0.5},

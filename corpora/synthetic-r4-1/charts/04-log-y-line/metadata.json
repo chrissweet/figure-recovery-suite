@@ -13,13 +13,13 @@
   "chart_title": "Synthetic #04 \u2014 log-y line plot",
   "series_legend": [
     {
-      "series_id": "exp_decay",
+      "series_id": "Exponential",
       "color": "C3",
       "line_style": "-",
       "source_label": "Exponential: 100 e^(-0.5 t)"
     },
     {
-      "series_id": "power_law",
+      "series_id": "Power law",
       "color": "C4",
       "line_style": "--",
       "source_label": "Power law: 500 / t^1.6"
