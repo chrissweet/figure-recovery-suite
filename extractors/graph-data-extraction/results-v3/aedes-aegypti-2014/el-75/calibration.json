@@ -1,0 +1,90 @@
+{
+  "image": "image.png",
+  "image_size": {
+    "width": 924,
+    "height": 637
+  },
+  "plot_frame_box": {
+    "offset": {
+      "x": 82,
+      "y": 14
+    },
+    "size": {
+      "width": 827,
+      "height": 543
+    },
+    "left": 82,
+    "top": 14,
+    "right": 908,
+    "bottom": 556,
+    "description": "Pixel bounding box of the visible plot region in image.png. Origin (0,0) is the top-left of the image; y grows downward. 'offset' is the top-left corner of the box in image coordinates; 'size' is its width and height in pixels. Detected by finding the y-axis line (left), x-axis line (bottom), and the bounding box of non-white pixels inside the L-shaped quadrant (top, right)."
+  },
+  "pixels_per_coordinate_unit": {
+    "x": 20.6334,
+    "y": 21.6488,
+    "x_unit_label": "pixels per \u00b0C",
+    "y_unit_label": "pixels per day",
+    "description": "How many image pixels equal one unit of x or y in data coordinates."
+  },
+  "data_to_pixel_formula": {
+    "col": "col = (x_value - -3.992979) / 0.048465",
+    "row": "row = (y_value - 25.668679) / -0.046192",
+    "explanation": "Convert any (x, y) data coordinate to a (col, row) pixel coordinate in image.png. Derived from the linear axis calibration fit during extraction."
+  },
+  "data_range": {
+    "x_min": 0,
+    "x_max": 40,
+    "y_min": 0.0,
+    "y_max": 25.0
+  },
+  "axis_calibration": {
+    "x_axis": {
+      "formula": "value = 0.048465 * col + -3.992979",
+      "m": 0.048465,
+      "b": -3.992979,
+      "inverse": "col = (value - -3.992979) / 0.048465"
+    },
+    "y_axis": {
+      "formula": "value = -0.046192 * row + 25.668679",
+      "m": -0.046192,
+      "b": 25.668679,
+      "inverse": "row = (value - 25.668679) / -0.046192"
+    }
+  },
+  "worked_example": {
+    "scenario": "The middle data point (27\u00b0C, mean GC 7.155 days).",
+    "input": {
+      "x": 27.039,
+      "y": 7.155
+    },
+    "compute": [
+      "col = (27.039 - -3.992979) / 0.048465 = 640.3",
+      "row = (7.155 - 25.668679) / -0.046192 = 400.8"
+    ],
+    "result": {
+      "col": 640,
+      "row": 401
+    },
+    "verification": "This (col, row) should land on the middle black marker."
+  },
+  "detection_internals": {
+    "y_axis_col_detected": 82,
+    "x_axis_row_detected": 556,
+    "all_interior_v_lines": [
+      82
+    ],
+    "all_interior_h_lines": [
+      556
+    ],
+    "legend_exclusion_used_for_frame": null
+  },
+  "data_extent_box": {
+    "left": 82,
+    "right": 908,
+    "top": 14,
+    "bottom": 556,
+    "width": 827,
+    "height": 543,
+    "description": "Pixel bounding box of the labeled data tick range (x=0..40, y=0.0..25.0). For bar charts the bars extend past this box."
+  }
+}

@@ -1,0 +1,9 @@
+layer_idx,layer_type,series,x,y,y_lo,y_hi
+0,Grouped Column Chart,GC1,24.0,8.92,6.24,11.6
+0,Grouped Column Chart,GC1,27.0,7.48,4.8,10.16
+0,Grouped Column Chart,GC1,30.0,5.14,2.43,7.85
+0,Grouped Column Chart,GC2,24.0,6.47,3.07,9.87
+0,Grouped Column Chart,GC2,27.0,6.3,2.9,9.7
+0,Grouped Column Chart,GC2,30.0,4.39,0.98,7.8
+0,Grouped Column Chart,GC3,27.0,6.47,5.29,7.65
+0,Grouped Column Chart,GC3,30.0,2.95,1.77,4.13

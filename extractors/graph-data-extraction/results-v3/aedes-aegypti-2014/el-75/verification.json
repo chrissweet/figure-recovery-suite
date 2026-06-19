@@ -1,0 +1,381 @@
+{
+  "n_artifacts": 23,
+  "summary": {
+    "pass": 21,
+    "fail": 2,
+    "by_type": {
+      "frame_box": {
+        "pass": 0,
+        "fail": 1
+      },
+      "axis_line": {
+        "pass": 1,
+        "fail": 1
+      },
+      "tick_center": {
+        "pass": 15,
+        "fail": 0
+      },
+      "marker_centroid": {
+        "pass": 3,
+        "fail": 0
+      },
+      "line_endpoint": {
+        "pass": 2,
+        "fail": 0
+      }
+    }
+  },
+  "epsilon_px": {
+    "frame_box": 2,
+    "axis_line": 2,
+    "tick_center": 5,
+    "legend_box": 15,
+    "marker_centroid": 3,
+    "line_endpoint": 10,
+    "line_sample": 3,
+    "bar_top": 2,
+    "error_cap": 3
+  },
+  "results": [
+    {
+      "type": "frame_box",
+      "id": "main",
+      "left": 82,
+      "top": 14,
+      "right": 908,
+      "bottom": 556,
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "edges": {
+          "top": 0.005,
+          "bottom": 1.0,
+          "left": 0.062,
+          "right": 0.007
+        },
+        "n_good_edges": 1
+      }
+    },
+    {
+      "type": "axis_line",
+      "id": "y_axis",
+      "orientation": "vertical",
+      "fixed": 82,
+      "extent": [
+        14,
+        556
+      ],
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "axis_dark_fraction": 0.018
+      }
+    },
+    {
+      "type": "axis_line",
+      "id": "x_axis",
+      "orientation": "horizontal",
+      "fixed": 556,
+      "extent": [
+        82,
+        908
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "axis_dark_fraction": 0.999
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_0",
+      "axis": "x",
+      "col": 82,
+      "row": 574,
+      "value": 0,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 33
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_5",
+      "axis": "x",
+      "col": 185,
+      "row": 574,
+      "value": 5,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 31
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_10",
+      "axis": "x",
+      "col": 288,
+      "row": 574,
+      "value": 10,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 53
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_15",
+      "axis": "x",
+      "col": 391,
+      "row": 574,
+      "value": 15,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 57
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_20",
+      "axis": "x",
+      "col": 495,
+      "row": 574,
+      "value": 20,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 70
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_25",
+      "axis": "x",
+      "col": 598,
+      "row": 574,
+      "value": 25,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 62
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_30",
+      "axis": "x",
+      "col": 701,
+      "row": 574,
+      "value": 30,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 69
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_35",
+      "axis": "x",
+      "col": 804,
+      "row": 574,
+      "value": 35,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 63
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_40",
+      "axis": "x",
+      "col": 907,
+      "row": 574,
+      "value": 40,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 65
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_0",
+      "axis": "y",
+      "col": 52,
+      "row": 555,
+      "value": 0,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 33
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_5",
+      "axis": "y",
+      "col": 52,
+      "row": 447,
+      "value": 5,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 31
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_10",
+      "axis": "y",
+      "col": 52,
+      "row": 339,
+      "value": 10,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 54
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_15",
+      "axis": "y",
+      "col": 52,
+      "row": 230,
+      "value": 15,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 51
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_20",
+      "axis": "y",
+      "col": 52,
+      "row": 122,
+      "value": 20,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 63
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_25",
+      "axis": "y",
+      "col": 52,
+      "row": 14,
+      "value": 25,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 60
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "datapoints_23.62_8.213",
+      "series": "datapoints",
+      "x": 23.62,
+      "y": 8.213,
+      "col": 569,
+      "row": 377,
+      "color": [
+        0,
+        0,
+        0
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 115
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "datapoints_27.08_7.15",
+      "series": "datapoints",
+      "x": 27.08,
+      "y": 7.15,
+      "col": 641,
+      "row": 400,
+      "color": [
+        0,
+        0,
+        0
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 105
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "datapoints_30.01_4.852",
+      "series": "datapoints",
+      "x": 30.01,
+      "y": 4.852,
+      "col": 701,
+      "row": 450,
+      "color": [
+        0,
+        0,
+        0
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 121
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Trend Line_left",
+      "series": "Trend Line",
+      "x": 0.07808100000000007,
+      "y": 20.309024707014864,
+      "col": 84,
+      "row": 116,
+      "color": [
+        255,
+        0,
+        0
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "dark_in_window": 39
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Trend Line_right",
+      "series": "Trend Line",
+      "x": 35.021346,
+      "y": 2.842832196032223,
+      "col": 805,
+      "row": 494,
+      "color": [
+        255,
+        0,
+        0
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "dark_in_window": 28
+      }
+    }
+  ]
+}

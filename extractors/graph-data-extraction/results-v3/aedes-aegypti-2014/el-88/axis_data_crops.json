@@ -1,0 +1,54 @@
+{
+  "image": "image.png",
+  "image_size": {
+    "width": 993,
+    "height": 638
+  },
+  "plot_frame": {
+    "left": 56,
+    "top": 24,
+    "right": 985,
+    "bottom": 568
+  },
+  "legend_exclusion": [
+    280,
+    400,
+    870,
+    980
+  ],
+  "claimed_data_csv_columns": [
+    "series",
+    "age_days",
+    "survival_proportion"
+  ],
+  "claimed_x_labels": [
+    0,
+    10,
+    20,
+    30,
+    40,
+    50
+  ],
+  "claimed_y_labels": [
+    1.0,
+    0.8,
+    0.6,
+    0.4,
+    0.2,
+    0.0
+  ],
+  "claimed_series_legend": [
+    {
+      "series_id": "24C",
+      "marker_shape": "disk"
+    },
+    {
+      "series_id": "27C",
+      "marker_shape": "square"
+    },
+    {
+      "series_id": "30C",
+      "marker_shape": "diamond"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "image": "image.png",
+  "image_size": {
+    "width": 993,
+    "height": 638
+  },
+  "plot_frame_box": {
+    "offset": {
+      "x": 56,
+      "y": 24
+    },
+    "size": {
+      "width": 930,
+      "height": 545
+    },
+    "left": 56,
+    "top": 24,
+    "right": 985,
+    "bottom": 568,
+    "description": "Pixel bounding box of the visible plot region in image.png. Origin (0,0) is the top-left of the image; y grows downward. 'offset' is the top-left corner of the box in image coordinates; 'size' is its width and height in pixels. Detected by finding the y-axis line (left), x-axis line (bottom), and the bounding box of non-white pixels inside the L-shaped quadrant (top, right)."
+  },
+  "pixels_per_coordinate_unit": {
+    "x": 15.5514,
+    "y": 539.6654,
+    "x_unit_label": "pixels per day",
+    "y_unit_label": "pixels per fraction-unit",
+    "description": "How many image pixels equal one unit of x or y in data coordinates."
+  },
+  "data_to_pixel_formula": {
+    "col": "col = (x_value - -3.614709) / 0.064303",
+    "row": "row = (y_value - 1.053524) / -0.001853",
+    "explanation": "Convert any (x, y) data coordinate to a (col, row) pixel coordinate in image.png. Derived from the linear axis calibration fit during extraction."
+  },
+  "data_range": {
+    "x_min": 0,
+    "x_max": 50,
+    "y_min": 0.0,
+    "y_max": 1.0
+  },
+  "axis_calibration": {
+    "x_axis": {
+      "formula": "value = 0.064303 * col + -3.614709",
+      "m": 0.064303,
+      "b": -3.614709,
+      "inverse": "col = (value - -3.614709) / 0.064303"
+    },
+    "y_axis": {
+      "formula": "value = -0.001853 * row + 1.053524",
+      "m": -0.001853,
+      "b": 1.053524,
+      "inverse": "row = (value - 1.053524) / -0.001853"
+    }
+  },
+  "worked_example": {
+    "scenario": "24\u00b0C filled-disk marker at day 14 (survival 0.5817).",
+    "input": {
+      "x": 14,
+      "y": 0.5817
+    },
+    "compute": [
+      "col = (14 - -3.614709) / 0.064303 = 273.9",
+      "row = (0.5817 - 1.053524) / -0.001853 = 254.6"
+    ],
+    "result": {
+      "col": 274,
+      "row": 255
+    },
+    "verification": "This (col, row) should land on a black filled circle around mid-plot."
+  },
+  "detection_internals": {
+    "y_axis_col_detected": 56,
+    "x_axis_row_detected": 568,
+    "all_interior_v_lines": [
+      56
+    ],
+    "all_interior_h_lines": [
+      568
+    ],
+    "legend_exclusion_used_for_frame": [
+      280,
+      400,
+      870,
+      980
+    ]
+  },
+  "data_extent_box": {
+    "left": 56,
+    "right": 834,
+    "top": 29,
+    "bottom": 569,
+    "width": 779,
+    "height": 541,
+    "description": "Pixel bounding box of the labeled data tick range (x=0..50, y=0.0..1.0). For bar charts the bars extend past this box."
+  }
+}

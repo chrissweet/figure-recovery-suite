@@ -8,7 +8,7 @@ Each recipe assumes you have completed calibration: a frame (`left,right,top,bot
 |---|---|
 | pure scatter, one color per series | §2 Scatter |
 | smooth lines/curves, no discrete markers | §3 Line / curve |
-| line plot with markers AT integer x values (the line just connects them) | §3a Marker-on-line — extract the markers, ignore the line |
+| line plot with markers AT integer x values (the line just connects them) | §3a Marker-on-line — extract the markers, then emit the line layer as the markers in x-order |
 | line plot with three colored series + dashed/dotted fit lines in same colors | §3a + hazards §6.6 |
 | scatter where a smooth fit curve passes through the markers in the same color | §3b Subtract the curve first, then extract |
 | scatter with x or y error bars (whiskers + caps) | §2 + §2a Error bars |
@@ -33,19 +33,24 @@ Each recipe assumes you have completed calibration: a frame (`left,right,top,bot
 
 ## 1. Color masks
 
-Matplotlib's default cycle, with HSV ranges that work for the typical saturated versions. Tune the saturation/value floors per image.
+HSV ranges covering both matplotlib defaults and **pure-primary palettes** (Excel-style charts where a colored series is drawn as straight `BGR(255, 0, 0)` etc.). The `V_max=255` ceiling is required: a tighter cap silently drops pure-primary pixels because their HSV value is exactly 255.
 
 ```python
 import cv2, numpy as np
 def masks(hsv):
     return {
-      'C0_blue'  : cv2.inRange(hsv, np.array([100, 90, 60]), np.array([125,255,240])),
+      # V_max held at 255 so pure-primary palettes (BGR(255,0,0) → HSV(120,255,255))
+      # aren't silently dropped. Matplotlib's muted defaults (e.g. C0 #1f77b4
+      # has V≈180) sit well below the cap and are unaffected.
+      'C0_blue'  : cv2.inRange(hsv, np.array([100, 90, 60]), np.array([125,255,255])),
       'C1_orange': cv2.inRange(hsv, np.array([  8, 90, 90]), np.array([ 22,255,255])),
-      'C2_green' : cv2.inRange(hsv, np.array([ 35, 60, 60]), np.array([ 85,255,235])),
+      'C2_green' : cv2.inRange(hsv, np.array([ 35, 60, 60]), np.array([ 85,255,255])),
       'C3_red'   : cv2.inRange(hsv, np.array([  0,100, 80]), np.array([ 10,255,255])),  # also 170-180
     }
 ```
 Map each mask to its series by reading the legend off the `view`ed image. Raise the saturation floor (the middle number) if pale gridlines of the same hue leak into the mask.
+
+**Pure-primary failure mode** (added 2026-06-19 after el-60-a TDD pass): a `V_max < 255` cap (the previous default was 240 for blue, 235 for green) returns *zero* pixels for an Excel-style chart whose markers are drawn as full-intensity primaries. The mask appears to "work" — `inRange` doesn't error — but every series CC is empty, and the rest of the pipeline silently produces an empty `data.csv`. If the marker count drops to 0 unexpectedly, sample a known marker pixel (`img[row,col]`) before tuning the recipe further: if it returns `BGR(255,0,0)` or similar pure primary, raise the V ceiling.
 
 ## 2. Scatter plot
 
@@ -123,7 +128,27 @@ For error bars whose lower half is occluded by the bar fill in a bar chart, see 
 
 ## 2b. Grayscale-shape scatter (no color cue)
 
-Series distinguished only by marker shape (filled black disk, filled gray square, open black diamond). HSV doesn't help — classify by area/density.
+Series distinguished only by marker shape. The classifier discriminates by CC area and density on the black-pixel mask. The legend usually shows three shape glyphs — *filled black disk*, *filled gray square*, *outlined diamond* — but the actual chart-area rendering of "diamond" varies by chart family.
+
+**Pixel-probe discipline (mandatory, added 2026-06-19, generalised after el-94 TDD pass):** before tuning any threshold for a grayscale-shape chart, sample the actual pixel content at one known marker position and read off the gray values. Two charts in the same corpus may render "diamond" differently:
+
+| chart | 30 °C marker rendering | source pixel values |
+|---|---|---|
+| el-88 | thin black outline around a **light-gray fill** | outline gray ≈ 25-75, interior gray ≈ 205-230 |
+| el-94 | thin black outline around a **white interior** (truly "open") | outline gray ≈ 25-75, interior gray ≈ 255 |
+
+Same legend symbol (◇), two different pixel realities. The CC-density classifier on the black mask works for either case because the outline density is similar (≈ 0.3), but threshold tuning for the *interior* (`mid = (gray >= 60) & (gray <= 210)`) succeeds on el-88 and fails on el-94. Pixel-probe first; assume nothing from the legend symbol.
+
+```python
+# Probe one marker by computing its predicted pixel from data.csv, then read.
+import cv2
+img = cv2.imread('image.png')
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+# data row: 30°C at (40, 0.15), calibration col=662 row=488
+print(gray[481:495, 655:669])    # 14x14 around the marker
+```
+
+If the interior pixel is white (≥230) you have a hollow diamond; if it's light gray (~200-230) you have a filled diamond; in either case the CC-density classifier handles it but the `mid` mask thresholds need to match.
 
 ```python
 # 24°C: solid black disk (gray < 50), area ~80 after no erosion
@@ -171,6 +196,51 @@ def resample(pts, xmax, step):
     return out
 ```
 Where two series overlap, the median row picks one of them per column — note in the caveats that overlapping segments are approximate. The legend will contaminate columns it covers; see Hazards.
+
+### Curve-crossing failure (added 2026-06-19 after el-94 TDD pass)
+
+Per-column-median is greedy and **fails at curve crossings**: when two same-color curves cross at column c, the column contains two thin runs at different rows and the median collapses both into the wrong y. The matched-frame overlay test on el-94 surfaced this directly — the 30 °C dotted curve trace was *clean* from x = 3 to x = 20 and then *chaotic* from x = 23 to x = 30, where it crosses the dashed 24 °C curve.
+
+Fix: track each curve's row trajectory across columns and prefer the per-column run whose row best matches the trajectory's local slope, falling back to the median only when there is exactly one run.
+
+```python
+def trace_with_continuity(mask, x0, x1, top, bot, seed_rows):
+    """Trace N curves simultaneously using row-continuity from seed_rows.
+    seed_rows: list of starting (col, row) per curve at the leftmost column."""
+    curves = [[(s[0], s[1])] for s in seed_rows]
+    last_row = [s[1] for s in seed_rows]
+    for c in range(x0 + 3, x1 - 2):
+        rr = np.where(mask[top:bot, c] > 0)[0]
+        if len(rr) == 0:
+            continue
+        # Cluster contiguous rows into runs; one centroid per run.
+        runs = []
+        cur = [rr[0]]
+        for r in rr[1:]:
+            if r == cur[-1] + 1:
+                cur.append(r)
+            else:
+                runs.append(top + int(np.mean(cur))); cur = [r]
+        runs.append(top + int(np.mean(cur)))
+        # Assign each curve to the nearest available run.
+        used = [False] * len(runs)
+        for i, lr in enumerate(last_row):
+            best, best_i = 999, None
+            for j, run_row in enumerate(runs):
+                if used[j]: continue
+                d = abs(run_row - lr)
+                if d < best:
+                    best, best_i = d, j
+            if best_i is not None and best < 20:
+                used[best_i] = True
+                curves[i].append((col2x(c), row2y(runs[best_i])))
+                last_row[i] = runs[best_i]
+    return curves
+```
+
+`seed_rows` come from the legend swatches (each line style's left endpoint sits next to its label) or from manual eyeballing of the leftmost column where each curve is unambiguous. The cost is one pass with O(N_curves × N_columns) attribution. The win is correct trajectory through crossings.
+
+Validated on el-94 (2026-06-19): the per-column-median trace had visible chaos at x = 23-30; the trajectory-tracked version follows each curve smoothly through the crossing.
 
 ## 3b. Subtracting a fit curve before extracting markers
 
@@ -236,6 +306,30 @@ What it doesn't fix:
 - **Filled markers sitting on a solid curve**: the marker CC fuses horizontally with the curve trace inside the marker's own column range, so even after the OUTSIDE-marker columns are subtracted, the CC remains elongated. The aspect-ratio filter then still rejects it. Workaround: relax the aspect filter to `> 3.5` AND require the CC to contain a roughly-square dense kernel by eroding it and checking that the residual is square. Expect to still under-count by ~20 % when this happens.
 - **Curves whose thickness matches the open-marker stroke width**: a dotted curve where each dot is 2 px tall and dots are 4 px apart visually mimics a column of paired open-marker edges. The pair preservation will keep them. Filter the resulting marker pool against a smooth spline through the surviving CC centroids and drop CCs that lie within ε of the spline AND have density < 0.3.
 
+### Filled-square markers fused with a same-color solid curve (added 2026-06-19, validated on el-94)
+
+The previous "what it doesn't fix" item — filled markers on a solid same-color curve — has a working fix. Audit row 7's recommendation was *almost* right; the correction:
+
+1. Build the gray mask `(60 ≤ gray ≤ 210) ∧ (sat < 50)`, panel-restricted, legend-excluded, with disk regions of *other* series subtracted (their dilated halo too, ~7 px radius).
+2. **Vertical opening with a small kernel** (`np.ones((3, 1), np.uint8)`) — *vertical*, not horizontal as the audit said. The thin (1–2 px) anti-aliased gray bands above/below the solid same-color line erode away; the square interiors (4–6 px tall) keep their center row. The audit's `1×5` horizontal opening doesn't separate the two because both line and square are wide.
+3. **2×2 dilation** restores the square footprint after the opening's erosion.
+4. CC analysis with relaxed thresholds: density > 0.45, area 15–250, bbox 4–24 in either dim.
+5. **Restrict to the y-band the series visually occupies** (read it from the matched-frame overlay or from the GT if available) — drops detections from axis tick text and frame-corner anti-aliasing.
+6. **If the series is sampled at integer x values** (common for survival-curve charts), group by integer x and keep the highest-area detection per bin — eliminates the duplicate "split CC" artefacts the opening occasionally produces.
+
+```python
+mid = ((gray >= 60) & (gray <= 210) & (sat < 50)).astype(np.uint8) * 255
+mid = cv2.bitwise_and(mid, panel)
+# Subtract disks of other series so they don't claim gray pixels.
+mid[other_series_disk_dilated > 0] = 0
+# Vertical opening to remove thin line halos; dilate to restore square footprint.
+mid = cv2.morphologyEx(mid, cv2.MORPH_OPEN, np.ones((3, 1), np.uint8))
+mid = cv2.dilate(mid, np.ones((2, 2), np.uint8), iterations=1)
+# CC + filter + integer-x bin
+```
+
+Validated on el-94 (2026-06-19): 27 °C series went from 14 detected (Recall = 0.56, the recipe's documented failure mode #1) to **25 detected** (matches the audit's expected truth count). Matched-frame overlay confirms every source gray square from x = 14 to x = 38 is now covered. Failure mode #1 closed.
+
 Always check the result by saving the cleaned mask (`cv2.imwrite('cleaned.png', cleaned)`) and `view`ing it before continuing — you want to see whole markers preserved and curve fragments removed.
 
 ## 3a. Marker-on-line (extract markers only)
@@ -265,6 +359,31 @@ snapped = [(round(col2x(cx)), round(row2y(cy), 4)) for cx, cy in pts]
 Kernel-size rule of thumb: erode by **2 px wider than the line**. Line is 2 px → kernel 4 or 5. Line is 3 px → kernel 5 or 6. Too small and the line survives between markers (CCs merge). Too large and the markers themselves vanish (marker disk is ~12 px, kernel 8 leaves only a 4-px core). Check `(core > 0).sum()` after each tweak.
 
 **Legend exclusion is critical here** because the legend swatch is the same color as a series and survives erosion. Always wipe out the legend's bounding box on `mask_area` *before* the color mask. Better to over-exclude than have the legend swatch contribute a phantom marker.
+
+### Emit the line layer too, do not discard it (added 2026-06-19)
+
+The source's drawn line is data, not decoration: the chart's reader uses the line to follow trends across days where no marker was extracted. The §3a recipe historically said "extract the markers, ignore the line" — that drops a layer the audit later flagged as missing on every line-plot chart in the corpus.
+
+The simple, validated fix: the source's line is point-to-point straight segments through the markers in x-order. Emit a `Line Graph` layer whose vertices are exactly the extracted markers, sorted by x within each series.
+
+```python
+# After collecting the per-series snapped markers above:
+import csv
+with open('data.csv','w',newline='') as f:
+    w = csv.writer(f)
+    w.writerow(['layer_idx','layer_type','series','x','y'])
+    for series, points in markers_by_series.items():
+        # Layer 0: scatter markers (what the recipe already emits)
+        for x, y in points:
+            w.writerow([0, 'Scatter Plot', series, x, y])
+        # Layer 1: line connecting them in x-order (new)
+        for x, y in sorted(points):
+            w.writerow([1, 'Line Graph', series, x, y])
+```
+
+The line-equals-markers-in-x-order claim is *testable* under the matched-frame TDD pass: render the line, overlay on the source, and check that the colored line coincides with the source's colored line at every segment. If the source's line bends through a point you did not extract, the marker-detection step missed a marker — fix that, then re-emit. (Validated on el-60-a 2026-06-19: 3 series, all sparse segments coincide.)
+
+If the source clearly draws a *spline* through the markers (curved between integer x), §3a is the wrong recipe — switch to §3 line-trace.
 
 ## 4. Bar chart
 
