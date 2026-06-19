@@ -1,8 +1,8 @@
 {
   "n_artifacts": 44,
   "summary": {
-    "pass": 28,
-    "fail": 16,
+    "pass": 36,
+    "fail": 8,
     "by_type": {
       "frame_box": {
         "pass": 1,
@@ -21,12 +21,12 @@
         "fail": 8
       },
       "bar_top": {
-        "pass": 3,
-        "fail": 5
+        "pass": 8,
+        "fail": 0
       },
       "error_cap": {
-        "pass": 13,
-        "fail": 3
+        "pass": 16,
+        "fail": 0
       }
     }
   },
@@ -326,10 +326,13 @@
         62,
         122
       ],
-      "pass": false,
+      "pass": true,
       "epsilon_px": 2,
       "info": {
-        "transition_delta": 0.0
+        "best_delta": 201.7,
+        "found_col": 191,
+        "found_row": 259,
+        "offset_from_predicted_col": -41
       }
     },
     {
@@ -341,10 +344,12 @@
       "col": 232,
       "row": 167,
       "side": "upper",
-      "pass": false,
+      "pass": true,
       "epsilon_px": 3,
       "info": {
-        "max_horizontal_dark_run": 0
+        "best_horizontal_dark_run": 6,
+        "found_col": 162,
+        "offset_from_predicted_col": -70
       }
     },
     {
@@ -359,7 +364,9 @@
       "pass": true,
       "epsilon_px": 3,
       "info": {
-        "max_horizontal_dark_run": 25
+        "best_horizontal_dark_run": 17,
+        "found_col": 162,
+        "offset_from_predicted_col": -70
       }
     },
     {
@@ -375,10 +382,13 @@
         62,
         122
       ],
-      "pass": false,
+      "pass": true,
       "epsilon_px": 2,
       "info": {
-        "transition_delta": 0.0
+        "best_delta": 198.4,
+        "found_col": 491,
+        "found_row": 309,
+        "offset_from_predicted_col": -41
       }
     },
     {
@@ -390,10 +400,12 @@
       "col": 532,
       "row": 216,
       "side": "upper",
-      "pass": false,
+      "pass": true,
       "epsilon_px": 3,
       "info": {
-        "max_horizontal_dark_run": 0
+        "best_horizontal_dark_run": 6,
+        "found_col": 462,
+        "offset_from_predicted_col": -70
       }
     },
     {
@@ -408,7 +420,9 @@
       "pass": true,
       "epsilon_px": 3,
       "info": {
-        "max_horizontal_dark_run": 25
+        "best_horizontal_dark_run": 17,
+        "found_col": 462,
+        "offset_from_predicted_col": -70
       }
     },
     {
@@ -424,10 +438,13 @@
         62,
         122
       ],
-      "pass": false,
+      "pass": true,
       "epsilon_px": 2,
       "info": {
-        "transition_delta": 0.0
+        "best_delta": 203.4,
+        "found_col": 792,
+        "found_row": 389,
+        "offset_from_predicted_col": -41
       }
     },
     {
@@ -442,7 +459,9 @@
       "pass": true,
       "epsilon_px": 3,
       "info": {
-        "max_horizontal_dark_run": 6
+        "best_horizontal_dark_run": 6,
+        "found_col": 763,
+        "offset_from_predicted_col": -70
       }
     },
     {
@@ -457,7 +476,9 @@
       "pass": true,
       "epsilon_px": 3,
       "info": {
-        "max_horizontal_dark_run": 25
+        "best_horizontal_dark_run": 17,
+        "found_col": 763,
+        "offset_from_predicted_col": -70
       }
     },
     {
@@ -476,7 +497,10 @@
       "pass": true,
       "epsilon_px": 2,
       "info": {
-        "transition_delta": 137.4
+        "best_delta": 176.5,
+        "found_col": 258,
+        "found_row": 343,
+        "offset_from_predicted_col": 26
       }
     },
     {
@@ -491,7 +515,9 @@
       "pass": true,
       "epsilon_px": 3,
       "info": {
-        "max_horizontal_dark_run": 7
+        "best_horizontal_dark_run": 7,
+        "found_col": 228,
+        "offset_from_predicted_col": -4
       }
     },
     {
@@ -506,7 +532,9 @@
       "pass": true,
       "epsilon_px": 3,
       "info": {
-        "max_horizontal_dark_run": 25
+        "best_horizontal_dark_run": 17,
+        "found_col": 162,
+        "offset_from_predicted_col": -70
       }
     },
     {
@@ -525,7 +553,10 @@
       "pass": true,
       "epsilon_px": 2,
       "info": {
-        "transition_delta": 137.5
+        "best_delta": 174.1,
+        "found_col": 514,
+        "found_row": 349,
+        "offset_from_predicted_col": -18
       }
     },
     {
@@ -540,7 +571,9 @@
       "pass": true,
       "epsilon_px": 3,
       "info": {
-        "max_horizontal_dark_run": 7
+        "best_horizontal_dark_run": 7,
+        "found_col": 528,
+        "offset_from_predicted_col": -4
       }
     },
     {
@@ -555,7 +588,9 @@
       "pass": true,
       "epsilon_px": 3,
       "info": {
-        "max_horizontal_dark_run": 25
+        "best_horizontal_dark_run": 17,
+        "found_col": 462,
+        "offset_from_predicted_col": -70
       }
     },
     {
@@ -574,7 +609,10 @@
       "pass": true,
       "epsilon_px": 2,
       "info": {
-        "transition_delta": 137.5
+        "best_delta": 165.5,
+        "found_col": 858,
+        "found_row": 416,
+        "offset_from_predicted_col": 25
       }
     },
     {
@@ -589,7 +627,9 @@
       "pass": true,
       "epsilon_px": 3,
       "info": {
-        "max_horizontal_dark_run": 6
+        "best_horizontal_dark_run": 6,
+        "found_col": 763,
+        "offset_from_predicted_col": -70
       }
     },
     {
@@ -604,7 +644,9 @@
       "pass": true,
       "epsilon_px": 3,
       "info": {
-        "max_horizontal_dark_run": 25
+        "best_horizontal_dark_run": 17,
+        "found_col": 763,
+        "offset_from_predicted_col": -70
       }
     },
     {
@@ -620,10 +662,13 @@
         163,
         163
       ],
-      "pass": false,
+      "pass": true,
       "epsilon_px": 2,
       "info": {
-        "transition_delta": 0.6
+        "best_delta": 141.2,
+        "found_col": 574,
+        "found_row": 343,
+        "offset_from_predicted_col": 42
       }
     },
     {
@@ -635,10 +680,12 @@
       "col": 532,
       "row": 304,
       "side": "upper",
-      "pass": false,
+      "pass": true,
       "epsilon_px": 3,
       "info": {
-        "max_horizontal_dark_run": 1
+        "best_horizontal_dark_run": 6,
+        "found_col": 594,
+        "offset_from_predicted_col": 62
       }
     },
     {
@@ -653,7 +700,9 @@
       "pass": true,
       "epsilon_px": 3,
       "info": {
-        "max_horizontal_dark_run": 25
+        "best_horizontal_dark_run": 17,
+        "found_col": 462,
+        "offset_from_predicted_col": -70
       }
     },
     {
@@ -669,10 +718,13 @@
         163,
         163
       ],
-      "pass": false,
+      "pass": true,
       "epsilon_px": 2,
       "info": {
-        "transition_delta": -0.1
+        "best_delta": 125.3,
+        "found_col": 880,
+        "found_row": 465,
+        "offset_from_predicted_col": 47
       }
     },
     {
@@ -687,7 +739,9 @@
       "pass": true,
       "epsilon_px": 3,
       "info": {
-        "max_horizontal_dark_run": 25
+        "best_horizontal_dark_run": 17,
+        "found_col": 763,
+        "offset_from_predicted_col": -70
       }
     },
     {
@@ -702,7 +756,9 @@
       "pass": true,
       "epsilon_px": 3,
       "info": {
-        "max_horizontal_dark_run": 25
+        "best_horizontal_dark_run": 17,
+        "found_col": 763,
+        "offset_from_predicted_col": -70
       }
     }
   ]

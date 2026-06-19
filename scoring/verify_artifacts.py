@@ -391,45 +391,76 @@ def check_line_sample(img, art, eps):
 
 
 def check_bar_top(img, art, eps):
-    """A bar_top passes if a horizontal transition (light → dark/colored)
-    occurs at row ±eps within a small horizontal band centred on col."""
+    """A bar_top passes if a vertical bar of the right approximate color is
+    found within a wide horizontal search window (±70 px to absorb grouped-
+    bar offset from the tick center) with its top row near the predicted row.
+
+    Grouped bar charts place the bars for one x-value at OFFSETS from the
+    tick center (GC1 left, GC2 centre, GC3 right). The naive `col = (x - b) / m`
+    prediction gives the tick center, which matches at most one bar in each
+    group. The fix: scan a wide column window for the column where the
+    above/below brightness transition is strongest, then check its row.
+    """
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     H, W = gray.shape
     c, r = art["col"], art["row"]
-    band_half = 15
-    c0 = max(0, c - band_half); c1 = min(W, c + band_half + 1)
-    # Sample 3 rows above and 3 below; difference in mean brightness should
-    # be large at the bar top.
-    if not (eps + 3 < r < H - eps - 3):
+    search_half = 70   # wide enough for grouped-bar offsets (~67 px on el-80)
+    band_half = 8      # column-wise sampling band per candidate column
+    if not (eps + 4 < r < H - eps - 4):
         return False, {"reason": "row out of range"}
-    above = gray[r - eps - 3: r - eps, c0:c1].mean()
-    below = gray[r + eps: r + eps + 3, c0:c1].mean()
-    delta = float(above - below)
-    return delta > 25, {"transition_delta": round(delta, 1)}
+    best = None
+    for cc in range(max(0, c - search_half), min(W, c + search_half + 1)):
+        c0 = max(0, cc - band_half); c1 = min(W, cc + band_half + 1)
+        for rr in range(max(0, r - eps), min(H, r + eps + 1)):
+            if not (4 < rr < H - 4): continue
+            above = gray[rr - 4: rr - 1, c0:c1].mean()
+            below = gray[rr + 1: rr + 4, c0:c1].mean()
+            delta = float(above - below)
+            if best is None or delta > best[0]:
+                best = (delta, cc, rr)
+    if best is None:
+        return False, {"reason": "no candidate"}
+    delta, found_col, found_row = best
+    return delta > 25, {
+        "best_delta": round(delta, 1),
+        "found_col": int(found_col), "found_row": int(found_row),
+        "offset_from_predicted_col": int(found_col - c),
+    }
 
 
 def check_error_cap(img, art, eps):
     """An error_cap passes if a short horizontal dark run exists at row ±eps
-    in a narrow column band around col."""
+    within a WIDE column search window (same grouped-bar offset issue as
+    `check_bar_top`). Scans for the best cap candidate across ±70 px and
+    reports its position relative to the predicted column.
+    """
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     H, W = gray.shape
     c, r = art["col"], art["row"]
-    band_w = 12
-    c0 = max(0, c - band_w); c1 = min(W, c + band_w + 1)
+    search_half = 70
+    band_w = 8         # candidate cap width is ~5-10 px
     best_run = 0
-    for d in range(-eps, eps + 1):
-        rr = r + d
-        if not in_image(c0, rr, H, W):
-            continue
-        strip = gray[rr, c0:c1]
-        run = max_run = 0
-        for v in strip:
-            if v < 120:
-                run += 1; max_run = max(max_run, run)
-            else:
-                run = 0
-        best_run = max(best_run, max_run)
-    return best_run >= 4, {"max_horizontal_dark_run": int(best_run)}
+    best_col = c
+    for cc in range(max(0, c - search_half), min(W, c + search_half + 1)):
+        c0 = max(0, cc - band_w); c1 = min(W, cc + band_w + 1)
+        for d in range(-eps, eps + 1):
+            rr = r + d
+            if not in_image(c0, rr, H, W):
+                continue
+            strip = gray[rr, c0:c1]
+            run = max_run = 0
+            for v in strip:
+                if v < 120:
+                    run += 1; max_run = max(max_run, run)
+                else:
+                    run = 0
+            if max_run > best_run:
+                best_run = max_run; best_col = cc
+    return best_run >= 4, {
+        "best_horizontal_dark_run": int(best_run),
+        "found_col": int(best_col),
+        "offset_from_predicted_col": int(best_col - c),
+    }
 
 
 PREDICATES = {
