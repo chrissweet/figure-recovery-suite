@@ -1,0 +1,1168 @@
+{
+  "n_artifacts": 55,
+  "summary": {
+    "pass": 54,
+    "fail": 1,
+    "by_type": {
+      "frame_box": {
+        "pass": 1,
+        "fail": 0
+      },
+      "axis_line": {
+        "pass": 2,
+        "fail": 0
+      },
+      "tick_center": {
+        "pass": 6,
+        "fail": 1
+      },
+      "bar_top": {
+        "pass": 45,
+        "fail": 0
+      }
+    }
+  },
+  "epsilon_px": {
+    "frame_box": 2,
+    "axis_line": 2,
+    "tick_center": 5,
+    "legend_box": 15,
+    "marker_centroid": 3,
+    "line_endpoint": 10,
+    "line_sample": 3,
+    "bar_top": 2,
+    "error_cap": 3
+  },
+  "results": [
+    {
+      "type": "frame_box",
+      "id": "main",
+      "left": 71,
+      "top": 37,
+      "right": 785,
+      "bottom": 392,
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "edges": {
+          "top": 1.0,
+          "bottom": 1.0,
+          "left": 1.0,
+          "right": 1.0
+        },
+        "n_good_edges": 4
+      }
+    },
+    {
+      "type": "axis_line",
+      "id": "y_axis",
+      "orientation": "vertical",
+      "fixed": 71,
+      "extent": [
+        37,
+        392
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "axis_dark_fraction": 1.0
+      }
+    },
+    {
+      "type": "axis_line",
+      "id": "x_axis",
+      "orientation": "horizontal",
+      "fixed": 392,
+      "extent": [
+        71,
+        785
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "axis_dark_fraction": 1.0
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_1",
+      "axis": "x",
+      "col": 154,
+      "row": 410,
+      "value": 1,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 77
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_2",
+      "axis": "x",
+      "col": 290,
+      "row": 410,
+      "value": 2,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 86
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_3",
+      "axis": "x",
+      "col": 427,
+      "row": 410,
+      "value": 3,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 125
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_4",
+      "axis": "x",
+      "col": 564,
+      "row": 410,
+      "value": 4,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 82
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_5",
+      "axis": "x",
+      "col": 701,
+      "row": 410,
+      "value": 5,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 86
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_0",
+      "axis": "y",
+      "col": 41,
+      "row": 391,
+      "value": 0,
+      "pass": false,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 0
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_100",
+      "axis": "y",
+      "col": 41,
+      "row": 69,
+      "value": 100,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 51
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Baseline_0.75",
+      "series": "Baseline",
+      "x": 0.75,
+      "y": 41.82,
+      "col": 119,
+      "row": 257,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 188.5,
+        "found_col": 111,
+        "found_row": 255,
+        "offset_from_predicted_col": -8
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Baseline_1.7515",
+      "series": "Baseline",
+      "x": 1.7515,
+      "y": 44.62,
+      "col": 257,
+      "row": 247,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 188.5,
+        "found_col": 248,
+        "found_row": 246,
+        "offset_from_predicted_col": -9
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Baseline_2.7529",
+      "series": "Baseline",
+      "x": 2.7529,
+      "y": 48.65,
+      "col": 393,
+      "row": 235,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 188.5,
+        "found_col": 385,
+        "found_row": 233,
+        "offset_from_predicted_col": -8
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Baseline_3.7471",
+      "series": "Baseline",
+      "x": 3.7471,
+      "y": 50.83,
+      "col": 530,
+      "row": 227,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 188.5,
+        "found_col": 521,
+        "found_row": 226,
+        "offset_from_predicted_col": -9
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Baseline_4.7485",
+      "series": "Baseline",
+      "x": 4.7485,
+      "y": 53.62,
+      "col": 666,
+      "row": 219,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 188.5,
+        "found_col": 658,
+        "found_row": 217,
+        "offset_from_predicted_col": -8
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Tuned_0.9985",
+      "series": "Tuned",
+      "x": 0.9985,
+      "y": 57.66,
+      "col": 153,
+      "row": 206,
+      "color": [
+        255,
+        127,
+        14
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 156.1,
+        "found_col": 145,
+        "found_row": 204,
+        "offset_from_predicted_col": -8
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Tuned_2.0",
+      "series": "Tuned",
+      "x": 2.0,
+      "y": 62.63,
+      "col": 290,
+      "row": 189,
+      "color": [
+        255,
+        127,
+        14
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 156.1,
+        "found_col": 282,
+        "found_row": 188,
+        "offset_from_predicted_col": -8
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Tuned_3.0015",
+      "series": "Tuned",
+      "x": 3.0015,
+      "y": 66.67,
+      "col": 428,
+      "row": 176,
+      "color": [
+        255,
+        127,
+        14
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 156.1,
+        "found_col": 419,
+        "found_row": 175,
+        "offset_from_predicted_col": -9
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Tuned_3.9993",
+      "series": "Tuned",
+      "x": 3.9993,
+      "y": 69.77,
+      "col": 564,
+      "row": 167,
+      "color": [
+        255,
+        127,
+        14
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 157.2,
+        "found_col": 555,
+        "found_row": 165,
+        "offset_from_predicted_col": -9
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Tuned_4.9971",
+      "series": "Tuned",
+      "x": 4.9971,
+      "y": 73.81,
+      "col": 701,
+      "row": 153,
+      "color": [
+        255,
+        127,
+        14
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 156.1,
+        "found_col": 692,
+        "found_row": 152,
+        "offset_from_predicted_col": -9
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Tuned+JIT_1.2507",
+      "series": "Tuned+JIT",
+      "x": 1.2507,
+      "y": 70.7,
+      "col": 188,
+      "row": 164,
+      "color": [
+        44,
+        160,
+        44
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 182.3,
+        "found_col": 179,
+        "found_row": 162,
+        "offset_from_predicted_col": -9
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Tuned+JIT_2.2485",
+      "series": "Tuned+JIT",
+      "x": 2.2485,
+      "y": 77.85,
+      "col": 324,
+      "row": 140,
+      "color": [
+        44,
+        160,
+        44
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 180.4,
+        "found_col": 316,
+        "found_row": 139,
+        "offset_from_predicted_col": -8
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Tuned+JIT_3.25",
+      "series": "Tuned+JIT",
+      "x": 3.25,
+      "y": 81.57,
+      "col": 461,
+      "row": 129,
+      "color": [
+        44,
+        160,
+        44
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 181.1,
+        "found_col": 453,
+        "found_row": 127,
+        "offset_from_predicted_col": -8
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Tuned+JIT_4.2515",
+      "series": "Tuned+JIT",
+      "x": 4.2515,
+      "y": 84.68,
+      "col": 599,
+      "row": 118,
+      "color": [
+        44,
+        160,
+        44
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 181.1,
+        "found_col": 590,
+        "found_row": 117,
+        "offset_from_predicted_col": -9
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Tuned+JIT_5.2493",
+      "series": "Tuned+JIT",
+      "x": 5.2493,
+      "y": 88.72,
+      "col": 735,
+      "row": 105,
+      "color": [
+        44,
+        160,
+        44
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 182.3,
+        "found_col": 745,
+        "found_row": 104,
+        "offset_from_predicted_col": 10
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Baseline_0.75",
+      "series": "Baseline",
+      "x": 0.75,
+      "y": 44.62,
+      "col": 119,
+      "row": 247,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 88.6,
+        "found_col": 118,
+        "found_row": 246,
+        "offset_from_predicted_col": -1
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Baseline_0.75",
+      "series": "Baseline",
+      "x": 0.75,
+      "y": 39.03,
+      "col": 119,
+      "row": 265,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 28.0,
+        "found_col": 118,
+        "found_row": 264,
+        "offset_from_predicted_col": -1
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Baseline_1.7515",
+      "series": "Baseline",
+      "x": 1.7515,
+      "y": 47.72,
+      "col": 257,
+      "row": 238,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 88.6,
+        "found_col": 255,
+        "found_row": 236,
+        "offset_from_predicted_col": -2
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Baseline_1.7515",
+      "series": "Baseline",
+      "x": 1.7515,
+      "y": 41.82,
+      "col": 257,
+      "row": 257,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 28.0,
+        "found_col": 255,
+        "found_row": 255,
+        "offset_from_predicted_col": -2
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Baseline_2.7529",
+      "series": "Baseline",
+      "x": 2.7529,
+      "y": 52.07,
+      "col": 393,
+      "row": 224,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 88.6,
+        "found_col": 392,
+        "found_row": 222,
+        "offset_from_predicted_col": -1
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Baseline_2.7529",
+      "series": "Baseline",
+      "x": 2.7529,
+      "y": 45.55,
+      "col": 393,
+      "row": 244,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 28.0,
+        "found_col": 392,
+        "found_row": 243,
+        "offset_from_predicted_col": -1
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Baseline_3.7471",
+      "series": "Baseline",
+      "x": 3.7471,
+      "y": 54.24,
+      "col": 530,
+      "row": 217,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 88.6,
+        "found_col": 528,
+        "found_row": 215,
+        "offset_from_predicted_col": -2
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Baseline_3.7471",
+      "series": "Baseline",
+      "x": 3.7471,
+      "y": 47.41,
+      "col": 530,
+      "row": 239,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 28.0,
+        "found_col": 528,
+        "found_row": 237,
+        "offset_from_predicted_col": -2
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Baseline_4.7485",
+      "series": "Baseline",
+      "x": 4.7485,
+      "y": 57.66,
+      "col": 666,
+      "row": 206,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 88.6,
+        "found_col": 665,
+        "found_row": 204,
+        "offset_from_predicted_col": -1
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Baseline_4.7485",
+      "series": "Baseline",
+      "x": 4.7485,
+      "y": 49.9,
+      "col": 666,
+      "row": 230,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 28.0,
+        "found_col": 665,
+        "found_row": 229,
+        "offset_from_predicted_col": -1
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Tuned_0.9985",
+      "series": "Tuned",
+      "x": 0.9985,
+      "y": 61.39,
+      "col": 153,
+      "row": 193,
+      "color": [
+        255,
+        127,
+        14
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 88.6,
+        "found_col": 152,
+        "found_row": 192,
+        "offset_from_predicted_col": -1
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Tuned_0.9985",
+      "series": "Tuned",
+      "x": 0.9985,
+      "y": 53.62,
+      "col": 153,
+      "row": 219,
+      "color": [
+        255,
+        127,
+        14
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 41.7,
+        "found_col": 152,
+        "found_row": 217,
+        "offset_from_predicted_col": -1
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Tuned_2.0",
+      "series": "Tuned",
+      "x": 2.0,
+      "y": 66.67,
+      "col": 290,
+      "row": 176,
+      "color": [
+        255,
+        127,
+        14
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 88.6,
+        "found_col": 289,
+        "found_row": 175,
+        "offset_from_predicted_col": -1
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Tuned_2.0",
+      "series": "Tuned",
+      "x": 2.0,
+      "y": 58.28,
+      "col": 290,
+      "row": 204,
+      "color": [
+        255,
+        127,
+        14
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 43.8,
+        "found_col": 289,
+        "found_row": 202,
+        "offset_from_predicted_col": -1
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Tuned_3.0015",
+      "series": "Tuned",
+      "x": 3.0015,
+      "y": 71.01,
+      "col": 428,
+      "row": 163,
+      "color": [
+        255,
+        127,
+        14
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 88.6,
+        "found_col": 426,
+        "found_row": 161,
+        "offset_from_predicted_col": -2
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Tuned_3.0015",
+      "series": "Tuned",
+      "x": 3.0015,
+      "y": 62.01,
+      "col": 428,
+      "row": 191,
+      "color": [
+        255,
+        127,
+        14
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 41.7,
+        "found_col": 426,
+        "found_row": 190,
+        "offset_from_predicted_col": -2
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Tuned_3.9993",
+      "series": "Tuned",
+      "x": 3.9993,
+      "y": 74.12,
+      "col": 564,
+      "row": 152,
+      "color": [
+        255,
+        127,
+        14
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 88.6,
+        "found_col": 563,
+        "found_row": 151,
+        "offset_from_predicted_col": -1
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Tuned_3.9993",
+      "series": "Tuned",
+      "x": 3.9993,
+      "y": 64.8,
+      "col": 564,
+      "row": 183,
+      "color": [
+        255,
+        127,
+        14
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 41.7,
+        "found_col": 563,
+        "found_row": 181,
+        "offset_from_predicted_col": -1
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Tuned_4.9971",
+      "series": "Tuned",
+      "x": 4.9971,
+      "y": 78.47,
+      "col": 701,
+      "row": 138,
+      "color": [
+        255,
+        127,
+        14
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 79.3,
+        "found_col": 699,
+        "found_row": 137,
+        "offset_from_predicted_col": -2
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Tuned_4.9971",
+      "series": "Tuned",
+      "x": 4.9971,
+      "y": 68.53,
+      "col": 701,
+      "row": 170,
+      "color": [
+        255,
+        127,
+        14
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 41.7,
+        "found_col": 699,
+        "found_row": 169,
+        "offset_from_predicted_col": -2
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Tuned+JIT_1.2507",
+      "series": "Tuned+JIT",
+      "x": 1.2507,
+      "y": 75.05,
+      "col": 188,
+      "row": 150,
+      "color": [
+        44,
+        160,
+        44
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 88.6,
+        "found_col": 187,
+        "found_row": 148,
+        "offset_from_predicted_col": -1
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Tuned+JIT_1.2507",
+      "series": "Tuned+JIT",
+      "x": 1.2507,
+      "y": 65.42,
+      "col": 188,
+      "row": 181,
+      "color": [
+        44,
+        160,
+        44
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 30.6,
+        "found_col": 187,
+        "found_row": 179,
+        "offset_from_predicted_col": -1
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Tuned+JIT_2.2485",
+      "series": "Tuned+JIT",
+      "x": 2.2485,
+      "y": 82.19,
+      "col": 324,
+      "row": 127,
+      "color": [
+        44,
+        160,
+        44
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 88.6,
+        "found_col": 323,
+        "found_row": 125,
+        "offset_from_predicted_col": -1
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Tuned+JIT_2.2485",
+      "series": "Tuned+JIT",
+      "x": 2.2485,
+      "y": 72.26,
+      "col": 324,
+      "row": 158,
+      "color": [
+        44,
+        160,
+        44
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 30.6,
+        "found_col": 323,
+        "found_row": 157,
+        "offset_from_predicted_col": -1
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Tuned+JIT_3.25",
+      "series": "Tuned+JIT",
+      "x": 3.25,
+      "y": 86.54,
+      "col": 461,
+      "row": 113,
+      "color": [
+        44,
+        160,
+        44
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 88.6,
+        "found_col": 460,
+        "found_row": 111,
+        "offset_from_predicted_col": -1
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Tuned+JIT_3.25",
+      "series": "Tuned+JIT",
+      "x": 3.25,
+      "y": 75.98,
+      "col": 461,
+      "row": 147,
+      "color": [
+        44,
+        160,
+        44
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 30.6,
+        "found_col": 460,
+        "found_row": 145,
+        "offset_from_predicted_col": -1
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Tuned+JIT_4.2515",
+      "series": "Tuned+JIT",
+      "x": 4.2515,
+      "y": 89.96,
+      "col": 599,
+      "row": 101,
+      "color": [
+        44,
+        160,
+        44
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 88.6,
+        "found_col": 597,
+        "found_row": 100,
+        "offset_from_predicted_col": -2
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Tuned+JIT_4.2515",
+      "series": "Tuned+JIT",
+      "x": 4.2515,
+      "y": 78.78,
+      "col": 599,
+      "row": 137,
+      "color": [
+        44,
+        160,
+        44
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 36.8,
+        "found_col": 597,
+        "found_row": 136,
+        "offset_from_predicted_col": -2
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Tuned+JIT_5.2493",
+      "series": "Tuned+JIT",
+      "x": 5.2493,
+      "y": 94.0,
+      "col": 735,
+      "row": 88,
+      "color": [
+        44,
+        160,
+        44
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 88.6,
+        "found_col": 733,
+        "found_row": 87,
+        "offset_from_predicted_col": -2
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Tuned+JIT_5.2493",
+      "series": "Tuned+JIT",
+      "x": 5.2493,
+      "y": 82.5,
+      "col": 735,
+      "row": 126,
+      "color": [
+        44,
+        160,
+        44
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 30.6,
+        "found_col": 733,
+        "found_row": 124,
+        "offset_from_predicted_col": -2
+      }
+    }
+  ]
+}

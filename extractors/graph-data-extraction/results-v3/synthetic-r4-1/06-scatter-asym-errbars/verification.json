@@ -1,0 +1,1163 @@
+{
+  "n_artifacts": 59,
+  "summary": {
+    "pass": 43,
+    "fail": 16,
+    "by_type": {
+      "frame_box": {
+        "pass": 1,
+        "fail": 0
+      },
+      "axis_line": {
+        "pass": 2,
+        "fail": 0
+      },
+      "tick_center": {
+        "pass": 8,
+        "fail": 8
+      },
+      "marker_centroid": {
+        "pass": 0,
+        "fail": 8
+      },
+      "bar_top": {
+        "pass": 32,
+        "fail": 0
+      }
+    }
+  },
+  "epsilon_px": {
+    "frame_box": 2,
+    "axis_line": 2,
+    "tick_center": 5,
+    "legend_box": 15,
+    "marker_centroid": 3,
+    "line_endpoint": 10,
+    "line_sample": 3,
+    "bar_top": 2,
+    "error_cap": 3
+  },
+  "results": [
+    {
+      "type": "frame_box",
+      "id": "main",
+      "left": 62,
+      "top": 37,
+      "right": 676,
+      "bottom": 392,
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "edges": {
+          "top": 1.0,
+          "bottom": 1.0,
+          "left": 1.0,
+          "right": 1.0
+        },
+        "n_good_edges": 4
+      }
+    },
+    {
+      "type": "axis_line",
+      "id": "y_axis",
+      "orientation": "vertical",
+      "fixed": 62,
+      "extent": [
+        37,
+        392
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "axis_dark_fraction": 1.0
+      }
+    },
+    {
+      "type": "axis_line",
+      "id": "x_axis",
+      "orientation": "horizontal",
+      "fixed": 392,
+      "extent": [
+        62,
+        676
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "axis_dark_fraction": 1.0
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_0",
+      "axis": "x",
+      "col": -3,
+      "row": 410,
+      "value": 0,
+      "pass": false,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 0
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_5",
+      "axis": "x",
+      "col": -3,
+      "row": 410,
+      "value": 5,
+      "pass": false,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 0
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_10",
+      "axis": "x",
+      "col": -2,
+      "row": 410,
+      "value": 10,
+      "pass": false,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 0
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_15",
+      "axis": "x",
+      "col": -2,
+      "row": 410,
+      "value": 15,
+      "pass": false,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 0
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_20",
+      "axis": "x",
+      "col": -2,
+      "row": 410,
+      "value": 20,
+      "pass": false,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 0
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_25",
+      "axis": "x",
+      "col": -2,
+      "row": 410,
+      "value": 25,
+      "pass": false,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 0
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_30",
+      "axis": "x",
+      "col": -1,
+      "row": 410,
+      "value": 30,
+      "pass": false,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 0
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_35",
+      "axis": "x",
+      "col": -1,
+      "row": 410,
+      "value": 35,
+      "pass": false,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 0
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_0",
+      "axis": "y",
+      "col": 32,
+      "row": 38,
+      "value": 0,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 25
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_5",
+      "axis": "y",
+      "col": 32,
+      "row": 38,
+      "value": 5,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 25
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_10",
+      "axis": "y",
+      "col": 32,
+      "row": 37,
+      "value": 10,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 25
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_15",
+      "axis": "y",
+      "col": 32,
+      "row": 37,
+      "value": 15,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 25
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_20",
+      "axis": "y",
+      "col": 32,
+      "row": 36,
+      "value": 20,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 25
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_25",
+      "axis": "y",
+      "col": 32,
+      "row": 36,
+      "value": 25,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 25
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_30",
+      "axis": "y",
+      "col": 32,
+      "row": 35,
+      "value": 30,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 25
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_35",
+      "axis": "y",
+      "col": 32,
+      "row": 35,
+      "value": 35,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 25
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "measurement_29.984_27.861",
+      "series": "measurement",
+      "x": 29.984,
+      "y": 27.861,
+      "col": -1,
+      "row": 36,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": false,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 0,
+        "reason": "window background"
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "measurement_25.993_22.805",
+      "series": "measurement",
+      "x": 25.993,
+      "y": 22.805,
+      "col": -2,
+      "row": 36,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": false,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 0,
+        "reason": "window background"
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "measurement_22.003_17.748",
+      "series": "measurement",
+      "x": 22.003,
+      "y": 17.748,
+      "col": -2,
+      "row": 37,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": false,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 0,
+        "reason": "window background"
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "measurement_18.013_14.972",
+      "series": "measurement",
+      "x": 18.013,
+      "y": 14.972,
+      "col": -2,
+      "row": 37,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": false,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 0,
+        "reason": "window background"
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "measurement_14.023_12.89",
+      "series": "measurement",
+      "x": 14.023,
+      "y": 12.89,
+      "col": -2,
+      "row": 37,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": false,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 0,
+        "reason": "window background"
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "measurement_9.976_12.592",
+      "series": "measurement",
+      "x": 9.976,
+      "y": 12.592,
+      "col": -2,
+      "row": 37,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": false,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 0,
+        "reason": "window background"
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "measurement_5.985_10.212",
+      "series": "measurement",
+      "x": 5.985,
+      "y": 10.212,
+      "col": -3,
+      "row": 37,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": false,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 0,
+        "reason": "window background"
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "measurement_1.995_8.229",
+      "series": "measurement",
+      "x": 1.995,
+      "y": 8.229,
+      "col": -3,
+      "row": 37,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": false,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 0,
+        "reason": "window background"
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "measurement_29.984",
+      "series": "measurement",
+      "x": 29.984,
+      "y": 29.348,
+      "col": -1,
+      "row": 35,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 101.2,
+        "found_col": 69,
+        "found_row": 36,
+        "offset_from_predicted_col": 70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "measurement_29.984",
+      "series": "measurement",
+      "x": 29.984,
+      "y": 25.382,
+      "col": -1,
+      "row": 36,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 101.2,
+        "found_col": 69,
+        "found_row": 36,
+        "offset_from_predicted_col": 70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "measurement_31.523",
+      "series": "measurement",
+      "x": 31.523,
+      "y": 27.861,
+      "col": -1,
+      "row": 36,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 101.2,
+        "found_col": 69,
+        "found_row": 36,
+        "offset_from_predicted_col": 70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "measurement_27.989",
+      "series": "measurement",
+      "x": 27.989,
+      "y": 27.861,
+      "col": -1,
+      "row": 36,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 101.2,
+        "found_col": 69,
+        "found_row": 36,
+        "offset_from_predicted_col": 70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "measurement_25.993",
+      "series": "measurement",
+      "x": 25.993,
+      "y": 24.193,
+      "col": -2,
+      "row": 36,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 101.1,
+        "found_col": 68,
+        "found_row": 36,
+        "offset_from_predicted_col": 70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "measurement_25.993",
+      "series": "measurement",
+      "x": 25.993,
+      "y": 20.524,
+      "col": -2,
+      "row": 36,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 101.1,
+        "found_col": 68,
+        "found_row": 36,
+        "offset_from_predicted_col": 70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "measurement_27.362",
+      "series": "measurement",
+      "x": 27.362,
+      "y": 22.805,
+      "col": -1,
+      "row": 36,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 101.2,
+        "found_col": 69,
+        "found_row": 36,
+        "offset_from_predicted_col": 70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "measurement_24.226",
+      "series": "measurement",
+      "x": 24.226,
+      "y": 22.805,
+      "col": -2,
+      "row": 36,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 101.1,
+        "found_col": 68,
+        "found_row": 36,
+        "offset_from_predicted_col": 70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "measurement_22.003",
+      "series": "measurement",
+      "x": 22.003,
+      "y": 18.938,
+      "col": -2,
+      "row": 36,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 101.1,
+        "found_col": 68,
+        "found_row": 36,
+        "offset_from_predicted_col": 70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "measurement_22.003",
+      "series": "measurement",
+      "x": 22.003,
+      "y": 15.567,
+      "col": -2,
+      "row": 37,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 101.1,
+        "found_col": 68,
+        "found_row": 36,
+        "offset_from_predicted_col": 70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "measurement_23.2",
+      "series": "measurement",
+      "x": 23.2,
+      "y": 17.748,
+      "col": -2,
+      "row": 37,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 101.1,
+        "found_col": 68,
+        "found_row": 36,
+        "offset_from_predicted_col": 70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "measurement_20.407",
+      "series": "measurement",
+      "x": 20.407,
+      "y": 17.748,
+      "col": -2,
+      "row": 37,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 101.1,
+        "found_col": 68,
+        "found_row": 36,
+        "offset_from_predicted_col": 70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "measurement_18.013",
+      "series": "measurement",
+      "x": 18.013,
+      "y": 16.161,
+      "col": -2,
+      "row": 37,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 101.1,
+        "found_col": 68,
+        "found_row": 36,
+        "offset_from_predicted_col": 70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "measurement_18.013",
+      "series": "measurement",
+      "x": 18.013,
+      "y": 13.088,
+      "col": -2,
+      "row": 37,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 101.1,
+        "found_col": 68,
+        "found_row": 36,
+        "offset_from_predicted_col": 70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "measurement_19.039",
+      "series": "measurement",
+      "x": 19.039,
+      "y": 14.972,
+      "col": -2,
+      "row": 37,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 101.1,
+        "found_col": 68,
+        "found_row": 36,
+        "offset_from_predicted_col": 70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "measurement_16.588",
+      "series": "measurement",
+      "x": 16.588,
+      "y": 14.972,
+      "col": -2,
+      "row": 37,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 101.1,
+        "found_col": 68,
+        "found_row": 36,
+        "offset_from_predicted_col": 70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "measurement_14.023",
+      "series": "measurement",
+      "x": 14.023,
+      "y": 13.881,
+      "col": -2,
+      "row": 37,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 101.1,
+        "found_col": 68,
+        "found_row": 36,
+        "offset_from_predicted_col": 70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "measurement_14.023",
+      "series": "measurement",
+      "x": 14.023,
+      "y": 11.204,
+      "col": -2,
+      "row": 37,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 101.1,
+        "found_col": 68,
+        "found_row": 36,
+        "offset_from_predicted_col": 70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "measurement_14.878",
+      "series": "measurement",
+      "x": 14.878,
+      "y": 12.89,
+      "col": -2,
+      "row": 37,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 101.1,
+        "found_col": 68,
+        "found_row": 36,
+        "offset_from_predicted_col": 70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "measurement_12.826",
+      "series": "measurement",
+      "x": 12.826,
+      "y": 12.89,
+      "col": -2,
+      "row": 37,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 101.1,
+        "found_col": 68,
+        "found_row": 36,
+        "offset_from_predicted_col": 70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "measurement_9.976",
+      "series": "measurement",
+      "x": 9.976,
+      "y": 13.484,
+      "col": -2,
+      "row": 37,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 101.1,
+        "found_col": 68,
+        "found_row": 36,
+        "offset_from_predicted_col": 70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "measurement_9.976",
+      "series": "measurement",
+      "x": 9.976,
+      "y": 11.105,
+      "col": -2,
+      "row": 37,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 101.1,
+        "found_col": 68,
+        "found_row": 36,
+        "offset_from_predicted_col": 70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "measurement_10.717",
+      "series": "measurement",
+      "x": 10.717,
+      "y": 12.592,
+      "col": -2,
+      "row": 37,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 101.1,
+        "found_col": 68,
+        "found_row": 36,
+        "offset_from_predicted_col": 70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "measurement_9.007",
+      "series": "measurement",
+      "x": 9.007,
+      "y": 12.592,
+      "col": -3,
+      "row": 37,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 101.1,
+        "found_col": 67,
+        "found_row": 36,
+        "offset_from_predicted_col": 70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "measurement_5.985",
+      "series": "measurement",
+      "x": 5.985,
+      "y": 11.006,
+      "col": -3,
+      "row": 37,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 101.1,
+        "found_col": 67,
+        "found_row": 36,
+        "offset_from_predicted_col": 70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "measurement_5.985",
+      "series": "measurement",
+      "x": 5.985,
+      "y": 8.924,
+      "col": -3,
+      "row": 37,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 101.1,
+        "found_col": 67,
+        "found_row": 36,
+        "offset_from_predicted_col": 70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "measurement_6.555",
+      "series": "measurement",
+      "x": 6.555,
+      "y": 10.212,
+      "col": -3,
+      "row": 37,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 101.1,
+        "found_col": 67,
+        "found_row": 36,
+        "offset_from_predicted_col": 70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "measurement_5.187",
+      "series": "measurement",
+      "x": 5.187,
+      "y": 10.212,
+      "col": -3,
+      "row": 37,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 101.1,
+        "found_col": 67,
+        "found_row": 36,
+        "offset_from_predicted_col": 70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "measurement_1.995",
+      "series": "measurement",
+      "x": 1.995,
+      "y": 8.924,
+      "col": -3,
+      "row": 37,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 101.1,
+        "found_col": 67,
+        "found_row": 36,
+        "offset_from_predicted_col": 70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "measurement_1.995",
+      "series": "measurement",
+      "x": 1.995,
+      "y": 7.139,
+      "col": -3,
+      "row": 38,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 101.1,
+        "found_col": 67,
+        "found_row": 36,
+        "offset_from_predicted_col": 70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "measurement_2.394",
+      "series": "measurement",
+      "x": 2.394,
+      "y": 8.229,
+      "col": -3,
+      "row": 37,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 101.1,
+        "found_col": 67,
+        "found_row": 36,
+        "offset_from_predicted_col": 70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "measurement_1.368",
+      "series": "measurement",
+      "x": 1.368,
+      "y": 8.229,
+      "col": -3,
+      "row": 37,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 101.1,
+        "found_col": 67,
+        "found_row": 36,
+        "offset_from_predicted_col": 70
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "chart_id": "08-percent-scinot-ticks",
+  "panel_id": null,
+  "source_citation": null,
+  "chart_title": "Synthetic #8 — percent x ticks + sci-notation y ticks",
+  "x_axis": {
+    "title": "Saturation fraction",
+    "unit": "%",
+    "title_verbatim": "Saturation fraction",
+    "decimal_separator": ".",
+    "tick_label_format": "percent",
+    "tick_labels_verbatim": ["0%", "20%", "40%", "60%", "80%", "100%"],
+    "value_storage_convention": "Data values stored as fractions in [0,1] (tick_value / 100). x_axis_unit recorded as '%' to reflect the printed labels; consumers must apply *100 for percent display.",
+    "notes": "Axis title has no parenthesized unit; the '%' qualifier lives in the tick labels themselves."
+  },
+  "y_axis": {
+    "title": "Photon yield",
+    "unit": "cps",
+    "title_verbatim": "Photon yield (cps)",
+    "decimal_separator": ".",
+    "offset_label_verbatim": "1e7",
+    "offset_multiplier": 10000000.0,
+    "tick_labels_verbatim": ["0.0", "0.2", "0.4", "0.6", "0.8", "1.0"],
+    "value_storage_convention": "Data values stored in real cps (label_value * 1e7). The small '1e7' label above the y-axis is the matplotlib scientific-notation offset and must be applied before fitting the calibration.",
+    "y_axis_offset_multiplier": 10000000.0
+  },
+  "series_legend": [
+    {
+      "series_id": "Throughput",
+      "source_label": "Throughput",
+      "color": "#1f77b4",
+      "marker_shape": "circle",
+      "line_style": "solid"
+    }
+  ],
+  "chart_type": "Line Graph",
+  "layer_types_present": ["Line Graph"],
+  "notes": "Synthetic stressor chart for the tick-parser: percent-suffix x ticks plus scientific-notation y-axis offset. Single line series 'Throughput' rendered with filled circle markers (matplotlib default blue). Legend at top-left inside plot area. Resolution 750x450."
+}

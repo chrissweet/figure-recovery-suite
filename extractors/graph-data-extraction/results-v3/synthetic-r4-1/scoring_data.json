@@ -1,0 +1,664 @@
+{
+  "corpus": "synthetic-r4-1",
+  "extractor": "graph-data-extraction",
+  "results_dir": "results-v3",
+  "n_charts": 10,
+  "charts": {
+    "01-linear-scatter": {
+      "error": "missing extractor dir: /Users/csweet1/Documents/projects/CRS_research/figure-recovery-suite/extractors/graph-data-extraction/results-v3/synthetic-r4-1/01-linear-scatter"
+    },
+    "02-simple-bar": {
+      "x_tol": 1.0,
+      "y_tol": 0.05,
+      "scatter": {
+        "summary": {
+          "tp": 6,
+          "fn": 0,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "jaccard": 1.0
+        },
+        "gt_n": 6,
+        "mine_n": 6,
+        "by_series": {
+          "throughput": {
+            "gt_label": "throughput",
+            "tp": 6,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 6,
+            "mine_n": 6
+          }
+        }
+      },
+      "curves": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "errbars": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "combined": {
+        "tp": 6,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "jaccard": 1.0
+      }
+    },
+    "03-grouped-bar-errbars": {
+      "x_tol": 1.0,
+      "y_tol": 0.05,
+      "scatter": {
+        "summary": {
+          "tp": 0,
+          "fn": 50,
+          "fp": 45,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 50,
+        "mine_n": 45,
+        "by_series": {
+          "baseline": {
+            "gt_label": "baseline",
+            "tp": 0,
+            "fn": 5,
+            "fp": 15,
+            "gt_n": 5,
+            "mine_n": 15
+          },
+          "tuned": {
+            "gt_label": "tuned",
+            "tp": 0,
+            "fn": 5,
+            "fp": 15,
+            "gt_n": 5,
+            "mine_n": 15
+          },
+          "tunedjit": {
+            "gt_label": "tuned",
+            "tp": 0,
+            "fn": 5,
+            "fp": 15,
+            "gt_n": 5,
+            "mine_n": 15
+          },
+          "unmapped:baselineerrupper": {
+            "gt_label": "baselineerrupper",
+            "tp": 0,
+            "fn": 5,
+            "fp": 0,
+            "gt_n": 5,
+            "mine_n": 0
+          },
+          "unmapped:baselineerrlower": {
+            "gt_label": "baselineerrlower",
+            "tp": 0,
+            "fn": 5,
+            "fp": 0,
+            "gt_n": 5,
+            "mine_n": 0
+          },
+          "unmapped:tunederrupper": {
+            "gt_label": "tunederrupper",
+            "tp": 0,
+            "fn": 5,
+            "fp": 0,
+            "gt_n": 5,
+            "mine_n": 0
+          },
+          "unmapped:tunederrlower": {
+            "gt_label": "tunederrlower",
+            "tp": 0,
+            "fn": 5,
+            "fp": 0,
+            "gt_n": 5,
+            "mine_n": 0
+          },
+          "unmapped:tunedjit": {
+            "gt_label": "tunedjit",
+            "tp": 0,
+            "fn": 5,
+            "fp": 0,
+            "gt_n": 5,
+            "mine_n": 0
+          },
+          "unmapped:tunedjiterrupper": {
+            "gt_label": "tunedjiterrupper",
+            "tp": 0,
+            "fn": 5,
+            "fp": 0,
+            "gt_n": 5,
+            "mine_n": 0
+          },
+          "unmapped:tunedjiterrlower": {
+            "gt_label": "tunedjiterrlower",
+            "tp": 0,
+            "fn": 5,
+            "fp": 0,
+            "gt_n": 5,
+            "mine_n": 0
+          }
+        }
+      },
+      "curves": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "errbars": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "combined": {
+        "tp": 0,
+        "fn": 50,
+        "fp": 45,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "jaccard": 0.0
+      }
+    },
+    "04-log-y-line": {
+      "error": "missing extractor dir: /Users/csweet1/Documents/projects/CRS_research/figure-recovery-suite/extractors/graph-data-extraction/results-v3/synthetic-r4-1/04-log-y-line"
+    },
+    "05-stacked-bar": {
+      "x_tol": 1.0,
+      "y_tol": 0.05,
+      "scatter": {
+        "summary": {
+          "tp": 30,
+          "fn": 0,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "jaccard": 1.0
+        },
+        "gt_n": 30,
+        "mine_n": 30,
+        "by_series": {
+          "cpucumtop": {
+            "gt_label": "cpucumtop",
+            "tp": 5,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 5,
+            "mine_n": 5
+          },
+          "memorycumtop": {
+            "gt_label": "memorycumtop",
+            "tp": 5,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 5,
+            "mine_n": 5
+          },
+          "iowaitcumtop": {
+            "gt_label": "iowaitcumtop",
+            "tp": 5,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 5,
+            "mine_n": 5
+          },
+          "cpuvalue": {
+            "gt_label": "cpuvalue",
+            "tp": 5,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 5,
+            "mine_n": 5
+          },
+          "memoryvalue": {
+            "gt_label": "memoryvalue",
+            "tp": 5,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 5,
+            "mine_n": 5
+          },
+          "iowaitvalue": {
+            "gt_label": "iowaitvalue",
+            "tp": 5,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 5,
+            "mine_n": 5
+          }
+        }
+      },
+      "curves": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "errbars": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "combined": {
+        "tp": 30,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "jaccard": 1.0
+      }
+    },
+    "06-scatter-asym-errbars": {
+      "x_tol": 1.0,
+      "y_tol": 0.05,
+      "scatter": {
+        "summary": {
+          "tp": 7,
+          "fn": 33,
+          "fp": 33,
+          "precision": 0.175,
+          "recall": 0.175,
+          "f1": 0.175,
+          "jaccard": 0.0959
+        },
+        "gt_n": 40,
+        "mine_n": 40,
+        "by_series": {
+          "measurement": {
+            "gt_label": "measurement",
+            "tp": 7,
+            "fn": 1,
+            "fp": 33,
+            "gt_n": 8,
+            "mine_n": 40
+          },
+          "unmapped:xerrleft": {
+            "gt_label": "xerrleft",
+            "tp": 0,
+            "fn": 8,
+            "fp": 0,
+            "gt_n": 8,
+            "mine_n": 0
+          },
+          "unmapped:xerrright": {
+            "gt_label": "xerrright",
+            "tp": 0,
+            "fn": 8,
+            "fp": 0,
+            "gt_n": 8,
+            "mine_n": 0
+          },
+          "unmapped:yerrupper": {
+            "gt_label": "yerrupper",
+            "tp": 0,
+            "fn": 8,
+            "fp": 0,
+            "gt_n": 8,
+            "mine_n": 0
+          },
+          "unmapped:yerrlower": {
+            "gt_label": "yerrlower",
+            "tp": 0,
+            "fn": 8,
+            "fp": 0,
+            "gt_n": 8,
+            "mine_n": 0
+          }
+        }
+      },
+      "curves": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "errbars": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "combined": {
+        "tp": 7,
+        "fn": 33,
+        "fp": 33,
+        "precision": 0.175,
+        "recall": 0.175,
+        "f1": 0.175,
+        "jaccard": 0.0959
+      }
+    },
+    "07-dual-y-axes": {
+      "x_tol": 1.0,
+      "y_tol": 0.05,
+      "scatter": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "curves": {
+        "summary": {
+          "tp": 48,
+          "fn": 0,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "jaccard": 1.0
+        },
+        "gt_n": 48,
+        "mine_n": 48,
+        "by_series": {
+          "drivecurrent": {
+            "gt_label": "drivecurrenta",
+            "tp": 24,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 24,
+            "mine_n": 24
+          },
+          "cellvoltage": {
+            "gt_label": "cellvoltagev",
+            "tp": 24,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 24,
+            "mine_n": 24
+          }
+        }
+      },
+      "errbars": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "combined": {
+        "tp": 48,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "jaccard": 1.0
+      }
+    },
+    "08-percent-scinot-ticks": {
+      "x_tol": 1.0,
+      "y_tol": 0.05,
+      "scatter": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "curves": {
+        "summary": {
+          "tp": 0,
+          "fn": 14,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 14,
+        "mine_n": 14,
+        "by_series": {
+          "throughput": {
+            "gt_label": "throughput",
+            "tp": 0,
+            "fn": 14,
+            "fp": 0,
+            "gt_n": 14,
+            "mine_n": 14
+          }
+        }
+      },
+      "errbars": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "combined": {
+        "tp": 0,
+        "fn": 14,
+        "fp": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "jaccard": 0.0
+      }
+    },
+    "09-open-markers-with-fit": {
+      "x_tol": 1.0,
+      "y_tol": 0.05,
+      "scatter": {
+        "summary": {
+          "tp": 5,
+          "fn": 7,
+          "fp": 7,
+          "precision": 0.4167,
+          "recall": 0.4167,
+          "f1": 0.4167,
+          "jaccard": 0.2632
+        },
+        "gt_n": 12,
+        "mine_n": 12,
+        "by_series": {
+          "measurement": {
+            "gt_label": "measurement",
+            "tp": 5,
+            "fn": 7,
+            "fp": 7,
+            "gt_n": 12,
+            "mine_n": 12
+          }
+        }
+      },
+      "curves": {
+        "summary": {
+          "tp": 3,
+          "fn": 17,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.15,
+          "f1": 0.2609,
+          "jaccard": 0.15
+        },
+        "gt_n": 20,
+        "mine_n": 205,
+        "by_series": {
+          "linearfit": {
+            "gt_label": "linearfit",
+            "tp": 3,
+            "fn": 17,
+            "fp": 0,
+            "gt_n": 20,
+            "mine_n": 205
+          }
+        }
+      },
+      "errbars": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "combined": {
+        "tp": 8,
+        "fn": 24,
+        "fp": 7,
+        "precision": 0.5333,
+        "recall": 0.25,
+        "f1": 0.3404,
+        "jaccard": 0.2051
+      }
+    },
+    "10-crossing-curves": {
+      "error": "missing extractor dir: /Users/csweet1/Documents/projects/CRS_research/figure-recovery-suite/extractors/graph-data-extraction/results-v3/synthetic-r4-1/10-crossing-curves"
+    }
+  },
+  "totals": {
+    "scatter": {
+      "tp": 48,
+      "fn": 90,
+      "fp": 85,
+      "precision": 0.3609,
+      "recall": 0.3478,
+      "f1": 0.3542,
+      "jaccard": 0.2152
+    },
+    "curves": {
+      "tp": 51,
+      "fn": 31,
+      "fp": 0,
+      "precision": 1.0,
+      "recall": 0.622,
+      "f1": 0.7669,
+      "jaccard": 0.622
+    },
+    "errbars": {
+      "tp": 0,
+      "fn": 0,
+      "fp": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "jaccard": 0.0
+    },
+    "combined": {
+      "tp": 99,
+      "fn": 121,
+      "fp": 85,
+      "precision": 0.538,
+      "recall": 0.45,
+      "f1": 0.4901,
+      "jaccard": 0.3246
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "image_size": {"width": 750, "height": 450},
+  "plot_frame_box": {
+    "offset": {"x": 66, "y": 37},
+    "size": {"width": 622, "height": 355},
+    "left": 66, "top": 37, "right": 688, "bottom": 392,
+    "description": "Plot frame detected as the leftmost long dark vertical line (col 66) and rightmost long dark vertical line (col 688). Top axis row 37, bottom axis row 392."
+  },
+  "pixels_per_coordinate_unit": {
+    "x": 62.17,
+    "y_left": 393.43,
+    "y_right": 59.00,
+    "x_unit_label": "min",
+    "y_left_unit_label": "A",
+    "y_right_unit_label": "V"
+  },
+  "data_to_pixel_formula": {
+    "col": "col = (x_value - b_x) / m_x  =>  col = (x_value + 1.063824) / 0.016084",
+    "row_left": "row = (y_value_left - b_y_left) / m_y_left  =>  row = (y_value - 1.295168) / -0.002542",
+    "row_right": "row = (y_value_right - b_y_right) / m_y_right  =>  row = (y_value - 13.635593) / -0.016949"
+  },
+  "data_range": {
+    "x_min": 0.0, "x_max": 10.0,
+    "y_left_min": 0.3, "y_left_max": 1.2,
+    "y_right_min": 7.0, "y_right_max": 13.0
+  },
+  "axis_calibration": {
+    "x_axis": {
+      "formula": "x_value = 0.016084 * pixel_col + (-1.063824)",
+      "m": 0.016084,
+      "b": -1.063824,
+      "scale": "linear",
+      "inverse": "pixel_col = (x_value - (-1.063824)) / 0.016084",
+      "tick_pixels": [67.0, 189.5, 315.0, 439.0, 563.0, 688.5],
+      "tick_values": [0, 2, 4, 6, 8, 10],
+      "unit": "min"
+    },
+    "y_axis_left": {
+      "formula": "y_value = -0.002542 * pixel_row + 1.295168",
+      "m": -0.002542,
+      "b": 1.295168,
+      "scale": "linear",
+      "inverse": "pixel_row = (y_value - 1.295168) / -0.002542",
+      "tick_pixels": [37.5, 76.5, 116.5, 155.5, 194.5, 234.5, 273.5, 312.5, 352.5, 391.5],
+      "tick_values": [1.2, 1.1, 1.0, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3],
+      "unit": "A",
+      "title": "Drive current",
+      "color_signal": "Blue tick label text (hsv H 100-140) — labels rendered in matching series color, used as primary axis assignment signal."
+    },
+    "y_axis_right": {
+      "formula": "y_value = -0.016949 * pixel_row + 13.635593",
+      "m": -0.016949,
+      "b": 13.635593,
+      "scale": "linear",
+      "inverse": "pixel_row = (y_value - 13.635593) / -0.016949",
+      "tick_pixels": [37.5, 96.5, 155.5, 214.5, 273.5, 332.5, 391.5],
+      "tick_values": [13, 12, 11, 10, 9, 8, 7],
+      "unit": "V",
+      "title": "Cell voltage",
+      "color_signal": "Red tick label text (hsv H 0-10 or 160-180) — labels rendered in matching series color."
+    }
+  },
+  "worked_example": {
+    "scenario": "Verify pixel (310, 200) maps to expected values on each axis.",
+    "input": {"pixel_col": 310, "pixel_row_left_candidate": 259, "pixel_row_right_candidate": 200},
+    "compute": [
+      "x = 0.016084 * 310 - 1.063824 = 3.922",
+      "y_left = -0.002542 * 259 + 1.295168 = 0.637 A",
+      "y_right = -0.016949 * 200 + 13.635593 = 10.246 V"
+    ],
+    "result": {"x_min": 3.922, "y_drive_current_A": 0.637, "y_cell_voltage_V": 10.246},
+    "verification": "Matches the visually-read 10th blue marker (x~3.9, y~0.64 A) and the 10th red marker (x~3.9, y~10.25 V)."
+  },
+  "detection_internals": {
+    "left_y_axis_detection": "Longest dark vertical column at col=66 (362 dark px).",
+    "right_y_axis_detection": "Second longest dark vertical column at col=688 (360 dark px).",
+    "top_axis_detection": "Long dark row at row=37 (634 px).",
+    "bottom_axis_detection": "Long dark row at row=392 (631 px).",
+    "x_tick_detection": "Dark text clusters below row 392 in the [395,412] band; centers at [67, 189.5, 315, 439, 563, 688.5] mapped to [0,2,4,6,8,10].",
+    "left_y_tick_detection": "HSV blue mask (H in [100,140]) in band x in [35,62]; 10 tick centers found.",
+    "right_y_tick_detection": "HSV red mask (H in [0,10] U [160,180]) in band x in [692,722]; tick centers at integer 59px spacing extracted from clean clusters (rotated axis-title text introduced spurious clusters that were filtered).",
+    "legend_box": {"left": 516, "top": 339, "right": 681, "bottom": 385,
+                   "description": "Detected as the largest light-gray (gray~210-220) rectangle border in the bottom-right of the plot frame; the box's interior was masked out before marker connected-components extraction."}
+  }
+}

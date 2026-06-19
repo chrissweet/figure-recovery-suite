@@ -1,0 +1,41 @@
+layer_idx,layer_type,series,cap,x,y
+0,Scatter Plot,measurement,,29.984,27.861
+0,Scatter Plot,measurement,,25.993,22.805
+0,Scatter Plot,measurement,,22.003,17.748
+0,Scatter Plot,measurement,,18.013,14.972
+0,Scatter Plot,measurement,,14.023,12.890
+0,Scatter Plot,measurement,,9.976,12.592
+0,Scatter Plot,measurement,,5.985,10.212
+0,Scatter Plot,measurement,,1.995,8.229
+1,ErrorBarLayer,measurement,y_err_upper,29.984,29.348
+1,ErrorBarLayer,measurement,y_err_lower,29.984,25.382
+1,ErrorBarLayer,measurement,x_err_right,31.523,27.861
+1,ErrorBarLayer,measurement,x_err_left,27.989,27.861
+1,ErrorBarLayer,measurement,y_err_upper,25.993,24.193
+1,ErrorBarLayer,measurement,y_err_lower,25.993,20.524
+1,ErrorBarLayer,measurement,x_err_right,27.362,22.805
+1,ErrorBarLayer,measurement,x_err_left,24.226,22.805
+1,ErrorBarLayer,measurement,y_err_upper,22.003,18.938
+1,ErrorBarLayer,measurement,y_err_lower,22.003,15.567
+1,ErrorBarLayer,measurement,x_err_right,23.200,17.748
+1,ErrorBarLayer,measurement,x_err_left,20.407,17.748
+1,ErrorBarLayer,measurement,y_err_upper,18.013,16.161
+1,ErrorBarLayer,measurement,y_err_lower,18.013,13.088
+1,ErrorBarLayer,measurement,x_err_right,19.039,14.972
+1,ErrorBarLayer,measurement,x_err_left,16.588,14.972
+1,ErrorBarLayer,measurement,y_err_upper,14.023,13.881
+1,ErrorBarLayer,measurement,y_err_lower,14.023,11.204
+1,ErrorBarLayer,measurement,x_err_right,14.878,12.890
+1,ErrorBarLayer,measurement,x_err_left,12.826,12.890
+1,ErrorBarLayer,measurement,y_err_upper,9.976,13.484
+1,ErrorBarLayer,measurement,y_err_lower,9.976,11.105
+1,ErrorBarLayer,measurement,x_err_right,10.717,12.592
+1,ErrorBarLayer,measurement,x_err_left,9.007,12.592
+1,ErrorBarLayer,measurement,y_err_upper,5.985,11.006
+1,ErrorBarLayer,measurement,y_err_lower,5.985,8.924
+1,ErrorBarLayer,measurement,x_err_right,6.555,10.212
+1,ErrorBarLayer,measurement,x_err_left,5.187,10.212
+1,ErrorBarLayer,measurement,y_err_upper,1.995,8.924
+1,ErrorBarLayer,measurement,y_err_lower,1.995,7.139
+1,ErrorBarLayer,measurement,x_err_right,2.394,8.229
+1,ErrorBarLayer,measurement,x_err_left,1.368,8.229

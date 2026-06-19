@@ -1,0 +1,106 @@
+{
+  "image_size": {"width": 800, "height": 450},
+  "plot_frame_box": {
+    "offset": {"x": 71, "y": 37},
+    "size":   {"width": 714, "height": 355},
+    "left": 71, "top": 37, "right": 785, "bottom": 392,
+    "description": "Axis box detected by longest dark runs (vertical cols 71 & 785 each ~356 rows tall; horizontal rows 37 & 392 each ~715 cols wide). Top of frame coincides with row 37; bottom at row 392."
+  },
+  "pixels_per_coordinate_unit": {
+    "x": 136.8,
+    "y": 3.220,
+    "x_unit_label": "px per category index (Q1..Q5 step)",
+    "y_unit_label": "px per kops/s"
+  },
+  "data_to_pixel_formula": {
+    "col": "col = (x_value - b_x) / m_x   where m_x = 0.00730993, b_x = -0.127186, x_value in category-index space (Q1=1..Q5=5)",
+    "row": "row = (y_value - b_y) / m_y   where m_y = -0.31055672, b_y = 121.635084"
+  },
+  "data_range": {
+    "x_min": 1, "x_max": 5,
+    "y_min": 0, "y_max": 100
+  },
+  "axis_calibration": {
+    "x_axis": {
+      "formula": "x = 0.00730993 * px_col + (-0.127186)",
+      "m": 0.00730993,
+      "b": -0.127186,
+      "inverse": "px_col = (x - b) / m  =>  px_col = (x + 0.127186) / 0.00730993",
+      "scale": "linear",
+      "note": "Categorical axis Q1..Q5 indexed 1..5; group tick centers at cols 154, 291, 428, 565, 701."
+    },
+    "y_axis": {
+      "formula": "y = -0.31055672 * px_row + 121.635084",
+      "m": -0.31055672,
+      "b": 121.635084,
+      "inverse": "px_row = (y - b) / m  =>  px_row = (y - 121.635084) / -0.31055672",
+      "scale": "linear"
+    }
+  },
+  "worked_example": {
+    "scenario": "Baseline Q1 bar top",
+    "input": {"x": 1, "y": 41.82},
+    "compute": [
+      "col = (1 + 0.127186) / 0.00730993 = 154.2",
+      "row = (41.82 - 121.635084) / -0.31055672 = 256.99"
+    ],
+    "result": {"col": 154.2, "row": 257.0},
+    "verification": "Bar at category-tick col 154 has fill-top row 257; matches detected (cx=120 bar-center col is offset -34 from tick by series-offset). For bar-top at (cx=120, row=257) the y-value 41.82 round-trips."
+  },
+  "detection_internals": {
+    "frame": {
+      "method": "Dark threshold (<80 gray) longest-run scan; vertical cols 71 & 785 with run length 356; horizontal rows 37 & 392 with run length ~715.",
+      "vertical_lines_px_cols": [71, 785],
+      "horizontal_lines_px_rows": [37, 392]
+    },
+    "x_ticks": {
+      "method": "Detect dark tick marks in rows 393..399 below plot frame; group by gap<=4.",
+      "tick_px_cols": [154, 291, 428, 565, 701],
+      "tick_labels": ["Q1", "Q2", "Q3", "Q4", "Q5"],
+      "tick_index_values": [1, 2, 3, 4, 5]
+    },
+    "y_ticks": {
+      "method": "Detect dark tick marks in cols 64..70 left of plot frame; group by gap<=4.",
+      "tick_px_rows": [70, 134, 198, 263, 327, 392],
+      "tick_values":  [100, 80, 60, 40, 20, 0]
+    },
+    "bar_extraction": {
+      "method": "Per series, color-mask plot interior (BGR tol 15) excluding legend box rows 48..125 cols 78..230. Per column, count colored pixels; group runs of cols with count>5 (gap<=2) into bar bounding boxes. Bar center = mean(x0,x1); bar top row = topmost colored row in bar's column span.",
+      "series_BGR_colors": {
+        "Baseline": [180, 119, 31],
+        "Tuned":    [14, 127, 255],
+        "Tuned+JIT":[44, 160, 44]
+      },
+      "series_offsets_from_group_tick_px": {
+        "Baseline":  -34,
+        "Tuned":       0,
+        "Tuned+JIT":  34,
+        "note": "Empirically derived from detected bar centroids: each bar centered at (group_tick + series_offset). Bar width 33 px."
+      },
+      "bar_centers_px_per_series": {
+        "Baseline":  [120.0, 257.0, 394.0, 530.0, 667.0],
+        "Tuned":     [154.0, 291.0, 428.0, 564.5, 701.0],
+        "Tuned+JIT": [188.5, 325.0, 462.0, 599.0, 735.5]
+      },
+      "bar_top_rows_px_per_series": {
+        "Baseline":  [257, 248, 235, 228, 219],
+        "Tuned":     [206, 190, 177, 167, 154],
+        "Tuned+JIT": [164, 141, 129, 119, 106]
+      }
+    },
+    "error_caps": {
+      "method": "For each bar, in a column band cx +/- 10 px, count dark (<80) pixels per row (legend region masked). Rows with dark-count >= 7 are cap candidates; group by gap<=2. Upper cap = topmost group above bar top; lower cap = bottommost group below bar top (inside bar fill).",
+      "legend_mask_px_box": {"rows": [48, 125], "cols": [78, 230]}
+    },
+    "legend_swatch_sampling": {
+      "Baseline_swatch_px": {"row": 60, "col": 95, "BGR": [180, 119, 31], "hex": "#1F77B4"},
+      "Tuned_swatch_px":    {"row": 80, "col": 95, "BGR": [14, 127, 255], "hex": "#FF7F0E"},
+      "Tuned+JIT_swatch_px":{"row": 100,"col": 95, "BGR": [44, 160, 44], "hex": "#2CA02C"}
+    },
+    "calibration_residuals": {
+      "y_tick_max_abs_residual_value_units": 0.10,
+      "x_tick_max_abs_residual_index_units": 0.003,
+      "comment": "Linear fits perfect to within sub-pixel."
+    }
+  }
+}
