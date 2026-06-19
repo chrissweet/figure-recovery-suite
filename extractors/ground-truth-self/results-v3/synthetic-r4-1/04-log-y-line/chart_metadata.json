@@ -1,0 +1,32 @@
+{
+  "panel_id": null,
+  "source_citation": null,
+  "x_axis": {
+    "title": "Time t (s)",
+    "unit": "s",
+    "title_verbatim": "Time t (s)",
+    "decimal_separator": "."
+  },
+  "y_axis": {
+    "title": "Signal magnitude",
+    "unit": null,
+    "title_verbatim": "Signal magnitude",
+    "decimal_separator": "."
+  },
+  "series_legend": [
+    {
+      "series_id": "exp_decay",
+      "color": "C3",
+      "line_style": "-",
+      "source_label": "Exponential: 100 e^(-0.5 t)"
+    },
+    {
+      "series_id": "power_law",
+      "color": "C4",
+      "line_style": "--",
+      "source_label": "Power law: 500 / t^1.6"
+    }
+  ],
+  "chart_title": "Synthetic #04 \u2014 log-y line plot",
+  "notes": "Synthetic chart (generator: 04_log_y_line.py, seed: 4243). Feature stressed: log axes (y log10)."
+}

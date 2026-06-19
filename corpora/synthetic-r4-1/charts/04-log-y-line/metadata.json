@@ -1,0 +1,31 @@
+{
+  "chart_id": "04-log-y-line",
+  "feature_stressed": "log axes (y log10)",
+  "chart_type": "line",
+  "x_scale": "linear",
+  "y_scale": "log10",
+  "x_axis_title": "Time t (s)",
+  "y_axis_title": "Signal magnitude",
+  "x_axis_unit": "s",
+  "y_axis_unit": null,
+  "decimal_separator": ".",
+  "panel_id": null,
+  "chart_title": "Synthetic #04 \u2014 log-y line plot",
+  "series_legend": [
+    {
+      "series_id": "exp_decay",
+      "color": "C3",
+      "line_style": "-",
+      "source_label": "Exponential: 100 e^(-0.5 t)"
+    },
+    {
+      "series_id": "power_law",
+      "color": "C4",
+      "line_style": "--",
+      "source_label": "Power law: 500 / t^1.6"
+    }
+  ],
+  "generator": "/Users/csweet1/Documents/projects/CRS_research/figure-recovery-suite/corpora/synthetic-r4-1/generators/04_log_y_line.py",
+  "seed": 4243,
+  "verifier_notes": "The existing extractor recipe and the verifier's tick_center / axis_line predicates assume linear axes. On log y, the y tick label centres sit at EQUAL pixel spacing (because the labels are 0.1, 1, 10, 100, 1000) but the values they represent are NOT equally spaced. A linear calibration fit through (pixel, value) pairs misreads the axis by ~30-100 % per tick. This is the harness's first real stress test."
+}

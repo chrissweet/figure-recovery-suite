@@ -1,0 +1,375 @@
+{
+  "n_artifacts": 23,
+  "summary": {
+    "pass": 10,
+    "fail": 13,
+    "by_type": {
+      "frame_box": {
+        "pass": 1,
+        "fail": 0
+      },
+      "axis_line": {
+        "pass": 2,
+        "fail": 0
+      },
+      "tick_center": {
+        "pass": 7,
+        "fail": 1
+      },
+      "line_endpoint": {
+        "pass": 0,
+        "fail": 4
+      },
+      "line_sample": {
+        "pass": 0,
+        "fail": 8
+      }
+    }
+  },
+  "epsilon_px": {
+    "frame_box": 2,
+    "axis_line": 2,
+    "tick_center": 5,
+    "legend_box": 15,
+    "marker_centroid": 3,
+    "line_endpoint": 10,
+    "line_sample": 3,
+    "bar_top": 2,
+    "error_cap": 3
+  },
+  "results": [
+    {
+      "type": "frame_box",
+      "id": "main",
+      "left": 77,
+      "top": 37,
+      "right": 685,
+      "bottom": 392,
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "edges": {
+          "top": 1.0,
+          "bottom": 1.0,
+          "left": 1.0,
+          "right": 1.0
+        },
+        "n_good_edges": 4
+      }
+    },
+    {
+      "type": "axis_line",
+      "id": "y_axis",
+      "orientation": "vertical",
+      "fixed": 77,
+      "extent": [
+        37,
+        392
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "axis_dark_fraction": 1.0
+      }
+    },
+    {
+      "type": "axis_line",
+      "id": "x_axis",
+      "orientation": "horizontal",
+      "fixed": 392,
+      "extent": [
+        77,
+        685
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "axis_dark_fraction": 1.0
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_0",
+      "axis": "x",
+      "col": 77,
+      "row": 410,
+      "value": 0,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 46
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_2",
+      "axis": "x",
+      "col": 193,
+      "row": 410,
+      "value": 2,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 50
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_4",
+      "axis": "x",
+      "col": 308,
+      "row": 410,
+      "value": 4,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 51
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_6",
+      "axis": "x",
+      "col": 424,
+      "row": 410,
+      "value": 6,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 61
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_8",
+      "axis": "x",
+      "col": 540,
+      "row": 410,
+      "value": 8,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 55
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_10",
+      "axis": "x",
+      "col": 656,
+      "row": 410,
+      "value": 10,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 72
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_0.1",
+      "axis": "y",
+      "col": 47,
+      "row": 294,
+      "value": 0.1,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 41
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_1000.0",
+      "axis": "y",
+      "col": 47,
+      "row": -88294,
+      "value": 1000.0,
+      "pass": false,
+      "epsilon_px": 5,
+      "info": {
+        "reason": "out of image"
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "exp_decay_left",
+      "series": "exp_decay",
+      "x": 0.5,
+      "y": 77.8801,
+      "col": 106,
+      "row": -6596,
+      "color": null,
+      "pass": false,
+      "epsilon_px": 10,
+      "info": {
+        "reason": "out of image"
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "exp_decay_right",
+      "series": "exp_decay",
+      "x": 10.0,
+      "y": 0.6738,
+      "col": 656,
+      "row": 243,
+      "color": null,
+      "pass": false,
+      "epsilon_px": 10,
+      "info": {
+        "dark_in_window": 0
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "exp_decay_mid_1",
+      "series": "exp_decay",
+      "x": 2.4322,
+      "y": 29.6383,
+      "col": 218,
+      "row": -2322,
+      "color": null,
+      "pass": false,
+      "epsilon_px": 3,
+      "info": {
+        "reason": "out of image"
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "exp_decay_mid_2",
+      "series": "exp_decay",
+      "x": 4.3644,
+      "y": 11.2793,
+      "col": 329,
+      "row": -696,
+      "color": null,
+      "pass": false,
+      "epsilon_px": 3,
+      "info": {
+        "reason": "out of image"
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "exp_decay_mid_3",
+      "series": "exp_decay",
+      "x": 6.2966,
+      "y": 4.2925,
+      "col": 441,
+      "row": -77,
+      "color": null,
+      "pass": false,
+      "epsilon_px": 3,
+      "info": {
+        "reason": "out of image"
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "exp_decay_mid_4",
+      "series": "exp_decay",
+      "x": 8.2288,
+      "y": 1.6336,
+      "col": 553,
+      "row": 158,
+      "color": null,
+      "pass": false,
+      "epsilon_px": 3,
+      "info": {
+        "dark_in_window": 0
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "power_law_left",
+      "series": "power_law",
+      "x": 0.5,
+      "y": 1515.7166,
+      "col": 106,
+      "row": -133985,
+      "color": null,
+      "pass": false,
+      "epsilon_px": 10,
+      "info": {
+        "reason": "out of image"
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "power_law_right",
+      "series": "power_law",
+      "x": 10.0,
+      "y": 12.5594,
+      "col": 656,
+      "row": -809,
+      "color": null,
+      "pass": false,
+      "epsilon_px": 10,
+      "info": {
+        "reason": "out of image"
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "power_law_mid_1",
+      "series": "power_law",
+      "x": 2.4322,
+      "y": 120.6064,
+      "col": 218,
+      "row": -10382,
+      "color": null,
+      "pass": false,
+      "epsilon_px": 3,
+      "info": {
+        "reason": "out of image"
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "power_law_mid_2",
+      "series": "power_law",
+      "x": 4.3644,
+      "y": 47.3249,
+      "col": 329,
+      "row": -3889,
+      "color": null,
+      "pass": false,
+      "epsilon_px": 3,
+      "info": {
+        "reason": "out of image"
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "power_law_mid_3",
+      "series": "power_law",
+      "x": 6.2966,
+      "y": 26.3269,
+      "col": 441,
+      "row": -2029,
+      "color": null,
+      "pass": false,
+      "epsilon_px": 3,
+      "info": {
+        "reason": "out of image"
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "power_law_mid_4",
+      "series": "power_law",
+      "x": 8.2288,
+      "y": 17.1566,
+      "col": 553,
+      "row": -1216,
+      "color": null,
+      "pass": false,
+      "epsilon_px": 3,
+      "info": {
+        "reason": "out of image"
+      }
+    }
+  ]
+}

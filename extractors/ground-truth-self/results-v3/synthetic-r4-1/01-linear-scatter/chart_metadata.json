@@ -1,0 +1,38 @@
+{
+  "panel_id": null,
+  "source_citation": null,
+  "x_axis": {
+    "title": "Time (s)",
+    "unit": "s",
+    "title_verbatim": "Time (s)",
+    "decimal_separator": "."
+  },
+  "y_axis": {
+    "title": "Concentration (mol/L)",
+    "unit": "mol/L",
+    "title_verbatim": "Concentration (mol/L)",
+    "decimal_separator": "."
+  },
+  "series_legend": [
+    {
+      "series_id": "A",
+      "color": "C0",
+      "marker_shape": "o",
+      "source_label": "Series A"
+    },
+    {
+      "series_id": "B",
+      "color": "C1",
+      "marker_shape": "s",
+      "source_label": "Series B"
+    },
+    {
+      "series_id": "C",
+      "color": "C2",
+      "marker_shape": "D",
+      "source_label": "Series C"
+    }
+  ],
+  "chart_title": "Synthetic #01 \u2014 linear scatter",
+  "notes": "Synthetic chart (generator: 01_linear_scatter.py, seed: 4242). Feature stressed: baseline / harness sanity."
+}
