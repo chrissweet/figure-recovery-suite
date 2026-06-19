@@ -150,8 +150,18 @@ def _detect_plot_frame_from_content(img, y_axis_col, x_axis_row, legend_exclusio
 def write_calibration(image_path, out_path, x_axis, y_axis,
                       x_data_range, y_data_range,
                       x_unit_label="x-units", y_unit_label="y-units",
-                      worked_example=None, legend_exclusion=None):
+                      worked_example=None, legend_exclusion=None,
+                      x_scale="linear", y_scale="linear"):
     """Emit calibration.json next to an extraction's data.csv.
+
+    x_scale, y_scale: "linear" (default) or "log10". When "log10", the
+                     calibration's m and b are fit in log10 space:
+                     value = 10**(m·pixel + b). Recorded in the
+                     `axis_calibration.{axis}.scale` field so downstream
+                     consumers (scorer, verifier, replot) know to apply
+                     log10 before linear conversion. Added 2026-06-19
+                     after synthetic-r4-1 chart #4 exposed the missing
+                     field — see references/calibration.md §6.
 
     worked_example: optional dict {"scenario": str, "x": float, "y": float,
                                     "verification": str}. If None, a default
@@ -170,11 +180,16 @@ def write_calibration(image_path, out_path, x_axis, y_axis,
     H, W = img.shape[:2]
     v_groups, h_groups = detect_axes(img)
 
-    # Tick-extent box from calibration
-    px_xmin = (xmin - bx) / mx
-    px_xmax = (xmax - bx) / mx
-    px_ymin = (ymin - by) / my
-    px_ymax = (ymax - by) / my
+    def _data_to_pixel(value, m, b, scale):
+        """Pre-image projection used to compute tick-extent box: handles log."""
+        v = np.log10(value) if scale == "log10" else value
+        return (v - b) / m
+
+    # Tick-extent box from calibration (scale-aware)
+    px_xmin = _data_to_pixel(xmin, mx, bx, x_scale)
+    px_xmax = _data_to_pixel(xmax, mx, bx, x_scale)
+    px_ymin = _data_to_pixel(ymin, my, by, y_scale)
+    px_ymax = _data_to_pixel(ymax, my, by, y_scale)
     d_left = int(round(min(px_xmin, px_xmax)))
     d_right = int(round(max(px_xmin, px_xmax)))
     d_top = int(round(min(px_ymin, px_ymax)))
@@ -194,16 +209,20 @@ def write_calibration(image_path, out_path, x_axis, y_axis,
     ph = B - T + 1
 
     if worked_example is None:
-        wx = (xmin + xmax) / 2
-        wy = (ymin + ymax) / 2
+        # Midpoint: geometric for log axes (so it lands in the visual middle),
+        # arithmetic for linear.
+        wx = (10 ** ((np.log10(xmin) + np.log10(xmax)) / 2)
+              if x_scale == "log10" else (xmin + xmax) / 2)
+        wy = (10 ** ((np.log10(ymin) + np.log10(ymax)) / 2)
+              if y_scale == "log10" else (ymin + ymax) / 2)
         worked_example = {
             "scenario": f"Midpoint of the data range (x={wx}, y={wy}).",
             "x": wx, "y": wy,
             "verification": f"This (col, row) should land near the center of the plot frame.",
         }
     wx, wy = worked_example["x"], worked_example["y"]
-    wcol = round((wx - bx) / mx)
-    wrow = round((wy - by) / my)
+    wcol = round(_data_to_pixel(wx, mx, bx, x_scale))
+    wrow = round(_data_to_pixel(wy, my, by, y_scale))
 
     cal = {
         "image": image_path.rsplit('/', 1)[-1],
@@ -229,26 +248,45 @@ def write_calibration(image_path, out_path, x_axis, y_axis,
             "description": "How many image pixels equal one unit of x or y in data coordinates.",
         },
         "data_to_pixel_formula": {
-            "col": f"col = (x_value - {bx}) / {mx}",
-            "row": f"row = (y_value - {by}) / {my}",
+            "col": (f"col = (log10(x_value) - {bx}) / {mx}" if x_scale == "log10"
+                    else f"col = (x_value - {bx}) / {mx}"),
+            "row": (f"row = (log10(y_value) - {by}) / {my}" if y_scale == "log10"
+                    else f"row = (y_value - {by}) / {my}"),
             "explanation": (
                 "Convert any (x, y) data coordinate to a (col, row) pixel coordinate "
-                "in image.png. Derived from the linear axis calibration fit during extraction."
+                "in image.png. For axes with scale='log10' the data value is first "
+                "passed through log10 before the linear fit."
             ),
         },
         "data_range": {"x_min": xmin, "x_max": xmax, "y_min": ymin, "y_max": ymax},
         "axis_calibration": {
-            "x_axis": {"formula": f"value = {mx} * col + {bx}", "m": mx, "b": bx,
-                       "inverse": f"col = (value - {bx}) / {mx}"},
-            "y_axis": {"formula": f"value = {my} * row + {by}", "m": my, "b": by,
-                       "inverse": f"row = (value - {by}) / {my}"},
+            "x_axis": {
+                "scale": x_scale,
+                "formula": (f"value = 10**({mx} * col + {bx})" if x_scale == "log10"
+                            else f"value = {mx} * col + {bx}"),
+                "m": mx, "b": bx,
+                "inverse": (f"col = (log10(value) - {bx}) / {mx}" if x_scale == "log10"
+                            else f"col = (value - {bx}) / {mx}"),
+            },
+            "y_axis": {
+                "scale": y_scale,
+                "formula": (f"value = 10**({my} * row + {by})" if y_scale == "log10"
+                            else f"value = {my} * row + {by}"),
+                "m": my, "b": by,
+                "inverse": (f"row = (log10(value) - {by}) / {my}" if y_scale == "log10"
+                            else f"row = (value - {by}) / {my}"),
+            },
         },
         "worked_example": {
             "scenario": worked_example["scenario"],
             "input":    {"x": wx, "y": wy},
             "compute":  [
-                f"col = ({wx} - {bx}) / {mx} = {round((wx - bx) / mx, 1)}",
-                f"row = ({wy} - {by}) / {my} = {round((wy - by) / my, 1)}",
+                (f"col = (log10({wx}) - {bx}) / {mx} = {round(_data_to_pixel(wx, mx, bx, x_scale), 1)}"
+                 if x_scale == "log10"
+                 else f"col = ({wx} - {bx}) / {mx} = {round((wx - bx) / mx, 1)}"),
+                (f"row = (log10({wy}) - {by}) / {my} = {round(_data_to_pixel(wy, my, by, y_scale), 1)}"
+                 if y_scale == "log10"
+                 else f"row = ({wy} - {by}) / {my} = {round((wy - by) / my, 1)}"),
             ],
             "result": {"col": wcol, "row": wrow},
             "verification": worked_example.get("verification", ""),
@@ -283,6 +321,10 @@ def main():
     ap.add_argument("--y-unit-label", default="y-units")
     ap.add_argument("--legend-exclusion", type=int, nargs=4, metavar=("ROW0", "ROW1", "COL0", "COL1"),
                     help="Rectangle to exclude when computing the plot-frame top/right from content.")
+    ap.add_argument("--x-scale", choices=("linear", "log10"), default="linear",
+                    help="Scale of the x axis. log10 means the m,b fit is in log10 space.")
+    ap.add_argument("--y-scale", choices=("linear", "log10"), default="linear",
+                    help="Scale of the y axis. log10 means the m,b fit is in log10 space.")
     args = ap.parse_args()
 
     cal = write_calibration(
@@ -292,6 +334,8 @@ def main():
         x_unit_label=args.x_unit_label,
         y_unit_label=args.y_unit_label,
         legend_exclusion=tuple(args.legend_exclusion) if args.legend_exclusion else None,
+        x_scale=args.x_scale,
+        y_scale=args.y_scale,
     )
     pf = cal["plot_frame_box"]
     px = cal["pixels_per_coordinate_unit"]
