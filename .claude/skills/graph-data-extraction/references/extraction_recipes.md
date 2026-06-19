@@ -213,6 +213,7 @@ The continuity tracker, in plain language:
 3. **Predict each curve's next row** from its last clean trajectory — slope averaged over the trailing `slope_window` non-merged points. Using clean-only slope means the merge zone doesn't corrupt the trajectory.
 4. **If `len(runs) ≥ len(curves)`, solve for the unique pairwise assignment** that minimises total absolute deviation from predictions. For 2 curves this is a 2-permutation pick. The unique-assignment step is the bit the original spec missed: without it, when curves' predictions are close, both pick the same run and the two curves merge for the rest of the trace.
 5. **If `len(runs) < len(curves)`, the curves are visually merged** at this column. Each curve takes the nearest single run, AND the slope window is pinned to pre-merge data so the trajectory survives the merge.
+6. **Per-curve seed-column guard** (added 2026-06-19 after el-94 real-corpus validation). When curves have *different* leftmost columns (e.g., el-94's 24 °C / 27 °C curves begin near col 92 but the 30 °C curve starts at col 116), the trace must not assign pre-seed runs to a curve that hasn't started yet. Track `seed_cols[ci]` per curve and skip prediction/assignment for any curve where `c < seed_cols[ci]`. Without this guard, the late-starting curve picks up runs from the *other* curves at earlier columns and the trajectory is wrong from frame zero. The chart 10 synthetic didn't surface this because both curves share a seed column, x = 0; the el-94 corpus did.
 
 Validated on synthetic-r4-1 chart #10 (two same-color crossing lines, validated 2026-06-19):
 
@@ -223,6 +224,16 @@ Validated on synthetic-r4-1 chart #10 (two same-color crossing lines, validated 
 | **trace_with_continuity (unique pair — current)** | **0.014** | **0.023** |
 
 70× improvement on both curves vs. the naive trace; the unique-pair version is the one the skill ships. Cost: one pass with O(N_curves × N_columns) attribution plus O(N_curves²) per column for the assignment. For 2 curves this is trivial; for larger N use a small Hungarian-algorithm solver. See `scripts/trace_curves.py` for the runnable implementation and a `run_test(chart_dir)` harness that compares both algorithms against ground truth.
+
+Validated on real corpus el-94 (three fit curves, two of which cross around x ≈ 23-30, validated 2026-06-19):
+
+| curve | v2 (per-column-median + greedy NN) mean &#124;Δy&#124; | v3 (trace_with_continuity, unique pair + seed-col guard) mean &#124;Δy&#124; |
+|---|---|---|
+| 24 °C dashed | 0.00029 | 0.00030 |
+| 27 °C solid | 0.00022 | 0.00023 |
+| 30 °C dotted | 0.00053 | 0.00095 |
+
+Means are roughly comparable, but v3 covers the entire x range cleanly (504 to 564 traced points per curve) including the crossing region the audit flagged as "chaotic" on v2. The overlay at `extractors/graph-data-extraction/results-v3/aedes-aegypti-2014/el-94/trace_v3_overlay.png` shows the qualitative difference: v2 mis-attributes around x = 25-30 where 30 °C crosses 24 °C; v3 follows each curve through cleanly.
 
 ## 3b. Subtracting a fit curve before extracting markers
 

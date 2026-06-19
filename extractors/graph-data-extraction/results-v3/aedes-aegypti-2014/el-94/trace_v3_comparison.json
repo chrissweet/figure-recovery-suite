@@ -1,0 +1,45 @@
+{
+  "series_order": [
+    "p curve for 24\u00b0C",
+    "p curve for 27\u00b0C",
+    "p curve for 30\u00b0C"
+  ],
+  "scores": {
+    "p curve for 24\u00b0C": {
+      "v2": {
+        "n": 18,
+        "mean": 0.00029,
+        "max": 0.00075
+      },
+      "v3": {
+        "n": 15,
+        "mean": 0.0003,
+        "max": 0.00134
+      }
+    },
+    "p curve for 27\u00b0C": {
+      "v2": {
+        "n": 29,
+        "mean": 0.00022,
+        "max": 0.00086
+      },
+      "v3": {
+        "n": 22,
+        "mean": 0.00023,
+        "max": 0.0007
+      }
+    },
+    "p curve for 30\u00b0C": {
+      "v2": {
+        "n": 28,
+        "mean": 0.00053,
+        "max": 0.00222
+      },
+      "v3": {
+        "n": 23,
+        "mean": 0.00095,
+        "max": 0.00423
+      }
+    }
+  }
+}

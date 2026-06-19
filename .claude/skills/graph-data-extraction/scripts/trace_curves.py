@@ -103,6 +103,13 @@ def trace_with_continuity(mask, plot_left, plot_right, plot_top, plot_bot,
     # Track each curve's last NON-MERGED point for slope calculation
     last_clean = list(curves[0:])  # references to lists; will track
     last_clean_idx = [0] * len(seeds)  # index into curves[ci] of last clean
+    # Each curve only takes assignments from its own seed column onwards.
+    # If a curve's seed is at col 116 and the trace starts at col 92, the
+    # curve must not accept runs at cols 92-115 (the curve does not exist
+    # there). Tested on el-94's 30 °C dotted curve, which starts much later
+    # in x than 24 °C and 27 °C: without this guard, bogus pre-seed
+    # assignments corrupted the trajectory immediately.
+    seed_cols = [int(s[0]) for s in seeds]
 
     n = len(seeds)
     for c in range(int(min(s[0] for s in seeds)) + 1, plot_right - 1):
@@ -127,31 +134,35 @@ def trace_with_continuity(mask, plot_left, plot_right, plot_top, plot_bot,
             last_col, last_row = curve[-1][0], curve[-1][1]
             preds.append(last_row + slope * (c - last_col))
 
-        if len(runs) >= n:
+        # Which curves are eligible at this column? Only those whose seed
+        # col is at or before `c`.
+        active = [ci for ci in range(n) if seed_cols[ci] <= c]
+        if not active:
+            continue
+
+        if len(runs) >= len(active):
             # Unique assignment — pick the permutation that minimises
-            # total |pred - run|. For N=2, just compare the two perms.
-            if n == 2 and len(runs) >= 2:
-                # Take the closest 2 runs to either prediction.
+            # total |pred - run|. For 2 active curves, just compare the
+            # two perms.
+            if len(active) == 2 and len(runs) >= 2:
+                ci0, ci1 = active
                 run_choices = sorted(set(runs))
-                # Try assigning each pair-of-runs to the two curves.
                 best_cost, best_assign = float("inf"), None
                 for ra in run_choices:
                     for rb in run_choices:
                         if ra == rb: continue
-                        cost = abs(preds[0] - ra) + abs(preds[1] - rb)
+                        cost = abs(preds[ci0] - ra) + abs(preds[ci1] - rb)
                         if cost < best_cost:
                             best_cost, best_assign = cost, (ra, rb)
                 if best_assign:
-                    for ci in range(n):
-                        r = best_assign[ci]
+                    for ci, r in zip(active, best_assign):
                         if abs(preds[ci] - r) <= max_step_per_col:
                             curves[ci].append((c, int(r)))
                             last_clean_idx[ci] = len(curves[ci]) - 1
             else:
-                # General greedy (acceptable for N==1 or larger N which
-                # we don't hit in this corpus)
+                # General greedy (acceptable for one active or three+)
                 used = [False] * len(runs)
-                for ci in range(n):
+                for ci in active:
                     best, best_j = max_step_per_col + 1, None
                     for j, rr in enumerate(runs):
                         if used[j]: continue
@@ -163,10 +174,10 @@ def trace_with_continuity(mask, plot_left, plot_right, plot_top, plot_bot,
                         curves[ci].append((c, int(runs[best_j])))
                         last_clean_idx[ci] = len(curves[ci]) - 1
         else:
-            # Merged column: each curve takes the nearest single run, but
-            # we do NOT advance last_clean_idx — the slope window stays
-            # pinned to pre-merge data.
-            for ci in range(n):
+            # Merged column: each active curve takes the nearest single
+            # run, but we do NOT advance last_clean_idx — the slope window
+            # stays pinned to pre-merge data.
+            for ci in active:
                 best, best_run = max_step_per_col + 1, None
                 for rr in runs:
                     d = abs(rr - preds[ci])
