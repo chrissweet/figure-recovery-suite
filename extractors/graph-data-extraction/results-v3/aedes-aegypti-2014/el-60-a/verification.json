@@ -749,7 +749,9 @@
       "pass": true,
       "epsilon_px": 10,
       "info": {
-        "dark_in_window": 169
+        "stroke_in_window": 186,
+        "dark": 169,
+        "colored": 186
       }
     },
     {
@@ -768,7 +770,9 @@
       "pass": true,
       "epsilon_px": 10,
       "info": {
-        "dark_in_window": 147
+        "stroke_in_window": 173,
+        "dark": 147,
+        "colored": 173
       }
     },
     {
@@ -787,7 +791,9 @@
       "pass": true,
       "epsilon_px": 3,
       "info": {
-        "dark_in_window": 49
+        "stroke_in_window": 49,
+        "dark": 49,
+        "colored": 49
       }
     },
     {
@@ -806,7 +812,9 @@
       "pass": true,
       "epsilon_px": 3,
       "info": {
-        "dark_in_window": 49
+        "stroke_in_window": 49,
+        "dark": 49,
+        "colored": 49
       }
     },
     {
@@ -825,7 +833,9 @@
       "pass": true,
       "epsilon_px": 3,
       "info": {
-        "dark_in_window": 49
+        "stroke_in_window": 49,
+        "dark": 49,
+        "colored": 49
       }
     },
     {
@@ -844,7 +854,9 @@
       "pass": true,
       "epsilon_px": 3,
       "info": {
-        "dark_in_window": 49
+        "stroke_in_window": 49,
+        "dark": 49,
+        "colored": 49
       }
     },
     {
@@ -863,7 +875,9 @@
       "pass": true,
       "epsilon_px": 10,
       "info": {
-        "dark_in_window": 142
+        "stroke_in_window": 177,
+        "dark": 142,
+        "colored": 177
       }
     },
     {
@@ -882,7 +896,9 @@
       "pass": true,
       "epsilon_px": 10,
       "info": {
-        "dark_in_window": 151
+        "stroke_in_window": 188,
+        "dark": 151,
+        "colored": 188
       }
     },
     {
@@ -901,7 +917,9 @@
       "pass": true,
       "epsilon_px": 3,
       "info": {
-        "dark_in_window": 49
+        "stroke_in_window": 49,
+        "dark": 49,
+        "colored": 49
       }
     },
     {
@@ -920,7 +938,9 @@
       "pass": true,
       "epsilon_px": 3,
       "info": {
-        "dark_in_window": 49
+        "stroke_in_window": 49,
+        "dark": 49,
+        "colored": 49
       }
     },
     {
@@ -939,7 +959,9 @@
       "pass": true,
       "epsilon_px": 3,
       "info": {
-        "dark_in_window": 49
+        "stroke_in_window": 49,
+        "dark": 49,
+        "colored": 49
       }
     },
     {
@@ -958,7 +980,9 @@
       "pass": true,
       "epsilon_px": 3,
       "info": {
-        "dark_in_window": 49
+        "stroke_in_window": 49,
+        "dark": 49,
+        "colored": 49
       }
     },
     {
@@ -977,7 +1001,9 @@
       "pass": true,
       "epsilon_px": 10,
       "info": {
-        "dark_in_window": 229
+        "stroke_in_window": 265,
+        "dark": 229,
+        "colored": 265
       }
     },
     {
@@ -996,7 +1022,9 @@
       "pass": true,
       "epsilon_px": 10,
       "info": {
-        "dark_in_window": 185
+        "stroke_in_window": 223,
+        "dark": 185,
+        "colored": 223
       }
     },
     {
@@ -1015,7 +1043,9 @@
       "pass": true,
       "epsilon_px": 3,
       "info": {
-        "dark_in_window": 49
+        "stroke_in_window": 49,
+        "dark": 49,
+        "colored": 49
       }
     },
     {
@@ -1034,7 +1064,9 @@
       "pass": true,
       "epsilon_px": 3,
       "info": {
-        "dark_in_window": 49
+        "stroke_in_window": 49,
+        "dark": 49,
+        "colored": 49
       }
     },
     {
@@ -1053,7 +1085,9 @@
       "pass": true,
       "epsilon_px": 3,
       "info": {
-        "dark_in_window": 49
+        "stroke_in_window": 49,
+        "dark": 49,
+        "colored": 49
       }
     },
     {
@@ -1072,7 +1106,9 @@
       "pass": true,
       "epsilon_px": 3,
       "info": {
-        "dark_in_window": 49
+        "stroke_in_window": 49,
+        "dark": 49,
+        "colored": 49
       }
     }
   ]

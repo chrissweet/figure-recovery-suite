@@ -355,7 +355,9 @@
       "pass": true,
       "epsilon_px": 10,
       "info": {
-        "dark_in_window": 39
+        "stroke_in_window": 52,
+        "dark": 39,
+        "colored": 51
       }
     },
     {
@@ -374,7 +376,9 @@
       "pass": true,
       "epsilon_px": 10,
       "info": {
-        "dark_in_window": 28
+        "stroke_in_window": 45,
+        "dark": 28,
+        "colored": 45
       }
     }
   ]

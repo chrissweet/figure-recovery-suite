@@ -677,16 +677,16 @@
       },
       "curves": {
         "summary": {
-          "tp": 93,
-          "fn": 21,
+          "tp": 151,
+          "fn": 47,
           "fp": 0,
           "precision": 1.0,
-          "recall": 0.8158,
-          "f1": 0.8986,
-          "jaccard": 0.8158
+          "recall": 0.7626,
+          "f1": 0.8653,
+          "jaccard": 0.7626
         },
-        "gt_n": 114,
-        "mine_n": 240,
+        "gt_n": 198,
+        "mine_n": 780,
         "by_series": {
           "pcurve24c": {
             "gt_label": "pcurvefor24c",
@@ -711,6 +711,30 @@
             "fp": 0,
             "gt_n": 33,
             "mine_n": 47
+          },
+          "pcurvepcurvefor24c": {
+            "gt_label": "pcurvefor24c",
+            "tp": 15,
+            "fn": 6,
+            "fp": 0,
+            "gt_n": 21,
+            "mine_n": 184
+          },
+          "pcurvepcurvefor27c": {
+            "gt_label": "pcurvefor27c",
+            "tp": 22,
+            "fn": 8,
+            "fp": 0,
+            "gt_n": 30,
+            "mine_n": 188
+          },
+          "pcurvepcurvefor30c": {
+            "gt_label": "pcurvefor30c",
+            "tp": 21,
+            "fn": 12,
+            "fp": 0,
+            "gt_n": 33,
+            "mine_n": 168
           },
           "27c": {
             "gt_label": "pcurvefor27c",
@@ -737,13 +761,13 @@
         "by_series": {}
       },
       "combined": {
-        "tp": 163,
-        "fn": 26,
+        "tp": 221,
+        "fn": 52,
         "fp": 4,
-        "precision": 0.976,
-        "recall": 0.8624,
-        "f1": 0.9157,
-        "jaccard": 0.8446
+        "precision": 0.9822,
+        "recall": 0.8095,
+        "f1": 0.8876,
+        "jaccard": 0.7978
       }
     }
   },
@@ -758,13 +782,13 @@
       "jaccard": 0.8226
     },
     "curves": {
-      "tp": 165,
-      "fn": 27,
+      "tp": 223,
+      "fn": 53,
       "fp": 0,
       "precision": 1.0,
-      "recall": 0.8594,
-      "f1": 0.9244,
-      "jaccard": 0.8594
+      "recall": 0.808,
+      "f1": 0.8938,
+      "jaccard": 0.808
     },
     "errbars": {
       "tp": 16,
@@ -776,13 +800,13 @@
       "jaccard": 0.8421
     },
     "combined": {
-      "tp": 385,
-      "fn": 51,
+      "tp": 443,
+      "fn": 77,
       "fp": 23,
-      "precision": 0.9436,
-      "recall": 0.883,
-      "f1": 0.9123,
-      "jaccard": 0.8388
+      "precision": 0.9506,
+      "recall": 0.8519,
+      "f1": 0.8986,
+      "jaccard": 0.8158
     }
   }
 }

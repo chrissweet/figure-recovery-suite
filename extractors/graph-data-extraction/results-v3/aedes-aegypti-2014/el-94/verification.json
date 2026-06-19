@@ -1674,7 +1674,9 @@
       "pass": true,
       "epsilon_px": 10,
       "info": {
-        "dark_in_window": 37
+        "stroke_in_window": 37,
+        "dark": 37,
+        "colored": 0
       }
     },
     {
@@ -1693,7 +1695,9 @@
       "pass": true,
       "epsilon_px": 10,
       "info": {
-        "dark_in_window": 32
+        "stroke_in_window": 32,
+        "dark": 32,
+        "colored": 0
       }
     },
     {
@@ -1712,7 +1716,9 @@
       "pass": true,
       "epsilon_px": 3,
       "info": {
-        "dark_in_window": 14
+        "stroke_in_window": 14,
+        "dark": 14,
+        "colored": 0
       }
     },
     {
@@ -1731,7 +1737,9 @@
       "pass": true,
       "epsilon_px": 3,
       "info": {
-        "dark_in_window": 10
+        "stroke_in_window": 10,
+        "dark": 10,
+        "colored": 0
       }
     },
     {
@@ -1750,7 +1758,9 @@
       "pass": true,
       "epsilon_px": 3,
       "info": {
-        "dark_in_window": 14
+        "stroke_in_window": 14,
+        "dark": 14,
+        "colored": 0
       }
     },
     {
@@ -1769,7 +1779,9 @@
       "pass": true,
       "epsilon_px": 3,
       "info": {
-        "dark_in_window": 12
+        "stroke_in_window": 12,
+        "dark": 12,
+        "colored": 0
       }
     },
     {
@@ -1788,7 +1800,9 @@
       "pass": true,
       "epsilon_px": 10,
       "info": {
-        "dark_in_window": 31
+        "stroke_in_window": 31,
+        "dark": 31,
+        "colored": 0
       }
     },
     {
@@ -1807,7 +1821,9 @@
       "pass": true,
       "epsilon_px": 10,
       "info": {
-        "dark_in_window": 44
+        "stroke_in_window": 44,
+        "dark": 44,
+        "colored": 0
       }
     },
     {
@@ -1826,7 +1842,9 @@
       "pass": true,
       "epsilon_px": 3,
       "info": {
-        "dark_in_window": 16
+        "stroke_in_window": 16,
+        "dark": 16,
+        "colored": 0
       }
     },
     {
@@ -1845,7 +1863,9 @@
       "pass": true,
       "epsilon_px": 3,
       "info": {
-        "dark_in_window": 12
+        "stroke_in_window": 12,
+        "dark": 12,
+        "colored": 0
       }
     },
     {
@@ -1864,7 +1884,9 @@
       "pass": true,
       "epsilon_px": 3,
       "info": {
-        "dark_in_window": 27
+        "stroke_in_window": 27,
+        "dark": 27,
+        "colored": 0
       }
     },
     {
@@ -1883,7 +1905,9 @@
       "pass": true,
       "epsilon_px": 3,
       "info": {
-        "dark_in_window": 14
+        "stroke_in_window": 14,
+        "dark": 14,
+        "colored": 0
       }
     },
     {
@@ -1902,7 +1926,9 @@
       "pass": true,
       "epsilon_px": 10,
       "info": {
-        "dark_in_window": 14
+        "stroke_in_window": 14,
+        "dark": 14,
+        "colored": 0
       }
     },
     {
@@ -1921,7 +1947,9 @@
       "pass": true,
       "epsilon_px": 10,
       "info": {
-        "dark_in_window": 74
+        "stroke_in_window": 74,
+        "dark": 74,
+        "colored": 0
       }
     },
     {
@@ -1940,7 +1968,9 @@
       "pass": true,
       "epsilon_px": 3,
       "info": {
-        "dark_in_window": 4
+        "stroke_in_window": 4,
+        "dark": 4,
+        "colored": 0
       }
     },
     {
@@ -1959,7 +1989,9 @@
       "pass": true,
       "epsilon_px": 3,
       "info": {
-        "dark_in_window": 5
+        "stroke_in_window": 5,
+        "dark": 5,
+        "colored": 0
       }
     },
     {
@@ -1978,7 +2010,9 @@
       "pass": true,
       "epsilon_px": 3,
       "info": {
-        "dark_in_window": 5
+        "stroke_in_window": 5,
+        "dark": 5,
+        "colored": 0
       }
     },
     {
@@ -1997,7 +2031,9 @@
       "pass": true,
       "epsilon_px": 3,
       "info": {
-        "dark_in_window": 29
+        "stroke_in_window": 29,
+        "dark": 29,
+        "colored": 0
       }
     }
   ]
