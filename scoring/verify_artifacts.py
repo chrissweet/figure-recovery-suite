@@ -111,14 +111,38 @@ def derive_artifacts(chart_dir):
     pf = cal["plot_frame_box"]
     de = cal.get("data_extent_box", pf)
     x_ax = cal["axis_calibration"]["x_axis"]
-    y_ax = cal["axis_calibration"]["y_axis"]
-    mx, bx = x_ax["m"], x_ax["b"]
+    # Dual-y schema (synthetic chart 7): pick the LEFT axis as primary;
+    # rows can carry an `axis` column to route through the right axis.
+    y_ax = (cal["axis_calibration"].get("y_axis")
+            or cal["axis_calibration"].get("y_axis_left"))
+    y_ax_right = cal["axis_calibration"].get("y_axis_right")
+    x_categorical = "m" not in x_ax  # synthetic chart 5 stacked-bar case
+    mx = x_ax.get("m"); bx = x_ax.get("b")
     my, by = y_ax["m"], y_ax["b"]
     x_scale = axis_scale(x_ax)
     y_scale = axis_scale(y_ax)
+    # Categorical-x: pixel column per integer index. Build a list indexed
+    # 0..N-1 so col_of(0) returns the leftmost bar's pixel column.
+    cat_cols = None
+    if x_categorical:
+        cc = x_ax.get("category_centers_px", {})
+        if isinstance(cc, dict):
+            cat_cols = list(cc.values())
+        elif isinstance(cc, list):
+            cat_cols = cc
 
-    def col_of(x):  return data_to_pixel(x, mx, bx, x_scale)
-    def row_of(y):  return data_to_pixel(y, my, by, y_scale)
+    def col_of(x):
+        if x_categorical:
+            if cat_cols is None: return None
+            i = int(round(x))
+            if 0 <= i < len(cat_cols): return cat_cols[i]
+            return None
+        return data_to_pixel(x, mx, bx, x_scale)
+    def row_of(y, axis=None):
+        if axis == "right" and y_ax_right is not None:
+            return data_to_pixel(y, y_ax_right["m"], y_ax_right["b"],
+                                  axis_scale(y_ax_right))
+        return data_to_pixel(y, my, by, y_scale)
 
     # 1. Frame box.
     arts.append({"type": "frame_box", "id": "main",
@@ -137,9 +161,18 @@ def derive_artifacts(chart_dir):
     legend = cal.get("detection_internals", {}).get(
         "legend_exclusion_used_for_frame")
     if legend:
-        arts.append({"type": "legend_box", "id": "main",
-                      "top": legend[0], "bottom": legend[1],
-                      "left": legend[2], "right": legend[3]})
+        if isinstance(legend, dict):
+            # Synthetic chart 9 schema: {top/row0, bottom/row1, left/col0, right/col1}
+            top = legend.get("top", legend.get("row0"))
+            bottom = legend.get("bottom", legend.get("row1"))
+            left = legend.get("left", legend.get("col0"))
+            right = legend.get("right", legend.get("col1"))
+        else:
+            top, bottom, left, right = legend[0], legend[1], legend[2], legend[3]
+        if all(v is not None for v in (top, bottom, left, right)):
+            arts.append({"type": "legend_box", "id": "main",
+                          "top": top, "bottom": bottom,
+                          "left": left, "right": right})
 
     # 4. Tick centers — predict from labeled tick values.
     # X ticks: read from data range; we assume integer / readable major ticks.
@@ -175,12 +208,33 @@ def derive_artifacts(chart_dir):
         return [10 ** d for d in range(d_lo, d_hi + 1)
                 if lo <= 10 ** d <= hi]
 
-    x_ticks = (log_decades(dr.get("x_min"), dr.get("x_max")) if
-               x_scale == "log10" else
-               axis_ticks(dr.get("x_min"), dr.get("x_max")))
+    if x_categorical:
+        # One tick per category at the recorded pixel column.
+        for i, col in enumerate(cat_cols or []):
+            arts.append({"type": "tick_center", "id": f"x_cat_{i}",
+                          "axis": "x", "col": int(col),
+                          "row": x_label_row, "value": i})
+        x_ticks = []
+    else:
+        x_ticks = (log_decades(dr.get("x_min"), dr.get("x_max")) if
+                   x_scale == "log10" else
+                   axis_ticks(dr.get("x_min"), dr.get("x_max")))
+    # For dual-y, also emit ticks for the right axis.
     y_ticks = (log_decades(dr.get("y_min"), dr.get("y_max")) if
                y_scale == "log10" else
                axis_ticks(dr.get("y_min"), dr.get("y_max")))
+    if y_ax_right is not None:
+        # Generate right-axis ticks using right-axis range
+        y_min_r = dr.get("y_min_right", dr.get("y_min"))
+        y_max_r = dr.get("y_max_right", dr.get("y_max"))
+        y_ticks_right = axis_ticks(y_min_r, y_max_r)
+        y_label_col_right = pf["right"] + 30
+        for tv in y_ticks_right:
+            row = row_of(tv, axis="right")
+            if row is None: continue
+            arts.append({"type": "tick_center", "id": f"yR_{tv}",
+                          "axis": "y_right", "col": y_label_col_right,
+                          "row": int(row), "value": round(tv, 4)})
     for tv in x_ticks:
         col = col_of(tv)
         if col is None:
@@ -213,6 +267,7 @@ def derive_artifacts(chart_dir):
     sc = next((c for c in ("series", "point") if c in header), None)
     lo_c = next((c for c in ("y_lo", "yerr_lo") if c in header), None)
     hi_c = next((c for c in ("y_hi", "yerr_hi") if c in header), None)
+    ac = "axis" if "axis" in header else None  # dual-y routing per row
     if xc is None or yc is None:
         return arts, None
 
@@ -234,7 +289,8 @@ def derive_artifacts(chart_dir):
             x = float(r[xc]); y = float(r[yc])
         except (TypeError, ValueError):
             continue
-        col = col_of(x); row = row_of(y)
+        row_axis = (r.get(ac) or "left") if ac else None
+        col = col_of(x); row = row_of(y, axis=row_axis)
         if col is None or row is None:
             continue
         series = r.get(sc, "default") if sc else "default"

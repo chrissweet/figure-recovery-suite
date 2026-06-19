@@ -1,0 +1,610 @@
+{
+  "n_artifacts": 34,
+  "summary": {
+    "pass": 10,
+    "fail": 24,
+    "by_type": {
+      "frame_box": {
+        "pass": 1,
+        "fail": 0
+      },
+      "axis_line": {
+        "pass": 2,
+        "fail": 0
+      },
+      "tick_center": {
+        "pass": 6,
+        "fail": 1
+      },
+      "bar_top": {
+        "pass": 1,
+        "fail": 23
+      }
+    }
+  },
+  "epsilon_px": {
+    "frame_box": 2,
+    "axis_line": 2,
+    "tick_center": 5,
+    "legend_box": 15,
+    "marker_centroid": 3,
+    "line_endpoint": 10,
+    "line_sample": 3,
+    "bar_top": 2,
+    "error_cap": 3
+  },
+  "results": [
+    {
+      "type": "frame_box",
+      "id": "main",
+      "left": 71,
+      "top": 37,
+      "right": 685,
+      "bottom": 392,
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "edges": {
+          "top": 1.0,
+          "bottom": 1.0,
+          "left": 1.0,
+          "right": 1.0
+        },
+        "n_good_edges": 4
+      }
+    },
+    {
+      "type": "axis_line",
+      "id": "y_axis",
+      "orientation": "vertical",
+      "fixed": 71,
+      "extent": [
+        37,
+        392
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "axis_dark_fraction": 1.0
+      }
+    },
+    {
+      "type": "axis_line",
+      "id": "x_axis",
+      "orientation": "horizontal",
+      "fixed": 392,
+      "extent": [
+        71,
+        685
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "axis_dark_fraction": 1.0
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_cat_0",
+      "axis": "x",
+      "col": 135,
+      "row": 410,
+      "value": 0,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 109
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_cat_1",
+      "axis": "x",
+      "col": 256,
+      "row": 410,
+      "value": 1,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 88
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_cat_2",
+      "axis": "x",
+      "col": 377,
+      "row": 410,
+      "value": 2,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 134
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_cat_3",
+      "axis": "x",
+      "col": 499,
+      "row": 410,
+      "value": 3,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 83
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_cat_4",
+      "axis": "x",
+      "col": 620,
+      "row": 410,
+      "value": 4,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 107
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_0",
+      "axis": "y",
+      "col": 41,
+      "row": 390,
+      "value": 0,
+      "pass": false,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 0
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_100",
+      "axis": "y",
+      "col": 41,
+      "row": 37,
+      "value": 100,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 51
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "CPU_cum_top_1.0",
+      "series": "CPU_cum_top",
+      "x": 1.0,
+      "y": 22.0,
+      "col": 256,
+      "row": 313,
+      "color": null,
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 0.0,
+        "found_col": 186,
+        "found_row": 311,
+        "offset_from_predicted_col": -70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Memory_cum_top_1.0",
+      "series": "Memory_cum_top",
+      "x": 1.0,
+      "y": 37.0,
+      "col": 256,
+      "row": 259,
+      "color": null,
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 0.0,
+        "found_col": 186,
+        "found_row": 257,
+        "offset_from_predicted_col": -70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "IO_Wait_cum_top_1.0",
+      "series": "IO_Wait_cum_top",
+      "x": 1.0,
+      "y": 45.0,
+      "col": 256,
+      "row": 231,
+      "color": null,
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 0.0,
+        "found_col": 186,
+        "found_row": 229,
+        "offset_from_predicted_col": -70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "CPU_cum_top_2.0",
+      "series": "CPU_cum_top",
+      "x": 2.0,
+      "y": 31.0,
+      "col": 377,
+      "row": 281,
+      "color": null,
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 0.0,
+        "found_col": 307,
+        "found_row": 279,
+        "offset_from_predicted_col": -70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Memory_cum_top_2.0",
+      "series": "Memory_cum_top",
+      "x": 2.0,
+      "y": 53.0,
+      "col": 377,
+      "row": 203,
+      "color": null,
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 0.0,
+        "found_col": 307,
+        "found_row": 201,
+        "offset_from_predicted_col": -70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "IO_Wait_cum_top_2.0",
+      "series": "IO_Wait_cum_top",
+      "x": 2.0,
+      "y": 65.0,
+      "col": 377,
+      "row": 160,
+      "color": null,
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 0.0,
+        "found_col": 307,
+        "found_row": 158,
+        "offset_from_predicted_col": -70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "CPU_cum_top_3.0",
+      "series": "CPU_cum_top",
+      "x": 3.0,
+      "y": 45.0,
+      "col": 499,
+      "row": 231,
+      "color": null,
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 0.0,
+        "found_col": 429,
+        "found_row": 229,
+        "offset_from_predicted_col": -70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Memory_cum_top_3.0",
+      "series": "Memory_cum_top",
+      "x": 3.0,
+      "y": 73.0,
+      "col": 499,
+      "row": 132,
+      "color": null,
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 0.0,
+        "found_col": 429,
+        "found_row": 130,
+        "offset_from_predicted_col": -70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "IO_Wait_cum_top_3.0",
+      "series": "IO_Wait_cum_top",
+      "x": 3.0,
+      "y": 91.0,
+      "col": 499,
+      "row": 68,
+      "color": null,
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 0.0,
+        "found_col": 429,
+        "found_row": 66,
+        "offset_from_predicted_col": -70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "CPU_cum_top_4.0",
+      "series": "CPU_cum_top",
+      "x": 4.0,
+      "y": 18.0,
+      "col": 620,
+      "row": 327,
+      "color": null,
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 7.8,
+        "found_col": 592,
+        "found_row": 325,
+        "offset_from_predicted_col": -28
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Memory_cum_top_4.0",
+      "series": "Memory_cum_top",
+      "x": 4.0,
+      "y": 30.0,
+      "col": 620,
+      "row": 284,
+      "color": null,
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 0.0,
+        "found_col": 550,
+        "found_row": 282,
+        "offset_from_predicted_col": -70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "IO_Wait_cum_top_4.0",
+      "series": "IO_Wait_cum_top",
+      "x": 4.0,
+      "y": 35.0,
+      "col": 620,
+      "row": 267,
+      "color": null,
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 0.0,
+        "found_col": 550,
+        "found_row": 265,
+        "offset_from_predicted_col": -70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "CPU_value_1.0",
+      "series": "CPU_value",
+      "x": 1.0,
+      "y": 22.0,
+      "col": 256,
+      "row": 313,
+      "color": null,
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 0.0,
+        "found_col": 186,
+        "found_row": 311,
+        "offset_from_predicted_col": -70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Memory_value_1.0",
+      "series": "Memory_value",
+      "x": 1.0,
+      "y": 15.0,
+      "col": 256,
+      "row": 337,
+      "color": null,
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 0.0,
+        "found_col": 186,
+        "found_row": 335,
+        "offset_from_predicted_col": -70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "IO_Wait_value_1.0",
+      "series": "IO_Wait_value",
+      "x": 1.0,
+      "y": 8.0,
+      "col": 256,
+      "row": 362,
+      "color": null,
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 0.0,
+        "found_col": 186,
+        "found_row": 360,
+        "offset_from_predicted_col": -70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "CPU_value_2.0",
+      "series": "CPU_value",
+      "x": 2.0,
+      "y": 31.0,
+      "col": 377,
+      "row": 281,
+      "color": null,
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 0.0,
+        "found_col": 307,
+        "found_row": 279,
+        "offset_from_predicted_col": -70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Memory_value_2.0",
+      "series": "Memory_value",
+      "x": 2.0,
+      "y": 22.0,
+      "col": 377,
+      "row": 313,
+      "color": null,
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 0.0,
+        "found_col": 307,
+        "found_row": 311,
+        "offset_from_predicted_col": -70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "IO_Wait_value_2.0",
+      "series": "IO_Wait_value",
+      "x": 2.0,
+      "y": 12.0,
+      "col": 377,
+      "row": 348,
+      "color": null,
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 0.0,
+        "found_col": 307,
+        "found_row": 346,
+        "offset_from_predicted_col": -70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "CPU_value_3.0",
+      "series": "CPU_value",
+      "x": 3.0,
+      "y": 45.0,
+      "col": 499,
+      "row": 231,
+      "color": null,
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 0.0,
+        "found_col": 429,
+        "found_row": 229,
+        "offset_from_predicted_col": -70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Memory_value_3.0",
+      "series": "Memory_value",
+      "x": 3.0,
+      "y": 28.0,
+      "col": 499,
+      "row": 291,
+      "color": null,
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 0.0,
+        "found_col": 429,
+        "found_row": 289,
+        "offset_from_predicted_col": -70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "IO_Wait_value_3.0",
+      "series": "IO_Wait_value",
+      "x": 3.0,
+      "y": 18.0,
+      "col": 499,
+      "row": 327,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 80.7,
+        "found_col": 472,
+        "found_row": 327,
+        "offset_from_predicted_col": -27
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "CPU_value_4.0",
+      "series": "CPU_value",
+      "x": 4.0,
+      "y": 18.0,
+      "col": 620,
+      "row": 327,
+      "color": null,
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 7.8,
+        "found_col": 592,
+        "found_row": 325,
+        "offset_from_predicted_col": -28
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "Memory_value_4.0",
+      "series": "Memory_value",
+      "x": 4.0,
+      "y": 12.0,
+      "col": 620,
+      "row": 348,
+      "color": null,
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 0.0,
+        "found_col": 550,
+        "found_row": 346,
+        "offset_from_predicted_col": -70
+      }
+    },
+    {
+      "type": "bar_top",
+      "id": "IO_Wait_value_4.0",
+      "series": "IO_Wait_value",
+      "x": 4.0,
+      "y": 5.0,
+      "col": 620,
+      "row": 373,
+      "color": null,
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "best_delta": 0.0,
+        "found_col": 550,
+        "found_row": 371,
+        "offset_from_predicted_col": -70
+      }
+    }
+  ]
+}

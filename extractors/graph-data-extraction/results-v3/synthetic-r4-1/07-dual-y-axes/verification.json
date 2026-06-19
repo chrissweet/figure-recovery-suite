@@ -1,0 +1,421 @@
+{
+  "n_artifacts": 21,
+  "summary": {
+    "pass": 21,
+    "fail": 0,
+    "by_type": {
+      "frame_box": {
+        "pass": 1,
+        "fail": 0
+      },
+      "axis_line": {
+        "pass": 2,
+        "fail": 0
+      },
+      "tick_center": {
+        "pass": 6,
+        "fail": 0
+      },
+      "line_endpoint": {
+        "pass": 4,
+        "fail": 0
+      },
+      "line_sample": {
+        "pass": 8,
+        "fail": 0
+      }
+    }
+  },
+  "epsilon_px": {
+    "frame_box": 2,
+    "axis_line": 2,
+    "tick_center": 5,
+    "legend_box": 15,
+    "marker_centroid": 3,
+    "line_endpoint": 10,
+    "line_sample": 3,
+    "bar_top": 2,
+    "error_cap": 3
+  },
+  "results": [
+    {
+      "type": "frame_box",
+      "id": "main",
+      "left": 66,
+      "top": 37,
+      "right": 688,
+      "bottom": 392,
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "edges": {
+          "top": 1.0,
+          "bottom": 1.0,
+          "left": 1.0,
+          "right": 1.0
+        },
+        "n_good_edges": 4
+      }
+    },
+    {
+      "type": "axis_line",
+      "id": "y_axis",
+      "orientation": "vertical",
+      "fixed": 66,
+      "extent": [
+        37,
+        392
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "axis_dark_fraction": 1.0
+      }
+    },
+    {
+      "type": "axis_line",
+      "id": "x_axis",
+      "orientation": "horizontal",
+      "fixed": 392,
+      "extent": [
+        66,
+        688
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "axis_dark_fraction": 1.0
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_0",
+      "axis": "x",
+      "col": 66,
+      "row": 410,
+      "value": 0,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 45
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_2",
+      "axis": "x",
+      "col": 190,
+      "row": 410,
+      "value": 2,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 50
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_4",
+      "axis": "x",
+      "col": 314,
+      "row": 410,
+      "value": 4,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 51
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_6",
+      "axis": "x",
+      "col": 439,
+      "row": 410,
+      "value": 6,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 57
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_8",
+      "axis": "x",
+      "col": 563,
+      "row": 410,
+      "value": 8,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 55
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_10",
+      "axis": "x",
+      "col": 687,
+      "row": 410,
+      "value": 10,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 65
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "drive_current_left",
+      "series": "drive_current",
+      "x": 0.03,
+      "y": 0.4182,
+      "col": 68,
+      "row": 344,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 62,
+        "dark": 52,
+        "colored": 37
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "drive_current_right",
+      "series": "drive_current",
+      "x": 9.97,
+      "y": 1.0054,
+      "col": 686,
+      "row": 113,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 61,
+        "dark": 49,
+        "colored": 40
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "drive_current_mid_1",
+      "series": "drive_current",
+      "x": 1.756,
+      "y": 0.5181,
+      "col": 175,
+      "row": 305,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 38,
+        "dark": 33,
+        "colored": 38
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "drive_current_mid_2",
+      "series": "drive_current",
+      "x": 3.921,
+      "y": 0.637,
+      "col": 309,
+      "row": 258,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 36,
+        "dark": 32,
+        "colored": 36
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "drive_current_mid_3",
+      "series": "drive_current",
+      "x": 6.099,
+      "y": 0.7596,
+      "col": 445,
+      "row": 210,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 38,
+        "dark": 32,
+        "colored": 38
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "drive_current_mid_4",
+      "series": "drive_current",
+      "x": 8.27,
+      "y": 0.8994,
+      "col": 580,
+      "row": 155,
+      "color": [
+        31,
+        119,
+        180
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 39,
+        "dark": 34,
+        "colored": 39
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "cell_voltage_left",
+      "series": "cell_voltage",
+      "x": 0.03,
+      "y": 12.161,
+      "col": 68,
+      "row": 87,
+      "color": [
+        214,
+        39,
+        40
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 65,
+        "dark": 57,
+        "colored": 40
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "cell_voltage_right",
+      "series": "cell_voltage",
+      "x": 9.97,
+      "y": 8.0933,
+      "col": 686,
+      "row": 326,
+      "color": [
+        214,
+        39,
+        40
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 61,
+        "dark": 53,
+        "colored": 36
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "cell_voltage_mid_1",
+      "series": "cell_voltage",
+      "x": 1.751,
+      "y": 11.517,
+      "col": 175,
+      "row": 124,
+      "color": [
+        214,
+        39,
+        40
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 42,
+        "dark": 42,
+        "colored": 42
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "cell_voltage_mid_2",
+      "series": "cell_voltage",
+      "x": 3.922,
+      "y": 10.2458,
+      "col": 309,
+      "row": 199,
+      "color": [
+        214,
+        39,
+        40
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 37,
+        "dark": 37,
+        "colored": 37
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "cell_voltage_mid_3",
+      "series": "cell_voltage",
+      "x": 6.094,
+      "y": 9.3136,
+      "col": 445,
+      "row": 254,
+      "color": [
+        214,
+        39,
+        40
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 43,
+        "dark": 42,
+        "colored": 43
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "cell_voltage_mid_4",
+      "series": "cell_voltage",
+      "x": 8.265,
+      "y": 8.9068,
+      "col": 580,
+      "row": 279,
+      "color": [
+        214,
+        39,
+        40
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 49,
+        "dark": 49,
+        "colored": 49
+      }
+    }
+  ]
+}
