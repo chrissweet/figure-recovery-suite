@@ -128,7 +128,7 @@ For error bars whose lower half is occluded by the bar fill in a bar chart, see 
 
 ## 2b. Grayscale-shape scatter (no color cue)
 
-Series distinguished only by marker shape (filled black disk, filled gray square, open black diamond). HSV doesn't help — classify by area/density.
+Series distinguished only by marker shape. The classifier discriminates by CC area and density on the black-pixel mask. The legend usually shows three shape glyphs — *filled black disk*, *filled gray square*, *outlined diamond* — but the actual chart-area rendering of "diamond" varies by chart family: el-88 (validated 2026-06-19) draws diamonds as a thin black outline around a **light-gray fill** (gray ≈ 205–230), not a hollow white interior. The classifier still works because it analyses the black-mask CC's density (filled disk ≈ 0.8, outline-only ≈ 0.3 for either hollow or gray-filled interior), but the descriptive label "open" is not literally accurate everywhere — pixel-probe one marker before tuning thresholds.
 
 ```python
 # 24°C: solid black disk (gray < 50), area ~80 after no erosion

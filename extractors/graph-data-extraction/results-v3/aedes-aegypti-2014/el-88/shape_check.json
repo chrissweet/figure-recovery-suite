@@ -1,0 +1,1009 @@
+{
+  "24C": [
+    {
+      "x": 8.76,
+      "y": 0.9991,
+      "expected": "disk",
+      "classified_as": "disk",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 46,
+        "n_inner_gray": 2,
+        "corner_gray": 0,
+        "corner_white": 4
+      }
+    },
+    {
+      "x": 9.74,
+      "y": 0.9692,
+      "expected": "disk",
+      "classified_as": "disk",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 47,
+        "n_inner_gray": 2,
+        "corner_gray": 0,
+        "corner_white": 3
+      }
+    },
+    {
+      "x": 10.76,
+      "y": 0.8951,
+      "expected": "disk",
+      "classified_as": "disk",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 45,
+        "n_inner_gray": 3,
+        "corner_gray": 0,
+        "corner_white": 3
+      }
+    },
+    {
+      "x": 11.75,
+      "y": 0.7607,
+      "expected": "disk",
+      "classified_as": "disk",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 44,
+        "n_inner_gray": 5,
+        "corner_gray": 0,
+        "corner_white": 3
+      }
+    },
+    {
+      "x": 12.76,
+      "y": 0.716,
+      "expected": "disk",
+      "classified_as": "disk",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 47,
+        "n_inner_gray": 2,
+        "corner_gray": 0,
+        "corner_white": 3
+      }
+    },
+    {
+      "x": 13.76,
+      "y": 0.6561,
+      "expected": "disk",
+      "classified_as": "disk",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 47,
+        "n_inner_gray": 2,
+        "corner_gray": 0,
+        "corner_white": 3
+      }
+    },
+    {
+      "x": 14.76,
+      "y": 0.5819,
+      "expected": "disk",
+      "classified_as": "disk",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 47,
+        "n_inner_gray": 2,
+        "corner_gray": 0,
+        "corner_white": 3
+      }
+    },
+    {
+      "x": 15.76,
+      "y": 0.5671,
+      "expected": "disk",
+      "classified_as": "disk",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 47,
+        "n_inner_gray": 2,
+        "corner_gray": 0,
+        "corner_white": 3
+      }
+    },
+    {
+      "x": 16.77,
+      "y": 0.5514,
+      "expected": "disk",
+      "classified_as": "disk",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 44,
+        "n_inner_gray": 3,
+        "corner_gray": 0,
+        "corner_white": 3
+      }
+    },
+    {
+      "x": 17.76,
+      "y": 0.5521,
+      "expected": "disk",
+      "classified_as": "disk",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 46,
+        "n_inner_gray": 3,
+        "corner_gray": 0,
+        "corner_white": 2
+      }
+    },
+    {
+      "x": 18.77,
+      "y": 0.5374,
+      "expected": "disk",
+      "classified_as": "disk",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 47,
+        "n_inner_gray": 2,
+        "corner_gray": 0,
+        "corner_white": 3
+      }
+    },
+    {
+      "x": 19.76,
+      "y": 0.522,
+      "expected": "disk",
+      "classified_as": "disk",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 47,
+        "n_inner_gray": 2,
+        "corner_gray": 0,
+        "corner_white": 3
+      }
+    },
+    {
+      "x": 20.76,
+      "y": 0.5217,
+      "expected": "disk",
+      "classified_as": "disk",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 44,
+        "n_inner_gray": 4,
+        "corner_gray": 0,
+        "corner_white": 4
+      }
+    },
+    {
+      "x": 21.75,
+      "y": 0.5071,
+      "expected": "disk",
+      "classified_as": "disk",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 47,
+        "n_inner_gray": 2,
+        "corner_gray": 0,
+        "corner_white": 3
+      }
+    },
+    {
+      "x": 22.78,
+      "y": 0.5071,
+      "expected": "disk",
+      "classified_as": "disk",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 47,
+        "n_inner_gray": 2,
+        "corner_gray": 0,
+        "corner_white": 2
+      }
+    },
+    {
+      "x": 23.77,
+      "y": 0.4917,
+      "expected": "disk",
+      "classified_as": "disk",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 44,
+        "n_inner_gray": 4,
+        "corner_gray": 0,
+        "corner_white": 4
+      }
+    },
+    {
+      "x": 24.77,
+      "y": 0.4775,
+      "expected": "disk",
+      "classified_as": "disk",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 47,
+        "n_inner_gray": 2,
+        "corner_gray": 0,
+        "corner_white": 3
+      }
+    },
+    {
+      "x": 25.77,
+      "y": 0.4624,
+      "expected": "disk",
+      "classified_as": "disk",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 44,
+        "n_inner_gray": 4,
+        "corner_gray": 0,
+        "corner_white": 4
+      }
+    },
+    {
+      "x": 26.77,
+      "y": 0.4031,
+      "expected": "disk",
+      "classified_as": "disk",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 47,
+        "n_inner_gray": 2,
+        "corner_gray": 0,
+        "corner_white": 4
+      }
+    },
+    {
+      "x": 27.75,
+      "y": 0.3877,
+      "expected": "disk",
+      "classified_as": "disk",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 45,
+        "n_inner_gray": 2,
+        "corner_gray": 0,
+        "corner_white": 3
+      }
+    },
+    {
+      "x": 28.79,
+      "y": 0.2985,
+      "expected": "disk",
+      "classified_as": "disk",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 47,
+        "n_inner_gray": 2,
+        "corner_gray": 0,
+        "corner_white": 2
+      }
+    },
+    {
+      "x": 29.76,
+      "y": 0.2984,
+      "expected": "disk",
+      "classified_as": "disk",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 47,
+        "n_inner_gray": 2,
+        "corner_gray": 0,
+        "corner_white": 3
+      }
+    },
+    {
+      "x": 30.77,
+      "y": 0.283,
+      "expected": "disk",
+      "classified_as": "disk",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 46,
+        "n_inner_gray": 3,
+        "corner_gray": 0,
+        "corner_white": 3
+      }
+    },
+    {
+      "x": 31.76,
+      "y": 0.283,
+      "expected": "disk",
+      "classified_as": "disk",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 46,
+        "n_inner_gray": 3,
+        "corner_gray": 0,
+        "corner_white": 3
+      }
+    },
+    {
+      "x": 32.77,
+      "y": 0.2687,
+      "expected": "disk",
+      "classified_as": "disk",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 47,
+        "n_inner_gray": 2,
+        "corner_gray": 0,
+        "corner_white": 3
+      }
+    },
+    {
+      "x": 33.77,
+      "y": 0.2535,
+      "expected": "disk",
+      "classified_as": "disk",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 45,
+        "n_inner_gray": 4,
+        "corner_gray": 0,
+        "corner_white": 2
+      }
+    },
+    {
+      "x": 34.77,
+      "y": 0.253,
+      "expected": "disk",
+      "classified_as": "disk",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 44,
+        "n_inner_gray": 5,
+        "corner_gray": 0,
+        "corner_white": 3
+      }
+    },
+    {
+      "x": 35.76,
+      "y": 0.2241,
+      "expected": "disk",
+      "classified_as": "disk",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 46,
+        "n_inner_gray": 3,
+        "corner_gray": 0,
+        "corner_white": 2
+      }
+    },
+    {
+      "x": 36.77,
+      "y": 0.2086,
+      "expected": "disk",
+      "classified_as": "disk",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 44,
+        "n_inner_gray": 4,
+        "corner_gray": 0,
+        "corner_white": 3
+      }
+    },
+    {
+      "x": 56.88,
+      "y": 0.5523,
+      "expected": "disk",
+      "classified_as": "disk",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 47,
+        "n_inner_gray": 2,
+        "corner_gray": 0,
+        "corner_white": 4
+      }
+    }
+  ],
+  "27C": [
+    {
+      "x": 14.34,
+      "y": 0.9992,
+      "expected": "square",
+      "classified_as": "diamond",
+      "ok": false,
+      "info": {
+        "n_inner_dark": 1,
+        "n_inner_gray": 48,
+        "corner_gray": 1,
+        "corner_white": 3
+      }
+    },
+    {
+      "x": 15.33,
+      "y": 0.9529,
+      "expected": "square",
+      "classified_as": "unclear",
+      "ok": false,
+      "info": {
+        "n_inner_dark": 1,
+        "n_inner_gray": 48,
+        "corner_gray": 1,
+        "corner_white": 2
+      }
+    },
+    {
+      "x": 16.34,
+      "y": 0.8936,
+      "expected": "square",
+      "classified_as": "diamond",
+      "ok": false,
+      "info": {
+        "n_inner_dark": 1,
+        "n_inner_gray": 48,
+        "corner_gray": 1,
+        "corner_white": 3
+      }
+    },
+    {
+      "x": 17.3,
+      "y": 0.8936,
+      "expected": "square",
+      "classified_as": "unclear",
+      "ok": false,
+      "info": {
+        "n_inner_dark": 1,
+        "n_inner_gray": 48,
+        "corner_gray": 1,
+        "corner_white": 2
+      }
+    },
+    {
+      "x": 18.36,
+      "y": 0.8569,
+      "expected": "square",
+      "classified_as": "unclear",
+      "ok": false,
+      "info": {
+        "n_inner_dark": 6,
+        "n_inner_gray": 43,
+        "corner_gray": 1,
+        "corner_white": 2
+      }
+    },
+    {
+      "x": 19.32,
+      "y": 0.8569,
+      "expected": "square",
+      "classified_as": "unclear",
+      "ok": false,
+      "info": {
+        "n_inner_dark": 1,
+        "n_inner_gray": 43,
+        "corner_gray": 1,
+        "corner_white": 2
+      }
+    },
+    {
+      "x": 20.37,
+      "y": 0.8568,
+      "expected": "square",
+      "classified_as": "unclear",
+      "ok": false,
+      "info": {
+        "n_inner_dark": 6,
+        "n_inner_gray": 43,
+        "corner_gray": 1,
+        "corner_white": 2
+      }
+    },
+    {
+      "x": 21.33,
+      "y": 0.8466,
+      "expected": "square",
+      "classified_as": "diamond",
+      "ok": false,
+      "info": {
+        "n_inner_dark": 7,
+        "n_inner_gray": 42,
+        "corner_gray": 1,
+        "corner_white": 3
+      }
+    },
+    {
+      "x": 22.39,
+      "y": 0.8343,
+      "expected": "square",
+      "classified_as": "unclear",
+      "ok": false,
+      "info": {
+        "n_inner_dark": 7,
+        "n_inner_gray": 42,
+        "corner_gray": 1,
+        "corner_white": 1
+      }
+    },
+    {
+      "x": 23.35,
+      "y": 0.8345,
+      "expected": "square",
+      "classified_as": "unclear",
+      "ok": false,
+      "info": {
+        "n_inner_dark": 7,
+        "n_inner_gray": 42,
+        "corner_gray": 2,
+        "corner_white": 0
+      }
+    },
+    {
+      "x": 24.36,
+      "y": 0.8344,
+      "expected": "square",
+      "classified_as": "unclear",
+      "ok": false,
+      "info": {
+        "n_inner_dark": 7,
+        "n_inner_gray": 42,
+        "corner_gray": 0,
+        "corner_white": 2
+      }
+    },
+    {
+      "x": 25.37,
+      "y": 0.8344,
+      "expected": "square",
+      "classified_as": "unclear",
+      "ok": false,
+      "info": {
+        "n_inner_dark": 7,
+        "n_inner_gray": 42,
+        "corner_gray": 1,
+        "corner_white": 2
+      }
+    },
+    {
+      "x": 26.35,
+      "y": 0.7879,
+      "expected": "square",
+      "classified_as": "unclear",
+      "ok": false,
+      "info": {
+        "n_inner_dark": 0,
+        "n_inner_gray": 49,
+        "corner_gray": 1,
+        "corner_white": 2
+      }
+    },
+    {
+      "x": 27.35,
+      "y": 0.7526,
+      "expected": "square",
+      "classified_as": "unclear",
+      "ok": false,
+      "info": {
+        "n_inner_dark": 0,
+        "n_inner_gray": 49,
+        "corner_gray": 1,
+        "corner_white": 2
+      }
+    },
+    {
+      "x": 28.33,
+      "y": 0.7523,
+      "expected": "square",
+      "classified_as": "unclear",
+      "ok": false,
+      "info": {
+        "n_inner_dark": 0,
+        "n_inner_gray": 49,
+        "corner_gray": 1,
+        "corner_white": 2
+      }
+    },
+    {
+      "x": 29.34,
+      "y": 0.7295,
+      "expected": "square",
+      "classified_as": "diamond",
+      "ok": false,
+      "info": {
+        "n_inner_dark": 0,
+        "n_inner_gray": 49,
+        "corner_gray": 1,
+        "corner_white": 3
+      }
+    },
+    {
+      "x": 30.35,
+      "y": 0.7058,
+      "expected": "square",
+      "classified_as": "diamond",
+      "ok": false,
+      "info": {
+        "n_inner_dark": 0,
+        "n_inner_gray": 49,
+        "corner_gray": 0,
+        "corner_white": 3
+      }
+    },
+    {
+      "x": 31.34,
+      "y": 0.7059,
+      "expected": "square",
+      "classified_as": "unclear",
+      "ok": false,
+      "info": {
+        "n_inner_dark": 0,
+        "n_inner_gray": 49,
+        "corner_gray": 1,
+        "corner_white": 2
+      }
+    },
+    {
+      "x": 32.35,
+      "y": 0.6938,
+      "expected": "square",
+      "classified_as": "unclear",
+      "ok": false,
+      "info": {
+        "n_inner_dark": 1,
+        "n_inner_gray": 48,
+        "corner_gray": 1,
+        "corner_white": 2
+      }
+    },
+    {
+      "x": 33.32,
+      "y": 0.6817,
+      "expected": "square",
+      "classified_as": "unclear",
+      "ok": false,
+      "info": {
+        "n_inner_dark": 1,
+        "n_inner_gray": 48,
+        "corner_gray": 1,
+        "corner_white": 2
+      }
+    },
+    {
+      "x": 34.36,
+      "y": 0.6702,
+      "expected": "square",
+      "classified_as": "diamond",
+      "ok": false,
+      "info": {
+        "n_inner_dark": 2,
+        "n_inner_gray": 42,
+        "corner_gray": 1,
+        "corner_white": 3
+      }
+    },
+    {
+      "x": 35.33,
+      "y": 0.6583,
+      "expected": "square",
+      "classified_as": "unclear",
+      "ok": false,
+      "info": {
+        "n_inner_dark": 1,
+        "n_inner_gray": 42,
+        "corner_gray": 1,
+        "corner_white": 2
+      }
+    },
+    {
+      "x": 36.37,
+      "y": 0.6348,
+      "expected": "square",
+      "classified_as": "diamond",
+      "ok": false,
+      "info": {
+        "n_inner_dark": 7,
+        "n_inner_gray": 42,
+        "corner_gray": 1,
+        "corner_white": 3
+      }
+    },
+    {
+      "x": 37.35,
+      "y": 0.5991,
+      "expected": "square",
+      "classified_as": "unclear",
+      "ok": false,
+      "info": {
+        "n_inner_dark": 7,
+        "n_inner_gray": 42,
+        "corner_gray": 1,
+        "corner_white": 0
+      }
+    },
+    {
+      "x": 38.38,
+      "y": 0.5643,
+      "expected": "square",
+      "classified_as": "unclear",
+      "ok": false,
+      "info": {
+        "n_inner_dark": 7,
+        "n_inner_gray": 42,
+        "corner_gray": 0,
+        "corner_white": 2
+      }
+    }
+  ],
+  "30C": [
+    {
+      "x": 18.88,
+      "y": 1.0003,
+      "expected": "diamond",
+      "classified_as": "diamond",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 3,
+        "n_inner_gray": 36,
+        "corner_gray": 0,
+        "corner_white": 4
+      }
+    },
+    {
+      "x": 19.87,
+      "y": 0.9903,
+      "expected": "diamond",
+      "classified_as": "diamond",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 6,
+        "n_inner_gray": 38,
+        "corner_gray": 0,
+        "corner_white": 4
+      }
+    },
+    {
+      "x": 20.9,
+      "y": 0.9479,
+      "expected": "diamond",
+      "classified_as": "diamond",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 7,
+        "n_inner_gray": 33,
+        "corner_gray": 0,
+        "corner_white": 4
+      }
+    },
+    {
+      "x": 21.87,
+      "y": 0.9057,
+      "expected": "diamond",
+      "classified_as": "diamond",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 8,
+        "n_inner_gray": 33,
+        "corner_gray": 0,
+        "corner_white": 4
+      }
+    },
+    {
+      "x": 22.88,
+      "y": 0.853,
+      "expected": "diamond",
+      "classified_as": "unclear",
+      "ok": false,
+      "info": {
+        "n_inner_dark": 9,
+        "n_inner_gray": 36,
+        "corner_gray": 1,
+        "corner_white": 2
+      }
+    },
+    {
+      "x": 23.88,
+      "y": 0.6951,
+      "expected": "diamond",
+      "classified_as": "diamond",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 2,
+        "n_inner_gray": 40,
+        "corner_gray": 0,
+        "corner_white": 4
+      }
+    },
+    {
+      "x": 24.89,
+      "y": 0.6326,
+      "expected": "diamond",
+      "classified_as": "diamond",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 6,
+        "n_inner_gray": 38,
+        "corner_gray": 0,
+        "corner_white": 4
+      }
+    },
+    {
+      "x": 25.86,
+      "y": 0.5583,
+      "expected": "diamond",
+      "classified_as": "diamond",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 2,
+        "n_inner_gray": 36,
+        "corner_gray": 0,
+        "corner_white": 4
+      }
+    },
+    {
+      "x": 58.27,
+      "y": 0.5566,
+      "expected": "diamond",
+      "classified_as": "diamond",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 8,
+        "n_inner_gray": 18,
+        "corner_gray": 0,
+        "corner_white": 3
+      }
+    },
+    {
+      "x": 57.68,
+      "y": 0.5489,
+      "expected": "diamond",
+      "classified_as": "unclear",
+      "ok": false,
+      "info": {
+        "n_inner_dark": 12,
+        "n_inner_gray": 22,
+        "corner_gray": 0,
+        "corner_white": 4
+      }
+    },
+    {
+      "x": 26.87,
+      "y": 0.4637,
+      "expected": "diamond",
+      "classified_as": "diamond",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 6,
+        "n_inner_gray": 37,
+        "corner_gray": 0,
+        "corner_white": 4
+      }
+    },
+    {
+      "x": 27.87,
+      "y": 0.443,
+      "expected": "diamond",
+      "classified_as": "diamond",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 8,
+        "n_inner_gray": 33,
+        "corner_gray": 0,
+        "corner_white": 4
+      }
+    },
+    {
+      "x": 29.87,
+      "y": 0.2747,
+      "expected": "diamond",
+      "classified_as": "diamond",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 7,
+        "n_inner_gray": 35,
+        "corner_gray": 0,
+        "corner_white": 4
+      }
+    },
+    {
+      "x": 30.89,
+      "y": 0.2329,
+      "expected": "diamond",
+      "classified_as": "diamond",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 4,
+        "n_inner_gray": 39,
+        "corner_gray": 0,
+        "corner_white": 4
+      }
+    },
+    {
+      "x": 31.88,
+      "y": 0.2221,
+      "expected": "diamond",
+      "classified_as": "diamond",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 2,
+        "n_inner_gray": 41,
+        "corner_gray": 0,
+        "corner_white": 4
+      }
+    },
+    {
+      "x": 32.89,
+      "y": 0.201,
+      "expected": "diamond",
+      "classified_as": "diamond",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 7,
+        "n_inner_gray": 36,
+        "corner_gray": 0,
+        "corner_white": 4
+      }
+    },
+    {
+      "x": 33.87,
+      "y": 0.1696,
+      "expected": "diamond",
+      "classified_as": "diamond",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 11,
+        "n_inner_gray": 30,
+        "corner_gray": 0,
+        "corner_white": 4
+      }
+    },
+    {
+      "x": 34.9,
+      "y": 0.1587,
+      "expected": "diamond",
+      "classified_as": "diamond",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 5,
+        "n_inner_gray": 37,
+        "corner_gray": 0,
+        "corner_white": 4
+      }
+    },
+    {
+      "x": 35.87,
+      "y": 0.1594,
+      "expected": "diamond",
+      "classified_as": "diamond",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 6,
+        "n_inner_gray": 34,
+        "corner_gray": 0,
+        "corner_white": 4
+      }
+    },
+    {
+      "x": 36.89,
+      "y": 0.1487,
+      "expected": "diamond",
+      "classified_as": "diamond",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 2,
+        "n_inner_gray": 36,
+        "corner_gray": 0,
+        "corner_white": 4
+      }
+    },
+    {
+      "x": 37.88,
+      "y": 0.1488,
+      "expected": "diamond",
+      "classified_as": "diamond",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 7,
+        "n_inner_gray": 37,
+        "corner_gray": 0,
+        "corner_white": 4
+      }
+    },
+    {
+      "x": 38.9,
+      "y": 0.1488,
+      "expected": "diamond",
+      "classified_as": "diamond",
+      "ok": true,
+      "info": {
+        "n_inner_dark": 4,
+        "n_inner_gray": 39,
+        "corner_gray": 0,
+        "corner_white": 4
+      }
+    }
+  ]
+}

@@ -91,6 +91,11 @@ This loop is iterative. Repeat Phase 3 fix → Phase 4 re-plot until the reconst
 - Write the data to CSV in `/mnt/user-data/outputs/` (one column per axis/series; for resampled curves, a shared x column plus one column per series). If you discovered and repaired occlusions in Phase 4, make sure the delivered CSV reflects the corrected values, and say so — earlier intermediate CSVs are superseded.
 - **Write a `calibration.json` next to the CSV** capturing the plot geometry: image size, the rectangle enclosing the axes and plot (pixel bounding box), the data tick range and its corresponding pixel box, and the linear axis calibration. Downstream consumers often need the plot region in pixel coords to re-render or to align with other extractions. Use `scripts/write_calibration.py` (programmatic API or CLI) to produce this consistently — don't roll your own format.
 - **Write a `chart_metadata.json` next to the CSV** capturing the caption-layer data from the source figure. Schema below. This is a required deliverable, not optional: column names in `data.csv` (`time_days`, `parity_rate`) compress the source's full axis text and lose qualifiers; without `chart_metadata.json`, a downstream consumer cannot answer "what variable is this?" without re-opening the image.
+- **Run the legend-hit gate.** Verify no `data.csv` row's (x, y) → predicted pixel position lands inside the calibration's `legend_exclusion_used_for_frame` box (widened by 15 px on every side, because the recorded box can be slightly tight against real legend pixels). Run as the last step of Phase 5:
+  ```bash
+  python3 scoring/data_csv_legend_check.py <results_root>
+  ```
+  If the gate flags rows, those rows captured legend swatches instead of real data — drop them or widen the extractor's legend mask and re-extract. Added 2026-06-19 after el-88's TDD pass found three phantom rows (`24C @ x=56.88`, `30C @ x=57.68`, `30C @ x=58.27`) capturing the legend's marker swatches at cols 940–962.
 - Save the reconstruction as PNG (and PDF if the user might want vector) so the user can see the loop was closed.
 - Present files with `present_files`.
 
@@ -171,6 +176,8 @@ The values matter:
 - `title_verbatim` and `decimal_separator` are what a faithful matched-frame re-render needs.
 - `series_legend.color` lets a downstream consumer reproduce the series-to-color mapping without re-opening the image.
 - `source_citation` is provenance — fill it when you know it; explicit `null` is better than implicit absence.
+
+**Important discipline (added 2026-06-19 after el-88's TDD step 5):** when the source figure has no axis title, set the corresponding `title` and `title_verbatim` to `null` explicitly. Do *not* infer the title from the `data.csv` column name. el-88 has no y-axis title at all; the `data.csv` column `survival_proportion` is the extractor's *semantic inference*, not a transcription from the chart. A downstream consumer reading `chart_metadata.json` should be able to tell whether the variable name came from the source figure or was supplied by the extractor — the only way to make that visible is to leave `title: null` when the source has none. Always-record-as-null is more useful than ambiguous-text-the-extractor-invented.
 
 ## Always state the caveats
 
