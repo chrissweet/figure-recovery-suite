@@ -100,24 +100,27 @@ def load_gt_split(gt_path):
 
 
 def load_extractor_main(data_path):
-    """Read data.csv. Returns dict series -> list of dicts with _x, _y, and
-    optional _y_lo / _y_hi for error bars."""
-    out = {}
+    """Read data.csv. Returns (point_like, curve_like) — two dicts mapping
+    series -> list of rows. Layered v3 schema (layer_idx, layer_type, …)
+    routes Line Graph / Spline Chart rows to curve_like; everything else
+    (or unlayered v1/v2 schemas) goes to point_like."""
+    point_like, curve_like = {}, {}
     if not os.path.exists(data_path):
-        return out
+        return point_like, curve_like
     with open(data_path) as f:
         rows = list(csv.DictReader(f))
     if not rows:
-        return out
+        return point_like, curve_like
     header = rows[0].keys()
     xc = find_col(header, X_CANDIDATES)
     yc = find_col(header, Y_CANDIDATES)
     sc = find_col(header, S_CANDIDATES)
+    lc = "layer_type" if "layer_type" in header else None
     lo_c = find_col(header, ERR_LO_CANDIDATES)
     hi_c = find_col(header, ERR_HI_CANDIDATES)
     sym_c = find_col(header, ERR_SYM_CANDIDATES)
     if xc is None or yc is None:
-        return out
+        return point_like, curve_like
     for r in rows:
         try:
             x = float(r[xc]); y = float(r[yc])
@@ -126,26 +129,25 @@ def load_extractor_main(data_path):
         s = canon(r.get(sc, "default") if sc else "default")
         row = {"_x": x, "_y": y}
         if lo_c and r.get(lo_c):
-            try:
-                row["_y_lo"] = float(r[lo_c])
-            except ValueError:
-                pass
+            try: row["_y_lo"] = float(r[lo_c])
+            except ValueError: pass
         if hi_c and r.get(hi_c):
-            try:
-                row["_y_hi"] = float(r[hi_c])
-            except ValueError:
-                pass
+            try: row["_y_hi"] = float(r[hi_c])
+            except ValueError: pass
         if sym_c and r.get(sym_c):
             try:
                 e = float(r[sym_c])
                 row["_y_lo"] = row.get("_y_lo", y - e)
                 row["_y_hi"] = row.get("_y_hi", y + e)
-            except ValueError:
-                pass
-        out.setdefault(s, []).append(row)
-    for s in out:
-        out[s].sort(key=lambda rr: rr["_x"])
-    return out
+            except ValueError: pass
+        # Route by layer_type when present.
+        layer = (r.get(lc) or "") if lc else ""
+        target = curve_like if ("Line" in layer or "Spline" in layer) else point_like
+        target.setdefault(s, []).append(row)
+    for d in (point_like, curve_like):
+        for s in d:
+            d[s].sort(key=lambda rr: rr["_x"])
+    return point_like, curve_like
 
 
 def load_extractor_curves(chart_dir):
@@ -431,11 +433,24 @@ def score_chart(corpus_id, extractor, chart_id, tols, results_dir):
     x_tol = tols.get(chart_id, {"x_tol": 1.0, "y_tol": 0.05})["x_tol"]
     y_tol = tols.get(chart_id, {"x_tol": 1.0, "y_tol": 0.05})["y_tol"]
     gt_pt, gt_cv = load_gt_split(gt_path)
-    mine_main = load_extractor_main(data_path)
-    mine_curves = load_extractor_curves(extr_dir)
-    scatter = score_points_layer(mine_main, gt_pt, chart_id, x_tol, y_tol)
-    curves = score_curves_layer(mine_curves, gt_cv, x_tol, y_tol)
-    errbars = score_errbars_layer(mine_main, gt_pt, chart_id, x_tol, y_tol)
+    mine_pt, mine_cv_layered = load_extractor_main(data_path)
+    mine_cv_sidecar = load_extractor_curves(extr_dir)
+    # Merge layered curves (from data.csv layer 1) with side-car curves.
+    # Side-cars dominate if both define the same series.
+    mine_curves = dict(mine_cv_layered)
+    for s, pts in mine_cv_sidecar.items():
+        mine_curves[s] = pts if s not in mine_curves else mine_curves[s] + [
+            (p["_x"], p["_y"]) if isinstance(p, dict) else p for p in pts
+        ]
+    # Normalise mine_curves entries to list of (x, y) tuples
+    norm_curves = {}
+    for s, pts in mine_curves.items():
+        norm_curves[s] = [(p["_x"], p["_y"]) if isinstance(p, dict) else p
+                            for p in pts]
+        norm_curves[s].sort()
+    scatter = score_points_layer(mine_pt, gt_pt, chart_id, x_tol, y_tol)
+    curves = score_curves_layer(norm_curves, gt_cv, x_tol, y_tol)
+    errbars = score_errbars_layer(mine_pt, gt_pt, chart_id, x_tol, y_tol)
     return {
         "x_tol": x_tol, "y_tol": y_tol,
         "scatter": {"summary": f1_block(scatter["tp"], scatter["fn"],

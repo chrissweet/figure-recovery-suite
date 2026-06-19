@@ -1,0 +1,6 @@
+layer_idx,layer_type,series,x,y,y_lo,y_hi
+0,Scatter Plot,datapoints,23.62,8.213,5.714,11.072
+0,Scatter Plot,datapoints,27.08,7.15,3.681,10.472
+0,Scatter Plot,datapoints,30.01,4.852,3.774,6.037
+1,Line Graph,Trend Line,0.07808100000000007,20.309024707014864,,
+1,Line Graph,Trend Line,35.021346,2.842832196032223,,

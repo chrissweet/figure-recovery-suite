@@ -1,0 +1,90 @@
+{
+  "image": "image.png",
+  "image_size": {
+    "width": 870,
+    "height": 563
+  },
+  "plot_frame_box": {
+    "offset": {
+      "x": 97,
+      "y": 0
+    },
+    "size": {
+      "width": 771,
+      "height": 470
+    },
+    "left": 97,
+    "top": 0,
+    "right": 867,
+    "bottom": 469,
+    "description": "Pixel bounding box of the visible plot region in image.png. Origin (0,0) is the top-left of the image; y grows downward. 'offset' is the top-left corner of the box in image coordinates; 'size' is its width and height in pixels. Detected by finding the y-axis line (left), x-axis line (bottom), and the bounding box of non-white pixels inside the L-shaped quadrant (top, right)."
+  },
+  "pixels_per_coordinate_unit": {
+    "x": 27.6426,
+    "y": 408.8307,
+    "x_unit_label": "pixels per \u00b0C",
+    "y_unit_label": "pixels per fraction-unit",
+    "description": "How many image pixels equal one unit of x or y in data coordinates."
+  },
+  "data_to_pixel_formula": {
+    "col": "col = (x_value - 6.483232) / 0.036176",
+    "row": "row = (y_value - 1.149266) / -0.002446",
+    "explanation": "Convert any (x, y) data coordinate to a (col, row) pixel coordinate in image.png. Derived from the linear axis calibration fit during extraction."
+  },
+  "data_range": {
+    "x_min": 10,
+    "x_max": 35,
+    "y_min": 0.0,
+    "y_max": 1.0
+  },
+  "axis_calibration": {
+    "x_axis": {
+      "formula": "value = 0.036176 * col + 6.483232",
+      "m": 0.036176,
+      "b": 6.483232,
+      "inverse": "col = (value - 6.483232) / 0.036176"
+    },
+    "y_axis": {
+      "formula": "value = -0.002446 * row + 1.149266",
+      "m": -0.002446,
+      "b": 1.149266,
+      "inverse": "row = (value - 1.149266) / -0.002446"
+    }
+  },
+  "worked_example": {
+    "scenario": "The 30\u00b0C marker (red diamond) at 30 \u00b0C, max parity rate 0.6455.",
+    "input": {
+      "x": 30,
+      "y": 0.6455
+    },
+    "compute": [
+      "col = (30 - 6.483232) / 0.036176 = 650.1",
+      "row = (0.6455 - 1.149266) / -0.002446 = 206.0"
+    ],
+    "result": {
+      "col": 650,
+      "row": 206
+    },
+    "verification": "This (col, row) should land on the red 30\u00b0C diamond."
+  },
+  "detection_internals": {
+    "y_axis_col_detected": 97,
+    "x_axis_row_detected": 469,
+    "all_interior_v_lines": [
+      97
+    ],
+    "all_interior_h_lines": [
+      469
+    ],
+    "legend_exclusion_used_for_frame": null
+  },
+  "data_extent_box": {
+    "left": 97,
+    "right": 788,
+    "top": 61,
+    "bottom": 470,
+    "width": 692,
+    "height": 410,
+    "description": "Pixel bounding box of the labeled data tick range (x=10..35, y=0.0..1.0). For bar charts the bars extend past this box."
+  }
+}

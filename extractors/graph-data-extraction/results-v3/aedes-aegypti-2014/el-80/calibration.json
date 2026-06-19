@@ -1,0 +1,98 @@
+{
+  "image": "image.png",
+  "image_size": {
+    "width": 964,
+    "height": 702
+  },
+  "plot_frame_box": {
+    "offset": {
+      "x": 42,
+      "y": 3
+    },
+    "size": {
+      "width": 916,
+      "height": 609
+    },
+    "left": 42,
+    "top": 3,
+    "right": 957,
+    "bottom": 611,
+    "description": "Pixel bounding box of the visible plot region in image.png. Origin (0,0) is the top-left of the image; y grows downward. 'offset' is the top-left corner of the box in image coordinates; 'size' is its width and height in pixels. Detected by finding the y-axis line (left), x-axis line (bottom), and the bounding box of non-white pixels inside the L-shaped quadrant (top, right)."
+  },
+  "pixels_per_coordinate_unit": {
+    "x": 101.5847,
+    "y": 6.7875,
+    "x_unit_label": "pixels per \u00b0C",
+    "y_unit_label": "pixels per egg",
+    "description": "How many image pixels equal one unit of x or y in data coordinates."
+  },
+  "data_to_pixel_formula": {
+    "col": "col = (x_value - 22.084497) / 0.009844",
+    "row": "row = (y_value - 89.915238) / -0.14733",
+    "explanation": "Convert any (x, y) data coordinate to a (col, row) pixel coordinate in image.png. Derived from the linear axis calibration fit during extraction."
+  },
+  "data_range": {
+    "x_min": 24,
+    "x_max": 30,
+    "y_min": 0.0,
+    "y_max": 80.0
+  },
+  "axis_calibration": {
+    "x_axis": {
+      "formula": "value = 0.009844 * col + 22.084497",
+      "m": 0.009844,
+      "b": 22.084497,
+      "inverse": "col = (value - 22.084497) / 0.009844"
+    },
+    "y_axis": {
+      "formula": "value = -0.14733 * row + 89.915238",
+      "m": -0.14733,
+      "b": 89.915238,
+      "inverse": "row = (value - 89.915238) / -0.14733"
+    }
+  },
+  "worked_example": {
+    "scenario": "Top of the 27\u00b0C GC2 bar (mean eggs/female 32.5).",
+    "input": {
+      "x": 27,
+      "y": 32.5
+    },
+    "compute": [
+      "col = (27 - 22.084497) / 0.009844 = 499.3",
+      "row = (32.5 - 89.915238) / -0.14733 = 389.7"
+    ],
+    "result": {
+      "col": 499,
+      "row": 390
+    },
+    "verification": "This (col, row) should land on top of the middle light-gray bar in the 27\u00b0C group."
+  },
+  "detection_internals": {
+    "y_axis_col_detected": 42,
+    "x_axis_row_detected": 611,
+    "all_interior_v_lines": [
+      42,
+      127,
+      431,
+      736
+    ],
+    "all_interior_h_lines": [
+      611
+    ],
+    "legend_exclusion_used_for_frame": [
+      20,
+      160,
+      600,
+      960
+    ]
+  },
+  "data_extent_box": {
+    "left": 195,
+    "right": 804,
+    "top": 67,
+    "bottom": 610,
+    "width": 610,
+    "height": 544,
+    "description": "Pixel bounding box of the labeled data tick range (x=24..30, y=0.0..80.0). For bar charts the bars extend past this box."
+  }
+}
