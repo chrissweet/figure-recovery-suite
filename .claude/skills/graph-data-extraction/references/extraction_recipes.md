@@ -306,6 +306,30 @@ What it doesn't fix:
 - **Filled markers sitting on a solid curve**: the marker CC fuses horizontally with the curve trace inside the marker's own column range, so even after the OUTSIDE-marker columns are subtracted, the CC remains elongated. The aspect-ratio filter then still rejects it. Workaround: relax the aspect filter to `> 3.5` AND require the CC to contain a roughly-square dense kernel by eroding it and checking that the residual is square. Expect to still under-count by ~20 % when this happens.
 - **Curves whose thickness matches the open-marker stroke width**: a dotted curve where each dot is 2 px tall and dots are 4 px apart visually mimics a column of paired open-marker edges. The pair preservation will keep them. Filter the resulting marker pool against a smooth spline through the surviving CC centroids and drop CCs that lie within ε of the spline AND have density < 0.3.
 
+### Filled-square markers fused with a same-color solid curve (added 2026-06-19, validated on el-94)
+
+The previous "what it doesn't fix" item — filled markers on a solid same-color curve — has a working fix. Audit row 7's recommendation was *almost* right; the correction:
+
+1. Build the gray mask `(60 ≤ gray ≤ 210) ∧ (sat < 50)`, panel-restricted, legend-excluded, with disk regions of *other* series subtracted (their dilated halo too, ~7 px radius).
+2. **Vertical opening with a small kernel** (`np.ones((3, 1), np.uint8)`) — *vertical*, not horizontal as the audit said. The thin (1–2 px) anti-aliased gray bands above/below the solid same-color line erode away; the square interiors (4–6 px tall) keep their center row. The audit's `1×5` horizontal opening doesn't separate the two because both line and square are wide.
+3. **2×2 dilation** restores the square footprint after the opening's erosion.
+4. CC analysis with relaxed thresholds: density > 0.45, area 15–250, bbox 4–24 in either dim.
+5. **Restrict to the y-band the series visually occupies** (read it from the matched-frame overlay or from the GT if available) — drops detections from axis tick text and frame-corner anti-aliasing.
+6. **If the series is sampled at integer x values** (common for survival-curve charts), group by integer x and keep the highest-area detection per bin — eliminates the duplicate "split CC" artefacts the opening occasionally produces.
+
+```python
+mid = ((gray >= 60) & (gray <= 210) & (sat < 50)).astype(np.uint8) * 255
+mid = cv2.bitwise_and(mid, panel)
+# Subtract disks of other series so they don't claim gray pixels.
+mid[other_series_disk_dilated > 0] = 0
+# Vertical opening to remove thin line halos; dilate to restore square footprint.
+mid = cv2.morphologyEx(mid, cv2.MORPH_OPEN, np.ones((3, 1), np.uint8))
+mid = cv2.dilate(mid, np.ones((2, 2), np.uint8), iterations=1)
+# CC + filter + integer-x bin
+```
+
+Validated on el-94 (2026-06-19): 27 °C series went from 14 detected (Recall = 0.56, the recipe's documented failure mode #1) to **25 detected** (matches the audit's expected truth count). Matched-frame overlay confirms every source gray square from x = 14 to x = 38 is now covered. Failure mode #1 closed.
+
 Always check the result by saving the cleaned mask (`cv2.imwrite('cleaned.png', cleaned)`) and `view`ing it before continuing — you want to see whole markers preserved and curve fragments removed.
 
 ## 3a. Marker-on-line (extract markers only)
