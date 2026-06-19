@@ -126,6 +126,19 @@ If two error-bar arms are close together (markers near each other), constrain th
 
 For error bars whose lower half is occluded by the bar fill in a bar chart, see §4b.
 
+**Schema: emit each cap direction as its own series in `ErrorBarLayer`** (added 2026-06-19 after synthetic-r4-1 chart 6 v3 run). When the chart has asymmetric caps or x-axis caps, the legacy `y_lo` / `y_hi` columns on the marker row aren't expressive enough. Use one row per cap, with x and y at the cap's data-space location:
+
+```
+layer_idx,layer_type,series,x,y
+0,Scatter Plot,Measurement,2.5,8.2
+1,ErrorBarLayer,y_err_upper,2.5,9.7
+1,ErrorBarLayer,y_err_lower,2.5,6.6
+1,ErrorBarLayer,x_err_right,4.0,8.2
+1,ErrorBarLayer,x_err_left,1.0,8.2
+```
+
+The four reserved series names — `y_err_upper`, `y_err_lower`, `x_err_left`, `x_err_right` — are what the scorer and verifier expect. Synthetic chart 6 (asymmetric x AND y) stresses all four; an aedes-style symmetric-y-only chart uses just `y_err_upper` + `y_err_lower`. Do *not* fold all four directions into one series called `error_bars` or `measurement_err` — the scorer can pool by cap pixel position but a downstream consumer reading `data.csv` needs the direction labels to reconstruct the bars.
+
 ## 2b. Grayscale-shape scatter (no color cue)
 
 Series distinguished only by marker shape. The classifier discriminates by CC area and density on the black-pixel mask. The legend usually shows three shape glyphs — *filled black disk*, *filled gray square*, *outlined diamond* — but the actual chart-area rendering of "diamond" varies by chart family.
@@ -381,6 +394,11 @@ If the source clearly draws a *spline* through the markers (curved between integ
 ## 4. Bar chart
 
 For each bar, find the top of its colored column; convert to value. Identify bars by scanning for contiguous colored x-bands, or by the known category tick centers.
+
+**Categorical-x conventions** (locked in after synthetic-r4-1 v3 run, 2026-06-19):
+- **Group positions are 0-indexed**, matching matplotlib's `np.arange(N)`. The first group ("Q1", "Web", "Alpha", …) is at `x = 0`, not `x = 1`. Off-by-one in group indexing was the cause of synthetic chart 3 / chart 5 scoring 0.0 against perfect-looking extractions.
+- **Grouped bars: emit each bar's x as its CENTER, not the group's tick center.** For a 3-series grouped bar at group `g`, the three bars sit at `g + offset_i` where `offset_i = (i − (N−1)/2) · bar_width`. Detect each bar's column from its colored fill (per-series color mask CC + centroid column), not by assuming `col = (g − bx) / mx`. The el-62 / el-80 verifier failures and synthetic chart 3 all stress this.
+- **Stacked bars: emit one row per (series, group) at the segment's CUMULATIVE TOP** in data space (top edge of segment k = sum of segment values 0..k). Layer type `StackedSegmentLayer`. Per-segment VALUES are recoverable by subtraction; cumulative tops are what the rendered chart directly shows.
 
 ```python
 def bar_top_value(mask, c0, c1, top, bot):
