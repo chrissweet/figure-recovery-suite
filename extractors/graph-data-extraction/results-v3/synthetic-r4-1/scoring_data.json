@@ -5,8 +5,11 @@
   "n_charts": 10,
   "charts": {
     "01-linear-scatter": {
-      "x_tol": 0.3,
-      "y_tol": 0.5,
+      "x_tol": 0.165126,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 0.125186 (2.0% of y_range 6.2593)",
+      "x_range": 8.2563,
+      "y_range": 6.2593,
       "scatter": {
         "summary": {
           "tp": 37,
@@ -85,8 +88,11 @@
       }
     },
     "02-simple-bar": {
-      "x_tol": 0.5,
-      "y_tol": 0.5,
+      "x_tol": 0.1,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 0.294 (2.0% of y_range 14.7)",
+      "x_range": 5.0,
+      "y_range": 14.7,
       "scatter": {
         "summary": {
           "tp": 6,
@@ -150,7 +156,10 @@
     },
     "03-grouped-bar-errbars": {
       "x_tol": 1.5,
-      "y_tol": 2.0,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 1.1 (2.0% of y_range 55)",
+      "x_range": 4.5,
+      "y_range": 55.0,
       "scatter": {
         "summary": {
           "tp": 15,
@@ -238,8 +247,11 @@
       }
     },
     "04-log-y-line": {
-      "x_tol": 0.5,
-      "y_tol": 15.0,
+      "x_tol": 0.19,
+      "y_tol_kind": "relative",
+      "y_tol_desc": "relative 1.0% (denom floor 1.51504)",
+      "x_range": 9.5,
+      "y_range": 1515.0428,
       "scatter": {
         "summary": {
           "tp": 0,
@@ -256,29 +268,29 @@
       },
       "curves": {
         "summary": {
-          "tp": 115,
-          "fn": 5,
+          "tp": 27,
+          "fn": 93,
           "fp": 0,
           "precision": 1.0,
-          "recall": 0.9583,
-          "f1": 0.9787,
-          "jaccard": 0.9583
+          "recall": 0.225,
+          "f1": 0.3673,
+          "jaccard": 0.225
         },
         "gt_n": 120,
         "mine_n": 315,
         "by_series": {
           "exponential": {
             "gt_label": "exponential",
-            "tp": 60,
-            "fn": 0,
+            "tp": 24,
+            "fn": 36,
             "fp": 0,
             "gt_n": 60,
             "mine_n": 184
           },
           "powerlaw": {
             "gt_label": "powerlaw",
-            "tp": 55,
-            "fn": 5,
+            "tp": 3,
+            "fn": 57,
             "fp": 0,
             "gt_n": 60,
             "mine_n": 131
@@ -300,18 +312,21 @@
         "by_series": {}
       },
       "combined": {
-        "tp": 115,
-        "fn": 5,
+        "tp": 27,
+        "fn": 93,
         "fp": 0,
         "precision": 1.0,
-        "recall": 0.9583,
-        "f1": 0.9787,
-        "jaccard": 0.9583
+        "recall": 0.225,
+        "f1": 0.3673,
+        "jaccard": 0.225
       }
     },
     "05-stacked-bar": {
       "x_tol": 1.5,
-      "y_tol": 2.0,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 1.72 (2.0% of y_range 86)",
+      "x_range": 4.0,
+      "y_range": 86.0,
       "scatter": {
         "summary": {
           "tp": 30,
@@ -414,8 +429,11 @@
       }
     },
     "06-scatter-asym-errbars": {
-      "x_tol": 1.0,
-      "y_tol": 1.0,
+      "x_tol": 0.6020000000000001,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 0.442643 (2.0% of y_range 22.1321)",
+      "x_range": 30.1,
+      "y_range": 22.132130070117192,
       "scatter": {
         "summary": {
           "tp": 8,
@@ -487,8 +505,11 @@
       }
     },
     "07-dual-y-axes": {
-      "x_tol": 0.3,
-      "y_tol": 0.5,
+      "x_tol": 0.2,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 0.235158 (2.0% of y_range 11.7579)",
+      "x_range": 10.0,
+      "y_range": 11.757880598541462,
       "scatter": {
         "summary": {
           "tp": 0,
@@ -559,8 +580,11 @@
       }
     },
     "08-percent-scinot-ticks": {
-      "x_tol": 0.05,
-      "y_tol": 100000.0,
+      "x_tol": 0.018,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 142042 (2.0% of y_range 7.10211e+06)",
+      "x_range": 0.8999999999999999,
+      "y_range": 7102114.636993544,
       "scatter": {
         "summary": {
           "tp": 0,
@@ -623,8 +647,11 @@
       }
     },
     "09-open-markers-with-fit": {
-      "x_tol": 0.3,
-      "y_tol": 0.5,
+      "x_tol": 0.19095477386934676,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 0.348924 (2.0% of y_range 17.4462)",
+      "x_range": 9.547738693467338,
+      "y_range": 17.446176079332886,
       "scatter": {
         "summary": {
           "tp": 12,
@@ -696,8 +723,11 @@
       }
     },
     "10-crossing-curves": {
-      "x_tol": 0.3,
-      "y_tol": 0.3,
+      "x_tol": 0.2,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 0.14 (2.0% of y_range 7)",
+      "x_range": 10.0,
+      "y_range": 7.0,
       "scatter": {
         "summary": {
           "tp": 0,
@@ -779,13 +809,13 @@
       "jaccard": 1.0
     },
     "curves": {
-      "tp": 357,
-      "fn": 5,
+      "tp": 269,
+      "fn": 93,
       "fp": 0,
       "precision": 1.0,
-      "recall": 0.9862,
-      "f1": 0.993,
-      "jaccard": 0.9862
+      "recall": 0.7431,
+      "f1": 0.8526,
+      "jaccard": 0.7431
     },
     "errbars": {
       "tp": 62,
@@ -797,13 +827,13 @@
       "jaccard": 1.0
     },
     "combined": {
-      "tp": 527,
-      "fn": 5,
+      "tp": 439,
+      "fn": 93,
       "fp": 0,
       "precision": 1.0,
-      "recall": 0.9906,
-      "f1": 0.9953,
-      "jaccard": 0.9906
+      "recall": 0.8252,
+      "f1": 0.9042,
+      "jaccard": 0.8252
     }
   }
 }

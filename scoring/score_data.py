@@ -42,34 +42,46 @@ import numpy as np
 
 REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
-DEFAULT_TOLS = {
-    "el-60-a":  {"x_tol": 1.0,  "y_tol": 0.03},
-    "el-60-b":  {"x_tol": 1.0,  "y_tol": 0.05},
-    "el-62":    {"x_tol": 1.5,  "y_tol": 0.5},
-    "el-75":    {"x_tol": 1.0,  "y_tol": 0.5},
-    "el-80":    {"x_tol": 1.5,  "y_tol": 2.0},
-    "el-88":    {"x_tol": 1.0,  "y_tol": 0.03},
-    "el-94":    {"x_tol": 1.0,  "y_tol": 0.003},
-    "el-100":   {"x_tol": 0.03, "y_tol": 1.0},
-    # synthetic-r4-1 — per-chart tolerances picked from each chart's y range
-    "01-linear-scatter":      {"x_tol": 0.3, "y_tol": 0.5},
-    "02-simple-bar":          {"x_tol": 0.5, "y_tol": 0.5},
-    # Categorical-x charts: extractor's group index (0 vs 1) is convention-
-    # dependent. Widen x_tol to 1.5 to accept either convention as a TP if
-    # y matches. Anything wider lets adjacent groups masquerade as matches.
-    "03-grouped-bar-errbars": {"x_tol": 1.5, "y_tol": 2.0},
-    # Log-y-line: y spans ~5 decades (0.1-1000). Absolute y_tol mismatches
-    # at large y where 1% relative error is 10 absolute. Until the scorer
-    # gets log-aware tolerance, widen y_tol to absorb the relative-error
-    # budget at the high end of the y range.
-    "04-log-y-line":          {"x_tol": 0.5, "y_tol": 15.0},
-    "05-stacked-bar":         {"x_tol": 1.5, "y_tol": 2.0},
-    "06-scatter-asym-errbars":{"x_tol": 1.0, "y_tol": 1.0},
-    "07-dual-y-axes":         {"x_tol": 0.3, "y_tol": 0.5},
-    "08-percent-scinot-ticks":{"x_tol": 0.05, "y_tol": 100000.0},
-    "09-open-markers-with-fit":{"x_tol": 0.3, "y_tol": 0.5},
-    "10-crossing-curves":     {"x_tol": 0.3, "y_tol": 0.3},
+# --- Tolerance model (r6, refactored) ---
+#
+# Defaults are FRACTIONS of each chart's GT axis range, derived per-chart so
+# the same numbers work across aedes / synthetic / owid without hand-curation.
+#
+# Per-chart overrides exist for two real cases:
+#   - categorical x where 0-indexed vs 1-indexed group convention is ambiguous:
+#     use a fixed absolute x_tol so a +/- 1 shift counts as a TP (synthetic 3,
+#     synthetic 5, el-62, el-80).
+#   - log-y or otherwise-large-dynamic-range axes where 2 % of axis range is
+#     unhelpful (too lenient at small y, too tight at large y): switch to a
+#     relative-error model |dy| / max(|gt|, eps) <= y_rel_tol.
+#
+# Everything else inherits the defaults.
+
+DEFAULT_X_TOL_FRAC = 0.02   # 2 % of GT x-range
+DEFAULT_Y_TOL_FRAC = 0.02   # 2 % of GT y-range
+DEFAULT_Y_REL_TOL  = 0.01   # 1 % relative error for log-y overrides
+
+TOL_OVERRIDES = {
+    # Categorical x: 0-indexed vs 1-indexed group convention slack.
+    "el-62":                   {"x_tol_abs": 1.5},
+    "el-80":                   {"x_tol_abs": 1.5},
+    "03-grouped-bar-errbars":  {"x_tol_abs": 1.5},
+    "05-stacked-bar":          {"x_tol_abs": 1.5},
+    # Log-y axes (or values that span many decades on a linear axis):
+    # absolute fraction-of-range is too lenient at small y. Switch to
+    # relative-error y matching.
+    "04-log-y-line":           {"y_kind": "relative",
+                                 "y_rel_tol": DEFAULT_Y_REL_TOL},
+    "population":              {"y_kind": "relative",
+                                 "y_rel_tol": DEFAULT_Y_REL_TOL},
+    "annual-co2-emissions-per-country": {"y_kind": "relative",
+                                          "y_rel_tol": DEFAULT_Y_REL_TOL},
 }
+
+# Floor for the relative-error denominator: pin against the chart's axis
+# range so the relative test degrades gracefully at GT = 0 instead of blowing
+# up. Set when tolerances are derived for a chart.
+_REL_DENOM_FRAC = 0.001     # eps = max(|gt|, 0.1 % of y_range)
 
 X_CANDIDATES = ["x", "time_days", "temperature_C", "age_days", "parity_rate"]
 Y_CANDIDATES = ["y", "percentage_parous_females", "max_parity_rate",
@@ -243,11 +255,19 @@ def map_series(mine_keys, gt_keys, chart_id):
     return mapping
 
 
-def pair_points(mine_pts, gt_pts, x_tol, y_tol):
-    """Greedy nearest-neighbor pair-match. Both inputs are list of (x, y)."""
+def pair_points(mine_pts, gt_pts, x_tol, y_tols):
+    """Greedy nearest-neighbor pair-match. Both inputs are list of (x, y).
+
+    `y_tols` can be either:
+      - scalar: same y_tol for every GT point (absolute mode), OR
+      - callable: `y_tols(gy)` -> per-GT-point y_tol (relative mode)
+    """
     used = [False] * len(mine_pts)
     pairs, fn = [], []
     for gx, gy in gt_pts:
+        y_tol = y_tols(gy) if callable(y_tols) else y_tols
+        if y_tol <= 0:
+            fn.append((gx, gy)); continue
         best_d = float("inf"); best_i = None
         for i, (mx, my) in enumerate(mine_pts):
             if used[i]:
@@ -265,8 +285,59 @@ def pair_points(mine_pts, gt_pts, x_tol, y_tol):
     return len(pairs), len(fn), len(fp)
 
 
-def score_points_layer(mine, gt, chart_id, x_tol, y_tol):
-    """Score scatter / bar layer."""
+def derive_tolerances(chart_id, gt_pt, gt_cv, gt_eb):
+    """Derive per-chart effective tolerances from GT axis ranges.
+
+    Default is 2 % of GT axis range for both axes. Per-chart overrides:
+      - `x_tol_abs`: fixed absolute x_tol (categorical-x convention slack)
+      - `y_kind = "relative"`: switch y matching to relative-error
+        `|dy| / max(|gy|, _REL_DENOM_FRAC * y_range) <= y_rel_tol`
+
+    Returns dict with x_tol (scalar), y_tols (scalar or callable usable by
+    pair_points), y_tol_curve(gy) (callable usable by score_curves_layer),
+    kind, x_range, y_range, plus the human-readable y_tol_desc for telemetry.
+    """
+    all_y = []; all_x = []
+    for d in (gt_pt, gt_cv, gt_eb):
+        for rows in d.values():
+            for r in rows:
+                all_x.append(r["_x"]); all_y.append(r["_y"])
+    if not all_x:
+        return {"x_tol": 1.0, "y_tols": 0.05,
+                "y_tol_curve": (lambda gy: 0.05),
+                "kind": "fallback", "y_tol_desc": "fallback 0.05",
+                "x_range": 0, "y_range": 0}
+    x_min, x_max = min(all_x), max(all_x)
+    y_min, y_max = min(all_y), max(all_y)
+    x_range = (x_max - x_min) if x_max > x_min else max(abs(x_max), 1.0)
+    y_range = (y_max - y_min) if y_max > y_min else max(abs(y_max), 1.0)
+
+    overrides = TOL_OVERRIDES.get(chart_id, {})
+
+    x_tol = overrides.get("x_tol_abs") or (DEFAULT_X_TOL_FRAC * x_range)
+
+    if overrides.get("y_kind") == "relative":
+        rel = overrides.get("y_rel_tol", DEFAULT_Y_REL_TOL)
+        eps = _REL_DENOM_FRAC * y_range
+        def y_tol_fn(gy, _rel=rel, _eps=eps):
+            return max(abs(gy), _eps) * _rel
+        return {"x_tol": x_tol, "y_tols": y_tol_fn,
+                "y_tol_curve": y_tol_fn, "kind": "relative",
+                "y_rel_tol": rel,
+                "y_tol_desc": (f"relative {rel*100:.1f}% (denom floor "
+                                f"{eps:g})"),
+                "x_range": x_range, "y_range": y_range}
+
+    y_tol = overrides.get("y_tol_abs") or (DEFAULT_Y_TOL_FRAC * y_range)
+    return {"x_tol": x_tol, "y_tols": y_tol,
+            "y_tol_curve": (lambda gy, _y=y_tol: _y),
+            "kind": "absolute", "y_tol_abs": y_tol,
+            "y_tol_desc": f"abs {y_tol:g} ({DEFAULT_Y_TOL_FRAC*100:.1f}% of y_range {y_range:g})",
+            "x_range": x_range, "y_range": y_range}
+
+
+def score_points_layer(mine, gt, chart_id, x_tol, y_tols):
+    """Score scatter / bar layer. `y_tols` per pair_points signature."""
     if chart_id == "el-75":
         # GT pools as "datapoints"; pool mine to match
         all_mine = []
@@ -278,7 +349,7 @@ def score_points_layer(mine, gt, chart_id, x_tol, y_tol):
             for r in vs:
                 gt_pooled.append((r["_x"], r["_y"]))
         tp, fn, fp = pair_points(sorted(all_mine), sorted(gt_pooled),
-                                  x_tol, y_tol)
+                                  x_tol, y_tols)
         return {"tp": tp, "fn": fn, "fp": fp,
                 "gt_n": len(gt_pooled), "mine_n": len(all_mine),
                 "by_series": {}}
@@ -294,7 +365,7 @@ def score_points_layer(mine, gt, chart_id, x_tol, y_tol):
             continue
         m_pts = [(r["_x"], r["_y"]) for r in m_rows]
         g_pts = [(r["_x"], r["_y"]) for r in gt[gk]]
-        tp, fn, fp = pair_points(m_pts, g_pts, x_tol, y_tol)
+        tp, fn, fp = pair_points(m_pts, g_pts, x_tol, y_tols)
         by_series[mk] = {"gt_label": gk, "tp": tp, "fn": fn, "fp": fp,
                           "gt_n": len(g_pts), "mine_n": len(m_pts)}
         tot_tp += tp; tot_fn += fn; tot_fp += fp
@@ -321,8 +392,9 @@ def _temp_key(s):
     return m.group(0) if m else None
 
 
-def score_curves_layer(mine_curves, gt_curves, x_tol, y_tol):
-    """Resample each predicted curve at GT x values, pair-match within y_tol.
+def score_curves_layer(mine_curves, gt_curves, x_tol, y_tol_curve):
+    """Resample each predicted curve at GT x values, pair-match within
+    `y_tol_curve(gy)` (a callable so relative-error mode works per-point).
     GT points outside prediction's x coverage count as FN, with a small x_tol
     buffer to allow trend-line endpoint extrapolation. No FP from curves
     (extra prediction coverage is not penalised)."""
@@ -377,7 +449,7 @@ def score_curves_layer(mine_curves, gt_curves, x_tol, y_tol):
                 continue
             # np.interp clamps at endpoints, which is fine inside the buffer.
             y_pred = float(np.interp(gx, mxs, mys))
-            if abs(y_pred - gy) <= y_tol:
+            if abs(y_pred - gy) <= y_tol_curve(gy):
                 tp += 1
             else:
                 fn += 1
@@ -396,7 +468,7 @@ def score_curves_layer(mine_curves, gt_curves, x_tol, y_tol):
 
 
 def score_errbars_layer(mine_pt, gt_pt, mine_eb, gt_eb,
-                         chart_id, x_tol, y_tol):
+                         chart_id, x_tol, y_tols):
     """Two schemas supported:
 
     A) **Legacy y_lo/y_hi columns** on point-like rows (aedes corpus). For
@@ -424,7 +496,7 @@ def score_errbars_layer(mine_pt, gt_pt, mine_eb, gt_eb,
         for r in vs: mine_eb_pts.append((r["_x"], r["_y"]))
     if gt_eb_pts or mine_eb_pts:
         tp, fn, fp = pair_points(sorted(mine_eb_pts), sorted(gt_eb_pts),
-                                  x_tol, y_tol)
+                                  x_tol, y_tols)
         tot_tp += tp; tot_fn += fn; tot_fp += fp
         tot_gt += len(gt_eb_pts); tot_mine += len(mine_eb_pts)
         by_series["errbar_caps_pooled"] = {
@@ -450,14 +522,17 @@ def score_errbars_layer(mine_pt, gt_pt, mine_eb, gt_eb,
         for gseries, gx, gy, ep, em in gt_with_err:
             mk = gt_to_mine.get(gseries)
             matched = False
+            # Resolve y_tol once per (gy, ep, em) — relative-mode callable
+            # is evaluated at the bar's mean y.
+            y_tol_here = y_tols(gy) if callable(y_tols) else y_tols
             if mk and mk in mine_pt:
                 for r in mine_pt[mk]:
                     if abs(r["_x"] - gx) > x_tol: continue
-                    if abs(r["_y"] - gy) > y_tol: continue
+                    if abs(r["_y"] - gy) > y_tol_here: continue
                     lo = r.get("_y_lo"); hi = r.get("_y_hi")
                     if lo is None or hi is None: break
                     exp_hi = gy + ep; exp_lo = gy - em
-                    if abs(hi - exp_hi) <= y_tol and abs(lo - exp_lo) <= y_tol:
+                    if abs(hi - exp_hi) <= y_tol_here and abs(lo - exp_lo) <= y_tol_here:
                         matched = True
                     tot_mine += 1
                     break
@@ -482,7 +557,7 @@ def f1_block(tp, fn, fp):
             "f1": round(f1, 4), "jaccard": round(j, 4)}
 
 
-def score_chart(corpus_id, extractor, chart_id, tols, results_dir):
+def score_chart(corpus_id, extractor, chart_id, results_dir, _legacy_tols=None):
     chart_dir = os.path.join(REPO_ROOT, "corpora", corpus_id, "charts", chart_id)
     extr_dir = os.path.join(REPO_ROOT, "extractors", extractor, results_dir,
                             corpus_id, chart_id)
@@ -492,9 +567,11 @@ def score_chart(corpus_id, extractor, chart_id, tols, results_dir):
         return {"error": f"missing GT: {gt_path}"}
     if not os.path.isdir(extr_dir):
         return {"error": f"missing extractor dir: {extr_dir}"}
-    x_tol = tols.get(chart_id, {"x_tol": 1.0, "y_tol": 0.05})["x_tol"]
-    y_tol = tols.get(chart_id, {"x_tol": 1.0, "y_tol": 0.05})["y_tol"]
     gt_pt, gt_cv, gt_eb = load_gt_split(gt_path)
+    spec = derive_tolerances(chart_id, gt_pt, gt_cv, gt_eb)
+    x_tol = spec["x_tol"]
+    y_tols = spec["y_tols"]
+    y_tol_curve = spec["y_tol_curve"]
     mine_pt, mine_cv_layered, mine_eb = load_extractor_main(data_path)
     mine_cv_sidecar = load_extractor_curves(extr_dir)
     # Merge layered curves (from data.csv layer 1) with side-car curves.
@@ -510,12 +587,14 @@ def score_chart(corpus_id, extractor, chart_id, tols, results_dir):
         norm_curves[s] = [(p["_x"], p["_y"]) if isinstance(p, dict) else p
                             for p in pts]
         norm_curves[s].sort()
-    scatter = score_points_layer(mine_pt, gt_pt, chart_id, x_tol, y_tol)
-    curves = score_curves_layer(norm_curves, gt_cv, x_tol, y_tol)
+    scatter = score_points_layer(mine_pt, gt_pt, chart_id, x_tol, y_tols)
+    curves = score_curves_layer(norm_curves, gt_cv, x_tol, y_tol_curve)
     errbars = score_errbars_layer(mine_pt, gt_pt, mine_eb, gt_eb,
-                                    chart_id, x_tol, y_tol)
+                                    chart_id, x_tol, y_tols)
     return {
-        "x_tol": x_tol, "y_tol": y_tol,
+        "x_tol": x_tol, "y_tol_kind": spec["kind"],
+        "y_tol_desc": spec["y_tol_desc"],
+        "x_range": spec["x_range"], "y_range": spec["y_range"],
         "scatter": {"summary": f1_block(scatter["tp"], scatter["fn"],
                                          scatter["fp"]),
                      "gt_n": scatter["gt_n"], "mine_n": scatter["mine_n"],
@@ -555,8 +634,7 @@ def main():
            "n_charts": len(charts), "charts": {}}
     cum = {"scatter": [0, 0, 0], "curves": [0, 0, 0], "errbars": [0, 0, 0]}
     for cid in charts:
-        cs = score_chart(args.corpus, args.extractor, cid, DEFAULT_TOLS,
-                          args.results_dir)
+        cs = score_chart(args.corpus, args.extractor, cid, args.results_dir)
         out["charts"][cid] = cs
         for layer in ("scatter", "curves", "errbars"):
             if layer in cs:
