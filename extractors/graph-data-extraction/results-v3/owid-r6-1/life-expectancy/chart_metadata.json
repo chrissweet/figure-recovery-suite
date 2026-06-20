@@ -1,0 +1,58 @@
+{
+  "chart_id": "life-expectancy",
+  "panel_id": null,
+  "source_citation": "OurWorldinData.org/life-expectancy | CC BY. Data source: Riley (2005); Zijdeman et al. (2015); HMD (2025); UN WPP (2024).",
+  "x_axis": {
+    "title": "Year",
+    "unit": "year",
+    "title_verbatim": null,
+    "decimal_separator": "."
+  },
+  "y_axis": {
+    "title": "Life expectancy",
+    "unit": "years",
+    "title_verbatim": null,
+    "decimal_separator": "."
+  },
+  "series_legend": [
+    {
+      "series_id": "Oceania",
+      "source_label": "Oceania",
+      "color": "#4C6A9C",
+      "marker_shape": "line"
+    },
+    {
+      "series_id": "Europe",
+      "source_label": "Europe",
+      "color": "#9A5129",
+      "marker_shape": "line"
+    },
+    {
+      "series_id": "Americas",
+      "source_label": "Americas",
+      "color": "#C4523E",
+      "marker_shape": "line"
+    },
+    {
+      "series_id": "Asia",
+      "source_label": "Asia",
+      "color": "#00847E",
+      "marker_shape": "line"
+    },
+    {
+      "series_id": "World",
+      "source_label": "World",
+      "color": "#18470F",
+      "marker_shape": "line"
+    },
+    {
+      "series_id": "Africa",
+      "source_label": "Africa",
+      "color": "#A2559C",
+      "marker_shape": "line"
+    }
+  ],
+  "chart_title": "Life expectancy",
+  "subtitle_verbatim": "Period life expectancy is the number of years the average person born in a certain year would live if they experienced the same chances of dying at each age as people did that year.",
+  "notes": "Our World in Data line chart, 6 regional series. Legend labels appear at the right end of each line (not in a box) with L-shaped gray connectors leading to color-matched text. Y-axis labels formatted as \"NN years\" (0 to 80 in steps of 10). X-axis labels: 1770, 1800, 1850, 1900, 1950, 2000, 2023 (endpoint labels nudged inward by renderer)."
+}

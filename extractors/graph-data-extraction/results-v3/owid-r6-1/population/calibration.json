@@ -1,0 +1,136 @@
+{
+  "image_size": {
+    "width": 850,
+    "height": 600
+  },
+  "plot_frame_box": {
+    "offset": {
+      "x": 67,
+      "y": 50
+    },
+    "size": {
+      "width": 654,
+      "height": 462
+    },
+    "left": 67,
+    "top": 50,
+    "right": 720,
+    "bottom": 511,
+    "description": "Plot interior bounded by leftmost tick col 66 ('10,000 BCE'), rightmost tick col 720 ('2023'), top row 50 (just below title band), bottom row 512 (x-axis line). No vertical y-axis line is drawn by OWID; left bound anchored on the first labeled tick."
+  },
+  "pixels_per_coordinate_unit": {
+    "x": 0.05439716711292023,
+    "y": 5.4066666666666575e-08,
+    "x_unit_label": "year (BCE encoded as negative; '0' = year 0; '2023' = CE year)",
+    "y_unit_label": "people (raw count; tick label 'N billion' = N * 1e9 people)"
+  },
+  "data_to_pixel_formula": {
+    "col": "col = 0.0543971671 * x_value + 610.4099",
+    "row": "row = -5.406667e-08 * y_value + 510.6000"
+  },
+  "data_range": {
+    "x_min": -10000,
+    "x_max": 2023,
+    "y_min": 0,
+    "y_max": 8000000000
+  },
+  "axis_calibration": {
+    "x_axis": {
+      "formula": "px_col = m * year + b (linear; BCE negative)",
+      "m": 0.05439716711292023,
+      "b": 610.4099349025956,
+      "inverse": "year = (col - 610.4099) / 0.0543971671",
+      "ticks_used": {
+        "-10000": 66,
+        "-8000": 175,
+        "-6000": 284,
+        "-4000": 394,
+        "-2000": 502,
+        "0": 610,
+        "2023": 720
+      },
+      "max_residual_px": 1.2,
+      "convention_note": "'10,000 BCE' stored as -10000, '8,000 BCE' as -8000, ... '0' as 0, '2023' as 2023."
+    },
+    "y_axis": {
+      "formula": "px_row = m * people + b (linear; raw people)",
+      "m": -5.4066666666666575e-08,
+      "b": 510.59999999999985,
+      "inverse": "people = (row - 510.6000) / -5.406667e-08",
+      "ticks_used": {
+        "8000000000": 78.0,
+        "7000000000": 132.0,
+        "6000000000": 186.0,
+        "5000000000": 240.0,
+        "4000000000": 294.5,
+        "3000000000": 349.0,
+        "2000000000": 403.0,
+        "1000000000": 457.0,
+        "0": 509.5
+      },
+      "max_residual_px": 1.1,
+      "convention_note": "Tick labels '1 billion'..'8 billion' converted by multiplying the number by 1e9; '0' kept as 0. CSV y values are stored in raw people."
+    }
+  },
+  "worked_example": {
+    "scenario": "Locate (year=1700, population=0.5e9 people) in pixel space to sanity-check the formulas.",
+    "input": {
+      "x": 1700,
+      "y": 500000000.0
+    },
+    "compute": [
+      "col = 0.054397 * 1700 + 610.41 = 702.89",
+      "row = -5.4067e-08 * 5e8 + 510.60 = 483.57"
+    ],
+    "result": {
+      "col": 702.89,
+      "row": 483.57
+    },
+    "verification": "Col ~703 (between the '0' tick at 610 and the '2023' tick at 720) and row ~483 (about 27 px above the axis at 510, which is 27/54 ~ 0.5 billion). Both consistent with the chart."
+  },
+  "detection_internals": {
+    "axis_row_pixel": 512,
+    "y_label_band_cols": "0-65 ('N billion' tick label text on the left)",
+    "x_label_band_rows": "521-529 (tick label text below axis)",
+    "series_reference_BGR": {
+      "World": [
+        15,
+        71,
+        24
+      ],
+      "Asia": [
+        126,
+        132,
+        0
+      ],
+      "Africa": [
+        156,
+        85,
+        162
+      ],
+      "Europe": [
+        156,
+        106,
+        76
+      ],
+      "North America": [
+        62,
+        82,
+        196
+      ],
+      "South America": [
+        81,
+        72,
+        150
+      ],
+      "Oceania": [
+        148,
+        168,
+        204
+      ]
+    },
+    "extraction_method": "Per-pixel winner-take-all classification: each pixel inside the plot is assigned to the series whose reference BGR is closest (Euclidean), if within distance 45 AND the nearest beats the second-nearest by at least 5. Per column, the chosen row is the median of the matched pixel cluster, except: 'World' uses the topmost cluster (highest line) and 'Oceania' uses the bottommost cluster (lowest line). Gaps are filled by carrying the previous matched row forward; rows before any match default to the axis row (y=0).",
+    "x_axis_convention": "BCE years stored as negative numerics. '10,000 BCE' -> -10000, '8,000 BCE' -> -8000, ..., '0' -> 0, '2023' -> 2023.",
+    "y_axis_convention": "SI-suffix tick labels expanded: '1 billion' -> 1e9 people, '8 billion' -> 8e9. CSV y values are raw people counts."
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "chart_id": "global-primary-energy",
+  "source": "Our World in Data",
+  "source_url": "https://ourworldindata.org/grapher/global-primary-energy",
+  "csv_url": "https://ourworldindata.org/grapher/global-primary-energy.csv?csvType=filtered&tab=chart",
+  "image_url": "https://ourworldindata.org/grapher/global-primary-energy.png?tab=chart",
+  "chart_type": "stacked area, single entity, many sources",
+  "feature_stressed": "stacked area chart, 10 series, color-by-source",
+  "x_axis_title": "Year",
+  "x_axis_unit": null,
+  "y_axis_title": "Energy consumption",
+  "y_axis_unit": "TWh",
+  "x_scale": "linear",
+  "y_scale": "linear",
+  "n_gt_rows": 770,
+  "series": [
+    "Modern biofuels",
+    "Other renewables",
+    "Solar",
+    "Wind",
+    "Hydropower",
+    "Nuclear",
+    "Gas",
+    "Oil",
+    "Coal",
+    "Traditional biomass"
+  ]
+}

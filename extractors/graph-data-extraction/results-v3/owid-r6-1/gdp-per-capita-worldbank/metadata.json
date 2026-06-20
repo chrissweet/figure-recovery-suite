@@ -1,0 +1,51 @@
+{
+  "chart_id": "gdp-per-capita-worldbank",
+  "corpus": "owid-r6-1",
+  "extractor": "graph-data-extraction (Claude Code skill)",
+  "extractor_version": "v3 (results-v3)",
+  "run_date": "2026-06-20",
+  "source_image": "../../../../corpora/owid-r6-1/charts/gdp-per-capita-worldbank/image.png",
+  "ground_truth_used": false,
+  "strict_mode": true,
+  "chart_type": "Multi-series line plot with markers at integer years",
+  "n_series": 10,
+  "series_order_top_to_bottom_at_2024": [
+    "United States",
+    "Germany",
+    "South Korea",
+    "United Kingdom",
+    "Japan",
+    "Russia",
+    "China",
+    "Brazil",
+    "India",
+    "Ethiopia"
+  ],
+  "x_axis": {
+    "label": "Year",
+    "min": 1990,
+    "max": 2024,
+    "n_ticks": 35
+  },
+  "y_axis": {
+    "label": "GDP per capita (international $, 2021 prices)",
+    "min": 0,
+    "max": 80000,
+    "tick_step": 10000,
+    "tick_label_format": "${value:,}",
+    "parsing": "Strip leading '$' and thousands ',', store value as integer dollar amount."
+  },
+  "phase4_replot_verified": true,
+  "phase4_artifact_check": {
+    "all_series_have_35_points": true,
+    "max_jump_pct_observed": 24.3,
+    "max_jump_pct_threshold": 30,
+    "monotonicity_violations_explained": "UK has a 24% range jump representing the 2020 COVID-era contraction and rebound, also visible in the source image; not an extraction artifact."
+  },
+  "known_caveats": [
+    "Y values are pixel-extracted: about +/- $200 expected error per point (1 px = $497).",
+    "Label-occluded segments (e.g. behind country name labels near the right edge) were interpolated linearly from adjacent in-frame points; the exact interpolation spans are recorded in extraction_info.json.",
+    "First and last year-label centers (1990, 2024) are anchored inside the axis frame in the source; calibration uses the middle six year-label centers (1995-2020) to avoid that bias.",
+    "Use the original World Bank / Eurostat / OECD / IMF source data for anything beyond rough comparison."
+  ]
+}

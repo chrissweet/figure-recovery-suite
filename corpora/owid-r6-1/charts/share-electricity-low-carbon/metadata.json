@@ -1,0 +1,26 @@
+{
+  "chart_id": "share-electricity-low-carbon",
+  "source": "Our World in Data",
+  "source_url": "https://ourworldindata.org/grapher/share-electricity-low-carbon",
+  "csv_url": "https://ourworldindata.org/grapher/share-electricity-low-carbon.csv?csvType=filtered&tab=chart",
+  "image_url": "https://ourworldindata.org/grapher/share-electricity-low-carbon.png?tab=chart",
+  "chart_type": "multi-series line, percent y, BROKEN y-axis",
+  "feature_stressed": "BROKEN y-axis (gap between 50% and 80%); 9 country series",
+  "x_axis_title": "Year",
+  "x_axis_unit": null,
+  "y_axis_title": "Share of electricity from low-carbon",
+  "y_axis_unit": "%",
+  "x_scale": "linear",
+  "y_scale": "linear",
+  "n_gt_rows": 328,
+  "series": [
+    "China",
+    "France",
+    "Germany",
+    "India",
+    "Sweden",
+    "United Kingdom",
+    "United States",
+    "World"
+  ]
+}

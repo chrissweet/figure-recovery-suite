@@ -1,0 +1,1403 @@
+{
+  "n_artifacts": 67,
+  "summary": {
+    "pass": 59,
+    "fail": 8,
+    "by_type": {
+      "frame_box": {
+        "pass": 0,
+        "fail": 1
+      },
+      "axis_line": {
+        "pass": 1,
+        "fail": 1
+      },
+      "tick_center": {
+        "pass": 3,
+        "fail": 1
+      },
+      "line_endpoint": {
+        "pass": 18,
+        "fail": 2
+      },
+      "line_sample": {
+        "pass": 37,
+        "fail": 3
+      }
+    }
+  },
+  "epsilon_px": {
+    "frame_box": 2,
+    "axis_line": 2,
+    "tick_center": 5,
+    "legend_box": 15,
+    "marker_centroid": 3,
+    "line_endpoint": 10,
+    "line_sample": 3,
+    "bar_top": 2,
+    "error_cap": 3
+  },
+  "results": [
+    {
+      "type": "frame_box",
+      "id": "main",
+      "left": 101,
+      "top": 109,
+      "right": 693,
+      "bottom": 512,
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "edges": {
+          "top": 0.0,
+          "bottom": 1.0,
+          "left": 0.04,
+          "right": 0.658
+        },
+        "n_good_edges": 1
+      }
+    },
+    {
+      "type": "axis_line",
+      "id": "y_axis",
+      "orientation": "vertical",
+      "fixed": 101,
+      "extent": [
+        109,
+        512
+      ],
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "axis_dark_fraction": 0.035
+      }
+    },
+    {
+      "type": "axis_line",
+      "id": "x_axis",
+      "orientation": "horizontal",
+      "fixed": 512,
+      "extent": [
+        101,
+        693
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "axis_dark_fraction": 1.0
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_1800",
+      "axis": "x",
+      "col": 101,
+      "row": 530,
+      "value": 1800,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 10
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_2024",
+      "axis": "x",
+      "col": 693,
+      "row": 530,
+      "value": 2024,
+      "pass": false,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 2
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_0",
+      "axis": "y",
+      "col": 71,
+      "row": 511,
+      "value": 0,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 14
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_180000",
+      "axis": "y",
+      "col": 71,
+      "row": 108,
+      "value": 180000,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 21
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Traditional biomass_left",
+      "series": "Traditional biomass",
+      "x": 1800.0,
+      "y": 5368.0,
+      "col": 101,
+      "row": 499,
+      "color": [
+        169,
+        83,
+        93
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 114,
+        "dark": 111,
+        "colored": 114
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Traditional biomass_right",
+      "series": "Traditional biomass",
+      "x": 2024.0,
+      "y": 10736.0,
+      "col": 693,
+      "row": 487,
+      "color": [
+        169,
+        83,
+        93
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 121,
+        "dark": 110,
+        "colored": 121
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Traditional biomass_mid_1",
+      "series": "Traditional biomass",
+      "x": 1845.0,
+      "y": 6710.0,
+      "col": 219,
+      "row": 496,
+      "color": [
+        169,
+        83,
+        93
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 29,
+        "dark": 21,
+        "colored": 29
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Traditional biomass_mid_2",
+      "series": "Traditional biomass",
+      "x": 1890.0,
+      "y": 6262.7,
+      "col": 338,
+      "row": 497,
+      "color": [
+        169,
+        83,
+        93
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 28,
+        "dark": 21,
+        "colored": 28
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Traditional biomass_mid_3",
+      "series": "Traditional biomass",
+      "x": 1935.0,
+      "y": 7157.3,
+      "col": 457,
+      "row": 495,
+      "color": [
+        169,
+        83,
+        93
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 21,
+        "dark": 14,
+        "colored": 21
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Traditional biomass_mid_4",
+      "series": "Traditional biomass",
+      "x": 1980.0,
+      "y": 9841.3,
+      "col": 576,
+      "row": 489,
+      "color": [
+        169,
+        83,
+        93
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 21,
+        "dark": 20,
+        "colored": 21
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Coal_left",
+      "series": "Coal",
+      "x": 1800.0,
+      "y": 894.7,
+      "col": 101,
+      "row": 509,
+      "color": [
+        154,
+        155,
+        155
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 142,
+        "dark": 139,
+        "colored": 136
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Coal_right",
+      "series": "Coal",
+      "x": 2024.0,
+      "y": 47864.6,
+      "col": 693,
+      "row": 404,
+      "color": [
+        154,
+        155,
+        155
+      ],
+      "pass": false,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 0,
+        "dark": 0,
+        "colored": 0
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Coal_mid_1",
+      "series": "Coal",
+      "x": 1845.0,
+      "y": 447.3,
+      "col": 219,
+      "row": 510,
+      "color": [
+        154,
+        155,
+        155
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 35,
+        "dark": 35,
+        "colored": 35
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Coal_mid_2",
+      "series": "Coal",
+      "x": 1890.0,
+      "y": 4026.0,
+      "col": 338,
+      "row": 502,
+      "color": [
+        154,
+        155,
+        155
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 49,
+        "dark": 49,
+        "colored": 49
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Coal_mid_3",
+      "series": "Coal",
+      "x": 1935.0,
+      "y": 11534.8,
+      "col": 457,
+      "row": 485,
+      "color": [
+        154,
+        155,
+        155
+      ],
+      "pass": false,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 0,
+        "dark": 0,
+        "colored": 0
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Coal_mid_4",
+      "series": "Coal",
+      "x": 1980.0,
+      "y": 21344.1,
+      "col": 576,
+      "row": 463,
+      "color": [
+        154,
+        155,
+        155
+      ],
+      "pass": false,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 0,
+        "dark": 0,
+        "colored": 0
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Oil_left",
+      "series": "Oil",
+      "x": 1800.0,
+      "y": 0.0,
+      "col": 101,
+      "row": 511,
+      "color": [
+        92,
+        128,
+        186
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 128,
+        "dark": 128,
+        "colored": 121
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Oil_right",
+      "series": "Oil",
+      "x": 2024.0,
+      "y": 55021.9,
+      "col": 693,
+      "row": 388,
+      "color": [
+        92,
+        128,
+        186
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 106,
+        "dark": 0,
+        "colored": 106
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Oil_mid_1",
+      "series": "Oil",
+      "x": 1845.0,
+      "y": 0.0,
+      "col": 219,
+      "row": 511,
+      "color": [
+        92,
+        128,
+        186
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 28,
+        "dark": 28,
+        "colored": 28
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Oil_mid_2",
+      "series": "Oil",
+      "x": 1890.0,
+      "y": 0.0,
+      "col": 338,
+      "row": 511,
+      "color": [
+        92,
+        128,
+        186
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 28,
+        "dark": 28,
+        "colored": 28
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Oil_mid_3",
+      "series": "Oil",
+      "x": 1935.0,
+      "y": 2236.7,
+      "col": 457,
+      "row": 506,
+      "color": [
+        92,
+        128,
+        186
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 49,
+        "dark": 49,
+        "colored": 49
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Oil_mid_4",
+      "series": "Oil",
+      "x": 1980.0,
+      "y": 35594.9,
+      "col": 576,
+      "row": 431,
+      "color": [
+        92,
+        128,
+        186
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 49,
+        "dark": 0,
+        "colored": 49
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Gas_left",
+      "series": "Gas",
+      "x": 1800.0,
+      "y": 0.0,
+      "col": 101,
+      "row": 511,
+      "color": [
+        184,
+        117,
+        200
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 128,
+        "dark": 128,
+        "colored": 121
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Gas_right",
+      "series": "Gas",
+      "x": 2024.0,
+      "y": 41154.6,
+      "col": 693,
+      "row": 419,
+      "color": [
+        184,
+        117,
+        200
+      ],
+      "pass": false,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 0,
+        "dark": 0,
+        "colored": 0
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Gas_mid_1",
+      "series": "Gas",
+      "x": 1845.0,
+      "y": 0.0,
+      "col": 219,
+      "row": 511,
+      "color": [
+        184,
+        117,
+        200
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 28,
+        "dark": 28,
+        "colored": 28
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Gas_mid_2",
+      "series": "Gas",
+      "x": 1890.0,
+      "y": 0.0,
+      "col": 338,
+      "row": 511,
+      "color": [
+        184,
+        117,
+        200
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 28,
+        "dark": 28,
+        "colored": 28
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Gas_mid_3",
+      "series": "Gas",
+      "x": 1935.0,
+      "y": 447.3,
+      "col": 457,
+      "row": 510,
+      "color": [
+        184,
+        117,
+        200
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 35,
+        "dark": 35,
+        "colored": 35
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Gas_mid_4",
+      "series": "Gas",
+      "x": 1980.0,
+      "y": 14314.6,
+      "col": 576,
+      "row": 479,
+      "color": [
+        184,
+        117,
+        200
+      ],
+      "pass": false,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 0,
+        "dark": 0,
+        "colored": 0
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Nuclear_left",
+      "series": "Nuclear",
+      "x": 1800.0,
+      "y": 0.0,
+      "col": 101,
+      "row": 511,
+      "color": [
+        213,
+        81,
+        83
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 128,
+        "dark": 128,
+        "colored": 121
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Nuclear_right",
+      "series": "Nuclear",
+      "x": 2024.0,
+      "y": 2236.7,
+      "col": 693,
+      "row": 506,
+      "color": [
+        213,
+        81,
+        83
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 176,
+        "dark": 176,
+        "colored": 176
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Nuclear_mid_1",
+      "series": "Nuclear",
+      "x": 1845.0,
+      "y": 0.0,
+      "col": 219,
+      "row": 511,
+      "color": [
+        213,
+        81,
+        83
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 28,
+        "dark": 28,
+        "colored": 28
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Nuclear_mid_2",
+      "series": "Nuclear",
+      "x": 1890.0,
+      "y": 0.0,
+      "col": 338,
+      "row": 511,
+      "color": [
+        213,
+        81,
+        83
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 28,
+        "dark": 28,
+        "colored": 28
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Nuclear_mid_3",
+      "series": "Nuclear",
+      "x": 1935.0,
+      "y": 0.0,
+      "col": 457,
+      "row": 511,
+      "color": [
+        213,
+        81,
+        83
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 28,
+        "dark": 28,
+        "colored": 28
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Nuclear_mid_4",
+      "series": "Nuclear",
+      "x": 1980.0,
+      "y": 447.3,
+      "col": 576,
+      "row": 510,
+      "color": [
+        213,
+        81,
+        83
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 35,
+        "dark": 35,
+        "colored": 35
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Hydropower_left",
+      "series": "Hydropower",
+      "x": 1800.0,
+      "y": 0.0,
+      "col": 101,
+      "row": 511,
+      "color": [
+        144,
+        192,
+        196
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 128,
+        "dark": 128,
+        "colored": 121
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Hydropower_right",
+      "series": "Hydropower",
+      "x": 2024.0,
+      "y": 4920.7,
+      "col": 693,
+      "row": 500,
+      "color": [
+        144,
+        192,
+        196
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 231,
+        "dark": 231,
+        "colored": 231
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Hydropower_mid_1",
+      "series": "Hydropower",
+      "x": 1845.0,
+      "y": 0.0,
+      "col": 219,
+      "row": 511,
+      "color": [
+        144,
+        192,
+        196
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 28,
+        "dark": 28,
+        "colored": 28
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Hydropower_mid_2",
+      "series": "Hydropower",
+      "x": 1890.0,
+      "y": 0.0,
+      "col": 338,
+      "row": 511,
+      "color": [
+        144,
+        192,
+        196
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 28,
+        "dark": 28,
+        "colored": 28
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Hydropower_mid_3",
+      "series": "Hydropower",
+      "x": 1935.0,
+      "y": 95.9,
+      "col": 457,
+      "row": 511,
+      "color": [
+        144,
+        192,
+        196
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 28,
+        "dark": 28,
+        "colored": 28
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Hydropower_mid_4",
+      "series": "Hydropower",
+      "x": 1980.0,
+      "y": 1342.0,
+      "col": 576,
+      "row": 508,
+      "color": [
+        144,
+        192,
+        196
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 49,
+        "dark": 49,
+        "colored": 49
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Wind_left",
+      "series": "Wind",
+      "x": 1800.0,
+      "y": 0.0,
+      "col": 101,
+      "row": 511,
+      "color": [
+        109,
+        180,
+        134
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 128,
+        "dark": 128,
+        "colored": 121
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Wind_right",
+      "series": "Wind",
+      "x": 2024.0,
+      "y": 2684.0,
+      "col": 693,
+      "row": 505,
+      "color": [
+        109,
+        180,
+        134
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 187,
+        "dark": 187,
+        "colored": 187
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Wind_mid_1",
+      "series": "Wind",
+      "x": 1845.0,
+      "y": 0.0,
+      "col": 219,
+      "row": 511,
+      "color": [
+        109,
+        180,
+        134
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 28,
+        "dark": 28,
+        "colored": 28
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Wind_mid_2",
+      "series": "Wind",
+      "x": 1890.0,
+      "y": 0.0,
+      "col": 338,
+      "row": 511,
+      "color": [
+        109,
+        180,
+        134
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 28,
+        "dark": 28,
+        "colored": 28
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Wind_mid_3",
+      "series": "Wind",
+      "x": 1935.0,
+      "y": 0.0,
+      "col": 457,
+      "row": 511,
+      "color": [
+        109,
+        180,
+        134
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 28,
+        "dark": 28,
+        "colored": 28
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Wind_mid_4",
+      "series": "Wind",
+      "x": 1980.0,
+      "y": 447.3,
+      "col": 576,
+      "row": 510,
+      "color": [
+        109,
+        180,
+        134
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 35,
+        "dark": 35,
+        "colored": 35
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Solar_left",
+      "series": "Solar",
+      "x": 1800.0,
+      "y": 0.0,
+      "col": 101,
+      "row": 511,
+      "color": [
+        201,
+        168,
+        49
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 128,
+        "dark": 128,
+        "colored": 121
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Solar_right",
+      "series": "Solar",
+      "x": 2024.0,
+      "y": 1342.0,
+      "col": 693,
+      "row": 508,
+      "color": [
+        201,
+        168,
+        49
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 154,
+        "dark": 154,
+        "colored": 154
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Solar_mid_1",
+      "series": "Solar",
+      "x": 1845.0,
+      "y": 0.0,
+      "col": 219,
+      "row": 511,
+      "color": [
+        201,
+        168,
+        49
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 28,
+        "dark": 28,
+        "colored": 28
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Solar_mid_2",
+      "series": "Solar",
+      "x": 1890.0,
+      "y": 0.0,
+      "col": 338,
+      "row": 511,
+      "color": [
+        201,
+        168,
+        49
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 28,
+        "dark": 28,
+        "colored": 28
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Solar_mid_3",
+      "series": "Solar",
+      "x": 1935.0,
+      "y": 0.0,
+      "col": 457,
+      "row": 511,
+      "color": [
+        201,
+        168,
+        49
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 28,
+        "dark": 28,
+        "colored": 28
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Solar_mid_4",
+      "series": "Solar",
+      "x": 1980.0,
+      "y": 0.0,
+      "col": 576,
+      "row": 511,
+      "color": [
+        201,
+        168,
+        49
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 28,
+        "dark": 28,
+        "colored": 28
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Other renewables_left",
+      "series": "Other renewables",
+      "x": 1800.0,
+      "y": 0.0,
+      "col": 101,
+      "row": 511,
+      "color": [
+        82,
+        167,
+        174
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 128,
+        "dark": 128,
+        "colored": 121
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Other renewables_right",
+      "series": "Other renewables",
+      "x": 2024.0,
+      "y": 0.0,
+      "col": 693,
+      "row": 511,
+      "color": [
+        82,
+        167,
+        174
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 123,
+        "dark": 123,
+        "colored": 121
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Other renewables_mid_1",
+      "series": "Other renewables",
+      "x": 1845.0,
+      "y": 0.0,
+      "col": 219,
+      "row": 511,
+      "color": [
+        82,
+        167,
+        174
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 28,
+        "dark": 28,
+        "colored": 28
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Other renewables_mid_2",
+      "series": "Other renewables",
+      "x": 1890.0,
+      "y": 0.0,
+      "col": 338,
+      "row": 511,
+      "color": [
+        82,
+        167,
+        174
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 28,
+        "dark": 28,
+        "colored": 28
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Other renewables_mid_3",
+      "series": "Other renewables",
+      "x": 1935.0,
+      "y": 0.0,
+      "col": 457,
+      "row": 511,
+      "color": [
+        82,
+        167,
+        174
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 28,
+        "dark": 28,
+        "colored": 28
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Other renewables_mid_4",
+      "series": "Other renewables",
+      "x": 1980.0,
+      "y": 0.0,
+      "col": 576,
+      "row": 511,
+      "color": [
+        82,
+        167,
+        174
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 28,
+        "dark": 28,
+        "colored": 28
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Modern biofuels_left",
+      "series": "Modern biofuels",
+      "x": 1800.0,
+      "y": 447.3,
+      "col": 101,
+      "row": 510,
+      "color": [
+        176,
+        146,
+        110
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 138,
+        "dark": 138,
+        "colored": 132
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Modern biofuels_right",
+      "series": "Modern biofuels",
+      "x": 2024.0,
+      "y": 2236.7,
+      "col": 693,
+      "row": 506,
+      "color": [
+        176,
+        146,
+        110
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 176,
+        "dark": 176,
+        "colored": 176
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Modern biofuels_mid_1",
+      "series": "Modern biofuels",
+      "x": 1845.0,
+      "y": 894.7,
+      "col": 219,
+      "row": 509,
+      "color": [
+        176,
+        146,
+        110
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 42,
+        "dark": 42,
+        "colored": 42
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Modern biofuels_mid_2",
+      "series": "Modern biofuels",
+      "x": 1890.0,
+      "y": 894.7,
+      "col": 338,
+      "row": 509,
+      "color": [
+        176,
+        146,
+        110
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 42,
+        "dark": 42,
+        "colored": 42
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Modern biofuels_mid_3",
+      "series": "Modern biofuels",
+      "x": 1935.0,
+      "y": 447.3,
+      "col": 457,
+      "row": 510,
+      "color": [
+        176,
+        146,
+        110
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 35,
+        "dark": 35,
+        "colored": 35
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Modern biofuels_mid_4",
+      "series": "Modern biofuels",
+      "x": 1980.0,
+      "y": 447.3,
+      "col": 576,
+      "row": 510,
+      "color": [
+        176,
+        146,
+        110
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 35,
+        "dark": 35,
+        "colored": 35
+      }
+    }
+  ]
+}

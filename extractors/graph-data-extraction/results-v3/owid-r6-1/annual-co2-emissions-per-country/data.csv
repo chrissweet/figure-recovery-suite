@@ -1,0 +1,1859 @@
+layer_idx,layer_type,series,x,y
+0,Line Graph,Brazil,1936.44,0.0
+0,Line Graph,Brazil,1936.88,0.0
+0,Line Graph,Brazil,1937.31,0.0
+0,Line Graph,Brazil,1938.62,0.0
+0,Line Graph,Brazil,1939.06,0.0
+0,Line Graph,Brazil,1939.49,0.0
+0,Line Graph,Brazil,1939.93,0.0
+0,Line Graph,Brazil,1940.36,0.0
+0,Line Graph,Brazil,1940.8,0.0
+0,Line Graph,Brazil,1941.23,0.0
+0,Line Graph,Brazil,1941.67,0.0
+0,Line Graph,Brazil,1942.1,0.0
+0,Line Graph,Brazil,1942.54,0.0
+0,Line Graph,Brazil,1942.98,0.0
+0,Line Graph,Brazil,1943.41,0.0
+0,Line Graph,Brazil,1943.85,0.0
+0,Line Graph,Brazil,1944.28,0.0
+0,Line Graph,Brazil,1944.72,0.0
+0,Line Graph,Brazil,1945.15,0.0
+0,Line Graph,Brazil,1953.43,27906976.7
+0,Line Graph,Brazil,1953.87,27906976.7
+0,Line Graph,Brazil,1954.3,27906976.7
+0,Line Graph,Brazil,1954.74,27906976.7
+0,Line Graph,Brazil,1955.17,27906976.7
+0,Line Graph,Brazil,1955.61,27906976.7
+0,Line Graph,Brazil,1959.53,55813953.5
+0,Line Graph,Brazil,1959.97,55813953.5
+0,Line Graph,Brazil,1960.4,55813953.5
+0,Line Graph,Brazil,1960.84,55813953.5
+0,Line Graph,Brazil,1961.27,55813953.5
+0,Line Graph,Brazil,1961.71,55813953.5
+0,Line Graph,Brazil,1962.14,55813953.5
+0,Line Graph,Brazil,1962.58,55813953.5
+0,Line Graph,Brazil,1963.01,55813953.5
+0,Line Graph,Brazil,1963.45,55813953.5
+0,Line Graph,Brazil,1963.89,55813953.5
+0,Line Graph,Brazil,1964.32,55813953.5
+0,Line Graph,Brazil,1964.76,55813953.5
+0,Line Graph,Brazil,1965.19,55813953.5
+0,Line Graph,Brazil,1965.63,55813953.5
+0,Line Graph,Brazil,1967.37,83720930.2
+0,Line Graph,Brazil,1967.81,83720930.2
+0,Line Graph,Brazil,1968.24,83720930.2
+0,Line Graph,Brazil,1968.68,83720930.2
+0,Line Graph,Brazil,1969.11,83720930.2
+0,Line Graph,Brazil,1969.55,83720930.2
+0,Line Graph,Brazil,1970.86,111627907.0
+0,Line Graph,Brazil,1971.29,111627907.0
+0,Line Graph,Brazil,1971.73,111627907.0
+0,Line Graph,Brazil,1972.16,111627907.0
+0,Line Graph,Brazil,1973.03,139534883.7
+0,Line Graph,Brazil,1973.47,139534883.7
+0,Line Graph,Brazil,1973.9,139534883.7
+0,Line Graph,Brazil,1974.34,139534883.7
+0,Line Graph,Brazil,1976.52,167441860.5
+0,Line Graph,Brazil,1976.95,167441860.5
+0,Line Graph,Brazil,1977.39,167441860.5
+0,Line Graph,Brazil,1977.83,167441860.5
+0,Line Graph,Brazil,1978.7,195348837.2
+0,Line Graph,Brazil,1979.13,195348837.2
+0,Line Graph,Brazil,1979.57,195348837.2
+0,Line Graph,Brazil,1980.0,195348837.2
+0,Line Graph,Brazil,1980.87,167441860.5
+0,Line Graph,Brazil,1981.31,167441860.5
+0,Line Graph,Brazil,1981.75,167441860.5
+0,Line Graph,Brazil,1982.18,167441860.5
+0,Line Graph,Brazil,1982.62,167441860.5
+0,Line Graph,Brazil,1983.05,167441860.5
+0,Line Graph,Brazil,1983.49,167441860.5
+0,Line Graph,Brazil,1983.92,167441860.5
+0,Line Graph,Brazil,1984.36,167441860.5
+0,Line Graph,Brazil,1985.23,195348837.2
+0,Line Graph,Brazil,1985.67,195348837.2
+0,Line Graph,Brazil,1986.1,195348837.2
+0,Line Graph,Brazil,1986.54,195348837.2
+0,Line Graph,Brazil,1988.72,223255814.0
+0,Line Graph,Brazil,1989.15,223255814.0
+0,Line Graph,Brazil,1989.59,223255814.0
+0,Line Graph,Brazil,1990.02,223255814.0
+0,Line Graph,Brazil,1990.46,223255814.0
+0,Line Graph,Brazil,1990.89,223255814.0
+0,Line Graph,Brazil,1991.33,223255814.0
+0,Line Graph,Brazil,1992.64,251162790.7
+0,Line Graph,Brazil,1993.07,251162790.7
+0,Line Graph,Brazil,1993.51,251162790.7
+0,Line Graph,Brazil,1993.94,251162790.7
+0,Line Graph,Brazil,1995.25,279069767.4
+0,Line Graph,Brazil,1995.69,279069767.4
+0,Line Graph,Brazil,1996.56,306976744.2
+0,Line Graph,Brazil,1996.99,306976744.2
+0,Line Graph,Brazil,1997.43,306976744.2
+0,Line Graph,Brazil,1998.73,334883720.9
+0,Line Graph,Brazil,1999.17,334883720.9
+0,Line Graph,Brazil,1999.61,334883720.9
+0,Line Graph,Brazil,2000.04,334883720.9
+0,Line Graph,Brazil,2003.53,362790697.7
+0,Line Graph,Brazil,2003.96,362790697.7
+0,Line Graph,Brazil,2004.4,362790697.7
+0,Line Graph,Brazil,2004.83,362790697.7
+0,Line Graph,Brazil,2005.27,362790697.7
+0,Line Graph,Brazil,2005.7,362790697.7
+0,Line Graph,Brazil,2013.11,530232558.1
+0,Line Graph,Brazil,2013.98,558139534.9
+0,Line Graph,Brazil,2014.42,558139534.9
+0,Line Graph,Brazil,2014.85,530232558.1
+0,Line Graph,Brazil,2015.29,530232558.1
+0,Line Graph,Brazil,2015.72,502325581.4
+0,Line Graph,Brazil,2016.16,502325581.4
+0,Line Graph,Brazil,2016.59,502325581.4
+0,Line Graph,Brazil,2017.03,502325581.4
+0,Line Graph,Brazil,2017.9,474418604.7
+0,Line Graph,Brazil,2018.34,474418604.7
+0,Line Graph,Brazil,2018.77,474418604.7
+0,Line Graph,Brazil,2019.21,474418604.7
+0,Line Graph,Brazil,2019.64,474418604.7
+0,Line Graph,Brazil,2020.08,446511627.9
+0,Line Graph,Brazil,2020.52,474418604.7
+0,Line Graph,Brazil,2020.95,502325581.4
+0,Line Graph,Brazil,2021.39,502325581.4
+0,Line Graph,Brazil,2022.26,474418604.7
+0,Line Graph,Brazil,2022.69,474418604.7
+0,Line Graph,China,1940.36,111627907.0
+0,Line Graph,China,1940.8,111627907.0
+0,Line Graph,China,1941.23,111627907.0
+0,Line Graph,China,1942.54,111627907.0
+0,Line Graph,China,1942.98,111627907.0
+0,Line Graph,China,1943.41,111627907.0
+0,Line Graph,China,1943.85,111627907.0
+0,Line Graph,China,1952.12,139534883.7
+0,Line Graph,China,1952.56,139534883.7
+0,Line Graph,China,1953.0,139534883.7
+0,Line Graph,China,1953.43,139534883.7
+0,Line Graph,China,1953.87,167441860.5
+0,Line Graph,China,1954.3,167441860.5
+0,Line Graph,China,1954.74,195348837.2
+0,Line Graph,China,1955.17,195348837.2
+0,Line Graph,China,1956.04,223255814.0
+0,Line Graph,China,1956.92,279069767.4
+0,Line Graph,China,1957.35,362790697.7
+0,Line Graph,China,1957.79,474418604.7
+0,Line Graph,China,1958.66,669767441.9
+0,Line Graph,China,1959.09,725581395.3
+0,Line Graph,China,1959.53,753488372.1
+0,Line Graph,China,1959.97,809302325.6
+0,Line Graph,China,1960.4,725581395.3
+0,Line Graph,China,1960.84,641860465.1
+0,Line Graph,China,1961.27,530232558.1
+0,Line Graph,China,1961.71,502325581.4
+0,Line Graph,China,1964.32,474418604.7
+0,Line Graph,China,1964.76,502325581.4
+0,Line Graph,China,1965.19,502325581.4
+0,Line Graph,China,1965.63,530232558.1
+0,Line Graph,China,1966.06,558139534.9
+0,Line Graph,China,1966.5,502325581.4
+0,Line Graph,China,1966.93,474418604.7
+0,Line Graph,China,1967.37,474418604.7
+0,Line Graph,China,1967.81,502325581.4
+0,Line Graph,China,1968.24,530232558.1
+0,Line Graph,China,1968.68,558139534.9
+0,Line Graph,China,1969.55,725581395.3
+0,Line Graph,China,1969.98,809302325.6
+0,Line Graph,China,1970.42,865116279.1
+0,Line Graph,China,1970.86,893023255.8
+0,Line Graph,China,1971.29,920930232.6
+0,Line Graph,China,1971.73,948837209.3
+0,Line Graph,China,1972.16,976744186.0
+0,Line Graph,China,1972.6,1004651162.8
+0,Line Graph,China,1973.03,1004651162.8
+0,Line Graph,China,1973.9,1032558139.5
+0,Line Graph,China,1974.34,1088372093.0
+0,Line Graph,China,1974.78,1144186046.5
+0,Line Graph,China,1975.21,1200000000.0
+0,Line Graph,China,1976.08,1255813953.5
+0,Line Graph,China,1976.52,1283720930.2
+0,Line Graph,China,1976.95,1339534883.7
+0,Line Graph,China,1977.39,1423255814.0
+0,Line Graph,China,1977.83,1479069767.4
+0,Line Graph,China,1978.26,1506976744.2
+0,Line Graph,China,1979.13,1534883720.9
+0,Line Graph,China,1979.57,1506976744.2
+0,Line Graph,China,1980.0,1506976744.2
+0,Line Graph,China,1980.87,1479069767.4
+0,Line Graph,China,1981.31,1534883720.9
+0,Line Graph,China,1981.75,1590697674.4
+0,Line Graph,China,1982.18,1618604651.2
+0,Line Graph,China,1982.62,1674418604.7
+0,Line Graph,China,1983.05,1702325581.4
+0,Line Graph,China,1983.49,1786046511.6
+0,Line Graph,China,1983.92,1841860465.1
+0,Line Graph,China,1984.36,1925581395.3
+0,Line Graph,China,1984.79,1981395348.8
+0,Line Graph,China,1985.23,2037209302.3
+0,Line Graph,China,1985.67,2065116279.1
+0,Line Graph,China,1986.1,2120930232.6
+0,Line Graph,China,1986.54,2204651162.8
+0,Line Graph,China,1986.97,2260465116.3
+0,Line Graph,China,1987.41,2344186046.5
+0,Line Graph,China,1987.84,2400000000.0
+0,Line Graph,China,1988.28,2427906976.7
+0,Line Graph,China,1988.72,2455813953.5
+0,Line Graph,China,1989.59,2483720930.2
+0,Line Graph,China,1990.02,2483720930.2
+0,Line Graph,China,1990.46,2567441860.5
+0,Line Graph,China,1990.89,2623255814.0
+0,Line Graph,China,1991.33,2651162790.7
+0,Line Graph,China,1991.76,2706976744.2
+0,Line Graph,China,1992.2,2790697674.4
+0,Line Graph,China,1992.64,2846511627.9
+0,Line Graph,China,1993.07,2930232558.1
+0,Line Graph,China,1993.51,3013953488.4
+0,Line Graph,China,1993.94,3097674418.6
+0,Line Graph,China,1994.38,3181395348.8
+0,Line Graph,China,1994.81,3293023255.8
+0,Line Graph,China,1995.25,3404651162.8
+0,Line Graph,China,1995.69,3460465116.3
+0,Line Graph,China,1996.12,3488372093.0
+0,Line Graph,China,1996.56,3516279069.8
+0,Line Graph,China,1996.99,3516279069.8
+0,Line Graph,China,1997.43,3460465116.3
+0,Line Graph,China,1997.86,3404651162.8
+0,Line Graph,China,1998.3,3432558139.5
+0,Line Graph,China,1998.73,3516279069.8
+0,Line Graph,China,1999.17,3572093023.3
+0,Line Graph,China,1999.61,3600000000.0
+0,Line Graph,China,2000.04,3655813953.5
+0,Line Graph,China,2000.48,3683720930.2
+0,Line Graph,China,2000.91,3739534883.7
+0,Line Graph,China,2001.35,3851162790.7
+0,Line Graph,China,2001.78,4018604651.2
+0,Line Graph,China,2002.22,4241860465.1
+0,Line Graph,China,2002.66,4548837209.3
+0,Line Graph,China,2003.09,4855813953.5
+0,Line Graph,China,2003.53,5023255814.0
+0,Line Graph,China,2003.96,5190697674.4
+0,Line Graph,China,2004.4,5469767441.9
+0,Line Graph,China,2004.83,5748837209.3
+0,Line Graph,China,2005.27,6000000000.0
+0,Line Graph,China,2005.7,6279069767.4
+0,Line Graph,China,2006.14,6530232558.1
+0,Line Graph,China,2006.58,6753488372.1
+0,Line Graph,China,2007.01,6976744186.0
+0,Line Graph,China,2007.45,7200000000.0
+0,Line Graph,China,2007.88,7423255814.0
+0,Line Graph,China,2008.32,7618604651.2
+0,Line Graph,China,2008.75,7786046511.6
+0,Line Graph,China,2009.19,8009302325.6
+0,Line Graph,China,2009.62,8316279069.8
+0,Line Graph,China,2010.06,8623255814.0
+0,Line Graph,China,2010.5,9013953488.4
+0,Line Graph,China,2010.93,9404651162.8
+0,Line Graph,China,2011.37,9600000000.0
+0,Line Graph,China,2011.8,9711627907.0
+0,Line Graph,China,2012.24,9823255814.0
+0,Line Graph,China,2012.67,9879069767.4
+0,Line Graph,China,2013.11,9934883720.9
+0,Line Graph,China,2013.55,9962790697.7
+0,Line Graph,China,2013.98,9962790697.7
+0,Line Graph,China,2014.42,9934883720.9
+0,Line Graph,China,2014.85,9906976744.2
+0,Line Graph,China,2015.29,9851162790.7
+0,Line Graph,China,2015.72,9795348837.2
+0,Line Graph,China,2016.16,9795348837.2
+0,Line Graph,China,2016.59,9879069767.4
+0,Line Graph,China,2017.03,9990697674.4
+0,Line Graph,China,2017.47,10158139534.9
+0,Line Graph,China,2017.9,10297674418.6
+0,Line Graph,China,2018.34,10465116279.1
+0,Line Graph,China,2018.77,10604651162.8
+0,Line Graph,China,2019.21,10744186046.5
+0,Line Graph,China,2019.64,10827906976.7
+0,Line Graph,China,2020.08,10911627907.0
+0,Line Graph,China,2020.52,11079069767.4
+0,Line Graph,China,2020.95,11246511627.9
+0,Line Graph,China,2021.39,11413953488.4
+0,Line Graph,China,2021.82,11609302325.6
+0,Line Graph,China,2022.26,11804651162.8
+0,Line Graph,China,2022.69,12000000000.0
+0,Line Graph,China,2023.13,12167441860.5
+0,Line Graph,China,2023.56,12251162790.7
+0,Line Graph,China,2024.0,12279069767.4
+0,Line Graph,France,1870.23,55813953.5
+0,Line Graph,France,1870.66,55813953.5
+0,Line Graph,France,1871.1,55813953.5
+0,Line Graph,France,1871.54,55813953.5
+0,Line Graph,France,1871.97,55813953.5
+0,Line Graph,France,1873.71,55813953.5
+0,Line Graph,France,1874.15,55813953.5
+0,Line Graph,France,1879.38,83720930.2
+0,Line Graph,France,1879.81,83720930.2
+0,Line Graph,France,1880.25,83720930.2
+0,Line Graph,France,1880.68,83720930.2
+0,Line Graph,France,1881.12,83720930.2
+0,Line Graph,France,1881.55,83720930.2
+0,Line Graph,France,1881.99,83720930.2
+0,Line Graph,France,1882.43,83720930.2
+0,Line Graph,France,1882.86,83720930.2
+0,Line Graph,France,1883.3,83720930.2
+0,Line Graph,France,1883.73,83720930.2
+0,Line Graph,France,1884.17,83720930.2
+0,Line Graph,France,1884.6,83720930.2
+0,Line Graph,France,1885.04,83720930.2
+0,Line Graph,France,1885.48,83720930.2
+0,Line Graph,France,1885.91,83720930.2
+0,Line Graph,France,1886.35,83720930.2
+0,Line Graph,France,1886.78,83720930.2
+0,Line Graph,France,1887.22,83720930.2
+0,Line Graph,France,1887.65,83720930.2
+0,Line Graph,France,1888.09,83720930.2
+0,Line Graph,France,1888.52,83720930.2
+0,Line Graph,France,1888.96,83720930.2
+0,Line Graph,France,1893.32,111627907.0
+0,Line Graph,France,1893.75,111627907.0
+0,Line Graph,France,1894.19,111627907.0
+0,Line Graph,France,1894.62,111627907.0
+0,Line Graph,France,1895.06,111627907.0
+0,Line Graph,France,1895.49,111627907.0
+0,Line Graph,France,1895.93,111627907.0
+0,Line Graph,France,1896.37,111627907.0
+0,Line Graph,France,1896.8,111627907.0
+0,Line Graph,France,1897.24,111627907.0
+0,Line Graph,France,1897.67,111627907.0
+0,Line Graph,France,1898.11,111627907.0
+0,Line Graph,France,1898.54,111627907.0
+0,Line Graph,France,1899.85,139534883.7
+0,Line Graph,France,1900.29,139534883.7
+0,Line Graph,France,1902.03,111627907.0
+0,Line Graph,France,1902.9,139534883.7
+0,Line Graph,France,1903.34,139534883.7
+0,Line Graph,France,1904.64,139534883.7
+0,Line Graph,France,1905.08,139534883.7
+0,Line Graph,France,1905.51,139534883.7
+0,Line Graph,France,1905.95,139534883.7
+0,Line Graph,France,1906.38,139534883.7
+0,Line Graph,France,1906.82,139534883.7
+0,Line Graph,France,1907.26,139534883.7
+0,Line Graph,France,1910.74,167441860.5
+0,Line Graph,France,1911.18,167441860.5
+0,Line Graph,France,1911.61,167441860.5
+0,Line Graph,France,1912.05,167441860.5
+0,Line Graph,France,1912.48,167441860.5
+0,Line Graph,France,1912.92,167441860.5
+0,Line Graph,France,1913.35,139534883.7
+0,Line Graph,France,1913.79,139534883.7
+0,Line Graph,France,1914.23,111627907.0
+0,Line Graph,France,1914.66,111627907.0
+0,Line Graph,France,1915.1,111627907.0
+0,Line Graph,France,1915.53,111627907.0
+0,Line Graph,France,1915.97,111627907.0
+0,Line Graph,France,1916.4,111627907.0
+0,Line Graph,France,1917.28,111627907.0
+0,Line Graph,France,1917.71,111627907.0
+0,Line Graph,France,1918.15,111627907.0
+0,Line Graph,France,1918.58,111627907.0
+0,Line Graph,France,1919.02,111627907.0
+0,Line Graph,France,1919.45,139534883.7
+0,Line Graph,France,1919.89,139534883.7
+0,Line Graph,France,1920.32,139534883.7
+0,Line Graph,France,1920.76,139534883.7
+0,Line Graph,France,1921.2,139534883.7
+0,Line Graph,France,1921.63,167441860.5
+0,Line Graph,France,1922.07,167441860.5
+0,Line Graph,France,1922.5,167441860.5
+0,Line Graph,France,1922.94,195348837.2
+0,Line Graph,France,1923.37,195348837.2
+0,Line Graph,France,1924.68,223255814.0
+0,Line Graph,France,1925.12,223255814.0
+0,Line Graph,France,1925.55,223255814.0
+0,Line Graph,France,1926.42,223255814.0
+0,Line Graph,France,1926.86,223255814.0
+0,Line Graph,France,1927.29,223255814.0
+0,Line Graph,France,1927.73,223255814.0
+0,Line Graph,France,1928.17,223255814.0
+0,Line Graph,France,1928.6,223255814.0
+0,Line Graph,France,1930.34,223255814.0
+0,Line Graph,France,1930.78,223255814.0
+0,Line Graph,France,1931.21,223255814.0
+0,Line Graph,France,1931.65,195348837.2
+0,Line Graph,France,1932.09,195348837.2
+0,Line Graph,France,1932.52,195348837.2
+0,Line Graph,France,1932.96,195348837.2
+0,Line Graph,France,1933.39,195348837.2
+0,Line Graph,France,1933.83,195348837.2
+0,Line Graph,France,1934.26,195348837.2
+0,Line Graph,France,1934.7,195348837.2
+0,Line Graph,France,1935.14,195348837.2
+0,Line Graph,France,1935.57,195348837.2
+0,Line Graph,France,1936.01,195348837.2
+0,Line Graph,France,1936.88,223255814.0
+0,Line Graph,France,1937.31,223255814.0
+0,Line Graph,France,1938.18,195348837.2
+0,Line Graph,France,1938.62,195348837.2
+0,Line Graph,France,1939.06,195348837.2
+0,Line Graph,France,1939.49,167441860.5
+0,Line Graph,France,1945.15,111627907.0
+0,Line Graph,France,1945.59,139534883.7
+0,Line Graph,France,1946.03,167441860.5
+0,Line Graph,France,1946.46,167441860.5
+0,Line Graph,France,1946.9,195348837.2
+0,Line Graph,France,1947.33,195348837.2
+0,Line Graph,France,1947.77,195348837.2
+0,Line Graph,France,1948.2,195348837.2
+0,Line Graph,France,1948.64,223255814.0
+0,Line Graph,France,1949.07,223255814.0
+0,Line Graph,France,1949.51,223255814.0
+0,Line Graph,France,1950.38,223255814.0
+0,Line Graph,France,1950.82,223255814.0
+0,Line Graph,France,1951.25,223255814.0
+0,Line Graph,France,1951.69,223255814.0
+0,Line Graph,France,1952.12,223255814.0
+0,Line Graph,France,1952.56,223255814.0
+0,Line Graph,France,1953.0,223255814.0
+0,Line Graph,France,1953.43,223255814.0
+0,Line Graph,France,1953.87,223255814.0
+0,Line Graph,France,1955.17,251162790.7
+0,Line Graph,France,1956.04,279069767.4
+0,Line Graph,France,1958.22,279069767.4
+0,Line Graph,France,1959.09,279069767.4
+0,Line Graph,France,1959.53,279069767.4
+0,Line Graph,France,1959.97,306976744.2
+0,Line Graph,France,1960.4,306976744.2
+0,Line Graph,France,1961.27,334883720.9
+0,Line Graph,France,1961.71,334883720.9
+0,Line Graph,France,1962.14,334883720.9
+0,Line Graph,France,1962.58,334883720.9
+0,Line Graph,France,1963.01,334883720.9
+0,Line Graph,France,1963.45,362790697.7
+0,Line Graph,France,1963.89,362790697.7
+0,Line Graph,France,1964.32,362790697.7
+0,Line Graph,France,1964.76,362790697.7
+0,Line Graph,France,1965.19,362790697.7
+0,Line Graph,France,1966.06,390697674.4
+0,Line Graph,France,1966.5,390697674.4
+0,Line Graph,France,1967.37,418604651.2
+0,Line Graph,France,1967.81,418604651.2
+0,Line Graph,France,1968.68,446511627.9
+0,Line Graph,France,1969.11,446511627.9
+0,Line Graph,France,1969.98,474418604.7
+0,Line Graph,France,1970.42,474418604.7
+0,Line Graph,France,1970.86,502325581.4
+0,Line Graph,France,1971.29,502325581.4
+0,Line Graph,France,1972.16,530232558.1
+0,Line Graph,France,1972.6,530232558.1
+0,Line Graph,France,1973.47,530232558.1
+0,Line Graph,France,1973.9,530232558.1
+0,Line Graph,France,1974.78,502325581.4
+0,Line Graph,France,1975.21,502325581.4
+0,Line Graph,France,1976.08,530232558.1
+0,Line Graph,France,1976.52,530232558.1
+0,Line Graph,France,1977.39,530232558.1
+0,Line Graph,France,1977.83,530232558.1
+0,Line Graph,France,1978.26,530232558.1
+0,Line Graph,France,1978.7,530232558.1
+0,Line Graph,France,1979.13,530232558.1
+0,Line Graph,France,1979.57,530232558.1
+0,Line Graph,France,1980.44,502325581.4
+0,Line Graph,France,1980.87,474418604.7
+0,Line Graph,France,1981.75,446511627.9
+0,Line Graph,France,1982.18,446511627.9
+0,Line Graph,France,1982.62,446511627.9
+0,Line Graph,France,1983.49,418604651.2
+0,Line Graph,France,1983.92,418604651.2
+0,Line Graph,France,1986.54,390697674.4
+0,Line Graph,France,1986.97,390697674.4
+0,Line Graph,France,1987.41,390697674.4
+0,Line Graph,France,1987.84,390697674.4
+0,Line Graph,France,1988.28,390697674.4
+0,Line Graph,France,1988.72,390697674.4
+0,Line Graph,France,1990.02,390697674.4
+0,Line Graph,France,1990.46,418604651.2
+0,Line Graph,France,1990.89,418604651.2
+0,Line Graph,France,1991.33,418604651.2
+0,Line Graph,France,1991.76,418604651.2
+0,Line Graph,France,1992.64,390697674.4
+0,Line Graph,France,1993.07,390697674.4
+0,Line Graph,France,1993.51,390697674.4
+0,Line Graph,France,1993.94,390697674.4
+0,Line Graph,France,1994.38,390697674.4
+0,Line Graph,France,1994.81,390697674.4
+0,Line Graph,France,1995.25,390697674.4
+0,Line Graph,France,1996.99,390697674.4
+0,Line Graph,France,1997.86,418604651.2
+0,Line Graph,France,1998.3,418604651.2
+0,Line Graph,France,1998.73,418604651.2
+0,Line Graph,France,1999.17,418604651.2
+0,Line Graph,France,1999.61,418604651.2
+0,Line Graph,France,2000.04,418604651.2
+0,Line Graph,France,2000.48,418604651.2
+0,Line Graph,France,2000.91,418604651.2
+0,Line Graph,France,2001.35,418604651.2
+0,Line Graph,France,2001.78,418604651.2
+0,Line Graph,France,2002.22,418604651.2
+0,Line Graph,France,2002.66,418604651.2
+0,Line Graph,France,2003.09,418604651.2
+0,Line Graph,France,2003.53,418604651.2
+0,Line Graph,France,2003.96,418604651.2
+0,Line Graph,France,2004.4,418604651.2
+0,Line Graph,France,2004.83,418604651.2
+0,Line Graph,France,2005.27,418604651.2
+0,Line Graph,France,2005.7,418604651.2
+0,Line Graph,France,2006.14,418604651.2
+0,Line Graph,France,2007.01,390697674.4
+0,Line Graph,France,2007.45,390697674.4
+0,Line Graph,France,2007.88,390697674.4
+0,Line Graph,France,2008.32,390697674.4
+0,Line Graph,France,2010.5,362790697.7
+0,Line Graph,France,2010.93,362790697.7
+0,Line Graph,France,2011.37,362790697.7
+0,Line Graph,France,2011.8,362790697.7
+0,Line Graph,France,2012.24,362790697.7
+0,Line Graph,France,2012.67,362790697.7
+0,Line Graph,France,2013.11,362790697.7
+0,Line Graph,France,2013.98,334883720.9
+0,Line Graph,France,2014.42,334883720.9
+0,Line Graph,France,2014.85,334883720.9
+0,Line Graph,France,2015.29,334883720.9
+0,Line Graph,France,2015.72,334883720.9
+0,Line Graph,France,2016.16,334883720.9
+0,Line Graph,France,2016.59,334883720.9
+0,Line Graph,France,2017.03,334883720.9
+0,Line Graph,France,2017.47,334883720.9
+0,Line Graph,France,2017.9,334883720.9
+0,Line Graph,France,2019.21,306976744.2
+0,Line Graph,France,2020.08,279069767.4
+0,Line Graph,Germany,1880.25,139534883.7
+0,Line Graph,Germany,1880.68,139534883.7
+0,Line Graph,Germany,1881.12,139534883.7
+0,Line Graph,Germany,1881.55,139534883.7
+0,Line Graph,Germany,1881.99,139534883.7
+0,Line Graph,Germany,1883.3,167441860.5
+0,Line Graph,Germany,1883.73,167441860.5
+0,Line Graph,Germany,1884.17,167441860.5
+0,Line Graph,Germany,1884.6,167441860.5
+0,Line Graph,Germany,1885.04,167441860.5
+0,Line Graph,Germany,1885.48,167441860.5
+0,Line Graph,Germany,1885.91,167441860.5
+0,Line Graph,Germany,1886.35,167441860.5
+0,Line Graph,Germany,1886.78,167441860.5
+0,Line Graph,Germany,1887.65,195348837.2
+0,Line Graph,Germany,1888.09,195348837.2
+0,Line Graph,Germany,1888.52,195348837.2
+0,Line Graph,Germany,1888.96,195348837.2
+0,Line Graph,Germany,1890.27,223255814.0
+0,Line Graph,Germany,1890.7,223255814.0
+0,Line Graph,Germany,1891.14,223255814.0
+0,Line Graph,Germany,1891.57,223255814.0
+0,Line Graph,Germany,1892.01,223255814.0
+0,Line Graph,Germany,1892.45,223255814.0
+0,Line Graph,Germany,1892.88,223255814.0
+0,Line Graph,Germany,1893.32,223255814.0
+0,Line Graph,Germany,1893.75,223255814.0
+0,Line Graph,Germany,1895.06,251162790.7
+0,Line Graph,Germany,1895.49,251162790.7
+0,Line Graph,Germany,1895.93,251162790.7
+0,Line Graph,Germany,1896.8,279069767.4
+0,Line Graph,Germany,1897.24,279069767.4
+0,Line Graph,Germany,1897.67,279069767.4
+0,Line Graph,Germany,1898.54,306976744.2
+0,Line Graph,Germany,1898.98,306976744.2
+0,Line Graph,Germany,1899.85,334883720.9
+0,Line Graph,Germany,1900.29,334883720.9
+0,Line Graph,Germany,1900.72,334883720.9
+0,Line Graph,Germany,1901.16,334883720.9
+0,Line Graph,Germany,1902.46,334883720.9
+0,Line Graph,Germany,1902.9,334883720.9
+0,Line Graph,Germany,1903.77,362790697.7
+0,Line Graph,Germany,1904.21,362790697.7
+0,Line Graph,Germany,1905.08,390697674.4
+0,Line Graph,Germany,1905.95,362790697.7
+0,Line Graph,Germany,1906.38,390697674.4
+0,Line Graph,Germany,1906.82,418604651.2
+0,Line Graph,Germany,1921.2,474418604.7
+0,Line Graph,Germany,1922.5,390697674.4
+0,Line Graph,Germany,1922.94,362790697.7
+0,Line Graph,Germany,1923.37,390697674.4
+0,Line Graph,Germany,1923.81,418604651.2
+0,Line Graph,Germany,1928.6,530232558.1
+0,Line Graph,Germany,1929.04,530232558.1
+0,Line Graph,Germany,1931.65,362790697.7
+0,Line Graph,Germany,1932.09,362790697.7
+0,Line Graph,Germany,1932.52,362790697.7
+0,Line Graph,Germany,1932.96,362790697.7
+0,Line Graph,Germany,1936.88,558139534.9
+0,Line Graph,Germany,1937.31,586046511.6
+0,Line Graph,Germany,1937.75,586046511.6
+0,Line Graph,Germany,1938.18,613953488.4
+0,Line Graph,Germany,1938.62,641860465.1
+0,Line Graph,Germany,1939.06,641860465.1
+0,Line Graph,Germany,1940.8,669767441.9
+0,Line Graph,Germany,1941.23,669767441.9
+0,Line Graph,Germany,1941.67,669767441.9
+0,Line Graph,Germany,1942.1,669767441.9
+0,Line Graph,Germany,1942.54,669767441.9
+0,Line Graph,Germany,1942.98,669767441.9
+0,Line Graph,Germany,1943.41,641860465.1
+0,Line Graph,Germany,1943.85,613953488.4
+0,Line Graph,Germany,1944.28,418604651.2
+0,Line Graph,Germany,1944.72,251162790.7
+0,Line Graph,Germany,1945.15,195348837.2
+0,Line Graph,Germany,1945.59,223255814.0
+0,Line Graph,Germany,1946.03,279069767.4
+0,Line Graph,Germany,1946.46,306976744.2
+0,Line Graph,Germany,1946.9,306976744.2
+0,Line Graph,Germany,1947.33,334883720.9
+0,Line Graph,Germany,1947.77,362790697.7
+0,Line Graph,Germany,1948.2,390697674.4
+0,Line Graph,Germany,1948.64,418604651.2
+0,Line Graph,Germany,1949.07,446511627.9
+0,Line Graph,Germany,1951.69,613953488.4
+0,Line Graph,Germany,1952.12,613953488.4
+0,Line Graph,Germany,1952.56,613953488.4
+0,Line Graph,Germany,1953.43,641860465.1
+0,Line Graph,Germany,1954.3,669767441.9
+0,Line Graph,Germany,1954.74,697674418.6
+0,Line Graph,Germany,1955.17,725581395.3
+0,Line Graph,Germany,1955.61,753488372.1
+0,Line Graph,Germany,1956.48,781395348.8
+0,Line Graph,Germany,1956.92,781395348.8
+0,Line Graph,Germany,1957.35,781395348.8
+0,Line Graph,Germany,1957.79,753488372.1
+0,Line Graph,Germany,1958.22,753488372.1
+0,Line Graph,Germany,1960.84,837209302.3
+0,Line Graph,Germany,1961.27,837209302.3
+0,Line Graph,Germany,1961.71,865116279.1
+0,Line Graph,Germany,1962.14,893023255.8
+0,Line Graph,Germany,1962.58,920930232.6
+0,Line Graph,Germany,1963.01,948837209.3
+0,Line Graph,Germany,1963.45,948837209.3
+0,Line Graph,Germany,1963.89,976744186.0
+0,Line Graph,Germany,1964.32,976744186.0
+0,Line Graph,Germany,1965.63,948837209.3
+0,Line Graph,Germany,1966.06,948837209.3
+0,Line Graph,Germany,1966.5,948837209.3
+0,Line Graph,Germany,1966.93,948837209.3
+0,Line Graph,Germany,1967.37,948837209.3
+0,Line Graph,Germany,1967.81,976744186.0
+0,Line Graph,Germany,1968.24,1004651162.8
+0,Line Graph,Germany,1968.68,1032558139.5
+0,Line Graph,Germany,1969.11,1060465116.3
+0,Line Graph,Germany,1969.55,1032558139.5
+0,Line Graph,Germany,1969.98,1032558139.5
+0,Line Graph,Germany,1970.42,1032558139.5
+0,Line Graph,Germany,1970.86,1032558139.5
+0,Line Graph,Germany,1971.29,1032558139.5
+0,Line Graph,Germany,1972.16,1060465116.3
+0,Line Graph,Germany,1972.6,1060465116.3
+0,Line Graph,Germany,1973.03,1088372093.0
+0,Line Graph,Germany,1973.47,1088372093.0
+0,Line Graph,Germany,1975.21,1032558139.5
+0,Line Graph,Germany,1975.65,1060465116.3
+0,Line Graph,Germany,1976.08,1088372093.0
+0,Line Graph,Germany,1976.95,1060465116.3
+0,Line Graph,Germany,1977.39,1060465116.3
+0,Line Graph,Germany,1977.83,1088372093.0
+0,Line Graph,Germany,1978.26,1088372093.0
+0,Line Graph,Germany,1978.7,1116279069.8
+0,Line Graph,Germany,1979.13,1116279069.8
+0,Line Graph,Germany,1979.57,1116279069.8
+0,Line Graph,Germany,1980.44,1088372093.0
+0,Line Graph,Germany,1980.87,1060465116.3
+0,Line Graph,Germany,1981.31,1032558139.5
+0,Line Graph,Germany,1981.75,1032558139.5
+0,Line Graph,Germany,1983.05,1004651162.8
+0,Line Graph,Germany,1983.49,1032558139.5
+0,Line Graph,Germany,1983.92,1032558139.5
+0,Line Graph,Germany,1984.36,1032558139.5
+0,Line Graph,Germany,1986.54,1032558139.5
+0,Line Graph,Germany,1986.97,1032558139.5
+0,Line Graph,Germany,1987.41,1032558139.5
+0,Line Graph,Germany,1987.84,1032558139.5
+0,Line Graph,Germany,1988.28,1032558139.5
+0,Line Graph,Germany,1989.15,1004651162.8
+0,Line Graph,Germany,1989.59,1032558139.5
+0,Line Graph,Germany,1990.02,1060465116.3
+0,Line Graph,Germany,1990.46,1032558139.5
+0,Line Graph,Germany,1990.89,1032558139.5
+0,Line Graph,Germany,1991.33,1004651162.8
+0,Line Graph,Germany,1991.76,976744186.0
+0,Line Graph,Germany,1992.2,976744186.0
+0,Line Graph,Germany,1993.51,948837209.3
+0,Line Graph,Germany,1993.94,948837209.3
+0,Line Graph,Germany,1994.38,948837209.3
+0,Line Graph,Germany,1994.81,948837209.3
+0,Line Graph,Germany,1995.25,948837209.3
+0,Line Graph,Germany,1995.69,948837209.3
+0,Line Graph,Germany,1996.56,948837209.3
+0,Line Graph,Germany,1999.17,893023255.8
+0,Line Graph,Germany,1999.61,893023255.8
+0,Line Graph,Germany,2000.04,893023255.8
+0,Line Graph,Germany,2000.91,920930232.6
+0,Line Graph,Germany,2001.35,920930232.6
+0,Line Graph,Germany,2002.22,893023255.8
+0,Line Graph,Germany,2002.66,893023255.8
+0,Line Graph,Germany,2003.09,893023255.8
+0,Line Graph,Germany,2003.53,893023255.8
+0,Line Graph,Germany,2004.83,865116279.1
+0,Line Graph,Germany,2005.27,865116279.1
+0,Line Graph,Germany,2005.7,893023255.8
+0,Line Graph,Germany,2006.14,893023255.8
+0,Line Graph,Germany,2006.58,865116279.1
+0,Line Graph,Germany,2007.88,865116279.1
+0,Line Graph,Germany,2008.32,837209302.3
+0,Line Graph,Germany,2008.75,809302325.6
+0,Line Graph,Germany,2009.19,809302325.6
+0,Line Graph,Germany,2009.62,809302325.6
+0,Line Graph,Germany,2010.5,809302325.6
+0,Line Graph,Germany,2010.93,809302325.6
+0,Line Graph,Germany,2011.37,809302325.6
+0,Line Graph,Germany,2011.8,809302325.6
+0,Line Graph,Germany,2012.67,837209302.3
+0,Line Graph,Germany,2013.11,837209302.3
+0,Line Graph,Germany,2013.55,809302325.6
+0,Line Graph,Germany,2013.98,809302325.6
+0,Line Graph,Germany,2014.85,809302325.6
+0,Line Graph,Germany,2015.29,809302325.6
+0,Line Graph,Germany,2015.72,809302325.6
+0,Line Graph,Germany,2016.16,809302325.6
+0,Line Graph,Germany,2017.03,781395348.8
+0,Line Graph,Germany,2017.47,781395348.8
+0,Line Graph,Germany,2018.34,753488372.1
+0,Line Graph,Germany,2018.77,725581395.3
+0,Line Graph,Germany,2019.21,697674418.6
+0,Line Graph,Germany,2019.64,669767441.9
+0,Line Graph,Germany,2020.52,669767441.9
+0,Line Graph,Germany,2020.95,669767441.9
+0,Line Graph,Germany,2021.39,669767441.9
+0,Line Graph,Germany,2021.82,669767441.9
+0,Line Graph,Germany,2022.26,669767441.9
+0,Line Graph,Germany,2022.69,641860465.1
+0,Line Graph,Germany,2023.13,586046511.6
+0,Line Graph,Germany,2023.56,586046511.6
+0,Line Graph,India,1858.47,0.0
+0,Line Graph,India,1858.9,0.0
+0,Line Graph,India,1859.34,0.0
+0,Line Graph,India,1859.77,0.0
+0,Line Graph,India,1860.21,0.0
+0,Line Graph,India,1860.65,0.0
+0,Line Graph,India,1861.08,0.0
+0,Line Graph,India,1861.52,0.0
+0,Line Graph,India,1861.95,0.0
+0,Line Graph,India,1862.39,0.0
+0,Line Graph,India,1862.82,0.0
+0,Line Graph,India,1863.26,0.0
+0,Line Graph,India,1863.69,0.0
+0,Line Graph,India,1864.13,0.0
+0,Line Graph,India,1864.57,0.0
+0,Line Graph,India,1865.0,0.0
+0,Line Graph,India,1865.44,0.0
+0,Line Graph,India,1865.87,0.0
+0,Line Graph,India,1866.31,0.0
+0,Line Graph,India,1866.74,0.0
+0,Line Graph,India,1867.18,0.0
+0,Line Graph,India,1867.62,0.0
+0,Line Graph,India,1868.05,0.0
+0,Line Graph,India,1868.49,0.0
+0,Line Graph,India,1868.92,0.0
+0,Line Graph,India,1869.36,0.0
+0,Line Graph,India,1869.79,0.0
+0,Line Graph,India,1870.23,0.0
+0,Line Graph,India,1870.66,0.0
+0,Line Graph,India,1871.1,0.0
+0,Line Graph,India,1871.54,0.0
+0,Line Graph,India,1871.97,0.0
+0,Line Graph,India,1872.41,0.0
+0,Line Graph,India,1872.84,0.0
+0,Line Graph,India,1873.28,0.0
+0,Line Graph,India,1873.71,0.0
+0,Line Graph,India,1874.15,0.0
+0,Line Graph,India,1874.59,0.0
+0,Line Graph,India,1875.02,0.0
+0,Line Graph,India,1875.46,0.0
+0,Line Graph,India,1875.89,0.0
+0,Line Graph,India,1876.33,0.0
+0,Line Graph,India,1876.76,0.0
+0,Line Graph,India,1877.2,0.0
+0,Line Graph,India,1877.63,0.0
+0,Line Graph,India,1878.07,0.0
+0,Line Graph,India,1878.51,0.0
+0,Line Graph,India,1878.94,0.0
+0,Line Graph,India,1879.38,0.0
+0,Line Graph,India,1879.81,0.0
+0,Line Graph,India,1880.25,0.0
+0,Line Graph,India,1880.68,0.0
+0,Line Graph,India,1881.12,0.0
+0,Line Graph,India,1881.55,0.0
+0,Line Graph,India,1881.99,0.0
+0,Line Graph,India,1882.43,0.0
+0,Line Graph,India,1882.86,0.0
+0,Line Graph,India,1883.3,0.0
+0,Line Graph,India,1883.73,0.0
+0,Line Graph,India,1884.17,0.0
+0,Line Graph,India,1884.6,0.0
+0,Line Graph,India,1885.04,0.0
+0,Line Graph,India,1885.48,0.0
+0,Line Graph,India,1885.91,0.0
+0,Line Graph,India,1886.35,0.0
+0,Line Graph,India,1886.78,0.0
+0,Line Graph,India,1887.22,0.0
+0,Line Graph,India,1887.65,0.0
+0,Line Graph,India,1888.09,0.0
+0,Line Graph,India,1888.52,0.0
+0,Line Graph,India,1888.96,0.0
+0,Line Graph,India,1889.4,0.0
+0,Line Graph,India,1889.83,0.0
+0,Line Graph,India,1890.27,0.0
+0,Line Graph,India,1890.7,0.0
+0,Line Graph,India,1891.14,0.0
+0,Line Graph,India,1891.57,0.0
+0,Line Graph,India,1892.01,0.0
+0,Line Graph,India,1892.45,0.0
+0,Line Graph,India,1892.88,0.0
+0,Line Graph,India,1893.32,0.0
+0,Line Graph,India,1893.75,0.0
+0,Line Graph,India,1894.19,0.0
+0,Line Graph,India,1903.34,27906976.7
+0,Line Graph,India,1903.77,27906976.7
+0,Line Graph,India,1904.21,27906976.7
+0,Line Graph,India,1904.64,27906976.7
+0,Line Graph,India,1905.08,27906976.7
+0,Line Graph,India,1905.51,27906976.7
+0,Line Graph,India,1905.95,27906976.7
+0,Line Graph,India,1906.38,27906976.7
+0,Line Graph,India,1906.82,27906976.7
+0,Line Graph,India,1907.26,27906976.7
+0,Line Graph,India,1907.69,27906976.7
+0,Line Graph,India,1908.13,27906976.7
+0,Line Graph,India,1908.56,27906976.7
+0,Line Graph,India,1909.0,27906976.7
+0,Line Graph,India,1909.43,27906976.7
+0,Line Graph,India,1909.87,27906976.7
+0,Line Graph,India,1910.31,27906976.7
+0,Line Graph,India,1910.74,27906976.7
+0,Line Graph,India,1911.18,27906976.7
+0,Line Graph,India,1911.61,27906976.7
+0,Line Graph,India,1912.05,27906976.7
+0,Line Graph,India,1912.48,27906976.7
+0,Line Graph,India,1912.92,27906976.7
+0,Line Graph,India,1913.35,27906976.7
+0,Line Graph,India,1913.79,27906976.7
+0,Line Graph,India,1914.23,27906976.7
+0,Line Graph,India,1914.66,27906976.7
+0,Line Graph,India,1915.1,27906976.7
+0,Line Graph,India,1915.53,27906976.7
+0,Line Graph,India,1915.97,27906976.7
+0,Line Graph,India,1916.4,27906976.7
+0,Line Graph,India,1919.89,27906976.7
+0,Line Graph,India,1920.32,27906976.7
+0,Line Graph,India,1936.44,55813953.5
+0,Line Graph,India,1936.88,55813953.5
+0,Line Graph,India,1937.31,55813953.5
+0,Line Graph,India,1937.75,55813953.5
+0,Line Graph,India,1938.18,55813953.5
+0,Line Graph,India,1938.62,55813953.5
+0,Line Graph,India,1939.06,55813953.5
+0,Line Graph,India,1939.49,55813953.5
+0,Line Graph,India,1939.93,55813953.5
+0,Line Graph,India,1940.36,55813953.5
+0,Line Graph,India,1940.8,55813953.5
+0,Line Graph,India,1941.23,55813953.5
+0,Line Graph,India,1941.67,55813953.5
+0,Line Graph,India,1942.1,55813953.5
+0,Line Graph,India,1942.54,55813953.5
+0,Line Graph,India,1942.98,55813953.5
+0,Line Graph,India,1943.41,55813953.5
+0,Line Graph,India,1943.85,55813953.5
+0,Line Graph,India,1944.28,55813953.5
+0,Line Graph,India,1944.72,55813953.5
+0,Line Graph,India,1945.15,55813953.5
+0,Line Graph,India,1945.59,55813953.5
+0,Line Graph,India,1946.03,55813953.5
+0,Line Graph,India,1946.46,55813953.5
+0,Line Graph,India,1946.9,55813953.5
+0,Line Graph,India,1947.33,55813953.5
+0,Line Graph,India,1947.77,55813953.5
+0,Line Graph,India,1948.2,55813953.5
+0,Line Graph,India,1948.64,55813953.5
+0,Line Graph,India,1949.07,55813953.5
+0,Line Graph,India,1949.51,55813953.5
+0,Line Graph,India,1949.95,55813953.5
+0,Line Graph,India,1950.38,55813953.5
+0,Line Graph,India,1953.43,83720930.2
+0,Line Graph,India,1953.87,83720930.2
+0,Line Graph,India,1954.3,83720930.2
+0,Line Graph,India,1954.74,83720930.2
+0,Line Graph,India,1955.17,83720930.2
+0,Line Graph,India,1955.61,83720930.2
+0,Line Graph,India,1956.04,83720930.2
+0,Line Graph,India,1956.48,83720930.2
+0,Line Graph,India,1959.09,111627907.0
+0,Line Graph,India,1959.53,111627907.0
+0,Line Graph,India,1959.97,111627907.0
+0,Line Graph,India,1960.4,111627907.0
+0,Line Graph,India,1960.84,111627907.0
+0,Line Graph,India,1961.71,139534883.7
+0,Line Graph,India,1962.14,139534883.7
+0,Line Graph,India,1962.58,139534883.7
+0,Line Graph,India,1963.01,139534883.7
+0,Line Graph,India,1963.45,139534883.7
+0,Line Graph,India,1963.89,139534883.7
+0,Line Graph,India,1964.32,139534883.7
+0,Line Graph,India,1965.19,167441860.5
+0,Line Graph,India,1965.63,167441860.5
+0,Line Graph,India,1966.06,167441860.5
+0,Line Graph,India,1966.5,167441860.5
+0,Line Graph,India,1966.93,167441860.5
+0,Line Graph,India,1967.37,167441860.5
+0,Line Graph,India,1967.81,167441860.5
+0,Line Graph,India,1968.24,167441860.5
+0,Line Graph,India,1970.42,195348837.2
+0,Line Graph,India,1970.86,195348837.2
+0,Line Graph,India,1971.29,195348837.2
+0,Line Graph,India,1971.73,195348837.2
+0,Line Graph,India,1973.47,223255814.0
+0,Line Graph,India,1973.9,223255814.0
+0,Line Graph,India,1974.34,223255814.0
+0,Line Graph,India,1974.78,223255814.0
+0,Line Graph,India,1975.65,251162790.7
+0,Line Graph,India,1976.08,251162790.7
+0,Line Graph,India,1976.52,251162790.7
+0,Line Graph,India,1978.7,279069767.4
+0,Line Graph,India,1979.13,279069767.4
+0,Line Graph,India,1979.57,279069767.4
+0,Line Graph,India,1980.44,306976744.2
+0,Line Graph,India,1980.87,306976744.2
+0,Line Graph,India,1981.75,334883720.9
+0,Line Graph,India,1982.18,334883720.9
+0,Line Graph,India,1982.62,334883720.9
+0,Line Graph,India,1983.05,362790697.7
+0,Line Graph,India,1983.49,362790697.7
+0,Line Graph,India,1983.92,362790697.7
+0,Line Graph,India,1984.79,390697674.4
+0,Line Graph,India,1985.67,418604651.2
+0,Line Graph,India,1986.54,446511627.9
+0,Line Graph,India,1986.97,446511627.9
+0,Line Graph,India,1987.41,474418604.7
+0,Line Graph,India,1988.28,502325581.4
+0,Line Graph,India,1988.72,530232558.1
+0,Line Graph,India,1992.2,669767441.9
+0,Line Graph,India,1992.64,669767441.9
+0,Line Graph,India,1993.51,697674418.6
+0,Line Graph,India,1993.94,725581395.3
+0,Line Graph,India,1994.38,725581395.3
+0,Line Graph,India,1994.81,753488372.1
+0,Line Graph,India,1995.25,781395348.8
+0,Line Graph,India,1995.69,809302325.6
+0,Line Graph,India,1996.12,837209302.3
+0,Line Graph,India,1996.56,837209302.3
+0,Line Graph,India,1996.99,865116279.1
+0,Line Graph,India,1997.43,865116279.1
+0,Line Graph,India,1998.3,893023255.8
+0,Line Graph,India,1998.73,948837209.3
+0,Line Graph,India,1999.17,976744186.0
+0,Line Graph,India,1999.61,976744186.0
+0,Line Graph,India,2000.48,1004651162.8
+0,Line Graph,India,2000.91,1004651162.8
+0,Line Graph,India,2001.35,1004651162.8
+0,Line Graph,India,2001.78,1032558139.5
+0,Line Graph,India,2002.22,1032558139.5
+0,Line Graph,India,2002.66,1060465116.3
+0,Line Graph,India,2003.09,1088372093.0
+0,Line Graph,India,2003.53,1116279069.8
+0,Line Graph,India,2003.96,1144186046.5
+0,Line Graph,India,2004.4,1172093023.3
+0,Line Graph,India,2004.83,1172093023.3
+0,Line Graph,India,2005.27,1227906976.7
+0,Line Graph,India,2005.7,1255813953.5
+0,Line Graph,India,2006.14,1311627907.0
+0,Line Graph,India,2006.58,1339534883.7
+0,Line Graph,India,2007.01,1395348837.2
+0,Line Graph,India,2007.45,1451162790.7
+0,Line Graph,India,2007.88,1479069767.4
+0,Line Graph,India,2008.32,1534883720.9
+0,Line Graph,India,2008.75,1590697674.4
+0,Line Graph,India,2009.19,1618604651.2
+0,Line Graph,India,2009.62,1646511627.9
+0,Line Graph,India,2010.06,1674418604.7
+0,Line Graph,India,2010.5,1730232558.1
+0,Line Graph,India,2010.93,1758139534.9
+0,Line Graph,India,2011.37,1841860465.1
+0,Line Graph,India,2011.8,1897674418.6
+0,Line Graph,India,2012.24,1953488372.1
+0,Line Graph,India,2012.67,1981395348.8
+0,Line Graph,India,2013.11,2009302325.6
+0,Line Graph,India,2013.55,2093023255.8
+0,Line Graph,India,2013.98,2148837209.3
+0,Line Graph,India,2014.42,2176744186.0
+0,Line Graph,India,2014.85,2232558139.5
+0,Line Graph,India,2015.29,2260465116.3
+0,Line Graph,India,2015.72,2316279069.8
+0,Line Graph,India,2016.16,2372093023.3
+0,Line Graph,India,2016.59,2400000000.0
+0,Line Graph,India,2017.03,2427906976.7
+0,Line Graph,India,2017.47,2511627907.0
+0,Line Graph,India,2017.9,2595348837.2
+0,Line Graph,India,2018.34,2595348837.2
+0,Line Graph,India,2019.21,2595348837.2
+0,Line Graph,India,2019.64,2511627907.0
+0,Line Graph,India,2020.08,2455813953.5
+0,Line Graph,India,2020.52,2539534883.7
+0,Line Graph,India,2020.95,2651162790.7
+0,Line Graph,India,2021.39,2734883720.9
+0,Line Graph,India,2021.82,2818604651.2
+0,Line Graph,India,2022.26,2874418604.7
+0,Line Graph,India,2022.69,2986046511.6
+0,Line Graph,India,2023.13,3069767441.9
+0,Line Graph,India,2023.56,3125581395.3
+0,Line Graph,India,2024.0,3181395348.8
+0,Line Graph,United Kingdom,1778.31,27906976.7
+0,Line Graph,United Kingdom,1778.75,27906976.7
+0,Line Graph,United Kingdom,1779.19,27906976.7
+0,Line Graph,United Kingdom,1779.62,27906976.7
+0,Line Graph,United Kingdom,1780.06,27906976.7
+0,Line Graph,United Kingdom,1780.49,27906976.7
+0,Line Graph,United Kingdom,1780.93,27906976.7
+0,Line Graph,United Kingdom,1781.36,27906976.7
+0,Line Graph,United Kingdom,1781.8,27906976.7
+0,Line Graph,United Kingdom,1782.24,27906976.7
+0,Line Graph,United Kingdom,1782.67,27906976.7
+0,Line Graph,United Kingdom,1783.11,27906976.7
+0,Line Graph,United Kingdom,1783.54,27906976.7
+0,Line Graph,United Kingdom,1783.98,27906976.7
+0,Line Graph,United Kingdom,1784.41,27906976.7
+0,Line Graph,United Kingdom,1784.85,27906976.7
+0,Line Graph,United Kingdom,1785.28,27906976.7
+0,Line Graph,United Kingdom,1785.72,27906976.7
+0,Line Graph,United Kingdom,1786.16,27906976.7
+0,Line Graph,United Kingdom,1786.59,27906976.7
+0,Line Graph,United Kingdom,1787.03,27906976.7
+0,Line Graph,United Kingdom,1787.46,27906976.7
+0,Line Graph,United Kingdom,1787.9,27906976.7
+0,Line Graph,United Kingdom,1788.33,27906976.7
+0,Line Graph,United Kingdom,1788.77,27906976.7
+0,Line Graph,United Kingdom,1789.21,27906976.7
+0,Line Graph,United Kingdom,1789.64,27906976.7
+0,Line Graph,United Kingdom,1790.08,27906976.7
+0,Line Graph,United Kingdom,1790.51,27906976.7
+0,Line Graph,United Kingdom,1790.95,27906976.7
+0,Line Graph,United Kingdom,1791.38,27906976.7
+0,Line Graph,United Kingdom,1791.82,27906976.7
+0,Line Graph,United Kingdom,1792.25,27906976.7
+0,Line Graph,United Kingdom,1792.69,27906976.7
+0,Line Graph,United Kingdom,1793.13,27906976.7
+0,Line Graph,United Kingdom,1793.56,27906976.7
+0,Line Graph,United Kingdom,1794.0,27906976.7
+0,Line Graph,United Kingdom,1794.43,27906976.7
+0,Line Graph,United Kingdom,1794.87,27906976.7
+0,Line Graph,United Kingdom,1795.3,27906976.7
+0,Line Graph,United Kingdom,1795.74,27906976.7
+0,Line Graph,United Kingdom,1796.17,27906976.7
+0,Line Graph,United Kingdom,1796.61,27906976.7
+0,Line Graph,United Kingdom,1797.05,27906976.7
+0,Line Graph,United Kingdom,1797.48,27906976.7
+0,Line Graph,United Kingdom,1797.92,27906976.7
+0,Line Graph,United Kingdom,1798.35,27906976.7
+0,Line Graph,United Kingdom,1798.79,27906976.7
+0,Line Graph,United Kingdom,1799.22,27906976.7
+0,Line Graph,United Kingdom,1799.66,27906976.7
+0,Line Graph,United Kingdom,1817.52,55813953.5
+0,Line Graph,United Kingdom,1817.96,55813953.5
+0,Line Graph,United Kingdom,1818.39,55813953.5
+0,Line Graph,United Kingdom,1818.83,55813953.5
+0,Line Graph,United Kingdom,1819.26,55813953.5
+0,Line Graph,United Kingdom,1820.13,55813953.5
+0,Line Graph,United Kingdom,1820.57,55813953.5
+0,Line Graph,United Kingdom,1821.0,55813953.5
+0,Line Graph,United Kingdom,1821.44,55813953.5
+0,Line Graph,United Kingdom,1821.88,55813953.5
+0,Line Graph,United Kingdom,1822.31,55813953.5
+0,Line Graph,United Kingdom,1822.75,55813953.5
+0,Line Graph,United Kingdom,1823.18,55813953.5
+0,Line Graph,United Kingdom,1823.62,55813953.5
+0,Line Graph,United Kingdom,1824.05,55813953.5
+0,Line Graph,United Kingdom,1824.49,55813953.5
+0,Line Graph,United Kingdom,1824.93,55813953.5
+0,Line Graph,United Kingdom,1825.36,55813953.5
+0,Line Graph,United Kingdom,1825.8,55813953.5
+0,Line Graph,United Kingdom,1826.23,55813953.5
+0,Line Graph,United Kingdom,1826.67,55813953.5
+0,Line Graph,United Kingdom,1827.1,55813953.5
+0,Line Graph,United Kingdom,1827.54,55813953.5
+0,Line Graph,United Kingdom,1827.97,55813953.5
+0,Line Graph,United Kingdom,1828.41,55813953.5
+0,Line Graph,United Kingdom,1828.85,55813953.5
+0,Line Graph,United Kingdom,1829.28,55813953.5
+0,Line Graph,United Kingdom,1831.46,55813953.5
+0,Line Graph,United Kingdom,1831.9,55813953.5
+0,Line Graph,United Kingdom,1832.33,55813953.5
+0,Line Graph,United Kingdom,1832.77,55813953.5
+0,Line Graph,United Kingdom,1834.94,83720930.2
+0,Line Graph,United Kingdom,1835.38,83720930.2
+0,Line Graph,United Kingdom,1835.82,83720930.2
+0,Line Graph,United Kingdom,1836.25,83720930.2
+0,Line Graph,United Kingdom,1836.69,83720930.2
+0,Line Graph,United Kingdom,1837.12,83720930.2
+0,Line Graph,United Kingdom,1837.56,83720930.2
+0,Line Graph,United Kingdom,1837.99,83720930.2
+0,Line Graph,United Kingdom,1838.43,83720930.2
+0,Line Graph,United Kingdom,1838.86,83720930.2
+0,Line Graph,United Kingdom,1839.3,83720930.2
+0,Line Graph,United Kingdom,1839.74,83720930.2
+0,Line Graph,United Kingdom,1840.17,83720930.2
+0,Line Graph,United Kingdom,1840.61,83720930.2
+0,Line Graph,United Kingdom,1841.04,83720930.2
+0,Line Graph,United Kingdom,1841.48,83720930.2
+0,Line Graph,United Kingdom,1841.91,83720930.2
+0,Line Graph,United Kingdom,1842.35,83720930.2
+0,Line Graph,United Kingdom,1842.79,83720930.2
+0,Line Graph,United Kingdom,1846.71,111627907.0
+0,Line Graph,United Kingdom,1847.14,111627907.0
+0,Line Graph,United Kingdom,1847.58,111627907.0
+0,Line Graph,United Kingdom,1848.01,111627907.0
+0,Line Graph,United Kingdom,1848.45,111627907.0
+0,Line Graph,United Kingdom,1848.88,111627907.0
+0,Line Graph,United Kingdom,1850.63,111627907.0
+0,Line Graph,United Kingdom,1851.06,111627907.0
+0,Line Graph,United Kingdom,1851.5,111627907.0
+0,Line Graph,United Kingdom,1851.93,111627907.0
+0,Line Graph,United Kingdom,1852.37,111627907.0
+0,Line Graph,United Kingdom,1852.8,111627907.0
+0,Line Graph,United Kingdom,1853.68,139534883.7
+0,Line Graph,United Kingdom,1854.11,139534883.7
+0,Line Graph,United Kingdom,1854.55,139534883.7
+0,Line Graph,United Kingdom,1854.98,139534883.7
+0,Line Graph,United Kingdom,1855.42,139534883.7
+0,Line Graph,United Kingdom,1855.85,139534883.7
+0,Line Graph,United Kingdom,1856.29,139534883.7
+0,Line Graph,United Kingdom,1856.72,139534883.7
+0,Line Graph,United Kingdom,1857.16,139534883.7
+0,Line Graph,United Kingdom,1857.6,139534883.7
+0,Line Graph,United Kingdom,1858.03,139534883.7
+0,Line Graph,United Kingdom,1858.47,139534883.7
+0,Line Graph,United Kingdom,1859.34,167441860.5
+0,Line Graph,United Kingdom,1859.77,167441860.5
+0,Line Graph,United Kingdom,1860.21,167441860.5
+0,Line Graph,United Kingdom,1860.65,167441860.5
+0,Line Graph,United Kingdom,1861.52,167441860.5
+0,Line Graph,United Kingdom,1861.95,167441860.5
+0,Line Graph,United Kingdom,1863.26,195348837.2
+0,Line Graph,United Kingdom,1863.69,195348837.2
+0,Line Graph,United Kingdom,1864.13,195348837.2
+0,Line Graph,United Kingdom,1864.57,195348837.2
+0,Line Graph,United Kingdom,1865.87,223255814.0
+0,Line Graph,United Kingdom,1866.31,223255814.0
+0,Line Graph,United Kingdom,1866.74,223255814.0
+0,Line Graph,United Kingdom,1867.18,223255814.0
+0,Line Graph,United Kingdom,1867.62,223255814.0
+0,Line Graph,United Kingdom,1868.05,223255814.0
+0,Line Graph,United Kingdom,1868.49,223255814.0
+0,Line Graph,United Kingdom,1868.92,223255814.0
+0,Line Graph,United Kingdom,1869.36,223255814.0
+0,Line Graph,United Kingdom,1869.79,223255814.0
+0,Line Graph,United Kingdom,1870.66,251162790.7
+0,Line Graph,United Kingdom,1871.1,251162790.7
+0,Line Graph,United Kingdom,1871.54,251162790.7
+0,Line Graph,United Kingdom,1871.97,251162790.7
+0,Line Graph,United Kingdom,1873.71,251162790.7
+0,Line Graph,United Kingdom,1874.59,279069767.4
+0,Line Graph,United Kingdom,1875.02,279069767.4
+0,Line Graph,United Kingdom,1875.46,279069767.4
+0,Line Graph,United Kingdom,1875.89,279069767.4
+0,Line Graph,United Kingdom,1876.33,279069767.4
+0,Line Graph,United Kingdom,1876.76,279069767.4
+0,Line Graph,United Kingdom,1877.2,279069767.4
+0,Line Graph,United Kingdom,1877.63,279069767.4
+0,Line Graph,United Kingdom,1878.07,279069767.4
+0,Line Graph,United Kingdom,1878.51,279069767.4
+0,Line Graph,United Kingdom,1878.94,279069767.4
+0,Line Graph,United Kingdom,1879.38,279069767.4
+0,Line Graph,United Kingdom,1879.81,306976744.2
+0,Line Graph,United Kingdom,1880.25,306976744.2
+0,Line Graph,United Kingdom,1880.68,306976744.2
+0,Line Graph,United Kingdom,1881.12,306976744.2
+0,Line Graph,United Kingdom,1881.55,306976744.2
+0,Line Graph,United Kingdom,1882.86,334883720.9
+0,Line Graph,United Kingdom,1883.3,334883720.9
+0,Line Graph,United Kingdom,1890.27,362790697.7
+0,Line Graph,United Kingdom,1890.7,362790697.7
+0,Line Graph,United Kingdom,1891.14,362790697.7
+0,Line Graph,United Kingdom,1891.57,362790697.7
+0,Line Graph,United Kingdom,1892.01,362790697.7
+0,Line Graph,United Kingdom,1892.45,334883720.9
+0,Line Graph,United Kingdom,1892.88,334883720.9
+0,Line Graph,United Kingdom,1893.32,334883720.9
+0,Line Graph,United Kingdom,1893.75,362790697.7
+0,Line Graph,United Kingdom,1894.19,362790697.7
+0,Line Graph,United Kingdom,1894.62,362790697.7
+0,Line Graph,United Kingdom,1895.06,362790697.7
+0,Line Graph,United Kingdom,1896.37,390697674.4
+0,Line Graph,United Kingdom,1896.8,390697674.4
+0,Line Graph,United Kingdom,1897.24,390697674.4
+0,Line Graph,United Kingdom,1897.67,390697674.4
+0,Line Graph,United Kingdom,1898.11,390697674.4
+0,Line Graph,United Kingdom,1898.54,418604651.2
+0,Line Graph,United Kingdom,1898.98,418604651.2
+0,Line Graph,United Kingdom,1899.41,418604651.2
+0,Line Graph,United Kingdom,1899.85,418604651.2
+0,Line Graph,United Kingdom,1900.29,418604651.2
+0,Line Graph,United Kingdom,1900.72,418604651.2
+0,Line Graph,United Kingdom,1901.16,418604651.2
+0,Line Graph,United Kingdom,1901.59,418604651.2
+0,Line Graph,United Kingdom,1904.21,446511627.9
+0,Line Graph,United Kingdom,1904.64,446511627.9
+0,Line Graph,United Kingdom,1905.08,446511627.9
+0,Line Graph,United Kingdom,1905.51,446511627.9
+0,Line Graph,United Kingdom,1905.95,446511627.9
+0,Line Graph,United Kingdom,1906.38,474418604.7
+0,Line Graph,United Kingdom,1906.82,474418604.7
+0,Line Graph,United Kingdom,1907.26,474418604.7
+0,Line Graph,United Kingdom,1907.69,474418604.7
+0,Line Graph,United Kingdom,1908.13,474418604.7
+0,Line Graph,United Kingdom,1908.56,474418604.7
+0,Line Graph,United Kingdom,1909.0,474418604.7
+0,Line Graph,United Kingdom,1909.43,474418604.7
+0,Line Graph,United Kingdom,1909.87,474418604.7
+0,Line Graph,United Kingdom,1910.31,474418604.7
+0,Line Graph,United Kingdom,1910.74,474418604.7
+0,Line Graph,United Kingdom,1911.18,474418604.7
+0,Line Graph,United Kingdom,1911.61,474418604.7
+0,Line Graph,United Kingdom,1912.48,474418604.7
+0,Line Graph,United Kingdom,1912.92,502325581.4
+0,Line Graph,United Kingdom,1913.35,502325581.4
+0,Line Graph,United Kingdom,1915.1,502325581.4
+0,Line Graph,United Kingdom,1915.53,502325581.4
+0,Line Graph,United Kingdom,1915.97,502325581.4
+0,Line Graph,United Kingdom,1916.4,502325581.4
+0,Line Graph,United Kingdom,1916.84,502325581.4
+0,Line Graph,United Kingdom,1917.28,502325581.4
+0,Line Graph,United Kingdom,1917.71,474418604.7
+0,Line Graph,United Kingdom,1918.15,474418604.7
+0,Line Graph,United Kingdom,1919.45,474418604.7
+0,Line Graph,United Kingdom,1919.89,474418604.7
+0,Line Graph,United Kingdom,1920.32,446511627.9
+0,Line Graph,United Kingdom,1920.76,390697674.4
+0,Line Graph,United Kingdom,1921.2,362790697.7
+0,Line Graph,United Kingdom,1921.63,418604651.2
+0,Line Graph,United Kingdom,1922.07,446511627.9
+0,Line Graph,United Kingdom,1922.94,474418604.7
+0,Line Graph,United Kingdom,1923.37,474418604.7
+0,Line Graph,United Kingdom,1924.24,474418604.7
+0,Line Graph,United Kingdom,1924.68,474418604.7
+0,Line Graph,United Kingdom,1925.12,446511627.9
+0,Line Graph,United Kingdom,1925.55,362790697.7
+0,Line Graph,United Kingdom,1925.99,306976744.2
+0,Line Graph,United Kingdom,1926.42,362790697.7
+0,Line Graph,United Kingdom,1926.86,474418604.7
+0,Line Graph,United Kingdom,1927.29,474418604.7
+0,Line Graph,United Kingdom,1928.6,474418604.7
+0,Line Graph,United Kingdom,1929.04,474418604.7
+0,Line Graph,United Kingdom,1929.47,474418604.7
+0,Line Graph,United Kingdom,1930.34,446511627.9
+0,Line Graph,United Kingdom,1930.78,446511627.9
+0,Line Graph,United Kingdom,1931.65,418604651.2
+0,Line Graph,United Kingdom,1932.09,418604651.2
+0,Line Graph,United Kingdom,1932.52,418604651.2
+0,Line Graph,United Kingdom,1932.96,418604651.2
+0,Line Graph,United Kingdom,1933.83,446511627.9
+0,Line Graph,United Kingdom,1934.26,446511627.9
+0,Line Graph,United Kingdom,1934.7,279069767.4
+0,Line Graph,United Kingdom,1935.57,474418604.7
+0,Line Graph,United Kingdom,1936.01,474418604.7
+0,Line Graph,United Kingdom,1936.88,502325581.4
+0,Line Graph,United Kingdom,1937.75,474418604.7
+0,Line Graph,United Kingdom,1938.18,474418604.7
+0,Line Graph,United Kingdom,1938.62,474418604.7
+0,Line Graph,United Kingdom,1939.06,474418604.7
+0,Line Graph,United Kingdom,1939.93,502325581.4
+0,Line Graph,United Kingdom,1940.36,502325581.4
+0,Line Graph,United Kingdom,1940.8,502325581.4
+0,Line Graph,United Kingdom,1941.23,502325581.4
+0,Line Graph,United Kingdom,1941.67,502325581.4
+0,Line Graph,United Kingdom,1942.1,306976744.2
+0,Line Graph,United Kingdom,1942.54,502325581.4
+0,Line Graph,United Kingdom,1942.98,502325581.4
+0,Line Graph,United Kingdom,1943.41,502325581.4
+0,Line Graph,United Kingdom,1944.28,306976744.2
+0,Line Graph,United Kingdom,1944.72,474418604.7
+0,Line Graph,United Kingdom,1946.03,474418604.7
+0,Line Graph,United Kingdom,1946.46,474418604.7
+0,Line Graph,United Kingdom,1947.33,502325581.4
+0,Line Graph,United Kingdom,1947.77,502325581.4
+0,Line Graph,United Kingdom,1948.2,502325581.4
+0,Line Graph,United Kingdom,1948.64,502325581.4
+0,Line Graph,United Kingdom,1949.07,502325581.4
+0,Line Graph,United Kingdom,1949.51,502325581.4
+0,Line Graph,United Kingdom,1949.95,502325581.4
+0,Line Graph,United Kingdom,1950.38,530232558.1
+0,Line Graph,United Kingdom,1950.82,530232558.1
+0,Line Graph,United Kingdom,1951.69,334883720.9
+0,Line Graph,United Kingdom,1952.12,530232558.1
+0,Line Graph,United Kingdom,1952.56,530232558.1
+0,Line Graph,United Kingdom,1953.87,558139534.9
+0,Line Graph,United Kingdom,1954.3,558139534.9
+0,Line Graph,United Kingdom,1955.17,586046511.6
+0,Line Graph,United Kingdom,1955.61,586046511.6
+0,Line Graph,United Kingdom,1956.04,586046511.6
+0,Line Graph,United Kingdom,1956.92,306976744.2
+0,Line Graph,United Kingdom,1957.35,502325581.4
+0,Line Graph,United Kingdom,1957.79,558139534.9
+0,Line Graph,United Kingdom,1958.22,558139534.9
+0,Line Graph,United Kingdom,1958.66,558139534.9
+0,Line Graph,United Kingdom,1959.09,558139534.9
+0,Line Graph,United Kingdom,1959.53,558139534.9
+0,Line Graph,United Kingdom,1959.97,586046511.6
+0,Line Graph,United Kingdom,1960.4,586046511.6
+0,Line Graph,United Kingdom,1960.84,641860465.1
+0,Line Graph,United Kingdom,1961.27,586046511.6
+0,Line Graph,United Kingdom,1961.71,586046511.6
+0,Line Graph,United Kingdom,1962.14,586046511.6
+0,Line Graph,United Kingdom,1963.01,613953488.4
+0,Line Graph,United Kingdom,1963.45,613953488.4
+0,Line Graph,United Kingdom,1963.89,613953488.4
+0,Line Graph,United Kingdom,1964.32,613953488.4
+0,Line Graph,United Kingdom,1964.76,613953488.4
+0,Line Graph,United Kingdom,1965.63,613953488.4
+0,Line Graph,United Kingdom,1966.06,613953488.4
+0,Line Graph,United Kingdom,1966.5,613953488.4
+0,Line Graph,United Kingdom,1966.93,586046511.6
+0,Line Graph,United Kingdom,1967.81,613953488.4
+0,Line Graph,United Kingdom,1968.24,586046511.6
+0,Line Graph,United Kingdom,1968.68,613953488.4
+0,Line Graph,United Kingdom,1969.11,641860465.1
+0,Line Graph,United Kingdom,1969.55,641860465.1
+0,Line Graph,United Kingdom,1969.98,753488372.1
+0,Line Graph,United Kingdom,1970.86,781395348.8
+0,Line Graph,United Kingdom,1971.29,669767441.9
+0,Line Graph,United Kingdom,1972.16,641860465.1
+0,Line Graph,United Kingdom,1973.03,669767441.9
+0,Line Graph,United Kingdom,1973.47,641860465.1
+0,Line Graph,United Kingdom,1973.9,613953488.4
+0,Line Graph,United Kingdom,1974.34,613953488.4
+0,Line Graph,United Kingdom,1974.78,613953488.4
+0,Line Graph,United Kingdom,1975.21,613953488.4
+0,Line Graph,United Kingdom,1976.52,613953488.4
+0,Line Graph,United Kingdom,1976.95,613953488.4
+0,Line Graph,United Kingdom,1977.39,613953488.4
+0,Line Graph,United Kingdom,1977.83,1060465116.3
+0,Line Graph,United Kingdom,1978.26,613953488.4
+0,Line Graph,United Kingdom,1978.7,641860465.1
+0,Line Graph,United Kingdom,1979.13,641860465.1
+0,Line Graph,United Kingdom,1979.57,613953488.4
+0,Line Graph,United Kingdom,1980.0,586046511.6
+0,Line Graph,United Kingdom,1980.87,1032558139.5
+0,Line Graph,United Kingdom,1981.31,558139534.9
+0,Line Graph,United Kingdom,1981.75,558139534.9
+0,Line Graph,United Kingdom,1982.18,558139534.9
+0,Line Graph,United Kingdom,1982.62,558139534.9
+0,Line Graph,United Kingdom,1983.49,530232558.1
+0,Line Graph,United Kingdom,1983.92,530232558.1
+0,Line Graph,United Kingdom,1985.23,558139534.9
+0,Line Graph,United Kingdom,1988.72,586046511.6
+0,Line Graph,United Kingdom,1989.59,586046511.6
+0,Line Graph,United Kingdom,1990.02,613953488.4
+0,Line Graph,United Kingdom,1990.46,613953488.4
+0,Line Graph,United Kingdom,1990.89,613953488.4
+0,Line Graph,United Kingdom,1992.2,586046511.6
+0,Line Graph,United Kingdom,1992.64,586046511.6
+0,Line Graph,United Kingdom,1993.07,586046511.6
+0,Line Graph,United Kingdom,1993.94,586046511.6
+0,Line Graph,United Kingdom,1995.69,586046511.6
+0,Line Graph,United Kingdom,1998.73,2065116279.1
+0,Line Graph,United Kingdom,2009.62,502325581.4
+0,Line Graph,United Kingdom,2010.06,502325581.4
+0,Line Graph,United Kingdom,2010.5,502325581.4
+0,Line Graph,United Kingdom,2010.93,474418604.7
+0,Line Graph,United Kingdom,2011.37,474418604.7
+0,Line Graph,United Kingdom,2012.67,474418604.7
+0,Line Graph,United Kingdom,2022.69,306976744.2
+0,Line Graph,United Kingdom,2023.13,306976744.2
+0,Line Graph,United Kingdom,2023.56,306976744.2
+0,Line Graph,United States,1800.1,0.0
+0,Line Graph,United States,1800.53,0.0
+0,Line Graph,United States,1800.97,0.0
+0,Line Graph,United States,1801.4,0.0
+0,Line Graph,United States,1801.84,0.0
+0,Line Graph,United States,1802.27,0.0
+0,Line Graph,United States,1802.71,0.0
+0,Line Graph,United States,1803.14,0.0
+0,Line Graph,United States,1803.58,0.0
+0,Line Graph,United States,1804.02,0.0
+0,Line Graph,United States,1804.45,0.0
+0,Line Graph,United States,1804.89,0.0
+0,Line Graph,United States,1805.32,0.0
+0,Line Graph,United States,1805.76,0.0
+0,Line Graph,United States,1806.19,0.0
+0,Line Graph,United States,1806.63,0.0
+0,Line Graph,United States,1807.07,0.0
+0,Line Graph,United States,1807.5,0.0
+0,Line Graph,United States,1807.94,0.0
+0,Line Graph,United States,1808.37,0.0
+0,Line Graph,United States,1808.81,0.0
+0,Line Graph,United States,1809.24,0.0
+0,Line Graph,United States,1809.68,0.0
+0,Line Graph,United States,1810.11,0.0
+0,Line Graph,United States,1810.55,0.0
+0,Line Graph,United States,1810.99,0.0
+0,Line Graph,United States,1811.42,0.0
+0,Line Graph,United States,1811.86,0.0
+0,Line Graph,United States,1812.29,0.0
+0,Line Graph,United States,1812.73,0.0
+0,Line Graph,United States,1813.16,0.0
+0,Line Graph,United States,1813.6,0.0
+0,Line Graph,United States,1814.03,0.0
+0,Line Graph,United States,1814.47,0.0
+0,Line Graph,United States,1814.91,0.0
+0,Line Graph,United States,1815.34,0.0
+0,Line Graph,United States,1815.78,0.0
+0,Line Graph,United States,1816.21,0.0
+0,Line Graph,United States,1816.65,0.0
+0,Line Graph,United States,1817.08,0.0
+0,Line Graph,United States,1817.52,0.0
+0,Line Graph,United States,1817.96,0.0
+0,Line Graph,United States,1818.39,0.0
+0,Line Graph,United States,1818.83,0.0
+0,Line Graph,United States,1819.26,0.0
+0,Line Graph,United States,1819.7,0.0
+0,Line Graph,United States,1820.13,0.0
+0,Line Graph,United States,1820.57,0.0
+0,Line Graph,United States,1821.0,0.0
+0,Line Graph,United States,1821.44,0.0
+0,Line Graph,United States,1821.88,0.0
+0,Line Graph,United States,1822.31,0.0
+0,Line Graph,United States,1822.75,0.0
+0,Line Graph,United States,1823.18,0.0
+0,Line Graph,United States,1823.62,0.0
+0,Line Graph,United States,1824.05,0.0
+0,Line Graph,United States,1824.49,0.0
+0,Line Graph,United States,1824.93,0.0
+0,Line Graph,United States,1825.36,0.0
+0,Line Graph,United States,1825.8,0.0
+0,Line Graph,United States,1826.23,0.0
+0,Line Graph,United States,1826.67,0.0
+0,Line Graph,United States,1827.1,0.0
+0,Line Graph,United States,1827.54,0.0
+0,Line Graph,United States,1827.97,0.0
+0,Line Graph,United States,1828.41,0.0
+0,Line Graph,United States,1828.85,0.0
+0,Line Graph,United States,1829.28,0.0
+0,Line Graph,United States,1829.72,0.0
+0,Line Graph,United States,1830.15,0.0
+0,Line Graph,United States,1830.59,0.0
+0,Line Graph,United States,1831.02,0.0
+0,Line Graph,United States,1831.46,0.0
+0,Line Graph,United States,1831.9,0.0
+0,Line Graph,United States,1832.33,0.0
+0,Line Graph,United States,1832.77,0.0
+0,Line Graph,United States,1833.2,0.0
+0,Line Graph,United States,1833.64,0.0
+0,Line Graph,United States,1834.07,0.0
+0,Line Graph,United States,1834.51,0.0
+0,Line Graph,United States,1834.94,0.0
+0,Line Graph,United States,1835.38,0.0
+0,Line Graph,United States,1835.82,0.0
+0,Line Graph,United States,1836.25,0.0
+0,Line Graph,United States,1836.69,0.0
+0,Line Graph,United States,1837.12,0.0
+0,Line Graph,United States,1837.56,0.0
+0,Line Graph,United States,1837.99,0.0
+0,Line Graph,United States,1838.43,0.0
+0,Line Graph,United States,1838.86,0.0
+0,Line Graph,United States,1839.3,0.0
+0,Line Graph,United States,1839.74,0.0
+0,Line Graph,United States,1840.17,0.0
+0,Line Graph,United States,1840.61,0.0
+0,Line Graph,United States,1841.04,0.0
+0,Line Graph,United States,1841.48,0.0
+0,Line Graph,United States,1841.91,0.0
+0,Line Graph,United States,1842.35,0.0
+0,Line Graph,United States,1847.14,27906976.7
+0,Line Graph,United States,1847.58,27906976.7
+0,Line Graph,United States,1848.01,27906976.7
+0,Line Graph,United States,1848.45,27906976.7
+0,Line Graph,United States,1848.88,27906976.7
+0,Line Graph,United States,1849.32,27906976.7
+0,Line Graph,United States,1849.76,27906976.7
+0,Line Graph,United States,1850.19,27906976.7
+0,Line Graph,United States,1850.63,27906976.7
+0,Line Graph,United States,1851.06,27906976.7
+0,Line Graph,United States,1851.5,27906976.7
+0,Line Graph,United States,1851.93,27906976.7
+0,Line Graph,United States,1852.37,27906976.7
+0,Line Graph,United States,1852.8,27906976.7
+0,Line Graph,United States,1853.24,27906976.7
+0,Line Graph,United States,1853.68,27906976.7
+0,Line Graph,United States,1854.11,27906976.7
+0,Line Graph,United States,1858.47,55813953.5
+0,Line Graph,United States,1858.9,55813953.5
+0,Line Graph,United States,1859.34,55813953.5
+0,Line Graph,United States,1859.77,55813953.5
+0,Line Graph,United States,1860.21,55813953.5
+0,Line Graph,United States,1860.65,55813953.5
+0,Line Graph,United States,1861.08,55813953.5
+0,Line Graph,United States,1861.52,55813953.5
+0,Line Graph,United States,1861.95,55813953.5
+0,Line Graph,United States,1862.39,55813953.5
+0,Line Graph,United States,1862.82,55813953.5
+0,Line Graph,United States,1863.26,55813953.5
+0,Line Graph,United States,1863.69,55813953.5
+0,Line Graph,United States,1864.13,55813953.5
+0,Line Graph,United States,1864.57,55813953.5
+0,Line Graph,United States,1865.0,55813953.5
+0,Line Graph,United States,1865.44,55813953.5
+0,Line Graph,United States,1865.87,55813953.5
+0,Line Graph,United States,1866.31,55813953.5
+0,Line Graph,United States,1866.74,83720930.2
+0,Line Graph,United States,1867.18,83720930.2
+0,Line Graph,United States,1867.62,83720930.2
+0,Line Graph,United States,1868.05,83720930.2
+0,Line Graph,United States,1868.49,83720930.2
+0,Line Graph,United States,1870.23,111627907.0
+0,Line Graph,United States,1870.66,111627907.0
+0,Line Graph,United States,1871.1,111627907.0
+0,Line Graph,United States,1871.54,111627907.0
+0,Line Graph,United States,1871.97,139534883.7
+0,Line Graph,United States,1872.41,139534883.7
+0,Line Graph,United States,1872.84,139534883.7
+0,Line Graph,United States,1873.28,139534883.7
+0,Line Graph,United States,1873.71,139534883.7
+0,Line Graph,United States,1874.15,139534883.7
+0,Line Graph,United States,1874.59,139534883.7
+0,Line Graph,United States,1875.02,139534883.7
+0,Line Graph,United States,1875.46,139534883.7
+0,Line Graph,United States,1875.89,139534883.7
+0,Line Graph,United States,1876.33,139534883.7
+0,Line Graph,United States,1876.76,139534883.7
+0,Line Graph,United States,1877.2,139534883.7
+0,Line Graph,United States,1877.63,139534883.7
+0,Line Graph,United States,1878.07,167441860.5
+0,Line Graph,United States,1878.51,167441860.5
+0,Line Graph,United States,1878.94,167441860.5
+0,Line Graph,United States,1879.38,195348837.2
+0,Line Graph,United States,1879.81,195348837.2
+0,Line Graph,United States,1880.25,195348837.2
+0,Line Graph,United States,1881.12,223255814.0
+0,Line Graph,United States,1881.55,223255814.0
+0,Line Graph,United States,1881.99,251162790.7
+0,Line Graph,United States,1882.43,251162790.7
+0,Line Graph,United States,1882.86,251162790.7
+0,Line Graph,United States,1883.3,251162790.7
+0,Line Graph,United States,1883.73,279069767.4
+0,Line Graph,United States,1884.17,279069767.4
+0,Line Graph,United States,1884.6,279069767.4
+0,Line Graph,United States,1885.04,279069767.4
+0,Line Graph,United States,1885.48,279069767.4
+0,Line Graph,United States,1885.91,279069767.4
+0,Line Graph,United States,1886.35,306976744.2
+0,Line Graph,United States,1886.78,306976744.2
+0,Line Graph,United States,1887.22,334883720.9
+0,Line Graph,United States,1887.65,362790697.7
+0,Line Graph,United States,1888.09,362790697.7
+0,Line Graph,United States,1888.52,362790697.7
+0,Line Graph,United States,1888.96,362790697.7
+0,Line Graph,United States,1889.4,362790697.7
+0,Line Graph,United States,1889.83,390697674.4
+0,Line Graph,United States,1890.27,418604651.2
+0,Line Graph,United States,1890.7,418604651.2
+0,Line Graph,United States,1891.14,446511627.9
+0,Line Graph,United States,1891.57,446511627.9
+0,Line Graph,United States,1892.01,446511627.9
+0,Line Graph,United States,1892.45,446511627.9
+0,Line Graph,United States,1892.88,446511627.9
+0,Line Graph,United States,1893.32,446511627.9
+0,Line Graph,United States,1893.75,446511627.9
+0,Line Graph,United States,1894.19,446511627.9
+0,Line Graph,United States,1894.62,474418604.7
+0,Line Graph,United States,1895.06,474418604.7
+0,Line Graph,United States,1895.49,474418604.7
+0,Line Graph,United States,1896.37,502325581.4
+0,Line Graph,United States,1896.8,502325581.4
+0,Line Graph,United States,1897.24,530232558.1
+0,Line Graph,United States,1897.67,530232558.1
+0,Line Graph,United States,1898.11,558139534.9
+0,Line Graph,United States,1898.54,613953488.4
+0,Line Graph,United States,1898.98,641860465.1
+0,Line Graph,United States,1899.41,641860465.1
+0,Line Graph,United States,1899.85,669767441.9
+0,Line Graph,United States,1900.29,697674418.6
+0,Line Graph,United States,1900.72,725581395.3
+0,Line Graph,United States,1901.16,725581395.3
+0,Line Graph,United States,1901.59,753488372.1
+0,Line Graph,United States,1902.03,809302325.6
+0,Line Graph,United States,1902.46,837209302.3
+0,Line Graph,United States,1902.9,893023255.8
+0,Line Graph,United States,1903.34,893023255.8
+0,Line Graph,United States,1903.77,893023255.8
+0,Line Graph,United States,1904.21,920930232.6
+0,Line Graph,United States,1904.64,976744186.0
+0,Line Graph,United States,1905.08,1004651162.8
+0,Line Graph,United States,1905.51,1032558139.5
+0,Line Graph,United States,1905.95,1060465116.3
+0,Line Graph,United States,1906.38,1116279069.8
+0,Line Graph,United States,1906.82,1200000000.0
+0,Line Graph,United States,1907.26,1172093023.3
+0,Line Graph,United States,1907.69,1116279069.8
+0,Line Graph,United States,1908.13,1088372093.0
+0,Line Graph,United States,1908.56,1144186046.5
+0,Line Graph,United States,1909.0,1200000000.0
+0,Line Graph,United States,1909.43,1227906976.7
+0,Line Graph,United States,1909.87,1283720930.2
+0,Line Graph,United States,1910.31,1283720930.2
+0,Line Graph,United States,1910.74,1283720930.2
+0,Line Graph,United States,1911.18,1283720930.2
+0,Line Graph,United States,1911.61,1339534883.7
+0,Line Graph,United States,1912.05,1367441860.5
+0,Line Graph,United States,1912.48,1423255814.0
+0,Line Graph,United States,1912.92,1451162790.7
+0,Line Graph,United States,1913.35,1423255814.0
+0,Line Graph,United States,1913.79,1367441860.5
+0,Line Graph,United States,1914.23,1339534883.7
+0,Line Graph,United States,1914.66,1367441860.5
+0,Line Graph,United States,1915.1,1423255814.0
+0,Line Graph,United States,1915.53,1479069767.4
+0,Line Graph,United States,1915.97,1534883720.9
+0,Line Graph,United States,1916.4,1618604651.2
+0,Line Graph,United States,1916.84,1674418604.7
+0,Line Graph,United States,1917.28,1702325581.4
+0,Line Graph,United States,1917.71,1730232558.1
+0,Line Graph,United States,1918.15,1730232558.1
+0,Line Graph,United States,1918.58,1590697674.4
+0,Line Graph,United States,1919.02,1534883720.9
+0,Line Graph,United States,1919.45,1618604651.2
+0,Line Graph,United States,1919.89,1730232558.1
+0,Line Graph,United States,1920.32,1646511627.9
+0,Line Graph,United States,1920.76,1506976744.2
+0,Line Graph,United States,1921.2,1451162790.7
+0,Line Graph,United States,1921.63,1451162790.7
+0,Line Graph,United States,1922.07,1506976744.2
+0,Line Graph,United States,1922.5,1730232558.1
+0,Line Graph,United States,1922.94,1869767441.9
+0,Line Graph,United States,1923.37,1813953488.4
+0,Line Graph,United States,1923.81,1758139534.9
+0,Line Graph,United States,1924.24,1730232558.1
+0,Line Graph,United States,1924.68,1758139534.9
+0,Line Graph,United States,1925.12,1786046511.6
+0,Line Graph,United States,1925.55,1869767441.9
+0,Line Graph,United States,1925.99,1897674418.6
+0,Line Graph,United States,1926.42,1897674418.6
+0,Line Graph,United States,1926.86,1869767441.9
+0,Line Graph,United States,1927.29,1869767441.9
+0,Line Graph,United States,1927.73,1841860465.1
+0,Line Graph,United States,1928.17,1869767441.9
+0,Line Graph,United States,1928.6,1925581395.3
+0,Line Graph,United States,1929.04,1953488372.1
+0,Line Graph,United States,1929.47,1841860465.1
+0,Line Graph,United States,1929.91,1758139534.9
+0,Line Graph,United States,1930.34,1646511627.9
+0,Line Graph,United States,1930.78,1534883720.9
+0,Line Graph,United States,1931.21,1423255814.0
+0,Line Graph,United States,1931.65,1339534883.7
+0,Line Graph,United States,1932.09,1283720930.2
+0,Line Graph,United States,1932.52,1311627907.0
+0,Line Graph,United States,1932.96,1367441860.5
+0,Line Graph,United States,1933.39,1395348837.2
+0,Line Graph,United States,1933.83,1423255814.0
+0,Line Graph,United States,1934.26,1451162790.7
+0,Line Graph,United States,1934.7,1479069767.4
+0,Line Graph,United States,1935.14,1534883720.9
+0,Line Graph,United States,1935.57,1618604651.2
+0,Line Graph,United States,1936.01,1730232558.1
+0,Line Graph,United States,1936.44,1758139534.9
+0,Line Graph,United States,1936.88,1786046511.6
+0,Line Graph,United States,1937.31,1702325581.4
+0,Line Graph,United States,1937.75,1590697674.4
+0,Line Graph,United States,1938.18,1562790697.7
+0,Line Graph,United States,1938.62,1618604651.2
+0,Line Graph,United States,1939.06,1702325581.4
+0,Line Graph,United States,1939.49,1786046511.6
+0,Line Graph,United States,1939.93,1869767441.9
+0,Line Graph,United States,1940.36,1953488372.1
+0,Line Graph,United States,1940.8,2037209302.3
+0,Line Graph,United States,1941.23,2093023255.8
+0,Line Graph,United States,1941.67,2176744186.0
+0,Line Graph,United States,1942.1,2204651162.8
+0,Line Graph,United States,1942.54,2232558139.5
+0,Line Graph,United States,1942.98,2288372093.0
+0,Line Graph,United States,1943.41,2344186046.5
+0,Line Graph,United States,1943.85,2427906976.7
+0,Line Graph,United States,1944.28,2427906976.7
+0,Line Graph,United States,1944.72,2400000000.0
+0,Line Graph,United States,1945.15,2344186046.5
+0,Line Graph,United States,1945.59,2316279069.8
+0,Line Graph,United States,1946.03,2288372093.0
+0,Line Graph,United States,1946.46,2372093023.3
+0,Line Graph,United States,1946.9,2455813953.5
+0,Line Graph,United States,1947.33,2539534883.7
+0,Line Graph,United States,1947.77,2567441860.5
+0,Line Graph,United States,1948.2,2511627907.0
+0,Line Graph,United States,1948.64,2316279069.8
+0,Line Graph,United States,1949.07,2232558139.5
+0,Line Graph,United States,1949.51,2372093023.3
+0,Line Graph,United States,1949.95,2511627907.0
+0,Line Graph,United States,1950.38,2567441860.5
+0,Line Graph,United States,1950.82,2623255814.0
+0,Line Graph,United States,1951.25,2595348837.2
+0,Line Graph,United States,1951.69,2567441860.5
+0,Line Graph,United States,1952.12,2567441860.5
+0,Line Graph,United States,1952.56,2595348837.2
+0,Line Graph,United States,1953.0,2623255814.0
+0,Line Graph,United States,1953.43,2567441860.5
+0,Line Graph,United States,1953.87,2539534883.7
+0,Line Graph,United States,1954.3,2567441860.5
+0,Line Graph,United States,1954.74,2679069767.4
+0,Line Graph,United States,1955.17,2762790697.7
+0,Line Graph,United States,1955.61,2818604651.2
+0,Line Graph,United States,1956.04,2846511627.9
+0,Line Graph,United States,1956.48,2846511627.9
+0,Line Graph,United States,1956.92,2846511627.9
+0,Line Graph,United States,1957.35,2818604651.2
+0,Line Graph,United States,1957.79,2762790697.7
+0,Line Graph,United States,1958.22,2762790697.7
+0,Line Graph,United States,1958.66,2818604651.2
+0,Line Graph,United States,1959.09,2846511627.9
+0,Line Graph,United States,1959.53,2874418604.7
+0,Line Graph,United States,1959.97,2902325581.4
+0,Line Graph,United States,1960.4,2902325581.4
+0,Line Graph,United States,1960.84,2902325581.4
+0,Line Graph,United States,1961.27,2930232558.1
+0,Line Graph,United States,1961.71,2986046511.6
+0,Line Graph,United States,1962.14,3041860465.1
+0,Line Graph,United States,1962.58,3097674418.6
+0,Line Graph,United States,1963.01,3153488372.1
+0,Line Graph,United States,1963.45,3209302325.6
+0,Line Graph,United States,1963.89,3265116279.1
+0,Line Graph,United States,1964.32,3320930232.6
+0,Line Graph,United States,1964.76,3376744186.0
+0,Line Graph,United States,1965.19,3432558139.5
+0,Line Graph,United States,1965.63,3516279069.8
+0,Line Graph,United States,1966.06,3600000000.0
+0,Line Graph,United States,1966.5,3655813953.5
+0,Line Graph,United States,1966.93,3711627907.0
+0,Line Graph,United States,1967.37,3767441860.5
+0,Line Graph,United States,1967.81,3823255814.0
+0,Line Graph,United States,1968.24,3879069767.4
+0,Line Graph,United States,1968.68,3962790697.7
+0,Line Graph,United States,1969.11,4074418604.7
+0,Line Graph,United States,1969.55,4213953488.4
+0,Line Graph,United States,1969.98,4325581395.3
+0,Line Graph,United States,1970.42,4353488372.1
+0,Line Graph,United States,1970.86,4353488372.1
+0,Line Graph,United States,1971.29,4437209302.3
+0,Line Graph,United States,1971.73,4520930232.6
+0,Line Graph,United States,1972.16,4604651162.8
+0,Line Graph,United States,1972.6,4688372093.0
+0,Line Graph,United States,1973.03,4744186046.5
+0,Line Graph,United States,1973.47,4716279069.8
+0,Line Graph,United States,1973.9,4632558139.5
+0,Line Graph,United States,1974.34,4548837209.3
+0,Line Graph,United States,1974.78,4465116279.1
+0,Line Graph,United States,1975.21,4465116279.1
+0,Line Graph,United States,1975.65,4548837209.3
+0,Line Graph,United States,1976.08,4632558139.5
+0,Line Graph,United States,1976.52,4716279069.8
+0,Line Graph,United States,1976.95,4772093023.3
+0,Line Graph,United States,1977.39,4827906976.7
+0,Line Graph,United States,1977.83,4883720930.2
+0,Line Graph,United States,1978.26,4911627907.0
+0,Line Graph,United States,1978.7,4911627907.0
+0,Line Graph,United States,1979.13,4883720930.2
+0,Line Graph,United States,1979.57,4827906976.7
+0,Line Graph,United States,1980.0,4744186046.5
+0,Line Graph,United States,1980.44,4660465116.3
+0,Line Graph,United States,1980.87,4576744186.0
+0,Line Graph,United States,1981.31,4465116279.1
+0,Line Graph,United States,1981.75,4381395348.8
+0,Line Graph,United States,1982.18,4325581395.3
+0,Line Graph,United States,1982.62,4325581395.3
+0,Line Graph,United States,1983.05,4381395348.8
+0,Line Graph,United States,1983.49,4437209302.3
+0,Line Graph,United States,1983.92,4465116279.1
+0,Line Graph,United States,1984.36,4493023255.8
+0,Line Graph,United States,1984.79,4493023255.8
+0,Line Graph,United States,1985.23,4493023255.8
+0,Line Graph,United States,1985.67,4493023255.8
+0,Line Graph,United States,1986.1,4520930232.6
+0,Line Graph,United States,1986.54,4604651162.8
+0,Line Graph,United States,1986.97,4688372093.0
+0,Line Graph,United States,1987.41,4772093023.3
+0,Line Graph,United States,1987.84,4855813953.5
+0,Line Graph,United States,1988.28,4911627907.0
+0,Line Graph,United States,1988.72,4939534883.7
+0,Line Graph,United States,1989.15,4995348837.2
+0,Line Graph,United States,1989.59,5079069767.4
+0,Line Graph,United States,1990.02,5134883720.9
+0,Line Graph,United States,1990.46,5106976744.2
+0,Line Graph,United States,1990.89,5106976744.2
+0,Line Graph,United States,1991.33,5106976744.2
+0,Line Graph,United States,1991.76,5162790697.7
+0,Line Graph,United States,1992.2,5218604651.2
+0,Line Graph,United States,1992.64,5246511627.9
+0,Line Graph,United States,1993.07,5302325581.4
+0,Line Graph,United States,1993.51,5330232558.1
+0,Line Graph,United States,1993.94,5358139534.9
+0,Line Graph,United States,1994.38,5386046511.6
+0,Line Graph,United States,1994.81,5413953488.4
+0,Line Graph,United States,1995.25,5469767441.9
+0,Line Graph,United States,1995.69,5553488372.1
+0,Line Graph,United States,1996.12,5609302325.6
+0,Line Graph,United States,1996.56,5637209302.3
+0,Line Graph,United States,1996.99,5665116279.1
+0,Line Graph,United States,1997.43,5693023255.8
+0,Line Graph,United States,1997.86,5720930232.6
+0,Line Graph,United States,1998.3,5748837209.3
+0,Line Graph,United States,1998.73,5776744186.0
+0,Line Graph,United States,1999.17,5832558139.5
+0,Line Graph,United States,1999.61,5944186046.5
+0,Line Graph,United States,2000.04,6000000000.0
+0,Line Graph,United States,2000.48,6000000000.0
+0,Line Graph,United States,2000.91,5944186046.5
+0,Line Graph,United States,2001.35,5916279069.8
+0,Line Graph,United States,2001.78,5944186046.5
+0,Line Graph,United States,2002.22,5972093023.3
+0,Line Graph,United States,2002.66,6000000000.0
+0,Line Graph,United States,2003.09,6027906976.7
+0,Line Graph,United States,2003.53,6083720930.2
+0,Line Graph,United States,2003.96,6111627907.0
+0,Line Graph,United States,2004.4,6111627907.0
+0,Line Graph,United States,2004.83,6139534883.7
+0,Line Graph,United States,2005.27,6111627907.0
+0,Line Graph,United States,2005.7,6083720930.2
+0,Line Graph,United States,2006.14,6055813953.5
+0,Line Graph,United States,2006.58,6083720930.2
+0,Line Graph,United States,2007.01,6111627907.0
+0,Line Graph,United States,2007.45,6055813953.5
+0,Line Graph,United States,2007.88,5972093023.3
+0,Line Graph,United States,2008.32,5804651162.8
+0,Line Graph,United States,2008.75,5637209302.3
+0,Line Graph,United States,2009.19,5553488372.1
+0,Line Graph,United States,2009.62,5609302325.6
+0,Line Graph,United States,2010.06,5665116279.1
+0,Line Graph,United States,2010.5,5637209302.3
+0,Line Graph,United States,2010.93,5581395348.8
+0,Line Graph,United States,2011.37,5469767441.9
+0,Line Graph,United States,2011.8,5386046511.6
+0,Line Graph,United States,2012.24,5386046511.6
+0,Line Graph,United States,2012.67,5441860465.1
+0,Line Graph,United States,2013.11,5469767441.9
+0,Line Graph,United States,2013.55,5497674418.6
+0,Line Graph,United States,2013.98,5525581395.3
+0,Line Graph,United States,2014.42,5497674418.6
+0,Line Graph,United States,2014.85,5413953488.4
+0,Line Graph,United States,2015.29,5358139534.9
+0,Line Graph,United States,2015.72,5302325581.4
+0,Line Graph,United States,2016.16,5246511627.9
+0,Line Graph,United States,2016.59,5218604651.2
+0,Line Graph,United States,2017.03,5218604651.2
+0,Line Graph,United States,2017.47,5274418604.7
+0,Line Graph,United States,2017.9,5330232558.1
+0,Line Graph,United States,2018.34,5330232558.1
+0,Line Graph,United States,2018.77,5302325581.4
+0,Line Graph,United States,2019.21,5162790697.7
+0,Line Graph,United States,2019.64,4939534883.7
+0,Line Graph,United States,2020.08,4772093023.3
+0,Line Graph,United States,2020.52,4855813953.5
+0,Line Graph,United States,2020.95,4995348837.2
+0,Line Graph,United States,2021.39,5023255814.0
+0,Line Graph,United States,2021.82,5051162790.7
+0,Line Graph,United States,2022.26,5051162790.7
+0,Line Graph,United States,2022.69,4995348837.2
+0,Line Graph,United States,2023.13,4939534883.7
+0,Line Graph,United States,2023.56,4911627907.0

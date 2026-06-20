@@ -1,0 +1,49 @@
+{
+  "panel_id": null,
+  "source_citation": "OurWorldinData.org/child-mortality; Data source: Gapminder (2015); UN Inter-agency Group for Child Mortality Estimation (2025)",
+  "x_axis": {
+    "title": "Year",
+    "unit": null,
+    "title_verbatim": "Year",
+    "decimal_separator": "."
+  },
+  "y_axis": {
+    "title": "Child mortality rate (%)",
+    "unit": "%",
+    "title_verbatim": "Estimated share of newborns who die before age 5.",
+    "decimal_separator": "."
+  },
+  "series_legend": [
+    {"series_id": "Ghana",          "source_label": "Ghana",          "color": "#8D3D6D", "line_style": "solid"},
+    {"series_id": "India",          "source_label": "India",          "color": "#2C8465", "line_style": "solid"},
+    {"series_id": "Brazil",         "source_label": "Brazil",         "color": "#00295B", "line_style": "solid"},
+    {"series_id": "United States",  "source_label": "United States",  "color": "#8F3D46", "line_style": "solid"},
+    {"series_id": "United Kingdom", "source_label": "United Kingdom", "color": "#996D39", "line_style": "solid"},
+    {"series_id": "France",         "source_label": "France",         "color": "#B13507", "line_style": "solid"},
+    {"series_id": "Sweden",         "source_label": "Sweden",         "color": "#4C6A9C", "line_style": "solid"}
+  ],
+  "chart_title": "Child mortality rate",
+  "chart_subtitle": "Estimated share of newborns who die before age 5.",
+  "chart_type": "multi-series line / time-series",
+  "n_series": 7,
+  "series_coverage": [
+    {"series_id": "Ghana",          "year_first": 1932, "year_last": 2023, "n_points": 92},
+    {"series_id": "India",          "year_first": 1911, "year_last": 2023, "n_points": 113},
+    {"series_id": "Brazil",         "year_first": 1934, "year_last": 2022, "n_points": 84},
+    {"series_id": "United States", "year_first": 1933, "year_last": 2023, "n_points": 91},
+    {"series_id": "United Kingdom","year_first": 1840, "year_last": 2023, "n_points": 167},
+    {"series_id": "France",         "year_first": 1816, "year_last": 1979, "n_points": 144},
+    {"series_id": "Sweden",         "year_first": 1751, "year_last": 2010, "n_points": 260}
+  ],
+  "extraction_method": {
+    "phase_3_recipe": "Line/curve trace (SKILL.md §3): HSV color mask per series + per-column median row of mask after connected-component filtering. CC pipeline dilates the binary mask with a 2x2 kernel before component labeling to merge anti-alias-fragmented runs, then keeps components >=20 px. Brazil and Sweden share hue range (102-113); separated by V (Brazil dark V<=130, Sweden lighter V>=130).",
+    "phase_4_postproc": "Linear interpolation of gaps <=5 years. Post-1945 spike removal via two passes: (a) 7-year median filter for single-year spikes; (b) bilateral monotonic-decline detector for sustained cross-line contamination runs (collapsed Sweden 1958-1991 contamination cluster).",
+    "phase_4_overlay_check": "Per-extracted-point pixel overlay onto image.png in overlay.png; per-series mean error: Ghana 0.0px, India 1.4px, Brazil 0.0px, US 0.0px, UK 0.0px, France 0.6px, Sweden 1.7px (max 134px on Sweden 1958-1991 region where pixel evidence is absent and values are despike interpolations)."
+  },
+  "known_limitations": [
+    "France ends at 1979 and Sweden at 2010: their distinct color pixels are overwritten by adjacent series in the low-percent range (<1%) where lines visually merge. OWID's underlying data goes to 2023.",
+    "Early Sweden (1751-1830) is genuinely noisy historical data with ~10pp year-to-year swings; per-year sampling captures most peaks but may alias rapid spikes <1 px column wide.",
+    "Sustained extraction artifacts in Sweden over 1958-1991 (cross-line contamination from US/UK overlapping color hue) were despiked using monotonic-decline interpolation; these years should be interpreted as model-fit rather than direct pixel reads."
+  ],
+  "notes": "OWID-style chart with line-endpoint country labels at right and inset axis-end labels (1751 and 2023 sit inside the data range). X-axis calibration uses interior-tick least-squares (excluding 1751 and 2023 inset labels). Y-axis calibration is a 6-tick fit with residuals < 0.4 px."
+}

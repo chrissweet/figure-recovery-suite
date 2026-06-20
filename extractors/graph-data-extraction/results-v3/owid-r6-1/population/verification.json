@@ -1,0 +1,135 @@
+{
+  "n_artifacts": 7,
+  "summary": {
+    "pass": 2,
+    "fail": 5,
+    "by_type": {
+      "frame_box": {
+        "pass": 1,
+        "fail": 0
+      },
+      "axis_line": {
+        "pass": 1,
+        "fail": 1
+      },
+      "tick_center": {
+        "pass": 0,
+        "fail": 4
+      }
+    }
+  },
+  "epsilon_px": {
+    "frame_box": 2,
+    "axis_line": 2,
+    "tick_center": 5,
+    "legend_box": 15,
+    "marker_centroid": 3,
+    "line_endpoint": 10,
+    "line_sample": 3,
+    "bar_top": 2,
+    "error_cap": 3
+  },
+  "results": [
+    {
+      "type": "frame_box",
+      "id": "main",
+      "left": 67,
+      "top": 50,
+      "right": 720,
+      "bottom": 511,
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "edges": {
+          "top": 0.0,
+          "bottom": 1.0,
+          "left": 0.004,
+          "right": 0.874
+        },
+        "n_good_edges": 2
+      }
+    },
+    {
+      "type": "axis_line",
+      "id": "y_axis",
+      "orientation": "vertical",
+      "fixed": 67,
+      "extent": [
+        50,
+        511
+      ],
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "axis_dark_fraction": 0.0
+      }
+    },
+    {
+      "type": "axis_line",
+      "id": "x_axis",
+      "orientation": "horizontal",
+      "fixed": 511,
+      "extent": [
+        67,
+        720
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "axis_dark_fraction": 1.0
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_-10000",
+      "axis": "x",
+      "col": -195054,
+      "row": 529,
+      "value": -10000,
+      "pass": false,
+      "epsilon_px": 5,
+      "info": {
+        "reason": "out of image"
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_2023",
+      "axis": "x",
+      "col": 25968,
+      "row": 529,
+      "value": 2023,
+      "pass": false,
+      "epsilon_px": 5,
+      "info": {
+        "reason": "out of image"
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_0",
+      "axis": "y",
+      "col": 37,
+      "row": 9443896424,
+      "value": 0,
+      "pass": false,
+      "epsilon_px": 5,
+      "info": {
+        "reason": "out of image"
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_8000000000",
+      "axis": "y",
+      "col": 37,
+      "row": -147965465278668544,
+      "value": 8000000000,
+      "pass": false,
+      "epsilon_px": 5,
+      "info": {
+        "reason": "out of image"
+      }
+    }
+  ]
+}

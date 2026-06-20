@@ -1,0 +1,32 @@
+[
+  {
+    "series": "United States",
+    "year": 1993,
+    "value_pct": 29.79
+  },
+  {
+    "series": "United States",
+    "year": 1994,
+    "value_pct": 30.05
+  },
+  {
+    "series": "United States",
+    "year": 2012,
+    "value_pct": 31.74
+  },
+  {
+    "series": "United States",
+    "year": 2013,
+    "value_pct": 32.13
+  },
+  {
+    "series": "United States",
+    "year": 2014,
+    "value_pct": 32.52
+  },
+  {
+    "series": "China",
+    "year": 1986,
+    "value_pct": 21.39
+  }
+]

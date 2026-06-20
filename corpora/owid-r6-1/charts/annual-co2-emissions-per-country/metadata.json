@@ -1,0 +1,25 @@
+{
+  "chart_id": "annual-co2-emissions-per-country",
+  "source": "Our World in Data",
+  "source_url": "https://ourworldindata.org/grapher/annual-co2-emissions-per-country",
+  "csv_url": "https://ourworldindata.org/grapher/annual-co2-emissions-per-country.csv?csvType=filtered&tab=chart",
+  "image_url": "https://ourworldindata.org/grapher/annual-co2-emissions-per-country.png?tab=chart",
+  "chart_type": "multi-series line, time series, large dynamic range",
+  "feature_stressed": "y-axis tick labels carry SI unit suffix (billion t); legend at line endpoints",
+  "x_axis_title": "Year",
+  "x_axis_unit": null,
+  "y_axis_title": "Annual CO2 emissions",
+  "y_axis_unit": "t",
+  "x_scale": "linear",
+  "y_scale": "linear",
+  "n_gt_rows": 1393,
+  "series": [
+    "Brazil",
+    "China",
+    "France",
+    "Germany",
+    "India",
+    "United Kingdom",
+    "United States"
+  ]
+}

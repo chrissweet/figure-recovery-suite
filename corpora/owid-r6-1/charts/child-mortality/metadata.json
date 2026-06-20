@@ -1,0 +1,25 @@
+{
+  "chart_id": "child-mortality",
+  "source": "Our World in Data",
+  "source_url": "https://ourworldindata.org/grapher/child-mortality",
+  "csv_url": "https://ourworldindata.org/grapher/child-mortality.csv?csvType=filtered&tab=chart",
+  "image_url": "https://ourworldindata.org/grapher/child-mortality.png?tab=chart",
+  "chart_type": "multi-series line, percent y, time series, noisy early data",
+  "feature_stressed": "percent y-axis ticks; high-noise early data with many spikes",
+  "x_axis_title": "Year",
+  "x_axis_unit": null,
+  "y_axis_title": "Child mortality rate",
+  "y_axis_unit": "%",
+  "x_scale": "linear",
+  "y_scale": "linear",
+  "n_gt_rows": 1044,
+  "series": [
+    "Brazil",
+    "France",
+    "Ghana",
+    "India",
+    "Sweden",
+    "United Kingdom",
+    "United States"
+  ]
+}

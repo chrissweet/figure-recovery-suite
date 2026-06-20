@@ -1,0 +1,28 @@
+{
+  "chart_id": "gdp-per-capita-worldbank",
+  "source": "Our World in Data",
+  "source_url": "https://ourworldindata.org/grapher/gdp-per-capita-worldbank",
+  "csv_url": "https://ourworldindata.org/grapher/gdp-per-capita-worldbank.csv?csvType=filtered&tab=chart",
+  "image_url": "https://ourworldindata.org/grapher/gdp-per-capita-worldbank.png?tab=chart",
+  "chart_type": "multi-series line, time series, dollar unit",
+  "feature_stressed": "10 country series; y-axis tick labels have $ prefix and ,000 separator",
+  "x_axis_title": "Year",
+  "x_axis_unit": null,
+  "y_axis_title": "GDP per capita",
+  "y_axis_unit": "$",
+  "x_scale": "linear",
+  "y_scale": "linear",
+  "n_gt_rows": 350,
+  "series": [
+    "Brazil",
+    "China",
+    "Ethiopia",
+    "Germany",
+    "India",
+    "Japan",
+    "Russia",
+    "South Korea",
+    "United Kingdom",
+    "United States"
+  ]
+}

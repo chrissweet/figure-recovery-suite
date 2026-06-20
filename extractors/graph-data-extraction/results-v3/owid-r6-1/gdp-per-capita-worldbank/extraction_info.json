@@ -1,0 +1,53 @@
+{
+  "chart_type": "multi-series line plot with markers at integer years",
+  "n_series": 10,
+  "series_list": [
+    "United States",
+    "Germany",
+    "South Korea",
+    "United Kingdom",
+    "Japan",
+    "Russia",
+    "China",
+    "Brazil",
+    "India",
+    "Ethiopia"
+  ],
+  "x_axis": "Year",
+  "y_axis": "GDP per capita (international dollars, 2021 prices)",
+  "y_label_format": "$X,XXX \u2014 parsed by stripping '$' and ',', stored as integer dollar amount",
+  "year_range": [
+    1990,
+    2024
+  ],
+  "y_range_observed": [
+    0,
+    80000
+  ],
+  "extraction_method": "HSV color thresholding per series + line-tracking with cluster-based seed selection + linear interpolation across label-occluded gaps",
+  "known_label_occlusions": {
+    "United States": [],
+    "Germany": [],
+    "South Korea": [],
+    "United Kingdom": [],
+    "Japan": [
+      2012
+    ],
+    "Russia": [],
+    "China": [
+      2018
+    ],
+    "Brazil": [],
+    "India": [
+      1993
+    ],
+    "Ethiopia": []
+  },
+  "calibration_precision_subpixel": {
+    "middle_6_residuals_yrs": "[+0.005, -0.015, +0.019, -0.001, -0.021, +0.013]"
+  },
+  "approx_error_budget": {
+    "x_year": "<= 0.1 year (line tracking is column-precise)",
+    "y_value": "~ +/- $200 (1 pixel = $497 of y; centroid within sub-pixel accuracy)"
+  }
+}

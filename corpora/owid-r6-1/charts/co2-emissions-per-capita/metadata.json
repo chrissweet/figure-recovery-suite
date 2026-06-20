@@ -1,0 +1,27 @@
+{
+  "chart_id": "co2-emissions-per-capita",
+  "source": "Our World in Data",
+  "source_url": "https://ourworldindata.org/grapher/co2-emissions-per-capita",
+  "csv_url": "https://ourworldindata.org/grapher/co2-emissions-per-capita.csv?csvType=filtered&tab=chart",
+  "image_url": "https://ourworldindata.org/grapher/co2-emissions-per-capita.png?tab=chart",
+  "chart_type": "multi-series line, time series",
+  "feature_stressed": "9 country series; one (China) crosses many others",
+  "x_axis_title": "Year",
+  "x_axis_unit": null,
+  "y_axis_title": "Annual CO2 emissions per capita",
+  "y_axis_unit": "t",
+  "x_scale": "linear",
+  "y_scale": "linear",
+  "n_gt_rows": 1626,
+  "series": [
+    "Canada",
+    "China",
+    "European Union (27)",
+    "India",
+    "Kenya",
+    "South Africa",
+    "United Kingdom",
+    "United States",
+    "World"
+  ]
+}

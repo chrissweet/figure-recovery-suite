@@ -1,0 +1,1208 @@
+{
+  "n_artifacts": 62,
+  "summary": {
+    "pass": 48,
+    "fail": 14,
+    "by_type": {
+      "frame_box": {
+        "pass": 0,
+        "fail": 1
+      },
+      "axis_line": {
+        "pass": 0,
+        "fail": 2
+      },
+      "tick_center": {
+        "pass": 0,
+        "fail": 11
+      },
+      "line_endpoint": {
+        "pass": 16,
+        "fail": 0
+      },
+      "line_sample": {
+        "pass": 32,
+        "fail": 0
+      }
+    }
+  },
+  "epsilon_px": {
+    "frame_box": 2,
+    "axis_line": 2,
+    "tick_center": 5,
+    "legend_box": 15,
+    "marker_centroid": 3,
+    "line_endpoint": 10,
+    "line_sample": 3,
+    "bar_top": 2,
+    "error_cap": 3
+  },
+  "results": [
+    {
+      "type": "frame_box",
+      "id": "main",
+      "left": 54.36,
+      "top": 127.19,
+      "right": 710.79,
+      "bottom": 511.48,
+      "pass": false,
+      "epsilon_px": 2,
+      "error": "'float' object cannot be interpreted as an integer"
+    },
+    {
+      "type": "axis_line",
+      "id": "y_axis",
+      "orientation": "vertical",
+      "fixed": 54.36,
+      "extent": [
+        127.19,
+        511.48
+      ],
+      "pass": false,
+      "epsilon_px": 2,
+      "error": "'float' object cannot be interpreted as an integer"
+    },
+    {
+      "type": "axis_line",
+      "id": "x_axis",
+      "orientation": "horizontal",
+      "fixed": 511.48,
+      "extent": [
+        54.36,
+        710.79
+      ],
+      "pass": false,
+      "epsilon_px": 2,
+      "error": "'float' object cannot be interpreted as an integer"
+    },
+    {
+      "type": "tick_center",
+      "id": "x_1985",
+      "axis": "x",
+      "col": 54,
+      "row": 529.48,
+      "value": 1985,
+      "pass": false,
+      "epsilon_px": 5,
+      "error": "slice indices must be integers or None or have an __index__ method"
+    },
+    {
+      "type": "tick_center",
+      "id": "x_1990",
+      "axis": "x",
+      "col": 136,
+      "row": 529.48,
+      "value": 1990,
+      "pass": false,
+      "epsilon_px": 5,
+      "error": "slice indices must be integers or None or have an __index__ method"
+    },
+    {
+      "type": "tick_center",
+      "id": "x_1995",
+      "axis": "x",
+      "col": 218,
+      "row": 529.48,
+      "value": 1995,
+      "pass": false,
+      "epsilon_px": 5,
+      "error": "slice indices must be integers or None or have an __index__ method"
+    },
+    {
+      "type": "tick_center",
+      "id": "x_2000",
+      "axis": "x",
+      "col": 300,
+      "row": 529.48,
+      "value": 2000,
+      "pass": false,
+      "epsilon_px": 5,
+      "error": "slice indices must be integers or None or have an __index__ method"
+    },
+    {
+      "type": "tick_center",
+      "id": "x_2005",
+      "axis": "x",
+      "col": 382,
+      "row": 529.48,
+      "value": 2005,
+      "pass": false,
+      "epsilon_px": 5,
+      "error": "slice indices must be integers or None or have an __index__ method"
+    },
+    {
+      "type": "tick_center",
+      "id": "x_2010",
+      "axis": "x",
+      "col": 464,
+      "row": 529.48,
+      "value": 2010,
+      "pass": false,
+      "epsilon_px": 5,
+      "error": "slice indices must be integers or None or have an __index__ method"
+    },
+    {
+      "type": "tick_center",
+      "id": "x_2015",
+      "axis": "x",
+      "col": 546,
+      "row": 529.48,
+      "value": 2015,
+      "pass": false,
+      "epsilon_px": 5,
+      "error": "slice indices must be integers or None or have an __index__ method"
+    },
+    {
+      "type": "tick_center",
+      "id": "x_2020",
+      "axis": "x",
+      "col": 628,
+      "row": 529.48,
+      "value": 2020,
+      "pass": false,
+      "epsilon_px": 5,
+      "error": "slice indices must be integers or None or have an __index__ method"
+    },
+    {
+      "type": "tick_center",
+      "id": "x_2025",
+      "axis": "x",
+      "col": 710,
+      "row": 529.48,
+      "value": 2025,
+      "pass": false,
+      "epsilon_px": 5,
+      "error": "slice indices must be integers or None or have an __index__ method"
+    },
+    {
+      "type": "tick_center",
+      "id": "y_0",
+      "axis": "y",
+      "col": 24.36,
+      "row": 511,
+      "value": 0,
+      "pass": false,
+      "epsilon_px": 5,
+      "error": "slice indices must be integers or None or have an __index__ method"
+    },
+    {
+      "type": "tick_center",
+      "id": "y_100",
+      "axis": "y",
+      "col": 24.36,
+      "row": 127,
+      "value": 100,
+      "pass": false,
+      "epsilon_px": 5,
+      "error": "slice indices must be integers or None or have an __index__ method"
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Sweden_left",
+      "series": "Sweden",
+      "x": 1985.0,
+      "y": 95.63,
+      "col": 54,
+      "row": 143,
+      "color": [
+        154,
+        76,
+        175
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 24,
+        "dark": 12,
+        "colored": 24
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Sweden_right",
+      "series": "Sweden",
+      "x": 2025.0,
+      "y": 98.75,
+      "col": 710,
+      "row": 131,
+      "color": [
+        154,
+        76,
+        175
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 19,
+        "dark": 18,
+        "colored": 19
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Sweden_mid_1",
+      "series": "Sweden",
+      "x": 1993.0,
+      "y": 95.11,
+      "col": 185,
+      "row": 145,
+      "color": [
+        154,
+        76,
+        175
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 17,
+        "dark": 12,
+        "colored": 17
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Sweden_mid_2",
+      "series": "Sweden",
+      "x": 2001.0,
+      "y": 96.15,
+      "col": 316,
+      "row": 141,
+      "color": [
+        154,
+        76,
+        175
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 13,
+        "dark": 12,
+        "colored": 13
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Sweden_mid_3",
+      "series": "Sweden",
+      "x": 2009.0,
+      "y": 96.41,
+      "col": 448,
+      "row": 140,
+      "color": [
+        154,
+        76,
+        175
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 15,
+        "dark": 11,
+        "colored": 15
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Sweden_mid_4",
+      "series": "Sweden",
+      "x": 2017.0,
+      "y": 97.71,
+      "col": 579,
+      "row": 135,
+      "color": [
+        154,
+        76,
+        175
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 15,
+        "dark": 11,
+        "colored": 15
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "France_left",
+      "series": "France",
+      "x": 1985.0,
+      "y": 83.66,
+      "col": 54,
+      "row": 189,
+      "color": [
+        196,
+        90,
+        45
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 32,
+        "dark": 26,
+        "colored": 32
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "France_right",
+      "series": "France",
+      "x": 2025.0,
+      "y": 94.84,
+      "col": 710,
+      "row": 147,
+      "color": [
+        196,
+        90,
+        45
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 32,
+        "dark": 17,
+        "colored": 32
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "France_mid_1",
+      "series": "France",
+      "x": 1993.0,
+      "y": 92.5,
+      "col": 185,
+      "row": 156,
+      "color": [
+        196,
+        90,
+        45
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 18,
+        "dark": 15,
+        "colored": 18
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "France_mid_2",
+      "series": "France",
+      "x": 2001.0,
+      "y": 91.46,
+      "col": 316,
+      "row": 160,
+      "color": [
+        196,
+        90,
+        45
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 20,
+        "dark": 10,
+        "colored": 20
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "France_mid_3",
+      "series": "France",
+      "x": 2009.0,
+      "y": 90.16,
+      "col": 448,
+      "row": 165,
+      "color": [
+        196,
+        90,
+        45
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 20,
+        "dark": 8,
+        "colored": 20
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "France_mid_4",
+      "series": "France",
+      "x": 2017.0,
+      "y": 88.34,
+      "col": 579,
+      "row": 171,
+      "color": [
+        196,
+        90,
+        45
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 21,
+        "dark": 13,
+        "colored": 21
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "United Kingdom_left",
+      "series": "United Kingdom",
+      "x": 1985.0,
+      "y": 21.72,
+      "col": 54,
+      "row": 428,
+      "color": [
+        136,
+        49,
+        58
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 37,
+        "dark": 22,
+        "colored": 37
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "United Kingdom_right",
+      "series": "United Kingdom",
+      "x": 2025.0,
+      "y": 64.4,
+      "col": 710,
+      "row": 263,
+      "color": [
+        136,
+        49,
+        58
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 22,
+        "dark": 17,
+        "colored": 22
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "United Kingdom_mid_1",
+      "series": "United Kingdom",
+      "x": 1993.0,
+      "y": 29.27,
+      "col": 185,
+      "row": 398,
+      "color": [
+        136,
+        49,
+        58
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 19,
+        "dark": 17,
+        "colored": 19
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "United Kingdom_mid_2",
+      "series": "United Kingdom",
+      "x": 2001.0,
+      "y": 25.63,
+      "col": 316,
+      "row": 412,
+      "color": [
+        136,
+        49,
+        58
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 14,
+        "dark": 12,
+        "colored": 14
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "United Kingdom_mid_3",
+      "series": "United Kingdom",
+      "x": 2009.0,
+      "y": 24.58,
+      "col": 448,
+      "row": 417,
+      "color": [
+        136,
+        49,
+        58
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 18,
+        "dark": 15,
+        "colored": 18
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "United Kingdom_mid_4",
+      "series": "United Kingdom",
+      "x": 2017.0,
+      "y": 49.83,
+      "col": 579,
+      "row": 319,
+      "color": [
+        136,
+        49,
+        58
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 17,
+        "dark": 11,
+        "colored": 17
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Germany_left",
+      "series": "Germany",
+      "x": 1986.0,
+      "y": 29.14,
+      "col": 70,
+      "row": 399,
+      "color": [
+        154,
+        110,
+        61
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 78,
+        "dark": 53,
+        "colored": 78
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Germany_right",
+      "series": "Germany",
+      "x": 2025.0,
+      "y": 58.93,
+      "col": 710,
+      "row": 285,
+      "color": [
+        154,
+        110,
+        61
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 22,
+        "dark": 13,
+        "colored": 22
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Germany_mid_1",
+      "series": "Germany",
+      "x": 1994.0,
+      "y": 33.43,
+      "col": 202,
+      "row": 383,
+      "color": [
+        154,
+        110,
+        61
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 16,
+        "dark": 7,
+        "colored": 16
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Germany_mid_2",
+      "series": "Germany",
+      "x": 2002.0,
+      "y": 35.77,
+      "col": 333,
+      "row": 374,
+      "color": [
+        154,
+        110,
+        61
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 15,
+        "dark": 8,
+        "colored": 15
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Germany_mid_3",
+      "series": "Germany",
+      "x": 2010.0,
+      "y": 39.16,
+      "col": 464,
+      "row": 360,
+      "color": [
+        154,
+        110,
+        61
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 17,
+        "dark": 6,
+        "colored": 17
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Germany_mid_4",
+      "series": "Germany",
+      "x": 2018.0,
+      "y": 47.22,
+      "col": 595,
+      "row": 330,
+      "color": [
+        154,
+        110,
+        61
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 16,
+        "dark": 10,
+        "colored": 16
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "United States_left",
+      "series": "United States",
+      "x": 1985.0,
+      "y": 27.45,
+      "col": 54,
+      "row": 405,
+      "color": [
+        31,
+        62,
+        107
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 52,
+        "dark": 39,
+        "colored": 52
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "United States_right",
+      "series": "United States",
+      "x": 2025.0,
+      "y": 43.06,
+      "col": 710,
+      "row": 346,
+      "color": [
+        31,
+        62,
+        107
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 61,
+        "dark": 45,
+        "colored": 61
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "United States_mid_1",
+      "series": "United States",
+      "x": 1993.0,
+      "y": 29.79,
+      "col": 185,
+      "row": 396,
+      "color": [
+        31,
+        62,
+        107
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 10,
+        "dark": 9,
+        "colored": 10
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "United States_mid_2",
+      "series": "United States",
+      "x": 2001.0,
+      "y": 28.23,
+      "col": 316,
+      "row": 402,
+      "color": [
+        31,
+        62,
+        107
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 14,
+        "dark": 13,
+        "colored": 14
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "United States_mid_3",
+      "series": "United States",
+      "x": 2009.0,
+      "y": 30.57,
+      "col": 448,
+      "row": 394,
+      "color": [
+        31,
+        62,
+        107
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 17,
+        "dark": 14,
+        "colored": 17
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "United States_mid_4",
+      "series": "United States",
+      "x": 2017.0,
+      "y": 37.08,
+      "col": 579,
+      "row": 368,
+      "color": [
+        31,
+        62,
+        107
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 19,
+        "dark": 16,
+        "colored": 19
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "World_left",
+      "series": "World",
+      "x": 1985.0,
+      "y": 35.77,
+      "col": 54,
+      "row": 374,
+      "color": [
+        162,
+        86,
+        159
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 22,
+        "dark": 12,
+        "colored": 22
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "World_right",
+      "series": "World",
+      "x": 2025.0,
+      "y": 42.28,
+      "col": 710,
+      "row": 349,
+      "color": [
+        162,
+        86,
+        159
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 67,
+        "dark": 49,
+        "colored": 67
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "World_mid_1",
+      "series": "World",
+      "x": 1993.0,
+      "y": 36.82,
+      "col": 185,
+      "row": 369,
+      "color": [
+        162,
+        86,
+        159
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 13,
+        "dark": 9,
+        "colored": 13
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "World_mid_2",
+      "series": "World",
+      "x": 2001.0,
+      "y": 34.73,
+      "col": 316,
+      "row": 378,
+      "color": [
+        162,
+        86,
+        159
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 14,
+        "dark": 7,
+        "colored": 14
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "World_mid_3",
+      "series": "World",
+      "x": 2009.0,
+      "y": 32.65,
+      "col": 448,
+      "row": 386,
+      "color": [
+        162,
+        86,
+        159
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 13,
+        "dark": 10,
+        "colored": 13
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "World_mid_4",
+      "series": "World",
+      "x": 2017.0,
+      "y": 34.47,
+      "col": 579,
+      "row": 379,
+      "color": [
+        162,
+        86,
+        159
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 14,
+        "dark": 8,
+        "colored": 14
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "China_left",
+      "series": "China",
+      "x": 1985.0,
+      "y": 22.63,
+      "col": 54,
+      "row": 424,
+      "color": [
+        87,
+        122,
+        153
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 37,
+        "dark": 22,
+        "colored": 37
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "China_right",
+      "series": "China",
+      "x": 2025.0,
+      "y": 41.37,
+      "col": 710,
+      "row": 352,
+      "color": [
+        87,
+        122,
+        153
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 71,
+        "dark": 51,
+        "colored": 71
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "China_mid_1",
+      "series": "China",
+      "x": 1993.0,
+      "y": 18.86,
+      "col": 185,
+      "row": 439,
+      "color": [
+        87,
+        122,
+        153
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 16,
+        "dark": 11,
+        "colored": 16
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "China_mid_2",
+      "series": "China",
+      "x": 2001.0,
+      "y": 19.9,
+      "col": 316,
+      "row": 435,
+      "color": [
+        87,
+        122,
+        153
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 17,
+        "dark": 10,
+        "colored": 17
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "China_mid_3",
+      "series": "China",
+      "x": 2009.0,
+      "y": 19.9,
+      "col": 448,
+      "row": 435,
+      "color": [
+        87,
+        122,
+        153
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 15,
+        "dark": 10,
+        "colored": 15
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "China_mid_4",
+      "series": "China",
+      "x": 2017.0,
+      "y": 29.01,
+      "col": 579,
+      "row": 399,
+      "color": [
+        87,
+        122,
+        153
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 14,
+        "dark": 9,
+        "colored": 14
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "India_left",
+      "series": "India",
+      "x": 1985.0,
+      "y": 29.92,
+      "col": 54,
+      "row": 396,
+      "color": [
+        47,
+        130,
+        103
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 46,
+        "dark": 33,
+        "colored": 46
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "India_right",
+      "series": "India",
+      "x": 2025.0,
+      "y": 26.15,
+      "col": 710,
+      "row": 410,
+      "color": [
+        47,
+        130,
+        103
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 29,
+        "dark": 20,
+        "colored": 29
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "India_mid_1",
+      "series": "India",
+      "x": 1993.0,
+      "y": 21.46,
+      "col": 185,
+      "row": 429,
+      "color": [
+        47,
+        130,
+        103
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 15,
+        "dark": 10,
+        "colored": 15
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "India_mid_2",
+      "series": "India",
+      "x": 2001.0,
+      "y": 16.0,
+      "col": 316,
+      "row": 449,
+      "color": [
+        47,
+        130,
+        103
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 15,
+        "dark": 9,
+        "colored": 15
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "India_mid_3",
+      "series": "India",
+      "x": 2009.0,
+      "y": 17.04,
+      "col": 448,
+      "row": 445,
+      "color": [
+        47,
+        130,
+        103
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 14,
+        "dark": 10,
+        "colored": 14
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "India_mid_4",
+      "series": "India",
+      "x": 2017.0,
+      "y": 17.82,
+      "col": 579,
+      "row": 442,
+      "color": [
+        47,
+        130,
+        103
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 16,
+        "dark": 10,
+        "colored": 16
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "chart_id": "share-of-individuals-using-the-internet",
+  "source": "Our World in Data",
+  "source_url": "https://ourworldindata.org/grapher/share-of-individuals-using-the-internet",
+  "csv_url": "https://ourworldindata.org/grapher/share-of-individuals-using-the-internet.csv?csvType=filtered&tab=chart",
+  "image_url": "https://ourworldindata.org/grapher/share-of-individuals-using-the-internet.png?tab=chart",
+  "chart_type": "multi-series line, percent y, time series",
+  "feature_stressed": "percent y-axis ticks (0%, 20%, ...); 8 regional series",
+  "x_axis_title": "Year",
+  "x_axis_unit": null,
+  "y_axis_title": "Share of population using the internet",
+  "y_axis_unit": "%",
+  "x_scale": "linear",
+  "y_scale": "linear",
+  "n_gt_rows": 168,
+  "series": [
+    "East Asia and Pacific (WB)",
+    "Europe and Central Asia (WB)",
+    "Latin America and Caribbean (WB)",
+    "Middle East, North Africa, Afghanistan and Pakistan (WB)",
+    "North America (WB)",
+    "South Asia (WB)",
+    "Sub-Saharan Africa (WB)",
+    "World"
+  ]
+}

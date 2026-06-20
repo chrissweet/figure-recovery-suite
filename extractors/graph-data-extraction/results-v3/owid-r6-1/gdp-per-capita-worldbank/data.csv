@@ -1,0 +1,351 @@
+series,x,y
+United States,1990,44221
+United States,1991,43624
+United States,1992,44618
+United States,1993,45215
+United States,1994,46408
+United States,1995,47204
+United States,1996,48397
+United States,1997,49988
+United States,1998,51579
+United States,1999,53369
+United States,2000,54960
+United States,2001,54960
+United States,2002,55357
+United States,2003,56352
+United States,2004,58142
+United States,2005,59534
+United States,2006,60528
+United States,2007,61125
+United States,2008,60727
+United States,2009,58738
+United States,2010,59733
+United States,2011,60130
+United States,2012,61025
+United States,2013,61920
+United States,2014,62914
+United States,2015,64307
+United States,2016,64903
+United States,2017,66096
+United States,2018,67687
+United States,2019,68881
+United States,2020,67489
+United States,2021,71267
+United States,2022,72659
+United States,2023,74051
+United States,2024,75344
+Germany,1990,42431
+Germany,1991,44221
+Germany,1992,44419
+Germany,1993,43922
+Germany,1994,44817
+Germany,1995,45414
+Germany,1996,45812
+Germany,1997,46607
+Germany,1998,47601
+Germany,1999,48397
+Germany,2000,49789
+Germany,2001,50485
+Germany,2002,50386
+Germany,2003,50087
+Germany,2004,50584
+Germany,2005,51181
+Germany,2006,53170
+Germany,2007,54761
+Germany,2008,55258
+Germany,2009,52573
+Germany,2010,54761
+Germany,2011,57744
+Germany,2012,57943
+Germany,2013,57943
+Germany,2014,59036
+Germany,2015,59534
+Germany,2016,60329
+Germany,2017,61721
+Germany,2018,62318
+Germany,2019,62716
+Germany,2020,60329
+Germany,2021,62517
+Germany,2022,63511
+Germany,2023,62914
+Germany,2024,62517
+South Korea,1990,14390
+South Korea,1991,15782
+South Korea,1992,16577
+South Korea,1993,17572
+South Korea,1994,18964
+South Korea,1995,20555
+South Korea,1996,22146
+South Korea,1997,23140
+South Korea,1998,22046
+South Korea,1999,24333
+South Korea,2000,26322
+South Korea,2001,27316
+South Korea,2002,29305
+South Korea,2003,30101
+South Korea,2004,31493
+South Korea,2005,32885
+South Korea,2006,34376
+South Korea,2007,36067
+South Korea,2008,37061
+South Korea,2009,37061
+South Korea,2010,39448
+South Korea,2011,40641
+South Korea,2012,41436
+South Korea,2013,42630
+South Korea,2014,43723
+South Korea,2015,44817
+South Korea,2016,46010
+South Korea,2017,47402
+South Korea,2018,48795
+South Korea,2019,49690
+South Korea,2020,49391
+South Korea,2021,51579
+South Korea,2022,53369
+South Korea,2023,53965
+South Korea,2024,54960
+United Kingdom,1990,32885
+United Kingdom,1991,32487
+United Kingdom,1992,32686
+United Kingdom,1993,33879
+United Kingdom,1994,35470
+United Kingdom,1995,36564
+United Kingdom,1996,37459
+United Kingdom,1997,39050
+United Kingdom,1998,40343
+United Kingdom,1999,41237
+United Kingdom,2000,43027
+United Kingdom,2001,43823
+United Kingdom,2002,44419
+United Kingdom,2003,45613
+United Kingdom,2004,46408
+United Kingdom,2005,47402
+United Kingdom,2006,48198
+United Kingdom,2007,49192
+United Kingdom,2008,48795
+United Kingdom,2009,46209
+United Kingdom,2010,46806
+United Kingdom,2011,46806
+United Kingdom,2012,47204
+United Kingdom,2013,47800
+United Kingdom,2014,48894
+United Kingdom,2015,49590
+United Kingdom,2016,50286
+United Kingdom,2017,51579
+United Kingdom,2018,51977
+United Kingdom,2019,52374
+United Kingdom,2020,47402
+United Kingdom,2021,50982
+United Kingdom,2022,52971
+United Kingdom,2023,52573
+United Kingdom,2024,52573
+Japan,1990,35271
+Japan,1991,36266
+Japan,1992,36465
+Japan,1993,36266
+Japan,1994,36465
+Japan,1995,37459
+Japan,1996,38453
+Japan,1997,38652
+Japan,1998,38055
+Japan,1999,37956
+Japan,2000,38851
+Japan,2001,38950
+Japan,2002,38851
+Japan,2003,39448
+Japan,2004,40243
+Japan,2005,41039
+Japan,2006,41635
+Japan,2007,42033
+Japan,2008,41635
+Japan,2009,39448
+Japan,2010,40840
+Japan,2011,41039
+Japan,2012,41635
+Japan,2013,42232
+Japan,2014,42630
+Japan,2015,43226
+Japan,2016,43624
+Japan,2017,44419
+Japan,2018,44817
+Japan,2019,44618
+Japan,2020,43027
+Japan,2021,44221
+Japan,2022,44817
+Japan,2023,45812
+Japan,2024,46010
+Russia,1990,29405
+Russia,1991,27913
+Russia,1992,23936
+Russia,1993,21748
+Russia,1994,19362
+Russia,1995,18168
+Russia,1996,17572
+Russia,1997,17771
+Russia,1998,16975
+Russia,1999,18168
+Russia,2000,19958
+Russia,2001,21151
+Russia,2002,22345
+Russia,2003,23936
+Russia,2004,25825
+Russia,2005,27714
+Russia,2006,30101
+Russia,2007,32487
+Russia,2008,34078
+Russia,2009,31692
+Russia,2010,32984
+Russia,2011,34376
+Russia,2012,35669
+Russia,2013,36067
+Russia,2014,35669
+Russia,2015,34874
+Russia,2016,34874
+Russia,2017,35470
+Russia,2018,36465
+Russia,2019,37161
+Russia,2020,36465
+Russia,2021,38453
+Russia,2022,38254
+Russia,2023,39845
+Russia,2024,41536
+China,1990,1662
+China,1991,1662
+China,1992,1911
+China,1993,2259
+China,1994,2457
+China,1995,2656
+China,1996,3054
+China,1997,3253
+China,1998,3452
+China,1999,3651
+China,2000,4048
+China,2001,4247
+China,2002,4645
+China,2003,5142
+China,2004,5639
+China,2005,6236
+China,2006,7031
+China,2007,7926
+China,2008,8622
+China,2009,9418
+China,2010,10412
+China,2011,11407
+China,2012,12202
+China,2013,12998
+China,2014,13992
+China,2015,14787
+China,2016,15682
+China,2017,16677
+China,2018,17721
+China,2019,18765
+China,2020,19163
+China,2021,20754
+China,2022,21549
+China,2023,22543
+China,2024,23737
+Brazil,1990,12600
+Brazil,1991,12401
+Brazil,1992,12202
+Brazil,1993,12600
+Brazil,1994,13196
+Brazil,1995,13395
+Brazil,1996,13594
+Brazil,1997,13793
+Brazil,1998,13594
+Brazil,1999,13594
+Brazil,2000,13893
+Brazil,2001,13992
+Brazil,2002,14191
+Brazil,2003,14191
+Brazil,2004,14787
+Brazil,2005,15185
+Brazil,2006,15583
+Brazil,2007,16378
+Brazil,2008,16975
+Brazil,2009,16876
+Brazil,2010,17969
+Brazil,2011,18566
+Brazil,2012,18765
+Brazil,2013,19163
+Brazil,2014,19063
+Brazil,2015,18268
+Brazil,2016,17572
+Brazil,2017,17572
+Brazil,2018,17771
+Brazil,2019,17969
+Brazil,2020,17273
+Brazil,2021,17969
+Brazil,2022,18566
+Brazil,2023,18964
+Brazil,2024,19560
+India,1990,2060
+India,1991,2159
+India,1992,2259
+India,1993,2159
+India,1994,2060
+India,1995,2259
+India,1996,2457
+India,1997,2656
+India,1998,2756
+India,1999,2955
+India,2000,3054
+India,2001,3054
+India,2002,3153
+India,2003,3352
+India,2004,3651
+India,2005,3850
+India,2006,4048
+India,2007,4247
+India,2008,4446
+India,2009,4645
+India,2010,5043
+India,2011,5142
+India,2012,5440
+India,2013,5639
+India,2014,6037
+India,2015,6435
+India,2016,6833
+India,2017,7230
+India,2018,7628
+India,2019,7827
+India,2020,7429
+India,2021,8026
+India,2022,8424
+India,2023,9219
+India,2024,9617
+Ethiopia,1990,767
+Ethiopia,1991,668
+Ethiopia,1992,668
+Ethiopia,1993,668
+Ethiopia,1994,668
+Ethiopia,1995,668
+Ethiopia,1996,767
+Ethiopia,1997,668
+Ethiopia,1998,668
+Ethiopia,1999,668
+Ethiopia,2000,668
+Ethiopia,2001,767
+Ethiopia,2002,767
+Ethiopia,2003,668
+Ethiopia,2004,866
+Ethiopia,2005,866
+Ethiopia,2006,966
+Ethiopia,2007,1065
+Ethiopia,2008,1065
+Ethiopia,2009,1165
+Ethiopia,2010,1264
+Ethiopia,2011,1463
+Ethiopia,2012,1463
+Ethiopia,2013,1662
+Ethiopia,2014,1761
+Ethiopia,2015,1861
+Ethiopia,2016,2060
+Ethiopia,2017,2109
+Ethiopia,2018,2259
+Ethiopia,2019,2358
+Ethiopia,2020,2457
+Ethiopia,2021,2457
+Ethiopia,2022,2656
+Ethiopia,2023,2656
+Ethiopia,2024,2855

@@ -1,0 +1,119 @@
+{
+  "image_size": {
+    "width": 850,
+    "height": 600
+  },
+  "plot_frame_box": {
+    "offset": {
+      "x": 69,
+      "y": 109
+    },
+    "size": {
+      "width": 644,
+      "height": 403
+    },
+    "left": 69,
+    "top": 109,
+    "right": 712,
+    "bottom": 511,
+    "description": "Plot frame: left edge at 1990 tick column, right edge at 2024 tick column, top at $80,000 gridline, bottom at $0 gridline."
+  },
+  "pixels_per_coordinate_unit": {
+    "x": 18.87433467970254,
+    "y": 0.005028359950118669,
+    "x_unit_label": "year",
+    "y_unit_label": "international dollars (2021)"
+  },
+  "data_to_pixel_formula": {
+    "col": "col = (x_value - 1986.3160) / 0.052982",
+    "row": "row = (y_value - 101694.5400) / -198.872000"
+  },
+  "data_range": {
+    "x_min": 1990,
+    "x_max": 2024,
+    "y_min": 0,
+    "y_max": 80000
+  },
+  "axis_calibration": {
+    "x_axis": {
+      "formula": "x_value = 0.052982 * col + 1986.3160",
+      "m": 0.052982,
+      "b": 1986.316,
+      "inverse": "col = (x_value - 1986.3160) / 0.052982",
+      "tick_pixels": [
+        164,
+        258,
+        353,
+        447,
+        541,
+        636
+      ],
+      "tick_values": [
+        1995,
+        2000,
+        2005,
+        2010,
+        2015,
+        2020
+      ],
+      "note": "Linear fit on middle 6 year-label centers (1995-2020). 1990 and 2024 labels are anchored slightly inside the axis so excluded from fit."
+    },
+    "y_axis": {
+      "formula": "y_value = -198.8720 * row + 101694.5400",
+      "m": -198.872,
+      "b": 101694.54,
+      "inverse": "row = (y_value - 101694.5400) / -198.8720",
+      "tick_pixels": [
+        109,
+        159,
+        210,
+        260,
+        310,
+        361,
+        411,
+        461,
+        511
+      ],
+      "tick_values": [
+        80000,
+        70000,
+        60000,
+        50000,
+        40000,
+        30000,
+        20000,
+        10000,
+        0
+      ]
+    }
+  },
+  "worked_example": {
+    "scenario": "Locate US GDP in 2010 in image pixel coordinates.",
+    "input": {
+      "x": 2010,
+      "y": 48374
+    },
+    "compute": [
+      "col = (2010 - 1986.3160) / 0.052982 = 447.02",
+      "row = (48374 - 101694.5400) / -198.8720 = 268.11"
+    ],
+    "result": {
+      "col": 447.02,
+      "row": 268.11
+    },
+    "verification": "Pixel (col=447, row=268) lies on the teal United States curve at year 2010 in the source image."
+  },
+  "detection_internals": {
+    "x_axis_tick_label_band": "y=523..530 (year labels under axis)",
+    "y_axis_tick_label_band": "x=0..55 (dollar labels left of axis)",
+    "horizontal_gridlines_detected_at_rows": [
+      109,
+      159,
+      261,
+      310,
+      412,
+      461
+    ],
+    "rule": "Label-text band centers were merged within 6 px to recover digit-group centers; calibration uses tick value -> label center mapping."
+  }
+}

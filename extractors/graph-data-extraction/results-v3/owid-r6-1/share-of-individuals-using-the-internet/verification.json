@@ -1,0 +1,1208 @@
+{
+  "n_artifacts": 59,
+  "summary": {
+    "pass": 52,
+    "fail": 7,
+    "by_type": {
+      "frame_box": {
+        "pass": 0,
+        "fail": 1
+      },
+      "axis_line": {
+        "pass": 0,
+        "fail": 2
+      },
+      "legend_box": {
+        "pass": 0,
+        "fail": 1
+      },
+      "tick_center": {
+        "pass": 4,
+        "fail": 3
+      },
+      "line_endpoint": {
+        "pass": 16,
+        "fail": 0
+      },
+      "line_sample": {
+        "pass": 32,
+        "fail": 0
+      }
+    }
+  },
+  "epsilon_px": {
+    "frame_box": 2,
+    "axis_line": 2,
+    "tick_center": 5,
+    "legend_box": 15,
+    "marker_centroid": 3,
+    "line_endpoint": 10,
+    "line_sample": 3,
+    "bar_top": 2,
+    "error_cap": 3
+  },
+  "results": [
+    {
+      "type": "frame_box",
+      "id": "main",
+      "left": 60,
+      "top": 16,
+      "right": 833,
+      "bottom": 512,
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "edges": {
+          "top": 0.085,
+          "bottom": 0.0,
+          "left": 0.141,
+          "right": 0.076
+        },
+        "n_good_edges": 0
+      }
+    },
+    {
+      "type": "axis_line",
+      "id": "y_axis",
+      "orientation": "vertical",
+      "fixed": 60,
+      "extent": [
+        16,
+        512
+      ],
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "axis_dark_fraction": 0.078
+      }
+    },
+    {
+      "type": "axis_line",
+      "id": "x_axis",
+      "orientation": "horizontal",
+      "fixed": 512,
+      "extent": [
+        60,
+        833
+      ],
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "axis_dark_fraction": 0.0
+      }
+    },
+    {
+      "type": "legend_box",
+      "id": "main",
+      "top": 95,
+      "bottom": 380,
+      "left": 588,
+      "right": 850,
+      "pass": false,
+      "epsilon_px": 15,
+      "info": {
+        "white_frac": 0.938,
+        "dark_frac": 0.006
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_2005",
+      "axis": "x",
+      "col": 60,
+      "row": 530,
+      "value": 2005,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 8
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_2010",
+      "axis": "x",
+      "col": 188,
+      "row": 530,
+      "value": 2010,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 17
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_2015",
+      "axis": "x",
+      "col": 315,
+      "row": 530,
+      "value": 2015,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 10
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_2020",
+      "axis": "x",
+      "col": 443,
+      "row": 530,
+      "value": 2020,
+      "pass": false,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 6
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_2025",
+      "axis": "x",
+      "col": 571,
+      "row": 530,
+      "value": 2025,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 14
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_0.0",
+      "axis": "y",
+      "col": 30,
+      "row": 510,
+      "value": 0.0,
+      "pass": false,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 6
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_100.0",
+      "axis": "y",
+      "col": 30,
+      "row": 91,
+      "value": 100.0,
+      "pass": false,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 6
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "North America (WB)_left",
+      "series": "North America (WB)",
+      "x": 2005.0,
+      "y": 68.56,
+      "col": 60,
+      "row": 223,
+      "color": [
+        109,
+        62,
+        145
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 30,
+        "dark": 22,
+        "colored": 30
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "North America (WB)_right",
+      "series": "North America (WB)",
+      "x": 2025.0,
+      "y": 94.92,
+      "col": 571,
+      "row": 112,
+      "color": [
+        109,
+        62,
+        145
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 29,
+        "dark": 19,
+        "colored": 29
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "North America (WB)_mid_1",
+      "series": "North America (WB)",
+      "x": 2009.0,
+      "y": 71.78,
+      "col": 162,
+      "row": 209,
+      "color": [
+        109,
+        62,
+        145
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 14,
+        "dark": 11,
+        "colored": 14
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "North America (WB)_mid_2",
+      "series": "North America (WB)",
+      "x": 2013.0,
+      "y": 72.74,
+      "col": 264,
+      "row": 205,
+      "color": [
+        109,
+        62,
+        145
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 15,
+        "dark": 13,
+        "colored": 15
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "North America (WB)_mid_3",
+      "series": "North America (WB)",
+      "x": 2017.0,
+      "y": 87.4,
+      "col": 367,
+      "row": 144,
+      "color": [
+        109,
+        62,
+        145
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 12,
+        "dark": 7,
+        "colored": 12
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "North America (WB)_mid_4",
+      "series": "North America (WB)",
+      "x": 2021.0,
+      "y": 91.1,
+      "col": 469,
+      "row": 128,
+      "color": [
+        109,
+        62,
+        145
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 10,
+        "dark": 6,
+        "colored": 10
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Europe and Central Asia (WB)_left",
+      "series": "Europe and Central Asia (WB)",
+      "x": 2005.0,
+      "y": 35.53,
+      "col": 60,
+      "row": 361,
+      "color": [
+        177,
+        53,
+        7
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 43,
+        "dark": 25,
+        "colored": 43
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Europe and Central Asia (WB)_right",
+      "series": "Europe and Central Asia (WB)",
+      "x": 2025.0,
+      "y": 91.58,
+      "col": 571,
+      "row": 126,
+      "color": [
+        177,
+        53,
+        7
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 39,
+        "dark": 20,
+        "colored": 39
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Europe and Central Asia (WB)_mid_1",
+      "series": "Europe and Central Asia (WB)",
+      "x": 2009.0,
+      "y": 52.82,
+      "col": 162,
+      "row": 289,
+      "color": [
+        177,
+        53,
+        7
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 19,
+        "dark": 14,
+        "colored": 19
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Europe and Central Asia (WB)_mid_2",
+      "series": "Europe and Central Asia (WB)",
+      "x": 2013.0,
+      "y": 65.94,
+      "col": 264,
+      "row": 233,
+      "color": [
+        177,
+        53,
+        7
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 17,
+        "dark": 13,
+        "colored": 17
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Europe and Central Asia (WB)_mid_3",
+      "series": "Europe and Central Asia (WB)",
+      "x": 2017.0,
+      "y": 74.05,
+      "col": 367,
+      "row": 199,
+      "color": [
+        177,
+        53,
+        7
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 15,
+        "dark": 10,
+        "colored": 15
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Europe and Central Asia (WB)_mid_4",
+      "series": "Europe and Central Asia (WB)",
+      "x": 2021.0,
+      "y": 85.38,
+      "col": 469,
+      "row": 152,
+      "color": [
+        177,
+        53,
+        7
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 14,
+        "dark": 8,
+        "colored": 14
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "East Asia and Pacific (WB)_left",
+      "series": "East Asia and Pacific (WB)",
+      "x": 2005.0,
+      "y": 15.02,
+      "col": 60,
+      "row": 447,
+      "color": [
+        76,
+        106,
+        156
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 77,
+        "dark": 45,
+        "colored": 77
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "East Asia and Pacific (WB)_right",
+      "series": "East Asia and Pacific (WB)",
+      "x": 2025.0,
+      "y": 87.52,
+      "col": 571,
+      "row": 143,
+      "color": [
+        76,
+        106,
+        156
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 27,
+        "dark": 15,
+        "colored": 27
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "East Asia and Pacific (WB)_mid_1",
+      "series": "East Asia and Pacific (WB)",
+      "x": 2009.0,
+      "y": 29.57,
+      "col": 162,
+      "row": 386,
+      "color": [
+        76,
+        106,
+        156
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 17,
+        "dark": 11,
+        "colored": 17
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "East Asia and Pacific (WB)_mid_2",
+      "series": "East Asia and Pacific (WB)",
+      "x": 2013.0,
+      "y": 42.92,
+      "col": 264,
+      "row": 330,
+      "color": [
+        76,
+        106,
+        156
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 15,
+        "dark": 12,
+        "colored": 15
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "East Asia and Pacific (WB)_mid_3",
+      "series": "East Asia and Pacific (WB)",
+      "x": 2017.0,
+      "y": 57.12,
+      "col": 367,
+      "row": 270,
+      "color": [
+        76,
+        106,
+        156
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 11,
+        "dark": 7,
+        "colored": 11
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "East Asia and Pacific (WB)_mid_4",
+      "series": "East Asia and Pacific (WB)",
+      "x": 2021.0,
+      "y": 77.27,
+      "col": 469,
+      "row": 186,
+      "color": [
+        76,
+        106,
+        156
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 12,
+        "dark": 7,
+        "colored": 12
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Latin America and Caribbean (WB)_left",
+      "series": "Latin America and Caribbean (WB)",
+      "x": 2005.0,
+      "y": 17.64,
+      "col": 60,
+      "row": 436,
+      "color": [
+        153,
+        109,
+        57
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 68,
+        "dark": 33,
+        "colored": 68
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Latin America and Caribbean (WB)_right",
+      "series": "Latin America and Caribbean (WB)",
+      "x": 2025.0,
+      "y": 82.75,
+      "col": 571,
+      "row": 163,
+      "color": [
+        153,
+        109,
+        57
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 32,
+        "dark": 12,
+        "colored": 32
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Latin America and Caribbean (WB)_mid_1",
+      "series": "Latin America and Caribbean (WB)",
+      "x": 2009.0,
+      "y": 31.12,
+      "col": 162,
+      "row": 379,
+      "color": [
+        153,
+        109,
+        57
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 15,
+        "dark": 6,
+        "colored": 15
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Latin America and Caribbean (WB)_mid_2",
+      "series": "Latin America and Caribbean (WB)",
+      "x": 2013.0,
+      "y": 45.79,
+      "col": 264,
+      "row": 318,
+      "color": [
+        153,
+        109,
+        57
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 15,
+        "dark": 8,
+        "colored": 15
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Latin America and Caribbean (WB)_mid_3",
+      "series": "Latin America and Caribbean (WB)",
+      "x": 2017.0,
+      "y": 59.62,
+      "col": 367,
+      "row": 260,
+      "color": [
+        153,
+        109,
+        57
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 12,
+        "dark": 5,
+        "colored": 12
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Latin America and Caribbean (WB)_mid_4",
+      "series": "Latin America and Caribbean (WB)",
+      "x": 2021.0,
+      "y": 75.12,
+      "col": 469,
+      "row": 195,
+      "color": [
+        153,
+        109,
+        57
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 10,
+        "dark": 5,
+        "colored": 10
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "World_left",
+      "series": "World",
+      "x": 2005.0,
+      "y": 15.85,
+      "col": 60,
+      "row": 444,
+      "color": [
+        162,
+        85,
+        156
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 86,
+        "dark": 48,
+        "colored": 86
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "World_right",
+      "series": "World",
+      "x": 2025.0,
+      "y": 72.38,
+      "col": 571,
+      "row": 206,
+      "color": [
+        162,
+        85,
+        156
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 32,
+        "dark": 10,
+        "colored": 32
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "World_mid_1",
+      "series": "World",
+      "x": 2009.0,
+      "y": 25.28,
+      "col": 162,
+      "row": 404,
+      "color": [
+        162,
+        85,
+        156
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 16,
+        "dark": 7,
+        "colored": 16
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "World_mid_2",
+      "series": "World",
+      "x": 2013.0,
+      "y": 35.05,
+      "col": 264,
+      "row": 363,
+      "color": [
+        162,
+        85,
+        156
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 14,
+        "dark": 8,
+        "colored": 14
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "World_mid_3",
+      "series": "World",
+      "x": 2017.0,
+      "y": 45.79,
+      "col": 367,
+      "row": 318,
+      "color": [
+        162,
+        85,
+        156
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 11,
+        "dark": 5,
+        "colored": 11
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "World_mid_4",
+      "series": "World",
+      "x": 2021.0,
+      "y": 62.6,
+      "col": 469,
+      "row": 248,
+      "color": [
+        162,
+        85,
+        156
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 11,
+        "dark": 4,
+        "colored": 11
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "South Asia (WB)_left",
+      "series": "South Asia (WB)",
+      "x": 2005.0,
+      "y": 2.02,
+      "col": 60,
+      "row": 502,
+      "color": [
+        136,
+        48,
+        57
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 29,
+        "dark": 22,
+        "colored": 28
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "South Asia (WB)_right",
+      "series": "South Asia (WB)",
+      "x": 2025.0,
+      "y": 65.46,
+      "col": 571,
+      "row": 236,
+      "color": [
+        136,
+        48,
+        57
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 46,
+        "dark": 34,
+        "colored": 46
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "South Asia (WB)_mid_1",
+      "series": "South Asia (WB)",
+      "x": 2009.0,
+      "y": 4.76,
+      "col": 162,
+      "row": 490,
+      "color": [
+        136,
+        48,
+        57
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 24,
+        "dark": 19,
+        "colored": 24
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "South Asia (WB)_mid_2",
+      "series": "South Asia (WB)",
+      "x": 2013.0,
+      "y": 11.44,
+      "col": 264,
+      "row": 462,
+      "color": [
+        136,
+        48,
+        57
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 23,
+        "dark": 18,
+        "colored": 23
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "South Asia (WB)_mid_3",
+      "series": "South Asia (WB)",
+      "x": 2017.0,
+      "y": 18.24,
+      "col": 367,
+      "row": 433,
+      "color": [
+        136,
+        48,
+        57
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 15,
+        "dark": 11,
+        "colored": 15
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "South Asia (WB)_mid_4",
+      "series": "South Asia (WB)",
+      "x": 2021.0,
+      "y": 46.26,
+      "col": 469,
+      "row": 316,
+      "color": [
+        136,
+        48,
+        57
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 12,
+        "dark": 9,
+        "colored": 12
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "MENA, Afghanistan and Pakistan (WB)_left",
+      "series": "MENA, Afghanistan and Pakistan (WB)",
+      "x": 2005.0,
+      "y": 8.46,
+      "col": 60,
+      "row": 475,
+      "color": [
+        44,
+        132,
+        101
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 30,
+        "dark": 17,
+        "colored": 30
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "MENA, Afghanistan and Pakistan (WB)_right",
+      "series": "MENA, Afghanistan and Pakistan (WB)",
+      "x": 2025.0,
+      "y": 62.6,
+      "col": 571,
+      "row": 248,
+      "color": [
+        44,
+        132,
+        101
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 52,
+        "dark": 29,
+        "colored": 52
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "MENA, Afghanistan and Pakistan (WB)_mid_1",
+      "series": "MENA, Afghanistan and Pakistan (WB)",
+      "x": 2009.0,
+      "y": 15.97,
+      "col": 162,
+      "row": 443,
+      "color": [
+        44,
+        132,
+        101
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 13,
+        "dark": 10,
+        "colored": 13
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "MENA, Afghanistan and Pakistan (WB)_mid_2",
+      "series": "MENA, Afghanistan and Pakistan (WB)",
+      "x": 2013.0,
+      "y": 24.92,
+      "col": 264,
+      "row": 405,
+      "color": [
+        44,
+        132,
+        101
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 15,
+        "dark": 11,
+        "colored": 15
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "MENA, Afghanistan and Pakistan (WB)_mid_3",
+      "series": "MENA, Afghanistan and Pakistan (WB)",
+      "x": 2017.0,
+      "y": 38.87,
+      "col": 367,
+      "row": 347,
+      "color": [
+        44,
+        132,
+        101
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 14,
+        "dark": 8,
+        "colored": 14
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "MENA, Afghanistan and Pakistan (WB)_mid_4",
+      "series": "MENA, Afghanistan and Pakistan (WB)",
+      "x": 2021.0,
+      "y": 53.06,
+      "col": 469,
+      "row": 288,
+      "color": [
+        44,
+        132,
+        101
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 12,
+        "dark": 6,
+        "colored": 12
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Sub-Saharan Africa (WB)_left",
+      "series": "Sub-Saharan Africa (WB)",
+      "x": 2005.0,
+      "y": 2.86,
+      "col": 60,
+      "row": 498,
+      "color": [
+        0,
+        41,
+        91
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 29,
+        "dark": 22,
+        "colored": 28
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Sub-Saharan Africa (WB)_right",
+      "series": "Sub-Saharan Africa (WB)",
+      "x": 2025.0,
+      "y": 34.58,
+      "col": 571,
+      "row": 365,
+      "color": [
+        0,
+        41,
+        91
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 28,
+        "dark": 28,
+        "colored": 28
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Sub-Saharan Africa (WB)_mid_1",
+      "series": "Sub-Saharan Africa (WB)",
+      "x": 2009.0,
+      "y": 4.17,
+      "col": 162,
+      "row": 492,
+      "color": [
+        0,
+        41,
+        91
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 29,
+        "dark": 24,
+        "colored": 29
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Sub-Saharan Africa (WB)_mid_2",
+      "series": "Sub-Saharan Africa (WB)",
+      "x": 2013.0,
+      "y": 10.85,
+      "col": 264,
+      "row": 464,
+      "color": [
+        0,
+        41,
+        91
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 29,
+        "dark": 24,
+        "colored": 29
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Sub-Saharan Africa (WB)_mid_3",
+      "series": "Sub-Saharan Africa (WB)",
+      "x": 2017.0,
+      "y": 19.55,
+      "col": 367,
+      "row": 428,
+      "color": [
+        0,
+        41,
+        91
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 13,
+        "dark": 12,
+        "colored": 13
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Sub-Saharan Africa (WB)_mid_4",
+      "series": "Sub-Saharan Africa (WB)",
+      "x": 2021.0,
+      "y": 28.14,
+      "col": 469,
+      "row": 392,
+      "color": [
+        0,
+        41,
+        91
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 11,
+        "dark": 9,
+        "colored": 11
+      }
+    }
+  ]
+}

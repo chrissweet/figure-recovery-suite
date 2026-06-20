@@ -1,0 +1,121 @@
+layer_idx,layer_type,series,x,y
+0,Scatter Plot,Africa,1018.9,60.42
+0,Scatter Plot,Africa,1081.4,63.02
+0,Scatter Plot,Africa,1202.9,66.01
+0,Scatter Plot,Africa,1223.5,68.13
+0,Scatter Plot,Africa,1265.9,67.16
+0,Scatter Plot,Africa,1265.9,20.15
+0,Scatter Plot,Africa,1309.7,68.13
+0,Scatter Plot,Africa,1402.1,62.73
+0,Scatter Plot,Africa,1402.1,54.45
+0,Scatter Plot,Africa,1593.0,62.35
+0,Scatter Plot,Africa,1634.2,63.5
+0,Scatter Plot,Africa,1662.3,60.03
+0,Scatter Plot,Africa,1690.8,62.15
+0,Scatter Plot,Africa,1749.4,61.19
+0,Scatter Plot,Africa,1810.0,62.15
+0,Scatter Plot,Africa,1825.5,60.23
+0,Scatter Plot,Africa,1921.1,66.39
+0,Scatter Plot,Africa,2021.8,64.85
+0,Scatter Plot,Africa,2336.6,69.09
+0,Scatter Plot,Africa,2336.6,56.76
+0,Scatter Plot,Africa,2501.3,60.42
+0,Scatter Plot,Africa,2587.9,69.28
+0,Scatter Plot,Africa,2677.6,67.74
+0,Scatter Plot,Africa,2842.0,62.35
+0,Scatter Plot,Africa,3042.3,58.3
+0,Scatter Plot,Africa,3068.3,66.78
+0,Scatter Plot,Africa,3147.7,68.9
+0,Scatter Plot,Africa,3355.2,65.24
+0,Scatter Plot,Africa,3427.4,63.5
+0,Scatter Plot,Africa,3486.2,65.24
+0,Scatter Plot,Africa,3700.3,68.32
+0,Scatter Plot,Africa,3763.8,69.28
+0,Scatter Plot,Africa,4029.1,61.58
+0,Scatter Plot,Africa,4424.6,64.66
+0,Scatter Plot,Africa,5113.6,54.06
+0,Scatter Plot,Africa,5201.4,57.24
+0,Scatter Plot,Africa,5473.9,55.99
+0,Scatter Plot,Africa,6166.8,64.27
+0,Scatter Plot,Africa,7249.4,75.84
+0,Scatter Plot,Africa,8029.1,64.08
+0,Scatter Plot,Africa,8522.1,74.68
+0,Scatter Plot,Africa,8595.0,62.92
+0,Scatter Plot,Africa,11001.8,76.03
+0,Scatter Plot,Africa,11480.1,65.43
+0,Scatter Plot,Africa,12714.9,74.49
+0,Scatter Plot,Africa,13611.0,76.03
+0,Scatter Plot,Africa,14082.4,67.55
+0,Scatter Plot,Africa,15730.4,67.74
+0,Scatter Plot,Africa,16137.3,77.57
+0,Scatter Plot,Africa,16414.4,68.71
+0,Scatter Plot,Africa,17873.0,67.36
+0,Scatter Plot,Africa,22877.7,63.31
+0,Scatter Plot,Africa,29283.9,65.04
+0,Scatter Plot,Africa,31347.7,71.21
+0,Scatter Plot,Africa,35315.4,64.27
+0,Scatter Plot,Africa,42589.3,64.08
+0,Scatter Plot,Africa,51800.5,64.37
+0,Scatter Plot,Asia,1366.7,65.62
+0,Scatter Plot,Asia,1579.5,73.52
+0,Scatter Plot,Asia,1606.6,75.64
+0,Scatter Plot,Asia,1690.8,74.49
+0,Scatter Plot,Asia,1970.8,67.94
+0,Scatter Plot,Asia,2501.3,72.75
+0,Scatter Plot,Asia,3042.3,70.15
+0,Scatter Plot,Asia,3961.0,70.44
+0,Scatter Plot,Asia,4817.7,76.61
+0,Scatter Plot,Asia,4942.4,74.29
+0,Scatter Plot,Asia,5427.5,71.5
+0,Scatter Plot,Asia,5450.7,67.16
+0,Scatter Plot,Asia,5663.5,69.86
+0,Scatter Plot,Asia,7842.4,71.55
+0,Scatter Plot,Asia,10365.3,77.96
+0,Scatter Plot,Asia,10816.0,77.18
+0,Scatter Plot,Asia,12792.0,70.94
+0,Scatter Plot,Asia,13903.8,74.68
+0,Scatter Plot,Asia,16554.7,75.26
+0,Scatter Plot,Asia,17274.6,69.86
+0,Scatter Plot,Asia,17571.2,76.03
+0,Scatter Plot,Asia,27547.1,77.61
+0,Scatter Plot,Asia,48390.2,77.96
+0,Scatter Plot,Asia,54053.0,77.18
+0,Scatter Plot,Asia,72197.3,78.73
+0,Scatter Plot,Europe,6726.2,71.56
+0,Scatter Plot,Europe,7826.7,72.56
+0,Scatter Plot,Europe,12185.0,76.8
+0,Scatter Plot,Europe,13043.8,78.73
+0,Scatter Plot,Europe,18809.6,74.58
+0,Scatter Plot,Europe,21046.5,75.8
+0,Scatter Plot,Europe,25338.3,79.69
+0,Scatter Plot,Europe,25554.9,72.56
+0,Scatter Plot,Europe,25993.7,74.68
+0,Scatter Plot,Europe,27589.8,76.93
+0,Scatter Plot,Europe,29534.2,76.22
+0,Scatter Plot,Europe,30298.2,78.15
+0,Scatter Plot,Europe,32433.5,79.11
+0,Scatter Plot,Europe,32710.8,77.96
+0,Scatter Plot,Europe,34719.2,74.49
+0,Scatter Plot,North America,1552.8,63.89
+0,Scatter Plot,North America,7694.6,77.57
+0,Scatter Plot,North America,9279.4,71.98
+0,Scatter Plot,North America,10543.3,72.56
+0,Scatter Plot,North America,11578.3,75.64
+0,Scatter Plot,North America,15597.1,79.3
+0,Scatter Plot,North America,23670.1,79.3
+0,Scatter Plot,North America,35617.3,79.3
+0,Scatter Plot,North America,58856.0,77.96
+0,Scatter Plot,Oceania,2074.1,74.68
+0,Scatter Plot,Oceania,6114.5,70.25
+0,Scatter Plot,Oceania,7500.5,69.09
+0,Scatter Plot,Oceania,7826.7,70.25
+0,Scatter Plot,Oceania,10190.3,76.03
+0,Scatter Plot,South America,5290.7,72.56
+0,Scatter Plot,South America,6545.4,67.36
+0,Scatter Plot,South America,7500.5,71.4
+0,Scatter Plot,South America,8779.9,72.46
+0,Scatter Plot,South America,8968.7,71.02
+0,Scatter Plot,South America,12823.6,76.8
+0,Scatter Plot,South America,14803.8,75.39
+0,Scatter Plot,South America,18335.3,75.84
+0,Scatter Plot,South America,20221.1,76.51

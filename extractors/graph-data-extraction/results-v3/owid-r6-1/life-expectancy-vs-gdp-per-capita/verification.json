@@ -1,0 +1,2515 @@
+{
+  "n_artifacts": 134,
+  "summary": {
+    "pass": 123,
+    "fail": 11,
+    "by_type": {
+      "frame_box": {
+        "pass": 0,
+        "fail": 1
+      },
+      "axis_line": {
+        "pass": 0,
+        "fail": 2
+      },
+      "legend_box": {
+        "pass": 0,
+        "fail": 1
+      },
+      "tick_center": {
+        "pass": 3,
+        "fail": 7
+      },
+      "marker_centroid": {
+        "pass": 120,
+        "fail": 0
+      }
+    }
+  },
+  "epsilon_px": {
+    "frame_box": 2,
+    "axis_line": 2,
+    "tick_center": 5,
+    "legend_box": 15,
+    "marker_centroid": 3,
+    "line_endpoint": 10,
+    "line_sample": 3,
+    "bar_top": 2,
+    "error_cap": 3
+  },
+  "results": [
+    {
+      "type": "frame_box",
+      "id": "main",
+      "left": 130,
+      "top": 152,
+      "right": 671,
+      "bottom": 464,
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "edges": {
+          "top": 0.229,
+          "bottom": 0.114,
+          "left": 0.038,
+          "right": 0.006
+        },
+        "n_good_edges": 0
+      }
+    },
+    {
+      "type": "axis_line",
+      "id": "y_axis",
+      "orientation": "vertical",
+      "fixed": 130,
+      "extent": [
+        152,
+        464
+      ],
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "axis_dark_fraction": 0.016
+      }
+    },
+    {
+      "type": "axis_line",
+      "id": "x_axis",
+      "orientation": "horizontal",
+      "fixed": 464,
+      "extent": [
+        130,
+        671
+      ],
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "axis_dark_fraction": 0.052
+      }
+    },
+    {
+      "type": "legend_box",
+      "id": "main",
+      "top": 130,
+      "bottom": 340,
+      "left": 705,
+      "right": 850,
+      "pass": false,
+      "epsilon_px": 15,
+      "info": {
+        "white_frac": 0.912,
+        "dark_frac": 0.02
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_1000",
+      "axis": "x",
+      "col": 129,
+      "row": 482,
+      "value": 1000,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 9
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_10000",
+      "axis": "x",
+      "col": 400,
+      "row": 482,
+      "value": 10000,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 16
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_100000",
+      "axis": "x",
+      "col": 670,
+      "row": 482,
+      "value": 100000,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 14
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_20",
+      "axis": "y",
+      "col": 100,
+      "row": 463,
+      "value": 20,
+      "pass": false,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 0
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_30",
+      "axis": "y",
+      "col": 100,
+      "row": 411,
+      "value": 30,
+      "pass": false,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 0
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_40",
+      "axis": "y",
+      "col": 100,
+      "row": 359,
+      "value": 40,
+      "pass": false,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 0
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_50",
+      "axis": "y",
+      "col": 100,
+      "row": 307,
+      "value": 50,
+      "pass": false,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 0
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_60",
+      "axis": "y",
+      "col": 100,
+      "row": 255,
+      "value": 60,
+      "pass": false,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 0
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_70",
+      "axis": "y",
+      "col": 100,
+      "row": 203,
+      "value": 70,
+      "pass": false,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 0
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_80",
+      "axis": "y",
+      "col": 100,
+      "row": 151,
+      "value": 80,
+      "pass": false,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 0
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_1018.9_60.42",
+      "series": "Africa",
+      "x": 1018.9,
+      "y": 60.42,
+      "col": 132,
+      "row": 253,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 19
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_1081.4_63.02",
+      "series": "Africa",
+      "x": 1081.4,
+      "y": 63.02,
+      "col": 138,
+      "row": 240,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 30
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_1202.9_66.01",
+      "series": "Africa",
+      "x": 1202.9,
+      "y": 66.01,
+      "col": 151,
+      "row": 224,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 14
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_1223.5_68.13",
+      "series": "Africa",
+      "x": 1223.5,
+      "y": 68.13,
+      "col": 153,
+      "row": 213,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 11
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_1265.9_67.16",
+      "series": "Africa",
+      "x": 1265.9,
+      "y": 67.16,
+      "col": 157,
+      "row": 218,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 16
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_1265.9_20.15",
+      "series": "Africa",
+      "x": 1265.9,
+      "y": 20.15,
+      "col": 157,
+      "row": 462,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 20
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_1309.7_68.13",
+      "series": "Africa",
+      "x": 1309.7,
+      "y": 68.13,
+      "col": 161,
+      "row": 213,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 12
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_1402.1_62.73",
+      "series": "Africa",
+      "x": 1402.1,
+      "y": 62.73,
+      "col": 169,
+      "row": 241,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 13
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_1402.1_54.45",
+      "series": "Africa",
+      "x": 1402.1,
+      "y": 54.45,
+      "col": 169,
+      "row": 284,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 14
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_1593.0_62.35",
+      "series": "Africa",
+      "x": 1593.0,
+      "y": 62.35,
+      "col": 184,
+      "row": 243,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 10
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_1634.2_63.5",
+      "series": "Africa",
+      "x": 1634.2,
+      "y": 63.5,
+      "col": 187,
+      "row": 237,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 18
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_1662.3_60.03",
+      "series": "Africa",
+      "x": 1662.3,
+      "y": 60.03,
+      "col": 189,
+      "row": 255,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_1690.8_62.15",
+      "series": "Africa",
+      "x": 1690.8,
+      "y": 62.15,
+      "col": 191,
+      "row": 244,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 14
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_1749.4_61.19",
+      "series": "Africa",
+      "x": 1749.4,
+      "y": 61.19,
+      "col": 195,
+      "row": 249,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 26
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_1810.0_62.15",
+      "series": "Africa",
+      "x": 1810.0,
+      "y": 62.15,
+      "col": 199,
+      "row": 244,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 16
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_1825.5_60.23",
+      "series": "Africa",
+      "x": 1825.5,
+      "y": 60.23,
+      "col": 200,
+      "row": 254,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 14
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_1921.1_66.39",
+      "series": "Africa",
+      "x": 1921.1,
+      "y": 66.39,
+      "col": 206,
+      "row": 222,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 8
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_2021.8_64.85",
+      "series": "Africa",
+      "x": 2021.8,
+      "y": 64.85,
+      "col": 212,
+      "row": 230,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 8
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_2336.6_69.09",
+      "series": "Africa",
+      "x": 2336.6,
+      "y": 69.09,
+      "col": 229,
+      "row": 208,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 17
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_2336.6_56.76",
+      "series": "Africa",
+      "x": 2336.6,
+      "y": 56.76,
+      "col": 229,
+      "row": 272,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 12
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_2501.3_60.42",
+      "series": "Africa",
+      "x": 2501.3,
+      "y": 60.42,
+      "col": 237,
+      "row": 253,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 8
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_2587.9_69.28",
+      "series": "Africa",
+      "x": 2587.9,
+      "y": 69.28,
+      "col": 241,
+      "row": 207,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 29
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_2677.6_67.74",
+      "series": "Africa",
+      "x": 2677.6,
+      "y": 67.74,
+      "col": 245,
+      "row": 215,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 12
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_2842.0_62.35",
+      "series": "Africa",
+      "x": 2842.0,
+      "y": 62.35,
+      "col": 252,
+      "row": 243,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_3042.3_58.3",
+      "series": "Africa",
+      "x": 3042.3,
+      "y": 58.3,
+      "col": 260,
+      "row": 264,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_3068.3_66.78",
+      "series": "Africa",
+      "x": 3068.3,
+      "y": 66.78,
+      "col": 261,
+      "row": 220,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 51
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_3147.7_68.9",
+      "series": "Africa",
+      "x": 3147.7,
+      "y": 68.9,
+      "col": 264,
+      "row": 209,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 29
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_3355.2_65.24",
+      "series": "Africa",
+      "x": 3355.2,
+      "y": 65.24,
+      "col": 272,
+      "row": 228,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 20
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_3427.4_63.5",
+      "series": "Africa",
+      "x": 3427.4,
+      "y": 63.5,
+      "col": 274,
+      "row": 237,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 43
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_3486.2_65.24",
+      "series": "Africa",
+      "x": 3486.2,
+      "y": 65.24,
+      "col": 276,
+      "row": 228,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 33
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_3700.3_68.32",
+      "series": "Africa",
+      "x": 3700.3,
+      "y": 68.32,
+      "col": 283,
+      "row": 212,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 12
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_3763.8_69.28",
+      "series": "Africa",
+      "x": 3763.8,
+      "y": 69.28,
+      "col": 285,
+      "row": 207,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 16
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_4029.1_61.58",
+      "series": "Africa",
+      "x": 4029.1,
+      "y": 61.58,
+      "col": 293,
+      "row": 247,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 20
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_4424.6_64.66",
+      "series": "Africa",
+      "x": 4424.6,
+      "y": 64.66,
+      "col": 304,
+      "row": 231,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 25
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_5113.6_54.06",
+      "series": "Africa",
+      "x": 5113.6,
+      "y": 54.06,
+      "col": 321,
+      "row": 286,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 116
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_5201.4_57.24",
+      "series": "Africa",
+      "x": 5201.4,
+      "y": 57.24,
+      "col": 323,
+      "row": 270,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 16
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_5473.9_55.99",
+      "series": "Africa",
+      "x": 5473.9,
+      "y": 55.99,
+      "col": 329,
+      "row": 276,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 26
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_6166.8_64.27",
+      "series": "Africa",
+      "x": 6166.8,
+      "y": 64.27,
+      "col": 343,
+      "row": 233,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 26
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_7249.4_75.84",
+      "series": "Africa",
+      "x": 7249.4,
+      "y": 75.84,
+      "col": 362,
+      "row": 173,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 15
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_8029.1_64.08",
+      "series": "Africa",
+      "x": 8029.1,
+      "y": 64.08,
+      "col": 374,
+      "row": 234,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 8
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_8522.1_74.68",
+      "series": "Africa",
+      "x": 8522.1,
+      "y": 74.68,
+      "col": 381,
+      "row": 179,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 58
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_8595.0_62.92",
+      "series": "Africa",
+      "x": 8595.0,
+      "y": 62.92,
+      "col": 382,
+      "row": 240,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 8
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_11001.8_76.03",
+      "series": "Africa",
+      "x": 11001.8,
+      "y": 76.03,
+      "col": 411,
+      "row": 172,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 20
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_11480.1_65.43",
+      "series": "Africa",
+      "x": 11480.1,
+      "y": 65.43,
+      "col": 416,
+      "row": 227,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 51
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_12714.9_74.49",
+      "series": "Africa",
+      "x": 12714.9,
+      "y": 74.49,
+      "col": 428,
+      "row": 180,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 19
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_13611.0_76.03",
+      "series": "Africa",
+      "x": 13611.0,
+      "y": 76.03,
+      "col": 436,
+      "row": 172,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 56
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_14082.4_67.55",
+      "series": "Africa",
+      "x": 14082.4,
+      "y": 67.55,
+      "col": 440,
+      "row": 216,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 31
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_15730.4_67.74",
+      "series": "Africa",
+      "x": 15730.4,
+      "y": 67.74,
+      "col": 453,
+      "row": 215,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_16137.3_77.57",
+      "series": "Africa",
+      "x": 16137.3,
+      "y": 77.57,
+      "col": 456,
+      "row": 164,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 29
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_16414.4_68.71",
+      "series": "Africa",
+      "x": 16414.4,
+      "y": 68.71,
+      "col": 458,
+      "row": 210,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 18
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_17873.0_67.36",
+      "series": "Africa",
+      "x": 17873.0,
+      "y": 67.36,
+      "col": 468,
+      "row": 217,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 20
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_22877.7_63.31",
+      "series": "Africa",
+      "x": 22877.7,
+      "y": 63.31,
+      "col": 497,
+      "row": 238,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 12
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_29283.9_65.04",
+      "series": "Africa",
+      "x": 29283.9,
+      "y": 65.04,
+      "col": 526,
+      "row": 229,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_31347.7_71.21",
+      "series": "Africa",
+      "x": 31347.7,
+      "y": 71.21,
+      "col": 534,
+      "row": 197,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 8
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_35315.4_64.27",
+      "series": "Africa",
+      "x": 35315.4,
+      "y": 64.27,
+      "col": 548,
+      "row": 233,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_42589.3_64.08",
+      "series": "Africa",
+      "x": 42589.3,
+      "y": 64.08,
+      "col": 570,
+      "row": 234,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 25
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Africa_51800.5_64.37",
+      "series": "Africa",
+      "x": 51800.5,
+      "y": 64.37,
+      "col": 593,
+      "row": 233,
+      "color": [
+        181,
+        119,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 9
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Asia_1366.7_65.62",
+      "series": "Asia",
+      "x": 1366.7,
+      "y": 65.62,
+      "col": 166,
+      "row": 226,
+      "color": [
+        51,
+        157,
+        152
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 32
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Asia_1579.5_73.52",
+      "series": "Asia",
+      "x": 1579.5,
+      "y": 73.52,
+      "col": 183,
+      "row": 185,
+      "color": [
+        51,
+        157,
+        152
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Asia_1606.6_75.64",
+      "series": "Asia",
+      "x": 1606.6,
+      "y": 75.64,
+      "col": 185,
+      "row": 174,
+      "color": [
+        51,
+        157,
+        152
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 27
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Asia_1690.8_74.49",
+      "series": "Asia",
+      "x": 1690.8,
+      "y": 74.49,
+      "col": 191,
+      "row": 180,
+      "color": [
+        51,
+        157,
+        152
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 32
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Asia_1970.8_67.94",
+      "series": "Asia",
+      "x": 1970.8,
+      "y": 67.94,
+      "col": 209,
+      "row": 214,
+      "color": [
+        51,
+        157,
+        152
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 34
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Asia_2501.3_72.75",
+      "series": "Asia",
+      "x": 2501.3,
+      "y": 72.75,
+      "col": 237,
+      "row": 189,
+      "color": [
+        51,
+        157,
+        152
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 20
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Asia_3042.3_70.15",
+      "series": "Asia",
+      "x": 3042.3,
+      "y": 70.15,
+      "col": 260,
+      "row": 203,
+      "color": [
+        51,
+        157,
+        152
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 28
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Asia_3961.0_70.44",
+      "series": "Asia",
+      "x": 3961.0,
+      "y": 70.44,
+      "col": 291,
+      "row": 201,
+      "color": [
+        51,
+        157,
+        152
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 17
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Asia_4817.7_76.61",
+      "series": "Asia",
+      "x": 4817.7,
+      "y": 76.61,
+      "col": 314,
+      "row": 169,
+      "color": [
+        51,
+        157,
+        152
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 18
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Asia_4942.4_74.29",
+      "series": "Asia",
+      "x": 4942.4,
+      "y": 74.29,
+      "col": 317,
+      "row": 181,
+      "color": [
+        51,
+        157,
+        152
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 104
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Asia_5427.5_71.5",
+      "series": "Asia",
+      "x": 5427.5,
+      "y": 71.5,
+      "col": 328,
+      "row": 195,
+      "color": [
+        51,
+        157,
+        152
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 46
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Asia_5450.7_67.16",
+      "series": "Asia",
+      "x": 5450.7,
+      "y": 67.16,
+      "col": 329,
+      "row": 218,
+      "color": [
+        51,
+        157,
+        152
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 121
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Asia_5663.5_69.86",
+      "series": "Asia",
+      "x": 5663.5,
+      "y": 69.86,
+      "col": 333,
+      "row": 204,
+      "color": [
+        51,
+        157,
+        152
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 36
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Asia_7842.4_71.55",
+      "series": "Asia",
+      "x": 7842.4,
+      "y": 71.55,
+      "col": 371,
+      "row": 195,
+      "color": [
+        51,
+        157,
+        152
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 96
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Asia_10365.3_77.96",
+      "series": "Asia",
+      "x": 10365.3,
+      "y": 77.96,
+      "col": 404,
+      "row": 162,
+      "color": [
+        51,
+        157,
+        152
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 30
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Asia_10816.0_77.18",
+      "series": "Asia",
+      "x": 10816.0,
+      "y": 77.18,
+      "col": 409,
+      "row": 166,
+      "color": [
+        51,
+        157,
+        152
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 30
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Asia_12792.0_70.94",
+      "series": "Asia",
+      "x": 12792.0,
+      "y": 70.94,
+      "col": 429,
+      "row": 198,
+      "color": [
+        51,
+        157,
+        152
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 111
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Asia_13903.8_74.68",
+      "series": "Asia",
+      "x": 13903.8,
+      "y": 74.68,
+      "col": 439,
+      "row": 179,
+      "color": [
+        51,
+        157,
+        152
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 66
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Asia_16554.7_75.26",
+      "series": "Asia",
+      "x": 16554.7,
+      "y": 75.26,
+      "col": 459,
+      "row": 176,
+      "color": [
+        51,
+        157,
+        152
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 68
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Asia_17274.6_69.86",
+      "series": "Asia",
+      "x": 17274.6,
+      "y": 69.86,
+      "col": 464,
+      "row": 204,
+      "color": [
+        51,
+        157,
+        152
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 17
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Asia_17571.2_76.03",
+      "series": "Asia",
+      "x": 17571.2,
+      "y": 76.03,
+      "col": 466,
+      "row": 172,
+      "color": [
+        51,
+        157,
+        152
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 74
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Asia_27547.1_77.61",
+      "series": "Asia",
+      "x": 27547.1,
+      "y": 77.61,
+      "col": 519,
+      "row": 164,
+      "color": [
+        51,
+        157,
+        152
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 69
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Asia_48390.2_77.96",
+      "series": "Asia",
+      "x": 48390.2,
+      "y": 77.96,
+      "col": 585,
+      "row": 162,
+      "color": [
+        51,
+        157,
+        152
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 16
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Asia_54053.0_77.18",
+      "series": "Asia",
+      "x": 54053.0,
+      "y": 77.18,
+      "col": 598,
+      "row": 166,
+      "color": [
+        51,
+        157,
+        152
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 53
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Asia_72197.3_78.73",
+      "series": "Asia",
+      "x": 72197.3,
+      "y": 78.73,
+      "col": 632,
+      "row": 158,
+      "color": [
+        51,
+        157,
+        152
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 16
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Europe_6726.2_71.56",
+      "series": "Europe",
+      "x": 6726.2,
+      "y": 71.56,
+      "col": 353,
+      "row": 195,
+      "color": [
+        112,
+        136,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 55
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Europe_7826.7_72.56",
+      "series": "Europe",
+      "x": 7826.7,
+      "y": 72.56,
+      "col": 371,
+      "row": 190,
+      "color": [
+        112,
+        136,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 116
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Europe_12185.0_76.8",
+      "series": "Europe",
+      "x": 12185.0,
+      "y": 76.8,
+      "col": 423,
+      "row": 168,
+      "color": [
+        112,
+        136,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 26
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Europe_13043.8_78.73",
+      "series": "Europe",
+      "x": 13043.8,
+      "y": 78.73,
+      "col": 431,
+      "row": 158,
+      "color": [
+        112,
+        136,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 8
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Europe_18809.6_74.58",
+      "series": "Europe",
+      "x": 18809.6,
+      "y": 74.58,
+      "col": 474,
+      "row": 180,
+      "color": [
+        112,
+        136,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 53
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Europe_21046.5_75.8",
+      "series": "Europe",
+      "x": 21046.5,
+      "y": 75.8,
+      "col": 487,
+      "row": 173,
+      "color": [
+        112,
+        136,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 79
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Europe_25338.3_79.69",
+      "series": "Europe",
+      "x": 25338.3,
+      "y": 79.69,
+      "col": 509,
+      "row": 153,
+      "color": [
+        112,
+        136,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 8
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Europe_25554.9_72.56",
+      "series": "Europe",
+      "x": 25554.9,
+      "y": 72.56,
+      "col": 510,
+      "row": 190,
+      "color": [
+        112,
+        136,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 106
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Europe_25993.7_74.68",
+      "series": "Europe",
+      "x": 25993.7,
+      "y": 74.68,
+      "col": 512,
+      "row": 179,
+      "color": [
+        112,
+        136,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 34
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Europe_27589.8_76.93",
+      "series": "Europe",
+      "x": 27589.8,
+      "y": 76.93,
+      "col": 519,
+      "row": 167,
+      "color": [
+        112,
+        136,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 55
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Europe_29534.2_76.22",
+      "series": "Europe",
+      "x": 29534.2,
+      "y": 76.22,
+      "col": 527,
+      "row": 171,
+      "color": [
+        112,
+        136,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 11
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Europe_30298.2_78.15",
+      "series": "Europe",
+      "x": 30298.2,
+      "y": 78.15,
+      "col": 530,
+      "row": 161,
+      "color": [
+        112,
+        136,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 8
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Europe_32433.5_79.11",
+      "series": "Europe",
+      "x": 32433.5,
+      "y": 79.11,
+      "col": 538,
+      "row": 156,
+      "color": [
+        112,
+        136,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 20
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Europe_32710.8_77.96",
+      "series": "Europe",
+      "x": 32710.8,
+      "y": 77.96,
+      "col": 539,
+      "row": 162,
+      "color": [
+        112,
+        136,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 26
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Europe_34719.2_74.49",
+      "series": "Europe",
+      "x": 34719.2,
+      "y": 74.49,
+      "col": 546,
+      "row": 180,
+      "color": [
+        112,
+        136,
+        176
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "North America_1552.8_63.89",
+      "series": "North America",
+      "x": 1552.8,
+      "y": 63.89,
+      "col": 181,
+      "row": 235,
+      "color": [
+        234,
+        139,
+        123
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 20
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "North America_7694.6_77.57",
+      "series": "North America",
+      "x": 7694.6,
+      "y": 77.57,
+      "col": 369,
+      "row": 164,
+      "color": [
+        234,
+        139,
+        123
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 25
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "North America_9279.4_71.98",
+      "series": "North America",
+      "x": 9279.4,
+      "y": 71.98,
+      "col": 391,
+      "row": 193,
+      "color": [
+        234,
+        139,
+        123
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 43
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "North America_10543.3_72.56",
+      "series": "North America",
+      "x": 10543.3,
+      "y": 72.56,
+      "col": 406,
+      "row": 190,
+      "color": [
+        234,
+        139,
+        123
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 16
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "North America_11578.3_75.64",
+      "series": "North America",
+      "x": 11578.3,
+      "y": 75.64,
+      "col": 417,
+      "row": 174,
+      "color": [
+        234,
+        139,
+        123
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 19
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "North America_15597.1_79.3",
+      "series": "North America",
+      "x": 15597.1,
+      "y": 79.3,
+      "col": 452,
+      "row": 155,
+      "color": [
+        234,
+        139,
+        123
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 16
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "North America_23670.1_79.3",
+      "series": "North America",
+      "x": 23670.1,
+      "y": 79.3,
+      "col": 501,
+      "row": 155,
+      "color": [
+        234,
+        139,
+        123
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 27
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "North America_35617.3_79.3",
+      "series": "North America",
+      "x": 35617.3,
+      "y": 79.3,
+      "col": 549,
+      "row": 155,
+      "color": [
+        234,
+        139,
+        123
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 16
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "North America_58856.0_77.96",
+      "series": "North America",
+      "x": 58856.0,
+      "y": 77.96,
+      "col": 608,
+      "row": 162,
+      "color": [
+        234,
+        139,
+        123
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 121
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Oceania_2074.1_74.68",
+      "series": "Oceania",
+      "x": 2074.1,
+      "y": 74.68,
+      "col": 215,
+      "row": 179,
+      "color": [
+        96,
+        187,
+        200
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 21
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Oceania_6114.5_70.25",
+      "series": "Oceania",
+      "x": 6114.5,
+      "y": 70.25,
+      "col": 342,
+      "row": 202,
+      "color": [
+        96,
+        187,
+        200
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 39
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Oceania_7500.5_69.09",
+      "series": "Oceania",
+      "x": 7500.5,
+      "y": 69.09,
+      "col": 366,
+      "row": 208,
+      "color": [
+        96,
+        187,
+        200
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 50
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Oceania_7826.7_70.25",
+      "series": "Oceania",
+      "x": 7826.7,
+      "y": 70.25,
+      "col": 371,
+      "row": 202,
+      "color": [
+        96,
+        187,
+        200
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 66
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Oceania_10190.3_76.03",
+      "series": "Oceania",
+      "x": 10190.3,
+      "y": 76.03,
+      "col": 402,
+      "row": 172,
+      "color": [
+        96,
+        187,
+        200
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 29
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South America_5290.7_72.56",
+      "series": "South America",
+      "x": 5290.7,
+      "y": 72.56,
+      "col": 325,
+      "row": 190,
+      "color": [
+        160,
+        89,
+        97
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 49
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South America_6545.4_67.36",
+      "series": "South America",
+      "x": 6545.4,
+      "y": 67.36,
+      "col": 350,
+      "row": 217,
+      "color": [
+        160,
+        89,
+        97
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 13
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South America_7500.5_71.4",
+      "series": "South America",
+      "x": 7500.5,
+      "y": 71.4,
+      "col": 366,
+      "row": 196,
+      "color": [
+        160,
+        89,
+        97
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 90
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South America_8779.9_72.46",
+      "series": "South America",
+      "x": 8779.9,
+      "y": 72.46,
+      "col": 385,
+      "row": 191,
+      "color": [
+        160,
+        89,
+        97
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 98
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South America_8968.7_71.02",
+      "series": "South America",
+      "x": 8968.7,
+      "y": 71.02,
+      "col": 387,
+      "row": 198,
+      "color": [
+        160,
+        89,
+        97
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 73
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South America_12823.6_76.8",
+      "series": "South America",
+      "x": 12823.6,
+      "y": 76.8,
+      "col": 429,
+      "row": 168,
+      "color": [
+        160,
+        89,
+        97
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 40
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South America_14803.8_75.39",
+      "series": "South America",
+      "x": 14803.8,
+      "y": 75.39,
+      "col": 446,
+      "row": 175,
+      "color": [
+        160,
+        89,
+        97
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 90
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South America_18335.3_75.84",
+      "series": "South America",
+      "x": 18335.3,
+      "y": 75.84,
+      "col": 471,
+      "row": 173,
+      "color": [
+        160,
+        89,
+        97
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 90
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South America_20221.1_76.51",
+      "series": "South America",
+      "x": 20221.1,
+      "y": 76.51,
+      "col": 483,
+      "row": 170,
+      "color": [
+        160,
+        89,
+        97
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 119
+      }
+    }
+  ]
+}

@@ -1,0 +1,5454 @@
+{
+  "n_artifacts": 362,
+  "summary": {
+    "pass": 357,
+    "fail": 5,
+    "by_type": {
+      "frame_box": {
+        "pass": 0,
+        "fail": 1
+      },
+      "axis_line": {
+        "pass": 0,
+        "fail": 2
+      },
+      "tick_center": {
+        "pass": 7,
+        "fail": 2
+      },
+      "marker_centroid": {
+        "pass": 350,
+        "fail": 0
+      }
+    }
+  },
+  "epsilon_px": {
+    "frame_box": 2,
+    "axis_line": 2,
+    "tick_center": 5,
+    "legend_box": 15,
+    "marker_centroid": 3,
+    "line_endpoint": 10,
+    "line_sample": 3,
+    "bar_top": 2,
+    "error_cap": 3
+  },
+  "results": [
+    {
+      "type": "frame_box",
+      "id": "main",
+      "left": 69,
+      "top": 109,
+      "right": 712,
+      "bottom": 511,
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "edges": {
+          "top": 0.0,
+          "bottom": 0.099,
+          "left": 0.153,
+          "right": 0.173
+        },
+        "n_good_edges": 0
+      }
+    },
+    {
+      "type": "axis_line",
+      "id": "y_axis",
+      "orientation": "vertical",
+      "fixed": 69,
+      "extent": [
+        109,
+        511
+      ],
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "axis_dark_fraction": 0.077
+      }
+    },
+    {
+      "type": "axis_line",
+      "id": "x_axis",
+      "orientation": "horizontal",
+      "fixed": 511,
+      "extent": [
+        69,
+        712
+      ],
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "axis_dark_fraction": 0.037
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_1990",
+      "axis": "x",
+      "col": 69,
+      "row": 529,
+      "value": 1990,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 10
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_1995",
+      "axis": "x",
+      "col": 163,
+      "row": 529,
+      "value": 1995,
+      "pass": false,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 5
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_2000",
+      "axis": "x",
+      "col": 258,
+      "row": 529,
+      "value": 2000,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 12
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_2005",
+      "axis": "x",
+      "col": 352,
+      "row": 529,
+      "value": 2005,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 15
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_2010",
+      "axis": "x",
+      "col": 447,
+      "row": 529,
+      "value": 2010,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 18
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_2015",
+      "axis": "x",
+      "col": 541,
+      "row": 529,
+      "value": 2015,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 11
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_2020",
+      "axis": "x",
+      "col": 635,
+      "row": 529,
+      "value": 2020,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 11
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_0",
+      "axis": "y",
+      "col": 39,
+      "row": 511,
+      "value": 0,
+      "pass": false,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 0
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_80000",
+      "axis": "y",
+      "col": 39,
+      "row": 109,
+      "value": 80000,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 14
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United States_1990.0_44221.0",
+      "series": "United States",
+      "x": 1990.0,
+      "y": 44221.0,
+      "col": 69,
+      "row": 288,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 17
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United States_1991.0_43624.0",
+      "series": "United States",
+      "x": 1991.0,
+      "y": 43624.0,
+      "col": 88,
+      "row": 291,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 36
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United States_1992.0_44618.0",
+      "series": "United States",
+      "x": 1992.0,
+      "y": 44618.0,
+      "col": 107,
+      "row": 287,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 30
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United States_1993.0_45215.0",
+      "series": "United States",
+      "x": 1993.0,
+      "y": 45215.0,
+      "col": 126,
+      "row": 283,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United States_1994.0_46408.0",
+      "series": "United States",
+      "x": 1994.0,
+      "y": 46408.0,
+      "col": 145,
+      "row": 278,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United States_1995.0_47204.0",
+      "series": "United States",
+      "x": 1995.0,
+      "y": 47204.0,
+      "col": 163,
+      "row": 273,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United States_1996.0_48397.0",
+      "series": "United States",
+      "x": 1996.0,
+      "y": 48397.0,
+      "col": 182,
+      "row": 267,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United States_1997.0_49988.0",
+      "series": "United States",
+      "x": 1997.0,
+      "y": 49988.0,
+      "col": 201,
+      "row": 259,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 25
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United States_1998.0_51579.0",
+      "series": "United States",
+      "x": 1998.0,
+      "y": 51579.0,
+      "col": 220,
+      "row": 251,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 25
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United States_1999.0_53369.0",
+      "series": "United States",
+      "x": 1999.0,
+      "y": 53369.0,
+      "col": 239,
+      "row": 242,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United States_2000.0_54960.0",
+      "series": "United States",
+      "x": 2000.0,
+      "y": 54960.0,
+      "col": 258,
+      "row": 234,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 19
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United States_2001.0_54960.0",
+      "series": "United States",
+      "x": 2001.0,
+      "y": 54960.0,
+      "col": 277,
+      "row": 234,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United States_2002.0_55357.0",
+      "series": "United States",
+      "x": 2002.0,
+      "y": 55357.0,
+      "col": 296,
+      "row": 233,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 24
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United States_2003.0_56352.0",
+      "series": "United States",
+      "x": 2003.0,
+      "y": 56352.0,
+      "col": 314,
+      "row": 227,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 24
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United States_2004.0_58142.0",
+      "series": "United States",
+      "x": 2004.0,
+      "y": 58142.0,
+      "col": 333,
+      "row": 218,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 26
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United States_2005.0_59534.0",
+      "series": "United States",
+      "x": 2005.0,
+      "y": 59534.0,
+      "col": 352,
+      "row": 211,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United States_2006.0_60528.0",
+      "series": "United States",
+      "x": 2006.0,
+      "y": 60528.0,
+      "col": 371,
+      "row": 207,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United States_2007.0_61125.0",
+      "series": "United States",
+      "x": 2007.0,
+      "y": 61125.0,
+      "col": 390,
+      "row": 203,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United States_2008.0_60727.0",
+      "series": "United States",
+      "x": 2008.0,
+      "y": 60727.0,
+      "col": 409,
+      "row": 205,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 25
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United States_2009.0_58738.0",
+      "series": "United States",
+      "x": 2009.0,
+      "y": 58738.0,
+      "col": 428,
+      "row": 216,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 24
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United States_2010.0_59733.0",
+      "series": "United States",
+      "x": 2010.0,
+      "y": 59733.0,
+      "col": 447,
+      "row": 210,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United States_2011.0_60130.0",
+      "series": "United States",
+      "x": 2011.0,
+      "y": 60130.0,
+      "col": 465,
+      "row": 209,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United States_2012.0_61025.0",
+      "series": "United States",
+      "x": 2012.0,
+      "y": 61025.0,
+      "col": 484,
+      "row": 204,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United States_2013.0_61920.0",
+      "series": "United States",
+      "x": 2013.0,
+      "y": 61920.0,
+      "col": 503,
+      "row": 200,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 20
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United States_2014.0_62914.0",
+      "series": "United States",
+      "x": 2014.0,
+      "y": 62914.0,
+      "col": 522,
+      "row": 195,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United States_2015.0_64307.0",
+      "series": "United States",
+      "x": 2015.0,
+      "y": 64307.0,
+      "col": 541,
+      "row": 187,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 25
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United States_2016.0_64903.0",
+      "series": "United States",
+      "x": 2016.0,
+      "y": 64903.0,
+      "col": 560,
+      "row": 185,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 24
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United States_2017.0_66096.0",
+      "series": "United States",
+      "x": 2017.0,
+      "y": 66096.0,
+      "col": 579,
+      "row": 179,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United States_2018.0_67687.0",
+      "series": "United States",
+      "x": 2018.0,
+      "y": 67687.0,
+      "col": 598,
+      "row": 171,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 24
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United States_2019.0_68881.0",
+      "series": "United States",
+      "x": 2019.0,
+      "y": 68881.0,
+      "col": 616,
+      "row": 164,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 24
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United States_2020.0_67489.0",
+      "series": "United States",
+      "x": 2020.0,
+      "y": 67489.0,
+      "col": 635,
+      "row": 171,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 24
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United States_2021.0_71267.0",
+      "series": "United States",
+      "x": 2021.0,
+      "y": 71267.0,
+      "col": 654,
+      "row": 153,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 25
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United States_2022.0_72659.0",
+      "series": "United States",
+      "x": 2022.0,
+      "y": 72659.0,
+      "col": 673,
+      "row": 146,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United States_2023.0_74051.0",
+      "series": "United States",
+      "x": 2023.0,
+      "y": 74051.0,
+      "col": 692,
+      "row": 139,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United States_2024.0_75344.0",
+      "series": "United States",
+      "x": 2024.0,
+      "y": 75344.0,
+      "col": 711,
+      "row": 132,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 17
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Germany_1990.0_42431.0",
+      "series": "Germany",
+      "x": 1990.0,
+      "y": 42431.0,
+      "col": 69,
+      "row": 297,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 21
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Germany_1991.0_44221.0",
+      "series": "Germany",
+      "x": 1991.0,
+      "y": 44221.0,
+      "col": 88,
+      "row": 288,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 36
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Germany_1992.0_44419.0",
+      "series": "Germany",
+      "x": 1992.0,
+      "y": 44419.0,
+      "col": 107,
+      "row": 288,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 30
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Germany_1993.0_43922.0",
+      "series": "Germany",
+      "x": 1993.0,
+      "y": 43922.0,
+      "col": 126,
+      "row": 290,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 30
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Germany_1994.0_44817.0",
+      "series": "Germany",
+      "x": 1994.0,
+      "y": 44817.0,
+      "col": 145,
+      "row": 286,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 24
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Germany_1995.0_45414.0",
+      "series": "Germany",
+      "x": 1995.0,
+      "y": 45414.0,
+      "col": 163,
+      "row": 282,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Germany_1996.0_45812.0",
+      "series": "Germany",
+      "x": 1996.0,
+      "y": 45812.0,
+      "col": 182,
+      "row": 280,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Germany_1997.0_46607.0",
+      "series": "Germany",
+      "x": 1997.0,
+      "y": 46607.0,
+      "col": 201,
+      "row": 276,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 24
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Germany_1998.0_47601.0",
+      "series": "Germany",
+      "x": 1998.0,
+      "y": 47601.0,
+      "col": 220,
+      "row": 272,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 24
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Germany_1999.0_48397.0",
+      "series": "Germany",
+      "x": 1999.0,
+      "y": 48397.0,
+      "col": 239,
+      "row": 267,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 24
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Germany_2000.0_49789.0",
+      "series": "Germany",
+      "x": 2000.0,
+      "y": 49789.0,
+      "col": 258,
+      "row": 260,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Germany_2001.0_50485.0",
+      "series": "Germany",
+      "x": 2001.0,
+      "y": 50485.0,
+      "col": 277,
+      "row": 257,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Germany_2002.0_50386.0",
+      "series": "Germany",
+      "x": 2002.0,
+      "y": 50386.0,
+      "col": 296,
+      "row": 257,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 20
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Germany_2003.0_50087.0",
+      "series": "Germany",
+      "x": 2003.0,
+      "y": 50087.0,
+      "col": 314,
+      "row": 259,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 24
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Germany_2004.0_50584.0",
+      "series": "Germany",
+      "x": 2004.0,
+      "y": 50584.0,
+      "col": 333,
+      "row": 257,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Germany_2005.0_51181.0",
+      "series": "Germany",
+      "x": 2005.0,
+      "y": 51181.0,
+      "col": 352,
+      "row": 254,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Germany_2006.0_53170.0",
+      "series": "Germany",
+      "x": 2006.0,
+      "y": 53170.0,
+      "col": 371,
+      "row": 243,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Germany_2007.0_54761.0",
+      "series": "Germany",
+      "x": 2007.0,
+      "y": 54761.0,
+      "col": 390,
+      "row": 235,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 20
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Germany_2008.0_55258.0",
+      "series": "Germany",
+      "x": 2008.0,
+      "y": 55258.0,
+      "col": 409,
+      "row": 233,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Germany_2009.0_52573.0",
+      "series": "Germany",
+      "x": 2009.0,
+      "y": 52573.0,
+      "col": 428,
+      "row": 247,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 25
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Germany_2010.0_54761.0",
+      "series": "Germany",
+      "x": 2010.0,
+      "y": 54761.0,
+      "col": 447,
+      "row": 235,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 28
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Germany_2011.0_57744.0",
+      "series": "Germany",
+      "x": 2011.0,
+      "y": 57744.0,
+      "col": 465,
+      "row": 220,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 24
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Germany_2012.0_57943.0",
+      "series": "Germany",
+      "x": 2012.0,
+      "y": 57943.0,
+      "col": 484,
+      "row": 219,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 17
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Germany_2013.0_57943.0",
+      "series": "Germany",
+      "x": 2013.0,
+      "y": 57943.0,
+      "col": 503,
+      "row": 219,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 21
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Germany_2014.0_59036.0",
+      "series": "Germany",
+      "x": 2014.0,
+      "y": 59036.0,
+      "col": 522,
+      "row": 214,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Germany_2015.0_59534.0",
+      "series": "Germany",
+      "x": 2015.0,
+      "y": 59534.0,
+      "col": 541,
+      "row": 211,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 21
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Germany_2016.0_60329.0",
+      "series": "Germany",
+      "x": 2016.0,
+      "y": 60329.0,
+      "col": 560,
+      "row": 208,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 25
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Germany_2017.0_61721.0",
+      "series": "Germany",
+      "x": 2017.0,
+      "y": 61721.0,
+      "col": 579,
+      "row": 201,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 21
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Germany_2018.0_62318.0",
+      "series": "Germany",
+      "x": 2018.0,
+      "y": 62318.0,
+      "col": 598,
+      "row": 197,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Germany_2019.0_62716.0",
+      "series": "Germany",
+      "x": 2019.0,
+      "y": 62716.0,
+      "col": 616,
+      "row": 195,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 25
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Germany_2020.0_60329.0",
+      "series": "Germany",
+      "x": 2020.0,
+      "y": 60329.0,
+      "col": 635,
+      "row": 208,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 27
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Germany_2021.0_62517.0",
+      "series": "Germany",
+      "x": 2021.0,
+      "y": 62517.0,
+      "col": 654,
+      "row": 196,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Germany_2022.0_63511.0",
+      "series": "Germany",
+      "x": 2022.0,
+      "y": 63511.0,
+      "col": 673,
+      "row": 192,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 19
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Germany_2023.0_62914.0",
+      "series": "Germany",
+      "x": 2023.0,
+      "y": 62914.0,
+      "col": 692,
+      "row": 195,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 25
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Germany_2024.0_62517.0",
+      "series": "Germany",
+      "x": 2024.0,
+      "y": 62517.0,
+      "col": 711,
+      "row": 196,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 18
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South Korea_1990.0_14390.0",
+      "series": "South Korea",
+      "x": 1990.0,
+      "y": 14390.0,
+      "col": 69,
+      "row": 438,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 15
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South Korea_1991.0_15782.0",
+      "series": "South Korea",
+      "x": 1991.0,
+      "y": 15782.0,
+      "col": 88,
+      "row": 431,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 21
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South Korea_1992.0_16577.0",
+      "series": "South Korea",
+      "x": 1992.0,
+      "y": 16577.0,
+      "col": 107,
+      "row": 428,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South Korea_1993.0_17572.0",
+      "series": "South Korea",
+      "x": 1993.0,
+      "y": 17572.0,
+      "col": 126,
+      "row": 422,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South Korea_1994.0_18964.0",
+      "series": "South Korea",
+      "x": 1994.0,
+      "y": 18964.0,
+      "col": 145,
+      "row": 415,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 38
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South Korea_1995.0_20555.0",
+      "series": "South Korea",
+      "x": 1995.0,
+      "y": 20555.0,
+      "col": 163,
+      "row": 407,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 21
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South Korea_1996.0_22146.0",
+      "series": "South Korea",
+      "x": 1996.0,
+      "y": 22146.0,
+      "col": 182,
+      "row": 399,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 20
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South Korea_1997.0_23140.0",
+      "series": "South Korea",
+      "x": 1997.0,
+      "y": 23140.0,
+      "col": 201,
+      "row": 395,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 17
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South Korea_1998.0_22046.0",
+      "series": "South Korea",
+      "x": 1998.0,
+      "y": 22046.0,
+      "col": 220,
+      "row": 400,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 25
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South Korea_1999.0_24333.0",
+      "series": "South Korea",
+      "x": 1999.0,
+      "y": 24333.0,
+      "col": 239,
+      "row": 389,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 24
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South Korea_2000.0_26322.0",
+      "series": "South Korea",
+      "x": 2000.0,
+      "y": 26322.0,
+      "col": 258,
+      "row": 379,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 21
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South Korea_2001.0_27316.0",
+      "series": "South Korea",
+      "x": 2001.0,
+      "y": 27316.0,
+      "col": 277,
+      "row": 374,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 25
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South Korea_2002.0_29305.0",
+      "series": "South Korea",
+      "x": 2002.0,
+      "y": 29305.0,
+      "col": 296,
+      "row": 364,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 20
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South Korea_2003.0_30101.0",
+      "series": "South Korea",
+      "x": 2003.0,
+      "y": 30101.0,
+      "col": 314,
+      "row": 359,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 24
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South Korea_2004.0_31493.0",
+      "series": "South Korea",
+      "x": 2004.0,
+      "y": 31493.0,
+      "col": 333,
+      "row": 352,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 19
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South Korea_2005.0_32885.0",
+      "series": "South Korea",
+      "x": 2005.0,
+      "y": 32885.0,
+      "col": 352,
+      "row": 345,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South Korea_2006.0_34376.0",
+      "series": "South Korea",
+      "x": 2006.0,
+      "y": 34376.0,
+      "col": 371,
+      "row": 338,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 19
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South Korea_2007.0_36067.0",
+      "series": "South Korea",
+      "x": 2007.0,
+      "y": 36067.0,
+      "col": 390,
+      "row": 329,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 21
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South Korea_2008.0_37061.0",
+      "series": "South Korea",
+      "x": 2008.0,
+      "y": 37061.0,
+      "col": 409,
+      "row": 325,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South Korea_2009.0_37061.0",
+      "series": "South Korea",
+      "x": 2009.0,
+      "y": 37061.0,
+      "col": 428,
+      "row": 325,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 21
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South Korea_2010.0_39448.0",
+      "series": "South Korea",
+      "x": 2010.0,
+      "y": 39448.0,
+      "col": 447,
+      "row": 312,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 37
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South Korea_2011.0_40641.0",
+      "series": "South Korea",
+      "x": 2011.0,
+      "y": 40641.0,
+      "col": 465,
+      "row": 306,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 32
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South Korea_2012.0_41436.0",
+      "series": "South Korea",
+      "x": 2012.0,
+      "y": 41436.0,
+      "col": 484,
+      "row": 303,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South Korea_2013.0_42630.0",
+      "series": "South Korea",
+      "x": 2013.0,
+      "y": 42630.0,
+      "col": 503,
+      "row": 296,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 33
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South Korea_2014.0_43723.0",
+      "series": "South Korea",
+      "x": 2014.0,
+      "y": 43723.0,
+      "col": 522,
+      "row": 291,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 21
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South Korea_2015.0_44817.0",
+      "series": "South Korea",
+      "x": 2015.0,
+      "y": 44817.0,
+      "col": 541,
+      "row": 286,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 19
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South Korea_2016.0_46010.0",
+      "series": "South Korea",
+      "x": 2016.0,
+      "y": 46010.0,
+      "col": 560,
+      "row": 280,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 19
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South Korea_2017.0_47402.0",
+      "series": "South Korea",
+      "x": 2017.0,
+      "y": 47402.0,
+      "col": 579,
+      "row": 273,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 21
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South Korea_2018.0_48795.0",
+      "series": "South Korea",
+      "x": 2018.0,
+      "y": 48795.0,
+      "col": 598,
+      "row": 265,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South Korea_2019.0_49690.0",
+      "series": "South Korea",
+      "x": 2019.0,
+      "y": 49690.0,
+      "col": 616,
+      "row": 261,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 20
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South Korea_2020.0_49391.0",
+      "series": "South Korea",
+      "x": 2020.0,
+      "y": 49391.0,
+      "col": 635,
+      "row": 263,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 24
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South Korea_2021.0_51579.0",
+      "series": "South Korea",
+      "x": 2021.0,
+      "y": 51579.0,
+      "col": 654,
+      "row": 251,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 39
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South Korea_2022.0_53369.0",
+      "series": "South Korea",
+      "x": 2022.0,
+      "y": 53369.0,
+      "col": 673,
+      "row": 242,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 30
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South Korea_2023.0_53965.0",
+      "series": "South Korea",
+      "x": 2023.0,
+      "y": 53965.0,
+      "col": 692,
+      "row": 240,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 20
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "South Korea_2024.0_54960.0",
+      "series": "South Korea",
+      "x": 2024.0,
+      "y": 54960.0,
+      "col": 711,
+      "row": 234,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 20
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United Kingdom_1990.0_32885.0",
+      "series": "United Kingdom",
+      "x": 1990.0,
+      "y": 32885.0,
+      "col": 69,
+      "row": 345,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 18
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United Kingdom_1991.0_32487.0",
+      "series": "United Kingdom",
+      "x": 1991.0,
+      "y": 32487.0,
+      "col": 88,
+      "row": 348,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 20
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United Kingdom_1992.0_32686.0",
+      "series": "United Kingdom",
+      "x": 1992.0,
+      "y": 32686.0,
+      "col": 107,
+      "row": 346,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United Kingdom_1993.0_33879.0",
+      "series": "United Kingdom",
+      "x": 1993.0,
+      "y": 33879.0,
+      "col": 126,
+      "row": 341,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 26
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United Kingdom_1994.0_35470.0",
+      "series": "United Kingdom",
+      "x": 1994.0,
+      "y": 35470.0,
+      "col": 145,
+      "row": 333,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 38
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United Kingdom_1995.0_36564.0",
+      "series": "United Kingdom",
+      "x": 1995.0,
+      "y": 36564.0,
+      "col": 163,
+      "row": 327,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 49
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United Kingdom_1996.0_37459.0",
+      "series": "United Kingdom",
+      "x": 1996.0,
+      "y": 37459.0,
+      "col": 182,
+      "row": 322,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 43
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United Kingdom_1997.0_39050.0",
+      "series": "United Kingdom",
+      "x": 1997.0,
+      "y": 39050.0,
+      "col": 201,
+      "row": 314,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 31
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United Kingdom_1998.0_40343.0",
+      "series": "United Kingdom",
+      "x": 1998.0,
+      "y": 40343.0,
+      "col": 220,
+      "row": 308,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 24
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United Kingdom_1999.0_41237.0",
+      "series": "United Kingdom",
+      "x": 1999.0,
+      "y": 41237.0,
+      "col": 239,
+      "row": 304,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United Kingdom_2000.0_43027.0",
+      "series": "United Kingdom",
+      "x": 2000.0,
+      "y": 43027.0,
+      "col": 258,
+      "row": 295,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 21
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United Kingdom_2001.0_43823.0",
+      "series": "United Kingdom",
+      "x": 2001.0,
+      "y": 43823.0,
+      "col": 277,
+      "row": 290,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United Kingdom_2002.0_44419.0",
+      "series": "United Kingdom",
+      "x": 2002.0,
+      "y": 44419.0,
+      "col": 296,
+      "row": 288,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 28
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United Kingdom_2003.0_45613.0",
+      "series": "United Kingdom",
+      "x": 2003.0,
+      "y": 45613.0,
+      "col": 314,
+      "row": 281,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 21
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United Kingdom_2004.0_46408.0",
+      "series": "United Kingdom",
+      "x": 2004.0,
+      "y": 46408.0,
+      "col": 333,
+      "row": 278,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 21
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United Kingdom_2005.0_47402.0",
+      "series": "United Kingdom",
+      "x": 2005.0,
+      "y": 47402.0,
+      "col": 352,
+      "row": 273,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United Kingdom_2006.0_48198.0",
+      "series": "United Kingdom",
+      "x": 2006.0,
+      "y": 48198.0,
+      "col": 371,
+      "row": 268,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 20
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United Kingdom_2007.0_49192.0",
+      "series": "United Kingdom",
+      "x": 2007.0,
+      "y": 49192.0,
+      "col": 390,
+      "row": 264,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 24
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United Kingdom_2008.0_48795.0",
+      "series": "United Kingdom",
+      "x": 2008.0,
+      "y": 48795.0,
+      "col": 409,
+      "row": 265,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United Kingdom_2009.0_46209.0",
+      "series": "United Kingdom",
+      "x": 2009.0,
+      "y": 46209.0,
+      "col": 428,
+      "row": 279,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 24
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United Kingdom_2010.0_46806.0",
+      "series": "United Kingdom",
+      "x": 2010.0,
+      "y": 46806.0,
+      "col": 447,
+      "row": 275,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 21
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United Kingdom_2011.0_46806.0",
+      "series": "United Kingdom",
+      "x": 2011.0,
+      "y": 46806.0,
+      "col": 465,
+      "row": 275,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 19
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United Kingdom_2012.0_47204.0",
+      "series": "United Kingdom",
+      "x": 2012.0,
+      "y": 47204.0,
+      "col": 484,
+      "row": 273,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 21
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United Kingdom_2013.0_47800.0",
+      "series": "United Kingdom",
+      "x": 2013.0,
+      "y": 47800.0,
+      "col": 503,
+      "row": 271,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 20
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United Kingdom_2014.0_48894.0",
+      "series": "United Kingdom",
+      "x": 2014.0,
+      "y": 48894.0,
+      "col": 522,
+      "row": 265,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United Kingdom_2015.0_49590.0",
+      "series": "United Kingdom",
+      "x": 2015.0,
+      "y": 49590.0,
+      "col": 541,
+      "row": 262,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United Kingdom_2016.0_50286.0",
+      "series": "United Kingdom",
+      "x": 2016.0,
+      "y": 50286.0,
+      "col": 560,
+      "row": 258,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 27
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United Kingdom_2017.0_51579.0",
+      "series": "United Kingdom",
+      "x": 2017.0,
+      "y": 51579.0,
+      "col": 579,
+      "row": 251,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 25
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United Kingdom_2018.0_51977.0",
+      "series": "United Kingdom",
+      "x": 2018.0,
+      "y": 51977.0,
+      "col": 598,
+      "row": 249,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 19
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United Kingdom_2019.0_52374.0",
+      "series": "United Kingdom",
+      "x": 2019.0,
+      "y": 52374.0,
+      "col": 616,
+      "row": 248,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United Kingdom_2020.0_47402.0",
+      "series": "United Kingdom",
+      "x": 2020.0,
+      "y": 47402.0,
+      "col": 635,
+      "row": 273,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 29
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United Kingdom_2021.0_50982.0",
+      "series": "United Kingdom",
+      "x": 2021.0,
+      "y": 50982.0,
+      "col": 654,
+      "row": 255,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 47
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United Kingdom_2022.0_52971.0",
+      "series": "United Kingdom",
+      "x": 2022.0,
+      "y": 52971.0,
+      "col": 673,
+      "row": 244,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 31
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United Kingdom_2023.0_52573.0",
+      "series": "United Kingdom",
+      "x": 2023.0,
+      "y": 52573.0,
+      "col": 692,
+      "row": 247,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 20
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "United Kingdom_2024.0_52573.0",
+      "series": "United Kingdom",
+      "x": 2024.0,
+      "y": 52573.0,
+      "col": 711,
+      "row": 247,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 13
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Japan_1990.0_35271.0",
+      "series": "Japan",
+      "x": 1990.0,
+      "y": 35271.0,
+      "col": 69,
+      "row": 334,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 16
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Japan_1991.0_36266.0",
+      "series": "Japan",
+      "x": 1991.0,
+      "y": 36266.0,
+      "col": 88,
+      "row": 328,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Japan_1992.0_36465.0",
+      "series": "Japan",
+      "x": 1992.0,
+      "y": 36465.0,
+      "col": 107,
+      "row": 327,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 21
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Japan_1993.0_36266.0",
+      "series": "Japan",
+      "x": 1993.0,
+      "y": 36266.0,
+      "col": 126,
+      "row": 328,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Japan_1994.0_36465.0",
+      "series": "Japan",
+      "x": 1994.0,
+      "y": 36465.0,
+      "col": 145,
+      "row": 327,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 30
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Japan_1995.0_37459.0",
+      "series": "Japan",
+      "x": 1995.0,
+      "y": 37459.0,
+      "col": 163,
+      "row": 322,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 32
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Japan_1996.0_38453.0",
+      "series": "Japan",
+      "x": 1996.0,
+      "y": 38453.0,
+      "col": 182,
+      "row": 318,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 33
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Japan_1997.0_38652.0",
+      "series": "Japan",
+      "x": 1997.0,
+      "y": 38652.0,
+      "col": 201,
+      "row": 317,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 31
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Japan_1998.0_38055.0",
+      "series": "Japan",
+      "x": 1998.0,
+      "y": 38055.0,
+      "col": 220,
+      "row": 320,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Japan_1999.0_37956.0",
+      "series": "Japan",
+      "x": 1999.0,
+      "y": 37956.0,
+      "col": 239,
+      "row": 320,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Japan_2000.0_38851.0",
+      "series": "Japan",
+      "x": 2000.0,
+      "y": 38851.0,
+      "col": 258,
+      "row": 315,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 24
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Japan_2001.0_38950.0",
+      "series": "Japan",
+      "x": 2001.0,
+      "y": 38950.0,
+      "col": 277,
+      "row": 315,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 24
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Japan_2002.0_38851.0",
+      "series": "Japan",
+      "x": 2002.0,
+      "y": 38851.0,
+      "col": 296,
+      "row": 315,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 21
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Japan_2003.0_39448.0",
+      "series": "Japan",
+      "x": 2003.0,
+      "y": 39448.0,
+      "col": 314,
+      "row": 312,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Japan_2004.0_40243.0",
+      "series": "Japan",
+      "x": 2004.0,
+      "y": 40243.0,
+      "col": 333,
+      "row": 309,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 24
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Japan_2005.0_41039.0",
+      "series": "Japan",
+      "x": 2005.0,
+      "y": 41039.0,
+      "col": 352,
+      "row": 304,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Japan_2006.0_41635.0",
+      "series": "Japan",
+      "x": 2006.0,
+      "y": 41635.0,
+      "col": 371,
+      "row": 302,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 24
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Japan_2007.0_42033.0",
+      "series": "Japan",
+      "x": 2007.0,
+      "y": 42033.0,
+      "col": 390,
+      "row": 299,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 25
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Japan_2008.0_41635.0",
+      "series": "Japan",
+      "x": 2008.0,
+      "y": 41635.0,
+      "col": 409,
+      "row": 302,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 25
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Japan_2009.0_39448.0",
+      "series": "Japan",
+      "x": 2009.0,
+      "y": 39448.0,
+      "col": 428,
+      "row": 312,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 28
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Japan_2010.0_40840.0",
+      "series": "Japan",
+      "x": 2010.0,
+      "y": 40840.0,
+      "col": 447,
+      "row": 305,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Japan_2011.0_41039.0",
+      "series": "Japan",
+      "x": 2011.0,
+      "y": 41039.0,
+      "col": 465,
+      "row": 304,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 32
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Japan_2012.0_41635.0",
+      "series": "Japan",
+      "x": 2012.0,
+      "y": 41635.0,
+      "col": 484,
+      "row": 302,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Japan_2013.0_42232.0",
+      "series": "Japan",
+      "x": 2013.0,
+      "y": 42232.0,
+      "col": 503,
+      "row": 298,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 33
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Japan_2014.0_42630.0",
+      "series": "Japan",
+      "x": 2014.0,
+      "y": 42630.0,
+      "col": 522,
+      "row": 296,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 36
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Japan_2015.0_43226.0",
+      "series": "Japan",
+      "x": 2015.0,
+      "y": 43226.0,
+      "col": 541,
+      "row": 294,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Japan_2016.0_43624.0",
+      "series": "Japan",
+      "x": 2016.0,
+      "y": 43624.0,
+      "col": 560,
+      "row": 291,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Japan_2017.0_44419.0",
+      "series": "Japan",
+      "x": 2017.0,
+      "y": 44419.0,
+      "col": 579,
+      "row": 288,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Japan_2018.0_44817.0",
+      "series": "Japan",
+      "x": 2018.0,
+      "y": 44817.0,
+      "col": 598,
+      "row": 286,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Japan_2019.0_44618.0",
+      "series": "Japan",
+      "x": 2019.0,
+      "y": 44618.0,
+      "col": 616,
+      "row": 287,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 24
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Japan_2020.0_43027.0",
+      "series": "Japan",
+      "x": 2020.0,
+      "y": 43027.0,
+      "col": 635,
+      "row": 295,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 26
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Japan_2021.0_44221.0",
+      "series": "Japan",
+      "x": 2021.0,
+      "y": 44221.0,
+      "col": 654,
+      "row": 288,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 25
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Japan_2022.0_44817.0",
+      "series": "Japan",
+      "x": 2022.0,
+      "y": 44817.0,
+      "col": 673,
+      "row": 286,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Japan_2023.0_45812.0",
+      "series": "Japan",
+      "x": 2023.0,
+      "y": 45812.0,
+      "col": 692,
+      "row": 280,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 26
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Japan_2024.0_46010.0",
+      "series": "Japan",
+      "x": 2024.0,
+      "y": 46010.0,
+      "col": 711,
+      "row": 280,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 19
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Russia_1990.0_29405.0",
+      "series": "Russia",
+      "x": 1990.0,
+      "y": 29405.0,
+      "col": 69,
+      "row": 363,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 20
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Russia_1991.0_27913.0",
+      "series": "Russia",
+      "x": 1991.0,
+      "y": 27913.0,
+      "col": 88,
+      "row": 371,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 25
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Russia_1992.0_23936.0",
+      "series": "Russia",
+      "x": 1992.0,
+      "y": 23936.0,
+      "col": 107,
+      "row": 390,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 25
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Russia_1993.0_21748.0",
+      "series": "Russia",
+      "x": 1993.0,
+      "y": 21748.0,
+      "col": 126,
+      "row": 401,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 25
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Russia_1994.0_19362.0",
+      "series": "Russia",
+      "x": 1994.0,
+      "y": 19362.0,
+      "col": 145,
+      "row": 413,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 38
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Russia_1995.0_18168.0",
+      "series": "Russia",
+      "x": 1995.0,
+      "y": 18168.0,
+      "col": 163,
+      "row": 420,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 25
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Russia_1996.0_17572.0",
+      "series": "Russia",
+      "x": 1996.0,
+      "y": 17572.0,
+      "col": 182,
+      "row": 422,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 24
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Russia_1997.0_17771.0",
+      "series": "Russia",
+      "x": 1997.0,
+      "y": 17771.0,
+      "col": 201,
+      "row": 421,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Russia_1998.0_16975.0",
+      "series": "Russia",
+      "x": 1998.0,
+      "y": 16975.0,
+      "col": 220,
+      "row": 426,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 25
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Russia_1999.0_18168.0",
+      "series": "Russia",
+      "x": 1999.0,
+      "y": 18168.0,
+      "col": 239,
+      "row": 420,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Russia_2000.0_19958.0",
+      "series": "Russia",
+      "x": 2000.0,
+      "y": 19958.0,
+      "col": 258,
+      "row": 411,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 27
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Russia_2001.0_21151.0",
+      "series": "Russia",
+      "x": 2001.0,
+      "y": 21151.0,
+      "col": 277,
+      "row": 405,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Russia_2002.0_22345.0",
+      "series": "Russia",
+      "x": 2002.0,
+      "y": 22345.0,
+      "col": 296,
+      "row": 398,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 28
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Russia_2003.0_23936.0",
+      "series": "Russia",
+      "x": 2003.0,
+      "y": 23936.0,
+      "col": 314,
+      "row": 390,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 28
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Russia_2004.0_25825.0",
+      "series": "Russia",
+      "x": 2004.0,
+      "y": 25825.0,
+      "col": 333,
+      "row": 381,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Russia_2005.0_27714.0",
+      "series": "Russia",
+      "x": 2005.0,
+      "y": 27714.0,
+      "col": 352,
+      "row": 372,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Russia_2006.0_30101.0",
+      "series": "Russia",
+      "x": 2006.0,
+      "y": 30101.0,
+      "col": 371,
+      "row": 359,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 24
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Russia_2007.0_32487.0",
+      "series": "Russia",
+      "x": 2007.0,
+      "y": 32487.0,
+      "col": 390,
+      "row": 348,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 25
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Russia_2008.0_34078.0",
+      "series": "Russia",
+      "x": 2008.0,
+      "y": 34078.0,
+      "col": 409,
+      "row": 340,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 26
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Russia_2009.0_31692.0",
+      "series": "Russia",
+      "x": 2009.0,
+      "y": 31692.0,
+      "col": 428,
+      "row": 351,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 28
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Russia_2010.0_32984.0",
+      "series": "Russia",
+      "x": 2010.0,
+      "y": 32984.0,
+      "col": 447,
+      "row": 345,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Russia_2011.0_34376.0",
+      "series": "Russia",
+      "x": 2011.0,
+      "y": 34376.0,
+      "col": 465,
+      "row": 338,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 24
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Russia_2012.0_35669.0",
+      "series": "Russia",
+      "x": 2012.0,
+      "y": 35669.0,
+      "col": 484,
+      "row": 332,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Russia_2013.0_36067.0",
+      "series": "Russia",
+      "x": 2013.0,
+      "y": 36067.0,
+      "col": 503,
+      "row": 329,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 25
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Russia_2014.0_35669.0",
+      "series": "Russia",
+      "x": 2014.0,
+      "y": 35669.0,
+      "col": 522,
+      "row": 332,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 25
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Russia_2015.0_34874.0",
+      "series": "Russia",
+      "x": 2015.0,
+      "y": 34874.0,
+      "col": 541,
+      "row": 335,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 21
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Russia_2016.0_34874.0",
+      "series": "Russia",
+      "x": 2016.0,
+      "y": 34874.0,
+      "col": 560,
+      "row": 335,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 20
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Russia_2017.0_35470.0",
+      "series": "Russia",
+      "x": 2017.0,
+      "y": 35470.0,
+      "col": 579,
+      "row": 333,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Russia_2018.0_36465.0",
+      "series": "Russia",
+      "x": 2018.0,
+      "y": 36465.0,
+      "col": 598,
+      "row": 327,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 24
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Russia_2019.0_37161.0",
+      "series": "Russia",
+      "x": 2019.0,
+      "y": 37161.0,
+      "col": 616,
+      "row": 324,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Russia_2020.0_36465.0",
+      "series": "Russia",
+      "x": 2020.0,
+      "y": 36465.0,
+      "col": 635,
+      "row": 327,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 26
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Russia_2021.0_38453.0",
+      "series": "Russia",
+      "x": 2021.0,
+      "y": 38453.0,
+      "col": 654,
+      "row": 318,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 26
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Russia_2022.0_38254.0",
+      "series": "Russia",
+      "x": 2022.0,
+      "y": 38254.0,
+      "col": 673,
+      "row": 319,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 25
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Russia_2023.0_39845.0",
+      "series": "Russia",
+      "x": 2023.0,
+      "y": 39845.0,
+      "col": 692,
+      "row": 311,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 28
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Russia_2024.0_41536.0",
+      "series": "Russia",
+      "x": 2024.0,
+      "y": 41536.0,
+      "col": 711,
+      "row": 302,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 27
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "China_1990.0_1662.0",
+      "series": "China",
+      "x": 1990.0,
+      "y": 1662.0,
+      "col": 69,
+      "row": 502,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 41
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "China_1991.0_1662.0",
+      "series": "China",
+      "x": 1991.0,
+      "y": 1662.0,
+      "col": 88,
+      "row": 502,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 42
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "China_1992.0_1911.0",
+      "series": "China",
+      "x": 1992.0,
+      "y": 1911.0,
+      "col": 107,
+      "row": 501,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 32
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "China_1993.0_2259.0",
+      "series": "China",
+      "x": 1993.0,
+      "y": 2259.0,
+      "col": 126,
+      "row": 499,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 27
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "China_1994.0_2457.0",
+      "series": "China",
+      "x": 1994.0,
+      "y": 2457.0,
+      "col": 145,
+      "row": 499,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 30
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "China_1995.0_2656.0",
+      "series": "China",
+      "x": 1995.0,
+      "y": 2656.0,
+      "col": 163,
+      "row": 498,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 35
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "China_1996.0_3054.0",
+      "series": "China",
+      "x": 1996.0,
+      "y": 3054.0,
+      "col": 182,
+      "row": 496,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 40
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "China_1997.0_3253.0",
+      "series": "China",
+      "x": 1997.0,
+      "y": 3253.0,
+      "col": 201,
+      "row": 494,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 43
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "China_1998.0_3452.0",
+      "series": "China",
+      "x": 1998.0,
+      "y": 3452.0,
+      "col": 220,
+      "row": 493,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 46
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "China_1999.0_3651.0",
+      "series": "China",
+      "x": 1999.0,
+      "y": 3651.0,
+      "col": 239,
+      "row": 492,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 44
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "China_2000.0_4048.0",
+      "series": "China",
+      "x": 2000.0,
+      "y": 4048.0,
+      "col": 258,
+      "row": 491,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 37
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "China_2001.0_4247.0",
+      "series": "China",
+      "x": 2001.0,
+      "y": 4247.0,
+      "col": 277,
+      "row": 490,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 30
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "China_2002.0_4645.0",
+      "series": "China",
+      "x": 2002.0,
+      "y": 4645.0,
+      "col": 296,
+      "row": 488,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 25
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "China_2003.0_5142.0",
+      "series": "China",
+      "x": 2003.0,
+      "y": 5142.0,
+      "col": 314,
+      "row": 485,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "China_2004.0_5639.0",
+      "series": "China",
+      "x": 2004.0,
+      "y": 5639.0,
+      "col": 333,
+      "row": 483,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 25
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "China_2005.0_6236.0",
+      "series": "China",
+      "x": 2005.0,
+      "y": 6236.0,
+      "col": 352,
+      "row": 479,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "China_2006.0_7031.0",
+      "series": "China",
+      "x": 2006.0,
+      "y": 7031.0,
+      "col": 371,
+      "row": 476,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "China_2007.0_7926.0",
+      "series": "China",
+      "x": 2007.0,
+      "y": 7926.0,
+      "col": 390,
+      "row": 471,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 24
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "China_2008.0_8622.0",
+      "series": "China",
+      "x": 2008.0,
+      "y": 8622.0,
+      "col": 409,
+      "row": 468,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 25
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "China_2009.0_9418.0",
+      "series": "China",
+      "x": 2009.0,
+      "y": 9418.0,
+      "col": 428,
+      "row": 463,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "China_2010.0_10412.0",
+      "series": "China",
+      "x": 2010.0,
+      "y": 10412.0,
+      "col": 447,
+      "row": 459,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 24
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "China_2011.0_11407.0",
+      "series": "China",
+      "x": 2011.0,
+      "y": 11407.0,
+      "col": 465,
+      "row": 453,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 24
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "China_2012.0_12202.0",
+      "series": "China",
+      "x": 2012.0,
+      "y": 12202.0,
+      "col": 484,
+      "row": 450,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 24
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "China_2013.0_12998.0",
+      "series": "China",
+      "x": 2013.0,
+      "y": 12998.0,
+      "col": 503,
+      "row": 445,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "China_2014.0_13992.0",
+      "series": "China",
+      "x": 2014.0,
+      "y": 13992.0,
+      "col": 522,
+      "row": 440,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 25
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "China_2015.0_14787.0",
+      "series": "China",
+      "x": 2015.0,
+      "y": 14787.0,
+      "col": 541,
+      "row": 437,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "China_2016.0_15682.0",
+      "series": "China",
+      "x": 2016.0,
+      "y": 15682.0,
+      "col": 560,
+      "row": 432,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 25
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "China_2017.0_16677.0",
+      "series": "China",
+      "x": 2017.0,
+      "y": 16677.0,
+      "col": 579,
+      "row": 427,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 47
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "China_2018.0_17721.0",
+      "series": "China",
+      "x": 2018.0,
+      "y": 17721.0,
+      "col": 598,
+      "row": 422,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 30
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "China_2019.0_18765.0",
+      "series": "China",
+      "x": 2019.0,
+      "y": 18765.0,
+      "col": 616,
+      "row": 416,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 36
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "China_2020.0_19163.0",
+      "series": "China",
+      "x": 2020.0,
+      "y": 19163.0,
+      "col": 635,
+      "row": 414,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 26
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "China_2021.0_20754.0",
+      "series": "China",
+      "x": 2021.0,
+      "y": 20754.0,
+      "col": 654,
+      "row": 406,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "China_2022.0_21549.0",
+      "series": "China",
+      "x": 2022.0,
+      "y": 21549.0,
+      "col": 673,
+      "row": 403,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 25
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "China_2023.0_22543.0",
+      "series": "China",
+      "x": 2023.0,
+      "y": 22543.0,
+      "col": 692,
+      "row": 398,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 26
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "China_2024.0_23737.0",
+      "series": "China",
+      "x": 2024.0,
+      "y": 23737.0,
+      "col": 711,
+      "row": 391,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 20
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Brazil_1990.0_12600.0",
+      "series": "Brazil",
+      "x": 1990.0,
+      "y": 12600.0,
+      "col": 69,
+      "row": 447,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 17
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Brazil_1991.0_12401.0",
+      "series": "Brazil",
+      "x": 1991.0,
+      "y": 12401.0,
+      "col": 88,
+      "row": 449,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 24
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Brazil_1992.0_12202.0",
+      "series": "Brazil",
+      "x": 1992.0,
+      "y": 12202.0,
+      "col": 107,
+      "row": 450,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 20
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Brazil_1993.0_12600.0",
+      "series": "Brazil",
+      "x": 1993.0,
+      "y": 12600.0,
+      "col": 126,
+      "row": 447,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Brazil_1994.0_13196.0",
+      "series": "Brazil",
+      "x": 1994.0,
+      "y": 13196.0,
+      "col": 145,
+      "row": 445,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 20
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Brazil_1995.0_13395.0",
+      "series": "Brazil",
+      "x": 1995.0,
+      "y": 13395.0,
+      "col": 163,
+      "row": 444,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Brazil_1996.0_13594.0",
+      "series": "Brazil",
+      "x": 1996.0,
+      "y": 13594.0,
+      "col": 182,
+      "row": 443,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 19
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Brazil_1997.0_13793.0",
+      "series": "Brazil",
+      "x": 1997.0,
+      "y": 13793.0,
+      "col": 201,
+      "row": 442,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 24
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Brazil_1998.0_13594.0",
+      "series": "Brazil",
+      "x": 1998.0,
+      "y": 13594.0,
+      "col": 220,
+      "row": 443,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 25
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Brazil_1999.0_13594.0",
+      "series": "Brazil",
+      "x": 1999.0,
+      "y": 13594.0,
+      "col": 239,
+      "row": 443,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 18
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Brazil_2000.0_13893.0",
+      "series": "Brazil",
+      "x": 2000.0,
+      "y": 13893.0,
+      "col": 258,
+      "row": 441,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Brazil_2001.0_13992.0",
+      "series": "Brazil",
+      "x": 2001.0,
+      "y": 13992.0,
+      "col": 277,
+      "row": 440,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 20
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Brazil_2002.0_14191.0",
+      "series": "Brazil",
+      "x": 2002.0,
+      "y": 14191.0,
+      "col": 296,
+      "row": 439,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 17
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Brazil_2003.0_14191.0",
+      "series": "Brazil",
+      "x": 2003.0,
+      "y": 14191.0,
+      "col": 314,
+      "row": 439,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 18
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Brazil_2004.0_14787.0",
+      "series": "Brazil",
+      "x": 2004.0,
+      "y": 14787.0,
+      "col": 333,
+      "row": 437,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Brazil_2005.0_15185.0",
+      "series": "Brazil",
+      "x": 2005.0,
+      "y": 15185.0,
+      "col": 352,
+      "row": 435,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Brazil_2006.0_15583.0",
+      "series": "Brazil",
+      "x": 2006.0,
+      "y": 15583.0,
+      "col": 371,
+      "row": 432,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Brazil_2007.0_16378.0",
+      "series": "Brazil",
+      "x": 2007.0,
+      "y": 16378.0,
+      "col": 390,
+      "row": 429,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 24
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Brazil_2008.0_16975.0",
+      "series": "Brazil",
+      "x": 2008.0,
+      "y": 16975.0,
+      "col": 409,
+      "row": 426,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 24
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Brazil_2009.0_16876.0",
+      "series": "Brazil",
+      "x": 2009.0,
+      "y": 16876.0,
+      "col": 428,
+      "row": 426,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Brazil_2010.0_17969.0",
+      "series": "Brazil",
+      "x": 2010.0,
+      "y": 17969.0,
+      "col": 447,
+      "row": 421,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 21
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Brazil_2011.0_18566.0",
+      "series": "Brazil",
+      "x": 2011.0,
+      "y": 18566.0,
+      "col": 465,
+      "row": 418,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 21
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Brazil_2012.0_18765.0",
+      "series": "Brazil",
+      "x": 2012.0,
+      "y": 18765.0,
+      "col": 484,
+      "row": 416,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Brazil_2013.0_19163.0",
+      "series": "Brazil",
+      "x": 2013.0,
+      "y": 19163.0,
+      "col": 503,
+      "row": 414,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 20
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Brazil_2014.0_19063.0",
+      "series": "Brazil",
+      "x": 2014.0,
+      "y": 19063.0,
+      "col": 522,
+      "row": 415,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 21
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Brazil_2015.0_18268.0",
+      "series": "Brazil",
+      "x": 2015.0,
+      "y": 18268.0,
+      "col": 541,
+      "row": 419,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Brazil_2016.0_17572.0",
+      "series": "Brazil",
+      "x": 2016.0,
+      "y": 17572.0,
+      "col": 560,
+      "row": 422,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 19
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Brazil_2017.0_17572.0",
+      "series": "Brazil",
+      "x": 2017.0,
+      "y": 17572.0,
+      "col": 579,
+      "row": 422,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 37
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Brazil_2018.0_17771.0",
+      "series": "Brazil",
+      "x": 2018.0,
+      "y": 17771.0,
+      "col": 598,
+      "row": 421,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 30
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Brazil_2019.0_17969.0",
+      "series": "Brazil",
+      "x": 2019.0,
+      "y": 17969.0,
+      "col": 616,
+      "row": 421,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 44
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Brazil_2020.0_17273.0",
+      "series": "Brazil",
+      "x": 2020.0,
+      "y": 17273.0,
+      "col": 635,
+      "row": 424,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Brazil_2021.0_17969.0",
+      "series": "Brazil",
+      "x": 2021.0,
+      "y": 17969.0,
+      "col": 654,
+      "row": 421,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Brazil_2022.0_18566.0",
+      "series": "Brazil",
+      "x": 2022.0,
+      "y": 18566.0,
+      "col": 673,
+      "row": 418,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 18
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Brazil_2023.0_18964.0",
+      "series": "Brazil",
+      "x": 2023.0,
+      "y": 18964.0,
+      "col": 692,
+      "row": 415,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 20
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Brazil_2024.0_19560.0",
+      "series": "Brazil",
+      "x": 2024.0,
+      "y": 19560.0,
+      "col": 711,
+      "row": 413,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 16
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "India_1990.0_2060.0",
+      "series": "India",
+      "x": 1990.0,
+      "y": 2060.0,
+      "col": 69,
+      "row": 500,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 32
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "India_1991.0_2159.0",
+      "series": "India",
+      "x": 1991.0,
+      "y": 2159.0,
+      "col": 88,
+      "row": 500,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 38
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "India_1992.0_2259.0",
+      "series": "India",
+      "x": 1992.0,
+      "y": 2259.0,
+      "col": 107,
+      "row": 499,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 32
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "India_1993.0_2159.0",
+      "series": "India",
+      "x": 1993.0,
+      "y": 2159.0,
+      "col": 126,
+      "row": 500,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 27
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "India_1994.0_2060.0",
+      "series": "India",
+      "x": 1994.0,
+      "y": 2060.0,
+      "col": 145,
+      "row": 500,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 30
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "India_1995.0_2259.0",
+      "series": "India",
+      "x": 1995.0,
+      "y": 2259.0,
+      "col": 163,
+      "row": 499,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 35
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "India_1996.0_2457.0",
+      "series": "India",
+      "x": 1996.0,
+      "y": 2457.0,
+      "col": 182,
+      "row": 499,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 40
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "India_1997.0_2656.0",
+      "series": "India",
+      "x": 1997.0,
+      "y": 2656.0,
+      "col": 201,
+      "row": 498,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 43
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "India_1998.0_2756.0",
+      "series": "India",
+      "x": 1998.0,
+      "y": 2756.0,
+      "col": 220,
+      "row": 497,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 48
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "India_1999.0_2955.0",
+      "series": "India",
+      "x": 1999.0,
+      "y": 2955.0,
+      "col": 239,
+      "row": 496,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 46
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "India_2000.0_3054.0",
+      "series": "India",
+      "x": 2000.0,
+      "y": 3054.0,
+      "col": 258,
+      "row": 496,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 42
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "India_2001.0_3054.0",
+      "series": "India",
+      "x": 2001.0,
+      "y": 3054.0,
+      "col": 277,
+      "row": 496,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 24
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "India_2002.0_3153.0",
+      "series": "India",
+      "x": 2002.0,
+      "y": 3153.0,
+      "col": 296,
+      "row": 495,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 20
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "India_2003.0_3352.0",
+      "series": "India",
+      "x": 2003.0,
+      "y": 3352.0,
+      "col": 314,
+      "row": 494,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 17
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "India_2004.0_3651.0",
+      "series": "India",
+      "x": 2004.0,
+      "y": 3651.0,
+      "col": 333,
+      "row": 492,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 20
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "India_2005.0_3850.0",
+      "series": "India",
+      "x": 2005.0,
+      "y": 3850.0,
+      "col": 352,
+      "row": 491,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "India_2006.0_4048.0",
+      "series": "India",
+      "x": 2006.0,
+      "y": 4048.0,
+      "col": 371,
+      "row": 491,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 19
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "India_2007.0_4247.0",
+      "series": "India",
+      "x": 2007.0,
+      "y": 4247.0,
+      "col": 390,
+      "row": 490,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 19
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "India_2008.0_4446.0",
+      "series": "India",
+      "x": 2008.0,
+      "y": 4446.0,
+      "col": 409,
+      "row": 489,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "India_2009.0_4645.0",
+      "series": "India",
+      "x": 2009.0,
+      "y": 4645.0,
+      "col": 428,
+      "row": 488,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 18
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "India_2010.0_5043.0",
+      "series": "India",
+      "x": 2010.0,
+      "y": 5043.0,
+      "col": 447,
+      "row": 485,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 17
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "India_2011.0_5142.0",
+      "series": "India",
+      "x": 2011.0,
+      "y": 5142.0,
+      "col": 465,
+      "row": 485,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 20
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "India_2012.0_5440.0",
+      "series": "India",
+      "x": 2012.0,
+      "y": 5440.0,
+      "col": 484,
+      "row": 484,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "India_2013.0_5639.0",
+      "series": "India",
+      "x": 2013.0,
+      "y": 5639.0,
+      "col": 503,
+      "row": 483,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 18
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "India_2014.0_6037.0",
+      "series": "India",
+      "x": 2014.0,
+      "y": 6037.0,
+      "col": 522,
+      "row": 481,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 21
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "India_2015.0_6435.0",
+      "series": "India",
+      "x": 2015.0,
+      "y": 6435.0,
+      "col": 541,
+      "row": 478,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 21
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "India_2016.0_6833.0",
+      "series": "India",
+      "x": 2016.0,
+      "y": 6833.0,
+      "col": 560,
+      "row": 476,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "India_2017.0_7230.0",
+      "series": "India",
+      "x": 2017.0,
+      "y": 7230.0,
+      "col": 579,
+      "row": 475,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 21
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "India_2018.0_7628.0",
+      "series": "India",
+      "x": 2018.0,
+      "y": 7628.0,
+      "col": 598,
+      "row": 473,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 20
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "India_2019.0_7827.0",
+      "series": "India",
+      "x": 2019.0,
+      "y": 7827.0,
+      "col": 616,
+      "row": 471,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 21
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "India_2020.0_7429.0",
+      "series": "India",
+      "x": 2020.0,
+      "y": 7429.0,
+      "col": 635,
+      "row": 474,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 20
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "India_2021.0_8026.0",
+      "series": "India",
+      "x": 2021.0,
+      "y": 8026.0,
+      "col": 654,
+      "row": 470,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "India_2022.0_8424.0",
+      "series": "India",
+      "x": 2022.0,
+      "y": 8424.0,
+      "col": 673,
+      "row": 468,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 20
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "India_2023.0_9219.0",
+      "series": "India",
+      "x": 2023.0,
+      "y": 9219.0,
+      "col": 692,
+      "row": 465,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 18
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "India_2024.0_9617.0",
+      "series": "India",
+      "x": 2024.0,
+      "y": 9617.0,
+      "col": 711,
+      "row": 462,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 18
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Ethiopia_1990.0_767.0",
+      "series": "Ethiopia",
+      "x": 1990.0,
+      "y": 767.0,
+      "col": 69,
+      "row": 507,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 42
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Ethiopia_1991.0_668.0",
+      "series": "Ethiopia",
+      "x": 1991.0,
+      "y": 668.0,
+      "col": 88,
+      "row": 507,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 49
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Ethiopia_1992.0_668.0",
+      "series": "Ethiopia",
+      "x": 1992.0,
+      "y": 668.0,
+      "col": 107,
+      "row": 507,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 41
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Ethiopia_1993.0_668.0",
+      "series": "Ethiopia",
+      "x": 1993.0,
+      "y": 668.0,
+      "col": 126,
+      "row": 507,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 29
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Ethiopia_1994.0_668.0",
+      "series": "Ethiopia",
+      "x": 1994.0,
+      "y": 668.0,
+      "col": 145,
+      "row": 507,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 29
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Ethiopia_1995.0_668.0",
+      "series": "Ethiopia",
+      "x": 1995.0,
+      "y": 668.0,
+      "col": 163,
+      "row": 507,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 30
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Ethiopia_1996.0_767.0",
+      "series": "Ethiopia",
+      "x": 1996.0,
+      "y": 767.0,
+      "col": 182,
+      "row": 507,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 32
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Ethiopia_1997.0_668.0",
+      "series": "Ethiopia",
+      "x": 1997.0,
+      "y": 668.0,
+      "col": 201,
+      "row": 507,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 32
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Ethiopia_1998.0_668.0",
+      "series": "Ethiopia",
+      "x": 1998.0,
+      "y": 668.0,
+      "col": 220,
+      "row": 507,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 28
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Ethiopia_1999.0_668.0",
+      "series": "Ethiopia",
+      "x": 1999.0,
+      "y": 668.0,
+      "col": 239,
+      "row": 507,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 27
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Ethiopia_2000.0_668.0",
+      "series": "Ethiopia",
+      "x": 2000.0,
+      "y": 668.0,
+      "col": 258,
+      "row": 507,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 29
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Ethiopia_2001.0_767.0",
+      "series": "Ethiopia",
+      "x": 2001.0,
+      "y": 767.0,
+      "col": 277,
+      "row": 507,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 37
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Ethiopia_2002.0_767.0",
+      "series": "Ethiopia",
+      "x": 2002.0,
+      "y": 767.0,
+      "col": 296,
+      "row": 507,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 31
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Ethiopia_2003.0_668.0",
+      "series": "Ethiopia",
+      "x": 2003.0,
+      "y": 668.0,
+      "col": 314,
+      "row": 507,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 30
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Ethiopia_2004.0_866.0",
+      "series": "Ethiopia",
+      "x": 2004.0,
+      "y": 866.0,
+      "col": 333,
+      "row": 507,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 32
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Ethiopia_2005.0_866.0",
+      "series": "Ethiopia",
+      "x": 2005.0,
+      "y": 866.0,
+      "col": 352,
+      "row": 507,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 30
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Ethiopia_2006.0_966.0",
+      "series": "Ethiopia",
+      "x": 2006.0,
+      "y": 966.0,
+      "col": 371,
+      "row": 506,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 20
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Ethiopia_2007.0_1065.0",
+      "series": "Ethiopia",
+      "x": 2007.0,
+      "y": 1065.0,
+      "col": 390,
+      "row": 506,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 16
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Ethiopia_2008.0_1065.0",
+      "series": "Ethiopia",
+      "x": 2008.0,
+      "y": 1065.0,
+      "col": 409,
+      "row": 506,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 17
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Ethiopia_2009.0_1165.0",
+      "series": "Ethiopia",
+      "x": 2009.0,
+      "y": 1165.0,
+      "col": 428,
+      "row": 505,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 22
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Ethiopia_2010.0_1264.0",
+      "series": "Ethiopia",
+      "x": 2010.0,
+      "y": 1264.0,
+      "col": 447,
+      "row": 505,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 16
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Ethiopia_2011.0_1463.0",
+      "series": "Ethiopia",
+      "x": 2011.0,
+      "y": 1463.0,
+      "col": 465,
+      "row": 504,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 20
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Ethiopia_2012.0_1463.0",
+      "series": "Ethiopia",
+      "x": 2012.0,
+      "y": 1463.0,
+      "col": 484,
+      "row": 504,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 17
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Ethiopia_2013.0_1662.0",
+      "series": "Ethiopia",
+      "x": 2013.0,
+      "y": 1662.0,
+      "col": 503,
+      "row": 502,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 23
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Ethiopia_2014.0_1761.0",
+      "series": "Ethiopia",
+      "x": 2014.0,
+      "y": 1761.0,
+      "col": 522,
+      "row": 502,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 21
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Ethiopia_2015.0_1861.0",
+      "series": "Ethiopia",
+      "x": 2015.0,
+      "y": 1861.0,
+      "col": 541,
+      "row": 501,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 20
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Ethiopia_2016.0_2060.0",
+      "series": "Ethiopia",
+      "x": 2016.0,
+      "y": 2060.0,
+      "col": 560,
+      "row": 500,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 19
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Ethiopia_2017.0_2109.0",
+      "series": "Ethiopia",
+      "x": 2017.0,
+      "y": 2109.0,
+      "col": 579,
+      "row": 500,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 21
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Ethiopia_2018.0_2259.0",
+      "series": "Ethiopia",
+      "x": 2018.0,
+      "y": 2259.0,
+      "col": 598,
+      "row": 499,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 16
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Ethiopia_2019.0_2358.0",
+      "series": "Ethiopia",
+      "x": 2019.0,
+      "y": 2358.0,
+      "col": 616,
+      "row": 499,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 21
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Ethiopia_2020.0_2457.0",
+      "series": "Ethiopia",
+      "x": 2020.0,
+      "y": 2457.0,
+      "col": 635,
+      "row": 499,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 18
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Ethiopia_2021.0_2457.0",
+      "series": "Ethiopia",
+      "x": 2021.0,
+      "y": 2457.0,
+      "col": 654,
+      "row": 499,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 19
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Ethiopia_2022.0_2656.0",
+      "series": "Ethiopia",
+      "x": 2022.0,
+      "y": 2656.0,
+      "col": 673,
+      "row": 498,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 21
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Ethiopia_2023.0_2656.0",
+      "series": "Ethiopia",
+      "x": 2023.0,
+      "y": 2656.0,
+      "col": 692,
+      "row": 498,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 18
+      }
+    },
+    {
+      "type": "marker_centroid",
+      "id": "Ethiopia_2024.0_2855.0",
+      "series": "Ethiopia",
+      "x": 2024.0,
+      "y": 2855.0,
+      "col": 711,
+      "row": 497,
+      "color": null,
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "glyph_px": 16
+      }
+    }
+  ]
+}

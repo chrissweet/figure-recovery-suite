@@ -1,0 +1,187 @@
+{
+  "n_artifacts": 11,
+  "summary": {
+    "pass": 3,
+    "fail": 8,
+    "by_type": {
+      "frame_box": {
+        "pass": 0,
+        "fail": 1
+      },
+      "axis_line": {
+        "pass": 1,
+        "fail": 1
+      },
+      "tick_center": {
+        "pass": 2,
+        "fail": 6
+      }
+    }
+  },
+  "epsilon_px": {
+    "frame_box": 2,
+    "axis_line": 2,
+    "tick_center": 5,
+    "legend_box": 15,
+    "marker_centroid": 3,
+    "line_endpoint": 10,
+    "line_sample": 3,
+    "bar_top": 2,
+    "error_cap": 3
+  },
+  "results": [
+    {
+      "type": "frame_box",
+      "id": "main",
+      "left": 44,
+      "top": 109,
+      "right": 686,
+      "bottom": 511,
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "edges": {
+          "top": 0.0,
+          "bottom": 0.783,
+          "left": 0.025,
+          "right": 0.144
+        },
+        "n_good_edges": 1
+      }
+    },
+    {
+      "type": "axis_line",
+      "id": "y_axis",
+      "orientation": "vertical",
+      "fixed": 44,
+      "extent": [
+        109,
+        511
+      ],
+      "pass": false,
+      "epsilon_px": 2,
+      "info": {
+        "axis_dark_fraction": 0.007
+      }
+    },
+    {
+      "type": "axis_line",
+      "id": "x_axis",
+      "orientation": "horizontal",
+      "fixed": 511,
+      "extent": [
+        44,
+        686
+      ],
+      "pass": true,
+      "epsilon_px": 2,
+      "info": {
+        "axis_dark_fraction": 0.76
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_1750",
+      "axis": "x",
+      "col": 0,
+      "row": 529,
+      "value": 1750,
+      "pass": false,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 0
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "x_2024",
+      "axis": "x",
+      "col": 642,
+      "row": 529,
+      "value": 2024,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 10
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_0",
+      "axis": "y",
+      "col": 14,
+      "row": 401,
+      "value": 0,
+      "pass": false,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 0
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_5",
+      "axis": "y",
+      "col": 14,
+      "row": 321,
+      "value": 5,
+      "pass": false,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 0
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_10",
+      "axis": "y",
+      "col": 14,
+      "row": 241,
+      "value": 10,
+      "pass": false,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 0
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_15",
+      "axis": "y",
+      "col": 14,
+      "row": 160,
+      "value": 15,
+      "pass": false,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 0
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_20",
+      "axis": "y",
+      "col": 14,
+      "row": 80,
+      "value": 20,
+      "pass": true,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 10
+      }
+    },
+    {
+      "type": "tick_center",
+      "id": "y_25",
+      "axis": "y",
+      "col": 14,
+      "row": 0,
+      "value": 25,
+      "pass": false,
+      "epsilon_px": 5,
+      "info": {
+        "dark_pixels": 0
+      }
+    }
+  ]
+}

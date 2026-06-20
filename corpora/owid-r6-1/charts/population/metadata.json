@@ -1,0 +1,25 @@
+{
+  "chart_id": "population",
+  "source": "Our World in Data",
+  "source_url": "https://ourworldindata.org/grapher/population",
+  "csv_url": "https://ourworldindata.org/grapher/population.csv?csvType=filtered&tab=chart",
+  "image_url": "https://ourworldindata.org/grapher/population.png?tab=chart",
+  "chart_type": "multi-series line, time series, large dynamic range",
+  "feature_stressed": "x-axis with BCE/CE labels; y-axis SI suffix (billion); very large dynamic range",
+  "x_axis_title": "Year (with BCE)",
+  "x_axis_unit": null,
+  "y_axis_title": "Population",
+  "y_axis_unit": "people",
+  "x_scale": "linear",
+  "y_scale": "linear",
+  "n_gt_rows": 1827,
+  "series": [
+    "Africa",
+    "Asia",
+    "Europe",
+    "North America",
+    "Oceania",
+    "South America",
+    "World"
+  ]
+}

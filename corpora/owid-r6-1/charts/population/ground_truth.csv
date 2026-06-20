@@ -1,0 +1,1828 @@
+layer_idx,layer_type,series,x,y
+0,Line Graph,Africa,-10000.0,228973.0
+0,Line Graph,Africa,-9000.0,325004.0
+0,Line Graph,Africa,-8000.0,465827.0
+0,Line Graph,Africa,-7000.0,674187.0
+0,Line Graph,Africa,-6000.0,985195.0
+0,Line Graph,Africa,-5000.0,1453426.0
+0,Line Graph,Africa,-4000.0,2264223.0
+0,Line Graph,Africa,-3000.0,4026815.0
+0,Line Graph,Africa,-2000.0,6093084.0
+0,Line Graph,Africa,-1000.0,9034441.0
+0,Line Graph,Africa,0.0,14870035.0
+0,Line Graph,Africa,100.0,16254022.0
+0,Line Graph,Africa,200.0,17830592.0
+0,Line Graph,Africa,300.0,18797924.0
+0,Line Graph,Africa,400.0,20068212.0
+0,Line Graph,Africa,500.0,21592260.0
+0,Line Graph,Africa,600.0,23605838.0
+0,Line Graph,Africa,700.0,27198624.0
+0,Line Graph,Africa,800.0,31757168.0
+0,Line Graph,Africa,900.0,35767436.0
+0,Line Graph,Africa,1000.0,39869508.0
+0,Line Graph,Africa,1100.0,42444488.0
+0,Line Graph,Africa,1200.0,45540064.0
+0,Line Graph,Africa,1300.0,50940648.0
+0,Line Graph,Africa,1400.0,54830016.0
+0,Line Graph,Africa,1500.0,58613540.0
+0,Line Graph,Africa,1600.0,68577456.0
+0,Line Graph,Africa,1700.0,78557832.0
+0,Line Graph,Africa,1710.0,78025176.0
+0,Line Graph,Africa,1720.0,78267664.0
+0,Line Graph,Africa,1730.0,78574008.0
+0,Line Graph,Africa,1740.0,78944912.0
+0,Line Graph,Africa,1750.0,79382032.0
+0,Line Graph,Africa,1760.0,79888176.0
+0,Line Graph,Africa,1770.0,80467736.0
+0,Line Graph,Africa,1780.0,81127312.0
+0,Line Graph,Africa,1790.0,81860944.0
+0,Line Graph,Africa,1800.0,81273172.0
+0,Line Graph,Africa,1801.0,81378197.0
+0,Line Graph,Africa,1802.0,81484588.0
+0,Line Graph,Africa,1803.0,81592351.0
+0,Line Graph,Africa,1804.0,81701503.0
+0,Line Graph,Africa,1805.0,81812061.0
+0,Line Graph,Africa,1806.0,81924029.0
+0,Line Graph,Africa,1807.0,82037425.0
+0,Line Graph,Africa,1808.0,82152271.0
+0,Line Graph,Africa,1809.0,82268577.0
+0,Line Graph,Africa,1810.0,82387585.0
+0,Line Graph,Africa,1811.0,82515959.0
+0,Line Graph,Africa,1812.0,82655601.0
+0,Line Graph,Africa,1813.0,82806647.0
+0,Line Graph,Africa,1814.0,82969493.0
+0,Line Graph,Africa,1815.0,83144278.0
+0,Line Graph,Africa,1816.0,83331163.0
+0,Line Graph,Africa,1817.0,83530303.0
+0,Line Graph,Africa,1818.0,83741849.0
+0,Line Graph,Africa,1819.0,84037482.0
+0,Line Graph,Africa,1820.0,84418699.0
+0,Line Graph,Africa,1821.0,84896601.0
+0,Line Graph,Africa,1822.0,85462636.0
+0,Line Graph,Africa,1823.0,86142885.0
+0,Line Graph,Africa,1824.0,86843609.0
+0,Line Graph,Africa,1825.0,87565137.0
+0,Line Graph,Africa,1826.0,88307785.0
+0,Line Graph,Africa,1827.0,89071893.0
+0,Line Graph,Africa,1828.0,89857801.0
+0,Line Graph,Africa,1829.0,90666142.0
+0,Line Graph,Africa,1830.0,91497291.0
+0,Line Graph,Africa,1831.0,92352331.0
+0,Line Graph,Africa,1832.0,93221742.0
+0,Line Graph,Africa,1833.0,94105808.0
+0,Line Graph,Africa,1834.0,95004472.0
+0,Line Graph,Africa,1835.0,95918027.0
+0,Line Graph,Africa,1836.0,96846733.0
+0,Line Graph,Africa,1837.0,97790863.0
+0,Line Graph,Africa,1838.0,98750710.0
+0,Line Graph,Africa,1839.0,99745866.0
+0,Line Graph,Africa,1840.0,100777177.0
+0,Line Graph,Africa,1841.0,101844538.0
+0,Line Graph,Africa,1842.0,102949818.0
+0,Line Graph,Africa,1843.0,104093942.0
+0,Line Graph,Africa,1844.0,105258529.0
+0,Line Graph,Africa,1845.0,106444013.0
+0,Line Graph,Africa,1846.0,107650802.0
+0,Line Graph,Africa,1847.0,108879329.0
+0,Line Graph,Africa,1848.0,110130035.0
+0,Line Graph,Africa,1849.0,111271621.0
+0,Line Graph,Africa,1850.0,112301163.0
+0,Line Graph,Africa,1851.0,112964625.0
+0,Line Graph,Africa,1852.0,113506374.0
+0,Line Graph,Africa,1853.0,113925748.0
+0,Line Graph,Africa,1854.0,114348862.0
+0,Line Graph,Africa,1855.0,114775726.0
+0,Line Graph,Africa,1856.0,115206465.0
+0,Line Graph,Africa,1857.0,115641146.0
+0,Line Graph,Africa,1858.0,116079843.0
+0,Line Graph,Africa,1859.0,116531294.0
+0,Line Graph,Africa,1860.0,116995450.0
+0,Line Graph,Africa,1861.0,117468679.0
+0,Line Graph,Africa,1862.0,117954363.0
+0,Line Graph,Africa,1863.0,118452604.0
+0,Line Graph,Africa,1864.0,118954681.0
+0,Line Graph,Africa,1865.0,119460616.0
+0,Line Graph,Africa,1866.0,119970440.0
+0,Line Graph,Africa,1867.0,120484192.0
+0,Line Graph,Africa,1868.0,121001894.0
+0,Line Graph,Africa,1869.0,121535848.0
+0,Line Graph,Africa,1870.0,122086255.0
+0,Line Graph,Africa,1871.0,122649582.0
+0,Line Graph,Africa,1872.0,123231396.0
+0,Line Graph,Africa,1873.0,123830278.0
+0,Line Graph,Africa,1874.0,124434132.0
+0,Line Graph,Africa,1875.0,125042995.0
+0,Line Graph,Africa,1876.0,125656913.0
+0,Line Graph,Africa,1877.0,126275921.0
+0,Line Graph,Africa,1878.0,126900066.0
+0,Line Graph,Africa,1879.0,127539564.0
+0,Line Graph,Africa,1880.0,128194527.0
+0,Line Graph,Africa,1881.0,128863890.0
+0,Line Graph,Africa,1882.0,129548955.0
+0,Line Graph,Africa,1883.0,130249836.0
+0,Line Graph,Africa,1884.0,130956522.0
+0,Line Graph,Africa,1885.0,131669056.0
+0,Line Graph,Africa,1886.0,132387485.0
+0,Line Graph,Africa,1887.0,133111879.0
+0,Line Graph,Africa,1888.0,133842280.0
+0,Line Graph,Africa,1889.0,134489847.0
+0,Line Graph,Africa,1890.0,135054738.0
+0,Line Graph,Africa,1891.0,135539040.0
+0,Line Graph,Africa,1892.0,135941070.0
+0,Line Graph,Africa,1893.0,136260909.0
+0,Line Graph,Africa,1894.0,136587590.0
+0,Line Graph,Africa,1895.0,136921163.0
+0,Line Graph,Africa,1896.0,137261683.0
+0,Line Graph,Africa,1897.0,137609187.0
+0,Line Graph,Africa,1898.0,137963724.0
+0,Line Graph,Africa,1899.0,138345391.0
+0,Line Graph,Africa,1900.0,138755559.0
+0,Line Graph,Africa,1901.0,139195205.0
+0,Line Graph,Africa,1902.0,139666271.0
+0,Line Graph,Africa,1903.0,140170120.0
+0,Line Graph,Africa,1904.0,140688001.0
+0,Line Graph,Africa,1905.0,141220048.0
+0,Line Graph,Africa,1906.0,141766391.0
+0,Line Graph,Africa,1907.0,142327180.0
+0,Line Graph,Africa,1908.0,142902543.0
+0,Line Graph,Africa,1909.0,143483346.0
+0,Line Graph,Africa,1910.0,144068383.0
+0,Line Graph,Africa,1911.0,144655670.0
+0,Line Graph,Africa,1912.0,145245400.0
+0,Line Graph,Africa,1913.0,145835662.0
+0,Line Graph,Africa,1914.0,146434524.0
+0,Line Graph,Africa,1915.0,147042086.0
+0,Line Graph,Africa,1916.0,147658424.0
+0,Line Graph,Africa,1917.0,148283643.0
+0,Line Graph,Africa,1918.0,148892208.0
+0,Line Graph,Africa,1919.0,149751440.0
+0,Line Graph,Africa,1920.0,150865200.0
+0,Line Graph,Africa,1921.0,152239781.0
+0,Line Graph,Africa,1922.0,153876862.0
+0,Line Graph,Africa,1923.0,155780482.0
+0,Line Graph,Africa,1924.0,157712366.0
+0,Line Graph,Africa,1925.0,159672951.0
+0,Line Graph,Africa,1926.0,161662674.0
+0,Line Graph,Africa,1927.0,163681990.0
+0,Line Graph,Africa,1928.0,165731367.0
+0,Line Graph,Africa,1929.0,167813287.0
+0,Line Graph,Africa,1930.0,169928217.0
+0,Line Graph,Africa,1931.0,172076932.0
+0,Line Graph,Africa,1932.0,174259628.0
+0,Line Graph,Africa,1933.0,176476818.0
+0,Line Graph,Africa,1934.0,178726971.0
+0,Line Graph,Africa,1935.0,181010603.0
+0,Line Graph,Africa,1936.0,183328236.0
+0,Line Graph,Africa,1937.0,185680386.0
+0,Line Graph,Africa,1938.0,188067589.0
+0,Line Graph,Africa,1939.0,190609541.0
+0,Line Graph,Africa,1940.0,193310936.0
+0,Line Graph,Africa,1941.0,196179605.0
+0,Line Graph,Africa,1942.0,199217448.0
+0,Line Graph,Africa,1943.0,202429522.0
+0,Line Graph,Africa,1944.0,205701844.0
+0,Line Graph,Africa,1945.0,209035596.0
+0,Line Graph,Africa,1946.0,212431972.0
+0,Line Graph,Africa,1947.0,215892204.0
+0,Line Graph,Africa,1948.0,219417536.0
+0,Line Graph,Africa,1949.0,223283534.0
+0,Line Graph,Africa,1950.0,227776838.0
+0,Line Graph,Africa,1951.0,232557370.0
+0,Line Graph,Africa,1952.0,237539910.0
+0,Line Graph,Africa,1953.0,242685417.0
+0,Line Graph,Africa,1954.0,248006203.0
+0,Line Graph,Africa,1955.0,253538234.0
+0,Line Graph,Africa,1956.0,259271764.0
+0,Line Graph,Africa,1957.0,265129059.0
+0,Line Graph,Africa,1958.0,271042090.0
+0,Line Graph,Africa,1959.0,277271946.0
+0,Line Graph,Africa,1960.0,283922294.0
+0,Line Graph,Africa,1961.0,290814089.0
+0,Line Graph,Africa,1962.0,297959970.0
+0,Line Graph,Africa,1963.0,305371364.0
+0,Line Graph,Africa,1964.0,313056695.0
+0,Line Graph,Africa,1965.0,320995365.0
+0,Line Graph,Africa,1966.0,329207333.0
+0,Line Graph,Africa,1967.0,337767952.0
+0,Line Graph,Africa,1968.0,346674276.0
+0,Line Graph,Africa,1969.0,355911162.0
+0,Line Graph,Africa,1970.0,365456903.0
+0,Line Graph,Africa,1971.0,375228323.0
+0,Line Graph,Africa,1972.0,385211089.0
+0,Line Graph,Africa,1973.0,395717739.0
+0,Line Graph,Africa,1974.0,406762881.0
+0,Line Graph,Africa,1975.0,418322666.0
+0,Line Graph,Africa,1976.0,430382650.0
+0,Line Graph,Africa,1977.0,442542565.0
+0,Line Graph,Africa,1978.0,455417592.0
+0,Line Graph,Africa,1979.0,469072946.0
+0,Line Graph,Africa,1980.0,482922202.0
+0,Line Graph,Africa,1981.0,497487390.0
+0,Line Graph,Africa,1982.0,512805436.0
+0,Line Graph,Africa,1983.0,528042881.0
+0,Line Graph,Africa,1984.0,543411002.0
+0,Line Graph,Africa,1985.0,559417482.0
+0,Line Graph,Africa,1986.0,575715653.0
+0,Line Graph,Africa,1987.0,592341398.0
+0,Line Graph,Africa,1988.0,609119477.0
+0,Line Graph,Africa,1989.0,626082685.0
+0,Line Graph,Africa,1990.0,643490587.0
+0,Line Graph,Africa,1991.0,660810865.0
+0,Line Graph,Africa,1992.0,678257033.0
+0,Line Graph,Africa,1993.0,696302246.0
+0,Line Graph,Africa,1994.0,714183914.0
+0,Line Graph,Africa,1995.0,732395090.0
+0,Line Graph,Africa,1996.0,751187001.0
+0,Line Graph,Africa,1997.0,770098458.0
+0,Line Graph,Africa,1998.0,789672411.0
+0,Line Graph,Africa,1999.0,809745318.0
+0,Line Graph,Africa,2000.0,830226481.0
+0,Line Graph,Africa,2001.0,851317075.0
+0,Line Graph,Africa,2002.0,873025213.0
+0,Line Graph,Africa,2003.0,895336412.0
+0,Line Graph,Africa,2004.0,918363272.0
+0,Line Graph,Africa,2005.0,942115143.0
+0,Line Graph,Africa,2006.0,966491337.0
+0,Line Graph,Africa,2007.0,991615906.0
+0,Line Graph,Africa,2008.0,1017632831.0
+0,Line Graph,Africa,2009.0,1044356804.0
+0,Line Graph,Africa,2010.0,1071809929.0
+0,Line Graph,Africa,2011.0,1099732995.0
+0,Line Graph,Africa,2012.0,1128396676.0
+0,Line Graph,Africa,2013.0,1158293959.0
+0,Line Graph,Africa,2014.0,1188685762.0
+0,Line Graph,Africa,2015.0,1219484027.0
+0,Line Graph,Africa,2016.0,1250551239.0
+0,Line Graph,Africa,2017.0,1282169538.0
+0,Line Graph,Africa,2018.0,1314609397.0
+0,Line Graph,Africa,2019.0,1347162538.0
+0,Line Graph,Africa,2020.0,1379939686.0
+0,Line Graph,Africa,2021.0,1412811077.0
+0,Line Graph,Africa,2022.0,1445862695.0
+0,Line Graph,Africa,2023.0,1479690254.0
+0,Line Graph,Asia,-10000.0,1183783.0
+0,Line Graph,Asia,-9000.0,1673231.0
+0,Line Graph,Asia,-8000.0,2405903.0
+0,Line Graph,Asia,-7000.0,3580818.0
+0,Line Graph,Asia,-6000.0,5643078.0
+0,Line Graph,Asia,-5000.0,9452731.0
+0,Line Graph,Asia,-4000.0,16076769.0
+0,Line Graph,Asia,-3000.0,26806386.0
+0,Line Graph,Asia,-2000.0,46901344.0
+0,Line Graph,Asia,-1000.0,72722528.0
+0,Line Graph,Asia,0.0,165488624.0
+0,Line Graph,Asia,100.0,166200944.0
+0,Line Graph,Asia,200.0,165630128.0
+0,Line Graph,Asia,300.0,151598544.0
+0,Line Graph,Asia,400.0,164215360.0
+0,Line Graph,Asia,500.0,176609472.0
+0,Line Graph,Asia,600.0,195090976.0
+0,Line Graph,Asia,700.0,194108480.0
+0,Line Graph,Asia,800.0,192532960.0
+0,Line Graph,Asia,900.0,207417104.0
+0,Line Graph,Asia,1000.0,209186032.0
+0,Line Graph,Asia,1100.0,268491680.0
+0,Line Graph,Asia,1200.0,290535296.0
+0,Line Graph,Asia,1300.0,270833824.0
+0,Line Graph,Asia,1400.0,270937184.0
+0,Line Graph,Asia,1500.0,303879520.0
+0,Line Graph,Asia,1600.0,334114560.0
+0,Line Graph,Asia,1700.0,386909664.0
+0,Line Graph,Asia,1710.0,399588352.0
+0,Line Graph,Asia,1720.0,421137728.0
+0,Line Graph,Asia,1730.0,434861600.0
+0,Line Graph,Asia,1740.0,457025792.0
+0,Line Graph,Asia,1750.0,498699232.0
+0,Line Graph,Asia,1760.0,524020960.0
+0,Line Graph,Asia,1770.0,553793728.0
+0,Line Graph,Asia,1780.0,616125696.0
+0,Line Graph,Asia,1790.0,646046464.0
+0,Line Graph,Asia,1800.0,683181540.0
+0,Line Graph,Asia,1801.0,685331004.0
+0,Line Graph,Asia,1802.0,687499996.0
+0,Line Graph,Asia,1803.0,689688487.0
+0,Line Graph,Asia,1804.0,691896457.0
+0,Line Graph,Asia,1805.0,694123893.0
+0,Line Graph,Asia,1806.0,696370781.0
+0,Line Graph,Asia,1807.0,698637130.0
+0,Line Graph,Asia,1808.0,700922938.0
+0,Line Graph,Asia,1809.0,703228216.0
+0,Line Graph,Asia,1810.0,706697247.0
+0,Line Graph,Asia,1811.0,710184970.0
+0,Line Graph,Asia,1812.0,714101589.0
+0,Line Graph,Asia,1813.0,718452410.0
+0,Line Graph,Asia,1814.0,722875649.0
+0,Line Graph,Asia,1815.0,727371867.0
+0,Line Graph,Asia,1816.0,731941628.0
+0,Line Graph,Asia,1817.0,736585517.0
+0,Line Graph,Asia,1818.0,741304115.0
+0,Line Graph,Asia,1819.0,745877888.0
+0,Line Graph,Asia,1820.0,750302436.0
+0,Line Graph,Asia,1821.0,754333381.0
+0,Line Graph,Asia,1822.0,758182933.0
+0,Line Graph,Asia,1823.0,762351061.0
+0,Line Graph,Asia,1824.0,766551242.0
+0,Line Graph,Asia,1825.0,770783722.0
+0,Line Graph,Asia,1826.0,775048757.0
+0,Line Graph,Asia,1827.0,779346599.0
+0,Line Graph,Asia,1828.0,783677502.0
+0,Line Graph,Asia,1829.0,787519369.0
+0,Line Graph,Asia,1830.0,790868367.0
+0,Line Graph,Asia,1831.0,793720630.0
+0,Line Graph,Asia,1832.0,796067340.0
+0,Line Graph,Asia,1833.0,797904515.0
+0,Line Graph,Asia,1834.0,799750516.0
+0,Line Graph,Asia,1835.0,801605412.0
+0,Line Graph,Asia,1836.0,803463258.0
+0,Line Graph,Asia,1837.0,805330136.0
+0,Line Graph,Asia,1838.0,807206121.0
+0,Line Graph,Asia,1839.0,809029646.0
+0,Line Graph,Asia,1840.0,810809627.0
+0,Line Graph,Asia,1841.0,812540636.0
+0,Line Graph,Asia,1842.0,814222743.0
+0,Line Graph,Asia,1843.0,815855997.0
+0,Line Graph,Asia,1844.0,817502099.0
+0,Line Graph,Asia,1845.0,819161198.0
+0,Line Graph,Asia,1846.0,820833452.0
+0,Line Graph,Asia,1847.0,822519006.0
+0,Line Graph,Asia,1848.0,824218038.0
+0,Line Graph,Asia,1849.0,825222462.0
+0,Line Graph,Asia,1850.0,825539753.0
+0,Line Graph,Asia,1851.0,824919179.0
+0,Line Graph,Asia,1852.0,823625614.0
+0,Line Graph,Asia,1853.0,821666826.0
+0,Line Graph,Asia,1854.0,819758194.0
+0,Line Graph,Asia,1855.0,817899693.0
+0,Line Graph,Asia,1856.0,816091289.0
+0,Line Graph,Asia,1857.0,814332986.0
+0,Line Graph,Asia,1858.0,812624772.0
+0,Line Graph,Asia,1859.0,811269628.0
+0,Line Graph,Asia,1860.0,810264188.0
+0,Line Graph,Asia,1861.0,809610216.0
+0,Line Graph,Asia,1862.0,809307266.0
+0,Line Graph,Asia,1863.0,809347406.0
+0,Line Graph,Asia,1864.0,809420661.0
+0,Line Graph,Asia,1865.0,809519559.0
+0,Line Graph,Asia,1866.0,809642614.0
+0,Line Graph,Asia,1867.0,809796645.0
+0,Line Graph,Asia,1868.0,809979613.0
+0,Line Graph,Asia,1869.0,810619596.0
+0,Line Graph,Asia,1870.0,811727086.0
+0,Line Graph,Asia,1871.0,813281475.0
+0,Line Graph,Asia,1872.0,815307566.0
+0,Line Graph,Asia,1873.0,817774457.0
+0,Line Graph,Asia,1874.0,820245876.0
+0,Line Graph,Asia,1875.0,822748807.0
+0,Line Graph,Asia,1876.0,825262338.0
+0,Line Graph,Asia,1877.0,827756319.0
+0,Line Graph,Asia,1878.0,830246401.0
+0,Line Graph,Asia,1879.0,833177921.0
+0,Line Graph,Asia,1880.0,836588561.0
+0,Line Graph,Asia,1881.0,840498338.0
+0,Line Graph,Asia,1882.0,844908026.0
+0,Line Graph,Asia,1883.0,849808775.0
+0,Line Graph,Asia,1884.0,854759869.0
+0,Line Graph,Asia,1885.0,859815828.0
+0,Line Graph,Asia,1886.0,864895539.0
+0,Line Graph,Asia,1887.0,870044849.0
+0,Line Graph,Asia,1888.0,875235619.0
+0,Line Graph,Asia,1889.0,880253270.0
+0,Line Graph,Asia,1890.0,885113714.0
+0,Line Graph,Asia,1891.0,889769283.0
+0,Line Graph,Asia,1892.0,894234392.0
+0,Line Graph,Asia,1893.0,898513802.0
+0,Line Graph,Asia,1894.0,902847416.0
+0,Line Graph,Asia,1895.0,907247338.0
+0,Line Graph,Asia,1896.0,911649066.0
+0,Line Graph,Asia,1897.0,916108835.0
+0,Line Graph,Asia,1898.0,920604531.0
+0,Line Graph,Asia,1899.0,925586618.0
+0,Line Graph,Asia,1900.0,931021418.0
+0,Line Graph,Asia,1901.0,936902660.0
+0,Line Graph,Asia,1902.0,943255046.0
+0,Line Graph,Asia,1903.0,950069951.0
+0,Line Graph,Asia,1904.0,956950596.0
+0,Line Graph,Asia,1905.0,963899803.0
+0,Line Graph,Asia,1906.0,970921559.0
+0,Line Graph,Asia,1907.0,978034978.0
+0,Line Graph,Asia,1908.0,985241824.0
+0,Line Graph,Asia,1909.0,992474216.0
+0,Line Graph,Asia,1910.0,999734197.0
+0,Line Graph,Asia,1911.0,1006983059.0
+0,Line Graph,Asia,1912.0,1014336227.0
+0,Line Graph,Asia,1913.0,1021733426.0
+0,Line Graph,Asia,1914.0,1029237086.0
+0,Line Graph,Asia,1915.0,1036849812.0
+0,Line Graph,Asia,1916.0,1044516276.0
+0,Line Graph,Asia,1917.0,1052212325.0
+0,Line Graph,Asia,1918.0,1060455454.0
+0,Line Graph,Asia,1919.0,1068676253.0
+0,Line Graph,Asia,1920.0,1076882587.0
+0,Line Graph,Asia,1921.0,1084965328.0
+0,Line Graph,Asia,1922.0,1092913940.0
+0,Line Graph,Asia,1923.0,1100750146.0
+0,Line Graph,Asia,1924.0,1108723191.0
+0,Line Graph,Asia,1925.0,1116816909.0
+0,Line Graph,Asia,1926.0,1125041494.0
+0,Line Graph,Asia,1927.0,1133396748.0
+0,Line Graph,Asia,1928.0,1141888360.0
+0,Line Graph,Asia,1929.0,1151215839.0
+0,Line Graph,Asia,1930.0,1161422369.0
+0,Line Graph,Asia,1931.0,1172523816.0
+0,Line Graph,Asia,1932.0,1184512344.0
+0,Line Graph,Asia,1933.0,1197356574.0
+0,Line Graph,Asia,1934.0,1210362883.0
+0,Line Graph,Asia,1935.0,1223537795.0
+0,Line Graph,Asia,1936.0,1236977246.0
+0,Line Graph,Asia,1937.0,1250648056.0
+0,Line Graph,Asia,1938.0,1264656203.0
+0,Line Graph,Asia,1939.0,1277274161.0
+0,Line Graph,Asia,1940.0,1288504299.0
+0,Line Graph,Asia,1941.0,1298273758.0
+0,Line Graph,Asia,1942.0,1306646043.0
+0,Line Graph,Asia,1943.0,1313426824.0
+0,Line Graph,Asia,1944.0,1319919244.0
+0,Line Graph,Asia,1945.0,1326525660.0
+0,Line Graph,Asia,1946.0,1333534094.0
+0,Line Graph,Asia,1947.0,1341255487.0
+0,Line Graph,Asia,1948.0,1349532425.0
+0,Line Graph,Asia,1949.0,1362069888.0
+0,Line Graph,Asia,1950.0,1367581793.0
+0,Line Graph,Asia,1951.0,1394310207.0
+0,Line Graph,Asia,1952.0,1423932566.0
+0,Line Graph,Asia,1953.0,1455634309.0
+0,Line Graph,Asia,1954.0,1488418592.0
+0,Line Graph,Asia,1955.0,1523146415.0
+0,Line Graph,Asia,1956.0,1558262821.0
+0,Line Graph,Asia,1957.0,1594675233.0
+0,Line Graph,Asia,1958.0,1631866795.0
+0,Line Graph,Asia,1959.0,1664697447.0
+0,Line Graph,Asia,1960.0,1691762696.0
+0,Line Graph,Asia,1961.0,1718156557.0
+0,Line Graph,Asia,1962.0,1753318905.0
+0,Line Graph,Asia,1963.0,1799305125.0
+0,Line Graph,Asia,1964.0,1847441778.0
+0,Line Graph,Asia,1965.0,1894030104.0
+0,Line Graph,Asia,1966.0,1940186408.0
+0,Line Graph,Asia,1967.0,1986308215.0
+0,Line Graph,Asia,1968.0,2034769710.0
+0,Line Graph,Asia,1969.0,2085428639.0
+0,Line Graph,Asia,1970.0,2136911807.0
+0,Line Graph,Asia,1971.0,2187672732.0
+0,Line Graph,Asia,1972.0,2237825630.0
+0,Line Graph,Asia,1973.0,2288852583.0
+0,Line Graph,Asia,1974.0,2339398095.0
+0,Line Graph,Asia,1975.0,2388510805.0
+0,Line Graph,Asia,1976.0,2436467535.0
+0,Line Graph,Asia,1977.0,2484229185.0
+0,Line Graph,Asia,1978.0,2531837746.0
+0,Line Graph,Asia,1979.0,2580755587.0
+0,Line Graph,Asia,1980.0,2631643580.0
+0,Line Graph,Asia,1981.0,2683999130.0
+0,Line Graph,Asia,1982.0,2738669570.0
+0,Line Graph,Asia,1983.0,2794057018.0
+0,Line Graph,Asia,1984.0,2849479886.0
+0,Line Graph,Asia,1985.0,2906232641.0
+0,Line Graph,Asia,1986.0,2964898217.0
+0,Line Graph,Asia,1987.0,3025641753.0
+0,Line Graph,Asia,1988.0,3086642989.0
+0,Line Graph,Asia,1989.0,3147693773.0
+0,Line Graph,Asia,1990.0,3209094423.0
+0,Line Graph,Asia,1991.0,3268207608.0
+0,Line Graph,Asia,1992.0,3324812378.0
+0,Line Graph,Asia,1993.0,3380039932.0
+0,Line Graph,Asia,1994.0,3433680236.0
+0,Line Graph,Asia,1995.0,3486817949.0
+0,Line Graph,Asia,1996.0,3539849816.0
+0,Line Graph,Asia,1997.0,3592367920.0
+0,Line Graph,Asia,1998.0,3644341780.0
+0,Line Graph,Asia,1999.0,3695620583.0
+0,Line Graph,Asia,2000.0,3746832777.0
+0,Line Graph,Asia,2001.0,3797954107.0
+0,Line Graph,Asia,2002.0,3847359674.0
+0,Line Graph,Asia,2003.0,3895799439.0
+0,Line Graph,Asia,2004.0,3944378395.0
+0,Line Graph,Asia,2005.0,3992890580.0
+0,Line Graph,Asia,2006.0,4041771416.0
+0,Line Graph,Asia,2007.0,4090564345.0
+0,Line Graph,Asia,2008.0,4139267468.0
+0,Line Graph,Asia,2009.0,4188829464.0
+0,Line Graph,Asia,2010.0,4238694946.0
+0,Line Graph,Asia,2011.0,4288350005.0
+0,Line Graph,Asia,2012.0,4338443538.0
+0,Line Graph,Asia,2013.0,4387757369.0
+0,Line Graph,Asia,2014.0,4435744576.0
+0,Line Graph,Asia,2015.0,4482088489.0
+0,Line Graph,Asia,2016.0,4527178153.0
+0,Line Graph,Asia,2017.0,4571224645.0
+0,Line Graph,Asia,2018.0,4612352852.0
+0,Line Graph,Asia,2019.0,4651098724.0
+0,Line Graph,Asia,2020.0,4686811214.0
+0,Line Graph,Asia,2021.0,4716999164.0
+0,Line Graph,Asia,2022.0,4746329727.0
+0,Line Graph,Asia,2023.0,4776659631.0
+0,Line Graph,Europe,-10000.0,481591.0
+0,Line Graph,Europe,-9000.0,589393.0
+0,Line Graph,Europe,-8000.0,730273.0
+0,Line Graph,Europe,-7000.0,918733.0
+0,Line Graph,Europe,-6000.0,1213808.0
+0,Line Graph,Europe,-5000.0,1609853.0
+0,Line Graph,Europe,-4000.0,2362475.0
+0,Line Graph,Europe,-3000.0,3673248.0
+0,Line Graph,Europe,-2000.0,7190463.0
+0,Line Graph,Europe,-1000.0,13127987.0
+0,Line Graph,Europe,0.0,32221408.0
+0,Line Graph,Europe,100.0,33691904.0
+0,Line Graph,Europe,200.0,35099404.0
+0,Line Graph,Europe,300.0,33721328.0
+0,Line Graph,Europe,400.0,32352328.0
+0,Line Graph,Europe,500.0,28556432.0
+0,Line Graph,Europe,600.0,24619002.0
+0,Line Graph,Europe,700.0,26911954.0
+0,Line Graph,Europe,800.0,29519746.0
+0,Line Graph,Europe,900.0,32844658.0
+0,Line Graph,Europe,1000.0,36341940.0
+0,Line Graph,Europe,1100.0,44633640.0
+0,Line Graph,Europe,1200.0,61861512.0
+0,Line Graph,Europe,1300.0,83293064.0
+0,Line Graph,Europe,1400.0,60722988.0
+0,Line Graph,Europe,1500.0,78614656.0
+0,Line Graph,Europe,1600.0,101501416.0
+0,Line Graph,Europe,1700.0,115422248.0
+0,Line Graph,Europe,1710.0,124736784.0
+0,Line Graph,Europe,1720.0,132044792.0
+0,Line Graph,Europe,1730.0,139577232.0
+0,Line Graph,Europe,1740.0,147164768.0
+0,Line Graph,Europe,1750.0,154836912.0
+0,Line Graph,Europe,1760.0,162638448.0
+0,Line Graph,Europe,1770.0,170541600.0
+0,Line Graph,Europe,1780.0,178972864.0
+0,Line Graph,Europe,1790.0,187924112.0
+0,Line Graph,Europe,1800.0,192912782.0
+0,Line Graph,Europe,1801.0,193750450.0
+0,Line Graph,Europe,1802.0,194597012.0
+0,Line Graph,Europe,1803.0,195452580.0
+0,Line Graph,Europe,1804.0,196317275.0
+0,Line Graph,Europe,1805.0,197191213.0
+0,Line Graph,Europe,1806.0,198074515.0
+0,Line Graph,Europe,1807.0,198967310.0
+0,Line Graph,Europe,1808.0,199869712.0
+0,Line Graph,Europe,1809.0,200781854.0
+0,Line Graph,Europe,1810.0,202103753.0
+0,Line Graph,Europe,1811.0,203456362.0
+0,Line Graph,Europe,1812.0,204986209.0
+0,Line Graph,Europe,1813.0,206703281.0
+0,Line Graph,Europe,1814.0,208490897.0
+0,Line Graph,Europe,1815.0,210352083.0
+0,Line Graph,Europe,1816.0,212290043.0
+0,Line Graph,Europe,1817.0,214308142.0
+0,Line Graph,Europe,1818.0,216409937.0
+0,Line Graph,Europe,1819.0,218468206.0
+0,Line Graph,Europe,1820.0,220472989.0
+0,Line Graph,Europe,1821.0,222417514.0
+0,Line Graph,Europe,1822.0,224286664.0
+0,Line Graph,Europe,1823.0,226068409.0
+0,Line Graph,Europe,1824.0,227880949.0
+0,Line Graph,Europe,1825.0,229728262.0
+0,Line Graph,Europe,1826.0,231655276.0
+0,Line Graph,Europe,1827.0,233614865.0
+0,Line Graph,Europe,1828.0,235607368.0
+0,Line Graph,Europe,1829.0,237592446.0
+0,Line Graph,Europe,1830.0,239569645.0
+0,Line Graph,Europe,1831.0,241497938.0
+0,Line Graph,Europe,1832.0,243402872.0
+0,Line Graph,Europe,1833.0,245283810.0
+0,Line Graph,Europe,1834.0,247180790.0
+0,Line Graph,Europe,1835.0,249093936.0
+0,Line Graph,Europe,1836.0,251023413.0
+0,Line Graph,Europe,1837.0,252969360.0
+0,Line Graph,Europe,1838.0,254931922.0
+0,Line Graph,Europe,1839.0,256848770.0
+0,Line Graph,Europe,1840.0,258719247.0
+0,Line Graph,Europe,1841.0,260546766.0
+0,Line Graph,Europe,1842.0,262326646.0
+0,Line Graph,Europe,1843.0,264058221.0
+0,Line Graph,Europe,1844.0,265803302.0
+0,Line Graph,Europe,1845.0,267562005.0
+0,Line Graph,Europe,1846.0,269334442.0
+0,Line Graph,Europe,1847.0,271120731.0
+0,Line Graph,Europe,1848.0,272920981.0
+0,Line Graph,Europe,1849.0,274744344.0
+0,Line Graph,Europe,1850.0,276591094.0
+0,Line Graph,Europe,1851.0,278448109.0
+0,Line Graph,Europe,1852.0,280328983.0
+0,Line Graph,Europe,1853.0,282233994.0
+0,Line Graph,Europe,1854.0,284154408.0
+0,Line Graph,Europe,1855.0,286090371.0
+0,Line Graph,Europe,1856.0,288042015.0
+0,Line Graph,Europe,1857.0,290009483.0
+0,Line Graph,Europe,1858.0,291992923.0
+0,Line Graph,Europe,1859.0,294017875.0
+0,Line Graph,Europe,1860.0,296084867.0
+0,Line Graph,Europe,1861.0,298188754.0
+0,Line Graph,Europe,1862.0,300335672.0
+0,Line Graph,Europe,1863.0,302526157.0
+0,Line Graph,Europe,1864.0,304735322.0
+0,Line Graph,Europe,1865.0,306963336.0
+0,Line Graph,Europe,1866.0,309210382.0
+0,Line Graph,Europe,1867.0,311476615.0
+0,Line Graph,Europe,1868.0,313762238.0
+0,Line Graph,Europe,1869.0,316101748.0
+0,Line Graph,Europe,1870.0,318496223.0
+0,Line Graph,Europe,1871.0,320895564.0
+0,Line Graph,Europe,1872.0,323407827.0
+0,Line Graph,Europe,1873.0,325978445.0
+0,Line Graph,Europe,1874.0,328574180.0
+0,Line Graph,Europe,1875.0,331195305.0
+0,Line Graph,Europe,1876.0,333842087.0
+0,Line Graph,Europe,1877.0,336514804.0
+0,Line Graph,Europe,1878.0,339213731.0
+0,Line Graph,Europe,1879.0,341933309.0
+0,Line Graph,Europe,1880.0,344673453.0
+0,Line Graph,Europe,1881.0,347431911.0
+0,Line Graph,Europe,1882.0,350210746.0
+0,Line Graph,Europe,1883.0,353009867.0
+0,Line Graph,Europe,1884.0,355835126.0
+0,Line Graph,Europe,1885.0,358686783.0
+0,Line Graph,Europe,1886.0,361565119.0
+0,Line Graph,Europe,1887.0,364470406.0
+0,Line Graph,Europe,1888.0,367402912.0
+0,Line Graph,Europe,1889.0,370377917.0
+0,Line Graph,Europe,1890.0,373396202.0
+0,Line Graph,Europe,1891.0,376467366.0
+0,Line Graph,Europe,1892.0,379583540.0
+0,Line Graph,Europe,1893.0,382745540.0
+0,Line Graph,Europe,1894.0,385939052.0
+0,Line Graph,Europe,1895.0,389164415.0
+0,Line Graph,Europe,1896.0,392421980.0
+0,Line Graph,Europe,1897.0,395712098.0
+0,Line Graph,Europe,1898.0,399035122.0
+0,Line Graph,Europe,1899.0,402422387.0
+0,Line Graph,Europe,1900.0,405874841.0
+0,Line Graph,Europe,1901.0,409398987.0
+0,Line Graph,Europe,1902.0,412988802.0
+0,Line Graph,Europe,1903.0,416646271.0
+0,Line Graph,Europe,1904.0,420341408.0
+0,Line Graph,Europe,1905.0,424074645.0
+0,Line Graph,Europe,1906.0,427845429.0
+0,Line Graph,Europe,1907.0,431657194.0
+0,Line Graph,Europe,1908.0,435507397.0
+0,Line Graph,Europe,1909.0,438821305.0
+0,Line Graph,Europe,1910.0,441597178.0
+0,Line Graph,Europe,1911.0,443794845.0
+0,Line Graph,Europe,1912.0,445470705.0
+0,Line Graph,Europe,1913.0,446604755.0
+0,Line Graph,Europe,1914.0,447762304.0
+0,Line Graph,Europe,1915.0,448886334.0
+0,Line Graph,Europe,1916.0,449968840.0
+0,Line Graph,Europe,1917.0,451046822.0
+0,Line Graph,Europe,1918.0,452130279.0
+0,Line Graph,Europe,1919.0,453717155.0
+0,Line Graph,Europe,1920.0,455905600.0
+0,Line Graph,Europe,1921.0,458527868.0
+0,Line Graph,Europe,1922.0,461705219.0
+0,Line Graph,Europe,1923.0,465327032.0
+0,Line Graph,Europe,1924.0,468981053.0
+0,Line Graph,Europe,1925.0,472684702.0
+0,Line Graph,Europe,1926.0,476407402.0
+0,Line Graph,Europe,1927.0,480148599.0
+0,Line Graph,Europe,1928.0,483928725.0
+0,Line Graph,Europe,1929.0,487657013.0
+0,Line Graph,Europe,1930.0,491337000.0
+0,Line Graph,Europe,1931.0,494970217.0
+0,Line Graph,Europe,1932.0,498545108.0
+0,Line Graph,Europe,1933.0,502059107.0
+0,Line Graph,Europe,1934.0,505598856.0
+0,Line Graph,Europe,1935.0,509162668.0
+0,Line Graph,Europe,1936.0,512751864.0
+0,Line Graph,Europe,1937.0,516369757.0
+0,Line Graph,Europe,1938.0,519992677.0
+0,Line Graph,Europe,1939.0,523576813.0
+0,Line Graph,Europe,1940.0,526706729.0
+0,Line Graph,Europe,1941.0,529472974.0
+0,Line Graph,Europe,1942.0,531916941.0
+0,Line Graph,Europe,1943.0,534139002.0
+0,Line Graph,Europe,1944.0,536489647.0
+0,Line Graph,Europe,1945.0,538385925.0
+0,Line Graph,Europe,1946.0,539563909.0
+0,Line Graph,Europe,1947.0,541189671.0
+0,Line Graph,Europe,1948.0,543672662.0
+0,Line Graph,Europe,1949.0,546614350.0
+0,Line Graph,Europe,1950.0,549374181.0
+0,Line Graph,Europe,1951.0,554348783.0
+0,Line Graph,Europe,1952.0,559311644.0
+0,Line Graph,Europe,1953.0,564673451.0
+0,Line Graph,Europe,1954.0,570282363.0
+0,Line Graph,Europe,1955.0,575990558.0
+0,Line Graph,Europe,1956.0,581712529.0
+0,Line Graph,Europe,1957.0,587753658.0
+0,Line Graph,Europe,1958.0,594196448.0
+0,Line Graph,Europe,1959.0,600407992.0
+0,Line Graph,Europe,1960.0,606417128.0
+0,Line Graph,Europe,1961.0,612470905.0
+0,Line Graph,Europe,1962.0,618430819.0
+0,Line Graph,Europe,1963.0,624213769.0
+0,Line Graph,Europe,1964.0,629781124.0
+0,Line Graph,Europe,1965.0,635044327.0
+0,Line Graph,Europe,1966.0,640050494.0
+0,Line Graph,Europe,1967.0,644746163.0
+0,Line Graph,Europe,1968.0,649263031.0
+0,Line Graph,Europe,1969.0,653794042.0
+0,Line Graph,Europe,1970.0,657660067.0
+0,Line Graph,Europe,1971.0,661624408.0
+0,Line Graph,Europe,1972.0,666196726.0
+0,Line Graph,Europe,1973.0,670479946.0
+0,Line Graph,Europe,1974.0,674419030.0
+0,Line Graph,Europe,1975.0,677953491.0
+0,Line Graph,Europe,1976.0,681333404.0
+0,Line Graph,Europe,1977.0,684781638.0
+0,Line Graph,Europe,1978.0,688120618.0
+0,Line Graph,Europe,1979.0,691438258.0
+0,Line Graph,Europe,1980.0,694976561.0
+0,Line Graph,Europe,1981.0,698297493.0
+0,Line Graph,Europe,1982.0,701163007.0
+0,Line Graph,Europe,1983.0,704000872.0
+0,Line Graph,Europe,1984.0,706845163.0
+0,Line Graph,Europe,1985.0,709686996.0
+0,Line Graph,Europe,1986.0,712751187.0
+0,Line Graph,Europe,1987.0,715938696.0
+0,Line Graph,Europe,1988.0,719157222.0
+0,Line Graph,Europe,1989.0,722217653.0
+0,Line Graph,Europe,1990.0,724943715.0
+0,Line Graph,Europe,1991.0,727298534.0
+0,Line Graph,Europe,1992.0,728443297.0
+0,Line Graph,Europe,1993.0,728848398.0
+0,Line Graph,Europe,1994.0,729745970.0
+0,Line Graph,Europe,1995.0,730260103.0
+0,Line Graph,Europe,1996.0,730267162.0
+0,Line Graph,Europe,1997.0,730339959.0
+0,Line Graph,Europe,1998.0,729796180.0
+0,Line Graph,Europe,1999.0,729166727.0
+0,Line Graph,Europe,2000.0,729129967.0
+0,Line Graph,Europe,2001.0,729220001.0
+0,Line Graph,Europe,2002.0,730126161.0
+0,Line Graph,Europe,2003.0,731394229.0
+0,Line Graph,Europe,2004.0,732282324.0
+0,Line Graph,Europe,2005.0,733101021.0
+0,Line Graph,Europe,2006.0,733756870.0
+0,Line Graph,Europe,2007.0,734987444.0
+0,Line Graph,Europe,2008.0,736658822.0
+0,Line Graph,Europe,2009.0,738063440.0
+0,Line Graph,Europe,2010.0,739291483.0
+0,Line Graph,Europe,2011.0,740524016.0
+0,Line Graph,Europe,2012.0,741642607.0
+0,Line Graph,Europe,2013.0,742672989.0
+0,Line Graph,Europe,2014.0,743860819.0
+0,Line Graph,Europe,2015.0,745474876.0
+0,Line Graph,Europe,2016.0,747258527.0
+0,Line Graph,Europe,2017.0,748701837.0
+0,Line Graph,Europe,2018.0,749853945.0
+0,Line Graph,Europe,2019.0,750809114.0
+0,Line Graph,Europe,2020.0,750844584.0
+0,Line Graph,Europe,2021.0,749949128.0
+0,Line Graph,Europe,2022.0,748314268.0
+0,Line Graph,Europe,2023.0,746966209.0
+0,Line Graph,North America,-10000.0,1184755.0
+0,Line Graph,North America,-9000.0,1429989.0
+0,Line Graph,North America,-8000.0,1731102.0
+0,Line Graph,North America,-7000.0,2101578.0
+0,Line Graph,North America,-6000.0,2558294.0
+0,Line Graph,North America,-5000.0,3122403.0
+0,Line Graph,North America,-4000.0,3820490.0
+0,Line Graph,North America,-3000.0,4686073.0
+0,Line Graph,North America,-2000.0,5761597.0
+0,Line Graph,North America,-1000.0,7101145.0
+0,Line Graph,North America,0.0,8774224.0
+0,Line Graph,North America,100.0,9271780.0
+0,Line Graph,North America,200.0,9800476.0
+0,Line Graph,North America,300.0,10362821.0
+0,Line Graph,North America,400.0,10961662.0
+0,Line Graph,North America,500.0,11600265.0
+0,Line Graph,North America,600.0,12282431.0
+0,Line Graph,North America,700.0,13012655.0
+0,Line Graph,North America,800.0,13796389.0
+0,Line Graph,North America,900.0,15956907.0
+0,Line Graph,North America,1000.0,18008338.0
+0,Line Graph,North America,1100.0,20257400.0
+0,Line Graph,North America,1200.0,22629298.0
+0,Line Graph,North America,1300.0,25070078.0
+0,Line Graph,North America,1400.0,27685150.0
+0,Line Graph,North America,1500.0,30472692.0
+0,Line Graph,North America,1600.0,3834259.0
+0,Line Graph,North America,1700.0,6791309.0
+0,Line Graph,North America,1710.0,7672339.0
+0,Line Graph,North America,1720.0,8575310.0
+0,Line Graph,North America,1730.0,9499717.0
+0,Line Graph,North America,1740.0,10449781.0
+0,Line Graph,North America,1750.0,11430595.0
+0,Line Graph,North America,1760.0,12448471.0
+0,Line Graph,North America,1770.0,13511203.0
+0,Line Graph,North America,1780.0,14642050.0
+0,Line Graph,North America,1790.0,15835615.0
+0,Line Graph,North America,1800.0,14838618.0
+0,Line Graph,North America,1801.0,15067685.0
+0,Line Graph,North America,1802.0,15302563.0
+0,Line Graph,North America,1803.0,15543433.0
+0,Line Graph,North America,1804.0,15790477.0
+0,Line Graph,North America,1805.0,16043894.0
+0,Line Graph,North America,1806.0,16303900.0
+0,Line Graph,North America,1807.0,16570718.0
+0,Line Graph,North America,1808.0,16844590.0
+0,Line Graph,North America,1809.0,17125777.0
+0,Line Graph,North America,1810.0,17467174.0
+0,Line Graph,North America,1811.0,17807168.0
+0,Line Graph,North America,1812.0,18170645.0
+0,Line Graph,North America,1813.0,18557972.0
+0,Line Graph,North America,1814.0,18955805.0
+0,Line Graph,North America,1815.0,19364459.0
+0,Line Graph,North America,1816.0,19784263.0
+0,Line Graph,North America,1817.0,20215550.0
+0,Line Graph,North America,1818.0,20658668.0
+0,Line Graph,North America,1819.0,21090464.0
+0,Line Graph,North America,1820.0,21510934.0
+0,Line Graph,North America,1821.0,21914615.0
+0,Line Graph,North America,1822.0,22306934.0
+0,Line Graph,North America,1823.0,22690399.0
+0,Line Graph,North America,1824.0,23086083.0
+0,Line Graph,North America,1825.0,23494377.0
+0,Line Graph,North America,1826.0,23915695.0
+0,Line Graph,North America,1827.0,24350457.0
+0,Line Graph,North America,1828.0,24799113.0
+0,Line Graph,North America,1829.0,25266638.0
+0,Line Graph,North America,1830.0,25752984.0
+0,Line Graph,North America,1831.0,26258100.0
+0,Line Graph,North America,1832.0,26781880.0
+0,Line Graph,North America,1833.0,27324243.0
+0,Line Graph,North America,1834.0,27879610.0
+0,Line Graph,North America,1835.0,28450522.0
+0,Line Graph,North America,1836.0,29036165.0
+0,Line Graph,North America,1837.0,29636955.0
+0,Line Graph,North America,1838.0,30253319.0
+0,Line Graph,North America,1839.0,30898340.0
+0,Line Graph,North America,1840.0,31573090.0
+0,Line Graph,North America,1841.0,32282594.0
+0,Line Graph,North America,1842.0,33024083.0
+0,Line Graph,North America,1843.0,33798746.0
+0,Line Graph,North America,1844.0,34595094.0
+0,Line Graph,North America,1845.0,35413870.0
+0,Line Graph,North America,1846.0,36255770.0
+0,Line Graph,North America,1847.0,37121492.0
+0,Line Graph,North America,1848.0,38011781.0
+0,Line Graph,North America,1849.0,38929911.0
+0,Line Graph,North America,1850.0,39876476.0
+0,Line Graph,North America,1851.0,40842039.0
+0,Line Graph,North America,1852.0,41836553.0
+0,Line Graph,North America,1853.0,42860618.0
+0,Line Graph,North America,1854.0,43912313.0
+0,Line Graph,North America,1855.0,44992434.0
+0,Line Graph,North America,1856.0,46101792.0
+0,Line Graph,North America,1857.0,47241225.0
+0,Line Graph,North America,1858.0,48411600.0
+0,Line Graph,North America,1859.0,49534842.0
+0,Line Graph,North America,1860.0,50608685.0
+0,Line Graph,North America,1861.0,51632329.0
+0,Line Graph,North America,1862.0,52601660.0
+0,Line Graph,North America,1863.0,53514246.0
+0,Line Graph,North America,1864.0,54446273.0
+0,Line Graph,North America,1865.0,55398175.0
+0,Line Graph,North America,1866.0,56370397.0
+0,Line Graph,North America,1867.0,57363403.0
+0,Line Graph,North America,1868.0,58377653.0
+0,Line Graph,North America,1869.0,59427577.0
+0,Line Graph,North America,1870.0,60513811.0
+0,Line Graph,North America,1871.0,61637547.0
+0,Line Graph,North America,1872.0,62798952.0
+0,Line Graph,North America,1873.0,63998628.0
+0,Line Graph,North America,1874.0,65223307.0
+0,Line Graph,North America,1875.0,66473510.0
+0,Line Graph,North America,1876.0,67749780.0
+0,Line Graph,North America,1877.0,69052658.0
+0,Line Graph,North America,1878.0,70382706.0
+0,Line Graph,North America,1879.0,71736945.0
+0,Line Graph,North America,1880.0,73115785.0
+0,Line Graph,North America,1881.0,74519516.0
+0,Line Graph,North America,1882.0,75948682.0
+0,Line Graph,North America,1883.0,77403760.0
+0,Line Graph,North America,1884.0,78888752.0
+0,Line Graph,North America,1885.0,80404307.0
+0,Line Graph,North America,1886.0,81951120.0
+0,Line Graph,North America,1887.0,83529830.0
+0,Line Graph,North America,1888.0,85141128.0
+0,Line Graph,North America,1889.0,86734345.0
+0,Line Graph,North America,1890.0,88308229.0
+0,Line Graph,North America,1891.0,89862886.0
+0,Line Graph,North America,1892.0,91395915.0
+0,Line Graph,North America,1893.0,92905581.0
+0,Line Graph,North America,1894.0,94441763.0
+0,Line Graph,North America,1895.0,96004933.0
+0,Line Graph,North America,1896.0,97595577.0
+0,Line Graph,North America,1897.0,99214186.0
+0,Line Graph,North America,1898.0,100861272.0
+0,Line Graph,North America,1899.0,102568489.0
+0,Line Graph,North America,1900.0,104337584.0
+0,Line Graph,North America,1901.0,106181070.0
+0,Line Graph,North America,1902.0,108089905.0
+0,Line Graph,North America,1903.0,110066137.0
+0,Line Graph,North America,1904.0,112080524.0
+0,Line Graph,North America,1905.0,114133852.0
+0,Line Graph,North America,1906.0,116226903.0
+0,Line Graph,North America,1907.0,118360491.0
+0,Line Graph,North America,1908.0,120535439.0
+0,Line Graph,North America,1909.0,122613680.0
+0,Line Graph,North America,1910.0,124592192.0
+0,Line Graph,North America,1911.0,126466166.0
+0,Line Graph,North America,1912.0,128233899.0
+0,Line Graph,North America,1913.0,129892337.0
+0,Line Graph,North America,1914.0,131576755.0
+0,Line Graph,North America,1915.0,133287590.0
+0,Line Graph,North America,1916.0,135025298.0
+0,Line Graph,North America,1917.0,136790334.0
+0,Line Graph,North America,1918.0,138627827.0
+0,Line Graph,North America,1919.0,140539522.0
+0,Line Graph,North America,1920.0,142526443.0
+0,Line Graph,North America,1921.0,144590318.0
+0,Line Graph,North America,1922.0,146732394.0
+0,Line Graph,North America,1923.0,148952849.0
+0,Line Graph,North America,1924.0,151207885.0
+0,Line Graph,North America,1925.0,153498078.0
+0,Line Graph,North America,1926.0,155824012.0
+0,Line Graph,North America,1927.0,158186296.0
+0,Line Graph,North America,1928.0,160585523.0
+0,Line Graph,North America,1929.0,162832831.0
+0,Line Graph,North America,1930.0,164924575.0
+0,Line Graph,North America,1931.0,166858221.0
+0,Line Graph,North America,1932.0,168628343.0
+0,Line Graph,North America,1933.0,170231505.0
+0,Line Graph,North America,1934.0,171853242.0
+0,Line Graph,North America,1935.0,173493832.0
+0,Line Graph,North America,1936.0,175153555.0
+0,Line Graph,North America,1937.0,176832698.0
+0,Line Graph,North America,1938.0,178531557.0
+0,Line Graph,North America,1939.0,180525436.0
+0,Line Graph,North America,1940.0,182823179.0
+0,Line Graph,North America,1941.0,185449049.0
+0,Line Graph,North America,1942.0,188396632.0
+0,Line Graph,North America,1943.0,191675323.0
+0,Line Graph,North America,1944.0,195019763.0
+0,Line Graph,North America,1945.0,198431553.0
+0,Line Graph,North America,1946.0,201912308.0
+0,Line Graph,North America,1947.0,205463865.0
+0,Line Graph,North America,1948.0,209087777.0
+0,Line Graph,North America,1949.0,212901535.0
+0,Line Graph,North America,1950.0,222818942.0
+0,Line Graph,North America,1951.0,226777853.0
+0,Line Graph,North America,1952.0,230880347.0
+0,Line Graph,North America,1953.0,235114817.0
+0,Line Graph,North America,1954.0,239512127.0
+0,Line Graph,North America,1955.0,244056556.0
+0,Line Graph,North America,1956.0,248743632.0
+0,Line Graph,North America,1957.0,253588808.0
+0,Line Graph,North America,1958.0,258514843.0
+0,Line Graph,North America,1959.0,263669394.0
+0,Line Graph,North America,1960.0,269079991.0
+0,Line Graph,North America,1961.0,274663001.0
+0,Line Graph,North America,1962.0,280344711.0
+0,Line Graph,North America,1963.0,285962471.0
+0,Line Graph,North America,1964.0,291551215.0
+0,Line Graph,North America,1965.0,297056448.0
+0,Line Graph,North America,1966.0,302406133.0
+0,Line Graph,North America,1967.0,307620058.0
+0,Line Graph,North America,1968.0,312721535.0
+0,Line Graph,North America,1969.0,317807457.0
+0,Line Graph,North America,1970.0,323225990.0
+0,Line Graph,North America,1971.0,328861435.0
+0,Line Graph,North America,1972.0,334187766.0
+0,Line Graph,North America,1973.0,339231488.0
+0,Line Graph,North America,1974.0,344226868.0
+0,Line Graph,North America,1975.0,349224556.0
+0,Line Graph,North America,1976.0,354178873.0
+0,Line Graph,North America,1977.0,359152730.0
+0,Line Graph,North America,1978.0,364168545.0
+0,Line Graph,North America,1979.0,369229445.0
+0,Line Graph,North America,1980.0,374396450.0
+0,Line Graph,North America,1981.0,379564365.0
+0,Line Graph,North America,1982.0,384744475.0
+0,Line Graph,North America,1983.0,389995274.0
+0,Line Graph,North America,1984.0,395240041.0
+0,Line Graph,North America,1985.0,400471527.0
+0,Line Graph,North America,1986.0,405669376.0
+0,Line Graph,North America,1987.0,410877360.0
+0,Line Graph,North America,1988.0,416201801.0
+0,Line Graph,North America,1989.0,421643657.0
+0,Line Graph,North America,1990.0,427527970.0
+0,Line Graph,North America,1991.0,433792318.0
+0,Line Graph,North America,1992.0,440060892.0
+0,Line Graph,North America,1993.0,446185596.0
+0,Line Graph,North America,1994.0,452083583.0
+0,Line Graph,North America,1995.0,457858573.0
+0,Line Graph,North America,1996.0,463530247.0
+0,Line Graph,North America,1997.0,469106576.0
+0,Line Graph,North America,1998.0,474677559.0
+0,Line Graph,North America,1999.0,480238641.0
+0,Line Graph,North America,2000.0,485805117.0
+0,Line Graph,North America,2001.0,491432309.0
+0,Line Graph,North America,2002.0,497028245.0
+0,Line Graph,North America,2003.0,502587589.0
+0,Line Graph,North America,2004.0,508166874.0
+0,Line Graph,North America,2005.0,513798980.0
+0,Line Graph,North America,2006.0,519545243.0
+0,Line Graph,North America,2007.0,525495121.0
+0,Line Graph,North America,2008.0,531570001.0
+0,Line Graph,North America,2009.0,537617447.0
+0,Line Graph,North America,2010.0,543593308.0
+0,Line Graph,North America,2011.0,549552428.0
+0,Line Graph,North America,2012.0,555486393.0
+0,Line Graph,North America,2013.0,561345659.0
+0,Line Graph,North America,2014.0,567078666.0
+0,Line Graph,North America,2015.0,572637322.0
+0,Line Graph,North America,2016.0,578186332.0
+0,Line Graph,North America,2017.0,583669319.0
+0,Line Graph,North America,2018.0,589049569.0
+0,Line Graph,North America,2019.0,594346844.0
+0,Line Graph,North America,2020.0,598250669.0
+0,Line Graph,North America,2021.0,600876349.0
+0,Line Graph,North America,2022.0,604356255.0
+0,Line Graph,North America,2023.0,608770547.0
+0,Line Graph,Oceania,-10000.0,324198.0
+0,Line Graph,Oceania,-9000.0,329049.0
+0,Line Graph,Oceania,-8000.0,336328.0
+0,Line Graph,Oceania,-7000.0,347249.0
+0,Line Graph,Oceania,-6000.0,363637.0
+0,Line Graph,Oceania,-5000.0,388233.0
+0,Line Graph,Oceania,-4000.0,425154.0
+0,Line Graph,Oceania,-3000.0,480593.0
+0,Line Graph,Oceania,-2000.0,563863.0
+0,Line Graph,Oceania,-1000.0,698260.0
+0,Line Graph,Oceania,0.0,888568.0
+0,Line Graph,Oceania,100.0,916818.0
+0,Line Graph,Oceania,200.0,946521.0
+0,Line Graph,Oceania,300.0,977761.0
+0,Line Graph,Oceania,400.0,1010629.0
+0,Line Graph,Oceania,500.0,1045226.0
+0,Line Graph,Oceania,600.0,1081664.0
+0,Line Graph,Oceania,700.0,1120066.0
+0,Line Graph,Oceania,800.0,1160576.0
+0,Line Graph,Oceania,900.0,1203361.0
+0,Line Graph,Oceania,1000.0,1248621.0
+0,Line Graph,Oceania,1100.0,1296604.0
+0,Line Graph,Oceania,1200.0,1363624.0
+0,Line Graph,Oceania,1300.0,1422863.0
+0,Line Graph,Oceania,1400.0,1482524.0
+0,Line Graph,Oceania,1500.0,1607577.0
+0,Line Graph,Oceania,1600.0,1739404.0
+0,Line Graph,Oceania,1700.0,1873995.0
+0,Line Graph,Oceania,1710.0,1873168.0
+0,Line Graph,Oceania,1720.0,1883302.0
+0,Line Graph,Oceania,1730.0,1894083.0
+0,Line Graph,Oceania,1740.0,1905593.0
+0,Line Graph,Oceania,1750.0,1917932.0
+0,Line Graph,Oceania,1760.0,1931220.0
+0,Line Graph,Oceania,1770.0,1945771.0
+0,Line Graph,Oceania,1780.0,1961847.0
+0,Line Graph,Oceania,1790.0,1980465.0
+0,Line Graph,Oceania,1800.0,1620686.0
+0,Line Graph,Oceania,1801.0,1620148.0
+0,Line Graph,Oceania,1802.0,1619978.0
+0,Line Graph,Oceania,1803.0,1620170.0
+0,Line Graph,Oceania,1804.0,1620722.0
+0,Line Graph,Oceania,1805.0,1621628.0
+0,Line Graph,Oceania,1806.0,1622888.0
+0,Line Graph,Oceania,1807.0,1624496.0
+0,Line Graph,Oceania,1808.0,1626451.0
+0,Line Graph,Oceania,1809.0,1628749.0
+0,Line Graph,Oceania,1810.0,1631728.0
+0,Line Graph,Oceania,1811.0,1634728.0
+0,Line Graph,Oceania,1812.0,1638069.0
+0,Line Graph,Oceania,1813.0,1641750.0
+0,Line Graph,Oceania,1814.0,1645765.0
+0,Line Graph,Oceania,1815.0,1650119.0
+0,Line Graph,Oceania,1816.0,1654809.0
+0,Line Graph,Oceania,1817.0,1659834.0
+0,Line Graph,Oceania,1818.0,1665199.0
+0,Line Graph,Oceania,1819.0,1670067.0
+0,Line Graph,Oceania,1820.0,1674378.0
+0,Line Graph,Oceania,1821.0,1678146.0
+0,Line Graph,Oceania,1822.0,1681224.0
+0,Line Graph,Oceania,1823.0,1683547.0
+0,Line Graph,Oceania,1824.0,1685889.0
+0,Line Graph,Oceania,1825.0,1688242.0
+0,Line Graph,Oceania,1826.0,1690614.0
+0,Line Graph,Oceania,1827.0,1693000.0
+0,Line Graph,Oceania,1828.0,1695401.0
+0,Line Graph,Oceania,1829.0,1698807.0
+0,Line Graph,Oceania,1830.0,1703281.0
+0,Line Graph,Oceania,1831.0,1708906.0
+0,Line Graph,Oceania,1832.0,1715728.0
+0,Line Graph,Oceania,1833.0,1723811.0
+0,Line Graph,Oceania,1834.0,1732231.0
+0,Line Graph,Oceania,1835.0,1740990.0
+0,Line Graph,Oceania,1836.0,1750087.0
+0,Line Graph,Oceania,1837.0,1759527.0
+0,Line Graph,Oceania,1838.0,1769312.0
+0,Line Graph,Oceania,1839.0,1781254.0
+0,Line Graph,Oceania,1840.0,1795408.0
+0,Line Graph,Oceania,1841.0,1811863.0
+0,Line Graph,Oceania,1842.0,1830664.0
+0,Line Graph,Oceania,1843.0,1851890.0
+0,Line Graph,Oceania,1844.0,1872994.0
+0,Line Graph,Oceania,1845.0,1894811.0
+0,Line Graph,Oceania,1846.0,1917374.0
+0,Line Graph,Oceania,1847.0,1940704.0
+0,Line Graph,Oceania,1848.0,1964827.0
+0,Line Graph,Oceania,1849.0,1995335.0
+0,Line Graph,Oceania,1850.0,2032905.0
+0,Line Graph,Oceania,1851.0,2078499.0
+0,Line Graph,Oceania,1852.0,2132695.0
+0,Line Graph,Oceania,1853.0,2196375.0
+0,Line Graph,Oceania,1854.0,2264940.0
+0,Line Graph,Oceania,1855.0,2338786.0
+0,Line Graph,Oceania,1856.0,2418328.0
+0,Line Graph,Oceania,1857.0,2504022.0
+0,Line Graph,Oceania,1858.0,2596365.0
+0,Line Graph,Oceania,1859.0,2683252.0
+0,Line Graph,Oceania,1860.0,2763879.0
+0,Line Graph,Oceania,1861.0,2837295.0
+0,Line Graph,Oceania,1862.0,2902597.0
+0,Line Graph,Oceania,1863.0,2958725.0
+0,Line Graph,Oceania,1864.0,3017142.0
+0,Line Graph,Oceania,1865.0,3077969.0
+0,Line Graph,Oceania,1866.0,3141338.0
+0,Line Graph,Oceania,1867.0,3207387.0
+0,Line Graph,Oceania,1868.0,3276265.0
+0,Line Graph,Oceania,1869.0,3343985.0
+0,Line Graph,Oceania,1870.0,3410382.0
+0,Line Graph,Oceania,1871.0,3475303.0
+0,Line Graph,Oceania,1872.0,3538541.0
+0,Line Graph,Oceania,1873.0,3599899.0
+0,Line Graph,Oceania,1874.0,3663296.0
+0,Line Graph,Oceania,1875.0,3728819.0
+0,Line Graph,Oceania,1876.0,3796562.0
+0,Line Graph,Oceania,1877.0,3866624.0
+0,Line Graph,Oceania,1878.0,3939110.0
+0,Line Graph,Oceania,1879.0,4016421.0
+0,Line Graph,Oceania,1880.0,4098707.0
+0,Line Graph,Oceania,1881.0,4186123.0
+0,Line Graph,Oceania,1882.0,4278795.0
+0,Line Graph,Oceania,1883.0,4376868.0
+0,Line Graph,Oceania,1884.0,4478189.0
+0,Line Graph,Oceania,1885.0,4582869.0
+0,Line Graph,Oceania,1886.0,4691019.0
+0,Line Graph,Oceania,1887.0,4802758.0
+0,Line Graph,Oceania,1888.0,4918203.0
+0,Line Graph,Oceania,1889.0,5026696.0
+0,Line Graph,Oceania,1890.0,5127791.0
+0,Line Graph,Oceania,1891.0,5221040.0
+0,Line Graph,Oceania,1892.0,5305943.0
+0,Line Graph,Oceania,1893.0,5381997.0
+0,Line Graph,Oceania,1894.0,5459450.0
+0,Line Graph,Oceania,1895.0,5538331.0
+0,Line Graph,Oceania,1896.0,5618663.0
+0,Line Graph,Oceania,1897.0,5700474.0
+0,Line Graph,Oceania,1898.0,5783794.0
+0,Line Graph,Oceania,1899.0,5868138.0
+0,Line Graph,Oceania,1900.0,5953511.0
+0,Line Graph,Oceania,1901.0,6041407.0
+0,Line Graph,Oceania,1902.0,6130264.0
+0,Line Graph,Oceania,1903.0,6220673.0
+0,Line Graph,Oceania,1904.0,6312680.0
+0,Line Graph,Oceania,1905.0,6406320.0
+0,Line Graph,Oceania,1906.0,6501615.0
+0,Line Graph,Oceania,1907.0,6598575.0
+0,Line Graph,Oceania,1908.0,6697260.0
+0,Line Graph,Oceania,1909.0,6790941.0
+0,Line Graph,Oceania,1910.0,6880041.0
+0,Line Graph,Oceania,1911.0,6964984.0
+0,Line Graph,Oceania,1912.0,7046151.0
+0,Line Graph,Oceania,1913.0,7123955.0
+0,Line Graph,Oceania,1914.0,7205616.0
+0,Line Graph,Oceania,1915.0,7291095.0
+0,Line Graph,Oceania,1916.0,7380375.0
+0,Line Graph,Oceania,1917.0,7473552.0
+0,Line Graph,Oceania,1918.0,7570522.0
+0,Line Graph,Oceania,1919.0,7675551.0
+0,Line Graph,Oceania,1920.0,7788438.0
+0,Line Graph,Oceania,1921.0,7909326.0
+0,Line Graph,Oceania,1922.0,8037669.0
+0,Line Graph,Oceania,1923.0,8173333.0
+0,Line Graph,Oceania,1924.0,8311980.0
+0,Line Graph,Oceania,1925.0,8453646.0
+0,Line Graph,Oceania,1926.0,8598375.0
+0,Line Graph,Oceania,1927.0,8746877.0
+0,Line Graph,Oceania,1928.0,8898531.0
+0,Line Graph,Oceania,1929.0,9040916.0
+0,Line Graph,Oceania,1930.0,9174006.0
+0,Line Graph,Oceania,1931.0,9297611.0
+0,Line Graph,Oceania,1932.0,9411863.0
+0,Line Graph,Oceania,1933.0,9516731.0
+0,Line Graph,Oceania,1934.0,9624651.0
+0,Line Graph,Oceania,1935.0,9735670.0
+0,Line Graph,Oceania,1936.0,9849842.0
+0,Line Graph,Oceania,1937.0,9967558.0
+0,Line Graph,Oceania,1938.0,10088561.0
+0,Line Graph,Oceania,1939.0,10225158.0
+0,Line Graph,Oceania,1940.0,10377714.0
+0,Line Graph,Oceania,1941.0,10550497.0
+0,Line Graph,Oceania,1942.0,10740030.0
+0,Line Graph,Oceania,1943.0,10946716.0
+0,Line Graph,Oceania,1944.0,11158769.0
+0,Line Graph,Oceania,1945.0,11376348.0
+0,Line Graph,Oceania,1946.0,11599543.0
+0,Line Graph,Oceania,1947.0,11829855.0
+0,Line Graph,Oceania,1948.0,12066236.0
+0,Line Graph,Oceania,1949.0,12315375.0
+0,Line Graph,Oceania,1950.0,12582453.0
+0,Line Graph,Oceania,1951.0,12915446.0
+0,Line Graph,Oceania,1952.0,13229396.0
+0,Line Graph,Oceania,1953.0,13527446.0
+0,Line Graph,Oceania,1954.0,13824685.0
+0,Line Graph,Oceania,1955.0,14145499.0
+0,Line Graph,Oceania,1956.0,14484837.0
+0,Line Graph,Oceania,1957.0,14825605.0
+0,Line Graph,Oceania,1958.0,15166229.0
+0,Line Graph,Oceania,1959.0,15510259.0
+0,Line Graph,Oceania,1960.0,15862697.0
+0,Line Graph,Oceania,1961.0,16216895.0
+0,Line Graph,Oceania,1962.0,16560976.0
+0,Line Graph,Oceania,1963.0,16904641.0
+0,Line Graph,Oceania,1964.0,17254690.0
+0,Line Graph,Oceania,1965.0,17617233.0
+0,Line Graph,Oceania,1966.0,17986091.0
+0,Line Graph,Oceania,1967.0,18332240.0
+0,Line Graph,Oceania,1968.0,18670233.0
+0,Line Graph,Oceania,1969.0,19033793.0
+0,Line Graph,Oceania,1970.0,19494215.0
+0,Line Graph,Oceania,1971.0,20036088.0
+0,Line Graph,Oceania,1972.0,20494156.0
+0,Line Graph,Oceania,1973.0,20866225.0
+0,Line Graph,Oceania,1974.0,21228268.0
+0,Line Graph,Oceania,1975.0,21555937.0
+0,Line Graph,Oceania,1976.0,21842502.0
+0,Line Graph,Oceania,1977.0,22114617.0
+0,Line Graph,Oceania,1978.0,22383486.0
+0,Line Graph,Oceania,1979.0,22653748.0
+0,Line Graph,Oceania,1980.0,22954484.0
+0,Line Graph,Oceania,1981.0,23307534.0
+0,Line Graph,Oceania,1982.0,23690693.0
+0,Line Graph,Oceania,1983.0,24064499.0
+0,Line Graph,Oceania,1984.0,24421103.0
+0,Line Graph,Oceania,1985.0,24777609.0
+0,Line Graph,Oceania,1986.0,25149869.0
+0,Line Graph,Oceania,1987.0,25544592.0
+0,Line Graph,Oceania,1988.0,25956460.0
+0,Line Graph,Oceania,1989.0,26377044.0
+0,Line Graph,Oceania,1990.0,26839397.0
+0,Line Graph,Oceania,1991.0,27315331.0
+0,Line Graph,Oceania,1992.0,27746651.0
+0,Line Graph,Oceania,1993.0,28154388.0
+0,Line Graph,Oceania,1994.0,28573089.0
+0,Line Graph,Oceania,1995.0,29025267.0
+0,Line Graph,Oceania,1996.0,29498702.0
+0,Line Graph,Oceania,1997.0,29964609.0
+0,Line Graph,Oceania,1998.0,30420070.0
+0,Line Graph,Oceania,1999.0,30880117.0
+0,Line Graph,Oceania,2000.0,31352968.0
+0,Line Graph,Oceania,2001.0,31847232.0
+0,Line Graph,Oceania,2002.0,32366021.0
+0,Line Graph,Oceania,2003.0,32894563.0
+0,Line Graph,Oceania,2004.0,33419063.0
+0,Line Graph,Oceania,2005.0,33956165.0
+0,Line Graph,Oceania,2006.0,34540362.0
+0,Line Graph,Oceania,2007.0,35190049.0
+0,Line Graph,Oceania,2008.0,35890355.0
+0,Line Graph,Oceania,2009.0,36593549.0
+0,Line Graph,Oceania,2010.0,37254088.0
+0,Line Graph,Oceania,2011.0,37890098.0
+0,Line Graph,Oceania,2012.0,38550537.0
+0,Line Graph,Oceania,2013.0,39233938.0
+0,Line Graph,Oceania,2014.0,39918746.0
+0,Line Graph,Oceania,2015.0,40615015.0
+0,Line Graph,Oceania,2016.0,41347231.0
+0,Line Graph,Oceania,2017.0,42093989.0
+0,Line Graph,Oceania,2018.0,42815501.0
+0,Line Graph,Oceania,2019.0,43504534.0
+0,Line Graph,Oceania,2020.0,44079305.0
+0,Line Graph,Oceania,2021.0,44558542.0
+0,Line Graph,Oceania,2022.0,45049680.0
+0,Line Graph,Oceania,2023.0,45563135.0
+0,Line Graph,South America,-10000.0,1097849.0
+0,Line Graph,South America,-9000.0,1340455.0
+0,Line Graph,South America,-8000.0,1645189.0
+0,Line Graph,South America,-7000.0,2029135.0
+0,Line Graph,South America,-6000.0,2514295.0
+0,Line Graph,South America,-5000.0,3129050.0
+0,Line Graph,South America,-4000.0,3910061.0
+0,Line Graph,South America,-3000.0,4904763.0
+0,Line Graph,South America,-2000.0,6174712.0
+0,Line Graph,South America,-1000.0,7846103.0
+0,Line Graph,South America,0.0,10025976.0
+0,Line Graph,South America,100.0,10716707.0
+0,Line Graph,South America,200.0,11455041.0
+0,Line Graph,South America,300.0,12244478.0
+0,Line Graph,South America,400.0,13088810.0
+0,Line Graph,South America,500.0,13992162.0
+0,Line Graph,South America,600.0,14959023.0
+0,Line Graph,South America,700.0,15994295.0
+0,Line Graph,South America,800.0,17103348.0
+0,Line Graph,South America,900.0,17953232.0
+0,Line Graph,South America,1000.0,18808200.0
+0,Line Graph,South America,1100.0,20766064.0
+0,Line Graph,South America,1200.0,22724192.0
+0,Line Graph,South America,1300.0,24687614.0
+0,Line Graph,South America,1400.0,26651362.0
+0,Line Graph,South America,1500.0,29863142.0
+0,Line Graph,South America,1600.0,6380525.0
+0,Line Graph,South America,1700.0,5901817.0
+0,Line Graph,South America,1710.0,6080047.0
+0,Line Graph,South America,1720.0,6275962.0
+0,Line Graph,South America,1730.0,6493351.0
+0,Line Graph,South America,1740.0,6736931.0
+0,Line Graph,South America,1750.0,7012592.0
+0,Line Graph,South America,1760.0,7327694.0
+0,Line Graph,South America,1770.0,7691450.0
+0,Line Graph,South America,1780.0,8115406.0
+0,Line Graph,South America,1790.0,8614054.0
+0,Line Graph,South America,1800.0,9277957.0
+0,Line Graph,South America,1801.0,9317480.0
+0,Line Graph,South America,1802.0,9360610.0
+0,Line Graph,South America,1803.0,9407381.0
+0,Line Graph,South America,1804.0,9457827.0
+0,Line Graph,South America,1805.0,9511985.0
+0,Line Graph,South America,1806.0,9569900.0
+0,Line Graph,South America,1807.0,9631616.0
+0,Line Graph,South America,1808.0,9697180.0
+0,Line Graph,South America,1809.0,9766647.0
+0,Line Graph,South America,1810.0,9862588.0
+0,Line Graph,South America,1811.0,9958485.0
+0,Line Graph,South America,1812.0,10064501.0
+0,Line Graph,South America,1813.0,10180660.0
+0,Line Graph,South America,1814.0,10300810.0
+0,Line Graph,South America,1815.0,10425044.0
+0,Line Graph,South America,1816.0,10553464.0
+0,Line Graph,South America,1817.0,10686171.0
+0,Line Graph,South America,1818.0,10823273.0
+0,Line Graph,South America,1819.0,10970443.0
+0,Line Graph,South America,1820.0,11127614.0
+0,Line Graph,South America,1821.0,11294718.0
+0,Line Graph,South America,1822.0,11471673.0
+0,Line Graph,South America,1823.0,11658400.0
+0,Line Graph,South America,1824.0,11849246.0
+0,Line Graph,South America,1825.0,12044305.0
+0,Line Graph,South America,1826.0,12243678.0
+0,Line Graph,South America,1827.0,12447466.0
+0,Line Graph,South America,1828.0,12655769.0
+0,Line Graph,South America,1829.0,12875055.0
+0,Line Graph,South America,1830.0,13105768.0
+0,Line Graph,South America,1831.0,13348394.0
+0,Line Graph,South America,1832.0,13603420.0
+0,Line Graph,South America,1833.0,13871366.0
+0,Line Graph,South America,1834.0,14146414.0
+0,Line Graph,South America,1835.0,14428797.0
+0,Line Graph,South America,1836.0,14718743.0
+0,Line Graph,South America,1837.0,15016504.0
+0,Line Graph,South America,1838.0,15322329.0
+0,Line Graph,South America,1839.0,15631013.0
+0,Line Graph,South America,1840.0,15942666.0
+0,Line Graph,South America,1841.0,16257411.0
+0,Line Graph,South America,1842.0,16575367.0
+0,Line Graph,South America,1843.0,16896665.0
+0,Line Graph,South America,1844.0,17226919.0
+0,Line Graph,South America,1845.0,17566445.0
+0,Line Graph,South America,1846.0,17915580.0
+0,Line Graph,South America,1847.0,18274667.0
+0,Line Graph,South America,1848.0,18644066.0
+0,Line Graph,South America,1849.0,18973167.0
+0,Line Graph,South America,1850.0,19261504.0
+0,Line Graph,South America,1851.0,19515726.0
+0,Line Graph,South America,1852.0,19728226.0
+0,Line Graph,South America,1853.0,19898328.0
+0,Line Graph,South America,1854.0,20076281.0
+0,Line Graph,South America,1855.0,20262109.0
+0,Line Graph,South America,1856.0,20455846.0
+0,Line Graph,South America,1857.0,20657524.0
+0,Line Graph,South America,1858.0,20867195.0
+0,Line Graph,South America,1859.0,21084967.0
+0,Line Graph,South America,1860.0,21310302.0
+0,Line Graph,South America,1861.0,21542667.0
+0,Line Graph,South America,1862.0,21781540.0
+0,Line Graph,South America,1863.0,22026397.0
+0,Line Graph,South America,1864.0,22276696.0
+0,Line Graph,South America,1865.0,22532555.0
+0,Line Graph,South America,1866.0,22794079.0
+0,Line Graph,South America,1867.0,23061391.0
+0,Line Graph,South America,1868.0,23334617.0
+0,Line Graph,South America,1869.0,23625455.0
+0,Line Graph,South America,1870.0,23934719.0
+0,Line Graph,South America,1871.0,24263242.0
+0,Line Graph,South America,1872.0,24611834.0
+0,Line Graph,South America,1873.0,24981309.0
+0,Line Graph,South America,1874.0,25360978.0
+0,Line Graph,South America,1875.0,25750976.0
+0,Line Graph,South America,1876.0,26151439.0
+0,Line Graph,South America,1877.0,26562511.0
+0,Line Graph,South America,1878.0,26984342.0
+0,Line Graph,South America,1879.0,27434075.0
+0,Line Graph,South America,1880.0,27912182.0
+0,Line Graph,South America,1881.0,28419221.0
+0,Line Graph,South America,1882.0,28955780.0
+0,Line Graph,South America,1883.0,29522539.0
+0,Line Graph,South America,1884.0,30103175.0
+0,Line Graph,South America,1885.0,30698196.0
+0,Line Graph,South America,1886.0,31308164.0
+0,Line Graph,South America,1887.0,31933652.0
+0,Line Graph,South America,1888.0,32575283.0
+0,Line Graph,South America,1889.0,33227633.0
+0,Line Graph,South America,1890.0,33890958.0
+0,Line Graph,South America,1891.0,34565468.0
+0,Line Graph,South America,1892.0,35251291.0
+0,Line Graph,South America,1893.0,35948511.0
+0,Line Graph,South America,1894.0,36663240.0
+0,Line Graph,South America,1895.0,37395860.0
+0,Line Graph,South America,1896.0,38146772.0
+0,Line Graph,South America,1897.0,38916387.0
+0,Line Graph,South America,1898.0,39705129.0
+0,Line Graph,South America,1899.0,40509877.0
+0,Line Graph,South America,1900.0,41330741.0
+0,Line Graph,South America,1901.0,42167855.0
+0,Line Graph,South America,1902.0,43021342.0
+0,Line Graph,South America,1903.0,43891359.0
+0,Line Graph,South America,1904.0,44781677.0
+0,Line Graph,South America,1905.0,45692841.0
+0,Line Graph,South America,1906.0,46625401.0
+0,Line Graph,South America,1907.0,47579926.0
+0,Line Graph,South America,1908.0,48557015.0
+0,Line Graph,South America,1909.0,49545768.0
+0,Line Graph,South America,1910.0,50545993.0
+0,Line Graph,South America,1911.0,51557488.0
+0,Line Graph,South America,1912.0,52579990.0
+0,Line Graph,South America,1913.0,53613237.0
+0,Line Graph,South America,1914.0,54668408.0
+0,Line Graph,South America,1915.0,55745990.0
+0,Line Graph,South America,1916.0,56846479.0
+0,Line Graph,South America,1917.0,57970388.0
+0,Line Graph,South America,1918.0,59102586.0
+0,Line Graph,South America,1919.0,60264993.0
+0,Line Graph,South America,1920.0,61458404.0
+0,Line Graph,South America,1921.0,62683653.0
+0,Line Graph,South America,1922.0,63941565.0
+0,Line Graph,South America,1923.0,65233001.0
+0,Line Graph,South America,1924.0,66552723.0
+0,Line Graph,South America,1925.0,67901379.0
+0,Line Graph,South America,1926.0,69279649.0
+0,Line Graph,South America,1927.0,70688219.0
+0,Line Graph,South America,1928.0,72127798.0
+0,Line Graph,South America,1929.0,73565553.0
+0,Line Graph,South America,1930.0,75000544.0
+0,Line Graph,South America,1931.0,76431800.0
+0,Line Graph,South America,1932.0,77858278.0
+0,Line Graph,South America,1933.0,79278889.0
+0,Line Graph,South America,1934.0,80726067.0
+0,Line Graph,South America,1935.0,82200318.0
+0,Line Graph,South America,1936.0,83702161.0
+0,Line Graph,South America,1937.0,85232121.0
+0,Line Graph,South America,1938.0,86790735.0
+0,Line Graph,South America,1939.0,88464085.0
+0,Line Graph,South America,1940.0,90256708.0
+0,Line Graph,South America,1941.0,92173092.0
+0,Line Graph,South America,1942.0,94218266.0
+0,Line Graph,South America,1943.0,96397220.0
+0,Line Graph,South America,1944.0,98629580.0
+0,Line Graph,South America,1945.0,100916695.0
+0,Line Graph,South America,1946.0,103259939.0
+0,Line Graph,South America,1947.0,105660736.0
+0,Line Graph,South America,1948.0,108120539.0
+0,Line Graph,South America,1949.0,110738339.0
+0,Line Graph,South America,1950.0,112973206.0
+0,Line Graph,South America,1951.0,116032097.0
+0,Line Graph,South America,1952.0,119207173.0
+0,Line Graph,South America,1953.0,122485445.0
+0,Line Graph,South America,1954.0,125865619.0
+0,Line Graph,South America,1955.0,129351392.0
+0,Line Graph,South America,1956.0,132949203.0
+0,Line Graph,South America,1957.0,136660910.0
+0,Line Graph,South America,1958.0,140478152.0
+0,Line Graph,South America,1959.0,144408289.0
+0,Line Graph,South America,1960.0,148441136.0
+0,Line Graph,South America,1961.0,152563381.0
+0,Line Graph,South America,1962.0,156774169.0
+0,Line Graph,South America,1963.0,161065580.0
+0,Line Graph,South America,1964.0,165413050.0
+0,Line Graph,South America,1965.0,169787372.0
+0,Line Graph,South America,1966.0,174174981.0
+0,Line Graph,South America,1967.0,178570551.0
+0,Line Graph,South America,1968.0,182977284.0
+0,Line Graph,South America,1969.0,187410578.0
+0,Line Graph,South America,1970.0,191855157.0
+0,Line Graph,South America,1971.0,196342426.0
+0,Line Graph,South America,1972.0,200916855.0
+0,Line Graph,South America,1973.0,205568584.0
+0,Line Graph,South America,1974.0,210289337.0
+0,Line Graph,South America,1975.0,215072895.0
+0,Line Graph,South America,1976.0,219943070.0
+0,Line Graph,South America,1977.0,224941182.0
+0,Line Graph,South America,1978.0,230064004.0
+0,Line Graph,South America,1979.0,235280221.0
+0,Line Graph,South America,1980.0,240599668.0
+0,Line Graph,South America,1981.0,246004203.0
+0,Line Graph,South America,1982.0,251463267.0
+0,Line Graph,South America,1983.0,256993747.0
+0,Line Graph,South America,1984.0,262567857.0
+0,Line Graph,South America,1985.0,268127340.0
+0,Line Graph,South America,1986.0,273653738.0
+0,Line Graph,South America,1987.0,279159631.0
+0,Line Graph,South America,1988.0,284663487.0
+0,Line Graph,South America,1989.0,290157633.0
+0,Line Graph,South America,1990.0,295639583.0
+0,Line Graph,South America,1991.0,301035777.0
+0,Line Graph,South America,1992.0,306386108.0
+0,Line Graph,South America,1993.0,311712472.0
+0,Line Graph,South America,1994.0,316983654.0
+0,Line Graph,South America,1995.0,322239766.0
+0,Line Graph,South America,1996.0,327454409.0
+0,Line Graph,South America,1997.0,332642670.0
+0,Line Graph,South America,1998.0,337868219.0
+0,Line Graph,South America,1999.0,343039488.0
+0,Line Graph,South America,2000.0,348018743.0
+0,Line Graph,South America,2001.0,352811861.0
+0,Line Graph,South America,2002.0,357458493.0
+0,Line Graph,South America,2003.0,361970820.0
+0,Line Graph,South America,2004.0,366372166.0
+0,Line Graph,South America,2005.0,370696350.0
+0,Line Graph,South America,2006.0,374925352.0
+0,Line Graph,South America,2007.0,379035651.0
+0,Line Graph,South America,2008.0,383025009.0
+0,Line Graph,South America,2009.0,386904378.0
+0,Line Graph,South America,2010.0,390701117.0
+0,Line Graph,South America,2011.0,394477912.0
+0,Line Graph,South America,2012.0,398255319.0
+0,Line Graph,South America,2013.0,402022546.0
+0,Line Graph,South America,2014.0,405812435.0
+0,Line Graph,South America,2015.0,409619969.0
+0,Line Graph,South America,2016.0,413395039.0
+0,Line Graph,South America,2017.0,417045362.0
+0,Line Graph,South America,2018.0,420440405.0
+0,Line Graph,South America,2019.0,423548291.0
+0,Line Graph,South America,2020.0,426213552.0
+0,Line Graph,South America,2021.0,428331419.0
+0,Line Graph,South America,2022.0,430492816.0
+0,Line Graph,South America,2023.0,433024223.0
+0,Line Graph,World,-10000.0,4501152.0
+0,Line Graph,World,-9000.0,5687125.0
+0,Line Graph,World,-8000.0,7314623.0
+0,Line Graph,World,-7000.0,9651703.0
+0,Line Graph,World,-6000.0,13278309.0
+0,Line Graph,World,-5000.0,19155698.0
+0,Line Graph,World,-4000.0,28859174.0
+0,Line Graph,World,-3000.0,44577880.0
+0,Line Graph,World,-2000.0,72685064.0
+0,Line Graph,World,-1000.0,110530464.0
+0,Line Graph,World,0.0,232268832.0
+0,Line Graph,World,100.0,237052192.0
+0,Line Graph,World,200.0,240762160.0
+0,Line Graph,World,300.0,227702848.0
+0,Line Graph,World,400.0,241697008.0
+0,Line Graph,World,500.0,253395808.0
+0,Line Graph,World,600.0,271638944.0
+0,Line Graph,World,700.0,278346080.0
+0,Line Graph,World,800.0,285870176.0
+0,Line Graph,World,900.0,311142688.0
+0,Line Graph,World,1000.0,323462624.0
+0,Line Graph,World,1100.0,397889888.0
+0,Line Graph,World,1200.0,444653984.0
+0,Line Graph,World,1300.0,456248096.0
+0,Line Graph,World,1400.0,442309216.0
+0,Line Graph,World,1500.0,503051104.0
+0,Line Graph,World,1600.0,516147616.0
+0,Line Graph,World,1700.0,595456896.0
+0,Line Graph,World,1710.0,617975872.0
+0,Line Graph,World,1720.0,648184768.0
+0,Line Graph,World,1730.0,670899968.0
+0,Line Graph,World,1740.0,702227776.0
+0,Line Graph,World,1750.0,753279296.0
+0,Line Graph,World,1760.0,788254976.0
+0,Line Graph,World,1770.0,827951488.0
+0,Line Graph,World,1780.0,900945152.0
+0,Line Graph,World,1790.0,942261696.0
+0,Line Graph,World,1800.0,983104755.0
+0,Line Graph,World,1801.0,986464967.0
+0,Line Graph,World,1802.0,989864750.0
+0,Line Graph,World,1803.0,993304404.0
+0,Line Graph,World,1804.0,996784263.0
+0,Line Graph,World,1805.0,1000304675.0
+0,Line Graph,World,1806.0,1003866016.0
+0,Line Graph,World,1807.0,1007468698.0
+0,Line Graph,World,1808.0,1011113144.0
+0,Line Graph,World,1809.0,1014799822.0
+0,Line Graph,World,1810.0,1020150076.0
+0,Line Graph,World,1811.0,1025557675.0
+0,Line Graph,World,1812.0,1031616616.0
+0,Line Graph,World,1813.0,1038342722.0
+0,Line Graph,World,1814.0,1045238421.0
+0,Line Graph,World,1815.0,1052307852.0
+0,Line Graph,World,1816.0,1059555372.0
+0,Line Graph,World,1817.0,1066985519.0
+0,Line Graph,World,1818.0,1074603043.0
+0,Line Graph,World,1819.0,1082114553.0
+0,Line Graph,World,1820.0,1089507052.0
+0,Line Graph,World,1821.0,1096534977.0
+0,Line Graph,World,1822.0,1103392066.0
+0,Line Graph,World,1823.0,1110594705.0
+0,Line Graph,World,1824.0,1117897019.0
+0,Line Graph,World,1825.0,1125304048.0
+0,Line Graph,World,1826.0,1132861806.0
+0,Line Graph,World,1827.0,1140524282.0
+0,Line Graph,World,1828.0,1148292956.0
+0,Line Graph,World,1829.0,1155618460.0
+0,Line Graph,World,1830.0,1162497339.0
+0,Line Graph,World,1831.0,1168886301.0
+0,Line Graph,World,1832.0,1174792985.0
+0,Line Graph,World,1833.0,1180213555.0
+0,Line Graph,World,1834.0,1185694036.0
+0,Line Graph,World,1835.0,1191237685.0
+0,Line Graph,World,1836.0,1196838401.0
+0,Line Graph,World,1837.0,1202503348.0
+0,Line Graph,World,1838.0,1208233715.0
+0,Line Graph,World,1839.0,1213934891.0
+0,Line Graph,World,1840.0,1219617217.0
+0,Line Graph,World,1841.0,1225283810.0
+0,Line Graph,World,1842.0,1230929323.0
+0,Line Graph,World,1843.0,1236555463.0
+0,Line Graph,World,1844.0,1242258939.0
+0,Line Graph,World,1845.0,1248042343.0
+0,Line Graph,World,1846.0,1253907423.0
+0,Line Graph,World,1847.0,1259855932.0
+0,Line Graph,World,1848.0,1265889730.0
+0,Line Graph,World,1849.0,1271136843.0
+0,Line Graph,World,1850.0,1275602897.0
+0,Line Graph,World,1851.0,1278768180.0
+0,Line Graph,World,1852.0,1281158448.0
+0,Line Graph,World,1853.0,1282781891.0
+0,Line Graph,World,1854.0,1284514999.0
+0,Line Graph,World,1855.0,1286359120.0
+0,Line Graph,World,1856.0,1288315736.0
+0,Line Graph,World,1857.0,1290386388.0
+0,Line Graph,World,1858.0,1292572700.0
+0,Line Graph,World,1859.0,1295121860.0
+0,Line Graph,World,1860.0,1298027373.0
+0,Line Graph,World,1861.0,1301279942.0
+0,Line Graph,World,1862.0,1304883100.0
+0,Line Graph,World,1863.0,1308825538.0
+0,Line Graph,World,1864.0,1312850777.0
+0,Line Graph,World,1865.0,1316952210.0
+0,Line Graph,World,1866.0,1321129252.0
+0,Line Graph,World,1867.0,1325389634.0
+0,Line Graph,World,1868.0,1329732282.0
+0,Line Graph,World,1869.0,1334654211.0
+0,Line Graph,World,1870.0,1340168478.0
+0,Line Graph,World,1871.0,1346202715.0
+0,Line Graph,World,1872.0,1352896118.0
+0,Line Graph,World,1873.0,1360163018.0
+0,Line Graph,World,1874.0,1367501771.0
+0,Line Graph,World,1875.0,1374940414.0
+0,Line Graph,World,1876.0,1382459121.0
+0,Line Graph,World,1877.0,1390028839.0
+0,Line Graph,World,1878.0,1397666358.0
+0,Line Graph,World,1879.0,1405838237.0
+0,Line Graph,World,1880.0,1414583216.0
+0,Line Graph,World,1881.0,1423919001.0
+0,Line Graph,World,1882.0,1433850986.0
+0,Line Graph,World,1883.0,1444371648.0
+0,Line Graph,World,1884.0,1455021634.0
+0,Line Graph,World,1885.0,1465857041.0
+0,Line Graph,World,1886.0,1476798447.0
+0,Line Graph,World,1887.0,1487893376.0
+0,Line Graph,World,1888.0,1499115427.0
+0,Line Graph,World,1889.0,1510109709.0
+0,Line Graph,World,1890.0,1520891633.0
+0,Line Graph,World,1891.0,1531425085.0
+0,Line Graph,World,1892.0,1541712153.0
+0,Line Graph,World,1893.0,1551756342.0
+0,Line Graph,World,1894.0,1561938512.0
+0,Line Graph,World,1895.0,1572272041.0
+0,Line Graph,World,1896.0,1582693744.0
+0,Line Graph,World,1897.0,1593261169.0
+0,Line Graph,World,1898.0,1603953574.0
+0,Line Graph,World,1899.0,1615300901.0
+0,Line Graph,World,1900.0,1627273655.0
+0,Line Graph,World,1901.0,1639887187.0
+0,Line Graph,World,1902.0,1653151632.0
+0,Line Graph,World,1903.0,1667064512.0
+0,Line Graph,World,1904.0,1681154888.0
+0,Line Graph,World,1905.0,1695427510.0
+0,Line Graph,World,1906.0,1709887300.0
+0,Line Graph,World,1907.0,1724558347.0
+0,Line Graph,World,1908.0,1739441480.0
+0,Line Graph,World,1909.0,1753729257.0
+0,Line Graph,World,1910.0,1767417985.0
+0,Line Graph,World,1911.0,1780422213.0
+0,Line Graph,World,1912.0,1792912374.0
+0,Line Graph,World,1913.0,1804803374.0
+0,Line Graph,World,1914.0,1816884694.0
+0,Line Graph,World,1915.0,1829102909.0
+0,Line Graph,World,1916.0,1841395693.0
+0,Line Graph,World,1917.0,1853777065.0
+0,Line Graph,World,1918.0,1866778878.0
+0,Line Graph,World,1919.0,1880624916.0
+0,Line Graph,World,1920.0,1895426673.0
+0,Line Graph,World,1921.0,1910916276.0
+0,Line Graph,World,1922.0,1927207651.0
+0,Line Graph,World,1923.0,1944216846.0
+0,Line Graph,World,1924.0,1961489200.0
+0,Line Graph,World,1925.0,1979027667.0
+0,Line Graph,World,1926.0,1996813608.0
+0,Line Graph,World,1927.0,2014848732.0
+0,Line Graph,World,1928.0,2033160306.0
+0,Line Graph,World,1929.0,2052125441.0
+0,Line Graph,World,1930.0,2071786711.0
+0,Line Graph,World,1931.0,2092158599.0
+0,Line Graph,World,1932.0,2113215566.0
+0,Line Graph,World,1933.0,2134919626.0
+0,Line Graph,World,1934.0,2156892673.0
+0,Line Graph,World,1935.0,2179140887.0
+0,Line Graph,World,1936.0,2201762907.0
+0,Line Graph,World,1937.0,2224730578.0
+0,Line Graph,World,1938.0,2248127325.0
+0,Line Graph,World,1939.0,2270675197.0
+0,Line Graph,World,1940.0,2291979566.0
+0,Line Graph,World,1941.0,2312098978.0
+0,Line Graph,World,1942.0,2331135363.0
+0,Line Graph,World,1943.0,2349014611.0
+0,Line Graph,World,1944.0,2366918849.0
+0,Line Graph,World,1945.0,2384671779.0
+0,Line Graph,World,1946.0,2402301767.0
+0,Line Graph,World,1947.0,2421291820.0
+0,Line Graph,World,1948.0,2441897177.0
+0,Line Graph,World,1949.0,2467923023.0
+0,Line Graph,World,1950.0,2493092852.0
+0,Line Graph,World,1951.0,2536927034.0
+0,Line Graph,World,1952.0,2584086340.0
+0,Line Graph,World,1953.0,2634106241.0
+0,Line Graph,World,1954.0,2685894857.0
+0,Line Graph,World,1955.0,2740213796.0
+0,Line Graph,World,1956.0,2795409991.0
+0,Line Graph,World,1957.0,2852618331.0
+0,Line Graph,World,1958.0,2911249671.0
+0,Line Graph,World,1959.0,2965950350.0
+0,Line Graph,World,1960.0,3015470889.0
+0,Line Graph,World,1961.0,3064869675.0
+0,Line Graph,World,1962.0,3123374312.0
+0,Line Graph,World,1963.0,3192807826.0
+0,Line Graph,World,1964.0,3264487343.0
+0,Line Graph,World,1965.0,3334533710.0
+0,Line Graph,World,1966.0,3404041131.0
+0,Line Graph,World,1967.0,3473412877.0
+0,Line Graph,World,1968.0,3545187246.0
+0,Line Graph,World,1969.0,3619491581.0
+0,Line Graph,World,1970.0,3694683794.0
+0,Line Graph,World,1971.0,3769847867.0
+0,Line Graph,World,1972.0,3844917684.0
+0,Line Graph,World,1973.0,3920805041.0
+0,Line Graph,World,1974.0,3996416100.0
+0,Line Graph,World,1975.0,4070735279.0
+0,Line Graph,World,1976.0,4144246382.0
+0,Line Graph,World,1977.0,4217863796.0
+0,Line Graph,World,1978.0,4292097499.0
+0,Line Graph,World,1979.0,4368539520.0
+0,Line Graph,World,1980.0,4447606240.0
+0,Line Graph,World,1981.0,4528777306.0
+0,Line Graph,World,1982.0,4612673415.0
+0,Line Graph,World,1983.0,4697327573.0
+0,Line Graph,World,1984.0,4782175518.0
+0,Line Graph,World,1985.0,4868943457.0
+0,Line Graph,World,1986.0,4958072839.0
+0,Line Graph,World,1987.0,5049746390.0
+0,Line Graph,World,1988.0,5141992540.0
+0,Line Graph,World,1989.0,5234431736.0
+0,Line Graph,World,1990.0,5327803106.0
+0,Line Graph,World,1991.0,5418735886.0
+0,Line Graph,World,1992.0,5505989815.0
+0,Line Graph,World,1993.0,5591544802.0
+0,Line Graph,World,1994.0,5675551258.0
+0,Line Graph,World,1995.0,5758878977.0
+0,Line Graph,World,1996.0,5842055730.0
+0,Line Graph,World,1997.0,5924787819.0
+0,Line Graph,World,1998.0,6007066691.0
+0,Line Graph,World,1999.0,6089006328.0
+0,Line Graph,World,2000.0,6171702992.0
+0,Line Graph,World,2001.0,6254936464.0
+0,Line Graph,World,2002.0,6337730343.0
+0,Line Graph,World,2003.0,6420361633.0
+0,Line Graph,World,2004.0,6503377774.0
+0,Line Graph,World,2005.0,6586970132.0
+0,Line Graph,World,2006.0,6671452019.0
+0,Line Graph,World,2007.0,6757308776.0
+0,Line Graph,World,2008.0,6844457659.0
+0,Line Graph,World,2009.0,6932766416.0
+0,Line Graph,World,2010.0,7021732143.0
+0,Line Graph,World,2011.0,7110923773.0
+0,Line Graph,World,2012.0,7201202478.0
+0,Line Graph,World,2013.0,7291793585.0
+0,Line Graph,World,2014.0,7381616239.0
+0,Line Graph,World,2015.0,7470491876.0
+0,Line Graph,World,2016.0,7558554527.0
+0,Line Graph,World,2017.0,7645617952.0
+0,Line Graph,World,2018.0,7729902779.0
+0,Line Graph,World,2019.0,7811293699.0
+0,Line Graph,World,2020.0,7887001289.0
+0,Line Graph,World,2021.0,7954448387.0
+0,Line Graph,World,2022.0,8021407196.0
+0,Line Graph,World,2023.0,8091734933.0

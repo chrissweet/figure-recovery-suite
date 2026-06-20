@@ -1,0 +1,329 @@
+layer_idx,layer_type,series,x,y
+0,Line Graph,China,1985.0,22.495691
+0,Line Graph,China,1986.0,21.032778
+0,Line Graph,China,1987.0,20.114803
+0,Line Graph,China,1988.0,20.023113
+0,Line Graph,China,1989.0,20.247427
+0,Line Graph,China,1990.0,20.414036
+0,Line Graph,China,1991.0,18.413998
+0,Line Graph,China,1992.0,17.366554
+0,Line Graph,China,1993.0,18.948395
+0,Line Graph,China,1994.0,19.727722
+0,Line Graph,China,1995.0,20.560476
+0,Line Graph,China,1996.0,18.860819
+0,Line Graph,China,1997.0,18.7864
+0,Line Graph,China,1998.0,18.495249
+0,Line Graph,China,1999.0,17.311363
+0,Line Graph,China,2000.0,17.874004
+0,Line Graph,China,2001.0,20.1379
+0,Line Graph,China,2002.0,19.137732
+0,Line Graph,China,2003.0,17.304693
+0,Line Graph,China,2004.0,18.513054
+0,Line Graph,China,2005.0,18.296497
+0,Line Graph,China,2006.0,17.502058
+0,Line Graph,China,2007.0,17.151703
+0,Line Graph,China,2008.0,20.981703
+0,Line Graph,China,2009.0,19.7715
+0,Line Graph,China,2010.0,20.467964
+0,Line Graph,China,2011.0,18.66277
+0,Line Graph,China,2012.0,22.012455
+0,Line Graph,China,2013.0,22.182476
+0,Line Graph,China,2014.0,24.548489
+0,Line Graph,China,2015.0,26.915789
+0,Line Graph,China,2016.0,28.304657
+0,Line Graph,China,2017.0,28.998068
+0,Line Graph,China,2018.0,29.728556
+0,Line Graph,China,2019.0,31.496796
+0,Line Graph,China,2020.0,32.795822
+0,Line Graph,China,2021.0,33.46863
+0,Line Graph,China,2022.0,34.902714
+0,Line Graph,China,2023.0,35.20285
+0,Line Graph,China,2024.0,38.165222
+0,Line Graph,China,2025.0,41.651043
+0,Line Graph,France,1985.0,83.511475
+0,Line Graph,France,1986.0,87.687256
+0,Line Graph,France,1987.0,89.24195
+0,Line Graph,France,1988.0,90.23917
+0,Line Graph,France,1989.0,87.04691
+0,Line Graph,France,1990.0,88.621284
+0,Line Graph,France,1991.0,86.55016
+0,Line Graph,France,1992.0,88.993324
+0,Line Graph,France,1993.0,92.605804
+0,Line Graph,France,1994.0,92.8792
+0,Line Graph,France,1995.0,92.1293
+0,Line Graph,France,1996.0,91.463005
+0,Line Graph,France,1997.0,92.181206
+0,Line Graph,France,1998.0,89.22776
+0,Line Graph,France,1999.0,90.07007
+0,Line Graph,France,2000.0,90.69212
+0,Line Graph,France,2001.0,91.62736
+0,Line Graph,France,2002.0,90.60482
+0,Line Graph,France,2003.0,89.87892
+0,Line Graph,France,2004.0,90.17482
+0,Line Graph,France,2005.0,88.995674
+0,Line Graph,France,2006.0,90.09343
+0,Line Graph,France,2007.0,89.71059
+0,Line Graph,France,2008.0,90.264206
+0,Line Graph,France,2009.0,90.36058
+0,Line Graph,France,2010.0,89.83569
+0,Line Graph,France,2011.0,89.56399
+0,Line Graph,France,2012.0,89.97146
+0,Line Graph,France,2013.0,90.69961
+0,Line Graph,France,2014.0,93.678375
+0,Line Graph,France,2015.0,92.18484
+0,Line Graph,France,2016.0,89.864716
+0,Line Graph,France,2017.0,88.219315
+0,Line Graph,France,2018.0,91.4185
+0,Line Graph,France,2019.0,90.520226
+0,Line Graph,France,2020.0,90.82219
+0,Line Graph,France,2021.0,91.123184
+0,Line Graph,France,2022.0,87.11709
+0,Line Graph,France,2023.0,92.084816
+0,Line Graph,France,2024.0,94.89835
+0,Line Graph,France,2025.0,94.8507
+0,Line Graph,Germany,1985.0,30.177114
+0,Line Graph,Germany,1986.0,28.775768
+0,Line Graph,Germany,1987.0,30.71054
+0,Line Graph,Germany,1988.0,32.49279
+0,Line Graph,Germany,1989.0,32.452003
+0,Line Graph,Germany,1990.0,31.639805
+0,Line Graph,Germany,1991.0,30.635052
+0,Line Graph,Germany,1992.0,33.446987
+0,Line Graph,Germany,1993.0,33.376865
+0,Line Graph,Germany,1994.0,33.41906
+0,Line Graph,Germany,1995.0,33.729652
+0,Line Graph,Germany,1996.0,34.03134
+0,Line Graph,Germany,1997.0,35.3936
+0,Line Graph,Germany,1998.0,33.958416
+0,Line Graph,Germany,1999.0,36.17711
+0,Line Graph,Germany,2000.0,36.0348
+0,Line Graph,Germany,2001.0,36.13155
+0,Line Graph,Germany,2002.0,35.858913
+0,Line Graph,Germany,2003.0,35.169342
+0,Line Graph,Germany,2004.0,36.91601
+0,Line Graph,Germany,2005.0,36.925682
+0,Line Graph,Germany,2006.0,38.05617
+0,Line Graph,Germany,2007.0,36.439552
+0,Line Graph,Germany,2008.0,38.40959
+0,Line Graph,Germany,2009.0,39.290085
+0,Line Graph,Germany,2010.0,39.405006
+0,Line Graph,Germany,2011.0,38.413223
+0,Line Graph,Germany,2012.0,39.182976
+0,Line Graph,Germany,2013.0,39.581383
+0,Line Graph,Germany,2014.0,41.868282
+0,Line Graph,Germany,2015.0,43.79586
+0,Line Graph,Germany,2016.0,42.67365
+0,Line Graph,Germany,2017.0,45.30925
+0,Line Graph,Germany,2018.0,47.278103
+0,Line Graph,Germany,2019.0,52.698757
+0,Line Graph,Germany,2020.0,55.733566
+0,Line Graph,Germany,2021.0,52.11029
+0,Line Graph,Germany,2022.0,50.495697
+0,Line Graph,Germany,2023.0,56.109886
+0,Line Graph,Germany,2024.0,58.64231
+0,Line Graph,Germany,2025.0,59.09245
+0,Line Graph,India,1985.0,30.217337
+0,Line Graph,India,1986.0,28.414248
+0,Line Graph,India,1987.0,24.26951
+0,Line Graph,India,1988.0,25.151453
+0,Line Graph,India,1989.0,24.735662
+0,Line Graph,India,1990.0,25.319403
+0,Line Graph,India,1991.0,24.82095
+0,Line Graph,India,1992.0,22.741083
+0,Line Graph,India,1993.0,21.344927
+0,Line Graph,India,1994.0,22.096981
+0,Line Graph,India,1995.0,19.80499
+0,Line Graph,India,1996.0,17.847122
+0,Line Graph,India,1997.0,17.533396
+0,Line Graph,India,1998.0,19.280458
+0,Line Graph,India,1999.0,17.925135
+0,Line Graph,India,2000.0,16.808134
+0,Line Graph,India,2001.0,16.222763
+0,Line Graph,India,2002.0,15.112197
+0,Line Graph,India,2003.0,14.537789
+0,Line Graph,India,2004.0,18.68198
+0,Line Graph,India,2005.0,17.770964
+0,Line Graph,India,2006.0,19.503513
+0,Line Graph,India,2007.0,20.041193
+0,Line Graph,India,2008.0,18.60673
+0,Line Graph,India,2009.0,17.08
+0,Line Graph,India,2010.0,17.579214
+0,Line Graph,India,2011.0,19.776815
+0,Line Graph,India,2012.0,17.91312
+0,Line Graph,India,2013.0,18.953236
+0,Line Graph,India,2014.0,18.52655
+0,Line Graph,India,2015.0,17.548223
+0,Line Graph,India,2016.0,17.154982
+0,Line Graph,India,2017.0,18.00956
+0,Line Graph,India,2018.0,18.778355
+0,Line Graph,India,2019.0,20.437483
+0,Line Graph,India,2020.0,21.860268
+0,Line Graph,India,2021.0,21.407381
+0,Line Graph,India,2022.0,22.749514
+0,Line Graph,India,2023.0,21.799444
+0,Line Graph,India,2024.0,22.493763
+0,Line Graph,India,2025.0,26.653053
+0,Line Graph,Sweden,1985.0,95.78314
+0,Line Graph,Sweden,1986.0,95.830536
+0,Line Graph,Sweden,1987.0,96.338295
+0,Line Graph,Sweden,1988.0,96.66485
+0,Line Graph,Sweden,1989.0,97.52325
+0,Line Graph,Sweden,1990.0,97.70517
+0,Line Graph,Sweden,1991.0,96.5299
+0,Line Graph,Sweden,1992.0,95.87474
+0,Line Graph,Sweden,1993.0,95.18794
+0,Line Graph,Sweden,1994.0,94.29572
+0,Line Graph,Sweden,1995.0,94.73968
+0,Line Graph,Sweden,1996.0,91.22395
+0,Line Graph,Sweden,1997.0,95.141075
+0,Line Graph,Sweden,1998.0,95.522385
+0,Line Graph,Sweden,1999.0,95.54379
+0,Line Graph,Sweden,2000.0,96.71556
+0,Line Graph,Sweden,2001.0,96.18192
+0,Line Graph,Sweden,2002.0,94.92842
+0,Line Graph,Sweden,2003.0,93.17527
+0,Line Graph,Sweden,2004.0,96.113754
+0,Line Graph,Sweden,2005.0,96.994194
+0,Line Graph,Sweden,2006.0,96.34282
+0,Line Graph,Sweden,2007.0,97.02996
+0,Line Graph,Sweden,2008.0,96.9313
+0,Line Graph,Sweden,2009.0,96.61785
+0,Line Graph,Sweden,2010.0,94.25396
+0,Line Graph,Sweden,2011.0,96.19377
+0,Line Graph,Sweden,2012.0,97.54266
+0,Line Graph,Sweden,2013.0,97.46455
+0,Line Graph,Sweden,2014.0,98.09196
+0,Line Graph,Sweden,2015.0,98.05556
+0,Line Graph,Sweden,2016.0,97.65219
+0,Line Graph,Sweden,2017.0,97.88711
+0,Line Graph,Sweden,2018.0,97.759544
+0,Line Graph,Sweden,2019.0,98.01093
+0,Line Graph,Sweden,2020.0,98.51019
+0,Line Graph,Sweden,2021.0,98.21865
+0,Line Graph,Sweden,2022.0,98.33574
+0,Line Graph,Sweden,2023.0,98.59681
+0,Line Graph,Sweden,2024.0,98.791756
+0,Line Graph,Sweden,2025.0,98.781555
+0,Line Graph,United Kingdom,1985.0,21.822412
+0,Line Graph,United Kingdom,1986.0,21.20706
+0,Line Graph,United Kingdom,1987.0,19.66979
+0,Line Graph,United Kingdom,1988.0,22.129559
+0,Line Graph,United Kingdom,1989.0,24.321344
+0,Line Graph,United Kingdom,1990.0,22.354965
+0,Line Graph,United Kingdom,1991.0,23.470018
+0,Line Graph,United Kingdom,1992.0,25.890856
+0,Line Graph,United Kingdom,1993.0,29.423418
+0,Line Graph,United Kingdom,1994.0,29.17075
+0,Line Graph,United Kingdom,1995.0,28.344496
+0,Line Graph,United Kingdom,1996.0,28.603188
+0,Line Graph,United Kingdom,1997.0,30.036787
+0,Line Graph,United Kingdom,1998.0,29.814453
+0,Line Graph,United Kingdom,1999.0,28.453077
+0,Line Graph,United Kingdom,2000.0,25.186974
+0,Line Graph,United Kingdom,2001.0,25.89339
+0,Line Graph,United Kingdom,2002.0,25.557795
+0,Line Graph,United Kingdom,2003.0,24.95668
+0,Line Graph,United Kingdom,2004.0,23.898252
+0,Line Graph,United Kingdom,2005.0,24.739552
+0,Line Graph,United Kingdom,2006.0,23.548218
+0,Line Graph,United Kingdom,2007.0,20.843729
+0,Line Graph,United Kingdom,2008.0,19.135645
+0,Line Graph,United Kingdom,2009.0,25.039812
+0,Line Graph,United Kingdom,2010.0,23.116789
+0,Line Graph,United Kingdom,2011.0,28.31209
+0,Line Graph,United Kingdom,2012.0,30.684036
+0,Line Graph,United Kingdom,2013.0,34.559563
+0,Line Graph,United Kingdom,2014.0,37.937767
+0,Line Graph,United Kingdom,2015.0,45.356625
+0,Line Graph,United Kingdom,2016.0,45.621796
+0,Line Graph,United Kingdom,2017.0,50.035477
+0,Line Graph,United Kingdom,2018.0,52.492805
+0,Line Graph,United Kingdom,2019.0,53.766922
+0,Line Graph,United Kingdom,2020.0,59.255558
+0,Line Graph,United Kingdom,2021.0,54.75479
+0,Line Graph,United Kingdom,2022.0,56.214188
+0,Line Graph,United Kingdom,2023.0,60.25707
+0,Line Graph,United Kingdom,2024.0,64.931725
+0,Line Graph,United Kingdom,2025.0,64.417915
+0,Line Graph,United States,1985.0,27.378084
+0,Line Graph,United States,1986.0,28.830044
+0,Line Graph,United States,1987.0,28.039835
+0,Line Graph,United States,1988.0,28.324331
+0,Line Graph,United States,1989.0,27.989052
+0,Line Graph,United States,1990.0,29.700468
+0,Line Graph,United States,1991.0,30.456316
+0,Line Graph,United States,1992.0,29.561352
+0,Line Graph,United States,1993.0,29.139284
+0,Line Graph,United States,1994.0,29.02471
+0,Line Graph,United States,1995.0,30.472076
+0,Line Graph,United States,1996.0,30.748167
+0,Line Graph,United States,1997.0,29.25908
+0,Line Graph,United States,1998.0,28.539991
+0,Line Graph,United States,1999.0,29.336617
+0,Line Graph,United States,2000.0,29.05815
+0,Line Graph,United States,2001.0,28.138706
+0,Line Graph,United States,2002.0,29.040928
+0,Line Graph,United States,2003.0,28.765245
+0,Line Graph,United States,2004.0,28.686346
+0,Line Graph,United States,2005.0,28.129686
+0,Line Graph,United States,2006.0,28.870703
+0,Line Graph,United States,2007.0,27.86507
+0,Line Graph,United States,2008.0,28.808554
+0,Line Graph,United States,2009.0,30.823997
+0,Line Graph,United States,2010.0,29.93359
+0,Line Graph,United States,2011.0,31.792156
+0,Line Graph,United States,2012.0,31.223783
+0,Line Graph,United States,2013.0,32.28614
+0,Line Graph,United States,2014.0,32.81242
+0,Line Graph,United States,2015.0,33.14577
+0,Line Graph,United States,2016.0,34.998875
+0,Line Graph,United States,2017.0,37.315506
+0,Line Graph,United States,2018.0,36.659092
+0,Line Graph,United States,2019.0,37.75918
+0,Line Graph,United States,2020.0,39.851803
+0,Line Graph,United States,2021.0,39.51324
+0,Line Graph,United States,2022.0,40.34813
+0,Line Graph,United States,2023.0,40.894375
+0,Line Graph,United States,2024.0,41.869316
+0,Line Graph,United States,2025.0,43.001553
+0,Line Graph,World,1985.0,35.87822
+0,Line Graph,World,1986.0,36.20943
+0,Line Graph,World,1987.0,36.17076
+0,Line Graph,World,1988.0,36.659523
+0,Line Graph,World,1989.0,35.51378
+0,Line Graph,World,1990.0,35.785595
+0,Line Graph,World,1991.0,36.258537
+0,Line Graph,World,1992.0,36.12801
+0,Line Graph,World,1993.0,37.048046
+0,Line Graph,World,1994.0,36.60202
+0,Line Graph,World,1995.0,37.07608
+0,Line Graph,World,1996.0,36.848526
+0,Line Graph,World,1997.0,36.278244
+0,Line Graph,World,1998.0,35.814777
+0,Line Graph,World,1999.0,35.661648
+0,Line Graph,World,2000.0,35.34366
+0,Line Graph,World,2001.0,34.90226
+0,Line Graph,World,2002.0,34.44846
+0,Line Graph,World,2003.0,33.0846
+0,Line Graph,World,2004.0,33.597206
+0,Line Graph,World,2005.0,33.133415
+0,Line Graph,World,2006.0,32.88738
+0,Line Graph,World,2007.0,31.68724
+0,Line Graph,World,2008.0,32.31287
+0,Line Graph,World,2009.0,32.78876
+0,Line Graph,World,2010.0,32.540028
+0,Line Graph,World,2011.0,31.896461
+0,Line Graph,World,2012.0,31.779793
+0,Line Graph,World,2013.0,32.28668
+0,Line Graph,World,2014.0,32.784885
+0,Line Graph,World,2015.0,33.519924
+0,Line Graph,World,2016.0,34.143295
+0,Line Graph,World,2017.0,34.662735
+0,Line Graph,World,2018.0,35.135006
+0,Line Graph,World,2019.0,36.335487
+0,Line Graph,World,2020.0,37.89754
+0,Line Graph,World,2021.0,37.877045
+0,Line Graph,World,2022.0,38.597836
+0,Line Graph,World,2023.0,39.41701
+0,Line Graph,World,2024.0,40.913757
+0,Line Graph,World,2025.0,42.609562

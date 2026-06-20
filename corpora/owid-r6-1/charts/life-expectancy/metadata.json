@@ -1,0 +1,24 @@
+{
+  "chart_id": "life-expectancy",
+  "source": "Our World in Data",
+  "source_url": "https://ourworldindata.org/grapher/life-expectancy",
+  "csv_url": "https://ourworldindata.org/grapher/life-expectancy.csv?csvType=filtered&tab=chart",
+  "image_url": "https://ourworldindata.org/grapher/life-expectancy.png?tab=chart",
+  "chart_type": "multi-series line, time series",
+  "feature_stressed": "multi-series line plot with curated entity set; legend labels at line endpoints",
+  "x_axis_title": "Year",
+  "x_axis_unit": null,
+  "y_axis_title": "Life expectancy",
+  "y_axis_unit": "years",
+  "x_scale": "linear",
+  "y_scale": "linear",
+  "n_gt_rows": 473,
+  "series": [
+    "Africa",
+    "Americas",
+    "Asia",
+    "Europe",
+    "Oceania",
+    "World"
+  ]
+}

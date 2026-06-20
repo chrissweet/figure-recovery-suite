@@ -1,0 +1,956 @@
+{
+  "n_artifacts": 50,
+  "summary": {
+    "pass": 36,
+    "fail": 14,
+    "by_type": {
+      "frame_box": {
+        "pass": 0,
+        "fail": 1
+      },
+      "axis_line": {
+        "pass": 0,
+        "fail": 2
+      },
+      "tick_center": {
+        "pass": 0,
+        "fail": 11
+      },
+      "line_endpoint": {
+        "pass": 12,
+        "fail": 0
+      },
+      "line_sample": {
+        "pass": 24,
+        "fail": 0
+      }
+    }
+  },
+  "epsilon_px": {
+    "frame_box": 2,
+    "axis_line": 2,
+    "tick_center": 5,
+    "legend_box": 15,
+    "marker_centroid": 3,
+    "line_endpoint": 10,
+    "line_sample": 3,
+    "bar_top": 2,
+    "error_cap": 3
+  },
+  "results": [
+    {
+      "type": "frame_box",
+      "id": "main",
+      "left": 70.5,
+      "top": 110.53,
+      "right": 752.6,
+      "bottom": 532.8,
+      "pass": false,
+      "epsilon_px": 2,
+      "error": "'float' object cannot be interpreted as an integer"
+    },
+    {
+      "type": "axis_line",
+      "id": "y_axis",
+      "orientation": "vertical",
+      "fixed": 70.5,
+      "extent": [
+        110.53,
+        532.8
+      ],
+      "pass": false,
+      "epsilon_px": 2,
+      "error": "'float' object cannot be interpreted as an integer"
+    },
+    {
+      "type": "axis_line",
+      "id": "x_axis",
+      "orientation": "horizontal",
+      "fixed": 532.8,
+      "extent": [
+        70.5,
+        752.6
+      ],
+      "pass": false,
+      "epsilon_px": 2,
+      "error": "'float' object cannot be interpreted as an integer"
+    },
+    {
+      "type": "tick_center",
+      "id": "x_1770",
+      "axis": "x",
+      "col": 70,
+      "row": 550.8,
+      "value": 1770,
+      "pass": false,
+      "epsilon_px": 5,
+      "error": "slice indices must be integers or None or have an __index__ method"
+    },
+    {
+      "type": "tick_center",
+      "id": "x_2023",
+      "axis": "x",
+      "col": 752,
+      "row": 550.8,
+      "value": 2023,
+      "pass": false,
+      "epsilon_px": 5,
+      "error": "slice indices must be integers or None or have an __index__ method"
+    },
+    {
+      "type": "tick_center",
+      "id": "y_0",
+      "axis": "y",
+      "col": 40.5,
+      "row": 532,
+      "value": 0,
+      "pass": false,
+      "epsilon_px": 5,
+      "error": "slice indices must be integers or None or have an __index__ method"
+    },
+    {
+      "type": "tick_center",
+      "id": "y_10",
+      "axis": "y",
+      "col": 40.5,
+      "row": 480,
+      "value": 10,
+      "pass": false,
+      "epsilon_px": 5,
+      "error": "slice indices must be integers or None or have an __index__ method"
+    },
+    {
+      "type": "tick_center",
+      "id": "y_20",
+      "axis": "y",
+      "col": 40.5,
+      "row": 427,
+      "value": 20,
+      "pass": false,
+      "epsilon_px": 5,
+      "error": "slice indices must be integers or None or have an __index__ method"
+    },
+    {
+      "type": "tick_center",
+      "id": "y_30",
+      "axis": "y",
+      "col": 40.5,
+      "row": 374,
+      "value": 30,
+      "pass": false,
+      "epsilon_px": 5,
+      "error": "slice indices must be integers or None or have an __index__ method"
+    },
+    {
+      "type": "tick_center",
+      "id": "y_40",
+      "axis": "y",
+      "col": 40.5,
+      "row": 321,
+      "value": 40,
+      "pass": false,
+      "epsilon_px": 5,
+      "error": "slice indices must be integers or None or have an __index__ method"
+    },
+    {
+      "type": "tick_center",
+      "id": "y_50",
+      "axis": "y",
+      "col": 40.5,
+      "row": 268,
+      "value": 50,
+      "pass": false,
+      "epsilon_px": 5,
+      "error": "slice indices must be integers or None or have an __index__ method"
+    },
+    {
+      "type": "tick_center",
+      "id": "y_60",
+      "axis": "y",
+      "col": 40.5,
+      "row": 216,
+      "value": 60,
+      "pass": false,
+      "epsilon_px": 5,
+      "error": "slice indices must be integers or None or have an __index__ method"
+    },
+    {
+      "type": "tick_center",
+      "id": "y_70",
+      "axis": "y",
+      "col": 40.5,
+      "row": 163,
+      "value": 70,
+      "pass": false,
+      "epsilon_px": 5,
+      "error": "slice indices must be integers or None or have an __index__ method"
+    },
+    {
+      "type": "tick_center",
+      "id": "y_80",
+      "axis": "y",
+      "col": 40.5,
+      "row": 110,
+      "value": 80,
+      "pass": false,
+      "epsilon_px": 5,
+      "error": "slice indices must be integers or None or have an __index__ method"
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Oceania_left",
+      "series": "Oceania",
+      "x": 1771.0,
+      "y": 34.44,
+      "col": 73,
+      "row": 351,
+      "color": [
+        76,
+        106,
+        156
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 58,
+        "dark": 33,
+        "colored": 57
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Oceania_right",
+      "series": "Oceania",
+      "x": 2022.0,
+      "y": 78.47,
+      "col": 749,
+      "row": 118,
+      "color": [
+        76,
+        106,
+        156
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 114,
+        "dark": 77,
+        "colored": 110
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Oceania_mid_1",
+      "series": "Oceania",
+      "x": 1821.0,
+      "y": 35.77,
+      "col": 208,
+      "row": 343,
+      "color": [
+        76,
+        106,
+        156
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 11,
+        "dark": 8,
+        "colored": 11
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Oceania_mid_2",
+      "series": "Oceania",
+      "x": 1871.0,
+      "y": 36.62,
+      "col": 342,
+      "row": 339,
+      "color": [
+        76,
+        106,
+        156
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 14,
+        "dark": 9,
+        "colored": 14
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Oceania_mid_3",
+      "series": "Oceania",
+      "x": 1922.0,
+      "y": 50.83,
+      "col": 480,
+      "row": 264,
+      "color": [
+        76,
+        106,
+        156
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 12,
+        "dark": 6,
+        "colored": 12
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Oceania_mid_4",
+      "series": "Oceania",
+      "x": 1972.0,
+      "y": 70.84,
+      "col": 615,
+      "row": 158,
+      "color": [
+        76,
+        106,
+        156
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 21,
+        "dark": 18,
+        "colored": 21
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Europe_left",
+      "series": "Europe",
+      "x": 1870.0,
+      "y": 34.84,
+      "col": 340,
+      "row": 348,
+      "color": [
+        154,
+        81,
+        41
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 87,
+        "dark": 41,
+        "colored": 87
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Europe_right",
+      "series": "Europe",
+      "x": 2020.0,
+      "y": 78.96,
+      "col": 744,
+      "row": 116,
+      "color": [
+        154,
+        81,
+        41
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 122,
+        "dark": 87,
+        "colored": 118
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Europe_mid_1",
+      "series": "Europe",
+      "x": 1900.0,
+      "y": 47.8,
+      "col": 421,
+      "row": 280,
+      "color": [
+        154,
+        81,
+        41
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 19,
+        "dark": 11,
+        "colored": 19
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Europe_mid_2",
+      "series": "Europe",
+      "x": 1930.0,
+      "y": 56.12,
+      "col": 501,
+      "row": 236,
+      "color": [
+        154,
+        81,
+        41
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 12,
+        "dark": 8,
+        "colored": 12
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Europe_mid_3",
+      "series": "Europe",
+      "x": 1960.0,
+      "y": 65.28,
+      "col": 582,
+      "row": 188,
+      "color": [
+        154,
+        81,
+        41
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 23,
+        "dark": 18,
+        "colored": 23
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Europe_mid_4",
+      "series": "Europe",
+      "x": 1990.0,
+      "y": 73.55,
+      "col": 663,
+      "row": 144,
+      "color": [
+        154,
+        81,
+        41
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 27,
+        "dark": 22,
+        "colored": 27
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Americas_left",
+      "series": "Americas",
+      "x": 1771.0,
+      "y": 35.01,
+      "col": 73,
+      "row": 348,
+      "color": [
+        196,
+        82,
+        62
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 58,
+        "dark": 33,
+        "colored": 57
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Americas_right",
+      "series": "Americas",
+      "x": 2022.0,
+      "y": 76.47,
+      "col": 749,
+      "row": 129,
+      "color": [
+        196,
+        82,
+        62
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 129,
+        "dark": 73,
+        "colored": 129
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Americas_mid_1",
+      "series": "Americas",
+      "x": 1821.0,
+      "y": 35.01,
+      "col": 208,
+      "row": 348,
+      "color": [
+        196,
+        82,
+        62
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 15,
+        "dark": 8,
+        "colored": 15
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Americas_mid_2",
+      "series": "Americas",
+      "x": 1871.0,
+      "y": 35.56,
+      "col": 342,
+      "row": 345,
+      "color": [
+        196,
+        82,
+        62
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 22,
+        "dark": 10,
+        "colored": 22
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Americas_mid_3",
+      "series": "Americas",
+      "x": 1922.0,
+      "y": 48.14,
+      "col": 480,
+      "row": 278,
+      "color": [
+        196,
+        82,
+        62
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 14,
+        "dark": 4,
+        "colored": 14
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Americas_mid_4",
+      "series": "Americas",
+      "x": 1972.0,
+      "y": 64.22,
+      "col": 615,
+      "row": 193,
+      "color": [
+        196,
+        82,
+        62
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 24,
+        "dark": 18,
+        "colored": 24
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Asia_left",
+      "series": "Asia",
+      "x": 1771.0,
+      "y": 27.72,
+      "col": 73,
+      "row": 386,
+      "color": [
+        0,
+        132,
+        126
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 107,
+        "dark": 57,
+        "colored": 107
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Asia_right",
+      "series": "Asia",
+      "x": 2022.0,
+      "y": 74.58,
+      "col": 749,
+      "row": 139,
+      "color": [
+        0,
+        132,
+        126
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 148,
+        "dark": 98,
+        "colored": 148
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Asia_mid_1",
+      "series": "Asia",
+      "x": 1821.0,
+      "y": 27.72,
+      "col": 208,
+      "row": 386,
+      "color": [
+        0,
+        132,
+        126
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 14,
+        "dark": 7,
+        "colored": 14
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Asia_mid_2",
+      "series": "Asia",
+      "x": 1871.0,
+      "y": 27.72,
+      "col": 342,
+      "row": 386,
+      "color": [
+        0,
+        132,
+        126
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 14,
+        "dark": 7,
+        "colored": 14
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Asia_mid_3",
+      "series": "Asia",
+      "x": 1922.0,
+      "y": 31.75,
+      "col": 480,
+      "row": 365,
+      "color": [
+        0,
+        132,
+        126
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 14,
+        "dark": 8,
+        "colored": 14
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Asia_mid_4",
+      "series": "Asia",
+      "x": 1972.0,
+      "y": 55.6,
+      "col": 615,
+      "row": 239,
+      "color": [
+        0,
+        132,
+        126
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 28,
+        "dark": 19,
+        "colored": 28
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "World_left",
+      "series": "World",
+      "x": 1771.0,
+      "y": 28.66,
+      "col": 73,
+      "row": 381,
+      "color": [
+        24,
+        71,
+        15
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 74,
+        "dark": 54,
+        "colored": 73
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "World_right",
+      "series": "World",
+      "x": 2022.0,
+      "y": 72.89,
+      "col": 749,
+      "row": 148,
+      "color": [
+        24,
+        71,
+        15
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 148,
+        "dark": 113,
+        "colored": 148
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "World_mid_1",
+      "series": "World",
+      "x": 1821.0,
+      "y": 29.14,
+      "col": 208,
+      "row": 378,
+      "color": [
+        24,
+        71,
+        15
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 10,
+        "dark": 10,
+        "colored": 10
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "World_mid_2",
+      "series": "World",
+      "x": 1871.0,
+      "y": 29.97,
+      "col": 342,
+      "row": 374,
+      "color": [
+        24,
+        71,
+        15
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 13,
+        "dark": 12,
+        "colored": 13
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "World_mid_3",
+      "series": "World",
+      "x": 1922.0,
+      "y": 37.41,
+      "col": 480,
+      "row": 335,
+      "color": [
+        24,
+        71,
+        15
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 11,
+        "dark": 11,
+        "colored": 11
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "World_mid_4",
+      "series": "World",
+      "x": 1972.0,
+      "y": 57.48,
+      "col": 615,
+      "row": 229,
+      "color": [
+        24,
+        71,
+        15
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 22,
+        "dark": 19,
+        "colored": 22
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Africa_left",
+      "series": "Africa",
+      "x": 1771.0,
+      "y": 26.58,
+      "col": 73,
+      "row": 392,
+      "color": [
+        162,
+        85,
+        156
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 89,
+        "dark": 39,
+        "colored": 89
+      }
+    },
+    {
+      "type": "line_endpoint",
+      "id": "Africa_right",
+      "series": "Africa",
+      "x": 2022.0,
+      "y": 63.13,
+      "col": 749,
+      "row": 199,
+      "color": [
+        162,
+        85,
+        156
+      ],
+      "pass": true,
+      "epsilon_px": 10,
+      "info": {
+        "stroke_in_window": 59,
+        "dark": 35,
+        "colored": 59
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Africa_mid_1",
+      "series": "Africa",
+      "x": 1821.0,
+      "y": 26.58,
+      "col": 208,
+      "row": 392,
+      "color": [
+        162,
+        85,
+        156
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 14,
+        "dark": 0,
+        "colored": 14
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Africa_mid_2",
+      "series": "Africa",
+      "x": 1871.0,
+      "y": 26.58,
+      "col": 342,
+      "row": 392,
+      "color": [
+        162,
+        85,
+        156
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 14,
+        "dark": 0,
+        "colored": 14
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Africa_mid_3",
+      "series": "Africa",
+      "x": 1922.0,
+      "y": 26.58,
+      "col": 480,
+      "row": 392,
+      "color": [
+        162,
+        85,
+        156
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 14,
+        "dark": 0,
+        "colored": 14
+      }
+    },
+    {
+      "type": "line_sample",
+      "id": "Africa_mid_4",
+      "series": "Africa",
+      "x": 1972.0,
+      "y": 45.75,
+      "col": 615,
+      "row": 291,
+      "color": [
+        162,
+        85,
+        156
+      ],
+      "pass": true,
+      "epsilon_px": 3,
+      "info": {
+        "stroke_in_window": 23,
+        "dark": 16,
+        "colored": 23
+      }
+    }
+  ]
+}

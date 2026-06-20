@@ -1,0 +1,19 @@
+{
+  "chart_id": "life-expectancy-vs-gdp-per-capita",
+  "source": "Our World in Data",
+  "source_url": "https://ourworldindata.org/grapher/life-expectancy-vs-gdp-per-capita",
+  "csv_url": "https://ourworldindata.org/grapher/life-expectancy-vs-gdp-per-capita.csv?csvType=filtered&tab=chart",
+  "image_url": "https://ourworldindata.org/grapher/life-expectancy-vs-gdp-per-capita.png?tab=chart",
+  "chart_type": "scatter, log x, marker size by population",
+  "feature_stressed": "log-x scatter; marker SIZE encodes population (third variable); marker color encodes continent (fourth)",
+  "x_axis_title": "GDP per capita",
+  "x_axis_unit": "$",
+  "y_axis_title": "Life expectancy at birth",
+  "y_axis_unit": "years",
+  "x_scale": "log10",
+  "y_scale": "linear",
+  "n_gt_rows": 165,
+  "series": [
+    "Country"
+  ]
+}

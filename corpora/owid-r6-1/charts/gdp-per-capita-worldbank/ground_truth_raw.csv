@@ -1,0 +1,351 @@
+Entity,Code,Year,GDP per capita,World region according to OWID
+Brazil,BRA,1990,12633.288,South America
+Brazil,BRA,1991,12546.561,South America
+Brazil,BRA,1992,12271.979,South America
+Brazil,BRA,1993,12669.429,South America
+Brazil,BRA,1994,13202.931,South America
+Brazil,BRA,1995,13550.439,South America
+Brazil,BRA,1996,13641.63,South America
+Brazil,BRA,1997,13896.625,South America
+Brazil,BRA,1998,13737.703,South America
+Brazil,BRA,1999,13602.414,South America
+Brazil,BRA,2000,14005.348,South America
+Brazil,BRA,2001,14016.132,South America
+Brazil,BRA,2002,14265.905,South America
+Brazil,BRA,2003,14259.366,South America
+Brazil,BRA,2004,14911.261,South America
+Brazil,BRA,2005,15221.014,South America
+Brazil,BRA,2006,15657.4795,South America
+Brazil,BRA,2007,16440.584,South America
+Brazil,BRA,2008,17113.367,South America
+Brazil,BRA,2009,16939.441,South America
+Brazil,BRA,2010,18062.158,South America
+Brazil,BRA,2011,18627.81,South America
+Brazil,BRA,2012,18832.219,South America
+Brazil,BRA,2013,19241.506,South America
+Brazil,BRA,2014,19183.172,South America
+Brazil,BRA,2015,18357.068,South America
+Brazil,BRA,2016,17620.928,South America
+Brazil,BRA,2017,17724.48,South America
+Brazil,BRA,2018,17917.75,South America
+Brazil,BRA,2019,18018.621,South America
+Brazil,BRA,2020,17327.516,South America
+Brazil,BRA,2021,18075.705,South America
+Brazil,BRA,2022,18554.047,South America
+Brazil,BRA,2023,19079.812,South America
+Brazil,BRA,2024,19652.365,South America
+China,CHN,1990,1666.9277,Asia
+China,CHN,1991,1798.2761,Asia
+China,CHN,1992,2030.3864,Asia
+China,CHN,1993,2286.7598,Asia
+China,CHN,1994,2556.6406,Asia
+China,CHN,1995,2808.034,Asia
+China,CHN,1996,3055.9697,Asia
+China,CHN,1997,3305.7905,Asia
+China,CHN,1998,3533.566,Asia
+China,CHN,1999,3774.1377,Asia
+China,CHN,2000,4066.0364,Asia
+China,CHN,2001,4372.157,Asia
+China,CHN,2002,4744.3984,Asia
+China,CHN,2003,5192.006,Asia
+China,CHN,2004,5684.169,Asia
+China,CHN,2005,6298.323,Asia
+China,CHN,2006,7057.1,Asia
+China,CHN,2007,8013.716,Asia
+China,CHN,2008,8743.745,Asia
+China,CHN,2009,9518.433,Asia
+China,CHN,2010,10476.3125,Asia
+China,CHN,2011,11405.018,Asia
+China,CHN,2012,12217.8545,Asia
+China,CHN,2013,13080.829,Asia
+China,CHN,2014,13968.581,Asia
+China,CHN,2015,14856.78,Asia
+China,CHN,2016,15772.765,Asia
+China,CHN,2017,16757.973,Asia
+China,CHN,2018,17806.791,Asia
+China,CHN,2019,18820.514,Asia
+China,CHN,2020,19215.154,Asia
+China,CHN,2021,20843.297,Asia
+China,CHN,2022,21499.383,Asia
+China,CHN,2023,22687.076,Asia
+China,CHN,2024,23845.62,Asia
+Ethiopia,ETH,1990,874.3469,Africa
+Ethiopia,ETH,1991,777.52356,Africa
+Ethiopia,ETH,1992,680.8348,Africa
+Ethiopia,ETH,1993,743.7085,Africa
+Ethiopia,ETH,1994,741.17664,Africa
+Ethiopia,ETH,1995,760.26434,Africa
+Ethiopia,ETH,1996,826.99164,Africa
+Ethiopia,ETH,1997,826.0052,Africa
+Ethiopia,ETH,1998,772.7866,Africa
+Ethiopia,ETH,1999,787.67957,Africa
+Ethiopia,ETH,2000,810.27075,Africa
+Ethiopia,ETH,2001,851.3134,Africa
+Ethiopia,ETH,2002,838.29803,Africa
+Ethiopia,ETH,2003,795.77216,Africa
+Ethiopia,ETH,2004,877.1145,Africa
+Ethiopia,ETH,2005,952.11566,Africa
+Ethiopia,ETH,2006,1024.7291,Africa
+Ethiopia,ETH,2007,1109.1433,Africa
+Ethiopia,ETH,2008,1193.7473,Africa
+Ethiopia,ETH,2009,1262.464,Africa
+Ethiopia,ETH,2010,1381.1904,Africa
+Ethiopia,ETH,2011,1492.5339,Africa
+Ethiopia,ETH,2012,1576.7688,Africa
+Ethiopia,ETH,2013,1696.8651,Africa
+Ethiopia,ETH,2014,1821.3916,Africa
+Ethiopia,ETH,2015,1957.4146,Africa
+Ethiopia,ETH,2016,2084.8406,Africa
+Ethiopia,ETH,2017,2222.8281,Africa
+Ethiopia,ETH,2018,2311.165,Africa
+Ethiopia,ETH,2019,2437.9705,Africa
+Ethiopia,ETH,2020,2516.549,Africa
+Ethiopia,ETH,2021,2588.413,Africa
+Ethiopia,ETH,2022,2655.5928,Africa
+Ethiopia,ETH,2023,2757.9592,Africa
+Ethiopia,ETH,2024,2892.2222,Africa
+Germany,DEU,1990,42287.652,Europe
+Germany,DEU,1991,44125.145,Europe
+Germany,DEU,1992,44672.69,Europe
+Germany,DEU,1993,43948.15,Europe
+Germany,DEU,1994,44933.293,Europe
+Germany,DEU,1995,45475.688,Europe
+Germany,DEU,1996,45814.85,Europe
+Germany,DEU,1997,46596.18,Europe
+Germany,DEU,1998,47565.453,Europe
+Germany,DEU,1999,48547.004,Europe
+Germany,DEU,2000,49875.875,Europe
+Germany,DEU,2001,50606.71,Europe
+Germany,DEU,2002,50406.38,Europe
+Germany,DEU,2003,50111.574,Europe
+Germany,DEU,2004,50704.92,Europe
+Germany,DEU,2005,51182.96,Europe
+Germany,DEU,2006,53222.04,Europe
+Germany,DEU,2007,54832.96,Europe
+Germany,DEU,2008,55425.11,Europe
+Germany,DEU,2009,52484.855,Europe
+Germany,DEU,2010,54738.707,Europe
+Germany,DEU,2011,57858.42,Europe
+Germany,DEU,2012,58017.586,Europe
+Germany,DEU,2013,58089.17,Europe
+Germany,DEU,2014,59108.7,Europe
+Germany,DEU,2015,59573.707,Europe
+Germany,DEU,2016,60407.973,Europe
+Germany,DEU,2017,61866.49,Europe
+Germany,DEU,2018,62381.348,Europe
+Germany,DEU,2019,62849.375,Europe
+Germany,DEU,2020,60203.29,Europe
+Germany,DEU,2021,62530.766,Europe
+Germany,DEU,2022,63676.086,Europe
+Germany,DEU,2023,63039.37,Europe
+Germany,DEU,2024,62554.555,Europe
+India,IND,1990,2203.147,Asia
+India,IND,1991,2178.686,Asia
+India,IND,1992,2249.698,Asia
+India,IND,1993,2307.6072,Asia
+India,IND,1994,2411.4626,Asia
+India,IND,1995,2542.422,Asia
+India,IND,1996,2680.2788,Asia
+India,IND,1997,2734.521,Asia
+India,IND,1998,2847.9624,Asia
+India,IND,1999,3041.4827,Asia
+India,IND,2000,3099.503,Asia
+India,IND,2001,3188.8103,Asia
+India,IND,2002,3250.6956,Asia
+India,IND,2003,3445.926,Asia
+India,IND,2004,3656.1262,Asia
+India,IND,2005,3881.966,Asia
+India,IND,2006,4129.7783,Asia
+India,IND,2007,4379.696,Asia
+India,IND,2008,4450.39,Asia
+India,IND,2009,4731.362,Asia
+India,IND,2010,5059.2827,Asia
+India,IND,2011,5249.5493,Asia
+India,IND,2012,5460.4375,Asia
+India,IND,2013,5732.2417,Asia
+India,IND,2014,6079.8438,Asia
+India,IND,2015,6488.146,Asia
+India,IND,2016,6940.626,Asia
+India,IND,2017,7326.607,Asia
+India,IND,2018,7714.34,Asia
+India,IND,2019,7930.0913,Asia
+India,IND,2020,7399.531,Asia
+India,IND,2021,8050.0186,Asia
+India,IND,2022,8594.392,Asia
+India,IND,2023,9301.756,Asia
+India,IND,2024,9818.043,Asia
+Japan,JPN,1990,35272.418,Asia
+Japan,JPN,1991,36372.035,Asia
+Japan,JPN,1992,36563.62,Asia
+Japan,JPN,1993,36277.92,Asia
+Japan,JPN,1994,36568.71,Asia
+Japan,JPN,1995,37442.895,Asia
+Japan,JPN,1996,38528.793,Asia
+Japan,JPN,1997,38814.254,Asia
+Japan,JPN,1998,38217.195,Asia
+Japan,JPN,1999,38020.094,Asia
+Japan,JPN,2000,39005.914,Asia
+Japan,JPN,2001,39062.28,Asia
+Japan,JPN,2002,38987.91,Asia
+Japan,JPN,2003,39501.81,Asia
+Japan,JPN,2004,40351.777,Asia
+Japan,JPN,2005,41075.824,Asia
+Japan,JPN,2006,41613.15,Asia
+Japan,JPN,2007,42182.176,Asia
+Japan,JPN,2008,41645.57,Asia
+Japan,JPN,2009,39279.5,Asia
+Japan,JPN,2010,40881.797,Asia
+Japan,JPN,2011,40967.344,Asia
+Japan,JPN,2012,41596.92,Asia
+Japan,JPN,2013,42492.242,Asia
+Japan,JPN,2014,42674.7,Asia
+Japan,JPN,2015,43386.71,Asia
+Japan,JPN,2016,43736.13,Asia
+Japan,JPN,2017,44505.277,Asia
+Japan,JPN,2018,44848.49,Asia
+Japan,JPN,2019,44730.91,Asia
+Japan,JPN,2020,42992.48,Asia
+Japan,JPN,2021,44355.348,Asia
+Japan,JPN,2022,44972.344,Asia
+Japan,JPN,2023,45858.66,Asia
+Japan,JPN,2024,46106.92,Asia
+Russia,RUS,1990,29643.596,Europe
+Russia,RUS,1991,28066.922,Europe
+Russia,RUS,1992,23965.244,Europe
+Russia,RUS,1993,21899.518,Europe
+Russia,RUS,1994,19153.363,Europe
+Russia,RUS,1995,18363.713,Europe
+Russia,RUS,1996,17699.87,Europe
+Russia,RUS,1997,17977.352,Europe
+Russia,RUS,1998,17052.756,Europe
+Russia,RUS,1999,18200.32,Europe
+Russia,RUS,2000,20104.75,Europe
+Russia,RUS,2001,21219.904,Europe
+Russia,RUS,2002,22319.678,Europe
+Russia,RUS,2003,24057.928,Europe
+Russia,RUS,2004,25894.146,Europe
+Russia,RUS,2005,27656.658,Europe
+Russia,RUS,2006,30022.672,Europe
+Russia,RUS,2007,32630.37,Europe
+Russia,RUS,2008,34342.227,Europe
+Russia,RUS,2009,31654.004,Europe
+Russia,RUS,2010,33063.586,Europe
+Russia,RUS,2011,34444.645,Europe
+Russia,RUS,2012,35740.7,Europe
+Russia,RUS,2013,36260.066,Europe
+Russia,RUS,2014,35853.246,Europe
+Russia,RUS,2015,35037.152,Europe
+Russia,RUS,2016,35005.45,Europe
+Russia,RUS,2017,35570.39,Europe
+Russia,RUS,2018,36536.695,Europe
+Russia,RUS,2019,37319.32,Europe
+Russia,RUS,2020,36376.336,Europe
+Russia,RUS,2021,38638.43,Europe
+Russia,RUS,2022,38214.496,Europe
+Russia,RUS,2023,39887.34,Europe
+Russia,RUS,2024,41704.71,Europe
+South Korea,KOR,1990,14377.884,Asia
+South Korea,KOR,1991,15784.467,Asia
+South Korea,KOR,1992,16613.49,Asia
+South Korea,KOR,1993,17595.904,Asia
+South Korea,KOR,1994,19052.299,Asia
+South Korea,KOR,1995,20697.896,Asia
+South Korea,KOR,1996,22139.797,Asia
+South Korea,KOR,1997,23311.043,Asia
+South Korea,KOR,1998,22000.338,Asia
+South Korea,KOR,1999,24382.25,Asia
+South Korea,KOR,2000,26404.158,Asia
+South Korea,KOR,2001,27440.656,Asia
+South Korea,KOR,2002,29395.277,Asia
+South Korea,KOR,2003,30142.46,Asia
+South Korea,KOR,2004,31579.527,Asia
+South Korea,KOR,2005,32886.047,Asia
+South Korea,KOR,2006,34429.62,Asia
+South Korea,KOR,2007,36257.34,Asia
+South Korea,KOR,2008,37064.152,Asia
+South Korea,KOR,2009,37176.195,Asia
+South Korea,KOR,2010,39574.05,Asia
+South Korea,KOR,2011,40719.227,Asia
+South Korea,KOR,2012,41537.67,Asia
+South Korea,KOR,2013,42709.977,Asia
+South Korea,KOR,2014,43806.926,Asia
+South Korea,KOR,2015,44849.105,Asia
+South Korea,KOR,2016,46088.242,Asia
+South Korea,KOR,2017,47536.79,Asia
+South Korea,KOR,2018,48834.445,Asia
+South Korea,KOR,2019,49790.867,Asia
+South Korea,KOR,2020,49374.094,Asia
+South Korea,KOR,2021,51718.25,Asia
+South Korea,KOR,2022,53228.605,Asia
+South Korea,KOR,2023,54029.344,Asia
+South Korea,KOR,2024,55070.938,Asia
+United Kingdom,GBR,1990,32993.168,Europe
+United Kingdom,GBR,1991,32466.195,Europe
+United Kingdom,GBR,1992,32797.73,Europe
+United Kingdom,GBR,1993,33861.254,Europe
+United Kingdom,GBR,1994,35448.18,Europe
+United Kingdom,GBR,1995,36603.74,Europe
+United Kingdom,GBR,1996,37465.38,Europe
+United Kingdom,GBR,1997,39192.61,Europe
+United Kingdom,GBR,1998,40347.18,Europe
+United Kingdom,GBR,1999,41396.938,Europe
+United Kingdom,GBR,2000,43115.562,Europe
+United Kingdom,GBR,2001,43976.84,Europe
+United Kingdom,GBR,2002,44539.465,Europe
+United Kingdom,GBR,2003,45759.402,Europe
+United Kingdom,GBR,2004,46558.13,Europe
+United Kingdom,GBR,2005,47529.938,Europe
+United Kingdom,GBR,2006,48215.047,Europe
+United Kingdom,GBR,2007,49243.25,Europe
+United Kingdom,GBR,2008,48833.07,Europe
+United Kingdom,GBR,2009,46241.805,Europe
+United Kingdom,GBR,2010,46917.89,Europe
+United Kingdom,GBR,2011,46949.02,Europe
+United Kingdom,GBR,2012,47328.21,Europe
+United Kingdom,GBR,2013,47820.28,Europe
+United Kingdom,GBR,2014,48964.285,Europe
+United Kingdom,GBR,2015,49652.72,Europe
+United Kingdom,GBR,2016,50346.86,Europe
+United Kingdom,GBR,2017,51586.676,Europe
+United Kingdom,GBR,2018,52131.695,Europe
+United Kingdom,GBR,2019,52515.684,Europe
+United Kingdom,GBR,2020,47158.984,Europe
+United Kingdom,GBR,2021,51004.426,Europe
+United Kingdom,GBR,2022,53139.152,Europe
+United Kingdom,GBR,2023,52592.684,Europe
+United Kingdom,GBR,2024,52621.18,Europe
+United States,USA,1990,44378.523,North America
+United States,USA,1991,43742.027,North America
+United States,USA,1992,44659.152,North America
+United States,USA,1993,45286.934,North America
+United States,USA,1994,46537.355,North America
+United States,USA,1995,47220.957,North America
+United States,USA,1996,48435.7,North America
+United States,USA,1997,49984.27,North America
+United States,USA,1998,51619.87,North America
+United States,USA,1999,53474.047,North America
+United States,USA,2000,55038.62,North America
+United States,USA,2001,55017.305,North America
+United States,USA,2002,55436.117,North America
+United States,USA,2003,56498.207,North America
+United States,USA,2004,58131.633,North America
+United States,USA,2005,59604.754,North America
+United States,USA,2006,60676.566,North America
+United States,USA,2007,61306.598,North America
+United States,USA,2008,60798.434,North America
+United States,USA,2009,58714.973,North America
+United States,USA,2010,59789.414,North America
+United States,USA,2011,60245.484,North America
+United States,USA,2012,61134.53,North America
+United States,USA,2013,61958.723,North America
+United States,USA,2014,63018.805,North America
+United States,USA,2015,64359.473,North America
+United States,USA,2016,65017.656,North America
+United States,USA,2017,66155.555,North America
+United States,USA,2018,67719.766,North America
+United States,USA,2019,69112.6,North America
+United States,USA,2020,67342.07,North America
+United States,USA,2021,71307.4,North America
+United States,USA,2022,72679.26,North America
+United States,USA,2023,74158.72,North America
+United States,USA,2024,75489.266,North America

@@ -1,0 +1,771 @@
+layer_idx,layer_type,series,x,y
+0,Line Graph,Modern biofuels,1800.0,0.0
+0,Line Graph,Other renewables,1800.0,0.0
+0,Line Graph,Solar,1800.0,0.0
+0,Line Graph,Wind,1800.0,0.0
+0,Line Graph,Hydropower,1800.0,0.0
+0,Line Graph,Nuclear,1800.0,0.0
+0,Line Graph,Gas,1800.0,0.0
+0,Line Graph,Oil,1800.0,0.0
+0,Line Graph,Coal,1800.0,97.0
+0,Line Graph,Traditional biomass,1800.0,5556.0
+0,Line Graph,Modern biofuels,1810.0,0.0
+0,Line Graph,Other renewables,1810.0,0.0
+0,Line Graph,Solar,1810.0,0.0
+0,Line Graph,Wind,1810.0,0.0
+0,Line Graph,Hydropower,1810.0,0.0
+0,Line Graph,Nuclear,1810.0,0.0
+0,Line Graph,Gas,1810.0,0.0
+0,Line Graph,Oil,1810.0,0.0
+0,Line Graph,Coal,1810.0,128.0
+0,Line Graph,Traditional biomass,1810.0,5833.0
+0,Line Graph,Modern biofuels,1820.0,0.0
+0,Line Graph,Other renewables,1820.0,0.0
+0,Line Graph,Solar,1820.0,0.0
+0,Line Graph,Wind,1820.0,0.0
+0,Line Graph,Hydropower,1820.0,0.0
+0,Line Graph,Nuclear,1820.0,0.0
+0,Line Graph,Gas,1820.0,0.0
+0,Line Graph,Oil,1820.0,0.0
+0,Line Graph,Coal,1820.0,153.0
+0,Line Graph,Traditional biomass,1820.0,6111.0
+0,Line Graph,Modern biofuels,1830.0,0.0
+0,Line Graph,Other renewables,1830.0,0.0
+0,Line Graph,Solar,1830.0,0.0
+0,Line Graph,Wind,1830.0,0.0
+0,Line Graph,Hydropower,1830.0,0.0
+0,Line Graph,Nuclear,1830.0,0.0
+0,Line Graph,Gas,1830.0,0.0
+0,Line Graph,Oil,1830.0,0.0
+0,Line Graph,Coal,1830.0,264.0
+0,Line Graph,Traditional biomass,1830.0,6389.0
+0,Line Graph,Modern biofuels,1840.0,0.0
+0,Line Graph,Other renewables,1840.0,0.0
+0,Line Graph,Solar,1840.0,0.0
+0,Line Graph,Wind,1840.0,0.0
+0,Line Graph,Hydropower,1840.0,0.0
+0,Line Graph,Nuclear,1840.0,0.0
+0,Line Graph,Gas,1840.0,0.0
+0,Line Graph,Oil,1840.0,0.0
+0,Line Graph,Coal,1840.0,356.0
+0,Line Graph,Traditional biomass,1840.0,6944.0
+0,Line Graph,Modern biofuels,1850.0,0.0
+0,Line Graph,Other renewables,1850.0,0.0
+0,Line Graph,Solar,1850.0,0.0
+0,Line Graph,Wind,1850.0,0.0
+0,Line Graph,Hydropower,1850.0,0.0
+0,Line Graph,Nuclear,1850.0,0.0
+0,Line Graph,Gas,1850.0,0.0
+0,Line Graph,Oil,1850.0,0.0
+0,Line Graph,Coal,1850.0,569.0
+0,Line Graph,Traditional biomass,1850.0,7222.0
+0,Line Graph,Modern biofuels,1860.0,0.0
+0,Line Graph,Other renewables,1860.0,0.0
+0,Line Graph,Solar,1860.0,0.0
+0,Line Graph,Wind,1860.0,0.0
+0,Line Graph,Hydropower,1860.0,0.0
+0,Line Graph,Nuclear,1860.0,0.0
+0,Line Graph,Gas,1860.0,0.0
+0,Line Graph,Oil,1860.0,0.0
+0,Line Graph,Coal,1860.0,1061.0
+0,Line Graph,Traditional biomass,1860.0,6944.0
+0,Line Graph,Modern biofuels,1870.0,0.0
+0,Line Graph,Other renewables,1870.0,0.0
+0,Line Graph,Solar,1870.0,0.0
+0,Line Graph,Wind,1870.0,0.0
+0,Line Graph,Hydropower,1870.0,0.0
+0,Line Graph,Nuclear,1870.0,0.0
+0,Line Graph,Gas,1870.0,0.0
+0,Line Graph,Oil,1870.0,6.0
+0,Line Graph,Coal,1870.0,1642.0
+0,Line Graph,Traditional biomass,1870.0,6944.0
+0,Line Graph,Modern biofuels,1880.0,0.0
+0,Line Graph,Other renewables,1880.0,0.0
+0,Line Graph,Solar,1880.0,0.0
+0,Line Graph,Wind,1880.0,0.0
+0,Line Graph,Hydropower,1880.0,0.0
+0,Line Graph,Nuclear,1880.0,0.0
+0,Line Graph,Gas,1880.0,0.0
+0,Line Graph,Oil,1880.0,33.0
+0,Line Graph,Coal,1880.0,2542.0
+0,Line Graph,Traditional biomass,1880.0,6944.0
+0,Line Graph,Modern biofuels,1890.0,0.0
+0,Line Graph,Other renewables,1890.0,0.0
+0,Line Graph,Solar,1890.0,0.0
+0,Line Graph,Wind,1890.0,0.0
+0,Line Graph,Hydropower,1890.0,14.0
+0,Line Graph,Nuclear,1890.0,0.0
+0,Line Graph,Gas,1890.0,33.0
+0,Line Graph,Oil,1890.0,89.0
+0,Line Graph,Coal,1890.0,3856.0
+0,Line Graph,Traditional biomass,1890.0,6667.0
+0,Line Graph,Modern biofuels,1900.0,0.0
+0,Line Graph,Other renewables,1900.0,0.0
+0,Line Graph,Solar,1900.0,0.0
+0,Line Graph,Wind,1900.0,0.0
+0,Line Graph,Hydropower,1900.0,17.0
+0,Line Graph,Nuclear,1900.0,0.0
+0,Line Graph,Gas,1900.0,64.0
+0,Line Graph,Oil,1900.0,181.0
+0,Line Graph,Coal,1900.0,5728.0
+0,Line Graph,Traditional biomass,1900.0,6111.0
+0,Line Graph,Modern biofuels,1910.0,0.0
+0,Line Graph,Other renewables,1910.0,0.0
+0,Line Graph,Solar,1910.0,0.0
+0,Line Graph,Wind,1910.0,0.0
+0,Line Graph,Hydropower,1910.0,33.0
+0,Line Graph,Nuclear,1910.0,0.0
+0,Line Graph,Gas,1910.0,142.0
+0,Line Graph,Oil,1910.0,397.0
+0,Line Graph,Coal,1910.0,8656.0
+0,Line Graph,Traditional biomass,1910.0,6389.0
+0,Line Graph,Modern biofuels,1920.0,0.0
+0,Line Graph,Other renewables,1920.0,0.0
+0,Line Graph,Solar,1920.0,0.0
+0,Line Graph,Wind,1920.0,0.0
+0,Line Graph,Hydropower,1920.0,64.0
+0,Line Graph,Nuclear,1920.0,0.0
+0,Line Graph,Gas,1920.0,233.0
+0,Line Graph,Oil,1920.0,889.0
+0,Line Graph,Coal,1920.0,9833.0
+0,Line Graph,Traditional biomass,1920.0,6944.0
+0,Line Graph,Modern biofuels,1930.0,0.0
+0,Line Graph,Other renewables,1930.0,0.0
+0,Line Graph,Solar,1930.0,0.0
+0,Line Graph,Wind,1930.0,0.0
+0,Line Graph,Hydropower,1930.0,131.0
+0,Line Graph,Nuclear,1930.0,0.0
+0,Line Graph,Gas,1930.0,603.0
+0,Line Graph,Oil,1930.0,1756.0
+0,Line Graph,Coal,1930.0,10125.0
+0,Line Graph,Traditional biomass,1930.0,7222.0
+0,Line Graph,Modern biofuels,1940.0,0.0
+0,Line Graph,Other renewables,1940.0,0.0
+0,Line Graph,Solar,1940.0,0.0
+0,Line Graph,Wind,1940.0,0.0
+0,Line Graph,Hydropower,1940.0,192.0
+0,Line Graph,Nuclear,1940.0,0.0
+0,Line Graph,Gas,1940.0,875.0
+0,Line Graph,Oil,1940.0,2653.0
+0,Line Graph,Coal,1940.0,11586.0
+0,Line Graph,Traditional biomass,1940.0,7222.0
+0,Line Graph,Modern biofuels,1950.0,0.0
+0,Line Graph,Other renewables,1950.0,0.0
+0,Line Graph,Solar,1950.0,0.0
+0,Line Graph,Wind,1950.0,0.0
+0,Line Graph,Hydropower,1950.0,333.0
+0,Line Graph,Nuclear,1950.0,0.0
+0,Line Graph,Gas,1950.0,2092.0
+0,Line Graph,Oil,1950.0,5444.0
+0,Line Graph,Coal,1950.0,12603.0
+0,Line Graph,Traditional biomass,1950.0,7500.0
+0,Line Graph,Modern biofuels,1960.0,0.0
+0,Line Graph,Other renewables,1960.0,0.0
+0,Line Graph,Solar,1960.0,0.0
+0,Line Graph,Wind,1960.0,0.0
+0,Line Graph,Hydropower,1960.0,689.0
+0,Line Graph,Nuclear,1960.0,0.0
+0,Line Graph,Gas,1960.0,4472.0
+0,Line Graph,Oil,1960.0,11097.0
+0,Line Graph,Coal,1960.0,15442.0
+0,Line Graph,Traditional biomass,1960.0,8889.0
+0,Line Graph,Modern biofuels,1965.0,9.029861
+0,Line Graph,Other renewables,1965.0,17.985231
+0,Line Graph,Solar,1965.0,0.0
+0,Line Graph,Wind,1965.0,0.0
+0,Line Graph,Hydropower,1965.0,923.19806
+0,Line Graph,Nuclear,1965.0,25.539724
+0,Line Graph,Gas,1965.0,6303.821
+0,Line Graph,Oil,1965.0,18011.457
+0,Line Graph,Coal,1965.0,16177.694
+0,Line Graph,Traditional biomass,1965.0,9162.0
+0,Line Graph,Modern biofuels,1966.0,9.209844
+0,Line Graph,Other renewables,1966.0,19.806007
+0,Line Graph,Solar,1966.0,0.0
+0,Line Graph,Wind,1966.0,0.0
+0,Line Graph,Hydropower,1966.0,983.81696
+0,Line Graph,Nuclear,1966.0,34.43329
+0,Line Graph,Gas,1966.0,6868.8145
+0,Line Graph,Oil,1966.0,19426.414
+0,Line Graph,Coal,1966.0,16359.431
+0,Line Graph,Traditional biomass,1966.0,9218.0
+0,Line Graph,Modern biofuels,1967.0,9.383716
+0,Line Graph,Other renewables,1967.0,19.98657
+0,Line Graph,Solar,1967.0,0.0
+0,Line Graph,Wind,1967.0,0.0
+0,Line Graph,Hydropower,1967.0,1005.7424
+0,Line Graph,Nuclear,1967.0,41.006016
+0,Line Graph,Gas,1967.0,7374.058
+0,Line Graph,Oil,1967.0,20778.916
+0,Line Graph,Coal,1967.0,16095.518
+0,Line Graph,Traditional biomass,1967.0,9274.0
+0,Line Graph,Modern biofuels,1968.0,9.5538
+0,Line Graph,Other renewables,1968.0,22.120045
+0,Line Graph,Solar,1968.0,0.0
+0,Line Graph,Wind,1968.0,0.0
+0,Line Graph,Hydropower,1968.0,1059.2887
+0,Line Graph,Nuclear,1968.0,52.113163
+0,Line Graph,Gas,1968.0,8044.3477
+0,Line Graph,Oil,1968.0,22510.49
+0,Line Graph,Coal,1968.0,16333.144
+0,Line Graph,Traditional biomass,1968.0,9331.0
+0,Line Graph,Modern biofuels,1969.0,9.723982
+0,Line Graph,Other renewables,1969.0,23.257965
+0,Line Graph,Solar,1969.0,0.0
+0,Line Graph,Wind,1969.0,0.0
+0,Line Graph,Hydropower,1969.0,1121.7424
+0,Line Graph,Nuclear,1969.0,61.783413
+0,Line Graph,Gas,1969.0,8833.434
+0,Line Graph,Oil,1969.0,24445.395
+0,Line Graph,Coal,1969.0,16847.0
+0,Line Graph,Traditional biomass,1969.0,9387.0
+0,Line Graph,Modern biofuels,1970.0,13.501495
+0,Line Graph,Other renewables,1970.0,25.701897
+0,Line Graph,Solar,1970.0,0.0
+0,Line Graph,Wind,1970.0,0.0
+0,Line Graph,Hydropower,1970.0,1174.6497
+0,Line Graph,Nuclear,1970.0,78.87466
+0,Line Graph,Gas,1970.0,9614.809
+0,Line Graph,Oil,1970.0,26684.725
+0,Line Graph,Coal,1970.0,17087.006
+0,Line Graph,Traditional biomass,1970.0,9444.0
+0,Line Graph,Modern biofuels,1971.0,13.562147
+0,Line Graph,Other renewables,1971.0,27.888294
+0,Line Graph,Solar,1971.0,0.0
+0,Line Graph,Wind,1971.0,0.0
+0,Line Graph,Hydropower,1971.0,1227.2422
+0,Line Graph,Nuclear,1971.0,109.70418
+0,Line Graph,Gas,1971.0,10293.19
+0,Line Graph,Oil,1971.0,28116.584
+0,Line Graph,Coal,1971.0,16987.656
+0,Line Graph,Traditional biomass,1971.0,9499.0
+0,Line Graph,Modern biofuels,1972.0,14.823111
+0,Line Graph,Other renewables,1972.0,29.888775
+0,Line Graph,Solar,1972.0,0.0
+0,Line Graph,Wind,1972.0,0.0
+0,Line Graph,Hydropower,1972.0,1284.629
+0,Line Graph,Nuclear,1972.0,152.17516
+0,Line Graph,Gas,1972.0,10861.714
+0,Line Graph,Oil,1972.0,30335.396
+0,Line Graph,Coal,1972.0,17168.227
+0,Line Graph,Traditional biomass,1972.0,9553.0
+0,Line Graph,Modern biofuels,1973.0,14.250557
+0,Line Graph,Other renewables,1973.0,32.09585
+0,Line Graph,Solar,1973.0,0.0
+0,Line Graph,Wind,1973.0,0.0
+0,Line Graph,Hydropower,1973.0,1303.013
+0,Line Graph,Nuclear,1973.0,203.90158
+0,Line Graph,Gas,1973.0,11377.833
+0,Line Graph,Oil,1973.0,32730.184
+0,Line Graph,Coal,1973.0,17683.57
+0,Line Graph,Traditional biomass,1973.0,9608.0
+0,Line Graph,Modern biofuels,1974.0,14.334716
+0,Line Graph,Other renewables,1974.0,34.289085
+0,Line Graph,Solar,1974.0,0.0
+0,Line Graph,Wind,1974.0,0.0
+0,Line Graph,Hydropower,1974.0,1431.2317
+0,Line Graph,Nuclear,1974.0,266.6001
+0,Line Graph,Gas,1974.0,11659.859
+0,Line Graph,Oil,1974.0,32230.395
+0,Line Graph,Coal,1974.0,17696.432
+0,Line Graph,Traditional biomass,1974.0,9663.0
+0,Line Graph,Modern biofuels,1975.0,13.688392
+0,Line Graph,Other renewables,1975.0,34.81208
+0,Line Graph,Solar,1975.0,0.0
+0,Line Graph,Wind,1975.0,0.0
+0,Line Graph,Hydropower,1975.0,1448.8834
+0,Line Graph,Nuclear,1975.0,369.8482
+0,Line Graph,Gas,1975.0,11659.736
+0,Line Graph,Oil,1975.0,31996.514
+0,Line Graph,Coal,1975.0,18045.436
+0,Line Graph,Traditional biomass,1975.0,9718.0
+0,Line Graph,Modern biofuels,1976.0,13.75119
+0,Line Graph,Other renewables,1976.0,38.79105
+0,Line Graph,Solar,1976.0,0.0
+0,Line Graph,Wind,1976.0,0.0
+0,Line Graph,Hydropower,1976.0,1443.1366
+0,Line Graph,Nuclear,1976.0,432.67142
+0,Line Graph,Gas,1976.0,12354.139
+0,Line Graph,Oil,1976.0,34061.47
+0,Line Graph,Coal,1976.0,18699.785
+0,Line Graph,Traditional biomass,1976.0,9774.0
+0,Line Graph,Modern biofuels,1977.0,18.318535
+0,Line Graph,Other renewables,1977.0,40.89204
+0,Line Graph,Solar,1977.0,0.0
+0,Line Graph,Wind,1977.0,0.0
+0,Line Graph,Hydropower,1977.0,1491.6724
+0,Line Graph,Nuclear,1977.0,538.5478
+0,Line Graph,Gas,1977.0,12759.838
+0,Line Graph,Oil,1977.0,35194.34
+0,Line Graph,Coal,1977.0,19267.412
+0,Line Graph,Traditional biomass,1977.0,9830.0
+0,Line Graph,Modern biofuels,1978.0,23.178776
+0,Line Graph,Other renewables,1978.0,43.29665
+0,Line Graph,Solar,1978.0,0.0
+0,Line Graph,Wind,1978.0,0.003
+0,Line Graph,Hydropower,1978.0,1614.3823
+0,Line Graph,Nuclear,1978.0,625.7944
+0,Line Graph,Gas,1978.0,13293.947
+0,Line Graph,Oil,1978.0,36709.973
+0,Line Graph,Coal,1978.0,19467.492
+0,Line Graph,Traditional biomass,1978.0,9886.0
+0,Line Graph,Modern biofuels,1979.0,28.023214
+0,Line Graph,Other renewables,1979.0,46.499256
+0,Line Graph,Solar,1979.0,0.0
+0,Line Graph,Wind,1979.0,0.006
+0,Line Graph,Hydropower,1979.0,1695.1862
+0,Line Graph,Nuclear,1979.0,650.8599
+0,Line Graph,Gas,1979.0,14118.029
+0,Line Graph,Oil,1979.0,37177.996
+0,Line Graph,Coal,1979.0,20370.578
+0,Line Graph,Traditional biomass,1979.0,9943.0
+0,Line Graph,Modern biofuels,1980.0,32.78612
+0,Line Graph,Other renewables,1980.0,49.717464
+0,Line Graph,Solar,1980.0,0.0
+0,Line Graph,Wind,1980.0,0.0105
+0,Line Graph,Hydropower,1980.0,1731.6493
+0,Line Graph,Nuclear,1980.0,711.9242
+0,Line Graph,Gas,1980.0,14236.961
+0,Line Graph,Oil,1980.0,35568.645
+0,Line Graph,Coal,1980.0,20877.783
+0,Line Graph,Traditional biomass,1980.0,10000.0
+0,Line Graph,Modern biofuels,1981.0,29.747923
+0,Line Graph,Other renewables,1981.0,53.48617
+0,Line Graph,Solar,1981.0,0.0
+0,Line Graph,Wind,1981.0,0.0105
+0,Line Graph,Hydropower,1981.0,1768.9036
+0,Line Graph,Nuclear,1981.0,840.75073
+0,Line Graph,Gas,1981.0,14395.874
+0,Line Graph,Oil,1981.0,34289.96
+0,Line Graph,Coal,1981.0,21158.002
+0,Line Graph,Traditional biomass,1981.0,10106.0
+0,Line Graph,Modern biofuels,1982.0,37.556244
+0,Line Graph,Other renewables,1982.0,61.708954
+0,Line Graph,Solar,1982.0,0.0
+0,Line Graph,Wind,1982.0,0.0185
+0,Line Graph,Hydropower,1982.0,1800.9081
+0,Line Graph,Nuclear,1982.0,912.17755
+0,Line Graph,Gas,1982.0,14469.731
+0,Line Graph,Oil,1982.0,33270.01
+0,Line Graph,Coal,1982.0,21395.428
+0,Line Graph,Traditional biomass,1982.0,10213.0
+0,Line Graph,Modern biofuels,1983.0,49.01924
+0,Line Graph,Other renewables,1983.0,68.35493
+0,Line Graph,Solar,1983.0,0.003
+0,Line Graph,Wind,1983.0,0.03279495
+0,Line Graph,Hydropower,1983.0,1877.7689
+0,Line Graph,Nuclear,1983.0,1033.8127
+0,Line Graph,Gas,1983.0,14703.827
+0,Line Graph,Oil,1983.0,33097.43
+0,Line Graph,Coal,1983.0,22050.973
+0,Line Graph,Traditional biomass,1983.0,10321.0
+0,Line Graph,Modern biofuels,1984.0,57.806427
+0,Line Graph,Other renewables,1984.0,76.34615
+0,Line Graph,Solar,1984.0,0.006311111
+0,Line Graph,Wind,1984.0,0.044755556
+0,Line Graph,Hydropower,1984.0,1941.3734
+0,Line Graph,Nuclear,1984.0,1254.5685
+0,Line Graph,Gas,1984.0,15902.676
+0,Line Graph,Oil,1984.0,33623.6
+0,Line Graph,Coal,1984.0,23008.44
+0,Line Graph,Traditional biomass,1984.0,10430.0
+0,Line Graph,Modern biofuels,1985.0,68.410095
+0,Line Graph,Other renewables,1985.0,78.702576
+0,Line Graph,Solar,1985.0,0.011747475
+0,Line Graph,Wind,1985.0,0.064220205
+0,Line Graph,Hydropower,1985.0,1979.2437
+0,Line Graph,Nuclear,1985.0,1488.9216
+0,Line Graph,Gas,1985.0,16262.218
+0,Line Graph,Oil,1985.0,33684.684
+0,Line Graph,Coal,1985.0,23996.738
+0,Line Graph,Traditional biomass,1985.0,10541.0
+0,Line Graph,Modern biofuels,1986.0,84.202995
+0,Line Graph,Other renewables,1986.0,85.44338
+0,Line Graph,Solar,1986.0,0.015183838
+0,Line Graph,Wind,1986.0,0.13883132
+0,Line Graph,Hydropower,1986.0,2006.073
+0,Line Graph,Nuclear,1986.0,1594.7357
+0,Line Graph,Gas,1986.0,16421.107
+0,Line Graph,Oil,1986.0,34710.477
+0,Line Graph,Coal,1986.0,24263.818
+0,Line Graph,Traditional biomass,1986.0,10653.0
+0,Line Graph,Modern biofuels,1987.0,85.33012
+0,Line Graph,Other renewables,1987.0,91.51602
+0,Line Graph,Solar,1987.0,0.01060303
+0,Line Graph,Wind,1987.0,0.19537677
+0,Line Graph,Hydropower,1987.0,2033.1924
+0,Line Graph,Nuclear,1987.0,1734.7332
+0,Line Graph,Gas,1987.0,17281.893
+0,Line Graph,Oil,1987.0,35508.195
+0,Line Graph,Coal,1987.0,25228.488
+0,Line Graph,Traditional biomass,1987.0,10765.0
+0,Line Graph,Modern biofuels,1988.0,89.5602
+0,Line Graph,Other renewables,1988.0,94.16091
+0,Line Graph,Solar,1988.0,0.010195959
+0,Line Graph,Wind,1988.0,0.3315798
+0,Line Graph,Hydropower,1988.0,2098.3489
+0,Line Graph,Nuclear,1988.0,1891.2493
+0,Line Graph,Gas,1988.0,18088.844
+0,Line Graph,Oil,1988.0,36641.938
+0,Line Graph,Coal,1988.0,25983.08
+0,Line Graph,Traditional biomass,1988.0,10879.0
+0,Line Graph,Modern biofuels,1989.0,95.68924
+0,Line Graph,Other renewables,1989.0,104.67236
+0,Line Graph,Solar,1989.0,0.26222324
+0,Line Graph,Wind,1989.0,2.6497767
+0,Line Graph,Hydropower,1989.0,2087.587
+0,Line Graph,Nuclear,1989.0,1945.0106
+0,Line Graph,Gas,1989.0,18888.648
+0,Line Graph,Oil,1989.0,37215.688
+0,Line Graph,Coal,1989.0,26231.049
+0,Line Graph,Traditional biomass,1989.0,10995.0
+0,Line Graph,Modern biofuels,1990.0,106.56911
+0,Line Graph,Other renewables,1990.0,117.22435
+0,Line Graph,Solar,1990.0,0.38824996
+0,Line Graph,Wind,1990.0,3.6324706
+0,Line Graph,Hydropower,1990.0,2158.622
+0,Line Graph,Nuclear,1990.0,2000.596
+0,Line Graph,Gas,1990.0,19481.15
+0,Line Graph,Oil,1990.0,37906.816
+0,Line Graph,Coal,1990.0,25928.912
+0,Line Graph,Traditional biomass,1990.0,11111.0
+0,Line Graph,Modern biofuels,1991.0,110.64683
+0,Line Graph,Other renewables,1991.0,122.26321
+0,Line Graph,Solar,1991.0,0.50522286
+0,Line Graph,Wind,1991.0,4.086107
+0,Line Graph,Hydropower,1991.0,2208.5442
+0,Line Graph,Nuclear,1991.0,2096.3098
+0,Line Graph,Gas,1991.0,19972.838
+0,Line Graph,Oil,1991.0,37876.832
+0,Line Graph,Coal,1991.0,25686.727
+0,Line Graph,Traditional biomass,1991.0,11243.0
+0,Line Graph,Modern biofuels,1992.0,108.705635
+0,Line Graph,Other renewables,1992.0,131.15991
+0,Line Graph,Solar,1992.0,0.4665791
+0,Line Graph,Wind,1992.0,4.732812
+0,Line Graph,Hydropower,1992.0,2208.3147
+0,Line Graph,Nuclear,1992.0,2112.223
+0,Line Graph,Gas,1992.0,20063.482
+0,Line Graph,Oil,1992.0,38404.773
+0,Line Graph,Coal,1992.0,25584.3
+0,Line Graph,Traditional biomass,1992.0,11376.0
+0,Line Graph,Modern biofuels,1993.0,114.34006
+0,Line Graph,Other renewables,1993.0,135.48085
+0,Line Graph,Solar,1993.0,0.5566775
+0,Line Graph,Wind,1993.0,5.704169
+0,Line Graph,Hydropower,1993.0,2341.3206
+0,Line Graph,Nuclear,1993.0,2184.9646
+0,Line Graph,Gas,1993.0,20265.482
+0,Line Graph,Oil,1993.0,38246.242
+0,Line Graph,Coal,1993.0,25708.832
+0,Line Graph,Traditional biomass,1993.0,11511.0
+0,Line Graph,Modern biofuels,1994.0,124.101776
+0,Line Graph,Other renewables,1994.0,140.67743
+0,Line Graph,Solar,1994.0,0.5969829
+0,Line Graph,Wind,1994.0,7.13173
+0,Line Graph,Hydropower,1994.0,2355.9055
+0,Line Graph,Nuclear,1994.0,2225.9788
+0,Line Graph,Gas,1994.0,20389.613
+0,Line Graph,Oil,1994.0,39068.176
+0,Line Graph,Coal,1994.0,25815.188
+0,Line Graph,Traditional biomass,1994.0,11647.0
+0,Line Graph,Modern biofuels,1995.0,131.0704
+0,Line Graph,Other renewables,1995.0,146.64236
+0,Line Graph,Solar,1995.0,0.63888276
+0,Line Graph,Wind,1995.0,8.272123
+0,Line Graph,Hydropower,1995.0,2483.389
+0,Line Graph,Nuclear,1995.0,2322.5298
+0,Line Graph,Gas,1995.0,21104.492
+0,Line Graph,Oil,1995.0,39666.37
+0,Line Graph,Coal,1995.0,25999.217
+0,Line Graph,Traditional biomass,1995.0,11785.0
+0,Line Graph,Modern biofuels,1996.0,125.784515
+0,Line Graph,Other renewables,1996.0,150.7037
+0,Line Graph,Solar,1996.0,0.69922996
+0,Line Graph,Wind,1996.0,9.215601
+0,Line Graph,Hydropower,1996.0,2516.815
+0,Line Graph,Nuclear,1996.0,2406.615
+0,Line Graph,Gas,1996.0,22159.254
+0,Line Graph,Oil,1996.0,40576.63
+0,Line Graph,Coal,1996.0,26617.482
+0,Line Graph,Traditional biomass,1996.0,11925.0
+0,Line Graph,Modern biofuels,1997.0,130.03065
+0,Line Graph,Other renewables,1997.0,161.41173
+0,Line Graph,Solar,1997.0,0.7496558
+0,Line Graph,Wind,1997.0,12.028216
+0,Line Graph,Hydropower,1997.0,2561.3557
+0,Line Graph,Nuclear,1997.0,2390.0642
+0,Line Graph,Gas,1997.0,22030.393
+0,Line Graph,Oil,1997.0,41652.086
+0,Line Graph,Coal,1997.0,26563.252
+0,Line Graph,Traditional biomass,1997.0,12066.0
+0,Line Graph,Modern biofuels,1998.0,133.38396
+0,Line Graph,Other renewables,1998.0,168.2174
+0,Line Graph,Solar,1998.0,0.811852
+0,Line Graph,Wind,1998.0,15.92926
+0,Line Graph,Hydropower,1998.0,2580.9333
+0,Line Graph,Nuclear,1998.0,2431.1948
+0,Line Graph,Gas,1998.0,22434.0
+0,Line Graph,Oil,1998.0,41788.617
+0,Line Graph,Coal,1998.0,26395.965
+0,Line Graph,Traditional biomass,1998.0,12209.0
+0,Line Graph,Modern biofuels,1999.0,135.24736
+0,Line Graph,Other renewables,1999.0,176.64807
+0,Line Graph,Solar,1999.0,0.9052879
+0,Line Graph,Wind,1999.0,21.226898
+0,Line Graph,Hydropower,1999.0,2600.4688
+0,Line Graph,Nuclear,1999.0,2523.7056
+0,Line Graph,Gas,1999.0,23071.904
+0,Line Graph,Oil,1999.0,42435.785
+0,Line Graph,Coal,1999.0,26508.807
+0,Line Graph,Traditional biomass,1999.0,12414.0
+0,Line Graph,Modern biofuels,2000.0,132.50877
+0,Line Graph,Other renewables,2000.0,184.92102
+0,Line Graph,Solar,2000.0,1.0581311
+0,Line Graph,Wind,2000.0,31.409548
+0,Line Graph,Hydropower,2000.0,2646.6814
+0,Line Graph,Nuclear,2000.0,2580.6675
+0,Line Graph,Gas,2000.0,23994.258
+0,Line Graph,Oil,2000.0,43016.63
+0,Line Graph,Coal,2000.0,27456.373
+0,Line Graph,Traditional biomass,2000.0,12500.0
+0,Line Graph,Modern biofuels,2001.0,131.42494
+0,Line Graph,Other renewables,2001.0,192.07533
+0,Line Graph,Solar,2001.0,1.4220114
+0,Line Graph,Wind,2001.0,38.380005
+0,Line Graph,Hydropower,2001.0,2578.609
+0,Line Graph,Nuclear,2001.0,2653.5366
+0,Line Graph,Gas,2001.0,24316.832
+0,Line Graph,Oil,2001.0,43398.32
+0,Line Graph,Coal,2001.0,27880.072
+0,Line Graph,Traditional biomass,2001.0,12500.0
+0,Line Graph,Modern biofuels,2002.0,149.3146
+0,Line Graph,Other renewables,2002.0,206.76979
+0,Line Graph,Solar,2002.0,1.7970146
+0,Line Graph,Wind,2002.0,52.38179
+0,Line Graph,Hydropower,2002.0,2626.1453
+0,Line Graph,Nuclear,2002.0,2695.9448
+0,Line Graph,Gas,2002.0,25051.928
+0,Line Graph,Oil,2002.0,43697.09
+0,Line Graph,Coal,2002.0,28982.217
+0,Line Graph,Traditional biomass,2002.0,12470.0
+0,Line Graph,Modern biofuels,2003.0,168.93166
+0,Line Graph,Other renewables,2003.0,218.43156
+0,Line Graph,Solar,2003.0,2.2525039
+0,Line Graph,Wind,2003.0,63.28461
+0,Line Graph,Hydropower,2003.0,2622.9336
+0,Line Graph,Nuclear,2003.0,2641.3206
+0,Line Graph,Gas,2003.0,25727.734
+0,Line Graph,Oil,2003.0,44610.883
+0,Line Graph,Coal,2003.0,31519.594
+0,Line Graph,Traditional biomass,2003.0,12329.0
+0,Line Graph,Modern biofuels,2004.0,201.20049
+0,Line Graph,Other renewables,2004.0,236.08224
+0,Line Graph,Solar,2004.0,2.9681087
+0,Line Graph,Wind,2004.0,85.61839
+0,Line Graph,Hydropower,2004.0,2816.5308
+0,Line Graph,Nuclear,2004.0,2761.3591
+0,Line Graph,Gas,2004.0,26781.62
+0,Line Graph,Oil,2004.0,46413.184
+0,Line Graph,Coal,2004.0,33708.973
+0,Line Graph,Traditional biomass,2004.0,12160.0
+0,Line Graph,Modern biofuels,2005.0,234.4752
+0,Line Graph,Other renewables,2005.0,255.4756
+0,Line Graph,Solar,2005.0,4.1821074
+0,Line Graph,Wind,2005.0,104.62726
+0,Line Graph,Hydropower,2005.0,2911.2554
+0,Line Graph,Nuclear,2005.0,2768.6055
+0,Line Graph,Gas,2005.0,27439.225
+0,Line Graph,Oil,2005.0,47016.887
+0,Line Graph,Coal,2005.0,36200.953
+0,Line Graph,Traditional biomass,2005.0,12076.0
+0,Line Graph,Modern biofuels,2006.0,294.60196
+0,Line Graph,Other renewables,2006.0,272.06897
+0,Line Graph,Solar,2006.0,5.7550807
+0,Line Graph,Wind,2006.0,133.50282
+0,Line Graph,Hydropower,2006.0,3022.2324
+0,Line Graph,Nuclear,2006.0,2803.1106
+0,Line Graph,Gas,2006.0,28171.709
+0,Line Graph,Oil,2006.0,47436.953
+0,Line Graph,Coal,2006.0,38087.04
+0,Line Graph,Traditional biomass,2006.0,11993.0
+0,Line Graph,Modern biofuels,2007.0,391.6522
+0,Line Graph,Other renewables,2007.0,295.30084
+0,Line Graph,Solar,2007.0,7.8056073
+0,Line Graph,Wind,2007.0,171.5046
+0,Line Graph,Hydropower,2007.0,3072.41
+0,Line Graph,Nuclear,2007.0,2745.9678
+0,Line Graph,Gas,2007.0,29338.285
+0,Line Graph,Oil,2007.0,48087.52
+0,Line Graph,Coal,2007.0,40241.703
+0,Line Graph,Traditional biomass,2007.0,11911.0
+0,Line Graph,Modern biofuels,2008.0,535.94214
+0,Line Graph,Other renewables,2008.0,315.9329
+0,Line Graph,Solar,2008.0,12.680596
+0,Line Graph,Wind,2008.0,221.41243
+0,Line Graph,Hydropower,2008.0,3251.593
+0,Line Graph,Nuclear,2008.0,2737.4546
+0,Line Graph,Gas,2008.0,30050.746
+0,Line Graph,Oil,2008.0,47692.652
+0,Line Graph,Coal,2008.0,40796.645
+0,Line Graph,Traditional biomass,2008.0,11829.0
+0,Line Graph,Modern biofuels,2009.0,600.6355
+0,Line Graph,Other renewables,2009.0,338.23798
+0,Line Graph,Solar,2009.0,21.05927
+0,Line Graph,Wind,2009.0,276.79733
+0,Line Graph,Hydropower,2009.0,3246.3337
+0,Line Graph,Nuclear,2009.0,2698.719
+0,Line Graph,Gas,2009.0,29403.605
+0,Line Graph,Oil,2009.0,46633.97
+0,Line Graph,Coal,2009.0,40219.008
+0,Line Graph,Traditional biomass,2009.0,11747.0
+0,Line Graph,Modern biofuels,2010.0,678.90076
+0,Line Graph,Other renewables,2010.0,378.38107
+0,Line Graph,Solar,2010.0,33.921192
+0,Line Graph,Wind,2010.0,346.40906
+0,Line Graph,Hydropower,2010.0,3430.1125
+0,Line Graph,Nuclear,2010.0,2768.2646
+0,Line Graph,Gas,2010.0,31592.871
+0,Line Graph,Oil,2010.0,48192.543
+0,Line Graph,Coal,2010.0,42016.016
+0,Line Graph,Traditional biomass,2010.0,11667.0
+0,Line Graph,Modern biofuels,2011.0,717.3121
+0,Line Graph,Other renewables,2011.0,397.03775
+0,Line Graph,Solar,2011.0,65.74349
+0,Line Graph,Wind,2011.0,440.9265
+0,Line Graph,Hydropower,2011.0,3492.5762
+0,Line Graph,Nuclear,2011.0,2652.4263
+0,Line Graph,Gas,2011.0,32349.885
+0,Line Graph,Oil,2011.0,48578.273
+0,Line Graph,Coal,2011.0,43983.35
+0,Line Graph,Traditional biomass,2011.0,11553.0
+0,Line Graph,Modern biofuels,2012.0,746.39514
+0,Line Graph,Other renewables,2012.0,428.7513
+0,Line Graph,Solar,2012.0,101.51597
+0,Line Graph,Wind,2012.0,530.81085
+0,Line Graph,Hydropower,2012.0,3641.434
+0,Line Graph,Nuclear,2012.0,2470.5425
+0,Line Graph,Gas,2012.0,33246.438
+0,Line Graph,Oil,2012.0,49362.21
+0,Line Graph,Coal,2012.0,44098.684
+0,Line Graph,Traditional biomass,2012.0,11441.0
+0,Line Graph,Modern biofuels,2013.0,818.51044
+0,Line Graph,Other renewables,2013.0,461.37805
+0,Line Graph,Solar,2013.0,138.60948
+0,Line Graph,Wind,2013.0,635.8524
+0,Line Graph,Hydropower,2013.0,3787.994
+0,Line Graph,Nuclear,2013.0,2490.2715
+0,Line Graph,Gas,2013.0,33733.266
+0,Line Graph,Oil,2013.0,49922.812
+0,Line Graph,Coal,2013.0,44745.465
+0,Line Graph,Traditional biomass,2013.0,11330.0
+0,Line Graph,Modern biofuels,2014.0,865.9456
+0,Line Graph,Other renewables,2014.0,502.1095
+0,Line Graph,Solar,2014.0,197.29445
+0,Line Graph,Wind,2014.0,706.23956
+0,Line Graph,Hydropower,2014.0,3889.0725
+0,Line Graph,Nuclear,2014.0,2541.1248
+0,Line Graph,Gas,2014.0,33976.355
+0,Line Graph,Oil,2014.0,50336.395
+0,Line Graph,Coal,2014.0,44912.37
+0,Line Graph,Traditional biomass,2014.0,11220.0
+0,Line Graph,Modern biofuels,2015.0,898.43317
+0,Line Graph,Other renewables,2015.0,534.2973
+0,Line Graph,Solar,2015.0,256.5335
+0,Line Graph,Wind,2015.0,831.752
+0,Line Graph,Hydropower,2015.0,3879.1655
+0,Line Graph,Nuclear,2015.0,2575.3406
+0,Line Graph,Gas,2015.0,34780.043
+0,Line Graph,Oil,2015.0,51294.03
+0,Line Graph,Coal,2015.0,43695.344
+0,Line Graph,Traditional biomass,2015.0,11111.0
+0,Line Graph,Modern biofuels,2016.0,938.65326
+0,Line Graph,Other renewables,2016.0,547.1505
+0,Line Graph,Solar,2016.0,328.01477
+0,Line Graph,Wind,2016.0,962.6643
+0,Line Graph,Hydropower,2016.0,4015.9543
+0,Line Graph,Nuclear,2016.0,2613.6562
+0,Line Graph,Gas,2016.0,35583.984
+0,Line Graph,Oil,2016.0,52314.516
+0,Line Graph,Coal,2016.0,42767.824
+0,Line Graph,Traditional biomass,2016.0,11111.0
+0,Line Graph,Modern biofuels,2017.0,957.89087
+0,Line Graph,Other renewables,2017.0,576.2297
+0,Line Graph,Solar,2017.0,445.88455
+0,Line Graph,Wind,2017.0,1142.5314
+0,Line Graph,Hydropower,2017.0,4068.418
+0,Line Graph,Nuclear,2017.0,2637.002
+0,Line Graph,Gas,2017.0,36603.055
+0,Line Graph,Oil,2017.0,53263.332
+0,Line Graph,Coal,2017.0,43226.34
+0,Line Graph,Traditional biomass,2017.0,11111.0
+0,Line Graph,Modern biofuels,2018.0,1038.8154
+0,Line Graph,Other renewables,2018.0,624.6732
+0,Line Graph,Solar,2018.0,575.5735
+0,Line Graph,Wind,2018.0,1271.1879
+0,Line Graph,Hydropower,2018.0,4188.5957
+0,Line Graph,Nuclear,2018.0,2700.2244
+0,Line Graph,Gas,2018.0,38317.06
+0,Line Graph,Oil,2018.0,53792.79
+0,Line Graph,Coal,2018.0,43897.33
+0,Line Graph,Traditional biomass,2018.0,11111.0
+0,Line Graph,Modern biofuels,2019.0,1127.3136
+0,Line Graph,Other renewables,2019.0,652.1985
+0,Line Graph,Solar,2019.0,706.5271
+0,Line Graph,Wind,2019.0,1422.2594
+0,Line Graph,Hydropower,2019.0,4242.626
+0,Line Graph,Nuclear,2019.0,2795.7578
+0,Line Graph,Gas,2019.0,39053.18
+0,Line Graph,Oil,2019.0,53997.266
+0,Line Graph,Coal,2019.0,43627.613
+0,Line Graph,Traditional biomass,2019.0,11111.0
+0,Line Graph,Modern biofuels,2020.0,1068.2296
+0,Line Graph,Other renewables,2020.0,688.7327
+0,Line Graph,Solar,2020.0,857.2814
+0,Line Graph,Wind,2020.0,1595.7666
+0,Line Graph,Hydropower,2020.0,4359.1284
+0,Line Graph,Nuclear,2020.0,2689.005
+0,Line Graph,Gas,2020.0,38704.047
+0,Line Graph,Oil,2020.0,49101.246
+0,Line Graph,Coal,2020.0,42316.324
+0,Line Graph,Traditional biomass,2020.0,11111.0
+0,Line Graph,Modern biofuels,2021.0,1128.1194
+0,Line Graph,Other renewables,2021.0,741.6173
+0,Line Graph,Solar,2021.0,1052.791
+0,Line Graph,Wind,2021.0,1860.6091
+0,Line Graph,Hydropower,2021.0,4293.666
+0,Line Graph,Nuclear,2021.0,2802.7505
+0,Line Graph,Gas,2021.0,40225.734
+0,Line Graph,Oil,2021.0,51846.82
+0,Line Graph,Coal,2021.0,44642.164
+0,Line Graph,Traditional biomass,2021.0,11111.0
+0,Line Graph,Modern biofuels,2022.0,1193.1312
+0,Line Graph,Other renewables,2022.0,761.4335
+0,Line Graph,Solar,2022.0,1322.6465
+0,Line Graph,Wind,2022.0,2110.1328
+0,Line Graph,Hydropower,2022.0,4334.792
+0,Line Graph,Nuclear,2022.0,2679.4155
+0,Line Graph,Gas,2022.0,40059.652
+0,Line Graph,Oil,2022.0,53562.11
+0,Line Graph,Coal,2022.0,44926.926
+0,Line Graph,Traditional biomass,2022.0,11111.0
+0,Line Graph,Modern biofuels,2023.0,1319.2163
+0,Line Graph,Other renewables,2023.0,771.6347
+0,Line Graph,Solar,2023.0,1650.8986
+0,Line Graph,Wind,2023.0,2322.7354
+0,Line Graph,Hydropower,2023.0,4260.753
+0,Line Graph,Nuclear,2023.0,2737.6233
+0,Line Graph,Gas,2023.0,40151.22
+0,Line Graph,Oil,2023.0,54838.684
+0,Line Graph,Coal,2023.0,45319.086
+0,Line Graph,Traditional biomass,2023.0,11111.0
+0,Line Graph,Modern biofuels,2024.0,1366.8783
+0,Line Graph,Other renewables,2024.0,792.43414
+0,Line Graph,Solar,2024.0,2111.7334
+0,Line Graph,Wind,2024.0,2511.0308
+0,Line Graph,Hydropower,2024.0,4452.9087
+0,Line Graph,Nuclear,2024.0,2817.4524
+0,Line Graph,Gas,2024.0,41278.27
+0,Line Graph,Oil,2024.0,55292.082
+0,Line Graph,Coal,2024.0,45850.543
+0,Line Graph,Traditional biomass,2024.0,11111.0

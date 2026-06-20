@@ -1,0 +1,20 @@
+{
+  "interpolated_points": {
+    "Latin America and Caribbean (WB)": [
+      [
+        2020,
+        "linear-interp (occluded)"
+      ]
+    ],
+    "Sub-Saharan Africa (WB)": [
+      [
+        2005,
+        "linear-interp (occluded)"
+      ],
+      [
+        2006,
+        "linear-interp (occluded)"
+      ]
+    ]
+  }
+}
