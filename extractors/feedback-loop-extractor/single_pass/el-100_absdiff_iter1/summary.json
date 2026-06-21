@@ -1,0 +1,29 @@
+{
+  "update_log": {
+    "missed_added": 0,
+    "extra_dropped": 0,
+    "color_mismatch_dropped": 11,
+    "color_mismatch_added": 0,
+    "skipped_unattributable": 45,
+    "skipped_too_small": 11,
+    "skipped_too_big": 1,
+    "n_cc": 69,
+    "claims_before": 251,
+    "claims_after": 240
+  },
+  "iter0_residual": {
+    "mean": 6.562255945462382,
+    "px_gt_30": 19794,
+    "px_gt_60": 16146,
+    "px_gt_120": 11715
+  },
+  "iter1_residual": {
+    "mean": 6.7598721012741985,
+    "px_gt_30": 20060,
+    "px_gt_60": 16418,
+    "px_gt_120": 12075
+  },
+  "delta_px_gt_30": 266,
+  "delta_px_gt_60": 272,
+  "delta_px_gt_120": 360
+}

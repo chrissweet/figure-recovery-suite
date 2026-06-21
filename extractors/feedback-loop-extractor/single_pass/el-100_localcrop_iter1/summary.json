@@ -1,0 +1,30 @@
+{
+  "update_log": {
+    "n_cc": 69,
+    "skipped_size": 8,
+    "ADD_src_only": 49,
+    "DROP_rep_only": 0,
+    "DROP_mismatch": 0,
+    "ADD_mismatch": 0,
+    "AGREE_same_series": 12,
+    "no_source_signal": 0,
+    "no_replot_signal_for_drop": 0,
+    "claims_before": 251,
+    "claims_after": 300
+  },
+  "iter0_residual": {
+    "mean": 6.562,
+    "px_gt_30": 19794,
+    "px_gt_60": 16146,
+    "px_gt_120": 11715
+  },
+  "iter1_residual": {
+    "mean": 8.356,
+    "px_gt_30": 23217,
+    "px_gt_60": 19701,
+    "px_gt_120": 15469
+  },
+  "delta_px_gt_30": 3423,
+  "delta_px_gt_60": 3555,
+  "delta_px_gt_120": 3754
+}

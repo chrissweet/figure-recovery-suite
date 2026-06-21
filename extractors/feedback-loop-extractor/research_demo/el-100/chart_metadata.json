@@ -1,0 +1,56 @@
+{
+  "panel_id": null,
+  "source_citation": null,
+  "x_axis": {
+    "title": "Parity rate",
+    "unit": null,
+    "title_verbatim": "Parity rate",
+    "decimal_separator": ","
+  },
+  "y_axis": {
+    "title": "Expectation of l'infective life for 50% of females",
+    "unit": null,
+    "title_verbatim": "Expectation of l'infective life for 50% of females",
+    "decimal_separator": ","
+  },
+  "series_legend": [
+    {
+      "series_id": "24C",
+      "source_label": "24°C",
+      "color": "#0000FF",
+      "marker_shape": "filled circle"
+    },
+    {
+      "series_id": "27C",
+      "source_label": "27°C",
+      "color": "#00FF00",
+      "marker_shape": "filled square"
+    },
+    {
+      "series_id": "30C",
+      "source_label": "30°C",
+      "color": "#FF0000",
+      "marker_shape": "filled diamond"
+    },
+    {
+      "series_id": "IF_24C",
+      "source_label": "IF for 24°C",
+      "color": "#0000FF",
+      "line_style": "dashed"
+    },
+    {
+      "series_id": "IF_27C",
+      "source_label": "IF for 27°C",
+      "color": "#00FF00",
+      "line_style": "solid"
+    },
+    {
+      "series_id": "IF_30C",
+      "source_label": "IF for 30°C",
+      "color": "#FF0000",
+      "line_style": "dotted"
+    }
+  ],
+  "chart_title": "Expectation of l'infective life for 50% of females",
+  "notes": "Title sits above the y-axis as a chart heading rather than as a rotated y-axis label. Six legend entries (3 scatter + 3 IF curves). 24°C blue-on-dashed-line markers were undercounted in baseline; v2 two-pass relaxed filter recovered them. European decimal comma."
+}

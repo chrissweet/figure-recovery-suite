@@ -1,0 +1,94 @@
+{
+  "plan": {
+    "24C": {
+      "src_px": 1942,
+      "rep_px": 2725,
+      "excess_px": 783,
+      "claims_available": 18,
+      "action": "drop_7",
+      "dropped": 7,
+      "src_method": "bgr",
+      "rep_method": "bgr",
+      "rep_px_after": 2179,
+      "excess_after": 237
+    },
+    "27C": {
+      "src_px": 3878,
+      "rep_px": 3633,
+      "excess_px": -245,
+      "claims_available": 19,
+      "action": "deficit_noted",
+      "dropped": 0,
+      "src_method": "hsv",
+      "rep_method": "bgr",
+      "rep_px_after": 3633,
+      "excess_after": -245
+    },
+    "30C": {
+      "src_px": 1486,
+      "rep_px": 3237,
+      "excess_px": 1751,
+      "claims_available": 20,
+      "action": "drop_15",
+      "dropped": 15,
+      "src_method": "bgr",
+      "rep_method": "bgr",
+      "rep_px_after": 2010,
+      "excess_after": 524
+    },
+    "IF_24C": {
+      "src_px": 1942,
+      "rep_px": 2725,
+      "excess_px": 783,
+      "claims_available": 0,
+      "action": "none",
+      "dropped": 0,
+      "src_method": "bgr",
+      "rep_method": "bgr",
+      "rep_px_after": 2179,
+      "excess_after": 237
+    },
+    "IF_27C": {
+      "src_px": 3878,
+      "rep_px": 3633,
+      "excess_px": -245,
+      "claims_available": 0,
+      "action": "deficit_noted",
+      "dropped": 0,
+      "src_method": "hsv",
+      "rep_method": "bgr",
+      "rep_px_after": 3633,
+      "excess_after": -245
+    },
+    "IF_30C": {
+      "src_px": 1486,
+      "rep_px": 3237,
+      "excess_px": 1751,
+      "claims_available": 0,
+      "action": "none",
+      "dropped": 0,
+      "src_method": "bgr",
+      "rep_method": "bgr",
+      "rep_px_after": 2010,
+      "excess_after": 524
+    }
+  },
+  "claims_before": 251,
+  "claims_after": 229,
+  "total_dropped": 22,
+  "iter0_residual": {
+    "mean": 6.562,
+    "px_gt_30": 19794,
+    "px_gt_60": 16146,
+    "px_gt_120": 11715
+  },
+  "iter1_residual": {
+    "mean": 6.804,
+    "px_gt_30": 20083,
+    "px_gt_60": 16528,
+    "px_gt_120": 12181
+  },
+  "delta_px_gt_30": 289,
+  "delta_px_gt_60": 382,
+  "delta_px_gt_120": 466
+}

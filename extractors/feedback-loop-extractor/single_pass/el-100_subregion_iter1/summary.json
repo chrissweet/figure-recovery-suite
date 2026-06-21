@@ -1,0 +1,31 @@
+{
+  "update_log": {
+    "src_only_cc": 92,
+    "rep_only_cc": 120,
+    "mismatch_cc": 139,
+    "added_from_src_only": 0,
+    "dropped_from_rep_only": 39,
+    "dropped_from_mismatch": 13,
+    "added_from_mismatch": 0,
+    "skipped_too_small": 263,
+    "skipped_too_big": 0,
+    "skipped_unattributable": 92,
+    "claims_before": 251,
+    "claims_after": 199
+  },
+  "iter0_residual": {
+    "mean": 6.562,
+    "px_gt_30": 19794,
+    "px_gt_60": 16146,
+    "px_gt_120": 11715
+  },
+  "iter1_residual": {
+    "mean": 7.074,
+    "px_gt_30": 20137,
+    "px_gt_60": 16674,
+    "px_gt_120": 12411
+  },
+  "delta_px_gt_30": 343,
+  "delta_px_gt_60": 528,
+  "delta_px_gt_120": 696
+}

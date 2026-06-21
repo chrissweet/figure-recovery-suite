@@ -1,0 +1,75 @@
+[
+  {
+    "iter": 0,
+    "n_claims": 251,
+    "mean_iou": 0.2213,
+    "weighted_iou": 0.2101,
+    "per_series_iou": {
+      "24C": 0.2546,
+      "27C": 0.0,
+      "30C": 0.4094,
+      "IF_24C": 0.2546,
+      "IF_27C": 0.0,
+      "IF_30C": 0.4094
+    },
+    "unclaimed_likely_marker_total": 52,
+    "drops_this_iter": 14,
+    "proposals_this_iter": 52,
+    "delta_claims": 38
+  },
+  {
+    "iter": 1,
+    "n_claims": 289,
+    "mean_iou": 0.1434,
+    "weighted_iou": 0.15,
+    "per_series_iou": {
+      "24C": 0.2,
+      "27C": 0.0,
+      "30C": 0.2304,
+      "IF_24C": 0.2,
+      "IF_27C": 0.0,
+      "IF_30C": 0.2304
+    },
+    "unclaimed_likely_marker_total": 39,
+    "drops_this_iter": 2,
+    "proposals_this_iter": 31,
+    "delta_claims": 29
+  },
+  {
+    "iter": 2,
+    "n_claims": 318,
+    "mean_iou": 0.1534,
+    "weighted_iou": 0.1614,
+    "per_series_iou": {
+      "24C": 0.2053,
+      "27C": 0.0,
+      "30C": 0.2548,
+      "IF_24C": 0.2053,
+      "IF_27C": 0.0,
+      "IF_30C": 0.2548
+    },
+    "unclaimed_likely_marker_total": 31,
+    "drops_this_iter": 4,
+    "proposals_this_iter": 21,
+    "delta_claims": 17
+  },
+  {
+    "iter": 3,
+    "n_claims": 335,
+    "mean_iou": 0.1385,
+    "weighted_iou": 0.1442,
+    "per_series_iou": {
+      "24C": 0.1746,
+      "27C": 0.0,
+      "30C": 0.2411,
+      "IF_24C": 0.1746,
+      "IF_27C": 0.0,
+      "IF_30C": 0.2411
+    },
+    "unclaimed_likely_marker_total": 28,
+    "drops_this_iter": 0,
+    "proposals_this_iter": 14,
+    "delta_claims": 14,
+    "convergence_reason": "max_iter_hit"
+  }
+]

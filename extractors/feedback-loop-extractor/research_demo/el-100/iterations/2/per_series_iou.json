@@ -1,0 +1,54 @@
+{
+  "per_series": {
+    "24C": {
+      "color_hex": "#0000FF",
+      "source_px": 1866,
+      "replot_px": 4814,
+      "intersection_px": 1138,
+      "union_px": 5542,
+      "iou": 0.2053
+    },
+    "27C": {
+      "color_hex": "#00FF00",
+      "source_px": 0,
+      "replot_px": 3621,
+      "intersection_px": 0,
+      "union_px": 3621,
+      "iou": 0.0
+    },
+    "30C": {
+      "color_hex": "#FF0000",
+      "source_px": 1413,
+      "replot_px": 4000,
+      "intersection_px": 1099,
+      "union_px": 4314,
+      "iou": 0.2548
+    },
+    "IF_24C": {
+      "color_hex": "#0000FF",
+      "source_px": 1866,
+      "replot_px": 4814,
+      "intersection_px": 1138,
+      "union_px": 5542,
+      "iou": 0.2053
+    },
+    "IF_27C": {
+      "color_hex": "#00FF00",
+      "source_px": 0,
+      "replot_px": 3621,
+      "intersection_px": 0,
+      "union_px": 3621,
+      "iou": 0.0
+    },
+    "IF_30C": {
+      "color_hex": "#FF0000",
+      "source_px": 1413,
+      "replot_px": 4000,
+      "intersection_px": 1099,
+      "union_px": 4314,
+      "iou": 0.2548
+    }
+  },
+  "mean_iou": 0.1534,
+  "weighted_iou": 0.1614
+}

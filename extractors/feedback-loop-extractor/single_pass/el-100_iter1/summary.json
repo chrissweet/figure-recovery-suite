@@ -1,0 +1,18 @@
+{
+  "iter0_claims": 251,
+  "iter1_claims": 214,
+  "update_log": {
+    "dropped_marker_claims": 56,
+    "added_marker_claims": 19,
+    "added_line_samples": 0,
+    "skipped_no_color_match": 75,
+    "missed_px_before": 10603,
+    "extra_px_before": 4559
+  },
+  "iter0_missed_px": 10603,
+  "iter0_extra_px": 4559,
+  "iter1_missed_px": 13650,
+  "iter1_extra_px": 3768,
+  "missed_delta": 3047,
+  "extra_delta": -791
+}

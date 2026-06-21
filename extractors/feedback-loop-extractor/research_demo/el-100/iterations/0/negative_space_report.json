@@ -1,0 +1,525 @@
+{
+  "per_series": {
+    "24C": {
+      "claims": 18,
+      "source_components": 48,
+      "unclaimed": [
+        {
+          "col": 502,
+          "row": 154,
+          "area": 10,
+          "aspect": 1.2,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 491,
+          "row": 166,
+          "area": 10,
+          "aspect": 1.2,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 480,
+          "row": 178,
+          "area": 10,
+          "aspect": 1.2,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 470,
+          "row": 189,
+          "area": 9,
+          "aspect": 1.0,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 459,
+          "row": 201,
+          "area": 10,
+          "aspect": 1.0,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 448,
+          "row": 212,
+          "area": 10,
+          "aspect": 1.2,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 438,
+          "row": 223,
+          "area": 8,
+          "aspect": 1.25,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 433,
+          "row": 228,
+          "area": 7,
+          "aspect": 1.0,
+          "triage": "likely-noise"
+        },
+        {
+          "col": 422,
+          "row": 238,
+          "area": 10,
+          "aspect": 1.0,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 410,
+          "row": 248,
+          "area": 9,
+          "aspect": 1.2,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 398,
+          "row": 258,
+          "area": 10,
+          "aspect": 1.2,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 319,
+          "row": 298,
+          "area": 706,
+          "aspect": 3.9,
+          "triage": "likely-other"
+        },
+        {
+          "col": 386,
+          "row": 269,
+          "area": 11,
+          "aspect": 1.0,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 374,
+          "row": 279,
+          "area": 10,
+          "aspect": 1.2,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 362,
+          "row": 289,
+          "area": 7,
+          "aspect": 1.25,
+          "triage": "likely-noise"
+        },
+        {
+          "col": 351,
+          "row": 297,
+          "area": 7,
+          "aspect": 1.0,
+          "triage": "likely-noise"
+        },
+        {
+          "col": 339,
+          "row": 307,
+          "area": 3,
+          "aspect": 1.0,
+          "triage": "likely-noise"
+        },
+        {
+          "col": 318,
+          "row": 344,
+          "area": 100,
+          "aspect": 1.09,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 287,
+          "row": 342,
+          "area": 7,
+          "aspect": 1.67,
+          "triage": "likely-noise"
+        },
+        {
+          "col": 279,
+          "row": 347,
+          "area": 10,
+          "aspect": 1.4,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 318,
+          "row": 356,
+          "area": 98,
+          "aspect": 1.0,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 265,
+          "row": 355,
+          "area": 11,
+          "aspect": 1.4,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 849,
+          "row": 369,
+          "area": 8,
+          "aspect": 8.0,
+          "triage": "likely-line-fragment"
+        },
+        {
+          "col": 213,
+          "row": 386,
+          "area": 3,
+          "aspect": 1.0,
+          "triage": "likely-noise"
+        },
+        {
+          "col": 192,
+          "row": 396,
+          "area": 10,
+          "aspect": 1.75,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 178,
+          "row": 402,
+          "area": 11,
+          "aspect": 2.0,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 163,
+          "row": 409,
+          "area": 9,
+          "aspect": 1.75,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 149,
+          "row": 415,
+          "area": 10,
+          "aspect": 1.75,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 136,
+          "row": 421,
+          "area": 6,
+          "aspect": 1.67,
+          "triage": "likely-noise"
+        },
+        {
+          "col": 104,
+          "row": 433,
+          "area": 10,
+          "aspect": 2.67,
+          "triage": "likely-line-fragment"
+        },
+        {
+          "col": 89,
+          "row": 439,
+          "area": 11,
+          "aspect": 2.67,
+          "triage": "likely-line-fragment"
+        },
+        {
+          "col": 74,
+          "row": 444,
+          "area": 9,
+          "aspect": 2.33,
+          "triage": "likely-line-fragment"
+        }
+      ]
+    },
+    "27C": {
+      "claims": 19,
+      "source_components": 0,
+      "unclaimed": []
+    },
+    "30C": {
+      "claims": 20,
+      "source_components": 158,
+      "unclaimed": [
+        {
+          "col": 663,
+          "row": 83,
+          "area": 4,
+          "aspect": 1.5,
+          "triage": "likely-noise"
+        },
+        {
+          "col": 435,
+          "row": 253,
+          "area": 3,
+          "aspect": 3.0,
+          "triage": "likely-noise"
+        },
+        {
+          "col": 283,
+          "row": 332,
+          "area": 3,
+          "aspect": 3.0,
+          "triage": "likely-noise"
+        }
+      ]
+    },
+    "IF_24C": {
+      "claims": 39,
+      "source_components": 48,
+      "unclaimed": [
+        {
+          "col": 327,
+          "row": 253,
+          "area": 97,
+          "aspect": 1.0,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 318,
+          "row": 288,
+          "area": 507,
+          "aspect": 5.27,
+          "triage": "likely-other"
+        },
+        {
+          "col": 315,
+          "row": 318,
+          "area": 9,
+          "aspect": 1.25,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 318,
+          "row": 328,
+          "area": 115,
+          "aspect": 1.55,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 318,
+          "row": 344,
+          "area": 100,
+          "aspect": 1.09,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 318,
+          "row": 356,
+          "area": 98,
+          "aspect": 1.0,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 309,
+          "row": 369,
+          "area": 93,
+          "aspect": 1.09,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 849,
+          "row": 369,
+          "area": 8,
+          "aspect": 8.0,
+          "triage": "likely-line-fragment"
+        },
+        {
+          "col": 290,
+          "row": 382,
+          "area": 97,
+          "aspect": 1.0,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 290,
+          "row": 396,
+          "area": 98,
+          "aspect": 1.0,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 196,
+          "row": 410,
+          "area": 100,
+          "aspect": 1.0,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 112,
+          "row": 424,
+          "area": 65,
+          "aspect": 1.22,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 59,
+          "row": 442,
+          "area": 54,
+          "aspect": 2.0,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 60,
+          "row": 449,
+          "area": 8,
+          "aspect": 1.67,
+          "triage": "likely-marker"
+        }
+      ]
+    },
+    "IF_27C": {
+      "claims": 91,
+      "source_components": 0,
+      "unclaimed": []
+    },
+    "IF_30C": {
+      "claims": 64,
+      "source_components": 158,
+      "unclaimed": [
+        {
+          "col": 527,
+          "row": 118,
+          "area": 66,
+          "aspect": 1.0,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 527,
+          "row": 132,
+          "area": 64,
+          "aspect": 1.0,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 519,
+          "row": 146,
+          "area": 65,
+          "aspect": 1.0,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 519,
+          "row": 159,
+          "area": 64,
+          "aspect": 1.1,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 519,
+          "row": 173,
+          "area": 60,
+          "aspect": 1.1,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 519,
+          "row": 188,
+          "area": 59,
+          "aspect": 1.0,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 503,
+          "row": 201,
+          "area": 57,
+          "aspect": 1.22,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 503,
+          "row": 216,
+          "area": 64,
+          "aspect": 1.0,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 487,
+          "row": 230,
+          "area": 61,
+          "aspect": 1.0,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 471,
+          "row": 245,
+          "area": 68,
+          "aspect": 1.1,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 463,
+          "row": 259,
+          "area": 63,
+          "aspect": 1.0,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 463,
+          "row": 274,
+          "area": 63,
+          "aspect": 1.0,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 455,
+          "row": 290,
+          "area": 64,
+          "aspect": 1.1,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 447,
+          "row": 306,
+          "area": 63,
+          "aspect": 1.0,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 375,
+          "row": 322,
+          "area": 65,
+          "aspect": 1.0,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 304,
+          "row": 339,
+          "area": 61,
+          "aspect": 1.0,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 232,
+          "row": 359,
+          "area": 35,
+          "aspect": 1.5,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 112,
+          "row": 376,
+          "area": 60,
+          "aspect": 1.1,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 64,
+          "row": 397,
+          "area": 61,
+          "aspect": 1.0,
+          "triage": "likely-marker"
+        },
+        {
+          "col": 59,
+          "row": 420,
+          "area": 37,
+          "aspect": 1.83,
+          "triage": "likely-marker"
+        }
+      ]
+    }
+  },
+  "summary": {
+    "total_unclaimed_likely_marker": 52,
+    "total_unclaimed_likely_other": 17
+  }
+}
