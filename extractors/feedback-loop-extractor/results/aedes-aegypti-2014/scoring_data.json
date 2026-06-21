@@ -1,0 +1,175 @@
+{
+  "corpus": "aedes-aegypti-2014",
+  "extractor": "feedback-loop-extractor",
+  "results_dir": "results",
+  "n_charts": 8,
+  "charts": {
+    "el-100": {
+      "x_tol": 0.016012,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 0.48514 (2.0% of y_range 24.257)",
+      "x_range": 0.8006,
+      "y_range": 24.256999999999998,
+      "scatter": {
+        "summary": {
+          "tp": 20,
+          "fn": 33,
+          "fp": 15,
+          "precision": 0.5714,
+          "recall": 0.3774,
+          "f1": 0.4545,
+          "jaccard": 0.2941
+        },
+        "gt_n": 53,
+        "mine_n": 35,
+        "by_series": {
+          "24c": {
+            "gt_label": "24c",
+            "tp": 8,
+            "fn": 8,
+            "fp": 3,
+            "gt_n": 16,
+            "mine_n": 11
+          },
+          "27c": {
+            "gt_label": "27c",
+            "tp": 8,
+            "fn": 10,
+            "fp": 11,
+            "gt_n": 18,
+            "mine_n": 19
+          },
+          "30c": {
+            "gt_label": "30c",
+            "tp": 4,
+            "fn": 15,
+            "fp": 1,
+            "gt_n": 19,
+            "mine_n": 5
+          }
+        }
+      },
+      "curves": {
+        "summary": {
+          "tp": 44,
+          "fn": 4,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.9167,
+          "f1": 0.9565,
+          "jaccard": 0.9167
+        },
+        "gt_n": 48,
+        "mine_n": 194,
+        "by_series": {
+          "if24c": {
+            "gt_label": "iffor24c",
+            "tp": 20,
+            "fn": 1,
+            "fp": 0,
+            "gt_n": 21,
+            "mine_n": 39
+          },
+          "if27c": {
+            "gt_label": "iffor27c",
+            "tp": 2,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 2,
+            "mine_n": 91
+          },
+          "if30c": {
+            "gt_label": "iffor30c",
+            "tp": 22,
+            "fn": 3,
+            "fp": 0,
+            "gt_n": 25,
+            "mine_n": 64
+          }
+        }
+      },
+      "errbars": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "combined": {
+        "tp": 64,
+        "fn": 37,
+        "fp": 15,
+        "precision": 0.8101,
+        "recall": 0.6337,
+        "f1": 0.7111,
+        "jaccard": 0.5517
+      }
+    },
+    "el-60-a": {
+      "error": "missing extractor dir: /Users/csweet1/Documents/projects/CRS_research/figure-recovery-suite/extractors/feedback-loop-extractor/results/aedes-aegypti-2014/el-60-a"
+    },
+    "el-60-b": {
+      "error": "missing extractor dir: /Users/csweet1/Documents/projects/CRS_research/figure-recovery-suite/extractors/feedback-loop-extractor/results/aedes-aegypti-2014/el-60-b"
+    },
+    "el-62": {
+      "error": "missing extractor dir: /Users/csweet1/Documents/projects/CRS_research/figure-recovery-suite/extractors/feedback-loop-extractor/results/aedes-aegypti-2014/el-62"
+    },
+    "el-75": {
+      "error": "missing extractor dir: /Users/csweet1/Documents/projects/CRS_research/figure-recovery-suite/extractors/feedback-loop-extractor/results/aedes-aegypti-2014/el-75"
+    },
+    "el-80": {
+      "error": "missing extractor dir: /Users/csweet1/Documents/projects/CRS_research/figure-recovery-suite/extractors/feedback-loop-extractor/results/aedes-aegypti-2014/el-80"
+    },
+    "el-88": {
+      "error": "missing extractor dir: /Users/csweet1/Documents/projects/CRS_research/figure-recovery-suite/extractors/feedback-loop-extractor/results/aedes-aegypti-2014/el-88"
+    },
+    "el-94": {
+      "error": "missing extractor dir: /Users/csweet1/Documents/projects/CRS_research/figure-recovery-suite/extractors/feedback-loop-extractor/results/aedes-aegypti-2014/el-94"
+    }
+  },
+  "totals": {
+    "scatter": {
+      "tp": 20,
+      "fn": 33,
+      "fp": 15,
+      "precision": 0.5714,
+      "recall": 0.3774,
+      "f1": 0.4545,
+      "jaccard": 0.2941
+    },
+    "curves": {
+      "tp": 44,
+      "fn": 4,
+      "fp": 0,
+      "precision": 1.0,
+      "recall": 0.9167,
+      "f1": 0.9565,
+      "jaccard": 0.9167
+    },
+    "errbars": {
+      "tp": 0,
+      "fn": 0,
+      "fp": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "jaccard": 0.0
+    },
+    "combined": {
+      "tp": 64,
+      "fn": 37,
+      "fp": 15,
+      "precision": 0.8101,
+      "recall": 0.6337,
+      "f1": 0.7111,
+      "jaccard": 0.5517
+    }
+  }
+}
