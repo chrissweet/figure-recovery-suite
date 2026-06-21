@@ -5,17 +5,20 @@
   "n_charts": 8,
   "charts": {
     "el-100": {
-      "x_tol": 0.03,
-      "y_tol": 1.0,
+      "x_tol": 0.016012,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 0.48514 (2.0% of y_range 24.257)",
+      "x_range": 0.8006,
+      "y_range": 24.256999999999998,
       "scatter": {
         "summary": {
-          "tp": 41,
-          "fn": 12,
-          "fp": 10,
-          "precision": 0.8039,
-          "recall": 0.7736,
-          "f1": 0.7885,
-          "jaccard": 0.6508
+          "tp": 37,
+          "fn": 16,
+          "fp": 14,
+          "precision": 0.7255,
+          "recall": 0.6981,
+          "f1": 0.7115,
+          "jaccard": 0.5522
         },
         "gt_n": 53,
         "mine_n": 51,
@@ -30,9 +33,9 @@
           },
           "27c": {
             "gt_label": "27c",
-            "tp": 12,
-            "fn": 6,
-            "fp": 7,
+            "tp": 8,
+            "fn": 10,
+            "fp": 11,
             "gt_n": 18,
             "mine_n": 19
           },
@@ -100,18 +103,21 @@
         "by_series": {}
       },
       "combined": {
-        "tp": 41,
-        "fn": 60,
-        "fp": 10,
-        "precision": 0.8039,
-        "recall": 0.4059,
-        "f1": 0.5395,
-        "jaccard": 0.3694
+        "tp": 37,
+        "fn": 64,
+        "fp": 14,
+        "precision": 0.7255,
+        "recall": 0.3663,
+        "f1": 0.4868,
+        "jaccard": 0.3217
       }
     },
     "el-60-a": {
-      "x_tol": 1.0,
-      "y_tol": 0.03,
+      "x_tol": 0.36312,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 0.01394 (2.0% of y_range 0.697)",
+      "x_range": 18.156,
+      "y_range": 0.697,
       "scatter": {
         "summary": {
           "tp": 0,
@@ -203,8 +209,11 @@
       }
     },
     "el-60-b": {
-      "x_tol": 1.0,
-      "y_tol": 0.05,
+      "x_tol": 0.34354,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 0.014218 (2.0% of y_range 0.7109)",
+      "x_range": 17.177,
+      "y_range": 0.7109000000000001,
       "scatter": {
         "summary": {
           "tp": 3,
@@ -293,7 +302,10 @@
     },
     "el-62": {
       "x_tol": 1.5,
-      "y_tol": 0.5,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 0.11856 (2.0% of y_range 5.928)",
+      "x_range": 6.0,
+      "y_range": 5.928000000000001,
       "scatter": {
         "summary": {
           "tp": 8,
@@ -361,16 +373,19 @@
         "mine_n": 8,
         "by_series": {
           "meandurationofgc1": {
+            "schema": "y_lo/y_hi",
             "tp": 0,
             "fn": 3,
             "fp": 0
           },
           "meandurationofgc2": {
+            "schema": "y_lo/y_hi",
             "tp": 0,
             "fn": 3,
             "fp": 0
           },
           "meandurationofgc3": {
+            "schema": "y_lo/y_hi",
             "tp": 0,
             "fn": 2,
             "fp": 0
@@ -388,8 +403,11 @@
       }
     },
     "el-75": {
-      "x_tol": 1.0,
-      "y_tol": 0.5,
+      "x_tol": 0.703,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 0.35272 (2.0% of y_range 17.636)",
+      "x_range": 35.15,
+      "y_range": 17.636,
       "scatter": {
         "summary": {
           "tp": 3,
@@ -441,6 +459,7 @@
         "mine_n": 0,
         "by_series": {
           "datapoints": {
+            "schema": "y_lo/y_hi",
             "tp": 0,
             "fn": 3,
             "fp": 0
@@ -459,7 +478,10 @@
     },
     "el-80": {
       "x_tol": 1.5,
-      "y_tol": 2.0,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 0.8626 (2.0% of y_range 43.13)",
+      "x_range": 6.0,
+      "y_range": 43.129999999999995,
       "scatter": {
         "summary": {
           "tp": 8,
@@ -527,16 +549,19 @@
         "mine_n": 0,
         "by_series": {
           "meannumberofeggsfemaleingc1": {
+            "schema": "y_lo/y_hi",
             "tp": 0,
             "fn": 3,
             "fp": 0
           },
           "meannumberofeggsfemaleingc2": {
+            "schema": "y_lo/y_hi",
             "tp": 0,
             "fn": 3,
             "fp": 0
           },
           "meannumberofeggsfemaleingc3": {
+            "schema": "y_lo/y_hi",
             "tp": 0,
             "fn": 2,
             "fp": 0
@@ -554,8 +579,11 @@
       }
     },
     "el-88": {
-      "x_tol": 1.0,
-      "y_tol": 0.03,
+      "x_tol": 0.6213199999999999,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 0.019666 (2.0% of y_range 0.9833)",
+      "x_range": 31.065999999999995,
+      "y_range": 0.9833,
       "scatter": {
         "summary": {
           "tp": 73,
@@ -634,17 +662,20 @@
       }
     },
     "el-94": {
-      "x_tol": 1.0,
-      "y_tol": 0.003,
+      "x_tol": 0.9794400000000001,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 0.00099734 (2.0% of y_range 0.049867)",
+      "x_range": 48.972,
+      "y_range": 0.049866999999999995,
       "scatter": {
         "summary": {
-          "tp": 59,
-          "fn": 16,
-          "fp": 4,
-          "precision": 0.9365,
-          "recall": 0.7867,
-          "f1": 0.8551,
-          "jaccard": 0.7468
+          "tp": 57,
+          "fn": 18,
+          "fp": 6,
+          "precision": 0.9048,
+          "recall": 0.76,
+          "f1": 0.8261,
+          "jaccard": 0.7037
         },
         "gt_n": 75,
         "mine_n": 63,
@@ -667,9 +698,9 @@
           },
           "30c": {
             "gt_label": "30c",
-            "tp": 16,
-            "fn": 5,
-            "fp": 2,
+            "tp": 14,
+            "fn": 7,
+            "fp": 4,
             "gt_n": 21,
             "mine_n": 18
           }
@@ -729,25 +760,25 @@
         "by_series": {}
       },
       "combined": {
-        "tp": 59,
-        "fn": 100,
-        "fp": 4,
-        "precision": 0.9365,
-        "recall": 0.3711,
-        "f1": 0.5315,
-        "jaccard": 0.362
+        "tp": 57,
+        "fn": 102,
+        "fp": 6,
+        "precision": 0.9048,
+        "recall": 0.3585,
+        "f1": 0.5135,
+        "jaccard": 0.3455
       }
     }
   },
   "totals": {
     "scatter": {
-      "tp": 195,
-      "fn": 30,
-      "fp": 18,
-      "precision": 0.9155,
-      "recall": 0.8667,
-      "f1": 0.8904,
-      "jaccard": 0.8025
+      "tp": 189,
+      "fn": 36,
+      "fp": 24,
+      "precision": 0.8873,
+      "recall": 0.84,
+      "f1": 0.863,
+      "jaccard": 0.759
     },
     "curves": {
       "tp": 0,
@@ -768,13 +799,13 @@
       "jaccard": 0.0
     },
     "combined": {
-      "tp": 195,
-      "fn": 211,
-      "fp": 18,
-      "precision": 0.9155,
-      "recall": 0.4803,
-      "f1": 0.63,
-      "jaccard": 0.4599
+      "tp": 189,
+      "fn": 217,
+      "fp": 24,
+      "precision": 0.8873,
+      "recall": 0.4655,
+      "f1": 0.6107,
+      "jaccard": 0.4395
     }
   }
 }
