@@ -77,6 +77,37 @@ def trace_curve(
     return points
 
 
+def trace_curve_from_markers(
+    marker_rows: list[dict], *, x_step: float | None = None, n: int = 40
+) -> list[tuple[float, float]]:
+    """Recover a fit curve from its (coincident) scatter markers.
+
+    el-94's three fit curves are all black, cross near x~35, and are
+    dashed/solid/dotted, so per-color pixel tracing cannot separate them and a
+    naive trace underperforms the forward pass (measured 14/30 vs 30/30 on the
+    27 degC curve at the 0.001 y-tolerance). But each fit curve coincides with
+    its own color-separable scatter series within ~0.08% relative y -- inside the
+    scorer tolerance -- so a smooth spline through the detected markers recovers
+    the curve over the marker span. This is a *presence / recall* signal (it
+    only covers the marker x-range), not an accuracy claim against the forward
+    pass.
+    """
+    pts = sorted((r["x"], r["y"]) for r in marker_rows)
+    if len(pts) < 4:
+        return [(x, y) for x, y in pts]
+    xs = np.array([p[0] for p in pts])
+    ys = np.array([p[1] for p in pts])
+    # de-duplicate identical x (spline needs strictly increasing x)
+    xs, idx = np.unique(xs, return_index=True)
+    ys = ys[idx]
+    spline = CubicSpline(xs, ys)
+    if x_step:
+        grid = np.arange(xs.min(), xs.max() + x_step, x_step)
+    else:
+        grid = np.linspace(xs.min(), xs.max(), n)
+    return [(float(x), float(spline(x))) for x in grid]
+
+
 def curve_to_rows(points: list[tuple[float, float]], series: str, layer_type: str = "Line Graph", layer_idx: int = 1) -> list[dict]:
     return [
         {"layer_idx": layer_idx, "layer_type": layer_type, "series": series, "x": round(x, 6), "y": round(y, 6)}

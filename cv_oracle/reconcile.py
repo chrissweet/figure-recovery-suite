@@ -104,6 +104,27 @@ def reconcile(cv_rows: list[dict], mllm_rows: list[dict], x_tol: float, y_tol: f
     }
 
 
+def missing_layers(cv_csv: str, mllm_csv: str, buckets=("points", "curves", "errbars")) -> dict:
+    """Layer-level recall signal: which layer buckets does the oracle populate
+    that the forward pass leaves empty?
+
+    This catches the el-94 / el-100 audit gap that point-level matching cannot:
+    the forward pass dropped the entire fit-curve layer in v1/v2 (0 curve rows),
+    so the signal is "oracle has a curves layer, forward pass has none", not a
+    per-point miss.
+    """
+    report = {}
+    for bucket in buckets:
+        cv_n = len(load_points(cv_csv, layer_filter=bucket))
+        ml_n = len(load_points(mllm_csv, layer_filter=bucket))
+        report[bucket] = {
+            "cv_n": cv_n,
+            "mllm_n": ml_n,
+            "layer_missing_in_mllm": cv_n > 0 and ml_n == 0,
+        }
+    return report
+
+
 def reconcile_files(cv_csv: str, mllm_csv: str, x_tol: float, y_tol: float, out_json: str | None = None) -> dict:
     report = reconcile(load_points(cv_csv), load_points(mllm_csv), x_tol, y_tol)
     if out_json:
