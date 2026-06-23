@@ -15,14 +15,8 @@ Two complementary checks:
    perfect count.
 """
 
-import csv
-
-import cv2
-
-from cv_oracle.calibration import Calibration
-from cv_oracle.detect import blobs as B
 from cv_oracle.reconcile import load_points, reconcile
-from cv_oracle.run import detect_scatter
+from cv_oracle.run import detect_fused_markers, detect_scatter
 from cv_oracle.tests.conftest import repo_path
 
 SERIES_COLORS = {"A": (31, 119, 180), "B": (255, 127, 14), "C": (44, 160, 44)}
@@ -52,32 +46,29 @@ def test_ablation_flags_exactly_dropped_points(tmp_path):
     assert len(report["cv_found_not_in_mllm"]) == len(dropped)
 
 
-def _gray_square_detections(image, cal):
-    """el-94 27 degC gray squares (~RGB 190), tight band + solidity via aspect."""
-    mask = B.achromatic_band_mask(image, lo=175, hi=205, achroma_tol=12)
-    mask = B.crop_mask_to_box(mask, cal.plot_frame_box)
-    blobs = B.detect_blobs(mask, min_diameter=5, max_diameter=18, max_aspect=1.6)
-    return [cal.pixel_to_data(b.col, b.row) for b in blobs]
+def test_el94_curve_subtraction_recovers_fused_squares(el94):
+    """Curve-subtraction (vertical close) recovers el-94's fused 27 degC squares.
 
+    The squares (gray ~190) are cut by the black solid 27 degC curve; blind
+    detection got 9/25. Bridging the curve cut lifts recovery to ~24/25, so the
+    gap report flags the ~11 squares missing from results-v2 (which has 14) and
+    stays near-silent on results-v3 (patched to 25).
+    """
+    cv_det = detect_fused_markers(el94["image"], el94["calibration"], "27C")
+    cv_rows = [{"x": r["x"], "y": r["y"], "series": "27C"} for r in cv_det]
 
-def test_el94_gap_direction_across_versions(el94):
-    img = cv2.imread(el94["image"])
-    cal = Calibration.from_calibration_file(el94["calibration"])
-    det = _gray_square_detections(img, cal)
-    cv_rows = [{"x": x, "y": y, "series": "27C"} for x, y in det]
+    # The oracle should now independently see ~25 squares, not 9.
+    assert len(cv_rows) >= 22, f"fused-square recovery only found {len(cv_rows)}"
 
-    # 27 degC scatter only, from each forward-pass version.
     def v27(path):
         return [r for r in load_points(path) if "27" in r["series"] and "p_" not in r["series"]]
 
-    mllm_v2 = v27(el94["data_v2"])
-    mllm_v3 = v27(el94["data_v3"])
-
-    # el-94 x-range ~0..50, narrow y; use the scorer-style absolute tolerances.
     x_tol, y_tol = 1.0, 0.005
-    gap_v2 = len(reconcile(cv_rows, mllm_v2, x_tol, y_tol)["cv_found_not_in_mllm"])
-    gap_v3 = len(reconcile(cv_rows, mllm_v3, x_tol, y_tol)["cv_found_not_in_mllm"])
+    gap_v2 = len(reconcile(cv_rows, v27(el94["data_v2"]), x_tol, y_tol)["cv_found_not_in_mllm"])
+    gap_v3 = len(reconcile(cv_rows, v27(el94["data_v3"]), x_tol, y_tol)["cv_found_not_in_mllm"])
 
-    # v2 (14 of 25) must show a real gap; v3 (25 of 25) must show a smaller one.
-    assert gap_v2 >= 1, f"expected oracle to flag v2 undercount, got {gap_v2}"
-    assert gap_v3 < gap_v2, f"v3 patched but gap {gap_v3} not < v2 gap {gap_v2}"
+    # v2 has 14/25 -> oracle flags a substantial undercount (~11).
+    assert gap_v2 >= 8, f"expected oracle to flag the v2 undercount (~11), got {gap_v2}"
+    # v3 patched to 25 -> the gap must collapse.
+    assert gap_v3 <= 2, f"v3 patched but gap still {gap_v3}"
+    assert gap_v2 - gap_v3 >= 6, f"gap should shrink sharply v2->v3 ({gap_v2}->{gap_v3})"

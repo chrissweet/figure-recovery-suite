@@ -53,6 +53,23 @@ def crop_mask_to_box(mask: np.ndarray, box: dict | None) -> np.ndarray:
     return out
 
 
+def bridge_curve_cut(mask: np.ndarray, ksize: int = 5) -> np.ndarray:
+    """Bridge a thin curve cutting vertically through a marker.
+
+    Curve-subtraction for fused markers (e.g. el-94's 27 degC gray squares sit on
+    the black solid fit curve, which cuts each square into two halves so
+    connected-components fragments it). A morphological close with a tall 1xksize
+    kernel rejoins the halves across the ~1-2px black line without merging
+    horizontally separated neighbours.
+
+    Empirically this beat tracer-targeted bridging on el-94 (24/25 vs 23/25, and
+    higher precision): a blind vertical close cannot connect markers that are
+    only separated horizontally, whereas painting along a traced curve does.
+    """
+    kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (1, ksize))
+    return cv2.morphologyEx(mask, cv2.MORPH_CLOSE, kernel)
+
+
 def detect_blobs(
     mask: np.ndarray,
     *,
