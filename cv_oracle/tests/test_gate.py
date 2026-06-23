@@ -77,3 +77,39 @@ def test_real_corpus_findings_on_v3():
     assert owid["child-mortality"]["status"] == "AMBIGUOUS"     # curve data present but untyped
     syn = report["corpora"]["synthetic-r4-1"]
     assert syn["07-dual-y-axes"]["status"] == "FAIL"
+
+
+def test_declared_colors_map_both_buckets():
+    from cv_oracle.gate import declared_colors
+
+    meta = {
+        "series_legend": [
+            {"series_id": "L", "line_style": "solid", "color": "#112233"},
+            {"series_id": "M", "marker_shape": "circle", "color": "#445566"},
+            {"series_id": "B", "line_style": "solid", "marker_shape": "circle", "color": "#778899"},
+        ]
+    }
+    assert {s for s, _ in declared_colors(meta, "points")} == {"M", "B"}
+    assert {s for s, _ in declared_colors(meta, "curves")} == {"L", "B"}
+
+
+def test_pixel_confirm_present_vs_absent():
+    from cv_oracle.gate import pixel_confirm
+
+    img = repo_path("corpora", "synthetic-r4-1", "charts", "01-linear-scatter", "image.png")
+    cal = repo_path(
+        "extractors", "graph-data-extraction", "results-v3", "synthetic-r4-1", "01-linear-scatter", "calibration.json"
+    )
+    ev = pixel_confirm(img, cal, [("A", (31, 119, 180)), ("absent", (200, 0, 200))])
+    assert ev["series"]["A"]["present"] is True       # tab:blue series is in the image
+    assert ev["series"]["absent"]["present"] is False  # magenta is not
+    assert ev["any_present"] is True
+
+
+def test_real_gap_is_pixel_confirmed():
+    """The independent check: life-expectancy's missing point layer is backed by
+    actual ink in the image, not just a metadata contradiction."""
+    root = repo_path("extractors", "graph-data-extraction", "results-v3")
+    le = audit_results_root(root)["corpora"]["owid-r6-1"]["life-expectancy"]
+    assert le["status"] == "FAIL"
+    assert le["pixel_confirmed"] is True

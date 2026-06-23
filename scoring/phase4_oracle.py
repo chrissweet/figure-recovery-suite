@@ -44,6 +44,11 @@ def main() -> int:
             line = f"  {chart:42s} {res['status']:13s}"
             if res["status"] == "FAIL":
                 line += f" missing={res['missing_layers']} (declared={res['expected']})"
+                pc = res.get("pixel_confirmed")
+                if pc is True:
+                    line += " [pixels CONFIRM ink present]"
+                elif pc is False:
+                    line += " [pixels: ink NOT found -- check metadata]"
             elif res["status"] == "AMBIGUOUS":
                 line += f" missing={res['missing_layers']} but {res['untyped_rows']} untyped rows present"
             elif res["status"] == "NOT_ASSESSED":
