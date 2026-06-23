@@ -53,21 +53,46 @@ class Calibration:
     # ---- construction -----------------------------------------------------
 
     @classmethod
-    def from_calibration_json(cls, cal: dict, *, log_x: bool = False, log_y: bool = False) -> "Calibration":
+    def from_calibration_json(cls, cal: dict, *, log_x: bool | None = None, log_y: bool | None = None) -> "Calibration":
         """Build from the schema written by the forward pass.
 
-        ``cal['axis_calibration']['x_axis']`` carries ``m`` and ``b`` for
-        ``value = m * col + b`` (and likewise ``y_axis`` for ``value = m * row + b``).
-        The log flags are not stored in that file today, so they are passed in
-        by the caller (inferred from the chart's tolerance kind / metadata).
+        The ``formula`` convention is NOT consistent across charts:
+
+          - most store ``value = m * pixel + b`` (m ~ data-per-pixel, small),
+          - some store ``col = b + m * value`` (m ~ pixel-per-data, large),
+          - log axes store ``value = 10 ** (m * pixel + b)``.
+
+        We normalize every axis to ``value = m * pixel + b`` (in log space when
+        the axis is log). Direction and log-scale are auto-detected from the
+        formula string; ``log_x`` / ``log_y`` override the detection if given.
         """
         ac = cal["axis_calibration"]
-        x = Axis(m=float(ac["x_axis"]["m"]), b=float(ac["x_axis"]["b"]), log=log_x)
-        y = Axis(m=float(ac["y_axis"]["m"]), b=float(ac["y_axis"]["b"]), log=log_y)
+        x = cls._axis_from_dict(ac["x_axis"], log_override=log_x)
+        y = cls._axis_from_dict(ac["y_axis"], log_override=log_y)
         return cls(x, y, cal.get("plot_frame_box"))
 
+    # Tokens that, as the formula's left-hand side, mean it is written
+    # pixel-as-a-function-of-value (inverted) rather than value-of-pixel.
+    _PIXEL_LHS = {"col", "row", "px_col", "px_row", "pixel_col", "pixel_row", "pixel", "px"}
+
     @classmethod
-    def from_calibration_file(cls, path: str, *, log_x: bool = False, log_y: bool = False) -> "Calibration":
+    def _axis_from_dict(cls, ax: dict, *, log_override: bool | None) -> Axis:
+        m = float(ax["m"])
+        b = float(ax["b"])
+        formula = str(ax.get("formula", ""))
+        lhs = formula.split("=", 1)[0].strip().lower() if "=" in formula else ""
+        inverted = lhs in cls._PIXEL_LHS
+        if log_override is None:
+            log = "log10" in str(ax.get("scale", "")).lower() or "10**" in formula or "10 **" in formula
+        else:
+            log = log_override
+        if inverted:
+            # stored: pixel = m*value + b  ->  value = (pixel - b)/m = (1/m)*pixel - b/m
+            m, b = 1.0 / m, -b / m
+        return Axis(m=m, b=b, log=log)
+
+    @classmethod
+    def from_calibration_file(cls, path: str, *, log_x: bool | None = None, log_y: bool | None = None) -> "Calibration":
         with open(path) as fh:
             return cls.from_calibration_json(json.load(fh), log_x=log_x, log_y=log_y)
 
