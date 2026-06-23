@@ -27,6 +27,15 @@ Y_CANDIDATES = [
 ]
 S_CANDIDATES = ["series", "point"]
 
+# Error bars travel under two schemas: ErrorBarLayer rows (synthetic), or error
+# columns on a data/bar row (aedes). These are the column names that signal the
+# latter (scorer's ERR_* candidates plus the GT-side error_y_plus/minus).
+ERR_COL_CANDIDATES = [
+    "y_lo", "y_low", "yerr_lo", "y_err_lo",
+    "y_hi", "y_high", "yerr_hi", "y_err_hi",
+    "yerr", "y_err", "error_y_plus", "error_y_minus",
+]
+
 
 def _pick(header: list[str], candidates: list[str]) -> str | None:
     for c in candidates:
@@ -104,6 +113,28 @@ def reconcile(cv_rows: list[dict], mllm_rows: list[dict], x_tol: float, y_tol: f
     }
 
 
+def errbar_count(csv_path: str) -> int:
+    """Number of error-bar signals in a CSV under EITHER schema.
+
+    Counts ErrorBarLayer rows (synthetic) and rows carrying a non-empty error
+    column such as y_lo/y_hi/yerr (aedes). Without this dual handling, an aedes
+    forward pass that drops its error bars looks identical to one that keeps
+    them, because both route to the points bucket under layer_type.
+    """
+    with open(csv_path) as fh:
+        reader = csv.DictReader(fh)
+        header = reader.fieldnames or []
+        err_cols = [c for c in ERR_COL_CANDIDATES if c in header]
+        n = 0
+        for r in reader:
+            lt = (r.get("layer_type", "") or "").lower()
+            if "error" in lt or "errbar" in lt:
+                n += 1
+            elif any((r.get(c) or "") != "" for c in err_cols):
+                n += 1
+    return n
+
+
 def missing_layers(cv_csv: str, mllm_csv: str, buckets=("points", "curves", "errbars")) -> dict:
     """Layer-level recall signal: which layer buckets does the oracle populate
     that the forward pass leaves empty?
@@ -111,12 +142,17 @@ def missing_layers(cv_csv: str, mllm_csv: str, buckets=("points", "curves", "err
     This catches the el-94 / el-100 audit gap that point-level matching cannot:
     the forward pass dropped the entire fit-curve layer in v1/v2 (0 curve rows),
     so the signal is "oracle has a curves layer, forward pass has none", not a
-    per-point miss.
+    per-point miss. The errbars bucket is schema-aware (see :func:`errbar_count`)
+    so it also catches aedes error bars encoded as columns rather than rows.
     """
     report = {}
     for bucket in buckets:
-        cv_n = len(load_points(cv_csv, layer_filter=bucket))
-        ml_n = len(load_points(mllm_csv, layer_filter=bucket))
+        if bucket == "errbars":
+            cv_n = errbar_count(cv_csv)
+            ml_n = errbar_count(mllm_csv)
+        else:
+            cv_n = len(load_points(cv_csv, layer_filter=bucket))
+            ml_n = len(load_points(mllm_csv, layer_filter=bucket))
         report[bucket] = {
             "cv_n": cv_n,
             "mllm_n": ml_n,
