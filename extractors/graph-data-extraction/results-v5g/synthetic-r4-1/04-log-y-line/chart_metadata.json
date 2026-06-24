@@ -1,0 +1,38 @@
+{
+  "chart_id": "04-log-y-line",
+  "chart_type": "line",
+  "y_scale": "log10",
+  "x_scale": "linear",
+  "panel_id": null,
+  "source_citation": null,
+  "x_axis": {
+    "title": "Time t",
+    "unit": "s",
+    "title_verbatim": "Time t (s)",
+    "decimal_separator": "."
+  },
+  "y_axis": {
+    "title": "Signal magnitude",
+    "unit": null,
+    "title_verbatim": "Signal magnitude (log scale)",
+    "decimal_separator": "."
+  },
+  "series_legend": [
+    {
+      "series_id": "Exponential",
+      "source_label": "Exponential: 100 e^(-0.5 t)",
+      "color": "#d62728",
+      "marker_shape": null,
+      "line_style": "solid"
+    },
+    {
+      "series_id": "Power law",
+      "source_label": "Power law: 500 / t^1.6",
+      "color": "#9467bd",
+      "marker_shape": null,
+      "line_style": "dashed"
+    }
+  ],
+  "chart_title": "Synthetic #04 — log-y line plot",
+  "notes": "Two-series semilog-y line plot. Y-axis tick labels are powers of 10 from 10^-1 to 10^3 (5 decades). Light gray grid (major + minor log gridlines). Legend located at top-right inside the plot area."
+}

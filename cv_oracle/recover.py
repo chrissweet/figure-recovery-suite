@@ -100,6 +100,7 @@ def recover_chart(
     out_csv: str,
     *,
     buckets: tuple[str, ...] = ("points",),
+    gated: bool = False,
 ) -> dict:
     """Merge recovered misses into v4's data.csv -> v5 data.csv. GT-free.
 
@@ -112,6 +113,13 @@ def recover_chart(
     has none). Both guards exist because the raw detectors are FP-prone without
     ground truth.
 
+    ``gated=True`` is the conservative ("smarter V5") mode: recover ONLY layer
+    buckets the metadata declares but the forward pass dropped entirely (the same
+    declared-vs-emitted gap the GT-free gate flags). Layers the forward pass
+    already populated are left untouched, which avoids importing false positives
+    where extraction is already decent. This restricts ``buckets`` to the missing
+    set for this chart.
+
     Returns a per-bucket count of rows added.
     """
     for p in (image_path, calibration_path, metadata_path, v4_data_csv, out_csv):
@@ -120,10 +128,19 @@ def recover_chart(
     cal_json = json.load(open(calibration_path))
     cal = Calibration.from_calibration_json(cal_json)
     meta = json.load(open(metadata_path))
+
+    if gated:
+        from .gate import expected_buckets, scan_layers
+        present, _untyped = scan_layers(v4_data_csv)
+        missing = expected_buckets(meta) - present
+        buckets = tuple(b for b in ("points", "curves", "errbars") if b in missing)
     x_tol, y_tol = _tolerances_from_calibration(cal_json)
     img = cv2.imread(image_path)
 
-    v4_rows = list(csv.DictReader(open(v4_data_csv)))
+    with open(v4_data_csv) as fh:
+        reader = csv.DictReader(fh)
+        v4_fieldnames = list(reader.fieldnames or GT_FIELDS)
+        v4_rows = list(reader)
     v4_by_bucket: dict[str, list[dict]] = {"points": [], "curves": [], "errbars": []}
     for r in v4_rows:
         v4_by_bucket[_bucket_of(r)].append(r)
@@ -167,7 +184,10 @@ def recover_chart(
     if "errbars" in buckets and v4_has_errbars:
         added["errbars"] = _merge_misses(cv_by_bucket["errbars"], v4_by_bucket["errbars"], merged_rows, x_tol, y_tol)
 
-    _write_rows(merged_rows, out_csv)
+    # Preserve every column v4 had (e.g. y_lo/y_hi error-bar columns); recovered
+    # rows only carry GT_FIELDS, so any extra column is left blank for them.
+    fieldnames = v4_fieldnames + [f for f in GT_FIELDS if f not in v4_fieldnames]
+    _write_rows(merged_rows, out_csv, fieldnames)
     return {"added": added, "v4_rows": len(v4_rows), "v5_rows": len(merged_rows)}
 
 
@@ -195,10 +215,11 @@ def _is_number(v) -> bool:
         return False
 
 
-def _write_rows(rows: list[dict], path: str) -> None:
+def _write_rows(rows: list[dict], path: str, fieldnames: list[str] | None = None) -> None:
+    fieldnames = fieldnames or GT_FIELDS
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "w", newline="") as fh:
-        writer = csv.DictWriter(fh, fieldnames=GT_FIELDS, extrasaction="ignore")
+        writer = csv.DictWriter(fh, fieldnames=fieldnames, extrasaction="ignore")
         writer.writeheader()
         for r in rows:
-            writer.writerow({k: r.get(k, "") for k in GT_FIELDS})
+            writer.writerow({k: r.get(k, "") for k in fieldnames})

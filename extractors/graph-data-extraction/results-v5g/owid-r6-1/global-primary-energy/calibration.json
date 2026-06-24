@@ -1,0 +1,100 @@
+{
+  "image_size": {
+    "width": 850,
+    "height": 600
+  },
+  "plot_frame_box": {
+    "offset": {
+      "x": 101,
+      "y": 109
+    },
+    "size": {
+      "width": 592,
+      "height": 403
+    },
+    "left": 101,
+    "top": 109,
+    "right": 693,
+    "bottom": 512,
+    "description": "Plot frame inferred from the bounding columns of the Traditional-biomass baseline strip (cols 101-693) and the y-tick label centers (rows 109..512)."
+  },
+  "pixels_per_coordinate_unit": {
+    "x": 2.642857142857143,
+    "y": 0.0022354737698251307,
+    "x_unit_label": "year",
+    "y_unit_label": "TWh"
+  },
+  "data_to_pixel_formula": {
+    "col": "col = (x_value - 1761.783784) / 0.378378",
+    "row": "row = (y_value - 228717.798520) / -447.332469"
+  },
+  "data_range": {
+    "x_min": 1800,
+    "x_max": 2024,
+    "y_min": 0,
+    "y_max": 180000
+  },
+  "axis_calibration": {
+    "x_axis": {
+      "formula": "x_value = mx * col + bx",
+      "m": 0.3783783783783784,
+      "b": 1761.7837837837837,
+      "inverse": "col = (x_value - bx) / mx"
+    },
+    "y_axis": {
+      "formula": "y_value = my * row + by",
+      "m": -447.3324686239663,
+      "b": 228717.79852029192,
+      "inverse": "row = (y_value - by) / my"
+    }
+  },
+  "worked_example": {
+    "scenario": "Recover pixel column for year 2000 and pixel row for y=100000 TWh.",
+    "input": {
+      "x": 2000,
+      "y": 100000
+    },
+    "compute": [
+      "col = (2000 - 1761.7838) / 0.378378 = 629.57",
+      "row = (100000 - 228717.7985) / -447.332469 = 287.75"
+    ],
+    "result": {
+      "col": 629.57,
+      "row": 287.75
+    },
+    "verification": "Expected col ~630 (label '2000' center) and row ~288 (label '100,000 TWh' center). Recovered values match."
+  },
+  "detection_internals": {
+    "y_tick_rows": [
+      109,
+      154,
+      198,
+      243,
+      288,
+      332,
+      377,
+      422,
+      466,
+      512
+    ],
+    "y_tick_values": [
+      180000,
+      160000,
+      140000,
+      120000,
+      100000,
+      80000,
+      60000,
+      40000,
+      20000,
+      0
+    ],
+    "x_anchors": {
+      "left_col": 101,
+      "left_value": 1800,
+      "right_col": 693,
+      "right_value": 2024,
+      "rule": "Used plot-frame edges as x anchors; Traditional biomass color (169,83,93) extends from col 101 to col 693 along its baseline row."
+    }
+  }
+}

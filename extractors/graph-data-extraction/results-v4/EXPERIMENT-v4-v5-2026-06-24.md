@@ -34,3 +34,17 @@ Run 2026-06-24, current model (opus-4-8). 26 charts (the v4/v5 set; 2 owid chart
 
 - aedes V5 FP is specifically the achromatic/grayscale point detector; a weakness of the recovery heuristic, not proof no recall step can help.
 - 05-stacked-bar and 07-dual-y-axes hit calibration-schema edge cases in recover (fell back to v4=V5).
+
+## Update: smarter gated V5 (V5g), same day
+
+V5g recovers ONLY layer buckets the GT-free gate flags as declared-but-dropped (pixel-confirmed); layers the forward pass already populated are left untouched. recover.py write was also fixed to preserve v4 columns (it had been dropping y_lo/y_hi error-bar columns).
+
+| Corpus | v4 F1 (FP) | V5 dumb F1 (FP) | V5g gated F1 (FP) |
+|---|---|---|---|
+| aedes-aegypti-2014 | 0.858 (27) | 0.749 (167) | 0.858 (27) |
+| synthetic-r4-1 | 0.819 (10) | 0.811 (19) | 0.819 (10) |
+| owid-r6-1 | 0.775 (0) | 0.775 (0) | 0.775 (0) |
+
+**Smarter V5g lands exactly at v4 on every corpus** (aedes FP 167->27). Gating removes the false-positive harm but yields NO improvement: the gate-flagged "missing point layers" are typing disagreements (metadata declares markers, GT types the series as lines, the forward pass emitted lines correctly), so recovered points land in empty GT scatter layers and neither score nor (on this scorer) penalize.
+
+**Verdict across both variants: a post-extraction recall step does not beat the forward pass on this corpus.** Dumb recovery hurts (FP); gated recovery is neutral (=v4). This is the same verdict re-plot->compare earned. The recall step is not worth shipping; the leverage is in the forward pass (and the GT-free gate as a *reporting* signal, not an auto-merge).

@@ -7,6 +7,3 @@ layer_idx,layer_type,series,x,y,y_lo,y_hi
 5,Bar Chart,GC1,30,5.143,2.462,7.824
 6,Bar Chart,GC2,30,4.365,0.934,7.795
 7,Bar Chart,GC3,30,2.952,1.77,4.134
-0,Scatter Plot,GC1,29.123788,15.150927,,
-0,Scatter Plot,GC2,29.122864,13.849351,,
-0,Scatter Plot,GC3,29.122864,12.563206,,

@@ -1,0 +1,52 @@
+{
+  "image_size": {"width": 700, "height": 450},
+  "plot_frame_box": {
+    "offset": {"x": 62, "y": 37},
+    "size":   {"width": 614, "height": 355},
+    "left": 62, "top": 37, "right": 676, "bottom": 392,
+    "description": "Axes box detected as long dark spines: left spine at x=62, right at x=676, top at y=37, bottom at y=392."
+  },
+  "pixels_per_coordinate_unit": {
+    "x": 17.542857142857144,
+    "y": 10.085714285714285,
+    "x_unit_label": "mA",
+    "y_unit_label": "x10^3 / s"
+  },
+  "data_to_pixel_formula": {
+    "col": "col = 62.0 + 17.542857142857144 * x_value",
+    "row": "row = 391.0 - 10.085714285714285 * y_value"
+  },
+  "data_range": {"x_min": 0, "x_max": 35, "y_min": 0, "y_max": 35},
+  "axis_calibration": {
+    "x_axis": {
+      "formula": "col = b + m * x_value",
+      "m": 17.542857142857144,
+      "b": 62.0,
+      "inverse": "x_value = (col - 62.0) / 17.542857142857144"
+    },
+    "y_axis": {
+      "formula": "row = b + m * y_value",
+      "m": -10.085714285714285,
+      "b": 391.0,
+      "inverse": "y_value = (391.0 - row) / 10.085714285714285"
+    }
+  },
+  "worked_example": {
+    "scenario": "Verify a labeled tick: x=30 mA should hit pixel column ~588 (the printed '30' tick).",
+    "input": {"x": 30, "y": 0},
+    "compute": [
+      "col = 62.0 + 17.5429 * 30 = 588.29",
+      "row = 391.0 - 10.0857 * 0  = 391.0"
+    ],
+    "result": {"col": 588.29, "row": 391.0},
+    "verification": "Tick '30' detected at px col 588; bottom spine row 392. Matches to <1 px."
+  },
+  "detection_internals": {
+    "x_ticks_detected_px": [62, 149, 238, 369, 500, 588, 676],
+    "x_ticks_used_for_fit": {"0": 62, "35": 676},
+    "y_ticks_detected_px": [38, 87, 212, 341, 391],
+    "y_ticks_used_for_fit": {"35": 38, "0": 391},
+    "note_skipped_ticks": "Some intermediate ticks were merged in the dark-band detector. The fit uses the outermost reliable ticks; predicted positions match the remaining detected ticks within ~1 px.",
+    "legend_box_used_for_mask": {"left": 62, "top": 37, "right": 200, "bottom": 80}
+  }
+}

@@ -41,6 +41,3 @@ layer_idx,layer_type,series,x,y,y_lo,y_hi
 3,ErrorBarLayer,Tuned+JIT_y_err_lower,4.2515,78.778,,
 2,Bar Chart,Tuned+JIT,5.2493,88.716,,
 3,ErrorBarLayer,Tuned+JIT_y_err_lower,5.2493,82.505,,
-0,Scatter Plot,Baseline,0.581877,104.243908,,
-0,Scatter Plot,Tuned,0.581877,97.722217,,
-0,Scatter Plot,Tuned+JIT,0.581877,91.200525,,

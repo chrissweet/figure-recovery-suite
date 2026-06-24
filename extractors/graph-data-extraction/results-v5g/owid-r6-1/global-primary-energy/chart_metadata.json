@@ -1,0 +1,81 @@
+{
+  "panel_id": null,
+  "source_citation": "Our World in Data; Energy Institute - Statistical Review of World Energy (2025); Smil (2017).",
+  "x_axis": {
+    "title": null,
+    "unit": "year",
+    "title_verbatim": null,
+    "decimal_separator": "."
+  },
+  "y_axis": {
+    "title": null,
+    "unit": "TWh",
+    "title_verbatim": null,
+    "decimal_separator": "."
+  },
+  "series_legend": [
+    {
+      "series_id": "Traditional biomass",
+      "source_label": "Traditional biomass",
+      "color": "#a9535d",
+      "marker_shape": null
+    },
+    {
+      "series_id": "Coal",
+      "source_label": "Coal",
+      "color": "#9a9b9b",
+      "marker_shape": null
+    },
+    {
+      "series_id": "Oil",
+      "source_label": "Oil",
+      "color": "#5c80ba",
+      "marker_shape": null
+    },
+    {
+      "series_id": "Gas",
+      "source_label": "Gas",
+      "color": "#b875c8",
+      "marker_shape": null
+    },
+    {
+      "series_id": "Nuclear",
+      "source_label": "Nuclear",
+      "color": "#d55153",
+      "marker_shape": null
+    },
+    {
+      "series_id": "Hydropower",
+      "source_label": "Hydropower",
+      "color": "#90c0c4",
+      "marker_shape": null
+    },
+    {
+      "series_id": "Wind",
+      "source_label": "Wind",
+      "color": "#6db486",
+      "marker_shape": null
+    },
+    {
+      "series_id": "Solar",
+      "source_label": "Solar",
+      "color": "#c9a831",
+      "marker_shape": null
+    },
+    {
+      "series_id": "Other renewables",
+      "source_label": "Other renewables",
+      "color": "#52a7ae",
+      "marker_shape": null
+    },
+    {
+      "series_id": "Modern biofuels",
+      "source_label": "Modern biofuels",
+      "color": "#b0926e",
+      "marker_shape": null
+    }
+  ],
+  "chart_title": "Global direct primary energy consumption",
+  "subtitle": "Energy consumption is measured in terawatt-hours, in terms of direct primary energy. This means that fossil fuels include the energy lost due to inefficiencies in energy production.",
+  "notes": "Stacked area chart, 10 energy sources stacked bottom-to-top in this order: Traditional biomass, Coal, Oil, Gas, Nuclear, Hydropower, Wind, Solar, Other renewables, Modern biofuels. Legend labels on the right side outside the plot area. Data approach (b): per-source raw values per year (not cumulative tops), each emitted as a Line Graph row. Values were recovered by color-classifying each column's pixels to the nearest series color and counting band thicknesses; thin top stripes (Modern biofuels, Other renewables, Solar) have lower confidence due to anti-aliasing."
+}

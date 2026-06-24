@@ -1,0 +1,31 @@
+{
+  "panel_id": null,
+  "source_citation": "World Telecommunication/ICT Indicators Database - International Telecommunication Union (ITU), via World Bank (2026). OurWorldinData.org/internet | CC BY",
+  "x_axis": {
+    "title": null,
+    "unit": null,
+    "title_verbatim": null,
+    "decimal_separator": "."
+  },
+  "y_axis": {
+    "title": null,
+    "unit": "%",
+    "title_verbatim": null,
+    "decimal_separator": ".",
+    "tick_format": "PERCENT",
+    "tick_format_note": "Each y-tick label is printed as 'N%' (0%, 20%, 40%, 60%, 80%, 100%). Parsed by stripping the trailing '%' to recover the numeric percentage; recorded values are in percent units (0-100), not fraction (0-1)."
+  },
+  "series_legend": [
+    {"series_id": "North America (WB)",                  "source_label": "North America (WB)",                  "color": "#6d3e91", "marker_shape": "circle"},
+    {"series_id": "Europe and Central Asia (WB)",        "source_label": "Europe and Central Asia (WB)",        "color": "#b13507", "marker_shape": "circle"},
+    {"series_id": "East Asia and Pacific (WB)",          "source_label": "East Asia and Pacific (WB)",          "color": "#4c6a9c", "marker_shape": "circle"},
+    {"series_id": "Latin America and Caribbean (WB)",    "source_label": "Latin America and Caribbean (WB)",    "color": "#996d39", "marker_shape": "circle"},
+    {"series_id": "World",                               "source_label": "World",                               "color": "#a2559c", "marker_shape": "circle"},
+    {"series_id": "South Asia (WB)",                     "source_label": "South Asia (WB)",                     "color": "#883039", "marker_shape": "circle"},
+    {"series_id": "MENA, Afghanistan and Pakistan (WB)", "source_label": "MENA, Afghanistan and Pakistan (WB)", "color": "#2c8465", "marker_shape": "circle"},
+    {"series_id": "Sub-Saharan Africa (WB)",             "source_label": "Sub-Saharan Africa (WB)",             "color": "#00295b", "marker_shape": "circle"}
+  ],
+  "chart_title": "Share of the population using the Internet",
+  "chart_subtitle": "Share of the population who used the Internet in the last three months.",
+  "notes": "Our World in Data chart. Multi-series line plot with point markers at each integer year (2005-2025), 8 regional series. Legend labels are placed at each line's right endpoint (no legend box). The y-axis prints as percent ('0%'-'100%'); values in data.csv are in percent units. Two points are linear interpolations because the marker is fully occluded by an overlapping series at that year: Latin America and Caribbean (WB) @ 2020 (occluded by East Asia and Pacific (WB) which sits at the same y), and Sub-Saharan Africa (WB) @ 2005 and 2006 (occluded by South Asia (WB) near 2%). See interpolation_notes.json."
+}

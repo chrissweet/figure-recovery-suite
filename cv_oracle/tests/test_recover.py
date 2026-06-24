@@ -70,3 +70,28 @@ def test_recovers_missed_points():
     rep = _run("owid-r6-1", "life-expectancy", ("points",))
     assert rep["added"]["points"] > 0
     assert rep["v5_rows"] > rep["v4_rows"]
+
+
+def test_preserves_v4_columns_like_y_lo_y_hi():
+    # el-62 carries y_lo/y_hi error-bar columns; the rewrite must not drop them.
+    import csv as _csv
+
+    f = _chart("aedes-aegypti-2014", "el-62")
+    src_cols = set(_csv.DictReader(open(f["data"])).fieldnames or [])
+    out = os.path.join(tempfile.mkdtemp(), "data.csv")
+    recover_chart(f["image"], f["calibration"], f["metadata"], f["data"], out, buckets=("points",))
+    out_cols = set(_csv.DictReader(open(out)).fieldnames or [])
+    assert src_cols <= out_cols, f"dropped columns: {src_cols - out_cols}"
+
+
+def test_gated_mode_skips_present_layers():
+    # el-94's forward pass already has points and curves (gate PASS), so gated
+    # recovery must add nothing (it only fills declared-but-dropped layers).
+    rep = _run_gated("aedes-aegypti-2014", "el-94")
+    assert sum(rep["added"].values()) == 0
+
+
+def _run_gated(corpus, chart):
+    f = _chart(corpus, chart)
+    out = os.path.join(tempfile.mkdtemp(), "data.csv")
+    return recover_chart(f["image"], f["calibration"], f["metadata"], f["data"], out, gated=True)

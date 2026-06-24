@@ -1,0 +1,215 @@
+{
+  "image_size": {
+    "width": 850,
+    "height": 600
+  },
+  "plot_frame_box": {
+    "offset": {
+      "x": 54.36,
+      "y": 127.19
+    },
+    "size": {
+      "width": 656.43,
+      "height": 384.29
+    },
+    "left": 54.36,
+    "top": 127.19,
+    "right": 710.79,
+    "bottom": 511.48,
+    "description": "Pixel bounding box of the chart data extent (1985..2025 along x, 0%..100% along y). x-axis tick line at y=511; gridlines at y={127,204,281,358,435,511}. Top/bottom row map directly to data extremes."
+  },
+  "pixels_per_coordinate_unit": {
+    "x": 16.4107,
+    "y": 3.8429,
+    "x_unit_label": "year",
+    "y_unit_label": "percent (%)"
+  },
+  "data_to_pixel_formula": {
+    "col": "col = (year - 1981.6877205878168) / 0.060935756491891355",
+    "row": "row = (pct  - 133.09751064104213) / -0.26022184960660394"
+  },
+  "data_range": {
+    "x_min": 1985,
+    "x_max": 2025,
+    "y_min": 0,
+    "y_max": 100
+  },
+  "axis_calibration": {
+    "x_axis": {
+      "formula": "year = m * col + b",
+      "m": 0.060935756491891355,
+      "b": 1981.6877205878168,
+      "inverse": "col = (year - b) / m",
+      "fit_ticks_used": {
+        "years": [
+          1990,
+          1995,
+          2000,
+          2005,
+          2010,
+          2015,
+          2020
+        ],
+        "px": [
+          136.5,
+          218.5,
+          300.5,
+          382.5,
+          464.5,
+          546.5,
+          629.0
+        ]
+      },
+      "note": "Tick labels for 1985 and 2025 are visually inset (centers at px=69 and px=696) relative to the linear interior-tick fit (1985\u2192px=54.36, 2025\u2192px=710.79). The interior tick spacing is exactly 82 px per 5 years (16.41 px/year); use that fit, not the inset 1985/2025 labels."
+    },
+    "y_axis": {
+      "formula": "pct = m * row + b",
+      "m": -0.26022184960660394,
+      "b": 133.09751064104213,
+      "inverse": "row = (pct - b) / m",
+      "fit_ticks_used": {
+        "pct": [
+          100,
+          80,
+          60,
+          40,
+          20,
+          0
+        ],
+        "px": [
+          127,
+          204,
+          281,
+          358,
+          435,
+          511
+        ]
+      },
+      "note": "Single linear fit covers 0%-100%. Detected gridline pixel spacing is 77 px per 20 pp uniformly (~3.84 px per percentage point). Although the user noted a broken axis (0-50% lower band, 80-100% upper band with a gap), inspection of the source image shows ticks 100/80/60/40/20/0 at evenly spaced pixel rows (127, 204, 281, 358, 435, 511) with the SAME 77 px spacing between consecutive ticks. The y-axis is continuous and linear; the visual whitespace between 60% and 80% is simply empty data space (no series falls in 60-80% over 1985-2025), not a broken axis. Both y_axis_lower and y_axis_upper blocks below are recorded to honor the chart-specific note, but they share identical m/b coefficients."
+    },
+    "y_axis_lower": {
+      "range_pct": [
+        0,
+        60
+      ],
+      "range_px": [
+        511,
+        281
+      ],
+      "formula": "pct = m * row + b",
+      "m": -0.26022184960660394,
+      "b": 133.09751064104213,
+      "note": "Lower band as if broken-axis; identical calibration to upper band because the axis is in fact continuous and linear."
+    },
+    "y_axis_upper": {
+      "range_pct": [
+        80,
+        100
+      ],
+      "range_px": [
+        204,
+        127
+      ],
+      "formula": "pct = m * row + b",
+      "m": -0.26022184960660394,
+      "b": 133.09751064104213,
+      "note": "Upper band as if broken-axis; identical calibration to lower band because the axis is in fact continuous and linear."
+    }
+  },
+  "worked_example": {
+    "scenario": "Sweden's 2020 value of 98.49% should land in the top-right region of the upper band.",
+    "input": {
+      "x": 2020,
+      "y": 98.49
+    },
+    "compute": [
+      "col = (2020 - 1981.6877205878168) / 0.060935756491891355 = 629.02",
+      "row = (98.49 - 133.09751064104213) / -0.26022184960660394 = 132.99"
+    ],
+    "result": {
+      "col": 629.02,
+      "row": 132.99
+    },
+    "verification": "(629, 133) sits just below the 100% gridline (y=127) and at the 2020 x-tick column \u2014 matching Sweden's near-top trajectory in the upper band of the source image."
+  },
+  "detection_internals": {
+    "title_band": {
+      "y_range_px": [
+        0,
+        100
+      ],
+      "content": "title + subtitle (3-line wrap)"
+    },
+    "plot_y_top": 127,
+    "plot_y_bot": 511,
+    "plot_x_left": 50,
+    "plot_x_right": 714,
+    "gridlines_px": {
+      "100%": 127,
+      "80%": 204,
+      "60%": 281,
+      "40%": 358,
+      "20%": 435,
+      "0%": 511
+    },
+    "year_tick_label_centers_px": {
+      "1985": 69,
+      "1990": 136.5,
+      "1995": 218.5,
+      "2000": 300.5,
+      "2005": 382.5,
+      "2010": 464.5,
+      "2015": 546.5,
+      "2020": 629.0,
+      "2025": 696.0
+    },
+    "interior_year_fit_rule": "Use 1990..2020 (inclusive) to fit year-vs-pixel; 1985 and 2025 labels are inset from the data extent and must NOT be used for calibration.",
+    "broken_axis_check": "Verified the axis is single-linear: spacing 100%\u219280%=77 px, 80%\u219260%=77 px, 60%\u219240%=77 px, 40%\u219220%=77 px, 20%\u21920%=76 px. Uniform => continuous axis.",
+    "series_color_signatures_bgr": {
+      "Sweden": [
+        145,
+        62,
+        109
+      ],
+      "France": [
+        7,
+        53,
+        177
+      ],
+      "United Kingdom": [
+        57,
+        48,
+        136
+      ],
+      "Germany": [
+        57,
+        109,
+        153
+      ],
+      "United States": [
+        97,
+        49,
+        9
+      ],
+      "World": [
+        156,
+        85,
+        162
+      ],
+      "China": [
+        156,
+        106,
+        76
+      ],
+      "India": [
+        101,
+        132,
+        44
+      ]
+    },
+    "occlusion_caveats": {
+      "United States": "Dark blue US line is overlapped by UK (dark red) in 1993-1994 and by World (magenta) in 2012-2014. Those 5 points (1993, 1994, 2012, 2013, 2014) are linearly interpolated between neighbours and are flagged in interpolated_points.json.",
+      "Germany": "Germany data begins at 1986 (no marker at 1985 in source). 1985 is left empty (not interpolated)."
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "chart_id": "09-open-markers-with-fit",
+  "chart_type": "scatter_with_fit",
+  "panel_id": null,
+  "source_citation": null,
+  "x_axis": {
+    "title": "Independent x",
+    "unit": null,
+    "title_verbatim": "Independent x",
+    "decimal_separator": "."
+  },
+  "y_axis": {
+    "title": "Response y",
+    "unit": null,
+    "title_verbatim": "Response y",
+    "decimal_separator": "."
+  },
+  "series_legend": [
+    {
+      "series_id": "Measurement",
+      "source_label": "Measurement",
+      "color": "#1f77b4",
+      "marker_shape": "open_circle",
+      "layer_type": "Scatter Plot"
+    },
+    {
+      "series_id": "Linear fit",
+      "source_label": "Linear fit (slope=1.76, intercept=4.00)",
+      "color": "#1f77b4",
+      "marker_shape": null,
+      "layer_type": "Line Graph",
+      "line_style": "solid"
+    }
+  ],
+  "chart_title": "Synthetic #9 - open circles fused with same-color fit line",
+  "notes": "Open blue circles and solid blue fit line share the same color. Extraction used the \u00a73b per-column thin-run subtraction with paired-edge preservation (thin_h=3, marker_span=(4,13)) to separate the rims from the line before connected-component analysis."
+}

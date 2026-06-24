@@ -1,0 +1,24 @@
+{
+  "chart_id": "10-crossing-curves",
+  "chart_type": "line",
+  "panel_id": null,
+  "source_citation": null,
+  "x_axis": {
+    "title": "Independent variable x",
+    "unit": null,
+    "title_verbatim": "Independent variable x",
+    "decimal_separator": "."
+  },
+  "y_axis": {
+    "title": "Response y",
+    "unit": null,
+    "title_verbatim": "Response y",
+    "decimal_separator": "."
+  },
+  "series_legend": [
+    {"series_id": "Series A (rising)", "source_label": "Series A (rising)", "color": "#1f77b4", "marker_shape": null},
+    {"series_id": "Series B (falling)", "source_label": "Series B (falling)", "color": "#1f77b4", "marker_shape": null}
+  ],
+  "chart_title": "Synthetic #10 — crossing curves, same color",
+  "notes": "Two same-color (matplotlib C0 #1f77b4) line series crossing once around x ≈ 6.1, y ≈ 4.87. Designed as the trace_with_continuity stress test described in extraction_recipes.md §3 'Curve-crossing failure'. A naive per-column-median trace would mis-attribute around the crossing column; the continuity tracer with unique pairwise assignment recovers both trajectories cleanly. Series A is sub-linear/quadratic upward (y ≈ 0.04x² + 0.30x + 1.47), Series B is linear downward (y ≈ -0.505x + 8.02). Legend box sits in the upper-left and was excluded from the color mask before tracing."
+}

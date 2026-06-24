@@ -1,0 +1,36 @@
+{
+  "panel_id": null,
+  "source_citation": "Our World in Data — OurWorldinData.org/life-expectancy | CC BY. Data sources cited on figure: Riley (2005); Zijdeman et al. (2015); HMD (2025); UN WPP (2024); Bolt and van Zanden — Maddison Project Database 2023.",
+  "chart_title": "Life expectancy vs. GDP per capita, 2022",
+  "chart_subtitle": "The period life expectancy at birth, in a given year. GDP per capita is adjusted for inflation and differences in living costs between countries.",
+  "x_axis": {
+    "title": "GDP per capita",
+    "unit": "international-$ in 2011 prices",
+    "title_verbatim": "GDP per capita (international-$ in 2011 prices; plotted on a logarithmic axis)",
+    "scale": "log10",
+    "decimal_separator": "."
+  },
+  "y_axis": {
+    "title": "Life expectancy at birth",
+    "unit": "years",
+    "title_verbatim": "Life expectancy at birth",
+    "scale": "linear",
+    "decimal_separator": "."
+  },
+  "series_legend": [
+    {"series_id": "North America", "source_label": "North America", "color": "#ea8b7b", "marker_shape": "circle"},
+    {"series_id": "South America", "source_label": "South America", "color": "#a05961", "marker_shape": "circle"},
+    {"series_id": "Africa",        "source_label": "Africa",        "color": "#b577b0", "marker_shape": "circle"},
+    {"series_id": "Europe",        "source_label": "Europe",        "color": "#7088b0", "marker_shape": "circle"},
+    {"series_id": "Asia",          "source_label": "Asia",          "color": "#339d98", "marker_shape": "circle"},
+    {"series_id": "Oceania",       "source_label": "Oceania",       "color": "#60bbc8", "marker_shape": "circle"}
+  ],
+  "size_encoding": {
+    "variable": "Population",
+    "legend_label_verbatim": "Circles sized by Population",
+    "reference_sizes_verbatim": ["1.4B", "600M"],
+    "note": "Marker radius (visual area) encodes country population; not extracted into data.csv. Two reference circles printed in legend (1.4B and 600M)."
+  },
+  "data_source_note_verbatim": "Note: GDP per capita is expressed in international-$ at 2011 prices.",
+  "notes": "Our World in Data scatter (4 variables): x=GDP, y=life expectancy, marker size=population, marker color=continent. ~164 countries in source; extractor isolates visually distinct colored circles by per-continent color thresholding + morphological opening (2x2) to suppress same-color country-label text. Country names labeled inline next to ~20 large-population markers."
+}

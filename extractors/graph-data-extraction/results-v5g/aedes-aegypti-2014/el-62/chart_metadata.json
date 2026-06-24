@@ -1,0 +1,38 @@
+{
+  "panel_id": null,
+  "source_citation": null,
+  "x_axis": {
+    "title": "Temperatures",
+    "unit": "°C",
+    "title_verbatim": "Temperatures (°C)",
+    "decimal_separator": "."
+  },
+  "y_axis": {
+    "title": "Duration of GC",
+    "unit": "days",
+    "title_verbatim": "Duration of GC (days)",
+    "decimal_separator": "."
+  },
+  "series_legend": [
+    {
+      "series_id": "GC1",
+      "source_label": "Mean duration of GC1",
+      "color": "#2C3E7A",
+      "marker_shape": "solid bar"
+    },
+    {
+      "series_id": "GC2",
+      "source_label": "Mean duration of GC2",
+      "color": "#7A9438",
+      "marker_shape": "solid bar"
+    },
+    {
+      "series_id": "GC3",
+      "source_label": "Mean duration of GC3",
+      "color": "#D9A3A3",
+      "marker_shape": "solid bar"
+    }
+  ],
+  "chart_title": null,
+  "notes": "Grouped bar chart with symmetric error caps. Lower caps were occluded by bar fill in the source; mirrored from the visible upper caps (y_lo = mean − (y_hi − mean)) per audit row 3. x snapped to categorical {24, 27, 30}."
+}

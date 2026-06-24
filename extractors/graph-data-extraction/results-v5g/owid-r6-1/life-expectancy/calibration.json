@@ -1,0 +1,114 @@
+{
+  "image_size": {
+    "width": 850,
+    "height": 600
+  },
+  "plot_frame_box": {
+    "offset": {
+      "x": 70.5,
+      "y": 110.53
+    },
+    "size": {
+      "width": 682.1,
+      "height": 422.27
+    },
+    "left": 70.5,
+    "top": 110.53,
+    "right": 752.6,
+    "bottom": 532.8,
+    "description": "Plot region bounded by leftmost data column (col 70.5 ~ year 1770) and rightmost data column (col 752.6 ~ year 2023); top row 110.5 (y=80), bottom row 532.8 (y=0). OWID chart has no visible axis box; bounds derived from tick-label calibration."
+  },
+  "pixels_per_coordinate_unit": {
+    "x": 2.696,
+    "y": 5.278333333,
+    "x_unit_label": "year",
+    "y_unit_label": "years (life expectancy)"
+  },
+  "data_to_pixel_formula": {
+    "col": "col = 2.696 * x_value + (-4701.4)",
+    "row": "row = -5.278333333 * y_value + 532.8"
+  },
+  "data_range": {
+    "x_min": 1770,
+    "x_max": 2023,
+    "y_min": 0,
+    "y_max": 80
+  },
+  "axis_calibration": {
+    "x_axis": {
+      "formula": "x_value = (col - (-4701.4)) / 2.696",
+      "m": 0.37091988130563797,
+      "b": 1743.8427299703262,
+      "inverse": "col = 2.696 * x_value + (-4701.4)"
+    },
+    "y_axis": {
+      "formula": "y_value = (row - 532.8) / -5.278333333",
+      "m": -0.18945374172336304,
+      "b": 100.94095359020783,
+      "inverse": "row = -5.278333333 * y_value + 532.8"
+    }
+  },
+  "worked_example": {
+    "scenario": "Convert data point (year=1900, life_expectancy=40) to pixel coords",
+    "input": {
+      "x": 1900,
+      "y": 40
+    },
+    "compute": [
+      "col = 2.696 * 1900 + (-4701.4) = 421.0",
+      "row = -5.278333 * 40 + 532.8 = 321.67"
+    ],
+    "result": {
+      "col": 421.0,
+      "row": 321.67
+    },
+    "verification": "Pixel (421, 321) lies near label '40 years' tick position and on the visible line crossings near year 1900; confirmed within \u00b11 px of detected x-tick label center for 1900 (px 421) and y-tick label center for 40 (row 321.5)."
+  },
+  "detection_internals": {
+    "x_tick_label_centers_px": {
+      "1800": 151.5,
+      "1850": 286.0,
+      "1900": 421.0,
+      "1950": 556.0,
+      "2000": 690.5
+    },
+    "x_tick_label_centers_px_excluded_from_fit": {
+      "1770": 85.5,
+      "2023": 737.5
+    },
+    "x_tick_exclusion_reason": "Endpoint labels (1770, 2023) are nudged inward by OWID renderer to avoid clipping outside chart bounds; using them in the linear fit biased px/year by ~5 px. Fit was anchored on the five interior labels (1800,1850,1900,1950,2000) which lie on true tick positions.",
+    "x_fit_residuals_px": [
+      0.1,
+      -0.2,
+      0.0,
+      0.2,
+      -0.1
+    ],
+    "y_tick_label_centers_px": {
+      "0": 533.0,
+      "10": 480.0,
+      "20": 427.0,
+      "30": 374.5,
+      "40": 321.5,
+      "50": 269.0,
+      "60": 216.0,
+      "70": 163.5,
+      "80": 110.5
+    },
+    "y_fit_residuals_px": [
+      -0.033,
+      0.183,
+      -0.1,
+      0.117,
+      -0.167,
+      0.05,
+      -0.233,
+      -0.017,
+      0.2
+    ],
+    "axis_box_visible": false,
+    "axis_box_note": "OWID chart has no rectangular axis frame; the only structural feature is a single horizontal rule at row 532 (the x-axis baseline). Plot extent inferred from interior-tick linear fit extrapolated to first/last labels.",
+    "legend_exclusion_used_for_frame": null,
+    "calibration_method": "Detect x and y tick label digit clusters via dark-pixel CC analysis; linear-fit pixel-to-data using interior ticks only (endpoint labels are anchor-shifted)."
+  }
+}
