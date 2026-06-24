@@ -31,7 +31,7 @@ def test_template_recovers_fused_el94_27c_squares():
     # GT has 25; blob got 9; template should recover essentially all.
     canvas, cal = _canvas_and_cal("aedes-aegypti-2014", "el-94")
     pts = detect_markers_template(canvas, cal, (190, 190, 190), achromatic=True, score_thresh=0.55)
-    assert len(pts) >= 22, f"expected ~25 fused squares, got {len(pts)}"
+    assert 22 <= len(pts) <= 32, f"expected ~25 fused squares, got {len(pts)}"
 
 
 def test_template_finds_colored_scatter_series():

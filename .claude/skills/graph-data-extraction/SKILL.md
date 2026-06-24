@@ -65,6 +65,8 @@ Pick the matching recipe in `references/extraction_recipes.md` (which now starts
 - **Bar chart** → §4 per bar, find the top of the colored fill. For **stippled or dotted fills** that fragment under CC, §4a scans for the bar's dark *outline* row instead. §4b covers upper error-bar caps (lower caps are typically occluded by the bar fill).
 - **Histogram** → take the top of the colored region per x-column; report the per-bin envelope.
 
+**Before extracting, read `references/pitfalls-and-recipes.md`** — the field guide of failure modes learned from a Phase-4 audit and the v4-v8 CV experiments, each paired with the deterministic tool that handles it (callable via `python3 -m cv_oracle.cli`: `canvas`, `template`, `peel`, `snap-x`). It covers the traps below plus marker-curve fusion, dotted-curve-dots-as-markers, categorical bar-x snap, the exact `layer_type` strings, and the peel completeness self-check.
+
 Common extraction hazards and how to handle them are in `references/extraction_recipes.md` under "Hazards". The big ones:
 
 - **Legend occlusion**: a legend swatch sits over the data. Wipe out the legend bounding box on the color mask *before* CC, and widen the exclusion by ~30 rows past the visible text (descenders bleed in).
@@ -201,6 +203,7 @@ Pixel-extracted data is an estimate, never the original dataset. Every delivery 
 
 ## Reference files
 
+- `references/pitfalls-and-recipes.md` — failure-mode field guide (calibration, marker-curve fusion, dotted-curve confusion, legend swatches, categorical bar-x, error-bar caps, exact layer_type strings, peel completeness check), each with the `cv_oracle.cli` tool that handles it. Read first.
 - `references/calibration.md` — frame and tick detection, linear and log axis fitting, calibration sanity checks.
 - `references/extraction_recipes.md` — quick chooser, per-chart-type extraction code (scatter + error bars, grayscale-shape scatter, line/curve, marker-on-line, bar incl. stippled-fill variant + bar error-bar caps, histogram), and the Hazards section.
 - `references/replot_and_validate.md` — Matplotlib re-plot templates per chart type, matplotlib default color cycle, the scatter refit check, and the artifact-detection heuristics for the loop.

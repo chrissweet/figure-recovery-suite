@@ -24,16 +24,18 @@ from .blobs import achromatic_band_mask, crop_mask_to_box
 
 def series_mask(img_bgr, rgb, box, *, achromatic: bool, color_tol: float = 60.0) -> np.ndarray:
     if achromatic:
-        # grayscale series are separated by INTENSITY, not hue: pick a band
-        # around the series' brightness (dark disks / mid-gray squares).
+        # grayscale series are separated by INTENSITY, not hue: pick a TIGHT band
+        # around the series' brightness (dark disks / mid-gray squares). A wide
+        # band re-admits anti-alias halos and noise (it inflated el-94 27C from
+        # 25 to 70), so keep it narrow.
         inten = sum(rgb) / 3.0
         if inten < 100:
-            lo, hi = 0, 95
+            lo, hi, atol = 0, 90, 18
         elif inten > 215:
-            lo, hi = 150, 215  # near-white fill; weak (overlaps background)
+            lo, hi, atol = 150, 215, 18  # near-white fill; weak (overlaps background)
         else:
-            lo, hi = int(inten) - 28, int(inten) + 28
-        m = achromatic_band_mask(img_bgr, max(0, lo), min(255, hi), 18)
+            lo, hi, atol = int(inten) - 20, int(inten) + 18, 16  # mid-gray (el-94 27C -> 25)
+        m = achromatic_band_mask(img_bgr, max(0, lo), min(255, hi), atol)
     else:
         m = color_mask(img_bgr, rgb, tol=color_tol)
     return crop_mask_to_box(m, box)
