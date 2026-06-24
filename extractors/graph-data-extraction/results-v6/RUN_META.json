@@ -1,0 +1,7 @@
+{
+  "experiment": "v6 calibrate-first canvas + peel-loop recovery",
+  "run_date": "2026-06-24",
+  "erase_radius": 7,
+  "base": "v4 extraction (reused) + deterministic peel",
+  "note": "prepare_canvas whitens non-data; peel subtracts v4 markers then detects residual misses; GT-free"
+}

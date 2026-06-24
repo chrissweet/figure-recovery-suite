@@ -1,0 +1,71 @@
+{
+  "image": "image.png",
+  "image_size": {"width": 850, "height": 600},
+  "plot_frame_box": {
+    "offset": {"x": 130, "y": 152},
+    "size": {"width": 542, "height": 313},
+    "left": 130,
+    "top": 152,
+    "right": 671,
+    "bottom": 464,
+    "description": "Plot frame defined by leftmost/rightmost x-gridline positions ($1,000 at col=130, $100,000 at col=671) and top/bottom y-tick label centers (80 years at row=152, 20 years at row=464). Detected from vertical gridline streaks in lower clean band (rows 440-470) and from y-axis label text projection."
+  },
+  "pixels_per_coordinate_unit": {
+    "x": 270.48,
+    "x_note": "pixels per log10(x) unit (1 decade = 270.48 px). Because x-axis is logarithmic, ratio is in log space.",
+    "y": 5.189,
+    "x_unit_label": "pixels per log10(GDP per capita, int-$)",
+    "y_unit_label": "pixels per year of life expectancy"
+  },
+  "data_to_pixel_formula": {
+    "col": "col = (log10(x_value) - 2.52010514) / 0.00369710",
+    "row": "row = (y_value - 109.269380) / -0.192701",
+    "note": "x_value is GDP per capita in int-$; y_value is life expectancy in years."
+  },
+  "data_range": {
+    "x_min": 1000.0,
+    "x_max": 100000.0,
+    "x_scale": "log10",
+    "y_min": 20.0,
+    "y_max": 80.0,
+    "y_scale": "linear"
+  },
+  "axis_calibration": {
+    "x_axis": {
+      "scale": "log10",
+      "formula": "log10(x_value) = 0.00369710 * col + 2.52010514",
+      "m": 0.00369710,
+      "b": 2.52010514,
+      "inverse": "x_value = 10 ** (0.00369710 * col + 2.52010514); col = (log10(x_value) - 2.52010514) / 0.00369710"
+    },
+    "y_axis": {
+      "scale": "linear",
+      "formula": "y_value = -0.192701 * row + 109.269380",
+      "m": -0.192701,
+      "b": 109.269380,
+      "inverse": "row = (y_value - 109.269380) / -0.192701"
+    }
+  },
+  "worked_example": {
+    "scenario": "Locate the $10,000 GDP, 70-year life-expectancy reference point.",
+    "input": {"x": 10000, "y": 70},
+    "compute": [
+      "col = (log10(10000) - 2.52010514) / 0.00369710 = (4 - 2.52010514) / 0.00369710 = 400.29",
+      "row = (70 - 109.269380) / -0.192701 = -39.269380 / -0.192701 = 203.78"
+    ],
+    "result": {"col": 400.29, "row": 203.78},
+    "verification": "Matches detected $10,000 gridline at col=400 and 70-years label centerline at row=204 (within 1 px)."
+  },
+  "detection_internals": {
+    "x_gridlines_detected_cols": [130, 211, 319, 400, 482, 589, 671],
+    "x_gridlines_values": [1000, 2000, 5000, 10000, 20000, 50000, 100000],
+    "x_fit_max_residual_log10": 0.00128,
+    "y_tick_label_rows": [152, 204, 256, 307, 359, 411, 464],
+    "y_tick_label_values": [80, 70, 60, 50, 40, 30, 20],
+    "y_fit_max_residual_years": 0.14,
+    "rule": "x-axis: log10 fit through 7 vertical-streak gridline column positions detected in a clean band (rows 440-470) by projecting (gray<245) pixel counts and clustering. y-axis: linear fit through 7 tick-label-text vertical centers detected by projecting dark-pixel rows in the left margin band.",
+    "legend_exclusion_used_for_frame": [130, 340, 705, 850],
+    "legend_exclusion_format": "[top_row, bottom_row, left_col, right_col]",
+    "legend_exclusion_note": "Continent legend (6 swatches) plus the 'Circles sized by Population' size-legend. Masked out before scatter CC analysis to prevent the legend swatches/size markers from being counted as data. Note: data_csv_legend_check.py assumes a LINEAR x-axis, so its predicted col positions for our log10 axis are not literal pixel positions; data.csv extraction physically excluded the legend region during CC analysis."
+  }
+}

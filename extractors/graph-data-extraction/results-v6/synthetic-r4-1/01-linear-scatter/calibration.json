@@ -1,0 +1,71 @@
+{
+  "image_size": {"width": 700, "height": 450},
+  "plot_frame_box": {
+    "offset": {"x": 62, "y": 37},
+    "size": {"width": 623, "height": 355},
+    "left": 62,
+    "top": 37,
+    "right": 685,
+    "bottom": 392,
+    "description": "Inner axis frame, detected as the long dark vertical/horizontal lines bounding the data area."
+  },
+  "pixels_per_coordinate_unit": {
+    "x": 56.78,
+    "y": 29.41,
+    "x_unit_label": "s",
+    "y_unit_label": "mol/L"
+  },
+  "data_to_pixel_formula": {
+    "col": "col = (x_value - b_x_inv) / m_x_inv  where m_x_inv = 1/m_x, b_x_inv = -b_x/m_x  (i.e. col = (x_value + 1.581784) / 0.017614)",
+    "row": "row = (y_value + 13.276177) / -0.034001  (equivalently row = (13.276177 - y_value) / 0.034001)"
+  },
+  "data_range": {
+    "x_min": 0.0,
+    "x_max": 10.0,
+    "y_min": 0.0,
+    "y_max": 12.0
+  },
+  "axis_calibration": {
+    "x_axis": {
+      "formula": "x_value = m * pixel_col + b",
+      "m": 0.017614,
+      "b": -1.581784,
+      "scale": "linear",
+      "inverse": "pixel_col = (x_value - b) / m"
+    },
+    "y_axis": {
+      "formula": "y_value = m * pixel_row + b",
+      "m": -0.034001,
+      "b": 13.276177,
+      "scale": "linear",
+      "inverse": "pixel_row = (y_value - b) / m"
+    }
+  },
+  "worked_example": {
+    "scenario": "Verify the calibration on the printed tick (x=4, y=6).",
+    "input": {"x": 4.0, "y": 6.0},
+    "compute": [
+      "col = (4.0 - (-1.581784)) / 0.017614 = 316.9",
+      "row = (6.0 - 13.276177) / -0.034001 = 214.0"
+    ],
+    "result": {"col": 316.9, "row": 214.0},
+    "verification": "Detected x-tick centers at col 316 (value 4) and y-tick at row 214 (value 6); both match within <1 px."
+  },
+  "detection_internals": {
+    "frame_detection_rule": "vertical/horizontal dark (gray<80) line runs spanning >40% of the orthogonal extent; first and last clusters taken as axis frame edges",
+    "vertical_frame_candidates_px": [62, 685],
+    "horizontal_frame_candidates_px": [37, 392],
+    "x_tick_label_rule": "dark text clusters in band rows bot+3..bot+18, columns 0..W; cluster gap=15 px",
+    "x_tick_pixel_centers": [91, 203, 316, 430, 543, 659],
+    "x_tick_value_pairing": [0, 2, 4, 6, 8, 10],
+    "y_tick_label_rule": "dark text clusters in band cols left-22..left-5, rows 0..bot+8; cluster gap=12 px",
+    "y_tick_pixel_centers": [38, 96, 155, 214, 273, 331, 391],
+    "y_tick_value_pairing": [12, 10, 8, 6, 4, 2, 0],
+    "x_fit_residual_max": 0.026,
+    "y_fit_residual_max": 0.022,
+    "legend_exclusion_used_for_frame": {
+      "left": 578, "top": 45, "right": 682, "bottom": 115,
+      "note": "Tight bbox around the legend's swatches + text rows; chosen to not overlap the Series A circle at (533, 134) or (610, 125)."
+    }
+  }
+}

@@ -1,0 +1,25 @@
+layer_idx,layer_type,series,x,y,y_lo,y_hi
+0,Bar Chart,GC1,23.335,41.7,19.9,63.5
+0,Bar Chart,GC2,24.004,44.4,23.2,65.6
+0,Bar Chart,GC1,26.337,42.6,20.6,64.6
+0,Bar Chart,GC2,27.006,32.6,11.4,53.8
+0,Bar Chart,GC3,27.676,48.7,23.7,73.7
+0,Bar Chart,GC1,29.33,39.4,17.5,61.3
+0,Bar Chart,GC2,29.999,34.2,12.8,55.6
+0,Bar Chart,GC3,30.668,5.5,-19.5,30.5
+1,ErrorBarLayer,GC1_y_err_upper,23.335,63.5,,
+1,ErrorBarLayer,GC1_y_err_lower,23.335,19.9,,
+1,ErrorBarLayer,GC2_y_err_upper,24.004,65.6,,
+1,ErrorBarLayer,GC2_y_err_lower,24.004,23.2,,
+1,ErrorBarLayer,GC1_y_err_upper,26.337,64.6,,
+1,ErrorBarLayer,GC1_y_err_lower,26.337,20.6,,
+1,ErrorBarLayer,GC2_y_err_upper,27.006,53.8,,
+1,ErrorBarLayer,GC2_y_err_lower,27.006,11.4,,
+1,ErrorBarLayer,GC3_y_err_upper,27.676,73.7,,
+1,ErrorBarLayer,GC3_y_err_lower,27.676,23.7,,
+1,ErrorBarLayer,GC1_y_err_upper,29.33,61.3,,
+1,ErrorBarLayer,GC1_y_err_lower,29.33,17.5,,
+1,ErrorBarLayer,GC2_y_err_upper,29.999,55.6,,
+1,ErrorBarLayer,GC2_y_err_lower,29.999,12.8,,
+1,ErrorBarLayer,GC3_y_err_upper,30.668,30.5,,
+1,ErrorBarLayer,GC3_y_err_lower,30.668,-19.5,,

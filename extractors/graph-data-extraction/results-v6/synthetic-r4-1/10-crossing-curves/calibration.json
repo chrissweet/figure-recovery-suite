@@ -1,0 +1,61 @@
+{
+  "image_size": {"width": 700, "height": 450},
+  "plot_frame_box": {
+    "offset": {"x": 62, "y": 37},
+    "size":   {"width": 623, "height": 355},
+    "left": 62, "top": 37, "right": 685, "bottom": 392,
+    "description": "Plot frame detected via long dark axis lines: col 62 (left), col 685 (right), row 37 (top), row 392 (bottom). The two columns at 62/685 each have ~356 dark pixels (vertical spines); rows 37/392 each have ~630 dark pixels (horizontal axes)."
+  },
+  "pixels_per_coordinate_unit": {
+    "x": 59.96,
+    "y": 35.16,
+    "x_unit_label": "x (dimensionless, axis title 'Independent variable x')",
+    "y_unit_label": "y (dimensionless, axis title 'Response y')"
+  },
+  "data_to_pixel_formula": {
+    "col": "col = (x_value - b_x) / m_x  with m_x=0.016678, b_x=-1.223823",
+    "row": "row = (y_value - b_y) / m_y  with m_y=-0.028442, b_y=11.072470"
+  },
+  "data_range": {"x_min": 0.0, "x_max": 10.0, "y_min": 0.0, "y_max": 10.0},
+  "axis_calibration": {
+    "x_axis": {
+      "formula": "x_value = m * pixel_col + b",
+      "m": 0.016678,
+      "b": -1.223823,
+      "scale": "linear",
+      "inverse": "pixel_col = (x_value - b) / m",
+      "tick_label_centers_px": [74, 192, 314, 433, 553, 673],
+      "tick_label_values":    [0, 2, 4, 6, 8, 10],
+      "fit_residual_max_abs": 0.022
+    },
+    "y_axis": {
+      "formula": "y_value = m * pixel_row + b",
+      "m": -0.028442,
+      "b": 11.072470,
+      "scale": "linear",
+      "inverse": "pixel_row = (y_value - b) / m",
+      "tick_label_centers_px": [37, 108, 179, 249, 320, 388],
+      "tick_label_values":    [10, 8, 6, 4, 2, 0],
+      "fit_residual_max_abs": 0.037
+    }
+  },
+  "worked_example": {
+    "scenario": "Detected curve-crossing point should land near image-frame center.",
+    "input": {"x": 6.136, "y": 4.872},
+    "compute": [
+      "col = (6.136 - (-1.223823)) / 0.016678 = 441.36",
+      "row = (4.872 - 11.072470) / (-0.028442) = 218.00"
+    ],
+    "result": {"col": 441.36, "row": 218.00},
+    "verification": "Visual: the two same-color curves cross at roughly the chart center, slightly right of x=6 and at y just under 5; predicted pixel sits inside the visible crossing region."
+  },
+  "legend_exclusion_used_for_frame": {
+    "left": 60, "top": 40, "right": 240, "bottom": 95,
+    "description": "Upper-left legend box containing two horizontal blue swatches plus 'Series A (rising)' and 'Series B (falling)' text. Masked out before tracing so the swatches don't pollute the trace seeds."
+  },
+  "detection_internals": {
+    "frame_rule": "argmax dark-pixel-count rows and columns from cv2.cvtColor(BGR2GRAY) thresholded at gray<100.",
+    "tick_label_rule": "Group contiguous dark columns/rows in the margin band (y-band cols 30..60; x-band rows 395..413) into label centers; reject the leftmost detection in the x-band (col 48) because it coincides with the y-axis title band tail.",
+    "color_mask_rule": "HSV inRange([100,90,60], [125,255,255]) — matplotlib C0 #1f77b4 sits at H~108, S~200, V~180."
+  }
+}

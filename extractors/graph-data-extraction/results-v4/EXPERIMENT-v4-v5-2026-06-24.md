@@ -122,3 +122,19 @@ Element -> variable it controls:
 
 Workflow script of record:
   .claude/projects/.../workflows/scripts/v4-forward-pass-wf_02270dda-63d.js
+
+## v6: calibrate-first canvas + peel-loop recovery
+
+v6 = v4 extraction (reused) + deterministic PEEL recovery. prepare_canvas whitens everything outside the plot frame + the legend box (kills the legend/axis false-positive classes deterministically). peel.py erases v4 markers from the canvas and detects what remains -- residual ink = misses. GT-free. The subtractive form of close-the-loop (no matplotlib render).
+
+| Corpus | v4 P/R/F1 (FP) | v6 P/R/F1 (FP) |
+|---|---|---|
+| aedes-aegypti-2014 | 0.923/0.800/0.858 (27) | 0.859/0.837/0.848 (56) |
+| synthetic-r4-1 | 0.974/0.707/0.819 (10) | 0.919/0.707/0.799 (33) |
+| owid-r6-1 | 1.000/0.633/0.775 (0) | 1.000/0.633/0.775 (0) |
+
+**Peel is the first recall step to recover real points.** On aedes it lifts recall 0.800->0.837 (+15 true positives -- the el-94 fused 27C squares the gate could not see, since the points *layer* is present but *undercounted*). The completeness property holds: synthetic-01 (v4 already complete) yields ZERO residual, and the legend false-positives V5 imported are gone (whited by prepare_canvas).
+
+**But residual-detector false positives still outweigh the gain on net F1**: aedes 0.858->0.848, synthetic 0.819->0.799 (synthetic misses are in CURVES, which peel-points cannot help, so its residual detections there are pure noise). owid unchanged (recovered points are scatter where GT types the series as lines).
+
+**Verdict:** the subtract-and-recheck CONCEPT works -- it is the only mechanism that moved real recall, and it validates "zero residual = complete recall" without a matplotlib render. The remaining bottleneck is the residual detector's precision (grayscale noise, open-marker rings), not the peel idea. Next lever: a more precise residual detector (shape/solidity gating) and curve-peel for the synthetic curve misses, which could flip net F1 positive.
