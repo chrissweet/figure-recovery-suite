@@ -48,3 +48,77 @@ V5g recovers ONLY layer buckets the GT-free gate flags as declared-but-dropped (
 **Smarter V5g lands exactly at v4 on every corpus** (aedes FP 167->27). Gating removes the false-positive harm but yields NO improvement: the gate-flagged "missing point layers" are typing disagreements (metadata declares markers, GT types the series as lines, the forward pass emitted lines correctly), so recovered points land in empty GT scatter layers and neither score nor (on this scorer) penalize.
 
 **Verdict across both variants: a post-extraction recall step does not beat the forward pass on this corpus.** Dumb recovery hurts (FP); gated recovery is neutral (=v4). This is the same verdict re-plot->compare earned. The recall step is not worth shipping; the leverage is in the forward pass (and the GT-free gate as a *reporting* signal, not an auto-merge).
+## Appendix: the v4 forward-pass agent (prompt anatomy)
+
+v4 was produced by a workflow fanning out one general-purpose agent per chart.
+Each agent received the prompt below; its structured return fed the scorer. The
+prompt deliberately freezes everything upstream of Phase 3 (calibration, series
+identity) and forbids everything downstream (Phase 4, ground truth), so the only
+variable the agent controls is the Phase-3 extraction.
+
+Orchestration:
+
+    MANIFEST (26 charts)
+         |
+    Workflow -- 1 agent per chart (concurrency-capped) --> ... per chart ...
+         |
+         v
+    general-purpose agent (prompt below)
+      inputs: image + REUSED calibration + REUSED chart_metadata
+      output: results-v4/<corpus>/<chart>/data.csv
+         |  returns {chart, rows_written, layers, issues}
+         v
+    scoring/score_data.py  (vs ground truth -- only here, never in the agent)
+
+Prompt anatomy (5 blocks + structured return):
+
+  1. TASK FRAME
+     "Run the FORWARD PASS ONLY (Phases 1-3, NO Phase 4) on ONE chart -> data.csv"
+     -> scope: single chart, single pass
+
+  2. INPUTS (4 paths)
+     - Image (look at it):                corpora/.../image.png
+     - REUSE calibration, don't re-derive: <v4_dir>/calibration.json
+         (axis m/b + plot_frame_box; "read the formula field" - log/inverted exist)
+     - Series + colors/types:             <v4_dir>/chart_metadata.json
+         (series_legend: color + marker_shape | line_style)
+     - WRITE OUTPUT TO:                    <v4_dir>/data.csv
+
+  3. HARD RULES  (the experimental controls)
+     (1) DO NOT read any ground_truth file    -> keeps it GT-free
+     (2) DO NOT re-plot / compare / iterate    -> removes Phase 4
+         (single pass; "partial/imperfect is expected and fine")
+     (3) Reuse the calibration mapping; don't refit axes -> isolates Phase 4
+
+  4. METHODOLOGY (how)
+     - Skill pointer: SKILL.md, METHODOLOGY.md,
+         scripts/{extract_markers, trace_curves, subtract_curves}.py
+     - Per-series method:
+         scatter markers -> connected-component centroids
+         lines           -> per-column color trace
+         bars            -> column tops (one value/bar)
+         error bars      -> whisker cap endpoints
+     - Restrict detection to plot_frame_box
+     - Match layer_type to what you SEE (marker_shape->Scatter; line->Line)
+     - Convert all detections to DATA coords via the calibration
+
+  5. OUTPUT CONTRACT
+     columns: layer_idx, layer_type, series, x, y   (+ y_lo,y_hi for errors)
+     layer_type in {Scatter Plot, Bar Chart, Line Graph, Spline Chart, ErrorBarLayer}
+     one row per data point, in data coordinates
+
+  STRUCTURED RETURN (schema-enforced):
+     { chart, rows_written:int, layers:str, issues:str }
+     "your final message is data, not prose - keep it short"
+
+Element -> variable it controls:
+
+  HARD RULE (1) no GT      -> validity: extraction cannot peek at the answer
+  HARD RULE (2) no Phase4  -> the independent variable being tested
+  HARD RULE (3) reuse cal  -> holds calibration constant (Phase 2 shared)
+  INPUT chart_metadata     -> holds series-ID constant (Phase 1 shared)
+  METHODOLOGY block        -> keeps it the MLLM forward pass, not cv_oracle
+  OUTPUT CONTRACT          -> every chart scorable with zero glue code
+
+Workflow script of record:
+  .claude/projects/.../workflows/scripts/v4-forward-pass-wf_02270dda-63d.js
