@@ -1,0 +1,96 @@
+{
+  "image": "image.png",
+  "image_size": {
+    "width": 870,
+    "height": 563
+  },
+  "plot_frame_box": {
+    "offset": {
+      "x": 111,
+      "y": 6
+    },
+    "size": {
+      "width": 759,
+      "height": 427
+    },
+    "left": 111,
+    "top": 6,
+    "right": 869,
+    "bottom": 432,
+    "description": "Pixel bounding box of the visible plot region in image.png. Origin (0,0) is the top-left of the image; y grows downward. 'offset' is the top-left corner of the box in image coordinates; 'size' is its width and height in pixels. Detected by finding the y-axis line (left), x-axis line (bottom), and the bounding box of non-white pixels inside the L-shaped quadrant (top, right)."
+  },
+  "pixels_per_coordinate_unit": {
+    "x": 29.8481,
+    "y": 356.1254,
+    "x_unit_label": "pixels per day",
+    "y_unit_label": "pixels per fraction-unit",
+    "description": "How many image pixels equal one unit of x or y in data coordinates."
+  },
+  "data_to_pixel_formula": {
+    "col": "col = (x_value - -3.224314) / 0.033503",
+    "row": "row = (y_value - 1.216004) / -0.002808",
+    "explanation": "Convert any (x, y) data coordinate to a (col, row) pixel coordinate in image.png. Derived from the linear axis calibration fit during extraction."
+  },
+  "data_range": {
+    "x_min": 1,
+    "x_max": 23,
+    "y_min": 0.0,
+    "y_max": 1.0
+  },
+  "axis_calibration": {
+    "x_axis": {
+      "formula": "value = 0.033503 * col + -3.224314",
+      "m": 0.033503,
+      "b": -3.224314,
+      "inverse": "col = (value - -3.224314) / 0.033503"
+    },
+    "y_axis": {
+      "formula": "value = -0.002808 * row + 1.216004",
+      "m": -0.002808,
+      "b": 1.216004,
+      "inverse": "row = (value - 1.216004) / -0.002808"
+    }
+  },
+  "worked_example": {
+    "scenario": "Top of the 27\u00b0C marker at day 6 (parous-female fraction 0.3611).",
+    "input": {
+      "x": 6,
+      "y": 0.3611
+    },
+    "compute": [
+      "col = (6 - -3.224314) / 0.033503 = 275.3",
+      "row = (0.3611 - 1.216004) / -0.002808 = 304.5"
+    ],
+    "result": {
+      "col": 275,
+      "row": 304
+    },
+    "verification": "This (col, row) should land on the green 27\u00b0C square at x=6 days."
+  },
+  "detection_internals": {
+    "y_axis_col_detected": 111,
+    "x_axis_row_detected": 432,
+    "all_interior_v_lines": [
+      111
+    ],
+    "all_interior_h_lines": [
+      432,
+      530
+    ],
+    "legend_exclusion_used_for_frame": [
+      30,
+      120,
+      565,
+      620
+    ]
+  },
+  "data_extent_box": {
+    "left": 126,
+    "right": 783,
+    "top": 77,
+    "bottom": 433,
+    "width": 658,
+    "height": 357,
+    "description": "Pixel bounding box of the labeled data tick range (x=1..23, y=0.0..1.0). For bar charts the bars extend past this box."
+  }
+}

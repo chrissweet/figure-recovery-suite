@@ -1,0 +1,229 @@
+layer_idx,layer_type,series,x,y
+0,Line Graph,North America (WB),2005,68.563
+0,Line Graph,North America (WB),2006,70.59
+0,Line Graph,North America (WB),2007,74.526
+0,Line Graph,North America (WB),2008,73.81
+0,Line Graph,North America (WB),2009,71.902
+0,Line Graph,North America (WB),2010,72.141
+0,Line Graph,North America (WB),2011,70.948
+0,Line Graph,North America (WB),2012,75.241
+0,Line Graph,North America (WB),2013,72.856
+0,Line Graph,North America (WB),2014,74.168
+0,Line Graph,North America (WB),2015,75.718
+0,Line Graph,North America (WB),2016,85.377
+0,Line Graph,North America (WB),2017,87.405
+0,Line Graph,North America (WB),2018,88.836
+0,Line Graph,North America (WB),2019,89.551
+0,Line Graph,North America (WB),2020,90.267
+0,Line Graph,North America (WB),2021,91.221
+0,Line Graph,North America (WB),2022,92.175
+0,Line Graph,North America (WB),2023,92.89
+0,Line Graph,North America (WB),2024,93.844
+0,Line Graph,North America (WB),2025,95.037
+1,Line Graph,Europe and Central Asia (WB),2005,35.412
+1,Line Graph,Europe and Central Asia (WB),2006,38.87
+1,Line Graph,Europe and Central Asia (WB),2007,44.117
+1,Line Graph,Europe and Central Asia (WB),2008,48.529
+1,Line Graph,Europe and Central Asia (WB),2009,52.822
+1,Line Graph,Europe and Central Asia (WB),2010,56.996
+1,Line Graph,Europe and Central Asia (WB),2011,60.096
+1,Line Graph,Europe and Central Asia (WB),2012,63.555
+1,Line Graph,Europe and Central Asia (WB),2013,65.94
+1,Line Graph,Europe and Central Asia (WB),2014,68.563
+1,Line Graph,Europe and Central Asia (WB),2015,69.756
+1,Line Graph,Europe and Central Asia (WB),2016,71.902
+1,Line Graph,Europe and Central Asia (WB),2017,74.049
+1,Line Graph,Europe and Central Asia (WB),2018,77.388
+1,Line Graph,Europe and Central Asia (WB),2019,79.773
+1,Line Graph,Europe and Central Asia (WB),2020,82.396
+1,Line Graph,Europe and Central Asia (WB),2021,85.497
+1,Line Graph,Europe and Central Asia (WB),2022,87.166
+1,Line Graph,Europe and Central Asia (WB),2023,88.955
+1,Line Graph,Europe and Central Asia (WB),2024,90.267
+1,Line Graph,Europe and Central Asia (WB),2025,91.698
+2,Line Graph,East Asia and Pacific (WB),2005,15.02
+2,Line Graph,East Asia and Pacific (WB),2006,17.286
+2,Line Graph,East Asia and Pacific (WB),2007,15.974
+2,Line Graph,East Asia and Pacific (WB),2008,25.156
+2,Line Graph,East Asia and Pacific (WB),2009,29.449
+2,Line Graph,East Asia and Pacific (WB),2010,33.981
+2,Line Graph,East Asia and Pacific (WB),2011,37.081
+2,Line Graph,East Asia and Pacific (WB),2012,40.182
+2,Line Graph,East Asia and Pacific (WB),2013,42.805
+2,Line Graph,East Asia and Pacific (WB),2014,44.952
+2,Line Graph,East Asia and Pacific (WB),2015,47.814
+2,Line Graph,East Asia and Pacific (WB),2016,53.061
+2,Line Graph,East Asia and Pacific (WB),2017,56.757
+2,Line Graph,East Asia and Pacific (WB),2018,61.17
+2,Line Graph,East Asia and Pacific (WB),2019,65.463
+2,Line Graph,East Asia and Pacific (WB),2020,71.783
+2,Line Graph,East Asia and Pacific (WB),2021,77.03
+2,Line Graph,East Asia and Pacific (WB),2022,80.846
+2,Line Graph,East Asia and Pacific (WB),2023,83.827
+2,Line Graph,East Asia and Pacific (WB),2024,85.735
+2,Line Graph,East Asia and Pacific (WB),2025,87.405
+3,Line Graph,Latin America and Caribbean (WB),2005,17.524
+3,Line Graph,Latin America and Caribbean (WB),2006,21.34
+3,Line Graph,Latin America and Caribbean (WB),2007,24.083
+3,Line Graph,Latin America and Caribbean (WB),2008,26.945
+3,Line Graph,Latin America and Caribbean (WB),2009,31.119
+3,Line Graph,Latin America and Caribbean (WB),2010,34.696
+3,Line Graph,Latin America and Caribbean (WB),2011,39.228
+3,Line Graph,Latin America and Caribbean (WB),2012,42.805
+3,Line Graph,Latin America and Caribbean (WB),2013,45.906
+3,Line Graph,Latin America and Caribbean (WB),2014,48.41
+3,Line Graph,Latin America and Caribbean (WB),2015,54.015
+3,Line Graph,Latin America and Caribbean (WB),2016,57.115
+3,Line Graph,Latin America and Caribbean (WB),2017,59.739
+3,Line Graph,Latin America and Caribbean (WB),2018,62.839
+3,Line Graph,Latin America and Caribbean (WB),2019,66.655
+3,Line Graph,Latin America and Caribbean (WB),2020,39.466
+3,Line Graph,Latin America and Caribbean (WB),2021,75.122
+3,Line Graph,Latin America and Caribbean (WB),2022,76.434
+3,Line Graph,Latin America and Caribbean (WB),2023,78.938
+3,Line Graph,Latin America and Caribbean (WB),2024,80.965
+3,Line Graph,Latin America and Caribbean (WB),2025,82.873
+4,Line Graph,World,2005,15.855
+4,Line Graph,World,2006,43.759
+4,Line Graph,World,2007,20.386
+4,Line Graph,World,2008,22.891
+4,Line Graph,World,2009,25.276
+4,Line Graph,World,2010,28.257
+4,Line Graph,World,2011,30.88
+4,Line Graph,World,2012,33.146
+4,Line Graph,World,2013,35.173
+4,Line Graph,World,2014,37.081
+4,Line Graph,World,2015,39.586
+4,Line Graph,World,2016,43.282
+4,Line Graph,World,2017,45.906
+4,Line Graph,World,2018,48.768
+4,Line Graph,World,2019,52.822
+4,Line Graph,World,2020,58.546
+4,Line Graph,World,2021,62.601
+4,Line Graph,World,2022,65.94
+4,Line Graph,World,2023,68.325
+4,Line Graph,World,2024,70.352
+4,Line Graph,World,2025,72.618
+5,Line Graph,South Asia (WB),2005,2.022
+5,Line Graph,South Asia (WB),2006,2.499
+5,Line Graph,South Asia (WB),2007,3.453
+5,Line Graph,South Asia (WB),2008,3.93
+5,Line Graph,South Asia (WB),2009,4.884
+5,Line Graph,South Asia (WB),2010,7.03
+5,Line Graph,South Asia (WB),2011,9.177
+5,Line Graph,South Asia (WB),2012,10.131
+5,Line Graph,South Asia (WB),2013,11.323
+5,Line Graph,South Asia (WB),2014,12.516
+5,Line Graph,South Asia (WB),2015,14.305
+5,Line Graph,South Asia (WB),2016,16.332
+5,Line Graph,South Asia (WB),2017,18.24
+5,Line Graph,South Asia (WB),2018,20.148
+5,Line Graph,South Asia (WB),2019,27.541
+5,Line Graph,South Asia (WB),2020,39.109
+5,Line Graph,South Asia (WB),2021,46.383
+5,Line Graph,South Asia (WB),2022,51.749
+5,Line Graph,South Asia (WB),2023,56.638
+5,Line Graph,South Asia (WB),2024,60.812
+5,Line Graph,South Asia (WB),2025,65.463
+6,Line Graph,"MENA, Afghanistan and Pakistan (WB)",2005,8.461
+6,Line Graph,"MENA, Afghanistan and Pakistan (WB)",2006,9.773
+6,Line Graph,"MENA, Afghanistan and Pakistan (WB)",2007,11.8
+6,Line Graph,"MENA, Afghanistan and Pakistan (WB)",2008,14.066
+6,Line Graph,"MENA, Afghanistan and Pakistan (WB)",2009,16.093
+6,Line Graph,"MENA, Afghanistan and Pakistan (WB)",2010,18.24
+6,Line Graph,"MENA, Afghanistan and Pakistan (WB)",2011,19.909
+6,Line Graph,"MENA, Afghanistan and Pakistan (WB)",2012,22.056
+6,Line Graph,"MENA, Afghanistan and Pakistan (WB)",2013,24.918
+6,Line Graph,"MENA, Afghanistan and Pakistan (WB)",2014,28.257
+6,Line Graph,"MENA, Afghanistan and Pakistan (WB)",2015,31.357
+6,Line Graph,"MENA, Afghanistan and Pakistan (WB)",2016,34.458
+6,Line Graph,"MENA, Afghanistan and Pakistan (WB)",2017,38.751
+6,Line Graph,"MENA, Afghanistan and Pakistan (WB)",2018,41.613
+6,Line Graph,"MENA, Afghanistan and Pakistan (WB)",2019,44.952
+6,Line Graph,"MENA, Afghanistan and Pakistan (WB)",2020,49.245
+6,Line Graph,"MENA, Afghanistan and Pakistan (WB)",2021,53.061
+6,Line Graph,"MENA, Afghanistan and Pakistan (WB)",2022,56.4
+6,Line Graph,"MENA, Afghanistan and Pakistan (WB)",2023,58.785
+6,Line Graph,"MENA, Afghanistan and Pakistan (WB)",2024,60.693
+6,Line Graph,"MENA, Afghanistan and Pakistan (WB)",2025,62.601
+7,Line Graph,Sub-Saharan Africa (WB),2005,2.976
+7,Line Graph,Sub-Saharan Africa (WB),2006,2.976
+7,Line Graph,Sub-Saharan Africa (WB),2007,2.976
+7,Line Graph,Sub-Saharan Africa (WB),2008,3.453
+7,Line Graph,Sub-Saharan Africa (WB),2009,4.168
+7,Line Graph,Sub-Saharan Africa (WB),2010,5.838
+7,Line Graph,Sub-Saharan Africa (WB),2011,7.269
+7,Line Graph,Sub-Saharan Africa (WB),2012,8.938
+7,Line Graph,Sub-Saharan Africa (WB),2013,10.846
+7,Line Graph,Sub-Saharan Africa (WB),2014,13.231
+7,Line Graph,Sub-Saharan Africa (WB),2015,15.736
+7,Line Graph,Sub-Saharan Africa (WB),2016,17.882
+7,Line Graph,Sub-Saharan Africa (WB),2017,19.432
+7,Line Graph,Sub-Saharan Africa (WB),2018,21.34
+7,Line Graph,Sub-Saharan Africa (WB),2019,23.487
+7,Line Graph,Sub-Saharan Africa (WB),2020,25.872
+7,Line Graph,Sub-Saharan Africa (WB),2021,28.018
+7,Line Graph,Sub-Saharan Africa (WB),2022,30.165
+7,Line Graph,Sub-Saharan Africa (WB),2023,31.596
+7,Line Graph,Sub-Saharan Africa (WB),2024,32.788
+7,Line Graph,Sub-Saharan Africa (WB),2025,34.577
+0,Scatter Plot,North America (WB),2033.31882,112.512277
+0,Scatter Plot,North America (WB),2025.363553,95.434236
+0,Scatter Plot,North America (WB),2019.181373,89.583038
+0,Scatter Plot,North America (WB),2014.175128,77.931486
+0,Scatter Plot,North America (WB),2021.013166,77.328117
+0,Scatter Plot,North America (WB),2006.426832,72.364566
+0,Scatter Plot,North America (WB),2019.736145,70.309405
+0,Scatter Plot,North America (WB),2018.57566,64.031746
+0,Scatter Plot,North America (WB),2017.647087,59.84664
+0,Scatter Plot,North America (WB),2020.107528,58.927847
+0,Scatter Plot,North America (WB),2015.597463,50.86655
+0,Scatter Plot,North America (WB),2013.013021,42.970367
+0,Scatter Plot,North America (WB),2012.085222,40.462341
+0,Scatter Plot,North America (WB),2011.058307,37.399254
+0,Scatter Plot,North America (WB),2009.136914,30.419704
+0,Scatter Plot,North America (WB),2008.356697,27.064257
+0,Scatter Plot,North America (WB),2007.770523,24.62815
+0,Scatter Plot,North America (WB),2006.346566,18.653996
+0,Scatter Plot,Europe and Central Asia (WB),2025.707442,91.936237
+0,Scatter Plot,Europe and Central Asia (WB),2024.484522,90.912091
+0,Scatter Plot,Europe and Central Asia (WB),2020.630789,84.042105
+0,Scatter Plot,Europe and Central Asia (WB),2017.924233,76.888242
+0,Scatter Plot,Europe and Central Asia (WB),2016.353529,72.646652
+0,Scatter Plot,Europe and Central Asia (WB),2015.362225,70.397859
+0,Scatter Plot,Europe and Central Asia (WB),2013.402216,66.997245
+0,Scatter Plot,Europe and Central Asia (WB),2008.528711,50.312676
+0,Scatter Plot,East Asia and Pacific (WB),2033.31882,112.512277
+0,Scatter Plot,East Asia and Pacific (WB),2019.172999,89.568274
+0,Scatter Plot,East Asia and Pacific (WB),2015.549969,80.551373
+0,Scatter Plot,East Asia and Pacific (WB),2011.624841,73.135105
+0,Scatter Plot,East Asia and Pacific (WB),2006.237383,71.652651
+0,Scatter Plot,East Asia and Pacific (WB),2014.01102,74.195512
+0,Scatter Plot,East Asia and Pacific (WB),2009.942157,72.294065
+0,Scatter Plot,Latin America and Caribbean (WB),2023.79616,80.355982
+0,Scatter Plot,Latin America and Caribbean (WB),2012.264126,43.016661
+0,Scatter Plot,Latin America and Caribbean (WB),2021.819155,50.91425
+0,Scatter Plot,World,2026.746101,96.003289
+0,Scatter Plot,World,2025.787101,95.999909
+0,Scatter Plot,World,2027.204756,95.978184
+0,Scatter Plot,World,2026.117763,95.619736
+0,Scatter Plot,World,2028.737309,95.640936
+0,Scatter Plot,World,2016.343052,46.235207
+0,Scatter Plot,World,2026.239507,73.058051
+0,Scatter Plot,World,2005.483224,16.518088
+0,Scatter Plot,South Asia (WB),2019.556571,36.420719
+0,Scatter Plot,South Asia (WB),2010.048876,7.088501
+0,Scatter Plot,"MENA, Afghanistan and Pakistan (WB)",2033.31882,112.512277
+0,Scatter Plot,"MENA, Afghanistan and Pakistan (WB)",2026.168565,63.745546
+0,Scatter Plot,"MENA, Afghanistan and Pakistan (WB)",2031.197936,63.766746
+0,Scatter Plot,"MENA, Afghanistan and Pakistan (WB)",2024.82539,62.255165
+0,Scatter Plot,"MENA, Afghanistan and Pakistan (WB)",2014.696407,32.433364
+0,Scatter Plot,Sub-Saharan Africa (WB),2033.054153,115.54773
+0,Scatter Plot,Sub-Saharan Africa (WB),2033.872006,112.65166
+0,Scatter Plot,Sub-Saharan Africa (WB),2021.190396,28.452449
+0,Scatter Plot,Sub-Saharan Africa (WB),2019.30365,24.317661
+0,Scatter Plot,Sub-Saharan Africa (WB),2017.618243,20.624759
+0,Scatter Plot,Sub-Saharan Africa (WB),2016.125454,18.01716
+0,Scatter Plot,Sub-Saharan Africa (WB),2014.731495,14.939228
+0,Scatter Plot,Sub-Saharan Africa (WB),2012.616226,10.130762
+0,Scatter Plot,Sub-Saharan Africa (WB),2006.74547,2.737264

@@ -1,0 +1,85 @@
+{
+  "image": "image.png",
+  "image_size": {
+    "width": 850,
+    "height": 600
+  },
+  "plot_frame_box": {
+    "offset": {
+      "x": 47,
+      "y": 20
+    },
+    "size": {
+      "width": 666,
+      "height": 513
+    },
+    "left": 47,
+    "top": 20,
+    "right": 712,
+    "bottom": 532,
+    "description": "Pixel bounding box of the visible plot region in image. Origin (0,0) is the top-left of the image; y grows downward. 'offset' is the top-left corner of the box in image coordinates; 'size' is its width and height in pixels. Detected by finding the y-axis line (left), x-axis line (bottom), and the bounding box of non-white pixels inside the L-shaped quadrant (top, right)."
+  },
+  "pixels_per_coordinate_unit": {
+    "x": 2.4432,
+    "y": 8.8044,
+    "x_unit_label": "pixels per year",
+    "y_unit_label": "pixels per percentage point",
+    "description": "How many image pixels equal one unit of x or y in data coordinates."
+  },
+  "data_to_pixel_formula": {
+    "col": "col = (x_value - 1731.72) / 0.4093",
+    "row": "row = (y_value - 60.331) / -0.11358",
+    "explanation": "Convert any (x, y) data coordinate to a (col, row) pixel coordinate in image.png. Derived from the linear axis calibration fit during extraction."
+  },
+  "data_range": {
+    "x_min": 1751.0,
+    "x_max": 2023.0,
+    "y_min": 0.0,
+    "y_max": 50.0
+  },
+  "axis_calibration": {
+    "x_axis": {
+      "formula": "value = 0.4093 * col + 1731.72",
+      "m": 0.4093,
+      "b": 1731.72,
+      "inverse": "col = (value - 1731.72) / 0.4093"
+    },
+    "y_axis": {
+      "formula": "value = -0.11358 * row + 60.331",
+      "m": -0.11358,
+      "b": 60.331,
+      "inverse": "row = (value - 60.331) / -0.11358"
+    }
+  },
+  "worked_example": {
+    "scenario": "Midpoint of the data range (x=1887.0, y=25.0).",
+    "input": {
+      "x": 1887.0,
+      "y": 25.0
+    },
+    "compute": [
+      "col = (1887.0 - 1731.72) / 0.4093 = 379.4",
+      "row = (25.0 - 60.331) / -0.11358 = 311.1"
+    ],
+    "result": {
+      "col": 379,
+      "row": 311
+    },
+    "verification": "This (col, row) should land near the center of the plot frame."
+  },
+  "detection_internals": {
+    "y_axis_col_detected": null,
+    "x_axis_row_detected": 532,
+    "all_interior_v_lines": [],
+    "all_interior_h_lines": [
+      532
+    ],
+    "legend_exclusion_used_for_frame": [
+      0,
+      600,
+      715,
+      850
+    ],
+    "rule": "Long-run detection: longest contiguous run of pixels with gray<180 exceeding 50% of image height/width. Outer image-border lines (within 15 px of edge) excluded."
+  }
+}

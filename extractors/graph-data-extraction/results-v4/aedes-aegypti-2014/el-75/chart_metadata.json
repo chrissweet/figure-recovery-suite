@@ -1,0 +1,32 @@
+{
+  "panel_id": null,
+  "source_citation": null,
+  "x_axis": {
+    "title": "Temperatures",
+    "unit": "°C",
+    "title_verbatim": "Temperatures (°C)",
+    "decimal_separator": "."
+  },
+  "y_axis": {
+    "title": "Mean Gonotrophic Cycle duration",
+    "unit": null,
+    "title_verbatim": "Mean Gonotrophic Cycle duration",
+    "decimal_separator": "."
+  },
+  "series_legend": [
+    {
+      "series_id": "datapoints",
+      "source_label": "(no in-plot label)",
+      "color": "#000000",
+      "marker_shape": "filled circle with x/y error bars"
+    },
+    {
+      "series_id": "Trend Line",
+      "source_label": "(no in-plot label)",
+      "color": "#FF0000",
+      "line_style": "solid"
+    }
+  ],
+  "chart_title": null,
+  "notes": "3 black markers with x and y error bars + a single red trend line through them. No legend region in source; identification by color and shape in-plot."
+}

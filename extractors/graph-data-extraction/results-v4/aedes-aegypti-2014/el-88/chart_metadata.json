@@ -1,0 +1,28 @@
+{
+  "panel_id": null,
+  "source_citation": null,
+  "x_axis": {
+    "title": "Age of females",
+    "unit": "days",
+    "title_verbatim": "Age of females in days",
+    "decimal_separator": "."
+  },
+  "y_axis": {
+    "title": null,
+    "unit": null,
+    "title_verbatim": null,
+    "decimal_separator": ",",
+    "notes": "Source figure has NO y-axis title. The data.csv column 'survival_proportion' is an inferred semantic interpretation, not extracted from the chart."
+  },
+  "series_legend": [
+    {"series_id": "24C", "source_label": "24 °C", "color": "#000000",
+     "marker_shape": "filled disk"},
+    {"series_id": "27C", "source_label": "27 °C", "color": "#808080",
+     "marker_shape": "filled gray square"},
+    {"series_id": "30C", "source_label": "30 °C", "color": "#808080",
+     "marker_shape": "diamond with black outline and light-gray fill",
+     "marker_shape_notes": "Recipe §2b describes this as 'open black diamond' but the actual rendering is a thin black outline around a gray (~205-230) fill. Surfaced during TDD step 4."}
+  ],
+  "chart_title": null,
+  "notes": "Grayscale-shape scatter (no color cue between series). Legend at right margin (rows 280-400, cols 870-980). data.csv contains 3 phantom rows (24C @ x=56.88, 30C @ x=57.68, 30C @ x=58.27) that captured the legend swatches at cols 940-962 instead of real data — these should be filtered out in Phase 5. The audit-flagged 'missing 30°C tail diamond at (40, 0)' is NOT missing from data.csv (the matched-frame overlay shows it cleanly); the previous matplotlib replot lost it."
+}

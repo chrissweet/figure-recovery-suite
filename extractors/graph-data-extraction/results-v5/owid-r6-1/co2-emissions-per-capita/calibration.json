@@ -1,0 +1,88 @@
+{
+  "image": "image.png",
+  "image_size": {
+    "width": 850,
+    "height": 600
+  },
+  "plot_frame_box": {
+    "offset": {
+      "x": 44,
+      "y": 109
+    },
+    "size": {
+      "width": 642,
+      "height": 402
+    },
+    "left": 44,
+    "top": 109,
+    "right": 686,
+    "bottom": 511,
+    "description": "Plot data area bounded by leftmost x-tick (1750, col 44), rightmost x-tick (2024, col 686), top y-tick gridline (25 t, row 109), and x-axis line / 0 t (row 511)."
+  },
+  "pixels_per_coordinate_unit": {
+    "x": 2.343065693430657,
+    "y": 16.08,
+    "x_unit_label": "pixels per year",
+    "y_unit_label": "pixels per tonne CO2 per capita"
+  },
+  "data_to_pixel_formula": {
+    "col": "col = 44 + (year - 1750) * 2.3431",
+    "row": "row = 109 + (25 - tonnes) * 16.0800"
+  },
+  "data_range": {
+    "x_min": 1750,
+    "x_max": 2024,
+    "y_min": 0.0,
+    "y_max": 25.0
+  },
+  "axis_calibration": {
+    "x_axis": {
+      "formula": "year = 1750 + (col - 44) * 0.42679",
+      "m": 0.42679,
+      "b": 1750.0,
+      "inverse": "col = (year - 1750) / 0.42679 + 44"
+    },
+    "y_axis": {
+      "formula": "tonnes = 25.0 - (row - 109) * 0.06219",
+      "m": -0.06219,
+      "b": 25.0,
+      "inverse": "row = 109 + (25.0 - tonnes) / 0.06219"
+    }
+  },
+  "worked_example": {
+    "scenario": "Year 2000, value 5.0 tonnes CO2 per capita",
+    "input": {
+      "x": 2000,
+      "y": 5.0
+    },
+    "compute": [
+      "col = 44 + (2000 - 1750) * 2.3431 = 44 + 250 * 2.3431 = 44 + 585.78 = 629.8",
+      "row = 109 + (25 - 5.0) * 16.0800 = 109 + 20 * 16.08 = 109 + 321.6 = 430.6"
+    ],
+    "result": {
+      "col": 629.8,
+      "row": 430.6
+    },
+    "verification": "Year 2000 tick is at col 630 (matches); value 5 t gridline label is at row 432 (within 1.4 px)."
+  },
+  "detection_internals": {
+    "x_tick_pixel_centers": {
+      "1750": 44,
+      "1800": 161,
+      "1850": 278,
+      "1900": 395,
+      "1950": 513,
+      "2000": 630,
+      "2024": 686
+    },
+    "y_tick_pixel_rows": {
+      "25t": 109,
+      "20t": 189,
+      "15t": 270,
+      "10t": 350,
+      "5t": 432,
+      "0t": 511
+    },
+    "rule": "Manual anchor on outermost labeled ticks (1750/2024 for x; 25t label gridline and 0t axis-line for y). Internal-tick deviations < 1.5 px confirm linear fit."
+  }
+}

@@ -1,0 +1,322 @@
+layer_idx,layer_type,series,x,y
+0,Line Graph,Sweden,1985,95.626
+0,Line Graph,Sweden,1986,95.886
+0,Line Graph,Sweden,1987,96.146
+0,Line Graph,Sweden,1988,96.666
+0,Line Graph,Sweden,1989,97.447
+0,Line Graph,Sweden,1990,97.577
+0,Line Graph,Sweden,1991,96.406
+0,Line Graph,Sweden,1992,95.756
+0,Line Graph,Sweden,1993,95.105
+0,Line Graph,Sweden,1994,94.324
+0,Line Graph,Sweden,1995,94.585
+0,Line Graph,Sweden,1996,91.462
+0,Line Graph,Sweden,1997,95.105
+0,Line Graph,Sweden,1998,95.365
+0,Line Graph,Sweden,1999,95.626
+0,Line Graph,Sweden,2000,96.666
+0,Line Graph,Sweden,2001,96.146
+0,Line Graph,Sweden,2002,94.845
+0,Line Graph,Sweden,2003,93.284
+0,Line Graph,Sweden,2004,96.016
+0,Line Graph,Sweden,2005,96.927
+0,Line Graph,Sweden,2006,96.406
+0,Line Graph,Sweden,2007,96.927
+0,Line Graph,Sweden,2008,96.927
+0,Line Graph,Sweden,2009,96.666
+0,Line Graph,Sweden,2010,94.324
+0,Line Graph,Sweden,2011,96.146
+0,Line Graph,Sweden,2012,97.447
+0,Line Graph,Sweden,2013,97.447
+0,Line Graph,Sweden,2014,97.968
+0,Line Graph,Sweden,2015,97.968
+0,Line Graph,Sweden,2016,97.707
+0,Line Graph,Sweden,2017,97.707
+0,Line Graph,Sweden,2018,97.707
+0,Line Graph,Sweden,2019,97.968
+0,Line Graph,Sweden,2020,98.488
+0,Line Graph,Sweden,2021,98.228
+0,Line Graph,Sweden,2022,98.228
+0,Line Graph,Sweden,2023,98.488
+0,Line Graph,Sweden,2024,98.748
+0,Line Graph,Sweden,2025,98.748
+1,Line Graph,France,1985,84.176
+1,Line Graph,France,1986,87.689
+1,Line Graph,France,1987,89.12
+1,Line Graph,France,1988,90.031
+1,Line Graph,France,1989,87.038
+1,Line Graph,France,1990,88.339
+1,Line Graph,France,1991,86.778
+1,Line Graph,France,1992,88.86
+1,Line Graph,France,1993,92.503
+1,Line Graph,France,1994,92.763
+1,Line Graph,France,1995,91.982
+1,Line Graph,France,1997,91.982
+1,Line Graph,France,1998,89.25
+1,Line Graph,France,1999,89.901
+1,Line Graph,France,2000,90.681
+1,Line Graph,France,2001,91.462
+1,Line Graph,France,2002,90.551
+1,Line Graph,France,2003,89.901
+1,Line Graph,France,2004,89.901
+1,Line Graph,France,2005,89.12
+1,Line Graph,France,2006,89.901
+1,Line Graph,France,2007,89.64
+1,Line Graph,France,2008,90.161
+1,Line Graph,France,2009,90.161
+1,Line Graph,France,2010,89.64
+1,Line Graph,France,2011,89.64
+1,Line Graph,France,2012,89.901
+1,Line Graph,France,2013,90.681
+1,Line Graph,France,2014,93.414
+1,Line Graph,France,2015,91.982
+1,Line Graph,France,2016,89.901
+1,Line Graph,France,2017,88.339
+1,Line Graph,France,2018,91.202
+1,Line Graph,France,2019,90.421
+1,Line Graph,France,2020,90.681
+1,Line Graph,France,2021,90.942
+1,Line Graph,France,2022,87.298
+1,Line Graph,France,2023,91.982
+1,Line Graph,France,2024,94.845
+1,Line Graph,France,2025,94.845
+2,Line Graph,United Kingdom,1985,21.723
+2,Line Graph,United Kingdom,1986,21.072
+2,Line Graph,United Kingdom,1987,19.901
+2,Line Graph,United Kingdom,1988,22.113
+2,Line Graph,United Kingdom,1989,24.065
+2,Line Graph,United Kingdom,1990,22.503
+2,Line Graph,United Kingdom,1991,23.544
+2,Line Graph,United Kingdom,1992,25.886
+2,Line Graph,United Kingdom,1993,29.269
+2,Line Graph,United Kingdom,1994,29.009
+2,Line Graph,United Kingdom,1995,28.228
+2,Line Graph,United Kingdom,1996,28.488
+2,Line Graph,United Kingdom,1997,29.789
+2,Line Graph,United Kingdom,1998,29.789
+2,Line Graph,United Kingdom,1999,28.228
+2,Line Graph,United Kingdom,2000,25.105
+2,Line Graph,United Kingdom,2001,25.756
+2,Line Graph,United Kingdom,2002,25.366
+2,Line Graph,United Kingdom,2003,24.845
+2,Line Graph,United Kingdom,2004,23.804
+2,Line Graph,United Kingdom,2005,24.585
+2,Line Graph,United Kingdom,2006,23.414
+2,Line Graph,United Kingdom,2007,20.682
+2,Line Graph,United Kingdom,2008,19.25
+2,Line Graph,United Kingdom,2009,24.845
+2,Line Graph,United Kingdom,2010,23.284
+2,Line Graph,United Kingdom,2011,28.228
+2,Line Graph,United Kingdom,2012,30.57
+2,Line Graph,United Kingdom,2013,34.473
+2,Line Graph,United Kingdom,2014,37.856
+2,Line Graph,United Kingdom,2015,45.143
+2,Line Graph,United Kingdom,2016,45.663
+2,Line Graph,United Kingdom,2017,49.957
+2,Line Graph,United Kingdom,2018,52.429
+2,Line Graph,United Kingdom,2019,53.73
+2,Line Graph,United Kingdom,2020,58.934
+2,Line Graph,United Kingdom,2021,54.771
+2,Line Graph,United Kingdom,2022,56.072
+2,Line Graph,United Kingdom,2023,60.235
+2,Line Graph,United Kingdom,2024,64.659
+2,Line Graph,United Kingdom,2025,64.399
+3,Line Graph,Germany,1987,30.57
+3,Line Graph,Germany,1988,32.392
+3,Line Graph,Germany,1989,32.392
+3,Line Graph,Germany,1990,31.611
+3,Line Graph,Germany,1991,31.091
+3,Line Graph,Germany,1992,33.433
+3,Line Graph,Germany,1993,33.302
+3,Line Graph,Germany,1994,33.433
+3,Line Graph,Germany,1995,33.693
+3,Line Graph,Germany,1996,33.953
+3,Line Graph,Germany,1997,35.254
+3,Line Graph,Germany,1998,33.953
+3,Line Graph,Germany,1999,36.035
+3,Line Graph,Germany,2000,36.035
+3,Line Graph,Germany,2001,36.035
+3,Line Graph,Germany,2002,35.775
+3,Line Graph,Germany,2003,35.254
+3,Line Graph,Germany,2004,36.815
+3,Line Graph,Germany,2005,36.815
+3,Line Graph,Germany,2006,37.856
+3,Line Graph,Germany,2007,36.555
+3,Line Graph,Germany,2008,38.377
+3,Line Graph,Germany,2009,39.157
+3,Line Graph,Germany,2010,39.157
+3,Line Graph,Germany,2011,38.377
+3,Line Graph,Germany,2012,39.157
+3,Line Graph,Germany,2013,39.418
+3,Line Graph,Germany,2014,41.76
+3,Line Graph,Germany,2015,43.581
+3,Line Graph,Germany,2016,42.801
+3,Line Graph,Germany,2017,45.143
+3,Line Graph,Germany,2018,47.224
+3,Line Graph,Germany,2019,52.429
+3,Line Graph,Germany,2020,55.551
+3,Line Graph,Germany,2021,52.169
+3,Line Graph,Germany,2022,50.607
+3,Line Graph,Germany,2023,55.942
+3,Line Graph,Germany,2024,58.414
+3,Line Graph,Germany,2025,58.934
+4,Line Graph,United States,1985,27.447
+4,Line Graph,United States,1986,28.749
+4,Line Graph,United States,1987,27.968
+4,Line Graph,United States,1988,28.228
+4,Line Graph,United States,1989,27.968
+4,Line Graph,United States,1990,29.529
+4,Line Graph,United States,1991,30.31
+4,Line Graph,United States,1992,29.529
+4,Line Graph,United States,1993,28.749
+4,Line Graph,United States,1995,30.31
+4,Line Graph,United States,1996,30.57
+4,Line Graph,United States,1997,29.009
+4,Line Graph,United States,1998,28.488
+4,Line Graph,United States,1999,29.269
+4,Line Graph,United States,2000,28.879
+4,Line Graph,United States,2001,28.228
+4,Line Graph,United States,2002,29.009
+4,Line Graph,United States,2003,28.749
+4,Line Graph,United States,2004,28.488
+4,Line Graph,United States,2005,28.228
+4,Line Graph,United States,2006,28.749
+4,Line Graph,United States,2007,27.968
+4,Line Graph,United States,2008,28.749
+4,Line Graph,United States,2009,30.57
+4,Line Graph,United States,2010,30.05
+4,Line Graph,United States,2011,31.351
+4,Line Graph,United States,2012,31.091
+4,Line Graph,United States,2015,32.912
+4,Line Graph,United States,2016,34.994
+4,Line Graph,United States,2017,37.076
+4,Line Graph,United States,2018,36.685
+4,Line Graph,United States,2019,37.596
+4,Line Graph,United States,2020,39.678
+4,Line Graph,United States,2021,39.418
+4,Line Graph,United States,2022,40.198
+4,Line Graph,United States,2023,40.849
+4,Line Graph,United States,2024,41.76
+4,Line Graph,United States,2025,42.801
+5,Line Graph,World,1985,35.775
+5,Line Graph,World,1986,36.035
+5,Line Graph,World,1987,36.035
+5,Line Graph,World,1988,36.555
+5,Line Graph,World,1989,35.514
+5,Line Graph,World,1990,35.775
+5,Line Graph,World,1991,36.165
+5,Line Graph,World,1992,36.035
+5,Line Graph,World,1993,36.815
+5,Line Graph,World,1994,36.555
+5,Line Graph,World,1995,36.946
+5,Line Graph,World,1996,36.815
+5,Line Graph,World,1997,36.295
+5,Line Graph,World,1998,35.775
+5,Line Graph,World,1999,35.514
+5,Line Graph,World,2000,35.254
+5,Line Graph,World,2001,34.734
+5,Line Graph,World,2002,34.473
+5,Line Graph,World,2003,33.172
+5,Line Graph,World,2004,33.433
+5,Line Graph,World,2005,32.912
+5,Line Graph,World,2006,32.782
+5,Line Graph,World,2007,31.741
+5,Line Graph,World,2008,32.262
+5,Line Graph,World,2009,32.652
+5,Line Graph,World,2010,32.392
+5,Line Graph,World,2011,31.871
+5,Line Graph,World,2012,31.611
+5,Line Graph,World,2013,32.131
+5,Line Graph,World,2014,32.652
+5,Line Graph,World,2015,33.433
+5,Line Graph,World,2016,34.213
+5,Line Graph,World,2017,34.734
+5,Line Graph,World,2018,35.124
+5,Line Graph,World,2019,36.295
+5,Line Graph,World,2020,37.856
+5,Line Graph,World,2021,37.856
+5,Line Graph,World,2022,38.507
+5,Line Graph,World,2023,39.418
+5,Line Graph,World,2024,40.719
+5,Line Graph,World,2025,42.28
+6,Line Graph,China,1985,22.243
+6,Line Graph,China,1986,28.488
+6,Line Graph,China,1987,20.161
+6,Line Graph,China,1988,19.901
+6,Line Graph,China,1989,20.161
+6,Line Graph,China,1990,20.421
+6,Line Graph,China,1991,18.34
+6,Line Graph,China,1992,17.299
+6,Line Graph,China,1993,18.86
+6,Line Graph,China,1994,19.641
+6,Line Graph,China,1995,20.421
+6,Line Graph,China,1996,18.86
+6,Line Graph,China,1997,18.6
+6,Line Graph,China,1998,18.6
+6,Line Graph,China,1999,17.299
+6,Line Graph,China,2000,17.819
+6,Line Graph,China,2001,19.901
+6,Line Graph,China,2002,19.12
+6,Line Graph,China,2003,17.299
+6,Line Graph,China,2004,18.34
+6,Line Graph,China,2005,18.079
+6,Line Graph,China,2006,17.559
+6,Line Graph,China,2007,17.039
+6,Line Graph,China,2008,20.682
+6,Line Graph,China,2009,19.901
+6,Line Graph,China,2010,20.421
+6,Line Graph,China,2011,18.86
+6,Line Graph,China,2012,21.983
+6,Line Graph,China,2013,21.983
+6,Line Graph,China,2014,24.325
+6,Line Graph,China,2015,26.927
+6,Line Graph,China,2016,28.228
+6,Line Graph,China,2017,29.009
+6,Line Graph,China,2018,29.659
+6,Line Graph,China,2019,31.351
+6,Line Graph,China,2020,32.652
+6,Line Graph,China,2021,33.433
+6,Line Graph,China,2022,34.734
+6,Line Graph,China,2023,35.254
+6,Line Graph,China,2024,38.117
+6,Line Graph,China,2025,41.239
+7,Line Graph,India,1985,29.789
+7,Line Graph,India,1986,28.228
+7,Line Graph,India,1987,24.325
+7,Line Graph,India,1988,25.105
+7,Line Graph,India,1989,24.845
+7,Line Graph,India,1990,25.105
+7,Line Graph,India,1991,24.585
+7,Line Graph,India,1992,22.633
+7,Line Graph,India,1993,21.462
+7,Line Graph,India,1994,21.983
+7,Line Graph,India,1995,19.641
+7,Line Graph,India,1996,17.819
+7,Line Graph,India,1997,17.559
+7,Line Graph,India,1998,19.12
+7,Line Graph,India,1999,18.079
+7,Line Graph,India,2000,16.778
+7,Line Graph,India,2001,16.128
+7,Line Graph,India,2002,14.957
+7,Line Graph,India,2003,14.697
+7,Line Graph,India,2005,17.559
+7,Line Graph,India,2006,19.381
+7,Line Graph,India,2007,19.901
+7,Line Graph,India,2008,18.34
+7,Line Graph,India,2009,17.039
+7,Line Graph,India,2010,17.559
+7,Line Graph,India,2011,19.641
+7,Line Graph,India,2012,17.819
+7,Line Graph,India,2013,18.86
+7,Line Graph,India,2014,18.34
+7,Line Graph,India,2015,17.559
+7,Line Graph,India,2016,17.039
+7,Line Graph,India,2017,17.949
+7,Line Graph,India,2018,18.6
+7,Line Graph,India,2019,20.161
+7,Line Graph,India,2020,21.723
+7,Line Graph,India,2021,21.462
+7,Line Graph,India,2022,22.503
+7,Line Graph,India,2023,21.723
+7,Line Graph,India,2024,22.373
+7,Line Graph,India,2025,26.146

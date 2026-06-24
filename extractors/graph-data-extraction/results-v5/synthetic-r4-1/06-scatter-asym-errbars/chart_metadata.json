@@ -1,0 +1,23 @@
+{
+  "chart_id": "06-scatter-asym-errbars",
+  "panel_id": null,
+  "source_citation": null,
+  "chart_type": "scatter_with_asymmetric_xy_error_bars",
+  "x_axis": {
+    "title":  "Drive current",
+    "unit":   "mA",
+    "title_verbatim": "Drive current (mA)",
+    "decimal_separator": "."
+  },
+  "y_axis": {
+    "title":  "Photon count",
+    "unit":   "x10^3 / s",
+    "title_verbatim": "Photon count (×10³ / s)",
+    "decimal_separator": "."
+  },
+  "series_legend": [
+    {"series_id": "measurement", "source_label": "Measurement", "color": "#1f77b4", "marker_shape": "filled_circle"}
+  ],
+  "chart_title": "Synthetic #6 — scatter with asymmetric x/y error bars",
+  "notes": "Single-series scatter, 8 filled blue circle markers, each with BOTH x and y error bars; each bar's upper/lower (or left/right) legs are asymmetric. Cap size ~4 px in image. Legend at top-left inside plot frame."
+}

@@ -1,0 +1,90 @@
+{
+  "image": "image.png",
+  "image_size": {
+    "width": 989,
+    "height": 637
+  },
+  "plot_frame_box": {
+    "offset": {
+      "x": 83,
+      "y": 14
+    },
+    "size": {
+      "width": 902,
+      "height": 557
+    },
+    "left": 83,
+    "top": 14,
+    "right": 984,
+    "bottom": 570,
+    "description": "Pixel bounding box of the visible plot region in image.png. Origin (0,0) is the top-left of the image; y grows downward. 'offset' is the top-left corner of the box in image coordinates; 'size' is its width and height in pixels. Detected by finding the y-axis line (left), x-axis line (bottom), and the bounding box of non-white pixels inside the L-shaped quadrant (top, right)."
+  },
+  "pixels_per_coordinate_unit": {
+    "x": 100.1703,
+    "y": 34.6873,
+    "x_unit_label": "pixels per \u00b0C",
+    "y_unit_label": "pixels per day",
+    "description": "How many image pixels equal one unit of x or y in data coordinates."
+  },
+  "data_to_pixel_formula": {
+    "col": "col = (x_value - 21.680537) / 0.009983",
+    "row": "row = (y_value - 16.415132) / -0.028829",
+    "explanation": "Convert any (x, y) data coordinate to a (col, row) pixel coordinate in image.png. Derived from the linear axis calibration fit during extraction."
+  },
+  "data_range": {
+    "x_min": 24,
+    "x_max": 30,
+    "y_min": 0.0,
+    "y_max": 16.0
+  },
+  "axis_calibration": {
+    "x_axis": {
+      "formula": "value = 0.009983 * col + 21.680537",
+      "m": 0.009983,
+      "b": 21.680537,
+      "inverse": "col = (value - 21.680537) / 0.009983"
+    },
+    "y_axis": {
+      "formula": "value = -0.028829 * row + 16.415132",
+      "m": -0.028829,
+      "b": 16.415132,
+      "inverse": "row = (value - 16.415132) / -0.028829"
+    }
+  },
+  "worked_example": {
+    "scenario": "Top of the 27\u00b0C GC1 bar (mean duration 7.485 days).",
+    "input": {
+      "x": 27,
+      "y": 7.485
+    },
+    "compute": [
+      "col = (27 - 21.680537) / 0.009983 = 532.9",
+      "row = (7.485 - 16.415132) / -0.028829 = 309.8"
+    ],
+    "result": {
+      "col": 533,
+      "row": 310
+    },
+    "verification": "This (col, row) should land on top of the dark-blue middle bar."
+  },
+  "detection_internals": {
+    "y_axis_col_detected": 83,
+    "x_axis_row_detected": 570,
+    "all_interior_v_lines": [
+      83,
+      166,
+      233,
+      466,
+      533
+    ],
+    "all_interior_h_lines": [
+      570
+    ],
+    "legend_exclusion_used_for_frame": [
+      20,
+      160,
+      680,
+      980
+    ]
+  }
+}

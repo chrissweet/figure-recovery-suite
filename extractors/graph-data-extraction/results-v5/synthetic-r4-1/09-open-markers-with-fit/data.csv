@@ -1,0 +1,39 @@
+layer_idx,layer_type,series,x,y
+0,Scatter Plot,Measurement,0.501,4.9949
+0,Scatter Plot,Measurement,1.3088,6.818
+0,Scatter Plot,Measurement,2.1413,7.4567
+0,Scatter Plot,Measurement,2.9476,8.7532
+0,Scatter Plot,Measurement,3.7725,11.0357
+0,Scatter Plot,Measurement,4.5945,12.098
+0,Scatter Plot,Measurement,5.4032,13.9913
+0,Scatter Plot,Measurement,6.2312,14.634
+0,Scatter Plot,Measurement,7.0546,15.9995
+0,Scatter Plot,Measurement,7.8714,17.5548
+0,Scatter Plot,Measurement,8.6842,19.1928
+0,Scatter Plot,Measurement,9.4959,21.2569
+1,Line Graph,Linear fit,0.014,4.1134
+1,Line Graph,Linear fit,0.3887,4.7889
+1,Line Graph,Linear fit,0.8287,5.5489
+1,Line Graph,Linear fit,1.236,6.2666
+1,Line Graph,Linear fit,1.6597,7.0266
+1,Line Graph,Linear fit,2.067,7.3854
+1,Line Graph,Linear fit,2.4907,8.462
+1,Line Graph,Linear fit,2.9143,8.9687
+1,Line Graph,Linear fit,3.3217,9.9397
+1,Line Graph,Linear fit,3.7453,11.0585
+1,Line Graph,Linear fit,4.1527,11.3752
+1,Line Graph,Linear fit,4.5764,12.0929
+1,Line Graph,Linear fit,5.0,12.8951
+1,Line Graph,Linear fit,5.4074,14.6683
+1,Line Graph,Linear fit,5.831,14.3305
+1,Line Graph,Linear fit,6.2384,14.5416
+1,Line Graph,Linear fit,6.662,15.8082
+1,Line Graph,Linear fit,7.0694,16.2726
+1,Line Graph,Linear fit,7.493,17.2437
+1,Line Graph,Linear fit,7.9167,17.5181
+1,Line Graph,Linear fit,8.324,18.7213
+1,Line Graph,Linear fit,8.7477,19.1857
+1,Line Graph,Linear fit,9.155,20.1568
+1,Line Graph,Linear fit,9.5787,20.9167
+1,Line Graph,Linear fit,9.986,21.6345
+0,Scatter Plot,Measurement,0.421328,26.616355

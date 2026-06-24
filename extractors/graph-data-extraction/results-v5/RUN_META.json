@@ -1,0 +1,8 @@
+{
+  "experiment": "forward-pass-only (v4) and cv_oracle recovery (V5)",
+  "run_date": "2026-06-24",
+  "model": "opus-4-8 (current)",
+  "n_charts": 26,
+  "calibration": "reused from results-v3 (MLLM Phase-2)",
+  "note": "v4=Phases1-3 no Phase4; V5=v4+cv_oracle points-only recall recovery, GT-free"
+}

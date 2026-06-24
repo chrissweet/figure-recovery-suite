@@ -1,0 +1,158 @@
+[
+  {
+    "corpus": "aedes-aegypti-2014",
+    "chart": "el-100",
+    "image": "corpora/aedes-aegypti-2014/charts/el-100/image.png",
+    "v4_dir": "extractors/graph-data-extraction/results-v4/aedes-aegypti-2014/el-100"
+  },
+  {
+    "corpus": "aedes-aegypti-2014",
+    "chart": "el-60-a",
+    "image": "corpora/aedes-aegypti-2014/charts/el-60-a/image.png",
+    "v4_dir": "extractors/graph-data-extraction/results-v4/aedes-aegypti-2014/el-60-a"
+  },
+  {
+    "corpus": "aedes-aegypti-2014",
+    "chart": "el-60-b",
+    "image": "corpora/aedes-aegypti-2014/charts/el-60-b/image.png",
+    "v4_dir": "extractors/graph-data-extraction/results-v4/aedes-aegypti-2014/el-60-b"
+  },
+  {
+    "corpus": "aedes-aegypti-2014",
+    "chart": "el-62",
+    "image": "corpora/aedes-aegypti-2014/charts/el-62/image.png",
+    "v4_dir": "extractors/graph-data-extraction/results-v4/aedes-aegypti-2014/el-62"
+  },
+  {
+    "corpus": "aedes-aegypti-2014",
+    "chart": "el-75",
+    "image": "corpora/aedes-aegypti-2014/charts/el-75/image.png",
+    "v4_dir": "extractors/graph-data-extraction/results-v4/aedes-aegypti-2014/el-75"
+  },
+  {
+    "corpus": "aedes-aegypti-2014",
+    "chart": "el-80",
+    "image": "corpora/aedes-aegypti-2014/charts/el-80/image.png",
+    "v4_dir": "extractors/graph-data-extraction/results-v4/aedes-aegypti-2014/el-80"
+  },
+  {
+    "corpus": "aedes-aegypti-2014",
+    "chart": "el-88",
+    "image": "corpora/aedes-aegypti-2014/charts/el-88/image.png",
+    "v4_dir": "extractors/graph-data-extraction/results-v4/aedes-aegypti-2014/el-88"
+  },
+  {
+    "corpus": "aedes-aegypti-2014",
+    "chart": "el-94",
+    "image": "corpora/aedes-aegypti-2014/charts/el-94/image.png",
+    "v4_dir": "extractors/graph-data-extraction/results-v4/aedes-aegypti-2014/el-94"
+  },
+  {
+    "corpus": "synthetic-r4-1",
+    "chart": "01-linear-scatter",
+    "image": "corpora/synthetic-r4-1/charts/01-linear-scatter/image.png",
+    "v4_dir": "extractors/graph-data-extraction/results-v4/synthetic-r4-1/01-linear-scatter"
+  },
+  {
+    "corpus": "synthetic-r4-1",
+    "chart": "02-simple-bar",
+    "image": "corpora/synthetic-r4-1/charts/02-simple-bar/image.png",
+    "v4_dir": "extractors/graph-data-extraction/results-v4/synthetic-r4-1/02-simple-bar"
+  },
+  {
+    "corpus": "synthetic-r4-1",
+    "chart": "03-grouped-bar-errbars",
+    "image": "corpora/synthetic-r4-1/charts/03-grouped-bar-errbars/image.png",
+    "v4_dir": "extractors/graph-data-extraction/results-v4/synthetic-r4-1/03-grouped-bar-errbars"
+  },
+  {
+    "corpus": "synthetic-r4-1",
+    "chart": "04-log-y-line",
+    "image": "corpora/synthetic-r4-1/charts/04-log-y-line/image.png",
+    "v4_dir": "extractors/graph-data-extraction/results-v4/synthetic-r4-1/04-log-y-line"
+  },
+  {
+    "corpus": "synthetic-r4-1",
+    "chart": "05-stacked-bar",
+    "image": "corpora/synthetic-r4-1/charts/05-stacked-bar/image.png",
+    "v4_dir": "extractors/graph-data-extraction/results-v4/synthetic-r4-1/05-stacked-bar"
+  },
+  {
+    "corpus": "synthetic-r4-1",
+    "chart": "06-scatter-asym-errbars",
+    "image": "corpora/synthetic-r4-1/charts/06-scatter-asym-errbars/image.png",
+    "v4_dir": "extractors/graph-data-extraction/results-v4/synthetic-r4-1/06-scatter-asym-errbars"
+  },
+  {
+    "corpus": "synthetic-r4-1",
+    "chart": "07-dual-y-axes",
+    "image": "corpora/synthetic-r4-1/charts/07-dual-y-axes/image.png",
+    "v4_dir": "extractors/graph-data-extraction/results-v4/synthetic-r4-1/07-dual-y-axes"
+  },
+  {
+    "corpus": "synthetic-r4-1",
+    "chart": "08-percent-scinot-ticks",
+    "image": "corpora/synthetic-r4-1/charts/08-percent-scinot-ticks/image.png",
+    "v4_dir": "extractors/graph-data-extraction/results-v4/synthetic-r4-1/08-percent-scinot-ticks"
+  },
+  {
+    "corpus": "synthetic-r4-1",
+    "chart": "09-open-markers-with-fit",
+    "image": "corpora/synthetic-r4-1/charts/09-open-markers-with-fit/image.png",
+    "v4_dir": "extractors/graph-data-extraction/results-v4/synthetic-r4-1/09-open-markers-with-fit"
+  },
+  {
+    "corpus": "synthetic-r4-1",
+    "chart": "10-crossing-curves",
+    "image": "corpora/synthetic-r4-1/charts/10-crossing-curves/image.png",
+    "v4_dir": "extractors/graph-data-extraction/results-v4/synthetic-r4-1/10-crossing-curves"
+  },
+  {
+    "corpus": "owid-r6-1",
+    "chart": "annual-co2-emissions-per-country",
+    "image": "corpora/owid-r6-1/charts/annual-co2-emissions-per-country/image.png",
+    "v4_dir": "extractors/graph-data-extraction/results-v4/owid-r6-1/annual-co2-emissions-per-country"
+  },
+  {
+    "corpus": "owid-r6-1",
+    "chart": "child-mortality",
+    "image": "corpora/owid-r6-1/charts/child-mortality/image.png",
+    "v4_dir": "extractors/graph-data-extraction/results-v4/owid-r6-1/child-mortality"
+  },
+  {
+    "corpus": "owid-r6-1",
+    "chart": "co2-emissions-per-capita",
+    "image": "corpora/owid-r6-1/charts/co2-emissions-per-capita/image.png",
+    "v4_dir": "extractors/graph-data-extraction/results-v4/owid-r6-1/co2-emissions-per-capita"
+  },
+  {
+    "corpus": "owid-r6-1",
+    "chart": "global-primary-energy",
+    "image": "corpora/owid-r6-1/charts/global-primary-energy/image.png",
+    "v4_dir": "extractors/graph-data-extraction/results-v4/owid-r6-1/global-primary-energy"
+  },
+  {
+    "corpus": "owid-r6-1",
+    "chart": "life-expectancy",
+    "image": "corpora/owid-r6-1/charts/life-expectancy/image.png",
+    "v4_dir": "extractors/graph-data-extraction/results-v4/owid-r6-1/life-expectancy"
+  },
+  {
+    "corpus": "owid-r6-1",
+    "chart": "life-expectancy-vs-gdp-per-capita",
+    "image": "corpora/owid-r6-1/charts/life-expectancy-vs-gdp-per-capita/image.png",
+    "v4_dir": "extractors/graph-data-extraction/results-v4/owid-r6-1/life-expectancy-vs-gdp-per-capita"
+  },
+  {
+    "corpus": "owid-r6-1",
+    "chart": "share-electricity-low-carbon",
+    "image": "corpora/owid-r6-1/charts/share-electricity-low-carbon/image.png",
+    "v4_dir": "extractors/graph-data-extraction/results-v4/owid-r6-1/share-electricity-low-carbon"
+  },
+  {
+    "corpus": "owid-r6-1",
+    "chart": "share-of-individuals-using-the-internet",
+    "image": "corpora/owid-r6-1/charts/share-of-individuals-using-the-internet/image.png",
+    "v4_dir": "extractors/graph-data-extraction/results-v4/owid-r6-1/share-of-individuals-using-the-internet"
+  }
+]
