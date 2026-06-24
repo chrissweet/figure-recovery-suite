@@ -1,0 +1,29 @@
+{
+  "chart_id": "02-simple-bar",
+  "chart_type": "Grouped Column Chart",
+  "panel_id": null,
+  "source_citation": null,
+  "x_axis": {
+    "title": "Pipeline stage",
+    "unit": null,
+    "title_verbatim": "Pipeline stage",
+    "decimal_separator": "."
+  },
+  "y_axis": {
+    "title": "Throughput",
+    "unit": "req/s",
+    "title_verbatim": "Throughput (req/s)",
+    "decimal_separator": "."
+  },
+  "series_legend": [
+    {
+      "series_id": "Throughput",
+      "source_label": "Throughput",
+      "color": "#2CA02C",
+      "marker_shape": "bar"
+    }
+  ],
+  "chart_title": "Synthetic #2 — single-series vertical bars",
+  "decimal_separator": ".",
+  "notes": "Single-series vertical bar chart, 6 categorical x-positions (Alpha..Foxtrot). Legend sits at the top-right inside the plot frame; excluded from bar-mask. tab:green fill #2CA02C with thin dark outline. Y-axis is linear req/s, ticks at 0,5,10,15,20,25. Horizontal gridlines at every major y-tick."
+}

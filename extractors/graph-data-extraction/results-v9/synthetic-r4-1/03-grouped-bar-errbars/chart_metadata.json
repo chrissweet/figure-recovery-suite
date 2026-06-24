@@ -1,0 +1,26 @@
+{
+  "chart_id": "03-grouped-bar-errbars",
+  "chart_type": "grouped-bar-with-asymmetric-error-bars",
+  "panel_id": null,
+  "source_citation": null,
+  "x_axis": {
+    "title":  "Benchmark window",
+    "unit":   null,
+    "title_verbatim": "Benchmark window",
+    "decimal_separator": "."
+  },
+  "y_axis": {
+    "title":  "Throughput",
+    "unit":   "kops/s",
+    "title_verbatim": "Throughput (kops/s)",
+    "decimal_separator": "."
+  },
+  "series_legend": [
+    {"series_id": "Baseline",  "source_label": "Baseline",  "color": "#1F77B4", "marker_shape": "bar"},
+    {"series_id": "Tuned",     "source_label": "Tuned",     "color": "#FF7F0E", "marker_shape": "bar"},
+    {"series_id": "Tuned+JIT", "source_label": "Tuned+JIT", "color": "#2CA02C", "marker_shape": "bar"}
+  ],
+  "chart_title": "Synthetic #3 — grouped bars, asymmetric error bars",
+  "x_categories": ["Q1", "Q2", "Q3", "Q4", "Q5"],
+  "notes": "3-series x 5-group grouped bar chart with asymmetric upper/lower error caps on every bar. Legend at top-left inside plot area, three rows: Baseline, Tuned, Tuned+JIT. Plot frame is a closed rectangle; horizontal gridlines at every major y-tick (0, 20, 40, 60, 80, 100). Series colors match matplotlib's default tab10 cycle (C0/C1/C2). Each bar is ~33 px wide; bar centers per group at (group_tick + series_offset) where Baseline offset = -34 px, Tuned = 0, Tuned+JIT = +34 px relative to the group's x-tick column."
+}

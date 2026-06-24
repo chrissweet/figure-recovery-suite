@@ -1,0 +1,86 @@
+{
+  "panel_id": null,
+  "source_citation": "Global Carbon Budget (2025); Population based on various sources (2024)",
+  "source_url": "OurWorldinData.org/co2-and-greenhouse-gas-emissions",
+  "license": "CC BY",
+  "x_axis": {
+    "title": "Year",
+    "unit": null,
+    "title_verbatim": "Year",
+    "decimal_separator": ".",
+    "range": [
+      1750,
+      2024
+    ]
+  },
+  "y_axis": {
+    "title": "tonnes CO2 per capita",
+    "unit": "t",
+    "title_verbatim": "(implicit; tick labels carry 't' suffix)",
+    "decimal_separator": ".",
+    "range": [
+      0.0,
+      25.0
+    ]
+  },
+  "series_legend": [
+    {
+      "series_id": "United States",
+      "source_label": "United States",
+      "color": "#6d3e91",
+      "line_style": "solid"
+    },
+    {
+      "series_id": "Canada",
+      "source_label": "Canada",
+      "color": "#996d39",
+      "line_style": "solid"
+    },
+    {
+      "series_id": "China",
+      "source_label": "China",
+      "color": "#a2559c",
+      "line_style": "solid"
+    },
+    {
+      "series_id": "South Africa",
+      "source_label": "South Africa",
+      "color": "#00295b",
+      "line_style": "solid"
+    },
+    {
+      "series_id": "European Union (27)",
+      "source_label": "European Union (27)",
+      "color": "#2c8465",
+      "line_style": "solid"
+    },
+    {
+      "series_id": "World",
+      "source_label": "World",
+      "color": "#b13507",
+      "line_style": "solid"
+    },
+    {
+      "series_id": "United Kingdom",
+      "source_label": "United Kingdom",
+      "color": "#577394",
+      "line_style": "solid"
+    },
+    {
+      "series_id": "India",
+      "source_label": "India",
+      "color": "#883039",
+      "line_style": "solid"
+    },
+    {
+      "series_id": "Kenya",
+      "source_label": "Kenya",
+      "color": "#9a5129",
+      "line_style": "solid"
+    }
+  ],
+  "chart_title": "CO₂ emissions per capita",
+  "chart_subtitle": "Carbon dioxide (CO₂) emissions from burning fossil fuels and industrial processes. This includes emissions from transport, electricity generation, and heating, but not land-use change.",
+  "publisher": "Our World in Data",
+  "notes": "Nine country/region series on a shared linear time axis 1750-2024. Many lines cross each other multiple times; per-series LAB-color-distance with winner-take-all + purity check (second-nearest > 1.15x nearest) separates them. Three series pairs are color-similar in BGR: Canada/Kenya (dist 32), United States/China (59), United States/United Kingdom (60); the purity check resolves the cross-talk. Kenya, India, and World stay near the floor (<5 t) for the entire window. Tick labels carry 't' suffix on y-axis. China only appears visually after ~1966 in this rendering despite the data series formally starting earlier; pre-1966 China rows where no visible pixel exists are absent from data.csv."
+}

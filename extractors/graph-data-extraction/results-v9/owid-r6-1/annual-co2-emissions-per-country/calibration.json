@@ -1,0 +1,122 @@
+{
+  "image_size": {
+    "width": 850,
+    "height": 600
+  },
+  "plot_frame_box": {
+    "offset": {
+      "x": 82,
+      "y": 60
+    },
+    "size": {
+      "width": 630,
+      "height": 473
+    },
+    "left": 82,
+    "top": 60,
+    "right": 711,
+    "bottom": 532,
+    "description": "Plot area: cols 82-711 span years 1750-2024; rows 60-532 span ~12.5e9 down to 0 tonnes."
+  },
+  "pixels_per_coordinate_unit": {
+    "x": 2.2956204379562046,
+    "y": 3.583333333333333e-08,
+    "x_unit_label": "year",
+    "y_unit_label": "tonnes CO2 per year"
+  },
+  "data_to_pixel_formula": {
+    "col": "col = (x_value - 1714.279809) / 0.435612",
+    "row": "row = (y_value - 14846511627.906977) / -27906976.744186"
+  },
+  "data_range": {
+    "x_min": 1750.0,
+    "x_max": 2024.0,
+    "y_min": 0.0,
+    "y_max": 13172093023.255814
+  },
+  "axis_calibration": {
+    "x_axis": {
+      "formula": "year = m*col + b",
+      "m": 0.4356120826709062,
+      "b": 1714.2798092209857,
+      "inverse": "col = (year - b) / m",
+      "anchors": [
+        {
+          "col": 82,
+          "value": 1750,
+          "label": "1750"
+        },
+        {
+          "col": 711,
+          "value": 2024,
+          "label": "2024"
+        }
+      ],
+      "interior_tick_centers": {
+        "1800": 197,
+        "1850": 312,
+        "1900": 426,
+        "1950": 541,
+        "2000": 656
+      }
+    },
+    "y_axis": {
+      "formula": "tonnes = m*row + b",
+      "m": -27906976.744186047,
+      "b": 14846511627.906977,
+      "inverse": "row = (tonnes - b) / m",
+      "anchors": [
+        {
+          "row": 102,
+          "value": 12000000000.0,
+          "label": "12 billion t"
+        },
+        {
+          "row": 532,
+          "value": 0.0,
+          "label": "0 t"
+        }
+      ],
+      "interior_tick_rows": {
+        "10e9": 173,
+        "8e9": 245,
+        "6e9": 317,
+        "4e9": 388,
+        "2e9": 460
+      },
+      "billion_t_note": "Tick labels printed as 'N billion t' (e.g. '12 billion t'). Parsed as N * 1e9 raw tonnes; data.csv y is raw tonnes."
+    }
+  },
+  "worked_example": {
+    "scenario": "Convert China 2024 endpoint (~12.5 billion t at col 711) to pixel.",
+    "input": {
+      "x": 2024,
+      "y": 12500000000.0
+    },
+    "compute": [
+      "col = (2024 - 1714.2798) / 0.435612",
+      "row = (12.5e9 - 14846511627.9070) / -27906976.744186"
+    ],
+    "result": {
+      "col": 711.0,
+      "row": 84.08333333333333
+    },
+    "verification": "col ~711 matches right edge of plot; row ~84 sits just above 12 billion gridline (row 102), consistent with China's ~12.6B-2024 peak."
+  },
+  "detection_internals": {
+    "x_axis_baseline_row": 532,
+    "y_axis_gridline_rows": {
+      "12e9": 102,
+      "10e9": 173,
+      "8e9": 245,
+      "6e9": 317,
+      "4e9": 388,
+      "2e9": 460
+    },
+    "x_axis_extent_cols": [
+      82,
+      711
+    ],
+    "method": "winner-take-all nearest series color per pixel with TOL_PURE=22 L2 RGB distance to reject antialiased edges; per-column median row; drop isolated-column spurs (no neighbor within +/-3)."
+  }
+}
