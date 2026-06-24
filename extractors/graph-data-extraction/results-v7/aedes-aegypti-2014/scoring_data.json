@@ -1,7 +1,7 @@
 {
   "corpus": "aedes-aegypti-2014",
   "extractor": "graph-data-extraction",
-  "results_dir": "results-v2",
+  "results_dir": "results-v7",
   "n_charts": 8,
   "charts": {
     "el-100": {
@@ -12,79 +12,79 @@
       "y_range": 24.256999999999998,
       "scatter": {
         "summary": {
-          "tp": 34,
-          "fn": 19,
-          "fp": 23,
-          "precision": 0.5965,
-          "recall": 0.6415,
-          "f1": 0.6182,
-          "jaccard": 0.4474
+          "tp": 0,
+          "fn": 53,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
         },
         "gt_n": 53,
-        "mine_n": 57,
+        "mine_n": 0,
         "by_series": {
-          "24c": {
+          "unmapped:24c": {
             "gt_label": "24c",
-            "tp": 8,
-            "fn": 8,
-            "fp": 10,
+            "tp": 0,
+            "fn": 16,
+            "fp": 0,
             "gt_n": 16,
-            "mine_n": 18
+            "mine_n": 0
           },
-          "27c": {
+          "unmapped:27c": {
             "gt_label": "27c",
-            "tp": 8,
-            "fn": 10,
-            "fp": 11,
+            "tp": 0,
+            "fn": 18,
+            "fp": 0,
             "gt_n": 18,
-            "mine_n": 19
+            "mine_n": 0
           },
-          "30c": {
+          "unmapped:30c": {
             "gt_label": "30c",
-            "tp": 18,
-            "fn": 1,
-            "fp": 2,
+            "tp": 0,
+            "fn": 19,
+            "fp": 0,
             "gt_n": 19,
-            "mine_n": 20
+            "mine_n": 0
           }
         }
       },
       "curves": {
         "summary": {
-          "tp": 44,
-          "fn": 4,
+          "tp": 0,
+          "fn": 48,
           "fp": 0,
-          "precision": 1.0,
-          "recall": 0.9167,
-          "f1": 0.9565,
-          "jaccard": 0.9167
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
         },
         "gt_n": 48,
-        "mine_n": 194,
+        "mine_n": 0,
         "by_series": {
-          "if24c": {
+          "unmapped:iffor24c": {
             "gt_label": "iffor24c",
-            "tp": 20,
-            "fn": 1,
+            "tp": 0,
+            "fn": 21,
             "fp": 0,
             "gt_n": 21,
-            "mine_n": 39
+            "mine_n": 0
           },
-          "if27c": {
+          "unmapped:iffor27c": {
             "gt_label": "iffor27c",
-            "tp": 2,
-            "fn": 0,
+            "tp": 0,
+            "fn": 2,
             "fp": 0,
             "gt_n": 2,
-            "mine_n": 91
+            "mine_n": 0
           },
-          "if30c": {
+          "unmapped:iffor30c": {
             "gt_label": "iffor30c",
-            "tp": 22,
-            "fn": 3,
+            "tp": 0,
+            "fn": 25,
             "fp": 0,
             "gt_n": 25,
-            "mine_n": 64
+            "mine_n": 0
           }
         }
       },
@@ -103,13 +103,13 @@
         "by_series": {}
       },
       "combined": {
-        "tp": 78,
-        "fn": 23,
-        "fp": 23,
-        "precision": 0.7723,
-        "recall": 0.7723,
-        "f1": 0.7723,
-        "jaccard": 0.629
+        "tp": 0,
+        "fn": 101,
+        "fp": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "jaccard": 0.0
       }
     },
     "el-60-a": {
@@ -129,21 +129,8 @@
           "jaccard": 0.0
         },
         "gt_n": 0,
-        "mine_n": 26,
-        "by_series": {
-          "24c": {
-            "error": "no GT match",
-            "mine_n": 6
-          },
-          "27c": {
-            "error": "no GT match",
-            "mine_n": 14
-          },
-          "30c": {
-            "error": "no GT match",
-            "mine_n": 6
-          }
-        }
+        "mine_n": 0,
+        "by_series": {}
       },
       "curves": {
         "summary": {
@@ -216,63 +203,63 @@
       "y_range": 0.7109000000000001,
       "scatter": {
         "summary": {
-          "tp": 3,
-          "fn": 0,
+          "tp": 0,
+          "fn": 3,
           "fp": 0,
-          "precision": 1.0,
-          "recall": 1.0,
-          "f1": 1.0,
-          "jaccard": 1.0
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
         },
         "gt_n": 3,
-        "mine_n": 3,
+        "mine_n": 0,
         "by_series": {
-          "24c": {
+          "unmapped:series1": {
             "gt_label": "series1",
-            "tp": 1,
-            "fn": 0,
+            "tp": 0,
+            "fn": 1,
             "fp": 0,
             "gt_n": 1,
-            "mine_n": 1
+            "mine_n": 0
           },
-          "27c": {
+          "unmapped:series2": {
             "gt_label": "series2",
-            "tp": 1,
-            "fn": 0,
+            "tp": 0,
+            "fn": 1,
             "fp": 0,
             "gt_n": 1,
-            "mine_n": 1
+            "mine_n": 0
           },
-          "30c": {
+          "unmapped:series3": {
             "gt_label": "series3",
-            "tp": 1,
-            "fn": 0,
+            "tp": 0,
+            "fn": 1,
             "fp": 0,
             "gt_n": 1,
-            "mine_n": 1
+            "mine_n": 0
           }
         }
       },
       "curves": {
         "summary": {
-          "tp": 2,
-          "fn": 0,
+          "tp": 0,
+          "fn": 2,
           "fp": 0,
-          "precision": 1.0,
-          "recall": 1.0,
-          "f1": 1.0,
-          "jaccard": 1.0
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
         },
         "gt_n": 2,
-        "mine_n": 2,
+        "mine_n": 0,
         "by_series": {
-          "trendline": {
+          "unmapped:trendline": {
             "gt_label": "trendline",
-            "tp": 2,
-            "fn": 0,
+            "tp": 0,
+            "fn": 2,
             "fp": 0,
             "gt_n": 2,
-            "mine_n": 2
+            "mine_n": 0
           }
         }
       },
@@ -291,13 +278,13 @@
         "by_series": {}
       },
       "combined": {
-        "tp": 5,
-        "fn": 0,
+        "tp": 0,
+        "fn": 5,
         "fp": 0,
-        "precision": 1.0,
-        "recall": 1.0,
-        "f1": 1.0,
-        "jaccard": 1.0
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "jaccard": 0.0
       }
     },
     "el-62": {
@@ -308,40 +295,40 @@
       "y_range": 5.928000000000001,
       "scatter": {
         "summary": {
-          "tp": 8,
-          "fn": 0,
+          "tp": 0,
+          "fn": 8,
           "fp": 0,
-          "precision": 1.0,
-          "recall": 1.0,
-          "f1": 1.0,
-          "jaccard": 1.0
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
         },
         "gt_n": 8,
-        "mine_n": 8,
+        "mine_n": 0,
         "by_series": {
-          "gc1": {
+          "unmapped:meandurationofgc1": {
             "gt_label": "meandurationofgc1",
-            "tp": 3,
-            "fn": 0,
+            "tp": 0,
+            "fn": 3,
             "fp": 0,
             "gt_n": 3,
-            "mine_n": 3
+            "mine_n": 0
           },
-          "gc2": {
+          "unmapped:meandurationofgc2": {
             "gt_label": "meandurationofgc2",
-            "tp": 3,
-            "fn": 0,
+            "tp": 0,
+            "fn": 3,
             "fp": 0,
             "gt_n": 3,
-            "mine_n": 3
+            "mine_n": 0
           },
-          "gc3": {
+          "unmapped:meandurationofgc3": {
             "gt_label": "meandurationofgc3",
-            "tp": 2,
-            "fn": 0,
+            "tp": 0,
+            "fn": 2,
             "fp": 0,
             "gt_n": 2,
-            "mine_n": 2
+            "mine_n": 0
           }
         }
       },
@@ -361,45 +348,45 @@
       },
       "errbars": {
         "summary": {
-          "tp": 8,
-          "fn": 0,
+          "tp": 0,
+          "fn": 8,
           "fp": 0,
-          "precision": 1.0,
-          "recall": 1.0,
-          "f1": 1.0,
-          "jaccard": 1.0
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
         },
         "gt_n": 8,
-        "mine_n": 8,
+        "mine_n": 0,
         "by_series": {
           "meandurationofgc1": {
             "schema": "y_lo/y_hi",
-            "tp": 3,
-            "fn": 0,
+            "tp": 0,
+            "fn": 3,
             "fp": 0
           },
           "meandurationofgc2": {
             "schema": "y_lo/y_hi",
-            "tp": 3,
-            "fn": 0,
+            "tp": 0,
+            "fn": 3,
             "fp": 0
           },
           "meandurationofgc3": {
             "schema": "y_lo/y_hi",
-            "tp": 2,
-            "fn": 0,
+            "tp": 0,
+            "fn": 2,
             "fp": 0
           }
         }
       },
       "combined": {
-        "tp": 16,
-        "fn": 0,
+        "tp": 0,
+        "fn": 16,
         "fp": 0,
-        "precision": 1.0,
-        "recall": 1.0,
-        "f1": 1.0,
-        "jaccard": 1.0
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "jaccard": 0.0
       }
     },
     "el-75": {
@@ -410,38 +397,38 @@
       "y_range": 17.636,
       "scatter": {
         "summary": {
-          "tp": 3,
-          "fn": 0,
+          "tp": 0,
+          "fn": 3,
           "fp": 0,
-          "precision": 1.0,
-          "recall": 1.0,
-          "f1": 1.0,
-          "jaccard": 1.0
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
         },
         "gt_n": 3,
-        "mine_n": 3,
+        "mine_n": 0,
         "by_series": {}
       },
       "curves": {
         "summary": {
-          "tp": 2,
-          "fn": 0,
+          "tp": 0,
+          "fn": 2,
           "fp": 0,
-          "precision": 1.0,
-          "recall": 1.0,
-          "f1": 1.0,
-          "jaccard": 1.0
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
         },
         "gt_n": 2,
-        "mine_n": 2,
+        "mine_n": 0,
         "by_series": {
-          "trendline": {
+          "unmapped:trendline": {
             "gt_label": "trendline",
-            "tp": 2,
-            "fn": 0,
+            "tp": 0,
+            "fn": 2,
             "fp": 0,
             "gt_n": 2,
-            "mine_n": 2
+            "mine_n": 0
           }
         }
       },
@@ -467,13 +454,13 @@
         }
       },
       "combined": {
-        "tp": 5,
-        "fn": 3,
+        "tp": 0,
+        "fn": 8,
         "fp": 0,
-        "precision": 1.0,
-        "recall": 0.625,
-        "f1": 0.7692,
-        "jaccard": 0.625
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "jaccard": 0.0
       }
     },
     "el-80": {
@@ -484,40 +471,40 @@
       "y_range": 43.129999999999995,
       "scatter": {
         "summary": {
-          "tp": 8,
-          "fn": 0,
+          "tp": 0,
+          "fn": 8,
           "fp": 0,
-          "precision": 1.0,
-          "recall": 1.0,
-          "f1": 1.0,
-          "jaccard": 1.0
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
         },
         "gt_n": 8,
-        "mine_n": 8,
+        "mine_n": 0,
         "by_series": {
-          "gc1": {
+          "unmapped:meannumberofeggsfemaleingc1": {
             "gt_label": "meannumberofeggsfemaleingc1",
-            "tp": 3,
-            "fn": 0,
+            "tp": 0,
+            "fn": 3,
             "fp": 0,
             "gt_n": 3,
-            "mine_n": 3
+            "mine_n": 0
           },
-          "gc2": {
+          "unmapped:meannumberofeggsfemaleingc2": {
             "gt_label": "meannumberofeggsfemaleingc2",
-            "tp": 3,
-            "fn": 0,
+            "tp": 0,
+            "fn": 3,
             "fp": 0,
             "gt_n": 3,
-            "mine_n": 3
+            "mine_n": 0
           },
-          "gc3": {
+          "unmapped:meannumberofeggsfemaleingc3": {
             "gt_label": "meannumberofeggsfemaleingc3",
-            "tp": 2,
-            "fn": 0,
+            "tp": 0,
+            "fn": 2,
             "fp": 0,
             "gt_n": 2,
-            "mine_n": 2
+            "mine_n": 0
           }
         }
       },
@@ -537,45 +524,45 @@
       },
       "errbars": {
         "summary": {
-          "tp": 8,
-          "fn": 0,
+          "tp": 0,
+          "fn": 8,
           "fp": 0,
-          "precision": 1.0,
-          "recall": 1.0,
-          "f1": 1.0,
-          "jaccard": 1.0
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
         },
         "gt_n": 8,
-        "mine_n": 8,
+        "mine_n": 0,
         "by_series": {
           "meannumberofeggsfemaleingc1": {
             "schema": "y_lo/y_hi",
-            "tp": 3,
-            "fn": 0,
+            "tp": 0,
+            "fn": 3,
             "fp": 0
           },
           "meannumberofeggsfemaleingc2": {
             "schema": "y_lo/y_hi",
-            "tp": 3,
-            "fn": 0,
+            "tp": 0,
+            "fn": 3,
             "fp": 0
           },
           "meannumberofeggsfemaleingc3": {
             "schema": "y_lo/y_hi",
-            "tp": 2,
-            "fn": 0,
+            "tp": 0,
+            "fn": 2,
             "fp": 0
           }
         }
       },
       "combined": {
-        "tp": 16,
-        "fn": 0,
+        "tp": 0,
+        "fn": 16,
         "fp": 0,
-        "precision": 1.0,
-        "recall": 1.0,
-        "f1": 1.0,
-        "jaccard": 1.0
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "jaccard": 0.0
       }
     },
     "el-88": {
@@ -586,40 +573,40 @@
       "y_range": 0.9833,
       "scatter": {
         "summary": {
-          "tp": 73,
-          "fn": 2,
-          "fp": 4,
-          "precision": 0.9481,
-          "recall": 0.9733,
-          "f1": 0.9605,
-          "jaccard": 0.9241
+          "tp": 0,
+          "fn": 75,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
         },
         "gt_n": 75,
-        "mine_n": 77,
+        "mine_n": 0,
         "by_series": {
-          "24c": {
+          "unmapped:24c": {
             "gt_label": "24c",
-            "tp": 28,
-            "fn": 0,
-            "fp": 2,
+            "tp": 0,
+            "fn": 28,
+            "fp": 0,
             "gt_n": 28,
-            "mine_n": 30
+            "mine_n": 0
           },
-          "27c": {
+          "unmapped:27c": {
             "gt_label": "27c",
-            "tp": 25,
-            "fn": 0,
+            "tp": 0,
+            "fn": 25,
             "fp": 0,
             "gt_n": 25,
-            "mine_n": 25
+            "mine_n": 0
           },
-          "30c": {
+          "unmapped:30c": {
             "gt_label": "30c",
-            "tp": 20,
-            "fn": 2,
-            "fp": 2,
+            "tp": 0,
+            "fn": 22,
+            "fp": 0,
             "gt_n": 22,
-            "mine_n": 22
+            "mine_n": 0
           }
         }
       },
@@ -652,13 +639,13 @@
         "by_series": {}
       },
       "combined": {
-        "tp": 73,
-        "fn": 2,
-        "fp": 4,
-        "precision": 0.9481,
-        "recall": 0.9733,
-        "f1": 0.9605,
-        "jaccard": 0.9241
+        "tp": 0,
+        "fn": 75,
+        "fp": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "jaccard": 0.0
       }
     },
     "el-94": {
@@ -669,79 +656,79 @@
       "y_range": 0.049866999999999995,
       "scatter": {
         "summary": {
-          "tp": 57,
-          "fn": 18,
-          "fp": 6,
-          "precision": 0.9048,
-          "recall": 0.76,
-          "f1": 0.8261,
-          "jaccard": 0.7037
+          "tp": 47,
+          "fn": 28,
+          "fp": 4,
+          "precision": 0.9216,
+          "recall": 0.6267,
+          "f1": 0.746,
+          "jaccard": 0.5949
         },
         "gt_n": 75,
-        "mine_n": 63,
+        "mine_n": 51,
         "by_series": {
           "24c": {
             "gt_label": "24c",
-            "tp": 29,
-            "fn": 0,
-            "fp": 2,
+            "tp": 20,
+            "fn": 9,
+            "fp": 0,
             "gt_n": 29,
-            "mine_n": 31
+            "mine_n": 20
           },
           "27c": {
             "gt_label": "27c",
-            "tp": 14,
-            "fn": 11,
-            "fp": 0,
+            "tp": 17,
+            "fn": 8,
+            "fp": 3,
             "gt_n": 25,
-            "mine_n": 14
+            "mine_n": 20
           },
           "30c": {
             "gt_label": "30c",
-            "tp": 14,
-            "fn": 7,
-            "fp": 4,
+            "tp": 10,
+            "fn": 11,
+            "fp": 1,
             "gt_n": 21,
-            "mine_n": 18
+            "mine_n": 11
           }
         }
       },
       "curves": {
         "summary": {
-          "tp": 73,
-          "fn": 11,
+          "tp": 54,
+          "fn": 30,
           "fp": 0,
           "precision": 1.0,
-          "recall": 0.869,
-          "f1": 0.9299,
-          "jaccard": 0.869
+          "recall": 0.6429,
+          "f1": 0.7826,
+          "jaccard": 0.6429
         },
         "gt_n": 84,
-        "mine_n": 215,
+        "mine_n": 262,
         "by_series": {
           "pcurve24c": {
             "gt_label": "pcurvefor24c",
-            "tp": 20,
-            "fn": 1,
+            "tp": 17,
+            "fn": 4,
             "fp": 0,
             "gt_n": 21,
             "mine_n": 76
           },
           "pcurve27c": {
             "gt_label": "pcurvefor27c",
-            "tp": 30,
-            "fn": 0,
+            "tp": 29,
+            "fn": 1,
             "fp": 0,
             "gt_n": 30,
-            "mine_n": 92
+            "mine_n": 97
           },
           "pcurve30c": {
             "gt_label": "pcurvefor30c",
-            "tp": 23,
-            "fn": 10,
+            "tp": 8,
+            "fn": 25,
             "fp": 0,
             "gt_n": 33,
-            "mine_n": 47
+            "mine_n": 89
           }
         }
       },
@@ -760,52 +747,52 @@
         "by_series": {}
       },
       "combined": {
-        "tp": 130,
-        "fn": 29,
-        "fp": 6,
-        "precision": 0.9559,
-        "recall": 0.8176,
-        "f1": 0.8814,
-        "jaccard": 0.7879
+        "tp": 101,
+        "fn": 58,
+        "fp": 4,
+        "precision": 0.9619,
+        "recall": 0.6352,
+        "f1": 0.7652,
+        "jaccard": 0.6196
       }
     }
   },
   "totals": {
     "scatter": {
-      "tp": 186,
-      "fn": 39,
-      "fp": 33,
-      "precision": 0.8493,
-      "recall": 0.8267,
-      "f1": 0.8378,
-      "jaccard": 0.7209
+      "tp": 47,
+      "fn": 178,
+      "fp": 4,
+      "precision": 0.9216,
+      "recall": 0.2089,
+      "f1": 0.3406,
+      "jaccard": 0.2052
     },
     "curves": {
-      "tp": 121,
-      "fn": 41,
+      "tp": 54,
+      "fn": 108,
       "fp": 0,
       "precision": 1.0,
-      "recall": 0.7469,
-      "f1": 0.8551,
-      "jaccard": 0.7469
+      "recall": 0.3333,
+      "f1": 0.5,
+      "jaccard": 0.3333
     },
     "errbars": {
-      "tp": 16,
-      "fn": 3,
+      "tp": 0,
+      "fn": 19,
       "fp": 0,
-      "precision": 1.0,
-      "recall": 0.8421,
-      "f1": 0.9143,
-      "jaccard": 0.8421
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "jaccard": 0.0
     },
     "combined": {
-      "tp": 323,
-      "fn": 83,
-      "fp": 33,
-      "precision": 0.9073,
-      "recall": 0.7956,
-      "f1": 0.8478,
-      "jaccard": 0.7358
+      "tp": 101,
+      "fn": 305,
+      "fp": 4,
+      "precision": 0.9619,
+      "recall": 0.2488,
+      "f1": 0.3953,
+      "jaccard": 0.2463
     }
   }
 }

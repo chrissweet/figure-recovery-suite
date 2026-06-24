@@ -1,0 +1,25 @@
+{
+  "chart_id": "05-stacked-bar",
+  "panel_id": null,
+  "source_citation": null,
+  "chart_title": "Synthetic #5 — stacked bars",
+  "x_axis": {
+    "title": "Service",
+    "unit": null,
+    "title_verbatim": "Service",
+    "decimal_separator": "."
+  },
+  "y_axis": {
+    "title": "Utilisation",
+    "unit": "% of node",
+    "title_verbatim": "Utilisation (% of node)",
+    "decimal_separator": "."
+  },
+  "series_legend": [
+    {"series_id": "CPU",     "source_label": "CPU",     "color": "#1F77B4", "segment_position_bottom_to_top": 1},
+    {"series_id": "Memory",  "source_label": "Memory",  "color": "#FF7F0E", "segment_position_bottom_to_top": 2},
+    {"series_id": "IO_Wait", "source_label": "IO Wait", "color": "#2CA02C", "segment_position_bottom_to_top": 3}
+  ],
+  "categories": ["Web", "API", "Worker", "Cron", "DB"],
+  "notes": "Five categorical bars, each stacked with three segments. Stack order bottom-to-top is CPU (blue) -> Memory (orange) -> IO Wait (green). Light gray horizontal gridlines at every 20 units; bar fill colors are matplotlib tab10 defaults. Legend at top-left inside plot area."
+}

@@ -1,0 +1,25 @@
+{
+  "chart_id": "01-linear-scatter",
+  "chart_type": "scatter",
+  "panel_id": null,
+  "source_citation": null,
+  "x_axis": {
+    "title": "Time",
+    "unit": "s",
+    "title_verbatim": "Time (s)",
+    "decimal_separator": "."
+  },
+  "y_axis": {
+    "title": "Concentration",
+    "unit": "mol/L",
+    "title_verbatim": "Concentration (mol/L)",
+    "decimal_separator": "."
+  },
+  "series_legend": [
+    {"series_id": "Series A", "source_label": "Series A", "color": "#1F77B4", "marker_shape": "circle", "marker_style": "o"},
+    {"series_id": "Series B", "source_label": "Series B", "color": "#FF7F0E", "marker_shape": "square", "marker_style": "s"},
+    {"series_id": "Series C", "source_label": "Series C", "color": "#2CA02C", "marker_shape": "diamond", "marker_style": "D"}
+  ],
+  "chart_title": "Synthetic #01 — linear scatter",
+  "notes": "Default matplotlib palette (C0/C1/C2). Legend at top-right inside plot area; both axes linear. Baseline of synthetic-r4-1 corpus."
+}

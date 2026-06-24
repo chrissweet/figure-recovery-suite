@@ -1,0 +1,44 @@
+{
+  "panel_id": "B",
+  "source_citation": null,
+  "x_axis": {
+    "title": "Temperatures",
+    "unit": "°C",
+    "title_verbatim": "Temperatures (°C)",
+    "decimal_separator": "."
+  },
+  "y_axis": {
+    "title": "Maximum Parity Rate",
+    "unit": null,
+    "title_verbatim": "Maximum Parity Rate",
+    "decimal_separator": ","
+  },
+  "series_legend": [
+    {
+      "series_id": "24C",
+      "source_label": "24°C",
+      "color": "#0000FF",
+      "marker_shape": "filled circle"
+    },
+    {
+      "series_id": "27C",
+      "source_label": "27°C",
+      "color": "#00FF00",
+      "marker_shape": "filled square"
+    },
+    {
+      "series_id": "30C",
+      "source_label": "30°C",
+      "color": "#FF0000",
+      "marker_shape": "filled diamond"
+    },
+    {
+      "series_id": "Trend Line",
+      "source_label": "(no in-plot label)",
+      "color": "#000000",
+      "line_style": "solid"
+    }
+  ],
+  "chart_title": null,
+  "notes": "Source has no legend; series identified by marker shape and color in-plot. Trend line is a single black line through the 3 markers. Pure-primary palette (BGR(255,0,0) etc.) — V_max=255 required."
+}

@@ -1,0 +1,275 @@
+layer_idx,layer_type,series,x,y
+1,Line Graph,Exponential,0.470694,80.407952
+1,Line Graph,Exponential,0.53993,77.303205
+1,Line Graph,Exponential,0.609166,75.300264
+1,Line Graph,Exponential,0.678402,73.34922
+1,Line Graph,Exponential,0.747638,69.597478
+1,Line Graph,Exponential,0.816874,67.794194
+1,Line Graph,Exponential,0.88611,66.037633
+1,Line Graph,Exponential,0.955346,62.659872
+1,Line Graph,Exponential,1.024582,61.036342
+1,Line Graph,Exponential,1.093818,59.454879
+1,Line Graph,Exponential,1.163054,56.413819
+1,Line Graph,Exponential,1.23229,54.952126
+1,Line Graph,Exponential,1.301526,53.528306
+1,Line Graph,Exponential,1.370762,50.790384
+1,Line Graph,Exponential,1.439998,49.474396
+1,Line Graph,Exponential,1.509234,48.192505
+1,Line Graph,Exponential,1.57847,45.727504
+1,Line Graph,Exponential,1.647706,44.542696
+1,Line Graph,Exponential,1.716942,43.388586
+1,Line Graph,Exponential,1.786178,41.169302
+1,Line Graph,Exponential,1.855414,40.102597
+1,Line Graph,Exponential,1.92465,39.063531
+1,Line Graph,Exponential,1.993886,37.065469
+1,Line Graph,Exponential,2.063122,36.105096
+1,Line Graph,Exponential,2.132358,35.169606
+1,Line Graph,Exponential,2.201594,33.811622
+1,Line Graph,Exponential,2.27083,32.506073
+1,Line Graph,Exponential,2.340066,31.663834
+1,Line Graph,Exponential,2.409302,30.441216
+1,Line Graph,Exponential,2.478538,29.265807
+1,Line Graph,Exponential,2.547774,28.507524
+1,Line Graph,Exponential,2.61701,27.768889
+1,Line Graph,Exponential,2.686246,26.348537
+1,Line Graph,Exponential,2.755482,25.665841
+1,Line Graph,Exponential,2.824718,25.000834
+1,Line Graph,Exponential,2.893954,23.722065
+1,Line Graph,Exponential,2.96319,23.107422
+1,Line Graph,Exponential,3.032426,22.508705
+1,Line Graph,Exponential,3.101662,21.357406
+1,Line Graph,Exponential,3.170898,20.804031
+1,Line Graph,Exponential,3.240134,20.264995
+1,Line Graph,Exponential,3.30937,19.22846
+1,Line Graph,Exponential,3.378606,18.730247
+1,Line Graph,Exponential,3.447842,18.244943
+1,Line Graph,Exponential,3.517078,17.311731
+1,Line Graph,Exponential,3.586314,16.863181
+1,Line Graph,Exponential,3.65555,16.426253
+1,Line Graph,Exponential,3.724786,15.586066
+1,Line Graph,Exponential,3.794022,15.182228
+1,Line Graph,Exponential,3.863258,14.788853
+1,Line Graph,Exponential,3.932494,14.032418
+1,Line Graph,Exponential,4.00173,13.668835
+1,Line Graph,Exponential,4.070966,13.314673
+1,Line Graph,Exponential,4.140202,12.63364
+1,Line Graph,Exponential,4.209438,12.3063
+1,Line Graph,Exponential,4.278674,11.987441
+1,Line Graph,Exponential,4.34791,11.374295
+1,Line Graph,Exponential,4.417146,11.079585
+1,Line Graph,Exponential,4.486382,10.792511
+1,Line Graph,Exponential,4.555618,10.240484
+1,Line Graph,Exponential,4.624854,9.975151
+1,Line Graph,Exponential,4.69409,9.716693
+1,Line Graph,Exponential,4.763326,9.219694
+1,Line Graph,Exponential,4.832562,8.98081
+1,Line Graph,Exponential,4.901798,8.748115
+1,Line Graph,Exponential,4.971034,8.300658
+1,Line Graph,Exponential,5.04027,8.085586
+1,Line Graph,Exponential,5.109506,7.876087
+1,Line Graph,Exponential,5.178742,7.473233
+1,Line Graph,Exponential,5.247978,7.2796
+1,Line Graph,Exponential,5.317214,7.090984
+1,Line Graph,Exponential,5.38645,6.728287
+1,Line Graph,Exponential,5.455686,6.553956
+1,Line Graph,Exponential,5.524922,6.384141
+1,Line Graph,Exponential,5.594158,6.057599
+1,Line Graph,Exponential,5.663394,5.900645
+1,Line Graph,Exponential,5.73263,5.747758
+1,Line Graph,Exponential,5.801866,5.453766
+1,Line Graph,Exponential,5.871102,5.312458
+1,Line Graph,Exponential,5.940338,5.174811
+1,Line Graph,Exponential,6.009574,4.910124
+1,Line Graph,Exponential,6.07881,4.782902
+1,Line Graph,Exponential,6.148046,4.658976
+1,Line Graph,Exponential,6.217282,4.420674
+1,Line Graph,Exponential,6.286518,4.306134
+1,Line Graph,Exponential,6.355754,22.410437
+1,Line Graph,Exponential,6.42499,21.639589
+1,Line Graph,Exponential,6.494226,21.264165
+1,Line Graph,Exponential,6.563462,20.895255
+1,Line Graph,Exponential,6.632698,20.176523
+1,Line Graph,Exponential,6.701934,19.826482
+1,Line Graph,Exponential,6.77117,19.482514
+1,Line Graph,Exponential,6.840406,3.22609
+1,Line Graph,Exponential,6.909642,3.142502
+1,Line Graph,Exponential,6.978878,3.061079
+1,Line Graph,Exponential,7.048114,2.904507
+1,Line Graph,Exponential,7.11735,2.829251
+1,Line Graph,Exponential,7.186586,2.755945
+1,Line Graph,Exponential,7.255822,2.614981
+1,Line Graph,Exponential,7.325058,2.547226
+1,Line Graph,Exponential,7.394294,2.481227
+1,Line Graph,Exponential,7.46353,2.354315
+1,Line Graph,Exponential,7.532766,2.293314
+1,Line Graph,Exponential,7.602002,2.233894
+1,Line Graph,Exponential,7.671238,2.119632
+1,Line Graph,Exponential,7.740474,2.064712
+1,Line Graph,Exponential,7.80971,2.011215
+1,Line Graph,Exponential,7.878946,1.908343
+1,Line Graph,Exponential,7.948182,1.858898
+1,Line Graph,Exponential,8.017418,1.810733
+1,Line Graph,Exponential,8.086654,1.718116
+1,Line Graph,Exponential,8.15589,1.673599
+1,Line Graph,Exponential,8.225126,1.630236
+1,Line Graph,Exponential,8.294362,1.546851
+1,Line Graph,Exponential,8.363598,1.506772
+1,Line Graph,Exponential,8.432834,1.467731
+1,Line Graph,Exponential,8.50207,1.392658
+1,Line Graph,Exponential,8.571306,1.356574
+1,Line Graph,Exponential,8.640542,1.321425
+1,Line Graph,Exponential,8.709778,1.253835
+1,Line Graph,Exponential,8.779014,1.221348
+1,Line Graph,Exponential,8.84825,1.189703
+1,Line Graph,Exponential,8.917486,1.143766
+1,Line Graph,Exponential,8.986722,1.099602
+1,Line Graph,Exponential,9.055958,1.071111
+1,Line Graph,Exponential,9.125194,1.029753
+1,Line Graph,Exponential,9.19443,0.989992
+1,Line Graph,Exponential,9.263666,0.964341
+1,Line Graph,Exponential,9.332902,0.927105
+1,Line Graph,Exponential,9.402138,0.891307
+1,Line Graph,Exponential,9.471374,0.868213
+1,Line Graph,Exponential,9.54061,0.845718
+1,Line Graph,Exponential,9.609846,0.80246
+1,Line Graph,Exponential,9.679082,0.781668
+1,Line Graph,Exponential,9.748318,0.761415
+1,Line Graph,Exponential,9.817554,0.722469
+1,Line Graph,Exponential,9.88679,0.70375
+1,Line Graph,Exponential,9.956026,0.685516
+1,Line Graph,Power law,0.626475,1026.114914
+1,Line Graph,Power law,0.695711,913.22917
+1,Line Graph,Power law,0.764947,799.625251
+1,Line Graph,Power law,0.834183,688.151328
+1,Line Graph,Power law,0.903419,606.982262
+1,Line Graph,Power law,0.972655,546.718305
+1,Line Graph,Power law,1.041891,479.255383
+1,Line Graph,Power law,1.111127,442.959479
+1,Line Graph,Power law,1.180363,393.603997
+1,Line Graph,Power law,1.249599,359.050884
+1,Line Graph,Power law,1.318835,334.920189
+1,Line Graph,Power law,1.388071,306.725583
+1,Line Graph,Power law,1.457307,283.496042
+1,Line Graph,Power law,1.526543,255.236629
+1,Line Graph,Power law,1.595779,245.381321
+1,Line Graph,Power law,1.665015,227.263213
+1,Line Graph,Power law,1.734251,212.390946
+1,Line Graph,Power law,1.803487,201.527353
+1,Line Graph,Power law,1.872723,194.826925
+1,Line Graph,Power law,1.941959,179.072749
+1,Line Graph,Power law,2.011195,169.913349
+1,Line Graph,Power law,2.080431,162.748342
+1,Line Graph,Power law,2.149667,150.981244
+1,Line Graph,Power law,2.218903,145.151491
+1,Line Graph,Power law,2.288139,137.967301
+1,Line Graph,Power law,2.357375,130.68252
+1,Line Graph,Power law,2.426611,123.998234
+1,Line Graph,Power law,2.495847,115.506218
+1,Line Graph,Power law,2.565083,114.607358
+1,Line Graph,Power law,2.634319,108.745301
+1,Line Graph,Power law,2.703555,101.833214
+1,Line Graph,Power law,2.772791,100.50959
+1,Line Graph,Power law,2.842027,96.62867
+1,Line Graph,Power law,2.911263,92.911071
+1,Line Graph,Power law,2.980499,89.310599
+1,Line Graph,Power law,3.049735,85.862099
+1,Line Graph,Power law,3.118971,82.55551
+1,Line Graph,Power law,3.188207,79.359423
+1,Line Graph,Power law,3.257443,77.303205
+1,Line Graph,Power law,3.326679,75.300264
+1,Line Graph,Power law,3.395915,72.066506
+1,Line Graph,Power law,3.465151,69.597478
+1,Line Graph,Power law,3.534387,67.794194
+1,Line Graph,Power law,3.603623,66.511618
+1,Line Graph,Power law,3.672859,64.326586
+1,Line Graph,Power law,3.742095,61.842779
+1,Line Graph,Power law,3.811331,59.581493
+1,Line Graph,Power law,3.880567,58.67958
+1,Line Graph,Power law,3.949803,56.413819
+1,Line Graph,Power law,4.019039,55.246704
+1,Line Graph,Power law,4.088275,53.528306
+1,Line Graph,Power law,4.157511,52.141377
+1,Line Graph,Power law,4.226747,50.74933
+1,Line Graph,Power law,4.295983,49.474396
+1,Line Graph,Power law,4.365219,48.192505
+1,Line Graph,Power law,4.434455,47.564069
+1,Line Graph,Power law,4.503691,46.231282
+1,Line Graph,Power law,4.572927,44.542696
+1,Line Graph,Power law,4.642163,43.388586
+1,Line Graph,Power law,4.711399,43.282163
+1,Line Graph,Power law,4.780635,41.713247
+1,Line Graph,Power law,4.849871,41.169302
+1,Line Graph,Power law,4.919107,40.154679
+1,Line Graph,Power law,4.988343,39.063531
+1,Line Graph,Power law,5.057579,38.051388
+1,Line Graph,Power law,5.126815,37.93603
+1,Line Graph,Power law,5.196051,36.582131
+1,Line Graph,Power law,5.265287,36.105096
+1,Line Graph,Power law,5.334523,35.013388
+1,Line Graph,Power law,5.403759,34.26361
+1,Line Graph,Power law,5.472995,33.370714
+1,Line Graph,Power law,5.542231,32.935556
+1,Line Graph,Power law,5.611467,31.781756
+1,Line Graph,Power law,5.680703,31.663834
+1,Line Graph,Power law,5.749939,30.843418
+1,Line Graph,Power law,5.819175,30.409679
+1,Line Graph,Power law,5.888411,30.044259
+1,Line Graph,Power law,5.957647,29.265807
+1,Line Graph,Power law,6.026883,29.214852
+1,Line Graph,Power law,6.096119,28.507524
+1,Line Graph,Power law,6.165355,27.768889
+1,Line Graph,Power law,6.234591,28.900314
+1,Line Graph,Power law,6.303827,36.189881
+1,Line Graph,Power law,6.373063,128.302997
+1,Line Graph,Power law,6.442299,126.962773
+1,Line Graph,Power law,6.511535,179.166987
+1,Line Graph,Power law,6.580771,125.636549
+1,Line Graph,Power law,6.650007,124.324179
+1,Line Graph,Power law,6.719243,368.601417
+1,Line Graph,Power law,6.788479,23.722065
+1,Line Graph,Power law,6.857715,23.107422
+1,Line Graph,Power law,6.926951,23.083058
+1,Line Graph,Power law,6.996187,22.508705
+1,Line Graph,Power law,7.065423,22.508705
+1,Line Graph,Power law,7.134659,21.9255
+1,Line Graph,Power law,7.203895,21.431633
+1,Line Graph,Power law,7.273131,21.357406
+1,Line Graph,Power law,7.342367,20.804031
+1,Line Graph,Power law,7.411603,20.437608
+1,Line Graph,Power law,7.480839,20.264995
+1,Line Graph,Power law,7.550075,20.000737
+1,Line Graph,Power law,7.619311,19.833556
+1,Line Graph,Power law,7.688547,19.22846
+1,Line Graph,Power law,7.757783,19.22846
+1,Line Graph,Power law,7.827019,18.399408
+1,Line Graph,Power law,7.896255,18.763622
+1,Line Graph,Power law,7.965491,18.244943
+1,Line Graph,Power law,8.034727,18.244943
+1,Line Graph,Power law,8.103963,17.892566
+1,Line Graph,Power law,8.173199,17.772213
+1,Line Graph,Power law,8.242435,17.311731
+1,Line Graph,Power law,8.311671,17.092951
+1,Line Graph,Power law,8.380907,16.863181
+1,Line Graph,Power law,8.450143,16.863181
+1,Line Graph,Power law,8.519379,16.84362
+1,Line Graph,Power law,8.588615,16.426253
+1,Line Graph,Power law,8.657851,16.000645
+1,Line Graph,Power law,8.727087,16.000645
+1,Line Graph,Power law,8.796323,15.640262
+1,Line Graph,Power law,8.865559,15.586066
+1,Line Graph,Power law,8.934795,15.182228
+1,Line Graph,Power law,9.004031,14.935277
+1,Line Graph,Power law,9.073267,14.788853
+1,Line Graph,Power law,9.142503,14.788853
+1,Line Graph,Power law,9.211739,14.468191
+1,Line Graph,Power law,9.280975,14.405671
+1,Line Graph,Power law,9.350211,14.032418
+1,Line Graph,Power law,9.419447,13.999475
+1,Line Graph,Power law,9.488683,13.703424
+1,Line Graph,Power law,9.557919,13.668835
+1,Line Graph,Power law,9.627155,13.668835
+1,Line Graph,Power law,9.696391,13.409004
+1,Line Graph,Power law,9.765627,13.314673
+1,Line Graph,Power law,9.834863,12.969687
+1,Line Graph,Power law,9.904099,13.397191
+1,Line Graph,Power law,9.973335,12.63364

@@ -1,0 +1,46 @@
+layer_idx,layer_type,series,x,y
+0,Scatter Plot,Measurement,1.482085,33.215297
+0,Scatter Plot,Measurement,29.983713,27.86119
+0,Scatter Plot,Measurement,25.993485,22.804533
+0,Scatter Plot,Measurement,22.003257,17.747875
+0,Scatter Plot,Measurement,18.013029,14.971671
+0,Scatter Plot,Measurement,14.022801,12.889518
+0,Scatter Plot,Measurement,9.97557,12.592068
+0,Scatter Plot,Measurement,5.985342,10.212465
+0,Scatter Plot,Measurement,1.995114,8.229462
+1,ErrorBarLayer,y_err_upper,1.482085,35.09915
+1,ErrorBarLayer,y_err_lower,1.482085,32.521246
+1,ErrorBarLayer,x_err_left,0.0,33.215297
+1,ErrorBarLayer,x_err_right,1.881107,33.215297
+1,ErrorBarLayer,y_err_upper,29.983713,29.348442
+1,ErrorBarLayer,y_err_lower,29.983713,25.382436
+1,ErrorBarLayer,x_err_left,28.273616,27.86119
+1,ErrorBarLayer,x_err_right,31.522801,27.86119
+1,ErrorBarLayer,y_err_upper,25.993485,24.192635
+1,ErrorBarLayer,y_err_lower,25.993485,20.524079
+1,ErrorBarLayer,x_err_left,24.283388,22.804533
+1,ErrorBarLayer,x_err_right,27.361564,22.804533
+1,ErrorBarLayer,y_err_upper,22.003257,18.937677
+1,ErrorBarLayer,y_err_lower,22.003257,15.566572
+1,ErrorBarLayer,x_err_left,20.407166,17.747875
+1,ErrorBarLayer,x_err_right,23.200326,17.747875
+1,ErrorBarLayer,y_err_upper,18.013029,16.161473
+1,ErrorBarLayer,y_err_lower,18.013029,13.087819
+1,ErrorBarLayer,x_err_left,16.587948,14.971671
+1,ErrorBarLayer,x_err_right,19.039088,14.971671
+1,ErrorBarLayer,y_err_upper,14.022801,13.88102
+1,ErrorBarLayer,y_err_lower,14.022801,11.203966
+1,ErrorBarLayer,x_err_left,12.825733,12.889518
+1,ErrorBarLayer,x_err_right,14.87785,12.889518
+1,ErrorBarLayer,y_err_upper,9.97557,13.484419
+1,ErrorBarLayer,y_err_lower,9.97557,11.104816
+1,ErrorBarLayer,x_err_left,9.006515,12.592068
+1,ErrorBarLayer,x_err_right,10.716612,12.592068
+1,ErrorBarLayer,y_err_upper,5.985342,11.005666
+1,ErrorBarLayer,y_err_lower,5.985342,8.923513
+1,ErrorBarLayer,x_err_left,5.187296,10.212465
+1,ErrorBarLayer,x_err_right,6.555375,10.212465
+1,ErrorBarLayer,y_err_upper,1.995114,8.923513
+1,ErrorBarLayer,y_err_lower,1.995114,7.13881
+1,ErrorBarLayer,x_err_left,1.368078,8.229462
+1,ErrorBarLayer,x_err_right,2.394137,8.229462

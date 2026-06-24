@@ -1,0 +1,59 @@
+{
+  "image": "image.png",
+  "image_size": {
+    "width": 700,
+    "height": 450
+  },
+  "plot_frame_box": {
+    "left": 62,
+    "top": 37,
+    "right": 685,
+    "bottom": 392,
+    "offset": {
+      "x": 62,
+      "y": 37
+    },
+    "size": {
+      "width": 623,
+      "height": 355
+    }
+  },
+  "axis_calibration": {
+    "x_axis": {
+      "m": 0.017654431752152262,
+      "b": -1.5939302594288682,
+      "formula": "value = mx * col + bx",
+      "inverse": "col = (value - bx)/mx"
+    },
+    "y_axis": {
+      "m": -0.033775485853641506,
+      "b": 13.24725425030993,
+      "formula": "value = my * row + by",
+      "inverse": "row = (value - by)/my"
+    }
+  },
+  "data_range": {
+    "x_min": 0,
+    "x_max": 10,
+    "y_min": 0,
+    "y_max": 12
+  },
+  "worked_example": {
+    "input": {
+      "x": 4,
+      "y": 6
+    },
+    "result": {
+      "col": 316.86,
+      "row": 214.57
+    }
+  },
+  "detection_internals": {
+    "legend_exclusion_used_for_frame": {
+      "left": 535,
+      "top": 46,
+      "right": 686,
+      "bottom": 125
+    }
+  }
+}

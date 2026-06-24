@@ -1,0 +1,37 @@
+{
+  "image": "image.png",
+  "image_size": {"width": 850, "height": 600},
+  "plot_frame_box": {
+    "left": 63,
+    "top": 109,
+    "right": 753,
+    "bottom": 532,
+    "offset": {"x": 63, "y": 109},
+    "size": {"width": 690, "height": 423}
+  },
+  "axis_calibration": {
+    "x_axis": {
+      "m": 0.37108339297547255,
+      "b": 1743.7442048858875,
+      "formula": "value = mx * col + bx",
+      "inverse": "col = (value - bx)/mx"
+    },
+    "y_axis": {
+      "m": -0.18960259713717087,
+      "b": 100.77816586008201,
+      "formula": "value = my * row + by",
+      "inverse": "row = (value - by)/my"
+    }
+  },
+  "data_range": {
+    "x_min": 1770,
+    "x_max": 2023,
+    "y_min": 0,
+    "y_max": 80
+  },
+  "worked_example": {
+    "input": {"x": 1900, "y": 50},
+    "result": {"col": 421.08, "row": 267.81}
+  },
+  "calibration_method": "Y from 9 horizontal gridlines (0..80 by 10), rows 109.5..531.5, polyfit resid max 0.10 yr. X from interior tick labels 1800..2000 (endpoints 1770/2023 nudged inward by renderer, excluded), polyfit resid <0.5 px."
+}

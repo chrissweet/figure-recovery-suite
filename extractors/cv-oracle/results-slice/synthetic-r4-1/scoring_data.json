@@ -1,0 +1,301 @@
+{
+  "corpus": "synthetic-r4-1",
+  "extractor": "cv-oracle",
+  "results_dir": "results-slice",
+  "n_charts": 10,
+  "charts": {
+    "01-linear-scatter": {
+      "x_tol": 0.165126,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 0.125186 (2.0% of y_range 6.2593)",
+      "x_range": 8.2563,
+      "y_range": 6.2593,
+      "scatter": {
+        "summary": {
+          "tp": 36,
+          "fn": 1,
+          "fp": 3,
+          "precision": 0.9231,
+          "recall": 0.973,
+          "f1": 0.9474,
+          "jaccard": 0.9
+        },
+        "gt_n": 37,
+        "mine_n": 39,
+        "by_series": {
+          "a": {
+            "gt_label": "a",
+            "tp": 15,
+            "fn": 0,
+            "fp": 1,
+            "gt_n": 15,
+            "mine_n": 16
+          },
+          "b": {
+            "gt_label": "b",
+            "tp": 12,
+            "fn": 0,
+            "fp": 1,
+            "gt_n": 12,
+            "mine_n": 13
+          },
+          "c": {
+            "gt_label": "c",
+            "tp": 9,
+            "fn": 1,
+            "fp": 1,
+            "gt_n": 10,
+            "mine_n": 10
+          }
+        }
+      },
+      "curves": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "errbars": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "combined": {
+        "tp": 36,
+        "fn": 1,
+        "fp": 3,
+        "precision": 0.9231,
+        "recall": 0.973,
+        "f1": 0.9474,
+        "jaccard": 0.9
+      }
+    },
+    "02-simple-bar": {
+      "error": "missing extractor dir: /Users/csweet1/Documents/projects/CRS_research/figure-recovery-suite/extractors/cv-oracle/results-slice/synthetic-r4-1/02-simple-bar"
+    },
+    "03-grouped-bar-errbars": {
+      "error": "missing extractor dir: /Users/csweet1/Documents/projects/CRS_research/figure-recovery-suite/extractors/cv-oracle/results-slice/synthetic-r4-1/03-grouped-bar-errbars"
+    },
+    "04-log-y-line": {
+      "x_tol": 0.19,
+      "y_tol_kind": "relative",
+      "y_tol_desc": "relative 1.0% (denom floor 1.51504)",
+      "x_range": 9.5,
+      "y_range": 1515.0428,
+      "scatter": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "curves": {
+        "summary": {
+          "tp": 35,
+          "fn": 85,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.2917,
+          "f1": 0.4516,
+          "jaccard": 0.2917
+        },
+        "gt_n": 120,
+        "mine_n": 274,
+        "by_series": {
+          "exponential": {
+            "gt_label": "exponential",
+            "tp": 28,
+            "fn": 32,
+            "fp": 0,
+            "gt_n": 60,
+            "mine_n": 138
+          },
+          "powerlaw": {
+            "gt_label": "powerlaw",
+            "tp": 7,
+            "fn": 53,
+            "fp": 0,
+            "gt_n": 60,
+            "mine_n": 136
+          }
+        }
+      },
+      "errbars": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "combined": {
+        "tp": 35,
+        "fn": 85,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 0.2917,
+        "f1": 0.4516,
+        "jaccard": 0.2917
+      }
+    },
+    "05-stacked-bar": {
+      "error": "missing extractor dir: /Users/csweet1/Documents/projects/CRS_research/figure-recovery-suite/extractors/cv-oracle/results-slice/synthetic-r4-1/05-stacked-bar"
+    },
+    "06-scatter-asym-errbars": {
+      "x_tol": 0.6020000000000001,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 0.442643 (2.0% of y_range 22.1321)",
+      "x_range": 30.1,
+      "y_range": 22.132130070117192,
+      "scatter": {
+        "summary": {
+          "tp": 8,
+          "fn": 0,
+          "fp": 1,
+          "precision": 0.8889,
+          "recall": 1.0,
+          "f1": 0.9412,
+          "jaccard": 0.8889
+        },
+        "gt_n": 8,
+        "mine_n": 9,
+        "by_series": {
+          "measurement": {
+            "gt_label": "measurement",
+            "tp": 8,
+            "fn": 0,
+            "fp": 1,
+            "gt_n": 8,
+            "mine_n": 9
+          }
+        }
+      },
+      "curves": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "errbars": {
+        "summary": {
+          "tp": 32,
+          "fn": 0,
+          "fp": 4,
+          "precision": 0.8889,
+          "recall": 1.0,
+          "f1": 0.9412,
+          "jaccard": 0.8889
+        },
+        "gt_n": 32,
+        "mine_n": 36,
+        "by_series": {
+          "errbar_caps_pooled": {
+            "schema": "ErrorBarLayer",
+            "tp": 32,
+            "fn": 0,
+            "fp": 4,
+            "gt_n": 32,
+            "mine_n": 36
+          }
+        }
+      },
+      "combined": {
+        "tp": 40,
+        "fn": 0,
+        "fp": 5,
+        "precision": 0.8889,
+        "recall": 1.0,
+        "f1": 0.9412,
+        "jaccard": 0.8889
+      }
+    },
+    "07-dual-y-axes": {
+      "error": "missing extractor dir: /Users/csweet1/Documents/projects/CRS_research/figure-recovery-suite/extractors/cv-oracle/results-slice/synthetic-r4-1/07-dual-y-axes"
+    },
+    "08-percent-scinot-ticks": {
+      "error": "missing extractor dir: /Users/csweet1/Documents/projects/CRS_research/figure-recovery-suite/extractors/cv-oracle/results-slice/synthetic-r4-1/08-percent-scinot-ticks"
+    },
+    "09-open-markers-with-fit": {
+      "error": "missing extractor dir: /Users/csweet1/Documents/projects/CRS_research/figure-recovery-suite/extractors/cv-oracle/results-slice/synthetic-r4-1/09-open-markers-with-fit"
+    },
+    "10-crossing-curves": {
+      "error": "missing extractor dir: /Users/csweet1/Documents/projects/CRS_research/figure-recovery-suite/extractors/cv-oracle/results-slice/synthetic-r4-1/10-crossing-curves"
+    }
+  },
+  "totals": {
+    "scatter": {
+      "tp": 44,
+      "fn": 1,
+      "fp": 4,
+      "precision": 0.9167,
+      "recall": 0.9778,
+      "f1": 0.9462,
+      "jaccard": 0.898
+    },
+    "curves": {
+      "tp": 35,
+      "fn": 85,
+      "fp": 0,
+      "precision": 1.0,
+      "recall": 0.2917,
+      "f1": 0.4516,
+      "jaccard": 0.2917
+    },
+    "errbars": {
+      "tp": 32,
+      "fn": 0,
+      "fp": 4,
+      "precision": 0.8889,
+      "recall": 1.0,
+      "f1": 0.9412,
+      "jaccard": 0.8889
+    },
+    "combined": {
+      "tp": 111,
+      "fn": 86,
+      "fp": 8,
+      "precision": 0.9328,
+      "recall": 0.5635,
+      "f1": 0.7025,
+      "jaccard": 0.5415
+    }
+  }
+}

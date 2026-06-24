@@ -1,0 +1,839 @@
+{
+  "corpus": "synthetic-r4-1",
+  "extractor": "graph-data-extraction",
+  "results_dir": "results-v7",
+  "n_charts": 10,
+  "charts": {
+    "01-linear-scatter": {
+      "x_tol": 0.165126,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 0.125186 (2.0% of y_range 6.2593)",
+      "x_range": 8.2563,
+      "y_range": 6.2593,
+      "scatter": {
+        "summary": {
+          "tp": 37,
+          "fn": 0,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "jaccard": 1.0
+        },
+        "gt_n": 37,
+        "mine_n": 37,
+        "by_series": {
+          "seriesa": {
+            "gt_label": "a",
+            "tp": 15,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 15,
+            "mine_n": 15
+          },
+          "seriesb": {
+            "gt_label": "b",
+            "tp": 12,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 12,
+            "mine_n": 12
+          },
+          "seriesc": {
+            "gt_label": "c",
+            "tp": 10,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 10,
+            "mine_n": 10
+          }
+        }
+      },
+      "curves": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "errbars": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "combined": {
+        "tp": 37,
+        "fn": 0,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "jaccard": 1.0
+      }
+    },
+    "02-simple-bar": {
+      "x_tol": 0.1,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 0.294 (2.0% of y_range 14.7)",
+      "x_range": 5.0,
+      "y_range": 14.7,
+      "scatter": {
+        "summary": {
+          "tp": 0,
+          "fn": 6,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 6,
+        "mine_n": 0,
+        "by_series": {
+          "unmapped:throughput": {
+            "gt_label": "throughput",
+            "tp": 0,
+            "fn": 6,
+            "fp": 0,
+            "gt_n": 6,
+            "mine_n": 0
+          }
+        }
+      },
+      "curves": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "errbars": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "combined": {
+        "tp": 0,
+        "fn": 6,
+        "fp": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "jaccard": 0.0
+      }
+    },
+    "03-grouped-bar-errbars": {
+      "x_tol": 1.5,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 1.1 (2.0% of y_range 55)",
+      "x_range": 4.5,
+      "y_range": 55.0,
+      "scatter": {
+        "summary": {
+          "tp": 0,
+          "fn": 15,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 15,
+        "mine_n": 0,
+        "by_series": {
+          "unmapped:baseline": {
+            "gt_label": "baseline",
+            "tp": 0,
+            "fn": 5,
+            "fp": 0,
+            "gt_n": 5,
+            "mine_n": 0
+          },
+          "unmapped:tuned": {
+            "gt_label": "tuned",
+            "tp": 0,
+            "fn": 5,
+            "fp": 0,
+            "gt_n": 5,
+            "mine_n": 0
+          },
+          "unmapped:tunedjit": {
+            "gt_label": "tunedjit",
+            "tp": 0,
+            "fn": 5,
+            "fp": 0,
+            "gt_n": 5,
+            "mine_n": 0
+          }
+        }
+      },
+      "curves": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "errbars": {
+        "summary": {
+          "tp": 0,
+          "fn": 30,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 30,
+        "mine_n": 0,
+        "by_series": {
+          "errbar_caps_pooled": {
+            "schema": "ErrorBarLayer",
+            "tp": 0,
+            "fn": 30,
+            "fp": 0,
+            "gt_n": 30,
+            "mine_n": 0
+          }
+        }
+      },
+      "combined": {
+        "tp": 0,
+        "fn": 45,
+        "fp": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "jaccard": 0.0
+      }
+    },
+    "04-log-y-line": {
+      "x_tol": 0.19,
+      "y_tol_kind": "relative",
+      "y_tol_desc": "relative 1.0% (denom floor 1.51504)",
+      "x_range": 9.5,
+      "y_range": 1515.0428,
+      "scatter": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "curves": {
+        "summary": {
+          "tp": 0,
+          "fn": 120,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 120,
+        "mine_n": 0,
+        "by_series": {
+          "unmapped:exponential": {
+            "gt_label": "exponential",
+            "tp": 0,
+            "fn": 60,
+            "fp": 0,
+            "gt_n": 60,
+            "mine_n": 0
+          },
+          "unmapped:powerlaw": {
+            "gt_label": "powerlaw",
+            "tp": 0,
+            "fn": 60,
+            "fp": 0,
+            "gt_n": 60,
+            "mine_n": 0
+          }
+        }
+      },
+      "errbars": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "combined": {
+        "tp": 0,
+        "fn": 120,
+        "fp": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "jaccard": 0.0
+      }
+    },
+    "05-stacked-bar": {
+      "x_tol": 1.5,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 1.72 (2.0% of y_range 86)",
+      "x_range": 4.0,
+      "y_range": 86.0,
+      "scatter": {
+        "summary": {
+          "tp": 0,
+          "fn": 30,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 30,
+        "mine_n": 0,
+        "by_series": {
+          "unmapped:cpuvalue": {
+            "gt_label": "cpuvalue",
+            "tp": 0,
+            "fn": 5,
+            "fp": 0,
+            "gt_n": 5,
+            "mine_n": 0
+          },
+          "unmapped:cpucumtop": {
+            "gt_label": "cpucumtop",
+            "tp": 0,
+            "fn": 5,
+            "fp": 0,
+            "gt_n": 5,
+            "mine_n": 0
+          },
+          "unmapped:memoryvalue": {
+            "gt_label": "memoryvalue",
+            "tp": 0,
+            "fn": 5,
+            "fp": 0,
+            "gt_n": 5,
+            "mine_n": 0
+          },
+          "unmapped:memorycumtop": {
+            "gt_label": "memorycumtop",
+            "tp": 0,
+            "fn": 5,
+            "fp": 0,
+            "gt_n": 5,
+            "mine_n": 0
+          },
+          "unmapped:iowaitvalue": {
+            "gt_label": "iowaitvalue",
+            "tp": 0,
+            "fn": 5,
+            "fp": 0,
+            "gt_n": 5,
+            "mine_n": 0
+          },
+          "unmapped:iowaitcumtop": {
+            "gt_label": "iowaitcumtop",
+            "tp": 0,
+            "fn": 5,
+            "fp": 0,
+            "gt_n": 5,
+            "mine_n": 0
+          }
+        }
+      },
+      "curves": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "errbars": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "combined": {
+        "tp": 0,
+        "fn": 30,
+        "fp": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "jaccard": 0.0
+      }
+    },
+    "06-scatter-asym-errbars": {
+      "x_tol": 0.6020000000000001,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 0.442643 (2.0% of y_range 22.1321)",
+      "x_range": 30.1,
+      "y_range": 22.132130070117192,
+      "scatter": {
+        "summary": {
+          "tp": 0,
+          "fn": 8,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 8,
+        "mine_n": 0,
+        "by_series": {
+          "unmapped:measurement": {
+            "gt_label": "measurement",
+            "tp": 0,
+            "fn": 8,
+            "fp": 0,
+            "gt_n": 8,
+            "mine_n": 0
+          }
+        }
+      },
+      "curves": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "errbars": {
+        "summary": {
+          "tp": 0,
+          "fn": 32,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 32,
+        "mine_n": 0,
+        "by_series": {
+          "errbar_caps_pooled": {
+            "schema": "ErrorBarLayer",
+            "tp": 0,
+            "fn": 32,
+            "fp": 0,
+            "gt_n": 32,
+            "mine_n": 0
+          }
+        }
+      },
+      "combined": {
+        "tp": 0,
+        "fn": 40,
+        "fp": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "jaccard": 0.0
+      }
+    },
+    "07-dual-y-axes": {
+      "x_tol": 0.2,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 0.235158 (2.0% of y_range 11.7579)",
+      "x_range": 10.0,
+      "y_range": 11.757880598541462,
+      "scatter": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "curves": {
+        "summary": {
+          "tp": 0,
+          "fn": 48,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 48,
+        "mine_n": 0,
+        "by_series": {
+          "unmapped:drivecurrenta": {
+            "gt_label": "drivecurrenta",
+            "tp": 0,
+            "fn": 24,
+            "fp": 0,
+            "gt_n": 24,
+            "mine_n": 0
+          },
+          "unmapped:cellvoltagev": {
+            "gt_label": "cellvoltagev",
+            "tp": 0,
+            "fn": 24,
+            "fp": 0,
+            "gt_n": 24,
+            "mine_n": 0
+          }
+        }
+      },
+      "errbars": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "combined": {
+        "tp": 0,
+        "fn": 48,
+        "fp": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "jaccard": 0.0
+      }
+    },
+    "08-percent-scinot-ticks": {
+      "x_tol": 0.018,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 142042 (2.0% of y_range 7.10211e+06)",
+      "x_range": 0.8999999999999999,
+      "y_range": 7102114.636993544,
+      "scatter": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "curves": {
+        "summary": {
+          "tp": 0,
+          "fn": 14,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 14,
+        "mine_n": 0,
+        "by_series": {
+          "unmapped:throughput": {
+            "gt_label": "throughput",
+            "tp": 0,
+            "fn": 14,
+            "fp": 0,
+            "gt_n": 14,
+            "mine_n": 0
+          }
+        }
+      },
+      "errbars": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "combined": {
+        "tp": 0,
+        "fn": 14,
+        "fp": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "jaccard": 0.0
+      }
+    },
+    "09-open-markers-with-fit": {
+      "x_tol": 0.19095477386934676,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 0.348924 (2.0% of y_range 17.4462)",
+      "x_range": 9.547738693467338,
+      "y_range": 17.446176079332886,
+      "scatter": {
+        "summary": {
+          "tp": 0,
+          "fn": 12,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 12,
+        "mine_n": 0,
+        "by_series": {
+          "unmapped:measurement": {
+            "gt_label": "measurement",
+            "tp": 0,
+            "fn": 12,
+            "fp": 0,
+            "gt_n": 12,
+            "mine_n": 0
+          }
+        }
+      },
+      "curves": {
+        "summary": {
+          "tp": 0,
+          "fn": 20,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 20,
+        "mine_n": 0,
+        "by_series": {
+          "unmapped:linearfit": {
+            "gt_label": "linearfit",
+            "tp": 0,
+            "fn": 20,
+            "fp": 0,
+            "gt_n": 20,
+            "mine_n": 0
+          }
+        }
+      },
+      "errbars": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "combined": {
+        "tp": 0,
+        "fn": 32,
+        "fp": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "jaccard": 0.0
+      }
+    },
+    "10-crossing-curves": {
+      "x_tol": 0.2,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 0.14 (2.0% of y_range 7)",
+      "x_range": 10.0,
+      "y_range": 7.0,
+      "scatter": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "curves": {
+        "summary": {
+          "tp": 0,
+          "fn": 160,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 160,
+        "mine_n": 0,
+        "by_series": {
+          "unmapped:rising": {
+            "gt_label": "rising",
+            "tp": 0,
+            "fn": 80,
+            "fp": 0,
+            "gt_n": 80,
+            "mine_n": 0
+          },
+          "unmapped:falling": {
+            "gt_label": "falling",
+            "tp": 0,
+            "fn": 80,
+            "fp": 0,
+            "gt_n": 80,
+            "mine_n": 0
+          }
+        }
+      },
+      "errbars": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "combined": {
+        "tp": 0,
+        "fn": 160,
+        "fp": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "jaccard": 0.0
+      }
+    }
+  },
+  "totals": {
+    "scatter": {
+      "tp": 37,
+      "fn": 71,
+      "fp": 0,
+      "precision": 1.0,
+      "recall": 0.3426,
+      "f1": 0.5103,
+      "jaccard": 0.3426
+    },
+    "curves": {
+      "tp": 0,
+      "fn": 362,
+      "fp": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "jaccard": 0.0
+    },
+    "errbars": {
+      "tp": 0,
+      "fn": 62,
+      "fp": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "jaccard": 0.0
+    },
+    "combined": {
+      "tp": 37,
+      "fn": 495,
+      "fp": 0,
+      "precision": 1.0,
+      "recall": 0.0695,
+      "f1": 0.1301,
+      "jaccard": 0.0695
+    }
+  }
+}

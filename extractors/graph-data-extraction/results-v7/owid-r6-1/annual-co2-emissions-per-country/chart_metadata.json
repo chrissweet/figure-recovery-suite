@@ -1,0 +1,66 @@
+{
+  "panel_id": null,
+  "source_citation": "Our World in Data \u2014 Annual CO2 emissions per country. Data source: Global Carbon Budget (2025). https://ourworldindata.org/co2-and-greenhouse-gas-emissions",
+  "x_axis": {
+    "title": null,
+    "unit": "year",
+    "title_verbatim": null,
+    "decimal_separator": ".",
+    "notes": "No explicit x-axis title in source figure; ticks are years."
+  },
+  "y_axis": {
+    "title": "Annual CO\u2082 emissions",
+    "unit": "tonnes",
+    "title_verbatim": "Annual CO\u2082 emissions",
+    "decimal_separator": ".",
+    "tick_label_format": "'N billion t' (e.g. '12 billion t'); 0-tick rendered '0 t'.",
+    "notes": "Title taken from chart heading. Tick labels parsed as N*1e9 raw tonnes in data.csv."
+  },
+  "chart_title": "Annual CO\u2082 emissions",
+  "subtitle_verbatim": "Carbon dioxide (CO\u2082) emissions from fossil fuels and industry. Land-use change emissions are not included.",
+  "series_legend": [
+    {
+      "series_id": "China",
+      "source_label": "China",
+      "color": "#062e5f",
+      "marker_shape": null
+    },
+    {
+      "series_id": "United States",
+      "source_label": "United States",
+      "color": "#a26f46",
+      "marker_shape": null
+    },
+    {
+      "series_id": "India",
+      "source_label": "India",
+      "color": "#883039",
+      "marker_shape": null
+    },
+    {
+      "series_id": "Germany",
+      "source_label": "Germany",
+      "color": "#b13507",
+      "marker_shape": null
+    },
+    {
+      "series_id": "Brazil",
+      "source_label": "Brazil",
+      "color": "#6d3e91",
+      "marker_shape": null
+    },
+    {
+      "series_id": "United Kingdom",
+      "source_label": "United Kingdom",
+      "color": "#4c6a9c",
+      "marker_shape": null
+    },
+    {
+      "series_id": "France",
+      "source_label": "France",
+      "color": "#2c8465",
+      "marker_shape": null
+    }
+  ],
+  "notes": "Our World in Data line chart, 7 countries. Legend labels at right of each line's endpoint (no boxed legend). Y-axis tick label format 'N billion t' is parsed as N*1e9 tonnes. Series colors sampled from line pixels at col 695-710."
+}
