@@ -1,0 +1,87 @@
+{
+  "image": "image.png",
+  "image_size": {
+    "width": 850,
+    "height": 600
+  },
+  "plot_frame_box": {
+    "offset": {
+      "x": 60,
+      "y": 16
+    },
+    "size": {
+      "width": 774,
+      "height": 497
+    },
+    "left": 60,
+    "top": 16,
+    "right": 833,
+    "bottom": 512,
+    "description": "Pixel bounding box of the visible plot region in image. Origin (0,0) is the top-left of the image; y grows downward. 'offset' is the top-left corner of the box in image coordinates; 'size' is its width and height in pixels. Detected by finding the y-axis line (left), x-axis line (bottom), and the bounding box of non-white pixels inside the L-shaped quadrant (top, right)."
+  },
+  "pixels_per_coordinate_unit": {
+    "x": 25.5897,
+    "y": 4.1929,
+    "x_unit_label": "pixels per year",
+    "y_unit_label": "pixels per percent",
+    "description": "How many image pixels equal one unit of x or y in data coordinates."
+  },
+  "data_to_pixel_formula": {
+    "col": "col = (x_value - 2002.6512716473371) / 0.03907825428057995",
+    "row": "row = (y_value - 121.74872860983392) / -0.23849992889695482",
+    "explanation": "Convert any (x, y) data coordinate to a (col, row) pixel coordinate in image.png. For axes with scale='log10' the data value is first passed through log10 before the linear fit."
+  },
+  "data_range": {
+    "x_min": 2005.0,
+    "x_max": 2025.0,
+    "y_min": 0.0,
+    "y_max": 100.0
+  },
+  "axis_calibration": {
+    "x_axis": {
+      "scale": "linear",
+      "formula": "value = 0.03907825428057995 * col + 2002.6512716473371",
+      "m": 0.03907825428057995,
+      "b": 2002.6512716473371,
+      "inverse": "col = (value - 2002.6512716473371) / 0.03907825428057995"
+    },
+    "y_axis": {
+      "scale": "linear",
+      "formula": "value = -0.23849992889695482 * row + 121.74872860983392",
+      "m": -0.23849992889695482,
+      "b": 121.74872860983392,
+      "inverse": "row = (value - 121.74872860983392) / -0.23849992889695482"
+    }
+  },
+  "worked_example": {
+    "scenario": "Midpoint of the data range (x=2015.0, y=50.0).",
+    "input": {
+      "x": 2015.0,
+      "y": 50.0
+    },
+    "compute": [
+      "col = (2015.0 - 2002.6512716473371) / 0.03907825428057995 = 316.0",
+      "row = (50.0 - 121.74872860983392) / -0.23849992889695482 = 300.8"
+    ],
+    "result": {
+      "col": 316,
+      "row": 301
+    },
+    "verification": "This (col, row) should land near the center of the plot frame."
+  },
+  "detection_internals": {
+    "y_axis_col_detected": null,
+    "x_axis_row_detected": 512,
+    "all_interior_v_lines": [],
+    "all_interior_h_lines": [
+      512
+    ],
+    "legend_exclusion_used_for_frame": [
+      95,
+      380,
+      588,
+      850
+    ],
+    "rule": "Long-run detection: longest contiguous run of pixels with gray<180 exceeding 50% of image height/width. Outer image-border lines (within 15 px of edge) excluded."
+  }
+}

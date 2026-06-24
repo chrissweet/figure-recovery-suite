@@ -1,0 +1,33 @@
+{
+  "panel_id": null,
+  "source_citation": null,
+  "x_axis": {
+    "title": "Age of females",
+    "unit": "days",
+    "title_verbatim": "Age of females in days",
+    "decimal_separator": "."
+  },
+  "y_axis": {
+    "title": "Probability of daily survival",
+    "unit": "p",
+    "title_verbatim": "Probability of daily survival (p)",
+    "decimal_separator": ",",
+    "notes": "Two-line label rendered above the y-tick column rather than rotated alongside it. The (p) parenthetical maps to the _p suffix in data.csv column 'daily_survival_p'."
+  },
+  "series_legend": [
+    {"series_id": "24C", "source_label": "24 °C", "color": "#000000",
+     "marker_shape": "filled black disk"},
+    {"series_id": "27C", "source_label": "27 °C", "color": "#808080",
+     "marker_shape": "filled gray square"},
+    {"series_id": "30C", "source_label": "30 °C", "color": "#FFFFFF",
+     "marker_shape": "diamond with black outline, white interior"},
+    {"series_id": "p_curve_24C", "source_label": "p curve for 24°C",
+     "color": "#000000", "line_style": "dashed"},
+    {"series_id": "p_curve_27C", "source_label": "p curve for 27°C",
+     "color": "#000000", "line_style": "solid"},
+    {"series_id": "p_curve_30C", "source_label": "p curve for 30°C",
+     "color": "#000000", "line_style": "dotted"}
+  ],
+  "chart_title": null,
+  "notes": "y range is unusually narrow (0.93-0.98) so per-pixel y precision matters. Six legend entries — three scatter shapes + three line styles. The §3b paired-edge subtraction recipe is essential here because the markers fuse with same-color fit curves. AUDIT-FLAGGED DEFECT: 27°C scatter Recall=0.56 in baseline; matched-frame step 1 confirms ~11 source gray squares without ringed overlays (fused with the solid 27°C curve). 30°C diamonds here are TRULY OPEN (white interior, thin black outline) — distinct from el-88 where '30°C' was filled with light gray. Pixel-probe a marker before reusing the §2b classifier."
+}

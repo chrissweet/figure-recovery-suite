@@ -1,0 +1,16 @@
+layer_idx,layer_type,series,x,y
+0,Bar Chart,CPU,0,21.45
+0,Bar Chart,Memory,0,14.98
+0,Bar Chart,IO Wait,0,8.2
+0,Bar Chart,CPU,1,30.49
+0,Bar Chart,Memory,1,22.05
+0,Bar Chart,IO Wait,1,12.16
+0,Bar Chart,CPU,2,44.63
+0,Bar Chart,Memory,2,27.99
+0,Bar Chart,IO Wait,2,18.09
+0,Bar Chart,CPU,3,17.49
+0,Bar Chart,Memory,3,12.16
+0,Bar Chart,IO Wait,3,4.81
+0,Bar Chart,CPU,4,27.67
+0,Bar Chart,Memory,4,35.06
+0,Bar Chart,IO Wait,4,22.05

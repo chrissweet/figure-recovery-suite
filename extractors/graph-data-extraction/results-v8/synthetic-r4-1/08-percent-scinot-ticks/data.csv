@@ -1,0 +1,15 @@
+layer_idx,layer_type,series,x,y
+0,Line Graph,Throughput,0.0508,1524256.7
+0,Line Graph,Throughput,0.12,1888407.4
+0,Line Graph,Throughput,0.1894,2113759.5
+0,Line Graph,Throughput,0.2588,2402414.5
+0,Line Graph,Throughput,0.3259,3487927.6
+0,Line Graph,Throughput,0.3962,3638833.0
+0,Line Graph,Throughput,0.4655,4145875.3
+0,Line Graph,Throughput,0.5349,4709255.5
+0,Line Graph,Throughput,0.604,5191146.9
+0,Line Graph,Throughput,0.6732,6505999.0
+0,Line Graph,Throughput,0.7427,6733477.8
+0,Line Graph,Throughput,0.8119,7128927.4
+0,Line Graph,Throughput,0.8814,8088392.4
+0,Line Graph,Throughput,0.9504,8618634.9

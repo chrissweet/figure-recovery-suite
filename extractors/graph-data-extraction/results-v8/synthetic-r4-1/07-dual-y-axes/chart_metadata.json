@@ -1,0 +1,53 @@
+{
+  "chart_id": "07-dual-y-axes",
+  "chart_type": "dual_y_line",
+  "panel_id": null,
+  "source_citation": null,
+  "chart_title": "Synthetic #7 — dual y-axes",
+  "x_axis_title": "Time",
+  "x_axis_title_verbatim": "Time (min)",
+  "x_axis_unit": "min",
+  "y_axis_title_left": "Drive current",
+  "y_axis_title_left_verbatim": "Drive current (A)",
+  "y_axis_unit_left": "A",
+  "y_axis_title_right": "Cell voltage",
+  "y_axis_title_right_verbatim": "Cell voltage (V)",
+  "y_axis_unit_right": "V",
+  "x_axis": {
+    "title": "Time",
+    "unit": "min",
+    "title_verbatim": "Time (min)",
+    "decimal_separator": "."
+  },
+  "y_axis_left": {
+    "title": "Drive current",
+    "unit": "A",
+    "title_verbatim": "Drive current (A)",
+    "decimal_separator": ".",
+    "title_color": "#1f77b4",
+    "tick_label_color": "#1f77b4"
+  },
+  "y_axis_right": {
+    "title": "Cell voltage",
+    "unit": "V",
+    "title_verbatim": "Cell voltage (V)",
+    "decimal_separator": ".",
+    "title_color": "#d62728",
+    "tick_label_color": "#d62728"
+  },
+  "series_legend": [
+    {"series_id": "drive_current",
+     "source_label": "Drive current (A)",
+     "color": "#1f77b4",
+     "marker_shape": "circle",
+     "line_style": "solid",
+     "axis": "left"},
+    {"series_id": "cell_voltage",
+     "source_label": "Cell voltage (V)",
+     "color": "#d62728",
+     "marker_shape": "square",
+     "line_style": "dashed",
+     "axis": "right"}
+  ],
+  "notes": "Two-axis chart. Left axis (Drive current, A) uses matplotlib-default blue (#1f77b4) and is the assignment for the solid blue circle-marker line. Right axis (Cell voltage, V) uses matplotlib-default red (#d62728) and is the assignment for the dashed red square-marker line. Tick label TEXT COLORS match the series colors and were the primary signal used for axis assignment. Legend is at bottom-right inside the plot area (pixel bbox cols 516..681, rows 339..385)."
+}

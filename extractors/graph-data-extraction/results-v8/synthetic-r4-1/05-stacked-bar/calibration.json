@@ -1,0 +1,54 @@
+{
+  "image_size": {"width": 700, "height": 450},
+  "plot_frame_box": {
+    "offset": {"x": 71, "y": 37},
+    "size": {"width": 614, "height": 355},
+    "left": 71, "top": 37, "right": 685, "bottom": 392,
+    "description": "Axis box detected from long dark vertical/horizontal frame lines; bottom row of frame is y=392 (the y=0 baseline of the bars)."
+  },
+  "pixels_per_coordinate_unit": {
+    "x": 121.75,
+    "y": 3.5375,
+    "x_unit_label": "category-slot (5 categories at x-tick centers 133, 254, 373, 496, 620)",
+    "y_unit_label": "% of node"
+  },
+  "data_to_pixel_formula": {
+    "col": "col = category_index_pixel (lookup: Web=135, API=256, Worker=377, Cron=499, DB=620)",
+    "row": "row = (y_value - 110.500571) / -0.282713"
+  },
+  "data_range": {
+    "x_min": 1, "x_max": 5,
+    "y_min": 0, "y_max": 100
+  },
+  "axis_calibration": {
+    "x_axis": {
+      "formula": "categorical; bar-center pixel per category",
+      "category_centers_px": {"Web": 135, "API": 256, "Worker": 377, "Cron": 499, "DB": 620},
+      "category_pixel_widths": {"Web": 73, "API": 74, "Worker": 74, "Cron": 74, "DB": 74}
+    },
+    "y_axis": {
+      "formula": "value = -0.282713 * pixel + 110.500571",
+      "m": -0.282713,
+      "b": 110.500571,
+      "inverse": "pixel = (value - 110.500571) / -0.282713",
+      "tick_pixels": [37, 108, 179, 249, 320, 391],
+      "tick_values": [100, 80, 60, 40, 20, 0]
+    }
+  },
+  "worked_example": {
+    "scenario": "Worker bar, cumulative top of IO Wait (entire bar = 91)",
+    "input": {"x": "Worker", "y": 91},
+    "compute": [
+      "col = category_centers_px['Worker'] = 377",
+      "row = (91 - 110.500571) / -0.282713 = 68.97"
+    ],
+    "result": {"col": 377, "row": 69},
+    "verification": "Observed bar top at column 377 is row 70 (y_data = 90.71). Matches printed value 91 within 0.3 pixels."
+  },
+  "detection_internals": {
+    "ytick_detection": "scanned x in [40,65] for dark text rows, grouped contiguous; six centers found",
+    "xtick_detection": "scanned y in [395,415] for dark text columns, grouped contiguous; five centers found",
+    "bar_detection": "scanned non-white pixels at y=370; five contiguous runs found (excluding frame edges at x=71 and x=685)",
+    "segment_boundary_rule": "per bar center column, walked y=37..391 classifying each row's majority color (over inner columns x0+5..x1-5) into {CPU, MEM, IOW, BG, EDGE, GRID}; recorded color->color transitions only. Gridlines were classified as GRID and ignored."
+  }
+}

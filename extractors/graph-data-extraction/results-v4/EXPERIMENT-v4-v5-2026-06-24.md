@@ -138,3 +138,32 @@ v6 = v4 extraction (reused) + deterministic PEEL recovery. prepare_canvas whiten
 **But residual-detector false positives still outweigh the gain on net F1**: aedes 0.858->0.848, synthetic 0.819->0.799 (synthetic misses are in CURVES, which peel-points cannot help, so its residual detections there are pure noise). owid unchanged (recovered points are scatter where GT types the series as lines).
 
 **Verdict:** the subtract-and-recheck CONCEPT works -- it is the only mechanism that moved real recall, and it validates "zero residual = complete recall" without a matplotlib render. The remaining bottleneck is the residual detector's precision (grayscale noise, open-marker rings), not the peel idea. Next lever: a more precise residual detector (shape/solidity gating) and curve-peel for the synthetic curve misses, which could flip net F1 positive.
+## v8: template-matching as the PRIMARY marker finder (WPD's tool, auto-seeded)
+
+cv_oracle/detect/template.py: seed a binary glyph from the most isolated blob of a
+series colour, slide it (overlap score), threshold + NMS. Single pass, not a
+recovery gate. v8 = template markers (per series, on the normalized canvas) + v4
+curves/errbars.
+
+| Corpus | v4 scatR / F1 | v8 scatR / F1 |
+|---|---|---|
+| synthetic (colored) | 0.77 / 0.819 | 0.76 / 0.816  (tied) |
+| aedes (grayscale)   | 0.84 / 0.858 | 0.48 / 0.594  (FP 172) |
+| owid | scatter n/a (GT is lines) | n/a |
+
+Isolated strength (validated, test-pinned): el-94 27 degC fused squares = **25/25**
+(blob got 9, v4 MLLM got 15) -- the strongest fused-marker recovery in the whole
+investigation. synthetic-01 = 36/37.
+
+But the corpus arm does NOT beat v4: it TIES on color-separable markers and FAILS
+on grayscale. Root cause: black markers and black dashed/dotted curve-dots are
+indistinguishable by intensity, so curve-dots match as markers (aedes precision
+0.97 -> 0.42). The single el-94-27C win (a gray series, separable from the black
+curves) is swamped by the black-marker failures in the aggregate.
+
+Verdict: template matching is the best detector we have FOR COLOR/INTENSITY-
+SEPARABLE markers (including fused same-colour ones), but it is not a universal
+marker extractor. Grayscale-with-dashed-curves -- the persistent hard case for
+every deterministic method here -- still favours the MLLM (v4), which reads the
+chart semantically. Division of labour: template-match where the marker colour is
+separable; lean on the MLLM where it is not.
