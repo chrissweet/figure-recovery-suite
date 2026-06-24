@@ -51,24 +51,24 @@
       },
       "curves": {
         "summary": {
-          "tp": 45,
-          "fn": 3,
+          "tp": 44,
+          "fn": 4,
           "fp": 0,
           "precision": 1.0,
-          "recall": 0.9375,
-          "f1": 0.9677,
-          "jaccard": 0.9375
+          "recall": 0.9167,
+          "f1": 0.9565,
+          "jaccard": 0.9167
         },
         "gt_n": 48,
-        "mine_n": 162,
+        "mine_n": 299,
         "by_series": {
           "if24c": {
             "gt_label": "iffor24c",
-            "tp": 21,
-            "fn": 0,
+            "tp": 20,
+            "fn": 1,
             "fp": 0,
             "gt_n": 21,
-            "mine_n": 41
+            "mine_n": 129
           },
           "if27c": {
             "gt_label": "iffor27c",
@@ -84,7 +84,7 @@
             "fn": 3,
             "fp": 0,
             "gt_n": 25,
-            "mine_n": 46
+            "mine_n": 95
           }
         }
       },
@@ -103,13 +103,13 @@
         "by_series": {}
       },
       "combined": {
-        "tp": 87,
-        "fn": 14,
+        "tp": 86,
+        "fn": 15,
         "fp": 7,
-        "precision": 0.9255,
-        "recall": 0.8614,
-        "f1": 0.8923,
-        "jaccard": 0.8056
+        "precision": 0.9247,
+        "recall": 0.8515,
+        "f1": 0.8866,
+        "jaccard": 0.7963
       }
     },
     "el-60-a": {
@@ -251,7 +251,7 @@
           "jaccard": 1.0
         },
         "gt_n": 2,
-        "mine_n": 33,
+        "mine_n": 37,
         "by_series": {
           "trendline": {
             "gt_label": "trendline",
@@ -259,7 +259,7 @@
             "fn": 0,
             "fp": 0,
             "gt_n": 2,
-            "mine_n": 33
+            "mine_n": 37
           }
         }
       },
@@ -411,24 +411,24 @@
       },
       "curves": {
         "summary": {
-          "tp": 1,
-          "fn": 1,
+          "tp": 2,
+          "fn": 0,
           "fp": 0,
           "precision": 1.0,
-          "recall": 0.5,
-          "f1": 0.6667,
-          "jaccard": 0.5
+          "recall": 1.0,
+          "f1": 1.0,
+          "jaccard": 1.0
         },
         "gt_n": 2,
-        "mine_n": 35,
+        "mine_n": 40,
         "by_series": {
           "trendline": {
             "gt_label": "trendline",
-            "tp": 1,
-            "fn": 1,
+            "tp": 2,
+            "fn": 0,
             "fp": 0,
             "gt_n": 2,
-            "mine_n": 35
+            "mine_n": 40
           }
         }
       },
@@ -462,13 +462,13 @@
         }
       },
       "combined": {
-        "tp": 4,
-        "fn": 4,
+        "tp": 5,
+        "fn": 3,
         "fp": 6,
-        "precision": 0.4,
-        "recall": 0.5,
-        "f1": 0.4444,
-        "jaccard": 0.2857
+        "precision": 0.4545,
+        "recall": 0.625,
+        "f1": 0.5263,
+        "jaccard": 0.3571
       }
     },
     "el-80": {
@@ -711,16 +711,16 @@
       },
       "curves": {
         "summary": {
-          "tp": 56,
-          "fn": 28,
+          "tp": 62,
+          "fn": 22,
           "fp": 0,
           "precision": 1.0,
-          "recall": 0.6667,
-          "f1": 0.8,
-          "jaccard": 0.6667
+          "recall": 0.7381,
+          "f1": 0.8493,
+          "jaccard": 0.7381
         },
         "gt_n": 84,
-        "mine_n": 226,
+        "mine_n": 341,
         "by_series": {
           "pcurve24c": {
             "gt_label": "pcurvefor24c",
@@ -728,7 +728,7 @@
             "fn": 5,
             "fp": 0,
             "gt_n": 21,
-            "mine_n": 90
+            "mine_n": 94
           },
           "pcurve27c": {
             "gt_label": "pcurvefor27c",
@@ -740,11 +740,11 @@
           },
           "pcurve30c": {
             "gt_label": "pcurvefor30c",
-            "tp": 15,
-            "fn": 18,
+            "tp": 21,
+            "fn": 12,
             "fp": 0,
             "gt_n": 33,
-            "mine_n": 36
+            "mine_n": 147
           }
         }
       },
@@ -763,13 +763,13 @@
         "by_series": {}
       },
       "combined": {
-        "tp": 123,
-        "fn": 36,
+        "tp": 129,
+        "fn": 30,
         "fp": 20,
-        "precision": 0.8601,
-        "recall": 0.7736,
-        "f1": 0.8146,
-        "jaccard": 0.6872
+        "precision": 0.8658,
+        "recall": 0.8113,
+        "f1": 0.8377,
+        "jaccard": 0.7207
       }
     }
   },
@@ -784,13 +784,13 @@
       "jaccard": 0.7876
     },
     "curves": {
-      "tp": 120,
-      "fn": 42,
+      "tp": 126,
+      "fn": 36,
       "fp": 0,
       "precision": 1.0,
-      "recall": 0.7407,
-      "f1": 0.8511,
-      "jaccard": 0.7407
+      "recall": 0.7778,
+      "f1": 0.875,
+      "jaccard": 0.7778
     },
     "errbars": {
       "tp": 16,
@@ -802,13 +802,13 @@
       "jaccard": 0.3902
     },
     "combined": {
-      "tp": 340,
-      "fn": 66,
+      "tp": 346,
+      "fn": 60,
       "fp": 56,
-      "precision": 0.8586,
-      "recall": 0.8374,
-      "f1": 0.8479,
-      "jaccard": 0.7359
+      "precision": 0.8607,
+      "recall": 0.8522,
+      "f1": 0.8564,
+      "jaccard": 0.7489
     }
   }
 }

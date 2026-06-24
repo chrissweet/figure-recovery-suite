@@ -262,3 +262,4 @@ layer_idx,layer_type,series,x,y
 1,Line Graph,Power law,9.8002,13.141048
 1,Line Graph,Power law,9.8522,12.969687
 1,Line Graph,Power law,9.9733,12.63364
+1,Line Graph,Exponential,10.007953,0.667754

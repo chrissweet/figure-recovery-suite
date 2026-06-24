@@ -1021,3 +1021,183 @@ layer_idx,layer_type,series,x,y
 6,Line Graph,Sweden,2020,0.31
 6,Line Graph,Sweden,2021,0.134
 6,Line Graph,Sweden,2022,0.134
+1,Line Graph,Ghana,1752.185,55.74994
+1,Line Graph,Ghana,1753.8222,54.53842
+1,Line Graph,Ghana,1755.4594,55.67422
+1,Line Graph,Ghana,1757.0966,56.627112
+1,Line Graph,Ghana,1758.7338,53.17546
+1,Line Graph,Ghana,1760.371,53.62978
+1,Line Graph,Ghana,1762.0082,53.40262
+1,Line Graph,Ghana,1763.6454,53.62978
+1,Line Graph,Ghana,1765.2826,58.64982
+1,Line Graph,Ghana,1766.9198,57.15076
+1,Line Graph,Ghana,1768.557,53.28904
+1,Line Graph,Ghana,1770.1942,56.46928
+1,Line Graph,Ghana,1771.8314,53.625286
+1,Line Graph,Ghana,1773.4686,53.62978
+1,Line Graph,Ghana,1775.1058,51.089881
+1,Line Graph,Ghana,1776.743,54.70879
+1,Line Graph,Ghana,1778.3802,55.16311
+1,Line Graph,Ghana,1780.0174,55.33348
+1,Line Graph,Ghana,1781.6546,55.922288
+1,Line Graph,Ghana,1783.2918,54.282865
+1,Line Graph,Ghana,1784.929,53.28904
+1,Line Graph,Ghana,1786.5662,57.26434
+1,Line Graph,Ghana,1788.2034,57.437978
+1,Line Graph,Ghana,1789.8406,53.951409
+1,Line Graph,Ghana,1791.4778,53.62978
+1,Line Graph,Ghana,1793.115,57.170384
+1,Line Graph,Ghana,1794.7522,53.964345
+1,Line Graph,Ghana,1796.3894,53.400793
+1,Line Graph,Ghana,1798.0266,53.17546
+1,Line Graph,Ghana,1799.6638,54.904561
+1,Line Graph,Ghana,1801.301,56.926112
+1,Line Graph,Ghana,1802.9382,55.44706
+1,Line Graph,Ghana,1804.5754,51.682213
+1,Line Graph,Ghana,1806.2126,53.62978
+1,Line Graph,Ghana,1807.8498,57.984213
+1,Line Graph,Ghana,1809.487,53.62978
+1,Line Graph,Ghana,1811.1242,53.5162
+1,Line Graph,Ghana,1812.7614,55.52278
+1,Line Graph,Ghana,1814.3986,53.40262
+1,Line Graph,Ghana,1816.0358,56.9236
+1,Line Graph,Ghana,1817.673,56.46928
+1,Line Graph,Ghana,1819.3102,52.9483
+1,Line Graph,Ghana,1820.9474,55.90138
+1,Line Graph,Ghana,1822.5846,57.26434
+1,Line Graph,Ghana,1824.2218,53.62978
+1,Line Graph,Ghana,1825.859,56.52607
+1,Line Graph,Ghana,1827.4962,53.62978
+1,Line Graph,Ghana,1829.1334,58.749193
+1,Line Graph,Ghana,1830.7706,54.768174
+1,Line Graph,Ghana,1832.4078,53.843976
+1,Line Graph,Ghana,1834.045,52.91544
+1,Line Graph,Ghana,1835.6822,51.975325
+1,Line Graph,Ghana,1837.3194,53.62978
+1,Line Graph,Ghana,1838.9566,52.953016
+1,Line Graph,Ghana,1840.5938,52.868109
+1,Line Graph,Ghana,1842.231,53.62978
+1,Line Graph,Ghana,1843.8682,52.829611
+1,Line Graph,Ghana,1845.5054,53.62978
+1,Line Graph,Ghana,1847.1426,53.109659
+1,Line Graph,Ghana,1848.7798,53.97052
+1,Line Graph,Ghana,1850.417,52.9483
+1,Line Graph,Ghana,1852.0542,53.23225
+1,Line Graph,Ghana,1853.6914,53.614723
+1,Line Graph,Ghana,1855.3286,53.41423
+1,Line Graph,Ghana,1856.9658,53.664153
+1,Line Graph,Ghana,1858.603,52.550067
+1,Line Graph,Ghana,1860.2402,52.740673
+1,Line Graph,Ghana,1861.8774,53.57915
+1,Line Graph,Ghana,1863.5146,53.02402
+1,Line Graph,Ghana,1865.1518,52.9483
+1,Line Graph,Ghana,1866.789,53.40262
+1,Line Graph,Ghana,1868.4262,53.000231
+1,Line Graph,Ghana,1870.0634,53.085244
+1,Line Graph,Ghana,1871.7006,53.5162
+1,Line Graph,Ghana,1873.3378,53.23225
+1,Line Graph,Ghana,1874.975,52.9483
+1,Line Graph,Ghana,1876.6122,53.004895
+1,Line Graph,Ghana,1878.2494,53.042011
+1,Line Graph,Ghana,1879.8866,53.036173
+1,Line Graph,Ghana,1881.5238,52.988326
+1,Line Graph,Ghana,1883.161,52.899418
+1,Line Graph,Ghana,1884.7982,52.770395
+1,Line Graph,Ghana,1886.4354,52.602203
+1,Line Graph,Ghana,1888.0726,52.395789
+1,Line Graph,Ghana,1889.7098,52.152099
+1,Line Graph,Ghana,1891.347,51.872081
+1,Line Graph,Ghana,1892.9842,51.556679
+1,Line Graph,Ghana,1894.6214,51.206842
+1,Line Graph,Ghana,1896.2586,50.823515
+1,Line Graph,Ghana,1897.8958,50.407644
+1,Line Graph,Ghana,1899.533,49.960177
+1,Line Graph,Ghana,1901.1702,49.48206
+1,Line Graph,Ghana,1902.8074,48.974239
+1,Line Graph,Ghana,1904.4446,48.437661
+1,Line Graph,Ghana,1906.0818,47.873273
+1,Line Graph,Ghana,1907.719,47.28202
+1,Line Graph,Ghana,1909.3562,46.664849
+1,Line Graph,Ghana,1910.9934,46.022707
+1,Line Graph,Ghana,1912.6306,45.356541
+1,Line Graph,Ghana,1914.2678,44.667296
+1,Line Graph,Ghana,1915.905,43.95592
+1,Line Graph,Ghana,1917.5422,43.223358
+1,Line Graph,Ghana,1919.1794,42.470557
+1,Line Graph,Ghana,1920.8166,41.698465
+1,Line Graph,Ghana,1922.4538,40.908026
+1,Line Graph,Ghana,1924.091,40.100188
+1,Line Graph,Ghana,1925.7282,39.275898
+1,Line Graph,Ghana,1927.3654,38.436101
+1,Line Graph,Ghana,1929.0026,37.581744
+1,Line Graph,Ghana,1930.6398,36.713774
+1,Line Graph,United States,1816.4451,28.13107
+1,Line Graph,United States,1818.0823,30.105064
+1,Line Graph,United States,1819.7195,31.325151
+1,Line Graph,United States,1821.3567,31.937667
+1,Line Graph,United States,1822.9939,32.088949
+1,Line Graph,United States,1824.6311,31.925331
+1,Line Graph,United States,1826.2683,31.59315
+1,Line Graph,United States,1827.9055,31.238742
+1,Line Graph,United States,1829.5427,31.008442
+1,Line Graph,United States,1831.1799,31.048588
+1,Line Graph,United States,1832.8171,31.505514
+1,Line Graph,United States,1834.4543,32.204143
+1,Line Graph,United States,1836.0915,30.605952
+1,Line Graph,United States,1837.7287,27.654927
+1,Line Graph,United States,1839.3659,24.800505
+1,Line Graph,United States,1841.0031,22.506715
+1,Line Graph,United States,1842.6403,21.124368
+1,Line Graph,United States,1844.2775,21.004274
+1,Line Graph,United States,1845.9147,22.497246
+1,Line Graph,United States,1847.5519,25.954094
+1,Line Graph,United States,1849.1891,31.434125
+1,Line Graph,United States,1850.8263,36.196744
+1,Line Graph,United States,1852.4635,39.243637
+1,Line Graph,United States,1854.1007,40.320928
+1,Line Graph,United States,1855.7379,39.174736
+1,Line Graph,United States,1857.3751,35.551183
+1,Line Graph,United States,1859.0123,32.39032
+1,Line Graph,United States,1860.6495,27.304194
+1,Line Graph,United States,1862.2867,26.907609
+1,Line Graph,United States,1863.9239,28.36117
+1,Line Graph,United States,1865.5611,26.093649
+1,Line Graph,United States,1867.1983,24.971067
+1,Line Graph,United States,1868.8355,26.187899
+1,Line Graph,United States,1870.4727,34.32118
+1,Line Graph,United States,1872.1099,23.87182
+1,Line Graph,United States,1873.7471,23.57844
+1,Line Graph,United States,1875.3843,22.340654
+1,Line Graph,United States,1877.0215,21.505965
+1,Line Graph,United States,1878.6587,22.96318
+1,Line Graph,United States,1880.2959,22.876554
+1,Line Graph,United States,1881.9331,20.594403
+1,Line Graph,United States,1883.5703,23.19034
+1,Line Graph,United States,1885.2075,21.374546
+1,Line Graph,United States,1886.8447,21.051059
+1,Line Graph,United States,1888.4819,21.736329
+1,Line Graph,United States,1890.1191,22.28948
+1,Line Graph,United States,1891.7563,22.267935
+1,Line Graph,United States,1893.3935,21.25948
+1,Line Graph,United States,1895.0307,23.30392
+1,Line Graph,United States,1896.6679,24.652932
+1,Line Graph,United States,1898.3051,22.84989
+1,Line Graph,United States,1899.9423,20.040724
+1,Line Graph,United States,1901.5795,18.371363
+1,Line Graph,United States,1903.2167,19.929596
+1,Line Graph,United States,1904.8539,21.361204
+1,Line Graph,United States,1906.4911,19.513678
+1,Line Graph,United States,1908.1283,16.803551
+1,Line Graph,United States,1909.7655,15.63727
+1,Line Graph,United States,1911.4027,14.724419
+1,Line Graph,United States,1913.0399,14.703325
+1,Line Graph,United States,1914.6771,14.782589
+1,Line Graph,United States,1916.3143,13.47925
+1,Line Graph,United States,1917.9515,21.7138
+1,Line Graph,United States,1919.5887,17.295826
+1,Line Graph,United States,1921.2259,9.66987
+1,Line Graph,United States,1922.8631,10.24222
+1,Line Graph,United States,1924.5003,8.995878
+1,Line Graph,United Kingdom,1816.4451,28.13107
+1,Line Graph,France,1816.0358,27.84712
+1,Line Graph,Sweden,1751.7757,34.54834

@@ -3362,3 +3362,142 @@ layer_idx,layer_type,series,x,y
 0,Line Graph,Kenya,2021.87,0.3106
 0,Line Graph,Kenya,2022.29,0.3106
 0,Line Graph,Kenya,2023.57,0.3106
+1,Line Graph,United States,1771.76629,-5.78405
+1,Line Graph,United States,1773.47345,-5.78405
+1,Line Graph,United States,1775.18061,-5.78405
+1,Line Graph,United States,1776.88777,-5.78405
+1,Line Graph,United States,1778.59493,-5.766236
+1,Line Graph,United States,1780.30209,-5.72186
+1,Line Graph,United States,1782.00925,-5.704074
+1,Line Graph,United States,1783.71641,-5.65967
+1,Line Graph,United States,1785.42357,-5.615266
+1,Line Graph,United States,1787.13073,-5.59748
+1,Line Graph,United States,1788.83789,-5.553097
+1,Line Graph,United States,1790.54505,-5.53529
+1,Line Graph,United States,1792.25221,-5.490941
+1,Line Graph,United States,1793.95937,-5.4731
+1,Line Graph,United States,1795.66653,-5.41091
+1,Line Graph,United States,1797.37369,-5.41091
+1,Line Graph,United States,1799.08085,-5.34872
+1,Line Graph,United States,1800.78801,-5.28653
+1,Line Graph,United States,1802.49517,-5.255954
+1,Line Graph,United States,1804.20233,-5.192725
+1,Line Graph,United States,1805.90949,-5.16215
+1,Line Graph,United States,1807.61665,-5.09996
+1,Line Graph,United States,1809.32381,-4.97558
+1,Line Graph,United States,1811.03097,-4.78901
+1,Line Graph,United States,1812.73813,-4.60244
+1,Line Graph,United States,1814.44529,-4.41587
+1,Line Graph,United States,1816.15245,-4.198218
+1,Line Graph,United States,1817.85961,-3.98054
+1,Line Graph,United States,1819.56677,-3.98054
+1,Line Graph,United States,1821.27393,-4.198205
+1,Line Graph,United States,1822.98109,-4.29149
+1,Line Graph,United States,1824.68825,-4.10492
+1,Line Graph,United States,1826.39541,-3.98054
+1,Line Graph,United States,1828.10257,-3.91835
+1,Line Graph,United States,1829.80973,-4.04273
+1,Line Graph,United States,2024.42597,-0.53936
+1,Line Graph,United States,2026.13313,8.636256
+1,Line Graph,United States,2027.84029,5.612267
+1,Line Graph,United States,2029.54745,5.13375
+1,Line Graph,United States,2031.25461,6.9649
+1,Line Graph,United States,2032.96177,6.014281
+1,Line Graph,United States,2034.66893,4.549855
+1,Line Graph,United States,2036.37609,5.273332
+1,Line Graph,United States,2038.08325,5.561183
+1,Line Graph,United States,2039.79041,3.35788
+1,Line Graph,United States,2041.49757,4.452424
+1,Line Graph,Canada,2024.42597,-4.011635
+1,Line Graph,Canada,2026.13313,7.499734
+1,Line Graph,Canada,2027.84029,3.146434
+1,Line Graph,Canada,2029.54745,-1.99046
+1,Line Graph,Canada,2031.25461,1.3678
+1,Line Graph,Canada,2032.96177,1.569917
+1,Line Graph,Canada,2034.66893,2.474782
+1,Line Graph,Canada,2036.37609,-1.47221
+1,Line Graph,Canada,2038.08325,-4.58171
+1,Line Graph,Canada,2039.79041,-2.975135
+1,Line Graph,Canada,2041.49757,0.7459
+1,Line Graph,China,2024.42597,-2.05265
+1,Line Graph,China,2026.13313,7.490688
+1,Line Graph,China,2027.84029,5.870356
+1,Line Graph,China,2029.54745,5.986821
+1,Line Graph,China,2031.25461,10.13659
+1,Line Graph,China,2032.96177,6.2739
+1,Line Graph,China,2034.66893,6.830155
+1,Line Graph,China,2036.37609,5.330191
+1,Line Graph,China,2038.08325,7.682158
+1,Line Graph,China,2039.79041,5.90767
+1,Line Graph,China,2041.49757,5.386829
+1,Line Graph,South Africa,2023.99918,1.61656
+1,Line Graph,South Africa,2025.70634,2.378146
+1,Line Graph,South Africa,2027.4135,2.54941
+1,Line Graph,South Africa,2029.12066,2.11408
+1,Line Graph,South Africa,2030.82782,1.772035
+1,Line Graph,South Africa,2032.53498,1.772035
+1,Line Graph,South Africa,2034.24214,1.18123
+1,Line Graph,South Africa,2035.9493,0.839185
+1,Line Graph,South Africa,2037.65646,1.025755
+1,Line Graph,South Africa,2039.36362,0.331379
+1,Line Graph,South Africa,2041.07078,0.06181
+1,Line Graph,European Union (27),2024.42597,1.80313
+1,Line Graph,European Union (27),2026.13313,1.86532
+1,Line Graph,European Union (27),2027.84029,1.212325
+1,Line Graph,European Union (27),2029.54745,2.711931
+1,Line Graph,European Union (27),2031.25461,0.43495
+1,Line Graph,European Union (27),2032.96177,1.61656
+1,Line Graph,European Union (27),2034.66893,0.62152
+1,Line Graph,European Union (27),2036.37609,0.092905
+1,Line Graph,European Union (27),2038.08325,-0.224264
+1,Line Graph,European Union (27),2039.79041,-0.31133
+1,Line Graph,European Union (27),2041.49757,-1.150895
+1,Line Graph,World,2024.85276,-2.23922
+1,Line Graph,World,2026.55992,-6.59252
+1,Line Graph,World,2028.26708,-4.35368
+1,Line Graph,World,2029.97424,-4.260395
+1,Line Graph,World,2031.6814,-1.99046
+1,Line Graph,World,2033.38856,-4.29149
+1,Line Graph,World,2035.09572,-2.11484
+1,Line Graph,World,2036.80288,-2.05265
+1,Line Graph,World,2038.51004,-3.66959
+1,Line Graph,World,2040.2172,-4.322585
+1,Line Graph,United Kingdom,2025.70634,4.41511
+1,Line Graph,United Kingdom,2027.4135,6.081802
+1,Line Graph,United Kingdom,2029.12066,5.57599
+1,Line Graph,United Kingdom,2030.82782,4.4773
+1,Line Graph,United Kingdom,2032.53498,2.86036
+1,Line Graph,United Kingdom,2034.24214,4.656096
+1,Line Graph,United Kingdom,2035.9493,3.562219
+1,Line Graph,United Kingdom,2037.65646,3.48917
+1,Line Graph,United Kingdom,2039.36362,3.404522
+1,Line Graph,United Kingdom,2041.07078,3.91759
+1,Line Graph,India,1883.15848,-6.53033
+1,Line Graph,India,1884.86564,-6.452098
+1,Line Graph,India,1886.5728,-6.40668
+1,Line Graph,India,1888.27996,-6.382831
+1,Line Graph,India,1889.98712,-6.369302
+1,Line Graph,India,1891.69428,-6.354849
+1,Line Graph,India,1893.40144,-6.32892
+1,Line Graph,India,1895.1086,-6.297005
+1,Line Graph,India,2024.85276,-5.72186
+1,Line Graph,India,2026.55992,-6.095
+1,Line Graph,India,2028.26708,-6.001715
+1,Line Graph,India,2029.97424,-5.97062
+1,Line Graph,India,2031.6814,-5.28653
+1,Line Graph,India,2033.38856,-5.84624
+1,Line Graph,India,2035.09572,-5.03777
+1,Line Graph,India,2036.80288,-3.514115
+1,Line Graph,India,2038.51004,-4.711272
+1,Line Graph,India,2040.2172,-5.690765
+1,Line Graph,Kenya,2024.42597,-4.011635
+1,Line Graph,Kenya,2026.13313,5.88694
+1,Line Graph,Kenya,2027.84029,0.31057
+1,Line Graph,Kenya,2029.54745,-1.99046
+1,Line Graph,Kenya,2031.25461,0.66298
+1,Line Graph,Kenya,2032.96177,-1.18199
+1,Line Graph,Kenya,2034.66893,2.440578
+1,Line Graph,Kenya,2036.37609,0.49714
+1,Line Graph,Kenya,2038.08325,-3.83543
+1,Line Graph,Kenya,2039.79041,-1.43075
+1,Line Graph,Kenya,2041.49757,-2.189468

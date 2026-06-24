@@ -277,7 +277,7 @@
           "jaccard": 0.325
         },
         "gt_n": 120,
-        "mine_n": 263,
+        "mine_n": 264,
         "by_series": {
           "exponential": {
             "gt_label": "exponential",
@@ -285,7 +285,7 @@
             "fn": 28,
             "fp": 0,
             "gt_n": 60,
-            "mine_n": 138
+            "mine_n": 139
           },
           "powerlaw": {
             "gt_label": "powerlaw",
@@ -606,24 +606,24 @@
       },
       "curves": {
         "summary": {
-          "tp": 14,
-          "fn": 0,
+          "tp": 13,
+          "fn": 1,
           "fp": 0,
           "precision": 1.0,
-          "recall": 1.0,
-          "f1": 1.0,
-          "jaccard": 1.0
+          "recall": 0.9286,
+          "f1": 0.963,
+          "jaccard": 0.9286
         },
         "gt_n": 14,
-        "mine_n": 14,
+        "mine_n": 21,
         "by_series": {
           "throughput": {
             "gt_label": "throughput",
-            "tp": 14,
-            "fn": 0,
+            "tp": 13,
+            "fn": 1,
             "fp": 0,
             "gt_n": 14,
-            "mine_n": 14
+            "mine_n": 21
           }
         }
       },
@@ -642,13 +642,13 @@
         "by_series": {}
       },
       "combined": {
-        "tp": 14,
-        "fn": 0,
+        "tp": 13,
+        "fn": 1,
         "fp": 0,
         "precision": 1.0,
-        "recall": 1.0,
-        "f1": 1.0,
-        "jaccard": 1.0
+        "recall": 0.9286,
+        "f1": 0.963,
+        "jaccard": 0.9286
       }
     },
     "09-open-markers-with-fit": {
@@ -814,13 +814,13 @@
       "jaccard": 0.5887
     },
     "curves": {
-      "tp": 234,
-      "fn": 128,
+      "tp": 233,
+      "fn": 129,
       "fp": 0,
       "precision": 1.0,
-      "recall": 0.6464,
-      "f1": 0.7852,
-      "jaccard": 0.6464
+      "recall": 0.6436,
+      "f1": 0.7832,
+      "jaccard": 0.6436
     },
     "errbars": {
       "tp": 59,
@@ -832,13 +832,13 @@
       "jaccard": 0.9516
     },
     "combined": {
-      "tp": 376,
-      "fn": 156,
+      "tp": 375,
+      "fn": 157,
       "fp": 33,
-      "precision": 0.9193,
-      "recall": 0.7068,
-      "f1": 0.7991,
-      "jaccard": 0.6655
+      "precision": 0.9191,
+      "recall": 0.7049,
+      "f1": 0.7979,
+      "jaccard": 0.6637
     }
   }
 }

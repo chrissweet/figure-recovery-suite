@@ -43,3 +43,8 @@ layer_idx,layer_type,series,x,y,y_lo,y_hi
 2,ErrorBarLayer,x_err_right,27.9939,7.1502,,
 2,ErrorBarLayer,x_err_left,29.0117,4.8859,,
 2,ErrorBarLayer,x_err_right,30.9988,4.8859,,
+1,Line Graph,Trend Line,0.078081,20.310407,,
+1,Line Graph,Trend Line,0.271941,20.218023,,
+1,Line Graph,Trend Line,0.465801,20.102543,,
+1,Line Graph,Trend Line,0.659661,20.010159,,
+1,Line Graph,Trend Line,0.853521,19.917775,,

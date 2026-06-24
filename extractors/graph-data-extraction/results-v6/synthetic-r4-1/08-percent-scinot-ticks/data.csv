@@ -27,3 +27,10 @@ layer_idx,layer_type,series,x,y
 1,Scatter Plot,Throughput,0.8119,7128927.4
 1,Scatter Plot,Throughput,0.8814,8088392.4
 1,Scatter Plot,Throughput,0.9504,8618634.9
+1,Line Graph,Throughput,0.019669,9478873.239437
+1,Line Graph,Throughput,0.025834,9478873.239437
+1,Line Graph,Throughput,0.031998,9478873.239437
+1,Line Graph,Throughput,0.038163,9464788.732394
+1,Line Graph,Throughput,0.044328,9464788.732394
+1,Line Graph,Throughput,0.050492,9478873.239437
+1,Line Graph,Throughput,0.950535,8745492.633361
