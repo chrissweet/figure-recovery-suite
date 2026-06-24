@@ -52,3 +52,37 @@ def test_peel_finds_misses_where_forward_pass_dropped_markers():
     assert len(misses) > 0
     # recovered rows are in the GT schema (data coords)
     assert all("x" in m and "y" in m and m["layer_type"] == "Scatter Plot" for m in misses)
+
+
+def test_curve_peel_extends_only_never_interleaves():
+    """The invariant that keeps curve-peel from corrupting the scorer's per-series
+    interpolation: every recovered curve point must fall OUTSIDE the forward
+    pass's x-coverage for that series (a truncated tail), never inside it."""
+    import csv as _csv
+
+    from cv_oracle.peel import peel_recover_curves
+
+    p = _paths("aedes-aegypti-2014", "el-94")
+    recovered = peel_recover_curves(p["image"], p["cal"], p["meta"], p["data"])
+    assert recovered, "el-94 has truncated curve tails; expected some recovery"
+
+    # forward pass x-range per curve series
+    v4_xrange = {}
+    for r in _csv.DictReader(open(p["data"])):
+        lt = (r.get("layer_type", "") or "").lower()
+        if "line" in lt or "spline" in lt:
+            try:
+                x = float(r["x"])
+            except (TypeError, ValueError):
+                continue
+            lo, hi = v4_xrange.get(r["series"], (x, x))
+            v4_xrange[r["series"]] = (min(lo, x), max(hi, x))
+
+    for row in recovered:
+        rng = v4_xrange.get(row["series"])
+        if rng is None:
+            continue  # series the forward pass lacked entirely -> whole curve OK
+        lo, hi = rng
+        assert row["x"] < lo or row["x"] > hi, (
+            f"curve-peel interleaved at x={row['x']} inside v4 range [{lo},{hi}]"
+        )
