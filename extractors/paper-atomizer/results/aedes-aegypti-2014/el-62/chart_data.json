@@ -1,0 +1,182 @@
+{
+  "chart_title": "Untitled",
+  "Chart_Type": "Grouped Column Chart",
+  "Orientation": "Landscape",
+  "chart_aspect_ratio": 1.4,
+  "x_axis_label": "Temperatures (\u00b0C)",
+  "x_axis_scale": "linear",
+  "y_axis_label": "Duration of GC (days)",
+  "y_axis_scale": "linear",
+  "x_axis_min": null,
+  "x_axis_max": null,
+  "Left_Y_axis_min": 0,
+  "Left_Y_axis_max": 16,
+  "Right_Y_axis_min": null,
+  "Right_Y_axis_max": null,
+  "right_y_axis_label": "",
+  "right_y_axis_scale": null,
+  "top_x_axis_label": "",
+  "top_x_axis_scale": null,
+  "top_x_axis_min": null,
+  "top_x_axis_max": null,
+  "y_axis_interval": 4,
+  "x_axis_interval": null,
+  "x_axis_ticks": [
+    24,
+    27,
+    30
+  ],
+  "y_axis_ticks": [
+    0,
+    4,
+    8,
+    12,
+    16
+  ],
+  "data": [
+    {
+      "series": "Mean duration of GC1",
+      "x": 24,
+      "y": 9.0,
+      "color": "#3b5998",
+      "line_style": "none",
+      "marker_type": "none",
+      "marker_fill": null,
+      "marker_size": null,
+      "error_bars": [
+        {
+          "error_plus": 2.6,
+          "error_minus": 2.6,
+          "error_direction": "vertical",
+          "error_type": "custom"
+        }
+      ]
+    },
+    {
+      "series": "Mean duration of GC2",
+      "x": 24,
+      "y": 6.6,
+      "color": "#60822d",
+      "line_style": "none",
+      "marker_type": "none",
+      "marker_fill": null,
+      "marker_size": null,
+      "error_bars": [
+        {
+          "error_plus": 3.4,
+          "error_minus": 3.4,
+          "error_direction": "vertical",
+          "error_type": "custom"
+        }
+      ]
+    },
+    {
+      "series": "Mean duration of GC1",
+      "x": 27,
+      "y": 7.6,
+      "color": "#3b5998",
+      "line_style": "none",
+      "marker_type": "none",
+      "marker_fill": null,
+      "marker_size": null,
+      "error_bars": [
+        {
+          "error_plus": 2.8,
+          "error_minus": 2.8,
+          "error_direction": "vertical",
+          "error_type": "custom"
+        }
+      ]
+    },
+    {
+      "series": "Mean duration of GC2",
+      "x": 27,
+      "y": 6.4,
+      "color": "#60822d",
+      "line_style": "none",
+      "marker_type": "none",
+      "marker_fill": null,
+      "marker_size": null,
+      "error_bars": [
+        {
+          "error_plus": 3.6,
+          "error_minus": 3.6,
+          "error_direction": "vertical",
+          "error_type": "custom"
+        }
+      ]
+    },
+    {
+      "series": "Mean duration of GC3",
+      "x": 27,
+      "y": 6.6,
+      "color": "#e09e9e",
+      "line_style": "none",
+      "marker_type": "none",
+      "marker_fill": null,
+      "marker_size": null,
+      "error_bars": [
+        {
+          "error_plus": 1.2,
+          "error_minus": 1.2,
+          "error_direction": "vertical",
+          "error_type": "custom"
+        }
+      ]
+    },
+    {
+      "series": "Mean duration of GC1",
+      "x": 30,
+      "y": 5.2,
+      "color": "#3b5998",
+      "line_style": "none",
+      "marker_type": "none",
+      "marker_fill": null,
+      "marker_size": null,
+      "error_bars": [
+        {
+          "error_plus": 2.6,
+          "error_minus": 2.6,
+          "error_direction": "vertical",
+          "error_type": "custom"
+        }
+      ]
+    },
+    {
+      "series": "Mean duration of GC2",
+      "x": 30,
+      "y": 4.4,
+      "color": "#60822d",
+      "line_style": "none",
+      "marker_type": "none",
+      "marker_fill": null,
+      "marker_size": null,
+      "error_bars": [
+        {
+          "error_plus": 3.2,
+          "error_minus": 3.2,
+          "error_direction": "vertical",
+          "error_type": "custom"
+        }
+      ]
+    },
+    {
+      "series": "Mean duration of GC3",
+      "x": 30,
+      "y": 3.0,
+      "color": "#e09e9e",
+      "line_style": "none",
+      "marker_type": "none",
+      "marker_fill": null,
+      "marker_size": null,
+      "error_bars": [
+        {
+          "error_plus": 1.2,
+          "error_minus": 1.2,
+          "error_direction": "vertical",
+          "error_type": "custom"
+        }
+      ]
+    }
+  ]
+}

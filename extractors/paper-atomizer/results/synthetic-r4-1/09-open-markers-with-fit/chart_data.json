@@ -1,0 +1,190 @@
+{
+  "chart_title": "Synthetic #9 \u2014 open circles fused with same-color fit line",
+  "Chart_Type": "Combo",
+  "Orientation": "Landscape",
+  "chart_aspect_ratio": 1.5,
+  "x_axis_label": "Independent x",
+  "x_axis_scale": "linear",
+  "y_axis_label": "Response y",
+  "y_axis_scale": "linear",
+  "x_axis_min": 0,
+  "x_axis_max": 10,
+  "Left_Y_axis_min": 0,
+  "Left_Y_axis_max": 30,
+  "Right_Y_axis_min": null,
+  "Right_Y_axis_max": null,
+  "right_y_axis_label": "",
+  "right_y_axis_scale": null,
+  "top_x_axis_label": "",
+  "top_x_axis_scale": null,
+  "top_x_axis_min": null,
+  "top_x_axis_max": null,
+  "y_axis_interval": 5,
+  "x_axis_interval": 2,
+  "x_axis_ticks": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "y_axis_ticks": [
+    0,
+    5,
+    10,
+    15,
+    20,
+    25,
+    30
+  ],
+  "layers": [
+    {
+      "Chart_Type": "Line Graph",
+      "data": [
+        {
+          "series": "Linear fit (slope=1.76, intercept=4.00)",
+          "x": 0,
+          "y": 4.0,
+          "color": "#1f77b4",
+          "line_style": "solid",
+          "marker_type": "none"
+        },
+        {
+          "series": "Linear fit (slope=1.76, intercept=4.00)",
+          "x": 10,
+          "y": 21.6,
+          "color": "#1f77b4",
+          "line_style": "solid",
+          "marker_type": "none"
+        }
+      ]
+    },
+    {
+      "Chart_Type": "Scatter Plot",
+      "data": [
+        {
+          "series": "Measurement",
+          "x": 0.5,
+          "y": 5.0,
+          "color": "#1f77b4",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "hollow",
+          "marker_size": "medium",
+          "error_bars": []
+        },
+        {
+          "series": "Measurement",
+          "x": 1.5,
+          "y": 6.5,
+          "color": "#1f77b4",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "hollow",
+          "marker_size": "medium",
+          "error_bars": []
+        },
+        {
+          "series": "Measurement",
+          "x": 2.5,
+          "y": 7.5,
+          "color": "#1f77b4",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "hollow",
+          "marker_size": "medium",
+          "error_bars": []
+        },
+        {
+          "series": "Measurement",
+          "x": 3.5,
+          "y": 8.8,
+          "color": "#1f77b4",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "hollow",
+          "marker_size": "medium",
+          "error_bars": []
+        },
+        {
+          "series": "Measurement",
+          "x": 4.5,
+          "y": 11.2,
+          "color": "#1f77b4",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "hollow",
+          "marker_size": "medium",
+          "error_bars": []
+        },
+        {
+          "series": "Measurement",
+          "x": 5.5,
+          "y": 12.2,
+          "color": "#1f77b4",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "hollow",
+          "marker_size": "medium",
+          "error_bars": []
+        },
+        {
+          "series": "Measurement",
+          "x": 6.5,
+          "y": 14.5,
+          "color": "#1f77b4",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "hollow",
+          "marker_size": "medium",
+          "error_bars": []
+        },
+        {
+          "series": "Measurement",
+          "x": 7.5,
+          "y": 15.8,
+          "color": "#1f77b4",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "hollow",
+          "marker_size": "medium",
+          "error_bars": []
+        },
+        {
+          "series": "Measurement",
+          "x": 8.5,
+          "y": 17.5,
+          "color": "#1f77b4",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "hollow",
+          "marker_size": "medium",
+          "error_bars": []
+        },
+        {
+          "series": "Measurement",
+          "x": 9.0,
+          "y": 19.2,
+          "color": "#1f77b4",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "hollow",
+          "marker_size": "medium",
+          "error_bars": []
+        },
+        {
+          "series": "Measurement",
+          "x": 9.5,
+          "y": 21.5,
+          "color": "#1f77b4",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "hollow",
+          "marker_size": "medium",
+          "error_bars": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,948 @@
+{
+  "chart_title": "Probability of daily survival (p)",
+  "Chart_Type": "Combo",
+  "Orientation": "Landscape",
+  "chart_aspect_ratio": 1.6,
+  "x_axis_label": "Age of females in days",
+  "x_axis_scale": "linear",
+  "y_axis_label": "Probability of daily survival (p)",
+  "y_axis_scale": "linear",
+  "x_axis_min": 0,
+  "x_axis_max": 50,
+  "Left_Y_axis_min": 0.93,
+  "Left_Y_axis_max": 0.98,
+  "Right_Y_axis_min": null,
+  "Right_Y_axis_max": null,
+  "right_y_axis_label": "",
+  "right_y_axis_scale": null,
+  "top_x_axis_label": "",
+  "top_x_axis_scale": null,
+  "top_x_axis_min": null,
+  "top_x_axis_max": null,
+  "y_axis_interval": 0.01,
+  "x_axis_interval": 10,
+  "x_axis_ticks": [
+    0,
+    10,
+    20,
+    30,
+    40,
+    50
+  ],
+  "y_axis_ticks": [
+    0.93,
+    0.94,
+    0.95,
+    0.96,
+    0.97,
+    0.98
+  ],
+  "layers": [
+    {
+      "Chart_Type": "Scatter Plot",
+      "data": [
+        {
+          "series": "24 \u00b0C",
+          "x": 9,
+          "y": 0.956,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "24 \u00b0C",
+          "x": 10,
+          "y": 0.957,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "24 \u00b0C",
+          "x": 11,
+          "y": 0.959,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "24 \u00b0C",
+          "x": 12,
+          "y": 0.962,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "24 \u00b0C",
+          "x": 13,
+          "y": 0.964,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "24 \u00b0C",
+          "x": 14,
+          "y": 0.965,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "24 \u00b0C",
+          "x": 15,
+          "y": 0.966,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "24 \u00b0C",
+          "x": 17,
+          "y": 0.967,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "24 \u00b0C",
+          "x": 19,
+          "y": 0.968,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "24 \u00b0C",
+          "x": 21,
+          "y": 0.969,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "24 \u00b0C",
+          "x": 23,
+          "y": 0.97,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "24 \u00b0C",
+          "x": 25,
+          "y": 0.971,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "24 \u00b0C",
+          "x": 27,
+          "y": 0.9715,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "24 \u00b0C",
+          "x": 29,
+          "y": 0.972,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "24 \u00b0C",
+          "x": 31,
+          "y": 0.9725,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "24 \u00b0C",
+          "x": 33,
+          "y": 0.973,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "24 \u00b0C",
+          "x": 35,
+          "y": 0.9735,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "24 \u00b0C",
+          "x": 37,
+          "y": 0.974,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "24 \u00b0C",
+          "x": 38,
+          "y": 0.974,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "24 \u00b0C",
+          "x": 39,
+          "y": 0.974,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27 \u00b0C",
+          "x": 13,
+          "y": 0.97,
+          "color": "#808080",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27 \u00b0C",
+          "x": 15,
+          "y": 0.971,
+          "color": "#808080",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27 \u00b0C",
+          "x": 17,
+          "y": 0.972,
+          "color": "#808080",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27 \u00b0C",
+          "x": 18,
+          "y": 0.972,
+          "color": "#808080",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27 \u00b0C",
+          "x": 19,
+          "y": 0.9725,
+          "color": "#808080",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27 \u00b0C",
+          "x": 20,
+          "y": 0.9725,
+          "color": "#808080",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27 \u00b0C",
+          "x": 21,
+          "y": 0.9725,
+          "color": "#808080",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27 \u00b0C",
+          "x": 22,
+          "y": 0.9725,
+          "color": "#808080",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27 \u00b0C",
+          "x": 23,
+          "y": 0.9725,
+          "color": "#808080",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27 \u00b0C",
+          "x": 24,
+          "y": 0.973,
+          "color": "#808080",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27 \u00b0C",
+          "x": 25,
+          "y": 0.973,
+          "color": "#808080",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27 \u00b0C",
+          "x": 26,
+          "y": 0.973,
+          "color": "#808080",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27 \u00b0C",
+          "x": 27,
+          "y": 0.973,
+          "color": "#808080",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27 \u00b0C",
+          "x": 28,
+          "y": 0.973,
+          "color": "#808080",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27 \u00b0C",
+          "x": 29,
+          "y": 0.9735,
+          "color": "#808080",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27 \u00b0C",
+          "x": 30,
+          "y": 0.9735,
+          "color": "#808080",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27 \u00b0C",
+          "x": 31,
+          "y": 0.9735,
+          "color": "#808080",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27 \u00b0C",
+          "x": 32,
+          "y": 0.9735,
+          "color": "#808080",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27 \u00b0C",
+          "x": 33,
+          "y": 0.9735,
+          "color": "#808080",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27 \u00b0C",
+          "x": 34,
+          "y": 0.9735,
+          "color": "#808080",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27 \u00b0C",
+          "x": 35,
+          "y": 0.974,
+          "color": "#808080",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27 \u00b0C",
+          "x": 36,
+          "y": 0.974,
+          "color": "#808080",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27 \u00b0C",
+          "x": 37,
+          "y": 0.974,
+          "color": "#808080",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27 \u00b0C",
+          "x": 38,
+          "y": 0.974,
+          "color": "#808080",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27 \u00b0C",
+          "x": 39,
+          "y": 0.974,
+          "color": "#808080",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "30 \u00b0C",
+          "x": 15,
+          "y": 0.961,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "diamond",
+          "marker_fill": "hollow",
+          "marker_size": "medium"
+        },
+        {
+          "series": "30 \u00b0C",
+          "x": 17,
+          "y": 0.963,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "diamond",
+          "marker_fill": "hollow",
+          "marker_size": "medium"
+        },
+        {
+          "series": "30 \u00b0C",
+          "x": 19,
+          "y": 0.965,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "diamond",
+          "marker_fill": "hollow",
+          "marker_size": "medium"
+        },
+        {
+          "series": "30 \u00b0C",
+          "x": 21,
+          "y": 0.966,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "diamond",
+          "marker_fill": "hollow",
+          "marker_size": "medium"
+        },
+        {
+          "series": "30 \u00b0C",
+          "x": 23,
+          "y": 0.967,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "diamond",
+          "marker_fill": "hollow",
+          "marker_size": "medium"
+        },
+        {
+          "series": "30 \u00b0C",
+          "x": 25,
+          "y": 0.968,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "diamond",
+          "marker_fill": "hollow",
+          "marker_size": "medium"
+        },
+        {
+          "series": "30 \u00b0C",
+          "x": 27,
+          "y": 0.969,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "diamond",
+          "marker_fill": "hollow",
+          "marker_size": "medium"
+        },
+        {
+          "series": "30 \u00b0C",
+          "x": 28,
+          "y": 0.97,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "diamond",
+          "marker_fill": "hollow",
+          "marker_size": "medium"
+        },
+        {
+          "series": "30 \u00b0C",
+          "x": 29,
+          "y": 0.971,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "diamond",
+          "marker_fill": "hollow",
+          "marker_size": "medium"
+        },
+        {
+          "series": "30 \u00b0C",
+          "x": 30,
+          "y": 0.9715,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "diamond",
+          "marker_fill": "hollow",
+          "marker_size": "medium"
+        },
+        {
+          "series": "30 \u00b0C",
+          "x": 31,
+          "y": 0.972,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "diamond",
+          "marker_fill": "hollow",
+          "marker_size": "medium"
+        },
+        {
+          "series": "30 \u00b0C",
+          "x": 32,
+          "y": 0.9725,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "diamond",
+          "marker_fill": "hollow",
+          "marker_size": "medium"
+        },
+        {
+          "series": "30 \u00b0C",
+          "x": 33,
+          "y": 0.973,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "diamond",
+          "marker_fill": "hollow",
+          "marker_size": "medium"
+        },
+        {
+          "series": "30 \u00b0C",
+          "x": 34,
+          "y": 0.9735,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "diamond",
+          "marker_fill": "hollow",
+          "marker_size": "medium"
+        },
+        {
+          "series": "30 \u00b0C",
+          "x": 35,
+          "y": 0.974,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "diamond",
+          "marker_fill": "hollow",
+          "marker_size": "medium"
+        },
+        {
+          "series": "30 \u00b0C",
+          "x": 36,
+          "y": 0.974,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "diamond",
+          "marker_fill": "hollow",
+          "marker_size": "medium"
+        },
+        {
+          "series": "30 \u00b0C",
+          "x": 37,
+          "y": 0.9745,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "diamond",
+          "marker_fill": "hollow",
+          "marker_size": "medium"
+        },
+        {
+          "series": "30 \u00b0C",
+          "x": 38,
+          "y": 0.9745,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "diamond",
+          "marker_fill": "hollow",
+          "marker_size": "medium"
+        },
+        {
+          "series": "30 \u00b0C",
+          "x": 39,
+          "y": 0.9745,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "diamond",
+          "marker_fill": "hollow",
+          "marker_size": "medium"
+        }
+      ]
+    },
+    {
+      "Chart_Type": "Line Graph",
+      "data": [
+        {
+          "series": "p curve for 24\u00b0C",
+          "x": 2,
+          "y": 0.935,
+          "color": "#000000",
+          "line_style": "dashed",
+          "marker_type": "none"
+        },
+        {
+          "series": "p curve for 24\u00b0C",
+          "x": 5,
+          "y": 0.948,
+          "color": "#000000",
+          "line_style": "dashed",
+          "marker_type": "none"
+        },
+        {
+          "series": "p curve for 24\u00b0C",
+          "x": 10,
+          "y": 0.959,
+          "color": "#000000",
+          "line_style": "dashed",
+          "marker_type": "none"
+        },
+        {
+          "series": "p curve for 24\u00b0C",
+          "x": 15,
+          "y": 0.966,
+          "color": "#000000",
+          "line_style": "dashed",
+          "marker_type": "none"
+        },
+        {
+          "series": "p curve for 24\u00b0C",
+          "x": 20,
+          "y": 0.97,
+          "color": "#000000",
+          "line_style": "dashed",
+          "marker_type": "none"
+        },
+        {
+          "series": "p curve for 24\u00b0C",
+          "x": 25,
+          "y": 0.972,
+          "color": "#000000",
+          "line_style": "dashed",
+          "marker_type": "none"
+        },
+        {
+          "series": "p curve for 24\u00b0C",
+          "x": 30,
+          "y": 0.9735,
+          "color": "#000000",
+          "line_style": "dashed",
+          "marker_type": "none"
+        },
+        {
+          "series": "p curve for 24\u00b0C",
+          "x": 35,
+          "y": 0.9745,
+          "color": "#000000",
+          "line_style": "dashed",
+          "marker_type": "none"
+        },
+        {
+          "series": "p curve for 24\u00b0C",
+          "x": 40,
+          "y": 0.9755,
+          "color": "#000000",
+          "line_style": "dashed",
+          "marker_type": "none"
+        },
+        {
+          "series": "p curve for 24\u00b0C",
+          "x": 45,
+          "y": 0.976,
+          "color": "#000000",
+          "line_style": "dashed",
+          "marker_type": "none"
+        },
+        {
+          "series": "p curve for 24\u00b0C",
+          "x": 50,
+          "y": 0.9765,
+          "color": "#000000",
+          "line_style": "dashed",
+          "marker_type": "none"
+        },
+        {
+          "series": "p curve for 27\u00b0C",
+          "x": 1,
+          "y": 0.961,
+          "color": "#000000",
+          "line_style": "solid",
+          "marker_type": "none"
+        },
+        {
+          "series": "p curve for 27\u00b0C",
+          "x": 5,
+          "y": 0.968,
+          "color": "#000000",
+          "line_style": "solid",
+          "marker_type": "none"
+        },
+        {
+          "series": "p curve for 27\u00b0C",
+          "x": 10,
+          "y": 0.97,
+          "color": "#000000",
+          "line_style": "solid",
+          "marker_type": "none"
+        },
+        {
+          "series": "p curve for 27\u00b0C",
+          "x": 15,
+          "y": 0.971,
+          "color": "#000000",
+          "line_style": "solid",
+          "marker_type": "none"
+        },
+        {
+          "series": "p curve for 27\u00b0C",
+          "x": 20,
+          "y": 0.972,
+          "color": "#000000",
+          "line_style": "solid",
+          "marker_type": "none"
+        },
+        {
+          "series": "p curve for 27\u00b0C",
+          "x": 25,
+          "y": 0.973,
+          "color": "#000000",
+          "line_style": "solid",
+          "marker_type": "none"
+        },
+        {
+          "series": "p curve for 27\u00b0C",
+          "x": 30,
+          "y": 0.9735,
+          "color": "#000000",
+          "line_style": "solid",
+          "marker_type": "none"
+        },
+        {
+          "series": "p curve for 27\u00b0C",
+          "x": 35,
+          "y": 0.974,
+          "color": "#000000",
+          "line_style": "solid",
+          "marker_type": "none"
+        },
+        {
+          "series": "p curve for 27\u00b0C",
+          "x": 40,
+          "y": 0.9745,
+          "color": "#000000",
+          "line_style": "solid",
+          "marker_type": "none"
+        },
+        {
+          "series": "p curve for 27\u00b0C",
+          "x": 45,
+          "y": 0.975,
+          "color": "#000000",
+          "line_style": "solid",
+          "marker_type": "none"
+        },
+        {
+          "series": "p curve for 27\u00b0C",
+          "x": 50,
+          "y": 0.9755,
+          "color": "#000000",
+          "line_style": "solid",
+          "marker_type": "none"
+        },
+        {
+          "series": "p curve for 30\u00b0C",
+          "x": 5,
+          "y": 0.93,
+          "color": "#000000",
+          "line_style": "dotted",
+          "marker_type": "none"
+        },
+        {
+          "series": "p curve for 30\u00b0C",
+          "x": 10,
+          "y": 0.948,
+          "color": "#000000",
+          "line_style": "dotted",
+          "marker_type": "none"
+        },
+        {
+          "series": "p curve for 30\u00b0C",
+          "x": 15,
+          "y": 0.959,
+          "color": "#000000",
+          "line_style": "dotted",
+          "marker_type": "none"
+        },
+        {
+          "series": "p curve for 30\u00b0C",
+          "x": 20,
+          "y": 0.965,
+          "color": "#000000",
+          "line_style": "dotted",
+          "marker_type": "none"
+        },
+        {
+          "series": "p curve for 30\u00b0C",
+          "x": 25,
+          "y": 0.969,
+          "color": "#000000",
+          "line_style": "dotted",
+          "marker_type": "none"
+        },
+        {
+          "series": "p curve for 30\u00b0C",
+          "x": 30,
+          "y": 0.972,
+          "color": "#000000",
+          "line_style": "dotted",
+          "marker_type": "none"
+        },
+        {
+          "series": "p curve for 30\u00b0C",
+          "x": 35,
+          "y": 0.974,
+          "color": "#000000",
+          "line_style": "dotted",
+          "marker_type": "none"
+        },
+        {
+          "series": "p curve for 30\u00b0C",
+          "x": 40,
+          "y": 0.976,
+          "color": "#000000",
+          "line_style": "dotted",
+          "marker_type": "none"
+        },
+        {
+          "series": "p curve for 30\u00b0C",
+          "x": 45,
+          "y": 0.978,
+          "color": "#000000",
+          "line_style": "dotted",
+          "marker_type": "none"
+        },
+        {
+          "series": "p curve for 30\u00b0C",
+          "x": 50,
+          "y": 0.98,
+          "color": "#000000",
+          "line_style": "dotted",
+          "marker_type": "none"
+        }
+      ]
+    }
+  ]
+}

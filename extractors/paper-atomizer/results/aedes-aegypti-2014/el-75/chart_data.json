@@ -1,0 +1,154 @@
+{
+  "chart_title": "Untitled",
+  "Chart_Type": "Combo",
+  "Orientation": "Landscape",
+  "chart_aspect_ratio": 1.5,
+  "x_axis_label": "Temperatures (\u00b0C)",
+  "x_axis_scale": "linear",
+  "y_axis_label": "Mean Gonotrophic Cycle duration",
+  "y_axis_scale": "linear",
+  "x_axis_min": 0,
+  "x_axis_max": 40,
+  "Left_Y_axis_min": 0,
+  "Left_Y_axis_max": 25,
+  "Right_Y_axis_min": null,
+  "Right_Y_axis_max": null,
+  "right_y_axis_label": "",
+  "right_y_axis_scale": null,
+  "top_x_axis_label": "",
+  "top_x_axis_scale": null,
+  "top_x_axis_min": null,
+  "top_x_axis_max": null,
+  "y_axis_interval": 5,
+  "x_axis_interval": 5,
+  "x_axis_ticks": [
+    0,
+    5,
+    10,
+    15,
+    20,
+    25,
+    30,
+    35,
+    40
+  ],
+  "y_axis_ticks": [
+    0,
+    5,
+    10,
+    15,
+    20,
+    25
+  ],
+  "layers": [
+    {
+      "Chart_Type": "Scatter Plot",
+      "data": [
+        {
+          "series": "Default",
+          "x": 23.5,
+          "y": 8.5,
+          "z": null,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "filled",
+          "marker_size": "medium",
+          "error_bars": [
+            {
+              "error_plus": 3.0,
+              "error_minus": 3.0,
+              "error_direction": "vertical",
+              "error_type": "custom"
+            },
+            {
+              "error_plus": 1.0,
+              "error_minus": 1.0,
+              "error_direction": "horizontal",
+              "error_type": "custom"
+            }
+          ]
+        },
+        {
+          "series": "Default",
+          "x": 27.5,
+          "y": 7.0,
+          "z": null,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "filled",
+          "marker_size": "medium",
+          "error_bars": [
+            {
+              "error_plus": 3.5,
+              "error_minus": 3.5,
+              "error_direction": "vertical",
+              "error_type": "custom"
+            },
+            {
+              "error_plus": 1.0,
+              "error_minus": 1.0,
+              "error_direction": "horizontal",
+              "error_type": "custom"
+            }
+          ]
+        },
+        {
+          "series": "Default",
+          "x": 30.0,
+          "y": 5.0,
+          "z": null,
+          "color": "#000000",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "filled",
+          "marker_size": "medium",
+          "error_bars": [
+            {
+              "error_plus": 1.0,
+              "error_minus": 2.0,
+              "error_direction": "vertical",
+              "error_type": "custom"
+            },
+            {
+              "error_plus": 1.0,
+              "error_minus": 1.0,
+              "error_direction": "horizontal",
+              "error_type": "custom"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Chart_Type": "Line Graph",
+      "data": [
+        {
+          "series": "Trend Line",
+          "x": 0,
+          "y": 20.5,
+          "z": null,
+          "color": "#FF0000",
+          "line_style": "solid",
+          "marker_type": "none",
+          "marker_fill": null,
+          "marker_size": null,
+          "error_bars": []
+        },
+        {
+          "series": "Trend Line",
+          "x": 35,
+          "y": 2.5,
+          "z": null,
+          "color": "#FF0000",
+          "line_style": "solid",
+          "marker_type": "none",
+          "marker_fill": null,
+          "marker_size": null,
+          "error_bars": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1115 @@
+{
+  "chart_title": "CO\u2082 emissions per capita",
+  "Chart_Type": "Line Graph",
+  "Orientation": "Landscape",
+  "chart_aspect_ratio": 1.8,
+  "x_axis_label": "Year",
+  "x_axis_scale": "linear",
+  "y_axis_label": "CO\u2082 emissions per capita (tonnes)",
+  "y_axis_scale": "linear",
+  "x_axis_min": 1750,
+  "x_axis_max": 2024,
+  "Left_Y_axis_min": 0,
+  "Left_Y_axis_max": 25,
+  "Right_Y_axis_min": null,
+  "Right_Y_axis_max": null,
+  "right_y_axis_label": "",
+  "right_y_axis_scale": null,
+  "top_x_axis_label": "",
+  "top_x_axis_scale": null,
+  "top_x_axis_min": null,
+  "top_x_axis_max": null,
+  "y_axis_interval": 5,
+  "x_axis_interval": 50,
+  "x_axis_ticks": [
+    1750,
+    1800,
+    1850,
+    1900,
+    1950,
+    2000,
+    2024
+  ],
+  "y_axis_ticks": [
+    0,
+    5,
+    10,
+    15,
+    20,
+    25
+  ],
+  "data": [
+    {
+      "series": "United Kingdom",
+      "x": 1750,
+      "y": 0.8,
+      "color": "#33638D",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 1780,
+      "y": 1.5,
+      "color": "#33638D",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 1800,
+      "y": 2.5,
+      "color": "#33638D",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 1815,
+      "y": 2.8,
+      "color": "#33638D",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 1820,
+      "y": 2,
+      "color": "#33638D",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 1840,
+      "y": 2.5,
+      "color": "#33638D",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 1860,
+      "y": 5.5,
+      "color": "#33638D",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 1880,
+      "y": 8.5,
+      "color": "#33638D",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 1900,
+      "y": 9.5,
+      "color": "#33638D",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 1913,
+      "y": 10.5,
+      "color": "#33638D",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 1921,
+      "y": 6,
+      "color": "#33638D",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 1926,
+      "y": 5,
+      "color": "#33638D",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 1940,
+      "y": 9.5,
+      "color": "#33638D",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 1956,
+      "y": 10,
+      "color": "#33638D",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 1970,
+      "y": 11,
+      "color": "#33638D",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 1979,
+      "y": 11.2,
+      "color": "#33638D",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 1984,
+      "y": 9.5,
+      "color": "#33638D",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 1990,
+      "y": 9.5,
+      "color": "#33638D",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 2000,
+      "y": 9,
+      "color": "#33638D",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 2010,
+      "y": 7.5,
+      "color": "#33638D",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 2020,
+      "y": 4.8,
+      "color": "#33638D",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 2022,
+      "y": 4.5,
+      "color": "#33638D",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United States",
+      "x": 1800,
+      "y": 0.1,
+      "color": "#6A3D9A",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United States",
+      "x": 1850,
+      "y": 1.5,
+      "color": "#6A3D9A",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United States",
+      "x": 1880,
+      "y": 4,
+      "color": "#6A3D9A",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United States",
+      "x": 1900,
+      "y": 10,
+      "color": "#6A3D9A",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United States",
+      "x": 1905,
+      "y": 12,
+      "color": "#6A3D9A",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United States",
+      "x": 1910,
+      "y": 13,
+      "color": "#6A3D9A",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United States",
+      "x": 1918,
+      "y": 17,
+      "color": "#6A3D9A",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United States",
+      "x": 1920,
+      "y": 14,
+      "color": "#6A3D9A",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United States",
+      "x": 1929,
+      "y": 17,
+      "color": "#6A3D9A",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United States",
+      "x": 1932,
+      "y": 10,
+      "color": "#6A3D9A",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United States",
+      "x": 1943,
+      "y": 17.5,
+      "color": "#6A3D9A",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United States",
+      "x": 1950,
+      "y": 17,
+      "color": "#6A3D9A",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United States",
+      "x": 1960,
+      "y": 17.5,
+      "color": "#6A3D9A",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United States",
+      "x": 1965,
+      "y": 19,
+      "color": "#6A3D9A",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United States",
+      "x": 1970,
+      "y": 21.5,
+      "color": "#6A3D9A",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United States",
+      "x": 1973,
+      "y": 22.5,
+      "color": "#6A3D9A",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United States",
+      "x": 1979,
+      "y": 22,
+      "color": "#6A3D9A",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United States",
+      "x": 1982,
+      "y": 18,
+      "color": "#6A3D9A",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United States",
+      "x": 1990,
+      "y": 20,
+      "color": "#6A3D9A",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United States",
+      "x": 2000,
+      "y": 21,
+      "color": "#6A3D9A",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United States",
+      "x": 2005,
+      "y": 21,
+      "color": "#6A3D9A",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United States",
+      "x": 2008,
+      "y": 18.5,
+      "color": "#6A3D9A",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United States",
+      "x": 2015,
+      "y": 16,
+      "color": "#6A3D9A",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "United States",
+      "x": 2022,
+      "y": 14,
+      "color": "#6A3D9A",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Canada",
+      "x": 1860,
+      "y": 0.5,
+      "color": "#B15928",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Canada",
+      "x": 1880,
+      "y": 1.5,
+      "color": "#B15928",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Canada",
+      "x": 1900,
+      "y": 3,
+      "color": "#B15928",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Canada",
+      "x": 1913,
+      "y": 7,
+      "color": "#B15928",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Canada",
+      "x": 1920,
+      "y": 6.5,
+      "color": "#B15928",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Canada",
+      "x": 1929,
+      "y": 10,
+      "color": "#B15928",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Canada",
+      "x": 1932,
+      "y": 6,
+      "color": "#B15928",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Canada",
+      "x": 1940,
+      "y": 8,
+      "color": "#B15928",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Canada",
+      "x": 1950,
+      "y": 11,
+      "color": "#B15928",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Canada",
+      "x": 1960,
+      "y": 12,
+      "color": "#B15928",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Canada",
+      "x": 1973,
+      "y": 18,
+      "color": "#B15928",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Canada",
+      "x": 1982,
+      "y": 15,
+      "color": "#B15928",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Canada",
+      "x": 1990,
+      "y": 15.5,
+      "color": "#B15928",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Canada",
+      "x": 2000,
+      "y": 17,
+      "color": "#B15928",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Canada",
+      "x": 2007,
+      "y": 17.5,
+      "color": "#B15928",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Canada",
+      "x": 2015,
+      "y": 15,
+      "color": "#B15928",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Canada",
+      "x": 2022,
+      "y": 13.5,
+      "color": "#B15928",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "European Union (27)",
+      "x": 1850,
+      "y": 0.5,
+      "color": "#60B381",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "European Union (27)",
+      "x": 1880,
+      "y": 1.5,
+      "color": "#60B381",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "European Union (27)",
+      "x": 1900,
+      "y": 2.8,
+      "color": "#60B381",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "European Union (27)",
+      "x": 1913,
+      "y": 3.8,
+      "color": "#60B381",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "European Union (27)",
+      "x": 1920,
+      "y": 2.5,
+      "color": "#60B381",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "European Union (27)",
+      "x": 1930,
+      "y": 4,
+      "color": "#60B381",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "European Union (27)",
+      "x": 1945,
+      "y": 2,
+      "color": "#60B381",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "European Union (27)",
+      "x": 1950,
+      "y": 4.5,
+      "color": "#60B381",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "European Union (27)",
+      "x": 1960,
+      "y": 6.5,
+      "color": "#60B381",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "European Union (27)",
+      "x": 1970,
+      "y": 8.8,
+      "color": "#60B381",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "European Union (27)",
+      "x": 1979,
+      "y": 9.8,
+      "color": "#60B381",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "European Union (27)",
+      "x": 1990,
+      "y": 8.5,
+      "color": "#60B381",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "European Union (27)",
+      "x": 2000,
+      "y": 8,
+      "color": "#60B381",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "European Union (27)",
+      "x": 2008,
+      "y": 7.8,
+      "color": "#60B381",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "European Union (27)",
+      "x": 2015,
+      "y": 6.5,
+      "color": "#60B381",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "European Union (27)",
+      "x": 2022,
+      "y": 5.8,
+      "color": "#60B381",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "South Africa",
+      "x": 1880,
+      "y": 0.1,
+      "color": "#006400",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "South Africa",
+      "x": 1900,
+      "y": 1,
+      "color": "#006400",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "South Africa",
+      "x": 1920,
+      "y": 2,
+      "color": "#006400",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "South Africa",
+      "x": 1940,
+      "y": 3.5,
+      "color": "#006400",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "South Africa",
+      "x": 1950,
+      "y": 5,
+      "color": "#006400",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "South Africa",
+      "x": 1960,
+      "y": 5.5,
+      "color": "#006400",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "South Africa",
+      "x": 1970,
+      "y": 7.5,
+      "color": "#006400",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "South Africa",
+      "x": 1982,
+      "y": 9.5,
+      "color": "#006400",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "South Africa",
+      "x": 1990,
+      "y": 8,
+      "color": "#006400",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "South Africa",
+      "x": 2000,
+      "y": 7.5,
+      "color": "#006400",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "South Africa",
+      "x": 2008,
+      "y": 9.2,
+      "color": "#006400",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "South Africa",
+      "x": 2015,
+      "y": 8,
+      "color": "#006400",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "South Africa",
+      "x": 2022,
+      "y": 6.5,
+      "color": "#006400",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "World",
+      "x": 1850,
+      "y": 0.1,
+      "color": "#E66C4F",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "World",
+      "x": 1880,
+      "y": 0.5,
+      "color": "#E66C4F",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "World",
+      "x": 1900,
+      "y": 1,
+      "color": "#E66C4F",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "World",
+      "x": 1913,
+      "y": 1.2,
+      "color": "#E66C4F",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "World",
+      "x": 1930,
+      "y": 1,
+      "color": "#E66C4F",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "World",
+      "x": 1950,
+      "y": 1.5,
+      "color": "#E66C4F",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "World",
+      "x": 1960,
+      "y": 2.2,
+      "color": "#E66C4F",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "World",
+      "x": 1970,
+      "y": 3.5,
+      "color": "#E66C4F",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "World",
+      "x": 1979,
+      "y": 4.2,
+      "color": "#E66C4F",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "World",
+      "x": 1990,
+      "y": 4,
+      "color": "#E66C4F",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "World",
+      "x": 2000,
+      "y": 4,
+      "color": "#E66C4F",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "World",
+      "x": 2010,
+      "y": 4.8,
+      "color": "#E66C4F",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "World",
+      "x": 2019,
+      "y": 4.9,
+      "color": "#E66C4F",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "World",
+      "x": 2022,
+      "y": 4.8,
+      "color": "#E66C4F",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "China",
+      "x": 1950,
+      "y": 0.1,
+      "color": "#CAB2D6",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "China",
+      "x": 1960,
+      "y": 1.5,
+      "color": "#CAB2D6",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "China",
+      "x": 1970,
+      "y": 1,
+      "color": "#CAB2D6",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "China",
+      "x": 1980,
+      "y": 1.5,
+      "color": "#CAB2D6",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "China",
+      "x": 1990,
+      "y": 2,
+      "color": "#CAB2D6",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "China",
+      "x": 2000,
+      "y": 2.8,
+      "color": "#CAB2D6",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "China",
+      "x": 2005,
+      "y": 4.5,
+      "color": "#CAB2D6",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "China",
+      "x": 2010,
+      "y": 6.5,
+      "color": "#CAB2D6",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "China",
+      "x": 2015,
+      "y": 7.2,
+      "color": "#CAB2D6",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "China",
+      "x": 2022,
+      "y": 8,
+      "color": "#CAB2D6",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "India",
+      "x": 1880,
+      "y": 0.05,
+      "color": "#A50026",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "India",
+      "x": 1900,
+      "y": 0.1,
+      "color": "#A50026",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "India",
+      "x": 1950,
+      "y": 0.2,
+      "color": "#A50026",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "India",
+      "x": 1970,
+      "y": 0.4,
+      "color": "#A50026",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "India",
+      "x": 1980,
+      "y": 0.5,
+      "color": "#A50026",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "India",
+      "x": 1990,
+      "y": 0.8,
+      "color": "#A50026",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "India",
+      "x": 2000,
+      "y": 1,
+      "color": "#A50026",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "India",
+      "x": 2010,
+      "y": 1.5,
+      "color": "#A50026",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "India",
+      "x": 2018,
+      "y": 1.9,
+      "color": "#A50026",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "India",
+      "x": 2022,
+      "y": 2,
+      "color": "#A50026",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Kenya",
+      "x": 1950,
+      "y": 0.05,
+      "color": "#D95F02",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Kenya",
+      "x": 1960,
+      "y": 0.1,
+      "color": "#D95F02",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Kenya",
+      "x": 1970,
+      "y": 0.25,
+      "color": "#D95F02",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Kenya",
+      "x": 1980,
+      "y": 0.3,
+      "color": "#D95F02",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Kenya",
+      "x": 1990,
+      "y": 0.3,
+      "color": "#D95F02",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Kenya",
+      "x": 2000,
+      "y": 0.25,
+      "color": "#D95F02",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Kenya",
+      "x": 2010,
+      "y": 0.3,
+      "color": "#D95F02",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Kenya",
+      "x": 2022,
+      "y": 0.3,
+      "color": "#D95F02",
+      "line_style": "solid",
+      "marker_type": "none"
+    }
+  ]
+}

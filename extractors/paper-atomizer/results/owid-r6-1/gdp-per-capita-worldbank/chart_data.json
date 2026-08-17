@@ -1,0 +1,3547 @@
+{
+  "chart_title": "GDP per capita",
+  "Chart_Type": "Line Graph",
+  "Orientation": "Landscape",
+  "chart_aspect_ratio": 1.6,
+  "x_axis_label": "",
+  "x_axis_scale": "linear",
+  "y_axis_label": "",
+  "y_axis_scale": "linear",
+  "x_axis_min": 1990,
+  "x_axis_max": 2024,
+  "Left_Y_axis_min": 0,
+  "Left_Y_axis_max": 80000,
+  "Right_Y_axis_min": null,
+  "Right_Y_axis_max": null,
+  "right_y_axis_label": "",
+  "right_y_axis_scale": null,
+  "top_x_axis_label": "",
+  "top_x_axis_scale": null,
+  "top_x_axis_min": null,
+  "top_x_axis_max": null,
+  "y_axis_interval": 10000,
+  "x_axis_interval": 5,
+  "x_axis_ticks": [
+    1990,
+    1995,
+    2000,
+    2005,
+    2010,
+    2015,
+    2020,
+    2024
+  ],
+  "y_axis_ticks": [
+    0,
+    10000,
+    20000,
+    30000,
+    40000,
+    50000,
+    60000,
+    70000,
+    80000
+  ],
+  "data": [
+    {
+      "series": "United States",
+      "x": 1990,
+      "y": 44000,
+      "color": "#29a3a3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United States",
+      "x": 1991,
+      "y": 43500,
+      "color": "#29a3a3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United States",
+      "x": 1992,
+      "y": 44500,
+      "color": "#29a3a3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United States",
+      "x": 1993,
+      "y": 45500,
+      "color": "#29a3a3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United States",
+      "x": 1994,
+      "y": 47000,
+      "color": "#29a3a3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United States",
+      "x": 1995,
+      "y": 48000,
+      "color": "#29a3a3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United States",
+      "x": 1996,
+      "y": 49500,
+      "color": "#29a3a3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United States",
+      "x": 1997,
+      "y": 51500,
+      "color": "#29a3a3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United States",
+      "x": 1998,
+      "y": 53500,
+      "color": "#29a3a3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United States",
+      "x": 1999,
+      "y": 55500,
+      "color": "#29a3a3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United States",
+      "x": 2000,
+      "y": 57000,
+      "color": "#29a3a3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United States",
+      "x": 2001,
+      "y": 57000,
+      "color": "#29a3a3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United States",
+      "x": 2002,
+      "y": 57500,
+      "color": "#29a3a3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United States",
+      "x": 2003,
+      "y": 59000,
+      "color": "#29a3a3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United States",
+      "x": 2004,
+      "y": 60500,
+      "color": "#29a3a3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United States",
+      "x": 2005,
+      "y": 62000,
+      "color": "#29a3a3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United States",
+      "x": 2006,
+      "y": 63000,
+      "color": "#29a3a3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United States",
+      "x": 2007,
+      "y": 63500,
+      "color": "#29a3a3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United States",
+      "x": 2008,
+      "y": 62500,
+      "color": "#29a3a3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United States",
+      "x": 2009,
+      "y": 60000,
+      "color": "#29a3a3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United States",
+      "x": 2010,
+      "y": 61000,
+      "color": "#29a3a3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United States",
+      "x": 2011,
+      "y": 61500,
+      "color": "#29a3a3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United States",
+      "x": 2012,
+      "y": 62500,
+      "color": "#29a3a3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United States",
+      "x": 2013,
+      "y": 63500,
+      "color": "#29a3a3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United States",
+      "x": 2014,
+      "y": 65000,
+      "color": "#29a3a3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United States",
+      "x": 2015,
+      "y": 66500,
+      "color": "#29a3a3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United States",
+      "x": 2016,
+      "y": 67500,
+      "color": "#29a3a3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United States",
+      "x": 2017,
+      "y": 69000,
+      "color": "#29a3a3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United States",
+      "x": 2018,
+      "y": 71000,
+      "color": "#29a3a3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United States",
+      "x": 2019,
+      "y": 72500,
+      "color": "#29a3a3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United States",
+      "x": 2020,
+      "y": 70000,
+      "color": "#29a3a3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United States",
+      "x": 2021,
+      "y": 74000,
+      "color": "#29a3a3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United States",
+      "x": 2022,
+      "y": 75500,
+      "color": "#29a3a3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United States",
+      "x": 2023,
+      "y": 77500,
+      "color": "#29a3a3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United States",
+      "x": 2024,
+      "y": 79000,
+      "color": "#29a3a3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Germany",
+      "x": 1990,
+      "y": 42000,
+      "color": "#4d9900",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Germany",
+      "x": 1991,
+      "y": 44000,
+      "color": "#4d9900",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Germany",
+      "x": 1992,
+      "y": 44500,
+      "color": "#4d9900",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Germany",
+      "x": 1993,
+      "y": 44000,
+      "color": "#4d9900",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Germany",
+      "x": 1994,
+      "y": 45000,
+      "color": "#4d9900",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Germany",
+      "x": 1995,
+      "y": 45500,
+      "color": "#4d9900",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Germany",
+      "x": 1996,
+      "y": 46000,
+      "color": "#4d9900",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Germany",
+      "x": 1997,
+      "y": 46500,
+      "color": "#4d9900",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Germany",
+      "x": 1998,
+      "y": 47500,
+      "color": "#4d9900",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Germany",
+      "x": 1999,
+      "y": 48500,
+      "color": "#4d9900",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Germany",
+      "x": 2000,
+      "y": 50000,
+      "color": "#4d9900",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Germany",
+      "x": 2001,
+      "y": 50500,
+      "color": "#4d9900",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Germany",
+      "x": 2002,
+      "y": 50500,
+      "color": "#4d9900",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Germany",
+      "x": 2003,
+      "y": 50000,
+      "color": "#4d9900",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Germany",
+      "x": 2004,
+      "y": 51000,
+      "color": "#4d9900",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Germany",
+      "x": 2005,
+      "y": 51000,
+      "color": "#4d9900",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Germany",
+      "x": 2006,
+      "y": 53000,
+      "color": "#4d9900",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Germany",
+      "x": 2007,
+      "y": 55000,
+      "color": "#4d9900",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Germany",
+      "x": 2008,
+      "y": 55500,
+      "color": "#4d9900",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Germany",
+      "x": 2009,
+      "y": 52500,
+      "color": "#4d9900",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Germany",
+      "x": 2010,
+      "y": 54500,
+      "color": "#4d9900",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Germany",
+      "x": 2011,
+      "y": 56500,
+      "color": "#4d9900",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Germany",
+      "x": 2012,
+      "y": 56500,
+      "color": "#4d9900",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Germany",
+      "x": 2013,
+      "y": 57000,
+      "color": "#4d9900",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Germany",
+      "x": 2014,
+      "y": 58000,
+      "color": "#4d9900",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Germany",
+      "x": 2015,
+      "y": 58500,
+      "color": "#4d9900",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Germany",
+      "x": 2016,
+      "y": 59500,
+      "color": "#4d9900",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Germany",
+      "x": 2017,
+      "y": 61000,
+      "color": "#4d9900",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Germany",
+      "x": 2018,
+      "y": 61500,
+      "color": "#4d9900",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Germany",
+      "x": 2019,
+      "y": 62000,
+      "color": "#4d9900",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Germany",
+      "x": 2020,
+      "y": 59500,
+      "color": "#4d9900",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Germany",
+      "x": 2021,
+      "y": 61500,
+      "color": "#4d9900",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Germany",
+      "x": 2022,
+      "y": 62500,
+      "color": "#4d9900",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Germany",
+      "x": 2023,
+      "y": 62000,
+      "color": "#4d9900",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Germany",
+      "x": 2024,
+      "y": 62500,
+      "color": "#4d9900",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "South Korea",
+      "x": 1990,
+      "y": 14000,
+      "color": "#b366b3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "South Korea",
+      "x": 1991,
+      "y": 15500,
+      "color": "#b366b3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "South Korea",
+      "x": 1992,
+      "y": 16500,
+      "color": "#b366b3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "South Korea",
+      "x": 1993,
+      "y": 17500,
+      "color": "#b366b3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "South Korea",
+      "x": 1994,
+      "y": 19000,
+      "color": "#b366b3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "South Korea",
+      "x": 1995,
+      "y": 20500,
+      "color": "#b366b3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "South Korea",
+      "x": 1996,
+      "y": 22000,
+      "color": "#b366b3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "South Korea",
+      "x": 1997,
+      "y": 23000,
+      "color": "#b366b3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "South Korea",
+      "x": 1998,
+      "y": 21500,
+      "color": "#b366b3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "South Korea",
+      "x": 1999,
+      "y": 24000,
+      "color": "#b366b3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "South Korea",
+      "x": 2000,
+      "y": 26000,
+      "color": "#b366b3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "South Korea",
+      "x": 2001,
+      "y": 27000,
+      "color": "#b366b3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "South Korea",
+      "x": 2002,
+      "y": 29000,
+      "color": "#b366b3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "South Korea",
+      "x": 2003,
+      "y": 30000,
+      "color": "#b366b3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "South Korea",
+      "x": 2004,
+      "y": 31500,
+      "color": "#b366b3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "South Korea",
+      "x": 2005,
+      "y": 32500,
+      "color": "#b366b3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "South Korea",
+      "x": 2006,
+      "y": 34000,
+      "color": "#b366b3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "South Korea",
+      "x": 2007,
+      "y": 36000,
+      "color": "#b366b3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "South Korea",
+      "x": 2008,
+      "y": 37000,
+      "color": "#b366b3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "South Korea",
+      "x": 2009,
+      "y": 37000,
+      "color": "#b366b3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "South Korea",
+      "x": 2010,
+      "y": 39500,
+      "color": "#b366b3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "South Korea",
+      "x": 2011,
+      "y": 40500,
+      "color": "#b366b3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "South Korea",
+      "x": 2012,
+      "y": 41500,
+      "color": "#b366b3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "South Korea",
+      "x": 2013,
+      "y": 42500,
+      "color": "#b366b3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "South Korea",
+      "x": 2014,
+      "y": 44000,
+      "color": "#b366b3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "South Korea",
+      "x": 2015,
+      "y": 45000,
+      "color": "#b366b3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "South Korea",
+      "x": 2016,
+      "y": 46500,
+      "color": "#b366b3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "South Korea",
+      "x": 2017,
+      "y": 48000,
+      "color": "#b366b3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "South Korea",
+      "x": 2018,
+      "y": 49500,
+      "color": "#b366b3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "South Korea",
+      "x": 2019,
+      "y": 50500,
+      "color": "#b366b3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "South Korea",
+      "x": 2020,
+      "y": 50000,
+      "color": "#b366b3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "South Korea",
+      "x": 2021,
+      "y": 52000,
+      "color": "#b366b3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "South Korea",
+      "x": 2022,
+      "y": 53500,
+      "color": "#b366b3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "South Korea",
+      "x": 2023,
+      "y": 54000,
+      "color": "#b366b3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "South Korea",
+      "x": 2024,
+      "y": 54500,
+      "color": "#b366b3",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 1990,
+      "y": 33000,
+      "color": "#cc6600",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 1991,
+      "y": 32500,
+      "color": "#cc6600",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 1992,
+      "y": 32500,
+      "color": "#cc6600",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 1993,
+      "y": 33500,
+      "color": "#cc6600",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 1994,
+      "y": 34500,
+      "color": "#cc6600",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 1995,
+      "y": 35500,
+      "color": "#cc6600",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 1996,
+      "y": 36500,
+      "color": "#cc6600",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 1997,
+      "y": 38000,
+      "color": "#cc6600",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 1998,
+      "y": 39000,
+      "color": "#cc6600",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 1999,
+      "y": 40500,
+      "color": "#cc6600",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 2000,
+      "y": 42000,
+      "color": "#cc6600",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 2001,
+      "y": 43000,
+      "color": "#cc6600",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 2002,
+      "y": 44000,
+      "color": "#cc6600",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 2003,
+      "y": 45500,
+      "color": "#cc6600",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 2004,
+      "y": 46500,
+      "color": "#cc6600",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 2005,
+      "y": 48000,
+      "color": "#cc6600",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 2006,
+      "y": 49000,
+      "color": "#cc6600",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 2007,
+      "y": 49500,
+      "color": "#cc6600",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 2008,
+      "y": 49000,
+      "color": "#cc6600",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 2009,
+      "y": 46500,
+      "color": "#cc6600",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 2010,
+      "y": 47500,
+      "color": "#cc6600",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 2011,
+      "y": 48000,
+      "color": "#cc6600",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 2012,
+      "y": 48500,
+      "color": "#cc6600",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 2013,
+      "y": 49500,
+      "color": "#cc6600",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 2014,
+      "y": 50500,
+      "color": "#cc6600",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 2015,
+      "y": 51500,
+      "color": "#cc6600",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 2016,
+      "y": 52000,
+      "color": "#cc6600",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 2017,
+      "y": 52500,
+      "color": "#cc6600",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 2018,
+      "y": 53000,
+      "color": "#cc6600",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 2019,
+      "y": 53500,
+      "color": "#cc6600",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 2020,
+      "y": 48000,
+      "color": "#cc6600",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 2021,
+      "y": 52000,
+      "color": "#cc6600",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 2022,
+      "y": 54000,
+      "color": "#cc6600",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 2023,
+      "y": 54000,
+      "color": "#cc6600",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "United Kingdom",
+      "x": 2024,
+      "y": 54000,
+      "color": "#cc6600",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Japan",
+      "x": 1990,
+      "y": 35500,
+      "color": "#cc3333",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Japan",
+      "x": 1991,
+      "y": 36500,
+      "color": "#cc3333",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Japan",
+      "x": 1992,
+      "y": 37000,
+      "color": "#cc3333",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Japan",
+      "x": 1993,
+      "y": 37000,
+      "color": "#cc3333",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Japan",
+      "x": 1994,
+      "y": 37500,
+      "color": "#cc3333",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Japan",
+      "x": 1995,
+      "y": 38000,
+      "color": "#cc3333",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Japan",
+      "x": 1996,
+      "y": 39500,
+      "color": "#cc3333",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Japan",
+      "x": 1997,
+      "y": 40000,
+      "color": "#cc3333",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Japan",
+      "x": 1998,
+      "y": 39000,
+      "color": "#cc3333",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Japan",
+      "x": 1999,
+      "y": 39000,
+      "color": "#cc3333",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Japan",
+      "x": 2000,
+      "y": 40000,
+      "color": "#cc3333",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Japan",
+      "x": 2001,
+      "y": 40000,
+      "color": "#cc3333",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Japan",
+      "x": 2002,
+      "y": 40000,
+      "color": "#cc3333",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Japan",
+      "x": 2003,
+      "y": 40500,
+      "color": "#cc3333",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Japan",
+      "x": 2004,
+      "y": 41500,
+      "color": "#cc3333",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Japan",
+      "x": 2005,
+      "y": 42000,
+      "color": "#cc3333",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Japan",
+      "x": 2006,
+      "y": 42500,
+      "color": "#cc3333",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Japan",
+      "x": 2007,
+      "y": 43000,
+      "color": "#cc3333",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Japan",
+      "x": 2008,
+      "y": 42500,
+      "color": "#cc3333",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Japan",
+      "x": 2009,
+      "y": 40000,
+      "color": "#cc3333",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Japan",
+      "x": 2010,
+      "y": 42000,
+      "color": "#cc3333",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Japan",
+      "x": 2011,
+      "y": 41500,
+      "color": "#cc3333",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Japan",
+      "x": 2012,
+      "y": 42000,
+      "color": "#cc3333",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Japan",
+      "x": 2013,
+      "y": 43000,
+      "color": "#cc3333",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Japan",
+      "x": 2014,
+      "y": 43000,
+      "color": "#cc3333",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Japan",
+      "x": 2015,
+      "y": 43500,
+      "color": "#cc3333",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Japan",
+      "x": 2016,
+      "y": 44000,
+      "color": "#cc3333",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Japan",
+      "x": 2017,
+      "y": 44500,
+      "color": "#cc3333",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Japan",
+      "x": 2018,
+      "y": 44500,
+      "color": "#cc3333",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Japan",
+      "x": 2019,
+      "y": 44500,
+      "color": "#cc3333",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Japan",
+      "x": 2020,
+      "y": 42500,
+      "color": "#cc3333",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Japan",
+      "x": 2021,
+      "y": 43500,
+      "color": "#cc3333",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Japan",
+      "x": 2022,
+      "y": 44000,
+      "color": "#cc3333",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Japan",
+      "x": 2023,
+      "y": 45000,
+      "color": "#cc3333",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Japan",
+      "x": 2024,
+      "y": 45500,
+      "color": "#cc3333",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Russia",
+      "x": 1990,
+      "y": 29500,
+      "color": "#003380",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Russia",
+      "x": 1991,
+      "y": 28000,
+      "color": "#003380",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Russia",
+      "x": 1992,
+      "y": 24000,
+      "color": "#003380",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Russia",
+      "x": 1993,
+      "y": 22000,
+      "color": "#003380",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Russia",
+      "x": 1994,
+      "y": 19000,
+      "color": "#003380",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Russia",
+      "x": 1995,
+      "y": 18000,
+      "color": "#003380",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Russia",
+      "x": 1996,
+      "y": 17500,
+      "color": "#003380",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Russia",
+      "x": 1997,
+      "y": 18000,
+      "color": "#003380",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Russia",
+      "x": 1998,
+      "y": 17000,
+      "color": "#003380",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Russia",
+      "x": 1999,
+      "y": 18000,
+      "color": "#003380",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Russia",
+      "x": 2000,
+      "y": 20000,
+      "color": "#003380",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Russia",
+      "x": 2001,
+      "y": 21000,
+      "color": "#003380",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Russia",
+      "x": 2002,
+      "y": 22000,
+      "color": "#003380",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Russia",
+      "x": 2003,
+      "y": 23500,
+      "color": "#003380",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Russia",
+      "x": 2004,
+      "y": 25500,
+      "color": "#003380",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Russia",
+      "x": 2005,
+      "y": 27000,
+      "color": "#003380",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Russia",
+      "x": 2006,
+      "y": 29500,
+      "color": "#003380",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Russia",
+      "x": 2007,
+      "y": 32000,
+      "color": "#003380",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Russia",
+      "x": 2008,
+      "y": 33500,
+      "color": "#003380",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Russia",
+      "x": 2009,
+      "y": 31000,
+      "color": "#003380",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Russia",
+      "x": 2010,
+      "y": 32500,
+      "color": "#003380",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Russia",
+      "x": 2011,
+      "y": 34000,
+      "color": "#003380",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Russia",
+      "x": 2012,
+      "y": 35000,
+      "color": "#003380",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Russia",
+      "x": 2013,
+      "y": 35500,
+      "color": "#003380",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Russia",
+      "x": 2014,
+      "y": 35500,
+      "color": "#003380",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Russia",
+      "x": 2015,
+      "y": 35000,
+      "color": "#003380",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Russia",
+      "x": 2016,
+      "y": 35000,
+      "color": "#003380",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Russia",
+      "x": 2017,
+      "y": 35500,
+      "color": "#003380",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Russia",
+      "x": 2018,
+      "y": 36500,
+      "color": "#003380",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Russia",
+      "x": 2019,
+      "y": 37500,
+      "color": "#003380",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Russia",
+      "x": 2020,
+      "y": 36500,
+      "color": "#003380",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Russia",
+      "x": 2021,
+      "y": 38500,
+      "color": "#003380",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Russia",
+      "x": 2022,
+      "y": 37500,
+      "color": "#003380",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Russia",
+      "x": 2023,
+      "y": 40000,
+      "color": "#003380",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Russia",
+      "x": 2024,
+      "y": 41500,
+      "color": "#003380",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "China",
+      "x": 1990,
+      "y": 1500,
+      "color": "#ff8000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "China",
+      "x": 1991,
+      "y": 1600,
+      "color": "#ff8000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "China",
+      "x": 1992,
+      "y": 1800,
+      "color": "#ff8000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "China",
+      "x": 1993,
+      "y": 2100,
+      "color": "#ff8000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "China",
+      "x": 1994,
+      "y": 2400,
+      "color": "#ff8000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "China",
+      "x": 1995,
+      "y": 2600,
+      "color": "#ff8000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "China",
+      "x": 1996,
+      "y": 2900,
+      "color": "#ff8000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "China",
+      "x": 1997,
+      "y": 3100,
+      "color": "#ff8000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "China",
+      "x": 1998,
+      "y": 3400,
+      "color": "#ff8000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "China",
+      "x": 1999,
+      "y": 3600,
+      "color": "#ff8000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "China",
+      "x": 2000,
+      "y": 3900,
+      "color": "#ff8000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "China",
+      "x": 2001,
+      "y": 4300,
+      "color": "#ff8000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "China",
+      "x": 2002,
+      "y": 4700,
+      "color": "#ff8000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "China",
+      "x": 2003,
+      "y": 5200,
+      "color": "#ff8000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "China",
+      "x": 2004,
+      "y": 5700,
+      "color": "#ff8000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "China",
+      "x": 2005,
+      "y": 6400,
+      "color": "#ff8000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "China",
+      "x": 2006,
+      "y": 7200,
+      "color": "#ff8000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "China",
+      "x": 2007,
+      "y": 8200,
+      "color": "#ff8000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "China",
+      "x": 2008,
+      "y": 9000,
+      "color": "#ff8000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "China",
+      "x": 2009,
+      "y": 9800,
+      "color": "#ff8000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "China",
+      "x": 2010,
+      "y": 10800,
+      "color": "#ff8000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "China",
+      "x": 2011,
+      "y": 11800,
+      "color": "#ff8000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "China",
+      "x": 2012,
+      "y": 12800,
+      "color": "#ff8000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "China",
+      "x": 2013,
+      "y": 13800,
+      "color": "#ff8000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "China",
+      "x": 2014,
+      "y": 14800,
+      "color": "#ff8000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "China",
+      "x": 2015,
+      "y": 15800,
+      "color": "#ff8000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "China",
+      "x": 2016,
+      "y": 16800,
+      "color": "#ff8000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "China",
+      "x": 2017,
+      "y": 18000,
+      "color": "#ff8000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "China",
+      "x": 2018,
+      "y": 19000,
+      "color": "#ff8000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "China",
+      "x": 2019,
+      "y": 20000,
+      "color": "#ff8000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "China",
+      "x": 2020,
+      "y": 20500,
+      "color": "#ff8000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "China",
+      "x": 2021,
+      "y": 22000,
+      "color": "#ff8000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "China",
+      "x": 2022,
+      "y": 22800,
+      "color": "#ff8000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "China",
+      "x": 2023,
+      "y": 24000,
+      "color": "#ff8000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "China",
+      "x": 2024,
+      "y": 25000,
+      "color": "#ff8000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Brazil",
+      "x": 1990,
+      "y": 12500,
+      "color": "#6699ff",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Brazil",
+      "x": 1991,
+      "y": 12500,
+      "color": "#6699ff",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Brazil",
+      "x": 1992,
+      "y": 12500,
+      "color": "#6699ff",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Brazil",
+      "x": 1993,
+      "y": 13000,
+      "color": "#6699ff",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Brazil",
+      "x": 1994,
+      "y": 13500,
+      "color": "#6699ff",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Brazil",
+      "x": 1995,
+      "y": 14000,
+      "color": "#6699ff",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Brazil",
+      "x": 1996,
+      "y": 14200,
+      "color": "#6699ff",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Brazil",
+      "x": 1997,
+      "y": 14500,
+      "color": "#6699ff",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Brazil",
+      "x": 1998,
+      "y": 14500,
+      "color": "#6699ff",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Brazil",
+      "x": 1999,
+      "y": 14500,
+      "color": "#6699ff",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Brazil",
+      "x": 2000,
+      "y": 15000,
+      "color": "#6699ff",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Brazil",
+      "x": 2001,
+      "y": 15200,
+      "color": "#6699ff",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Brazil",
+      "x": 2002,
+      "y": 15500,
+      "color": "#6699ff",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Brazil",
+      "x": 2003,
+      "y": 15800,
+      "color": "#6699ff",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Brazil",
+      "x": 2004,
+      "y": 16500,
+      "color": "#6699ff",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Brazil",
+      "x": 2005,
+      "y": 17000,
+      "color": "#6699ff",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Brazil",
+      "x": 2006,
+      "y": 17500,
+      "color": "#6699ff",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Brazil",
+      "x": 2007,
+      "y": 18500,
+      "color": "#6699ff",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Brazil",
+      "x": 2008,
+      "y": 19500,
+      "color": "#6699ff",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Brazil",
+      "x": 2009,
+      "y": 19500,
+      "color": "#6699ff",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Brazil",
+      "x": 2010,
+      "y": 21000,
+      "color": "#6699ff",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Brazil",
+      "x": 2011,
+      "y": 21500,
+      "color": "#6699ff",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Brazil",
+      "x": 2012,
+      "y": 22000,
+      "color": "#6699ff",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Brazil",
+      "x": 2013,
+      "y": 22500,
+      "color": "#6699ff",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Brazil",
+      "x": 2014,
+      "y": 22500,
+      "color": "#6699ff",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Brazil",
+      "x": 2015,
+      "y": 21500,
+      "color": "#6699ff",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Brazil",
+      "x": 2016,
+      "y": 21000,
+      "color": "#6699ff",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Brazil",
+      "x": 2017,
+      "y": 21200,
+      "color": "#6699ff",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Brazil",
+      "x": 2018,
+      "y": 21500,
+      "color": "#6699ff",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Brazil",
+      "x": 2019,
+      "y": 21800,
+      "color": "#6699ff",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Brazil",
+      "x": 2020,
+      "y": 21000,
+      "color": "#6699ff",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Brazil",
+      "x": 2021,
+      "y": 22000,
+      "color": "#6699ff",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Brazil",
+      "x": 2022,
+      "y": 22500,
+      "color": "#6699ff",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Brazil",
+      "x": 2023,
+      "y": 23000,
+      "color": "#6699ff",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Brazil",
+      "x": 2024,
+      "y": 23500,
+      "color": "#6699ff",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "India",
+      "x": 1990,
+      "y": 2000,
+      "color": "#660099",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "India",
+      "x": 1991,
+      "y": 2000,
+      "color": "#660099",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "India",
+      "x": 1992,
+      "y": 2100,
+      "color": "#660099",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "India",
+      "x": 1993,
+      "y": 2200,
+      "color": "#660099",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "India",
+      "x": 1994,
+      "y": 2300,
+      "color": "#660099",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "India",
+      "x": 1995,
+      "y": 2500,
+      "color": "#660099",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "India",
+      "x": 1996,
+      "y": 2700,
+      "color": "#660099",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "India",
+      "x": 1997,
+      "y": 2800,
+      "color": "#660099",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "India",
+      "x": 1998,
+      "y": 2900,
+      "color": "#660099",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "India",
+      "x": 1999,
+      "y": 3100,
+      "color": "#660099",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "India",
+      "x": 2000,
+      "y": 3200,
+      "color": "#660099",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "India",
+      "x": 2001,
+      "y": 3400,
+      "color": "#660099",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "India",
+      "x": 2002,
+      "y": 3500,
+      "color": "#660099",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "India",
+      "x": 2003,
+      "y": 3800,
+      "color": "#660099",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "India",
+      "x": 2004,
+      "y": 4100,
+      "color": "#660099",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "India",
+      "x": 2005,
+      "y": 4500,
+      "color": "#660099",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "India",
+      "x": 2006,
+      "y": 4900,
+      "color": "#660099",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "India",
+      "x": 2007,
+      "y": 5300,
+      "color": "#660099",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "India",
+      "x": 2008,
+      "y": 5500,
+      "color": "#660099",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "India",
+      "x": 2009,
+      "y": 5900,
+      "color": "#660099",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "India",
+      "x": 2010,
+      "y": 6500,
+      "color": "#660099",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "India",
+      "x": 2011,
+      "y": 6800,
+      "color": "#660099",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "India",
+      "x": 2012,
+      "y": 7200,
+      "color": "#660099",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "India",
+      "x": 2013,
+      "y": 7600,
+      "color": "#660099",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "India",
+      "x": 2014,
+      "y": 8200,
+      "color": "#660099",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "India",
+      "x": 2015,
+      "y": 8800,
+      "color": "#660099",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "India",
+      "x": 2016,
+      "y": 9500,
+      "color": "#660099",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "India",
+      "x": 2017,
+      "y": 10000,
+      "color": "#660099",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "India",
+      "x": 2018,
+      "y": 10500,
+      "color": "#660099",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "India",
+      "x": 2019,
+      "y": 11000,
+      "color": "#660099",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "India",
+      "x": 2020,
+      "y": 10200,
+      "color": "#660099",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "India",
+      "x": 2021,
+      "y": 11200,
+      "color": "#660099",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "India",
+      "x": 2022,
+      "y": 12000,
+      "color": "#660099",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "India",
+      "x": 2023,
+      "y": 12800,
+      "color": "#660099",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "India",
+      "x": 2024,
+      "y": 13500,
+      "color": "#660099",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Ethiopia",
+      "x": 1990,
+      "y": 1000,
+      "color": "#808000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Ethiopia",
+      "x": 1991,
+      "y": 900,
+      "color": "#808000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Ethiopia",
+      "x": 1992,
+      "y": 800,
+      "color": "#808000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Ethiopia",
+      "x": 1993,
+      "y": 900,
+      "color": "#808000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Ethiopia",
+      "x": 1994,
+      "y": 950,
+      "color": "#808000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Ethiopia",
+      "x": 1995,
+      "y": 1000,
+      "color": "#808000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Ethiopia",
+      "x": 1996,
+      "y": 1100,
+      "color": "#808000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Ethiopia",
+      "x": 1997,
+      "y": 1150,
+      "color": "#808000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Ethiopia",
+      "x": 1998,
+      "y": 1100,
+      "color": "#808000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Ethiopia",
+      "x": 1999,
+      "y": 1150,
+      "color": "#808000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Ethiopia",
+      "x": 2000,
+      "y": 1200,
+      "color": "#808000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Ethiopia",
+      "x": 2001,
+      "y": 1300,
+      "color": "#808000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Ethiopia",
+      "x": 2002,
+      "y": 1300,
+      "color": "#808000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Ethiopia",
+      "x": 2003,
+      "y": 1250,
+      "color": "#808000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Ethiopia",
+      "x": 2004,
+      "y": 1400,
+      "color": "#808000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Ethiopia",
+      "x": 2005,
+      "y": 1550,
+      "color": "#808000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Ethiopia",
+      "x": 2006,
+      "y": 1700,
+      "color": "#808000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Ethiopia",
+      "x": 2007,
+      "y": 1900,
+      "color": "#808000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Ethiopia",
+      "x": 2008,
+      "y": 2100,
+      "color": "#808000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Ethiopia",
+      "x": 2009,
+      "y": 2300,
+      "color": "#808000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Ethiopia",
+      "x": 2010,
+      "y": 2500,
+      "color": "#808000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Ethiopia",
+      "x": 2011,
+      "y": 2800,
+      "color": "#808000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Ethiopia",
+      "x": 2012,
+      "y": 3000,
+      "color": "#808000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Ethiopia",
+      "x": 2013,
+      "y": 3300,
+      "color": "#808000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Ethiopia",
+      "x": 2014,
+      "y": 3600,
+      "color": "#808000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Ethiopia",
+      "x": 2015,
+      "y": 3900,
+      "color": "#808000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Ethiopia",
+      "x": 2016,
+      "y": 4200,
+      "color": "#808000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Ethiopia",
+      "x": 2017,
+      "y": 4500,
+      "color": "#808000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Ethiopia",
+      "x": 2018,
+      "y": 4800,
+      "color": "#808000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Ethiopia",
+      "x": 2019,
+      "y": 5200,
+      "color": "#808000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Ethiopia",
+      "x": 2020,
+      "y": 5500,
+      "color": "#808000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Ethiopia",
+      "x": 2021,
+      "y": 5800,
+      "color": "#808000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Ethiopia",
+      "x": 2022,
+      "y": 6100,
+      "color": "#808000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Ethiopia",
+      "x": 2023,
+      "y": 6500,
+      "color": "#808000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    },
+    {
+      "series": "Ethiopia",
+      "x": 2024,
+      "y": 6800,
+      "color": "#808000",
+      "line_style": "solid",
+      "marker_type": "circle",
+      "marker_fill": "filled",
+      "marker_size": "small"
+    }
+  ]
+}

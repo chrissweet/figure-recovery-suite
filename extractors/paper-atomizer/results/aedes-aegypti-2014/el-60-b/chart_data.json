@@ -1,0 +1,112 @@
+{
+  "chart_title": "Untitled",
+  "Chart_Type": "Combo",
+  "Orientation": "Landscape",
+  "chart_aspect_ratio": 1.65,
+  "x_axis_label": "Temperatures (\u00b0C)",
+  "x_axis_scale": "linear",
+  "y_axis_label": "Maximum Parity Rate",
+  "y_axis_scale": "linear",
+  "x_axis_min": 10,
+  "x_axis_max": 35,
+  "Left_Y_axis_min": 0,
+  "Left_Y_axis_max": 1,
+  "Right_Y_axis_min": null,
+  "Right_Y_axis_max": null,
+  "right_y_axis_label": "",
+  "right_y_axis_scale": null,
+  "top_x_axis_label": "",
+  "top_x_axis_scale": null,
+  "top_x_axis_min": null,
+  "top_x_axis_max": null,
+  "y_axis_interval": 0.2,
+  "x_axis_interval": 5,
+  "x_axis_ticks": [
+    10,
+    15,
+    20,
+    25,
+    30,
+    35
+  ],
+  "y_axis_ticks": [
+    0,
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    1
+  ],
+  "layers": [
+    {
+      "Chart_Type": "Scatter Plot",
+      "data": [
+        {
+          "series": "Data Points",
+          "x": 24.2,
+          "y": 0.36,
+          "z": null,
+          "color": "blue",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "filled",
+          "marker_size": "medium",
+          "error_bars": []
+        },
+        {
+          "series": "Data Points",
+          "x": 27.5,
+          "y": 0.71,
+          "z": null,
+          "color": "green",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium",
+          "error_bars": []
+        },
+        {
+          "series": "Data Points",
+          "x": 30,
+          "y": 0.64,
+          "z": null,
+          "color": "red",
+          "line_style": "none",
+          "marker_type": "diamond",
+          "marker_fill": "filled",
+          "marker_size": "medium",
+          "error_bars": []
+        }
+      ]
+    },
+    {
+      "Chart_Type": "Line Graph",
+      "data": [
+        {
+          "series": "Trend Line",
+          "x": 13.5,
+          "y": 0,
+          "z": null,
+          "color": "black",
+          "line_style": "solid",
+          "marker_type": "none",
+          "marker_fill": null,
+          "marker_size": null,
+          "error_bars": []
+        },
+        {
+          "series": "Trend Line",
+          "x": 31,
+          "y": 0.7,
+          "z": null,
+          "color": "black",
+          "line_style": "solid",
+          "marker_type": "none",
+          "marker_fill": null,
+          "marker_size": null,
+          "error_bars": []
+        }
+      ]
+    }
+  ]
+}
