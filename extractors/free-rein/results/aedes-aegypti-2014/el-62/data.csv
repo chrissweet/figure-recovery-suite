@@ -1,0 +1,9 @@
+layer_idx,layer_type,series,x,y,y_lo,y_hi
+0,Bar Chart,GC1,24,8.878,6.23,11.583
+0,Bar Chart,GC1,27,7.439,4.82,10.144
+0,Bar Chart,GC1,30,5.137,2.489,7.813
+1,Bar Chart,GC2,24,6.46,3.094,9.856
+1,Bar Chart,GC2,27,6.288,2.921,9.683
+1,Bar Chart,GC2,30,4.36,1.022,7.784
+2,Bar Chart,GC3,27,6.432,5.338,7.64
+2,Bar Chart,GC3,30,2.95,1.827,4.129

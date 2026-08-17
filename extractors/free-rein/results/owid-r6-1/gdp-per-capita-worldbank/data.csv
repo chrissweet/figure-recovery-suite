@@ -1,0 +1,351 @@
+layer_idx,layer_type,series,x,y
+0,Line Graph,United States,1990,44274.6
+0,Line Graph,United States,1991,43676.6
+0,Line Graph,United States,1992,44673.3
+0,Line Graph,United States,1993,45271.3
+0,Line Graph,United States,1994,46467.3
+0,Line Graph,United States,1995,47264.6
+0,Line Graph,United States,1996,48460.7
+0,Line Graph,United States,1997,50055.3
+0,Line Graph,United States,1998,51650.0
+0,Line Graph,United States,1999,53444.0
+0,Line Graph,United States,2000,55038.7
+0,Line Graph,United States,2001,55038.7
+0,Line Graph,United States,2002,55437.4
+0,Line Graph,United States,2003,56434.0
+0,Line Graph,United States,2004,58128.4
+0,Line Graph,United States,2005,59623.4
+0,Line Graph,United States,2006,60620.1
+0,Line Graph,United States,2007,61317.8
+0,Line Graph,United States,2008,60819.4
+0,Line Graph,United States,2009,58726.4
+0,Line Graph,United States,2010,59822.7
+0,Line Graph,United States,2011,60221.4
+0,Line Graph,United States,2012,61218.1
+0,Line Graph,United States,2013,62015.4
+0,Line Graph,United States,2014,63012.1
+0,Line Graph,United States,2015,64407.4
+0,Line Graph,United States,2016,65005.4
+0,Line Graph,United States,2017,66201.5
+0,Line Graph,United States,2018,67796.1
+0,Line Graph,United States,2019,69191.5
+0,Line Graph,United States,2020,67397.5
+0,Line Graph,United States,2021,71384.2
+0,Line Graph,United States,2022,72779.5
+0,Line Graph,United States,2023,74174.8
+0,Line Graph,United States,2024,75570.2
+1,Line Graph,Germany,1990,42281.3
+1,Line Graph,Germany,1991,44075.3
+1,Line Graph,Germany,1992,23942.5
+1,Line Graph,Germany,1993,43876.0
+1,Line Graph,Germany,1994,44872.6
+1,Line Graph,Germany,1995,45470.6
+1,Line Graph,Germany,1996,45670.0
+1,Line Graph,Germany,1997,46567.0
+1,Line Graph,Germany,1998,47464.0
+1,Line Graph,Germany,1999,48460.7
+1,Line Graph,Germany,2000,49856.0
+1,Line Graph,Germany,2001,50653.3
+1,Line Graph,Germany,2002,50454.0
+1,Line Graph,Germany,2003,50055.3
+1,Line Graph,Germany,2004,50653.3
+1,Line Graph,Germany,2005,51151.7
+1,Line Graph,Germany,2006,53244.7
+1,Line Graph,Germany,2007,54839.4
+1,Line Graph,Germany,2008,55437.4
+1,Line Graph,Germany,2009,52447.4
+1,Line Graph,Germany,2010,54839.4
+1,Line Graph,Germany,2011,57829.4
+1,Line Graph,Germany,2012,58028.7
+1,Line Graph,Germany,2013,58028.7
+1,Line Graph,Germany,2014,59025.4
+1,Line Graph,Germany,2015,59623.4
+1,Line Graph,Germany,2016,60420.7
+1,Line Graph,Germany,2017,61816.1
+1,Line Graph,Germany,2018,62414.1
+1,Line Graph,Germany,2019,62812.8
+1,Line Graph,Germany,2020,60221.4
+1,Line Graph,Germany,2021,62613.4
+1,Line Graph,Germany,2022,63610.1
+1,Line Graph,Germany,2023,63012.1
+1,Line Graph,Germany,2024,62613.4
+2,Line Graph,South Korea,1990,14374.4
+2,Line Graph,South Korea,1991,15769.7
+2,Line Graph,South Korea,1992,16567.1
+2,Line Graph,South Korea,1993,17563.8
+2,Line Graph,South Korea,1994,18959.1
+2,Line Graph,South Korea,1995,20553.8
+2,Line Graph,South Korea,1996,21949.1
+2,Line Graph,South Korea,1997,23145.1
+2,Line Graph,South Korea,1998,21949.1
+2,Line Graph,South Korea,1999,24341.1
+2,Line Graph,South Korea,2000,26434.2
+2,Line Graph,South Korea,2001,27331.2
+2,Line Graph,South Korea,2002,29224.8
+2,Line Graph,South Korea,2003,30022.2
+2,Line Graph,South Korea,2004,31317.9
+2,Line Graph,South Korea,2005,32912.5
+2,Line Graph,South Korea,2006,34307.9
+2,Line Graph,South Korea,2007,36101.9
+2,Line Graph,South Korea,2008,36998.9
+2,Line Graph,South Korea,2009,37098.6
+2,Line Graph,South Korea,2010,39390.9
+2,Line Graph,South Korea,2011,40686.6
+2,Line Graph,South Korea,2012,41483.9
+2,Line Graph,South Korea,2013,42580.3
+2,Line Graph,South Korea,2014,43676.6
+2,Line Graph,South Korea,2015,44673.3
+2,Line Graph,South Korea,2016,46068.6
+2,Line Graph,South Korea,2017,47464.0
+2,Line Graph,South Korea,2018,48859.3
+2,Line Graph,South Korea,2019,49756.3
+2,Line Graph,South Korea,2020,49058.7
+2,Line Graph,South Korea,2021,51550.3
+2,Line Graph,South Korea,2022,8693.4
+2,Line Graph,South Korea,2023,54042.0
+2,Line Graph,South Korea,2024,54839.4
+3,Line Graph,United Kingdom,1990,32912.5
+3,Line Graph,United Kingdom,1991,32513.9
+3,Line Graph,United Kingdom,1992,32713.2
+3,Line Graph,United Kingdom,1993,33909.2
+3,Line Graph,United Kingdom,1994,35503.9
+3,Line Graph,United Kingdom,1995,36600.2
+3,Line Graph,United Kingdom,1996,37297.9
+3,Line Graph,United Kingdom,1997,39091.9
+3,Line Graph,United Kingdom,1998,40287.9
+3,Line Graph,United Kingdom,1999,41384.3
+3,Line Graph,United Kingdom,2000,43078.6
+3,Line Graph,United Kingdom,2001,43876.0
+3,Line Graph,United Kingdom,2002,44474.0
+3,Line Graph,United Kingdom,2003,45769.6
+3,Line Graph,United Kingdom,2004,46467.3
+3,Line Graph,United Kingdom,2005,47464.0
+3,Line Graph,United Kingdom,2006,48261.3
+3,Line Graph,United Kingdom,2007,49258.0
+3,Line Graph,United Kingdom,2008,48859.3
+3,Line Graph,United Kingdom,2009,46268.0
+3,Line Graph,United Kingdom,2010,46866.0
+3,Line Graph,United Kingdom,2011,46866.0
+3,Line Graph,United Kingdom,2012,47264.6
+3,Line Graph,United Kingdom,2013,47862.7
+3,Line Graph,United Kingdom,2014,48959.0
+3,Line Graph,United Kingdom,2015,49656.7
+3,Line Graph,United Kingdom,2016,50354.3
+3,Line Graph,United Kingdom,2017,51550.3
+3,Line Graph,United Kingdom,2018,52148.3
+3,Line Graph,United Kingdom,2019,52447.4
+3,Line Graph,United Kingdom,2020,47264.6
+3,Line Graph,United Kingdom,2021,50852.7
+3,Line Graph,United Kingdom,2022,53045.4
+3,Line Graph,United Kingdom,2023,52646.7
+3,Line Graph,United Kingdom,2024,52646.7
+4,Line Graph,Japan,1990,35204.9
+4,Line Graph,Japan,1991,36301.2
+4,Line Graph,Japan,1992,36500.6
+4,Line Graph,Japan,1993,36301.2
+4,Line Graph,Japan,1994,36500.6
+4,Line Graph,Japan,1995,37497.2
+4,Line Graph,Japan,1996,38493.9
+4,Line Graph,Japan,1997,38693.2
+4,Line Graph,Japan,1998,38194.9
+4,Line Graph,Japan,1999,37995.6
+4,Line Graph,Japan,2000,38992.3
+4,Line Graph,Japan,2001,38992.3
+4,Line Graph,Japan,2002,38892.6
+4,Line Graph,Japan,2003,39490.6
+4,Line Graph,Japan,2004,40287.9
+4,Line Graph,Japan,2005,41085.3
+4,Line Graph,Japan,2006,41583.6
+4,Line Graph,Japan,2007,42081.9
+4,Line Graph,Japan,2008,41583.6
+4,Line Graph,Japan,2009,39291.3
+4,Line Graph,Japan,2010,40885.9
+4,Line Graph,Japan,2011,41085.3
+4,Line Graph,Japan,2012,41683.3
+4,Line Graph,Japan,2013,42281.3
+4,Line Graph,Japan,2014,42679.9
+4,Line Graph,Japan,2015,43377.6
+4,Line Graph,Japan,2016,43676.6
+4,Line Graph,Japan,2017,44474.0
+4,Line Graph,Japan,2018,44872.6
+4,Line Graph,Japan,2019,44673.3
+4,Line Graph,Japan,2020,43078.6
+4,Line Graph,Japan,2021,44274.6
+4,Line Graph,Japan,2022,44872.6
+4,Line Graph,Japan,2023,45869.3
+4,Line Graph,Japan,2024,46068.6
+5,Line Graph,Russia,1990,29523.8
+5,Line Graph,Russia,1991,27929.2
+5,Line Graph,Russia,1992,23942.5
+5,Line Graph,Russia,1993,21749.8
+5,Line Graph,Russia,1994,19357.8
+5,Line Graph,Russia,1995,18161.8
+5,Line Graph,Russia,1996,17563.8
+5,Line Graph,Russia,1997,17962.4
+5,Line Graph,Russia,1998,16965.8
+5,Line Graph,Russia,1999,18161.8
+5,Line Graph,Russia,2000,19955.8
+5,Line Graph,Russia,2001,21151.8
+5,Line Graph,Russia,2002,22347.8
+5,Line Graph,Russia,2003,23942.5
+5,Line Graph,Russia,2004,25736.5
+5,Line Graph,Russia,2005,27530.5
+5,Line Graph,Russia,2006,29922.5
+5,Line Graph,Russia,2007,32513.9
+5,Line Graph,Russia,2008,34307.9
+5,Line Graph,Russia,2009,31616.9
+5,Line Graph,Russia,2010,33012.2
+5,Line Graph,Russia,2011,34507.2
+5,Line Graph,Russia,2012,35703.2
+5,Line Graph,Russia,2013,36201.6
+5,Line Graph,Russia,2014,35802.9
+5,Line Graph,Russia,2015,35005.6
+5,Line Graph,Russia,2016,34905.9
+5,Line Graph,Russia,2017,35503.9
+5,Line Graph,Russia,2018,36500.6
+5,Line Graph,Russia,2019,37297.9
+5,Line Graph,Russia,2020,36301.2
+5,Line Graph,Russia,2021,38493.9
+5,Line Graph,Russia,2022,38194.9
+5,Line Graph,Russia,2023,39889.3
+5,Line Graph,Russia,2024,41683.3
+6,Line Graph,China,1990,1617.0
+6,Line Graph,China,1991,1617.0
+6,Line Graph,China,1992,1816.3
+6,Line Graph,China,1993,2215.0
+6,Line Graph,China,1994,2414.3
+6,Line Graph,China,1995,2613.6
+6,Line Graph,China,1996,3012.3
+6,Line Graph,China,1997,3211.7
+6,Line Graph,China,1998,3411.0
+6,Line Graph,China,1999,3610.3
+6,Line Graph,China,2000,4009.0
+6,Line Graph,China,2001,4208.3
+6,Line Graph,China,2002,4607.0
+6,Line Graph,China,2003,5005.7
+6,Line Graph,China,2004,5603.7
+6,Line Graph,China,2005,6201.7
+6,Line Graph,China,2006,6999.0
+6,Line Graph,China,2007,7796.4
+6,Line Graph,China,2008,8593.7
+6,Line Graph,China,2009,9391.0
+6,Line Graph,China,2010,10387.7
+6,Line Graph,China,2011,11384.4
+6,Line Graph,China,2012,12181.7
+6,Line Graph,China,2013,12979.1
+6,Line Graph,China,2014,13776.4
+6,Line Graph,China,2015,14773.1
+6,Line Graph,China,2016,15570.4
+6,Line Graph,China,2017,16567.1
+6,Line Graph,China,2018,17663.4
+6,Line Graph,China,2019,18759.8
+6,Line Graph,China,2020,19158.4
+6,Line Graph,China,2021,20753.1
+6,Line Graph,China,2022,21351.1
+6,Line Graph,China,2023,22547.1
+6,Line Graph,China,2024,23743.1
+7,Line Graph,Brazil,1990,12580.4
+7,Line Graph,Brazil,1991,12580.4
+7,Line Graph,Brazil,1992,12181.7
+7,Line Graph,Brazil,1993,12580.4
+7,Line Graph,Brazil,1994,13178.4
+7,Line Graph,Brazil,1995,13577.1
+7,Line Graph,Brazil,1996,13577.1
+7,Line Graph,Brazil,1997,13975.7
+7,Line Graph,Brazil,1998,13577.1
+7,Line Graph,Brazil,1999,13577.1
+7,Line Graph,Brazil,2000,13975.7
+7,Line Graph,Brazil,2001,13975.7
+7,Line Graph,Brazil,2002,14374.4
+7,Line Graph,Brazil,2003,14175.1
+7,Line Graph,Brazil,2004,14972.4
+7,Line Graph,Brazil,2005,15371.1
+7,Line Graph,Brazil,2006,15670.1
+7,Line Graph,Brazil,2007,16567.1
+7,Line Graph,Brazil,2008,16965.8
+7,Line Graph,Brazil,2009,16965.8
+7,Line Graph,Brazil,2010,32713.2
+7,Line Graph,Brazil,2011,18759.8
+7,Line Graph,Brazil,2012,18759.8
+7,Line Graph,Brazil,2013,19258.1
+7,Line Graph,Brazil,2014,19357.8
+7,Line Graph,Brazil,2015,18361.1
+7,Line Graph,Brazil,2016,17663.4
+7,Line Graph,Brazil,2017,17563.8
+7,Line Graph,Brazil,2018,17962.4
+7,Line Graph,Brazil,2019,17962.4
+7,Line Graph,Brazil,2020,17165.1
+7,Line Graph,Brazil,2021,18161.8
+7,Line Graph,Brazil,2022,18560.4
+7,Line Graph,Brazil,2023,18959.1
+7,Line Graph,Brazil,2024,19557.1
+8,Line Graph,India,1990,2115.3
+8,Line Graph,India,1991,2215.0
+8,Line Graph,India,1992,2215.0
+8,Line Graph,India,1993,2115.3
+8,Line Graph,India,1994,2015.6
+8,Line Graph,India,1995,2215.0
+8,Line Graph,India,1996,2414.3
+8,Line Graph,India,1997,2613.6
+8,Line Graph,India,1998,2713.3
+8,Line Graph,India,1999,2912.7
+8,Line Graph,India,2000,3012.3
+8,Line Graph,India,2001,3012.3
+8,Line Graph,India,2002,3112.0
+8,Line Graph,India,2003,3311.3
+8,Line Graph,India,2004,3510.7
+8,Line Graph,India,2005,3809.7
+8,Line Graph,India,2006,4009.0
+8,Line Graph,India,2007,4208.3
+8,Line Graph,India,2008,4308.0
+8,Line Graph,India,2009,4607.0
+8,Line Graph,India,2010,5005.7
+8,Line Graph,India,2011,5205.0
+8,Line Graph,India,2012,5404.3
+8,Line Graph,India,2013,5603.7
+8,Line Graph,India,2014,6002.3
+8,Line Graph,India,2015,6401.0
+8,Line Graph,India,2016,6799.7
+8,Line Graph,India,2017,7198.3
+8,Line Graph,India,2018,7597.0
+8,Line Graph,India,2019,7796.4
+8,Line Graph,India,2020,7397.7
+8,Line Graph,India,2021,7995.7
+8,Line Graph,India,2022,8394.4
+8,Line Graph,India,2023,9191.7
+8,Line Graph,India,2024,9690.0
+9,Line Graph,Ethiopia,1990,819.6
+9,Line Graph,Ethiopia,1991,819.6
+9,Line Graph,Ethiopia,1992,620.3
+9,Line Graph,Ethiopia,1993,1318.0
+9,Line Graph,Ethiopia,1994,819.6
+9,Line Graph,Ethiopia,1995,819.6
+9,Line Graph,Ethiopia,1996,819.6
+9,Line Graph,Ethiopia,1997,819.6
+9,Line Graph,Ethiopia,1998,620.3
+9,Line Graph,Ethiopia,1999,819.6
+9,Line Graph,Ethiopia,2000,819.6
+9,Line Graph,Ethiopia,2001,819.6
+9,Line Graph,Ethiopia,2002,620.3
+9,Line Graph,Ethiopia,2003,720.0
+9,Line Graph,Ethiopia,2004,819.6
+9,Line Graph,Ethiopia,2005,1019.0
+9,Line Graph,Ethiopia,2006,1019.0
+9,Line Graph,Ethiopia,2007,1019.0
+9,Line Graph,Ethiopia,2008,1118.6
+9,Line Graph,Ethiopia,2009,1218.3
+9,Line Graph,Ethiopia,2010,1417.6
+9,Line Graph,Ethiopia,2011,1517.3
+9,Line Graph,Ethiopia,2012,1617.0
+9,Line Graph,Ethiopia,2013,1617.0
+9,Line Graph,Ethiopia,2014,1816.3
+9,Line Graph,Ethiopia,2015,1916.0
+9,Line Graph,Ethiopia,2016,2115.3
+9,Line Graph,Ethiopia,2017,2215.0
+9,Line Graph,Ethiopia,2018,2215.0
+9,Line Graph,Ethiopia,2019,2414.3
+9,Line Graph,Ethiopia,2020,22646.8
+9,Line Graph,Ethiopia,2021,2613.6
+9,Line Graph,Ethiopia,2022,44673.3
+9,Line Graph,Ethiopia,2023,2813.0
+9,Line Graph,Ethiopia,2024,2813.0

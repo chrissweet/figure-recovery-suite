@@ -1,0 +1,227 @@
+layer_idx,layer_type,series,x,y
+0,Scatter Plot,24 C,8.76,0.9559
+0,Scatter Plot,24 C,9.77,0.9566
+0,Scatter Plot,24 C,10.79,0.9586
+0,Scatter Plot,24 C,11.75,0.9621
+0,Scatter Plot,24 C,12.77,0.9633
+0,Scatter Plot,24 C,13.79,0.965
+0,Scatter Plot,24 C,14.75,0.9671
+0,Scatter Plot,24 C,15.76,0.9675
+0,Scatter Plot,24 C,16.78,0.9679
+0,Scatter Plot,24 C,17.8,0.9679
+0,Scatter Plot,24 C,18.76,0.9683
+0,Scatter Plot,24 C,19.77,0.9687
+0,Scatter Plot,24 C,20.79,0.9687
+0,Scatter Plot,24 C,21.75,0.969
+0,Scatter Plot,24 C,22.77,0.969
+0,Scatter Plot,24 C,23.84,0.9672
+0,Scatter Plot,24 C,24.8,0.9694
+0,Scatter Plot,24 C,25.76,0.9696
+0,Scatter Plot,24 C,26.78,0.9706
+0,Scatter Plot,24 C,28.25,0.9734
+0,Scatter Plot,24 C,28.76,0.9722
+0,Scatter Plot,24 C,29.77,0.9722
+0,Scatter Plot,24 C,30.79,0.9725
+0,Scatter Plot,24 C,31.75,0.9725
+0,Scatter Plot,24 C,32.77,0.9727
+0,Scatter Plot,24 C,33.79,0.9727
+0,Scatter Plot,24 C,34.75,0.9728
+0,Scatter Plot,24 C,35.76,0.973
+0,Scatter Plot,24 C,36.78,0.973
+0,Scatter Plot,24 C,37.97,0.9746
+1,Scatter Plot,27 C,14.0,0.9697
+1,Scatter Plot,27 C,15.0,0.9705
+1,Scatter Plot,27 C,16.0,0.9716
+1,Scatter Plot,27 C,17.0,0.9716
+1,Scatter Plot,27 C,18.0,0.9722
+1,Scatter Plot,27 C,19.0,0.9722
+1,Scatter Plot,27 C,20.0,0.9721
+1,Scatter Plot,27 C,21.0,0.9722
+1,Scatter Plot,27 C,22.0,0.9724
+1,Scatter Plot,27 C,23.0,0.9724
+1,Scatter Plot,27 C,24.0,0.9724
+1,Scatter Plot,27 C,25.0,0.9724
+1,Scatter Plot,27 C,26.0,0.9729
+1,Scatter Plot,27 C,27.0,0.9732
+1,Scatter Plot,27 C,28.0,0.9733
+1,Scatter Plot,27 C,29.0,0.9734
+1,Scatter Plot,27 C,30.0,0.9736
+1,Scatter Plot,27 C,31.0,0.9738
+1,Scatter Plot,27 C,32.0,0.9739
+1,Scatter Plot,27 C,33.0,0.974
+1,Scatter Plot,27 C,34.0,0.974
+1,Scatter Plot,27 C,35.0,0.974
+1,Scatter Plot,27 C,36.0,0.974
+1,Scatter Plot,27 C,37.0,0.974
+1,Scatter Plot,27 C,38.0,0.9738
+2,Scatter Plot,30 C,19.0,0.9642
+2,Scatter Plot,30 C,20.0,0.9643
+2,Scatter Plot,30 C,21.0,0.9648
+2,Scatter Plot,30 C,22.0,0.9652
+2,Scatter Plot,30 C,23.0,0.9657
+2,Scatter Plot,30 C,24.0,0.9671
+2,Scatter Plot,30 C,25.0,0.9678
+2,Scatter Plot,30 C,26.0,0.9686
+2,Scatter Plot,30 C,27.0,0.9695
+2,Scatter Plot,30 C,28.0,0.9705
+2,Scatter Plot,30 C,29.0,0.9714
+2,Scatter Plot,30 C,30.0,0.9722
+2,Scatter Plot,30 C,31.0,0.973
+2,Scatter Plot,30 C,32.0,0.9735
+2,Scatter Plot,30 C,33.0,0.9739
+2,Scatter Plot,30 C,34.0,0.9742
+2,Scatter Plot,30 C,35.0,0.9744
+2,Scatter Plot,30 C,36.0,0.9746
+2,Scatter Plot,30 C,37.0,0.9747
+2,Scatter Plot,30 C,38.0,0.9748
+3,Spline Chart,p curve for 24 C,1,0.939
+3,Spline Chart,p curve for 24 C,2,0.9423
+3,Spline Chart,p curve for 24 C,3,0.9453
+3,Spline Chart,p curve for 24 C,4,0.948
+3,Spline Chart,p curve for 24 C,5,0.9504
+3,Spline Chart,p curve for 24 C,6,0.9526
+3,Spline Chart,p curve for 24 C,7,0.9547
+3,Spline Chart,p curve for 24 C,8,0.9565
+3,Spline Chart,p curve for 24 C,9,0.9582
+3,Spline Chart,p curve for 24 C,10,0.9598
+3,Spline Chart,p curve for 24 C,11,0.9612
+3,Spline Chart,p curve for 24 C,12,0.9624
+3,Spline Chart,p curve for 24 C,13,0.9636
+3,Spline Chart,p curve for 24 C,14,0.9646
+3,Spline Chart,p curve for 24 C,15,0.9656
+3,Spline Chart,p curve for 24 C,16,0.9665
+3,Spline Chart,p curve for 24 C,17,0.9673
+3,Spline Chart,p curve for 24 C,18,0.968
+3,Spline Chart,p curve for 24 C,19,0.9687
+3,Spline Chart,p curve for 24 C,20,0.9693
+3,Spline Chart,p curve for 24 C,21,0.9698
+3,Spline Chart,p curve for 24 C,22,0.9703
+3,Spline Chart,p curve for 24 C,23,0.9707
+3,Spline Chart,p curve for 24 C,24,0.9712
+3,Spline Chart,p curve for 24 C,25,0.9715
+3,Spline Chart,p curve for 24 C,26,0.9719
+3,Spline Chart,p curve for 24 C,27,0.9722
+3,Spline Chart,p curve for 24 C,28,0.9725
+3,Spline Chart,p curve for 24 C,29,0.9727
+3,Spline Chart,p curve for 24 C,30,0.973
+3,Spline Chart,p curve for 24 C,31,0.9732
+3,Spline Chart,p curve for 24 C,32,0.9734
+3,Spline Chart,p curve for 24 C,33,0.9735
+3,Spline Chart,p curve for 24 C,34,0.9737
+3,Spline Chart,p curve for 24 C,35,0.9739
+3,Spline Chart,p curve for 24 C,36,0.974
+3,Spline Chart,p curve for 24 C,37,0.9741
+3,Spline Chart,p curve for 24 C,38,0.9742
+3,Spline Chart,p curve for 24 C,39,0.9743
+3,Spline Chart,p curve for 24 C,40,0.9744
+3,Spline Chart,p curve for 24 C,41,0.9745
+3,Spline Chart,p curve for 24 C,42,0.9746
+3,Spline Chart,p curve for 24 C,43,0.9746
+3,Spline Chart,p curve for 24 C,44,0.9747
+3,Spline Chart,p curve for 24 C,45,0.9748
+3,Spline Chart,p curve for 24 C,46,0.9748
+3,Spline Chart,p curve for 24 C,47,0.9749
+3,Spline Chart,p curve for 24 C,48,0.9749
+3,Spline Chart,p curve for 24 C,49,0.9749
+3,Spline Chart,p curve for 24 C,50,0.975
+3,Spline Chart,p curve for 24 C,51,0.975
+4,Spline Chart,p curve for 27 C,1,0.9625
+4,Spline Chart,p curve for 27 C,2,0.9636
+4,Spline Chart,p curve for 27 C,3,0.9646
+4,Spline Chart,p curve for 27 C,4,0.9656
+4,Spline Chart,p curve for 27 C,5,0.9665
+4,Spline Chart,p curve for 27 C,6,0.9673
+4,Spline Chart,p curve for 27 C,7,0.968
+4,Spline Chart,p curve for 27 C,8,0.9686
+4,Spline Chart,p curve for 27 C,9,0.9692
+4,Spline Chart,p curve for 27 C,10,0.9698
+4,Spline Chart,p curve for 27 C,11,0.9703
+4,Spline Chart,p curve for 27 C,12,0.9708
+4,Spline Chart,p curve for 27 C,13,0.9712
+4,Spline Chart,p curve for 27 C,14,0.9716
+4,Spline Chart,p curve for 27 C,15,0.9719
+4,Spline Chart,p curve for 27 C,16,0.9723
+4,Spline Chart,p curve for 27 C,17,0.9725
+4,Spline Chart,p curve for 27 C,18,0.9728
+4,Spline Chart,p curve for 27 C,19,0.9731
+4,Spline Chart,p curve for 27 C,20,0.9733
+4,Spline Chart,p curve for 27 C,21,0.9735
+4,Spline Chart,p curve for 27 C,22,0.9737
+4,Spline Chart,p curve for 27 C,23,0.9738
+4,Spline Chart,p curve for 27 C,24,0.974
+4,Spline Chart,p curve for 27 C,25,0.9741
+4,Spline Chart,p curve for 27 C,26,0.9743
+4,Spline Chart,p curve for 27 C,27,0.9744
+4,Spline Chart,p curve for 27 C,28,0.9745
+4,Spline Chart,p curve for 27 C,29,0.9746
+4,Spline Chart,p curve for 27 C,30,0.9747
+4,Spline Chart,p curve for 27 C,31,0.9748
+4,Spline Chart,p curve for 27 C,32,0.9749
+4,Spline Chart,p curve for 27 C,33,0.9749
+4,Spline Chart,p curve for 27 C,34,0.975
+4,Spline Chart,p curve for 27 C,35,0.975
+4,Spline Chart,p curve for 27 C,36,0.9751
+4,Spline Chart,p curve for 27 C,37,0.9751
+4,Spline Chart,p curve for 27 C,38,0.9752
+4,Spline Chart,p curve for 27 C,39,0.9752
+4,Spline Chart,p curve for 27 C,40,0.9753
+4,Spline Chart,p curve for 27 C,41,0.9753
+4,Spline Chart,p curve for 27 C,42,0.9753
+4,Spline Chart,p curve for 27 C,43,0.9754
+4,Spline Chart,p curve for 27 C,44,0.9754
+4,Spline Chart,p curve for 27 C,45,0.9754
+4,Spline Chart,p curve for 27 C,46,0.9754
+4,Spline Chart,p curve for 27 C,47,0.9754
+4,Spline Chart,p curve for 27 C,48,0.9755
+4,Spline Chart,p curve for 27 C,49,0.9755
+4,Spline Chart,p curve for 27 C,50,0.9755
+4,Spline Chart,p curve for 27 C,51,0.9755
+5,Spline Chart,p curve for 30 C,3,0.9339
+5,Spline Chart,p curve for 30 C,4,0.937
+5,Spline Chart,p curve for 30 C,5,0.9398
+5,Spline Chart,p curve for 30 C,6,0.9425
+5,Spline Chart,p curve for 30 C,7,0.9449
+5,Spline Chart,p curve for 30 C,8,0.9472
+5,Spline Chart,p curve for 30 C,9,0.9494
+5,Spline Chart,p curve for 30 C,10,0.9514
+5,Spline Chart,p curve for 30 C,11,0.9533
+5,Spline Chart,p curve for 30 C,12,0.9551
+5,Spline Chart,p curve for 30 C,13,0.9567
+5,Spline Chart,p curve for 30 C,14,0.9583
+5,Spline Chart,p curve for 30 C,15,0.9597
+5,Spline Chart,p curve for 30 C,16,0.9611
+5,Spline Chart,p curve for 30 C,17,0.9623
+5,Spline Chart,p curve for 30 C,18,0.9635
+5,Spline Chart,p curve for 30 C,19,0.9646
+5,Spline Chart,p curve for 30 C,20,0.9656
+5,Spline Chart,p curve for 30 C,21,0.9666
+5,Spline Chart,p curve for 30 C,22,0.9675
+5,Spline Chart,p curve for 30 C,23,0.9683
+5,Spline Chart,p curve for 30 C,24,0.9691
+5,Spline Chart,p curve for 30 C,25,0.9698
+5,Spline Chart,p curve for 30 C,26,0.9705
+5,Spline Chart,p curve for 30 C,27,0.9711
+5,Spline Chart,p curve for 30 C,28,0.9717
+5,Spline Chart,p curve for 30 C,29,0.9723
+5,Spline Chart,p curve for 30 C,30,0.9728
+5,Spline Chart,p curve for 30 C,31,0.9733
+5,Spline Chart,p curve for 30 C,32,0.9737
+5,Spline Chart,p curve for 30 C,33,0.9742
+5,Spline Chart,p curve for 30 C,34,0.9746
+5,Spline Chart,p curve for 30 C,35,0.9749
+5,Spline Chart,p curve for 30 C,36,0.9753
+5,Spline Chart,p curve for 30 C,37,0.9756
+5,Spline Chart,p curve for 30 C,38,0.9759
+5,Spline Chart,p curve for 30 C,39,0.9762
+5,Spline Chart,p curve for 30 C,40,0.9764
+5,Spline Chart,p curve for 30 C,41,0.9767
+5,Spline Chart,p curve for 30 C,42,0.9769
+5,Spline Chart,p curve for 30 C,43,0.9771
+5,Spline Chart,p curve for 30 C,44,0.9773
+5,Spline Chart,p curve for 30 C,45,0.9775
+5,Spline Chart,p curve for 30 C,46,0.9777
+5,Spline Chart,p curve for 30 C,47,0.9779
+5,Spline Chart,p curve for 30 C,48,0.978
+5,Spline Chart,p curve for 30 C,49,0.9782
+5,Spline Chart,p curve for 30 C,50,0.9783
+5,Spline Chart,p curve for 30 C,51,0.9784

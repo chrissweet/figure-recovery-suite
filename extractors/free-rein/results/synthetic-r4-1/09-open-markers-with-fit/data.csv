@@ -1,0 +1,24 @@
+layer_idx,layer_type,series,x,y
+0,Scatter Plot,Measurement,0.503,4.981
+0,Scatter Plot,Measurement,1.323,6.875
+0,Scatter Plot,Measurement,2.134,7.397
+0,Scatter Plot,Measurement,2.94,8.642
+0,Scatter Plot,Measurement,3.782,11.044
+0,Scatter Plot,Measurement,4.593,12.087
+0,Scatter Plot,Measurement,5.412,14.118
+0,Scatter Plot,Measurement,6.22,14.583
+0,Scatter Plot,Measurement,7.046,15.898
+0,Scatter Plot,Measurement,7.865,17.519
+0,Scatter Plot,Measurement,8.679,19.189
+0,Scatter Plot,Measurement,9.499,21.35
+1,Line Graph,Linear fit,0.0,4.078
+1,Line Graph,Linear fit,1.0,5.835
+1,Line Graph,Linear fit,2.0,7.593
+1,Line Graph,Linear fit,3.0,9.35
+1,Line Graph,Linear fit,4.0,11.108
+1,Line Graph,Linear fit,5.0,12.865
+1,Line Graph,Linear fit,6.0,14.623
+1,Line Graph,Linear fit,7.0,16.38
+1,Line Graph,Linear fit,8.0,18.138
+1,Line Graph,Linear fit,9.0,19.895
+1,Line Graph,Linear fit,10.0,21.653

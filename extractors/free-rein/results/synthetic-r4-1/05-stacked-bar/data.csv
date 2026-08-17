@@ -1,0 +1,16 @@
+layer_idx,layer_type,series,x,y
+0,Bar Chart,CPU,Web,21.7
+1,Bar Chart,Memory,Web,14.9
+2,Bar Chart,IO Wait,Web,8.2
+0,Bar Chart,CPU,API,30.7
+1,Bar Chart,Memory,API,22.0
+2,Bar Chart,IO Wait,API,12.1
+0,Bar Chart,CPU,Worker,44.8
+1,Bar Chart,Memory,Worker,27.9
+2,Bar Chart,IO Wait,Worker,18.0
+0,Bar Chart,CPU,Cron,17.7
+1,Bar Chart,Memory,Cron,12.1
+2,Bar Chart,IO Wait,Cron,4.8
+0,Bar Chart,CPU,DB,27.9
+1,Bar Chart,Memory,DB,34.9
+2,Bar Chart,IO Wait,DB,22.0

@@ -1,0 +1,109 @@
+layer_idx,layer_type,series,x,y
+0,Scatter Plot,North America,1544,63.8
+0,Scatter Plot,North America,5170,72.7
+0,Scatter Plot,North America,7648,77.5
+0,Scatter Plot,North America,7981,71.2
+0,Scatter Plot,North America,8914,71.0
+0,Scatter Plot,North America,9223,71.9
+0,Scatter Plot,North America,10479,72.5
+0,Scatter Plot,North America,11508,75.6
+0,Scatter Plot,North America,15502,79.2
+0,Scatter Plot,North America,15903,74.4
+0,Scatter Plot,North America,23525,79.2
+0,Scatter Plot,North America,35398,79.2
+0,Scatter Plot,North America,58492,77.9
+0,Scatter Plot,South America,6506,67.3
+0,Scatter Plot,South America,12746,76.5
+0,Scatter Plot,South America,14481,75.4
+0,Scatter Plot,South America,18223,75.8
+0,Scatter Plot,South America,22738,79.0
+0,Scatter Plot,Africa,1009,60.4
+0,Scatter Plot,Africa,1196,66.0
+0,Scatter Plot,Africa,1394,54.4
+0,Scatter Plot,Africa,1584,62.3
+0,Scatter Plot,Africa,1625,63.5
+0,Scatter Plot,Africa,1652,60.0
+0,Scatter Plot,Africa,1910,66.3
+0,Scatter Plot,Africa,2010,64.8
+0,Scatter Plot,Africa,2115,67.7
+0,Scatter Plot,Africa,2283,66.9
+0,Scatter Plot,Africa,2486,60.4
+0,Scatter Plot,Africa,2825,62.3
+0,Scatter Plot,Africa,3050,66.7
+0,Scatter Plot,Africa,3407,63.5
+0,Scatter Plot,Africa,3678,68.3
+0,Scatter Plot,Africa,3741,69.2
+0,Scatter Plot,Africa,4005,61.5
+0,Scatter Plot,Africa,5083,54.0
+0,Scatter Plot,Africa,6130,64.0
+0,Scatter Plot,Africa,7206,75.8
+0,Scatter Plot,Africa,7981,64.0
+0,Scatter Plot,Africa,8543,62.9
+0,Scatter Plot,Africa,10935,76.0
+0,Scatter Plot,Africa,11410,65.4
+0,Scatter Plot,Africa,13075,70.6
+0,Scatter Plot,Africa,13528,75.8
+0,Scatter Plot,Africa,31155,71.2
+0,Scatter Plot,Europe,7779,72.5
+0,Scatter Plot,Europe,12111,76.7
+0,Scatter Plot,Europe,12964,78.7
+0,Scatter Plot,Europe,17169,75.4
+0,Scatter Plot,Europe,25183,72.3
+0,Scatter Plot,Europe,25183,79.8
+0,Scatter Plot,Europe,29104,81.2
+0,Scatter Plot,Europe,29353,76.2
+0,Scatter Plot,Europe,30112,78.1
+0,Scatter Plot,Europe,31422,80.4
+0,Scatter Plot,Europe,32234,79.0
+0,Scatter Plot,Europe,32510,77.9
+0,Scatter Plot,Europe,32788,80.8
+0,Scatter Plot,Europe,36314,81.7
+0,Scatter Plot,Europe,47280,80.4
+0,Scatter Plot,Asia,1359,65.6
+0,Scatter Plot,Asia,1557,73.5
+0,Scatter Plot,Asia,1681,74.6
+0,Scatter Plot,Asia,1830,74.8
+0,Scatter Plot,Asia,1959,67.9
+0,Scatter Plot,Asia,2207,75.0
+0,Scatter Plot,Asia,2486,72.7
+0,Scatter Plot,Asia,3024,70.2
+0,Scatter Plot,Asia,3937,70.4
+0,Scatter Plot,Asia,4789,76.5
+0,Scatter Plot,Asia,4871,74.0
+0,Scatter Plot,Asia,5304,77.9
+0,Scatter Plot,Asia,5304,71.3
+0,Scatter Plot,Asia,5487,71.5
+0,Scatter Plot,Asia,5534,67.1
+0,Scatter Plot,Asia,6451,69.8
+0,Scatter Plot,Asia,7206,72.9
+0,Scatter Plot,Asia,7583,68.3
+0,Scatter Plot,Asia,7713,71.0
+0,Scatter Plot,Asia,7846,68.3
+0,Scatter Plot,Asia,7913,69.6
+0,Scatter Plot,Asia,8328,73.3
+0,Scatter Plot,Asia,8328,71.9
+0,Scatter Plot,Asia,8616,76.0
+0,Scatter Plot,Asia,9302,76.9
+0,Scatter Plot,Asia,9302,76.2
+0,Scatter Plot,Asia,10215,76.0
+0,Scatter Plot,Asia,10302,77.9
+0,Scatter Plot,Asia,10750,77.1
+0,Scatter Plot,Asia,12424,70.2
+0,Scatter Plot,Asia,12424,71.3
+0,Scatter Plot,Asia,13878,74.6
+0,Scatter Plot,Asia,16454,75.2
+0,Scatter Plot,Asia,17169,69.8
+0,Scatter Plot,Asia,17316,76.2
+0,Scatter Plot,Asia,18536,79.8
+0,Scatter Plot,Asia,19342,75.4
+0,Scatter Plot,Asia,19508,81.9
+0,Scatter Plot,Asia,20530,78.5
+0,Scatter Plot,Asia,23929,81.9
+0,Scatter Plot,Asia,26729,81.7
+0,Scatter Plot,Asia,27891,77.7
+0,Scatter Plot,Asia,47280,81.9
+0,Scatter Plot,Asia,48092,77.9
+0,Scatter Plot,Asia,53264,80.0
+0,Scatter Plot,Asia,53719,77.1
+0,Scatter Plot,Asia,71750,78.7
+0,Scatter Plot,Oceania,38217,81.0

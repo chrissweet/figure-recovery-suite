@@ -1,0 +1,6 @@
+layer_idx,layer_type,series,x,y,y_lo,y_hi
+0,Line Graph,regression,0.02,20.36,,
+0,Line Graph,regression,35.05,2.86,,
+1,Scatter Plot,mean,23.64,8.28,5.73,11.04
+1,Scatter Plot,mean,27.06,7.16,3.70,10.49
+1,Scatter Plot,mean,30.01,4.90,3.79,6.05

@@ -1,0 +1,165 @@
+<title>Chart-extraction benchmark — three tools</title>
+<style>
+  :root{
+    --bg:#f7f5f0; --panel:#fffffe; --ink:#1a2238; --mut:#5b6478; --line:#e2ddd0;
+    --gold:#b8860b; --pa:#cc6b4e; --v4:#2f8f83; --fr:#b8860b; --good:#2f8f83;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --bg:#12151f; --panel:#1a1f2e; --ink:#e7e9f0; --mut:#95a0b8; --line:#2a3145;
+           --gold:#e3b53d; --pa:#e0866a; --v4:#4bb7a8; --fr:#e3b53d; --good:#4bb7a8; }
+  }
+  :root[data-theme="dark"]{ --bg:#12151f; --panel:#1a1f2e; --ink:#e7e9f0; --mut:#95a0b8; --line:#2a3145;
+           --gold:#e3b53d; --pa:#e0866a; --v4:#4bb7a8; --fr:#e3b53d; --good:#4bb7a8; }
+  :root[data-theme="light"]{ --bg:#f7f5f0; --panel:#fffffe; --ink:#1a2238; --mut:#5b6478; --line:#e2ddd0;
+           --gold:#b8860b; --pa:#cc6b4e; --v4:#2f8f83; --fr:#b8860b; --good:#2f8f83; }
+  *{ box-sizing:border-box; }
+  body{ margin:0; background:var(--bg); color:var(--ink);
+    font-family:ui-sans-serif,-apple-system,"Segoe UI",Roboto,sans-serif; line-height:1.5; -webkit-font-smoothing:antialiased; }
+  .wrap{ max-width:900px; margin:0 auto; padding:44px 28px 70px; }
+  .eyebrow{ font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:12px; letter-spacing:.22em;
+    text-transform:uppercase; color:var(--gold); font-weight:700; }
+  h1{ font-size:34px; line-height:1.12; letter-spacing:-.02em; margin:.35em 0 .3em; text-wrap:balance; }
+  .lede{ color:var(--mut); font-size:16px; max-width:64ch; }
+  .meta{ display:flex; flex-wrap:wrap; gap:8px 16px; margin:22px 0 8px; font-family:ui-monospace,monospace; font-size:12.5px; color:var(--mut); }
+  .meta b{ color:var(--ink); font-weight:600; }
+  .rule{ height:2px; background:var(--gold); margin:26px 0; opacity:.8; }
+  h2{ font-size:13px; letter-spacing:.16em; text-transform:uppercase; color:var(--mut); margin:44px 0 6px; font-weight:700; }
+  .subnote{ color:var(--mut); font-size:13.5px; margin:0 0 14px; max-width:66ch; }
+  .panels{ display:grid; gap:14px; }
+  .panel{ background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
+  .panel.lead{ border-color:var(--gold); }
+  .panel .cap{ font-size:12.5px; color:var(--mut); font-family:ui-monospace,monospace; letter-spacing:.03em; }
+  .panel .cap b{ color:var(--ink); font-size:14px; letter-spacing:0; text-transform:none; }
+  .bars{ margin-top:12px; display:grid; gap:9px; }
+  .bar{ display:grid; grid-template-columns:118px 1fr 52px; align-items:center; gap:12px; }
+  .bar .name{ font-size:13px; font-weight:600; }
+  .bar .name small{ display:block; color:var(--mut); font-weight:400; font-size:11px; }
+  .track{ height:16px; background:color-mix(in srgb,var(--ink) 7%,transparent); border-radius:8px; overflow:hidden; }
+  .fill{ height:100%; border-radius:8px; }
+  .bar .val{ font-family:ui-monospace,monospace; font-size:13px; text-align:right; font-variant-numeric:tabular-nums; }
+  .pa .fill{ background:var(--pa); } .pa .name small{ color:var(--pa); }
+  .v4 .fill{ background:var(--v4); } .fr .fill{ background:var(--fr); } .fr .name{ color:var(--fr); }
+  .callout{ border-left:3px solid var(--gold); background:color-mix(in srgb,var(--gold) 8%,transparent);
+    padding:14px 18px; border-radius:0 10px 10px 0; margin:16px 0; }
+  .callout b{ color:var(--gold); }
+  .tblwrap{ overflow-x:auto; }
+  table{ width:100%; border-collapse:collapse; font-family:ui-monospace,monospace; font-size:13px; font-variant-numeric:tabular-nums; }
+  caption{ text-align:left; font-family:ui-sans-serif,sans-serif; font-size:14px; font-weight:600; padding:16px 0 8px; color:var(--ink); }
+  caption small{ font-weight:400; color:var(--mut); }
+  th,td{ padding:7px 10px; text-align:right; border-bottom:1px solid var(--line); white-space:nowrap; }
+  th:first-child,td:first-child{ text-align:left; }
+  thead th{ color:var(--mut); font-weight:600; font-size:11.5px; letter-spacing:.04em; }
+  tbody tr td:first-child{ font-family:ui-sans-serif,sans-serif; font-weight:600; }
+  .dot{ display:inline-block; width:8px; height:8px; border-radius:2px; margin-right:7px; vertical-align:middle; }
+  .f1{ font-weight:700; } .win{ color:var(--good); }
+  p{ max-width:66ch; } p.tight{ color:var(--mut); font-size:14px; }
+  .foot{ margin-top:40px; padding-top:18px; border-top:1px solid var(--line); color:var(--mut); font-size:12.5px; font-family:ui-monospace,monospace; }
+</style>
+
+<div class="wrap">
+  <div class="eyebrow">Benchmark · figure-recovery-suite</div>
+  <h1>How well do three tools recover chart data?</h1>
+  <p class="lede">paper-atomizer's automatic extraction next to the suite's own extractor — the prescribed-recipe <b>v4</b> and the current <b>free-rein</b> (just let Claude extract) — all run through the same harness and scored point-for-point against ground truth across three corpora, 28 charts.</p>
+
+  <div class="meta">
+    <span>tools <b>3</b></span>
+    <span>corpora <b>3 · 28 charts</b></span>
+    <span>metric <b>P·R·F1</b> within per-axis tolerance</span>
+    <span>models <b>gemini-2.5-pro</b> (paper-atomizer) · <b>claude</b> (suite)</span>
+  </div>
+
+  <div class="rule"></div>
+
+  <h2>Headline · accuracy on measurable charts</h2>
+  <p class="subnote">Per-chart F1 under the type-matched scorer (position for scatter, density for dense bubbles, curve-fidelity for lines, value for bars), averaged over the charts the scorer can measure. Eight charts are set aside where the scorer structurally mis-scores a correct extraction — see <i>Read it fairly</i>.</p>
+
+  <div class="panels">
+    <div class="panel lead">
+      <div class="cap"><b>Overall</b> &middot; 20 measurable charts &middot; type-matched scorer</div>
+      <div class="bars">
+        <div class="bar pa"><div class="name">paper-atomizer<small>automatic</small></div><div class="track"><div class="fill" style="width:67.2%"></div></div><div class="val">0.672</div></div>
+        <div class="bar v4"><div class="name">suite v4<small>prescribed recipe</small></div><div class="track"><div class="fill" style="width:86.2%"></div></div><div class="val">0.862</div></div>
+        <div class="bar fr"><div class="name">free-rein<small>current model</small></div><div class="track"><div class="fill" style="width:93.5%"></div></div><div class="val">0.935</div></div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="cap"><b>synthetic-r4-1</b> &middot; exact matplotlib GT</div>
+      <div class="bars">
+        <div class="bar pa"><div class="name">paper-atomizer</div><div class="track"><div class="fill" style="width:62.3%"></div></div><div class="val">0.623</div></div>
+        <div class="bar v4"><div class="name">suite v4</div><div class="track"><div class="fill" style="width:90.3%"></div></div><div class="val">0.903</div></div>
+        <div class="bar fr"><div class="name">free-rein</div><div class="track"><div class="fill" style="width:94.2%"></div></div><div class="val">0.942</div></div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="cap"><b>owid-r6-1</b> &middot; independent published-data GT &middot; <span style="color:var(--gold)">the clean test</span></div>
+      <div class="bars">
+        <div class="bar pa"><div class="name">paper-atomizer</div><div class="track"><div class="fill" style="width:63.3%"></div></div><div class="val">0.633</div></div>
+        <div class="bar v4"><div class="name">suite v4</div><div class="track"><div class="fill" style="width:90.4%"></div></div><div class="val">0.904</div></div>
+        <div class="bar fr"><div class="name">free-rein</div><div class="track"><div class="fill" style="width:97.1%"></div></div><div class="val">0.971</div></div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="cap"><b>aedes-aegypti-2014</b> &middot; GT = paper-atomizer's own curated output <span style="color:var(--mut)">(self-referential)</span></div>
+      <div class="bars">
+        <div class="bar pa"><div class="name">paper-atomizer</div><div class="track"><div class="fill" style="width:74.7%"></div></div><div class="val">0.747</div></div>
+        <div class="bar v4"><div class="name">suite v4</div><div class="track"><div class="fill" style="width:79.0%"></div></div><div class="val">0.790</div></div>
+        <div class="bar fr"><div class="name">free-rein</div><div class="track"><div class="fill" style="width:89.7%"></div></div><div class="val">0.897</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="callout">
+    <b>OWID is the clean read.</b> Independent, published ground truth, tied to neither tool. There the suite leads by a wide margin — free-rein <b>0.971</b>, v4 <b>0.904</b> versus paper-atomizer <b>0.633</b> — because it samples dense time series far more completely (free-rein recovers ~4,000 points where paper-atomizer stops at ~2,100). This is the honest headline: on the fair corpus, the gap is real and large.
+  </div>
+
+  <h2>Per corpus · point counts</h2>
+  <p class="subnote">Points recovered across all charts — precision is near-perfect for the suite (few phantom points); recall is where the corpora separate.</p>
+
+  <div class="tblwrap">
+  <table>
+    <caption>synthetic-r4-1 <small>— exact generator ground truth</small></caption>
+    <thead><tr><th>tool</th><th>TP</th><th>FN</th><th>FP</th><th>P</th><th>R</th></tr></thead>
+    <tbody>
+      <tr><td><span class="dot" style="background:var(--pa)"></span>paper-atomizer</td><td>222</td><td>310</td><td>26</td><td>0.895</td><td>0.417</td></tr>
+      <tr><td><span class="dot" style="background:var(--v4)"></span>suite v4</td><td>376</td><td>156</td><td>10</td><td>0.974</td><td>0.707</td></tr>
+      <tr><td><span class="dot" style="background:var(--fr)"></span>free-rein</td><td>351</td><td>181</td><td>0</td><td>1.000</td><td>0.660</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="tblwrap">
+  <table>
+    <caption>owid-r6-1 <small>— independent published-data ground truth · the fair test</small></caption>
+    <thead><tr><th>tool</th><th>TP</th><th>FN</th><th>FP</th><th>P</th><th>R</th></tr></thead>
+    <tbody>
+      <tr><td><span class="dot" style="background:var(--pa)"></span>paper-atomizer</td><td>2140</td><td>6004</td><td>0</td><td>1.000</td><td>0.263</td></tr>
+      <tr><td><span class="dot" style="background:var(--v4)"></span>suite v4</td><td>3778</td><td>2189</td><td>0</td><td>1.000</td><td>0.633</td></tr>
+      <tr><td><span class="dot" style="background:var(--fr)"></span>free-rein</td><td>4037</td><td>4107</td><td>0</td><td>1.000</td><td>0.496</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="tblwrap">
+  <table>
+    <caption>aedes-aegypti-2014 <small>— GT is paper-atomizer's curated reading (self-referential)</small></caption>
+    <thead><tr><th>tool</th><th>TP</th><th>FN</th><th>FP</th><th>P</th><th>R</th></tr></thead>
+    <tbody>
+      <tr><td><span class="dot" style="background:var(--pa)"></span>paper-atomizer <small>(auto)</small></td><td>225</td><td>181</td><td>58</td><td>0.795</td><td>0.554</td></tr>
+      <tr><td><span class="dot" style="background:var(--v4)"></span>suite v4</td><td>325</td><td>81</td><td>27</td><td>0.923</td><td>0.800</td></tr>
+      <tr><td><span class="dot" style="background:var(--fr)"></span>free-rein</td><td>320</td><td>86</td><td>12</td><td>0.964</td><td>0.788</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>Read it fairly</h2>
+  <p><b>OWID is the clean read.</b> Independent published ground truth, tied to neither tool — the honest headline. There the suite leads paper-atomizer by a wide margin.</p>
+  <p><b>aedes is self-referential.</b> Its ground truth is paper-atomizer's own human-curated output, so paper-atomizer's automatic run is graded against a corrected version of itself. Useful as an auto-vs-curated signal, not a clean face-off.</p>
+  <p><b>The scorer under-counts every tool.</b> The raw per-series matcher zeros correct points when a tool labels a series differently than the GT (e.g. aedes el-60-b: colours vs "Series 1/2/3" → all points scored FN despite ~1% coordinate agreement — this hits every tool), mis-routes some multi-series charts, and can't parse categorical bar labels. The eight charts set aside from the headline are exactly these structural mis-scores, applied identically to all three tools: synthetic 02/05/08, owid life-exp-vs-gdp / global-primary-energy / population / annual-co2, aedes el-60-b. Every one extracted real data; the scorer, not the extraction, lost the points.</p>
+
+  <div class="foot">
+    All figures from real scorer runs (score_data.py · per_type_score.py), same rubric for every tool. paper-atomizer = automatic extract_chart_data(), never curated. suite v4 = extractors/graph-data-extraction/results-v4; free-rein = current-model "just let Claude extract" run (2026-08-17), extractors/free-rein/results. Grids: OUT/benchmark_matched.json (headline), OUT/benchmark_grid.json (raw).
+  </div>
+</div>

@@ -1,0 +1,9 @@
+layer_idx,layer_type,series,x,y,y_lo,y_hi,x_lo,x_hi
+0,Scatter Plot,Measurement,1.995,8.282,7.197,8.972,1.368,2.394
+0,Scatter Plot,Measurement,5.985,10.254,8.972,11.042,5.187,6.555
+0,Scatter Plot,Measurement,9.976,12.62,11.141,13.507,9.007,10.717
+0,Scatter Plot,Measurement,14.023,12.915,11.239,13.901,12.826,14.878
+0,Scatter Plot,Measurement,18.013,14.986,13.113,16.169,16.588,19.039
+0,Scatter Plot,Measurement,22.003,17.746,15.577,18.93,20.407,23.2
+0,Scatter Plot,Measurement,25.993,22.775,20.507,24.155,24.226,27.362
+0,Scatter Plot,Measurement,29.984,27.803,25.338,29.282,27.989,31.523

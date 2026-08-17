@@ -1,0 +1,7 @@
+layer_idx,layer_type,series,x,y
+0,Bar Chart,Throughput,Alpha,12.324
+0,Bar Chart,Throughput,Bravo,18.592
+0,Bar Chart,Throughput,Charlie,9.155
+0,Bar Chart,Throughput,Delta,22.394
+0,Bar Chart,Throughput,Echo,15.0
+0,Bar Chart,Throughput,Foxtrot,7.746

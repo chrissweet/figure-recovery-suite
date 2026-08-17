@@ -1,0 +1,1285 @@
+{
+  "corpus": "owid-r6-1",
+  "extractor": "free-rein",
+  "results_dir": "results",
+  "n_charts": 10,
+  "charts": {
+    "annual-co2-emissions-per-country": {
+      "x_tol": 5.48,
+      "y_tol_kind": "relative",
+      "y_tol_desc": "relative 1.0% (denom floor 1.22888e+07)",
+      "x_range": 274.0,
+      "y_range": 12288809807.0,
+      "scatter": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "curves": {
+        "summary": {
+          "tp": 316,
+          "fn": 1077,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.2268,
+          "f1": 0.3698,
+          "jaccard": 0.2268
+        },
+        "gt_n": 1393,
+        "mine_n": 948,
+        "by_series": {
+          "china": {
+            "gt_label": "china",
+            "tp": 44,
+            "fn": 74,
+            "fp": 0,
+            "gt_n": 118,
+            "mine_n": 77
+          },
+          "unitedstates": {
+            "gt_label": "unitedstates",
+            "tp": 82,
+            "fn": 143,
+            "fp": 0,
+            "gt_n": 225,
+            "mine_n": 217
+          },
+          "india": {
+            "gt_label": "india",
+            "tp": 36,
+            "fn": 120,
+            "fp": 0,
+            "gt_n": 156,
+            "mine_n": 132
+          },
+          "germany": {
+            "gt_label": "germany",
+            "tp": 56,
+            "fn": 177,
+            "fp": 0,
+            "gt_n": 233,
+            "mine_n": 115
+          },
+          "brazil": {
+            "gt_label": "brazil",
+            "tp": 16,
+            "fn": 153,
+            "fp": 0,
+            "gt_n": 169,
+            "mine_n": 67
+          },
+          "unitedkingdom": {
+            "gt_label": "unitedkingdom",
+            "tp": 47,
+            "fn": 228,
+            "fp": 0,
+            "gt_n": 275,
+            "mine_n": 213
+          },
+          "france": {
+            "gt_label": "france",
+            "tp": 35,
+            "fn": 182,
+            "fp": 0,
+            "gt_n": 217,
+            "mine_n": 127
+          }
+        }
+      },
+      "errbars": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "combined": {
+        "tp": 316,
+        "fn": 1077,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 0.2268,
+        "f1": 0.3698,
+        "jaccard": 0.2268
+      }
+    },
+    "child-mortality": {
+      "x_tol": 5.44,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 0.9744 (2.0% of y_range 48.72)",
+      "x_range": 272.0,
+      "y_range": 48.72,
+      "scatter": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "curves": {
+        "summary": {
+          "tp": 858,
+          "fn": 186,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.8218,
+          "f1": 0.9022,
+          "jaccard": 0.8218
+        },
+        "gt_n": 1044,
+        "mine_n": 1039,
+        "by_series": {
+          "sweden": {
+            "gt_label": "sweden",
+            "tp": 168,
+            "fn": 105,
+            "fp": 0,
+            "gt_n": 273,
+            "mine_n": 251
+          },
+          "brazil": {
+            "gt_label": "brazil",
+            "tp": 90,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 90,
+            "mine_n": 88
+          },
+          "ghana": {
+            "gt_label": "ghana",
+            "tp": 92,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 92,
+            "mine_n": 86
+          },
+          "india": {
+            "gt_label": "india",
+            "tp": 103,
+            "fn": 4,
+            "fp": 0,
+            "gt_n": 107,
+            "mine_n": 112
+          },
+          "unitedstates": {
+            "gt_label": "unitedstates",
+            "tp": 71,
+            "fn": 20,
+            "fp": 0,
+            "gt_n": 91,
+            "mine_n": 171
+          },
+          "france": {
+            "gt_label": "france",
+            "tp": 161,
+            "fn": 47,
+            "fp": 0,
+            "gt_n": 208,
+            "mine_n": 170
+          },
+          "unitedkingdom": {
+            "gt_label": "unitedkingdom",
+            "tp": 173,
+            "fn": 10,
+            "fp": 0,
+            "gt_n": 183,
+            "mine_n": 161
+          }
+        }
+      },
+      "errbars": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "combined": {
+        "tp": 858,
+        "fn": 186,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 0.8218,
+        "f1": 0.9022,
+        "jaccard": 0.8218
+      }
+    },
+    "co2-emissions-per-capita": {
+      "x_tol": 5.48,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 0.444393 (2.0% of y_range 22.2197)",
+      "x_range": 274.0,
+      "y_range": 22.2196693943,
+      "scatter": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "curves": {
+        "summary": {
+          "tp": 1473,
+          "fn": 153,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.9059,
+          "f1": 0.9506,
+          "jaccard": 0.9059
+        },
+        "gt_n": 1626,
+        "mine_n": 1782,
+        "by_series": {
+          "unitedstates": {
+            "gt_label": "unitedstates",
+            "tp": 186,
+            "fn": 39,
+            "fp": 0,
+            "gt_n": 225,
+            "mine_n": 194
+          },
+          "canada": {
+            "gt_label": "canada",
+            "tp": 220,
+            "fn": 6,
+            "fp": 0,
+            "gt_n": 226,
+            "mine_n": 274
+          },
+          "china": {
+            "gt_label": "china",
+            "tp": 118,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 118,
+            "mine_n": 195
+          },
+          "southafrica": {
+            "gt_label": "southafrica",
+            "tp": 138,
+            "fn": 3,
+            "fp": 0,
+            "gt_n": 141,
+            "mine_n": 132
+          },
+          "europeanunion27": {
+            "gt_label": "europeanunion27",
+            "tp": 188,
+            "fn": 37,
+            "fp": 0,
+            "gt_n": 225,
+            "mine_n": 182
+          },
+          "world": {
+            "gt_label": "world",
+            "tp": 225,
+            "fn": 5,
+            "fp": 0,
+            "gt_n": 230,
+            "mine_n": 228
+          },
+          "unitedkingdom": {
+            "gt_label": "unitedkingdom",
+            "tp": 221,
+            "fn": 9,
+            "fp": 0,
+            "gt_n": 230,
+            "mine_n": 274
+          },
+          "india": {
+            "gt_label": "india",
+            "tp": 133,
+            "fn": 23,
+            "fp": 0,
+            "gt_n": 156,
+            "mine_n": 127
+          },
+          "kenya": {
+            "gt_label": "kenya",
+            "tp": 44,
+            "fn": 31,
+            "fp": 0,
+            "gt_n": 75,
+            "mine_n": 176
+          }
+        }
+      },
+      "errbars": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "combined": {
+        "tp": 1473,
+        "fn": 153,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 0.9059,
+        "f1": 0.9506,
+        "jaccard": 0.9059
+      }
+    },
+    "gdp-per-capita-worldbank": {
+      "x_tol": 0.68,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 1496.17 (2.0% of y_range 74808.4)",
+      "x_range": 34.0,
+      "y_range": 74808.4312,
+      "scatter": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "curves": {
+        "summary": {
+          "tp": 345,
+          "fn": 5,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.9857,
+          "f1": 0.9928,
+          "jaccard": 0.9857
+        },
+        "gt_n": 350,
+        "mine_n": 350,
+        "by_series": {
+          "unitedstates": {
+            "gt_label": "unitedstates",
+            "tp": 35,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 35,
+            "mine_n": 35
+          },
+          "germany": {
+            "gt_label": "germany",
+            "tp": 34,
+            "fn": 1,
+            "fp": 0,
+            "gt_n": 35,
+            "mine_n": 35
+          },
+          "southkorea": {
+            "gt_label": "southkorea",
+            "tp": 34,
+            "fn": 1,
+            "fp": 0,
+            "gt_n": 35,
+            "mine_n": 35
+          },
+          "unitedkingdom": {
+            "gt_label": "unitedkingdom",
+            "tp": 35,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 35,
+            "mine_n": 35
+          },
+          "japan": {
+            "gt_label": "japan",
+            "tp": 35,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 35,
+            "mine_n": 35
+          },
+          "russia": {
+            "gt_label": "russia",
+            "tp": 35,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 35,
+            "mine_n": 35
+          },
+          "china": {
+            "gt_label": "china",
+            "tp": 35,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 35,
+            "mine_n": 35
+          },
+          "brazil": {
+            "gt_label": "brazil",
+            "tp": 34,
+            "fn": 1,
+            "fp": 0,
+            "gt_n": 35,
+            "mine_n": 35
+          },
+          "india": {
+            "gt_label": "india",
+            "tp": 35,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 35,
+            "mine_n": 35
+          },
+          "ethiopia": {
+            "gt_label": "ethiopia",
+            "tp": 33,
+            "fn": 2,
+            "fp": 0,
+            "gt_n": 35,
+            "mine_n": 35
+          }
+        }
+      },
+      "errbars": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "combined": {
+        "tp": 345,
+        "fn": 5,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 0.9857,
+        "f1": 0.9928,
+        "jaccard": 0.9857
+      }
+    },
+    "global-primary-energy": {
+      "x_tol": 4.48,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 1105.84 (2.0% of y_range 55292.1)",
+      "x_range": 224.0,
+      "y_range": 55292.082,
+      "scatter": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 2250,
+        "by_series": {
+          "traditionalbiomass": {
+            "error": "no GT match",
+            "mine_n": 225
+          },
+          "coal": {
+            "error": "no GT match",
+            "mine_n": 225
+          },
+          "oil": {
+            "error": "no GT match",
+            "mine_n": 225
+          },
+          "gas": {
+            "error": "no GT match",
+            "mine_n": 225
+          },
+          "nuclear": {
+            "error": "no GT match",
+            "mine_n": 225
+          },
+          "hydropower": {
+            "error": "no GT match",
+            "mine_n": 225
+          },
+          "wind": {
+            "error": "no GT match",
+            "mine_n": 225
+          },
+          "solar": {
+            "error": "no GT match",
+            "mine_n": 225
+          },
+          "otherrenewables": {
+            "error": "no GT match",
+            "mine_n": 225
+          },
+          "modernbiofuels": {
+            "error": "no GT match",
+            "mine_n": 225
+          }
+        }
+      },
+      "curves": {
+        "summary": {
+          "tp": 0,
+          "fn": 770,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 770,
+        "mine_n": 0,
+        "by_series": {
+          "unmapped:modernbiofuels": {
+            "gt_label": "modernbiofuels",
+            "tp": 0,
+            "fn": 77,
+            "fp": 0,
+            "gt_n": 77,
+            "mine_n": 0
+          },
+          "unmapped:otherrenewables": {
+            "gt_label": "otherrenewables",
+            "tp": 0,
+            "fn": 77,
+            "fp": 0,
+            "gt_n": 77,
+            "mine_n": 0
+          },
+          "unmapped:solar": {
+            "gt_label": "solar",
+            "tp": 0,
+            "fn": 77,
+            "fp": 0,
+            "gt_n": 77,
+            "mine_n": 0
+          },
+          "unmapped:wind": {
+            "gt_label": "wind",
+            "tp": 0,
+            "fn": 77,
+            "fp": 0,
+            "gt_n": 77,
+            "mine_n": 0
+          },
+          "unmapped:hydropower": {
+            "gt_label": "hydropower",
+            "tp": 0,
+            "fn": 77,
+            "fp": 0,
+            "gt_n": 77,
+            "mine_n": 0
+          },
+          "unmapped:nuclear": {
+            "gt_label": "nuclear",
+            "tp": 0,
+            "fn": 77,
+            "fp": 0,
+            "gt_n": 77,
+            "mine_n": 0
+          },
+          "unmapped:gas": {
+            "gt_label": "gas",
+            "tp": 0,
+            "fn": 77,
+            "fp": 0,
+            "gt_n": 77,
+            "mine_n": 0
+          },
+          "unmapped:oil": {
+            "gt_label": "oil",
+            "tp": 0,
+            "fn": 77,
+            "fp": 0,
+            "gt_n": 77,
+            "mine_n": 0
+          },
+          "unmapped:coal": {
+            "gt_label": "coal",
+            "tp": 0,
+            "fn": 77,
+            "fp": 0,
+            "gt_n": 77,
+            "mine_n": 0
+          },
+          "unmapped:traditionalbiomass": {
+            "gt_label": "traditionalbiomass",
+            "tp": 0,
+            "fn": 77,
+            "fp": 0,
+            "gt_n": 77,
+            "mine_n": 0
+          }
+        }
+      },
+      "errbars": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "combined": {
+        "tp": 0,
+        "fn": 770,
+        "fp": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "jaccard": 0.0
+      }
+    },
+    "life-expectancy": {
+      "x_tol": 5.0600000000000005,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 1.05493 (2.0% of y_range 52.7464)",
+      "x_range": 253.0,
+      "y_range": 52.7464,
+      "scatter": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "curves": {
+        "summary": {
+          "tp": 466,
+          "fn": 7,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.9852,
+          "f1": 0.9925,
+          "jaccard": 0.9852
+        },
+        "gt_n": 473,
+        "mine_n": 1342,
+        "by_series": {
+          "oceania": {
+            "gt_label": "oceania",
+            "tp": 77,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 77,
+            "mine_n": 140
+          },
+          "europe": {
+            "gt_label": "europe",
+            "tp": 80,
+            "fn": 1,
+            "fp": 0,
+            "gt_n": 81,
+            "mine_n": 250
+          },
+          "americas": {
+            "gt_label": "americas",
+            "tp": 79,
+            "fn": 1,
+            "fp": 0,
+            "gt_n": 80,
+            "mine_n": 235
+          },
+          "asia": {
+            "gt_label": "asia",
+            "tp": 75,
+            "fn": 3,
+            "fp": 0,
+            "gt_n": 78,
+            "mine_n": 252
+          },
+          "world": {
+            "gt_label": "world",
+            "tp": 80,
+            "fn": 1,
+            "fp": 0,
+            "gt_n": 81,
+            "mine_n": 210
+          },
+          "africa": {
+            "gt_label": "africa",
+            "tp": 75,
+            "fn": 1,
+            "fp": 0,
+            "gt_n": 76,
+            "mine_n": 255
+          }
+        }
+      },
+      "errbars": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "combined": {
+        "tp": 466,
+        "fn": 7,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 0.9852,
+        "f1": 0.9925,
+        "jaccard": 0.9852
+      }
+    },
+    "life-expectancy-vs-gdp-per-capita": {
+      "x_tol": 2971.4943399999997,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 1.30473 (2.0% of y_range 65.2364)",
+      "x_range": 148574.71699999998,
+      "y_range": 65.2364,
+      "scatter": {
+        "summary": {
+          "tp": 0,
+          "fn": 165,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 165,
+        "mine_n": 108,
+        "by_series": {
+          "northamerica": {
+            "error": "no GT match",
+            "mine_n": 13
+          },
+          "southamerica": {
+            "error": "no GT match",
+            "mine_n": 5
+          },
+          "africa": {
+            "error": "no GT match",
+            "mine_n": 27
+          },
+          "europe": {
+            "error": "no GT match",
+            "mine_n": 15
+          },
+          "asia": {
+            "error": "no GT match",
+            "mine_n": 47
+          },
+          "oceania": {
+            "error": "no GT match",
+            "mine_n": 1
+          },
+          "unmapped:country": {
+            "gt_label": "country",
+            "tp": 0,
+            "fn": 165,
+            "fp": 0,
+            "gt_n": 165,
+            "mine_n": 0
+          }
+        }
+      },
+      "curves": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "errbars": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "combined": {
+        "tp": 0,
+        "fn": 165,
+        "fp": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "jaccard": 0.0
+      }
+    },
+    "population": {
+      "x_tol": 240.46,
+      "y_tol_kind": "relative",
+      "y_tol_desc": "relative 1.0% (denom floor 8.09151e+06)",
+      "x_range": 12023.0,
+      "y_range": 8091505960.0,
+      "scatter": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "curves": {
+        "summary": {
+          "tp": 89,
+          "fn": 1738,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.0487,
+          "f1": 0.0929,
+          "jaccard": 0.0487
+        },
+        "gt_n": 1827,
+        "mine_n": 285,
+        "by_series": {
+          "world": {
+            "gt_label": "world",
+            "tp": 10,
+            "fn": 251,
+            "fp": 0,
+            "gt_n": 261,
+            "mine_n": 100
+          },
+          "asia": {
+            "gt_label": "asia",
+            "tp": 40,
+            "fn": 221,
+            "fp": 0,
+            "gt_n": 261,
+            "mine_n": 102
+          },
+          "africa": {
+            "gt_label": "africa",
+            "tp": 2,
+            "fn": 259,
+            "fp": 0,
+            "gt_n": 261,
+            "mine_n": 16
+          },
+          "europe": {
+            "gt_label": "europe",
+            "tp": 22,
+            "fn": 239,
+            "fp": 0,
+            "gt_n": 261,
+            "mine_n": 32
+          },
+          "northamerica": {
+            "gt_label": "northamerica",
+            "tp": 6,
+            "fn": 255,
+            "fp": 0,
+            "gt_n": 261,
+            "mine_n": 25
+          },
+          "southamerica": {
+            "gt_label": "southamerica",
+            "tp": 9,
+            "fn": 252,
+            "fp": 0,
+            "gt_n": 261,
+            "mine_n": 6
+          },
+          "oceania": {
+            "gt_label": "oceania",
+            "tp": 0,
+            "fn": 261,
+            "fp": 0,
+            "gt_n": 261,
+            "mine_n": 4
+          }
+        }
+      },
+      "errbars": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "combined": {
+        "tp": 89,
+        "fn": 1738,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 0.0487,
+        "f1": 0.0929,
+        "jaccard": 0.0487
+      }
+    },
+    "share-electricity-low-carbon": {
+      "x_tol": 0.8,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 1.68508 (2.0% of y_range 84.254)",
+      "x_range": 40.0,
+      "y_range": 84.253967,
+      "scatter": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "curves": {
+        "summary": {
+          "tp": 325,
+          "fn": 3,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.9909,
+          "f1": 0.9954,
+          "jaccard": 0.9909
+        },
+        "gt_n": 328,
+        "mine_n": 328,
+        "by_series": {
+          "sweden": {
+            "gt_label": "sweden",
+            "tp": 41,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 41,
+            "mine_n": 41
+          },
+          "france": {
+            "gt_label": "france",
+            "tp": 41,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 41,
+            "mine_n": 41
+          },
+          "germany": {
+            "gt_label": "germany",
+            "tp": 40,
+            "fn": 1,
+            "fp": 0,
+            "gt_n": 41,
+            "mine_n": 41
+          },
+          "unitedkingdom": {
+            "gt_label": "unitedkingdom",
+            "tp": 41,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 41,
+            "mine_n": 41
+          },
+          "unitedstates": {
+            "gt_label": "unitedstates",
+            "tp": 41,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 41,
+            "mine_n": 41
+          },
+          "china": {
+            "gt_label": "china",
+            "tp": 39,
+            "fn": 2,
+            "fp": 0,
+            "gt_n": 41,
+            "mine_n": 41
+          },
+          "india": {
+            "gt_label": "india",
+            "tp": 41,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 41,
+            "mine_n": 41
+          },
+          "world": {
+            "gt_label": "world",
+            "tp": 41,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 41,
+            "mine_n": 41
+          }
+        }
+      },
+      "errbars": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "combined": {
+        "tp": 325,
+        "fn": 3,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 0.9909,
+        "f1": 0.9954,
+        "jaccard": 0.9909
+      }
+    },
+    "share-of-individuals-using-the-internet": {
+      "x_tol": 0.4,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 1.872 (2.0% of y_range 93.6)",
+      "x_range": 20.0,
+      "y_range": 93.6,
+      "scatter": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "curves": {
+        "summary": {
+          "tp": 165,
+          "fn": 3,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.9821,
+          "f1": 0.991,
+          "jaccard": 0.9821
+        },
+        "gt_n": 168,
+        "mine_n": 166,
+        "by_series": {
+          "northamericawb": {
+            "gt_label": "northamericawb",
+            "tp": 21,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 21,
+            "mine_n": 21
+          },
+          "europeandcentralasiawb": {
+            "gt_label": "europeandcentralasiawb",
+            "tp": 21,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 21,
+            "mine_n": 21
+          },
+          "eastasiaandpacificwb": {
+            "gt_label": "eastasiaandpacificwb",
+            "tp": 21,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 21,
+            "mine_n": 21
+          },
+          "latinamericaandcaribbeanwb": {
+            "gt_label": "latinamericaandcaribbeanwb",
+            "tp": 20,
+            "fn": 1,
+            "fp": 0,
+            "gt_n": 21,
+            "mine_n": 21
+          },
+          "world": {
+            "gt_label": "world",
+            "tp": 21,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 21,
+            "mine_n": 21
+          },
+          "southasiawb": {
+            "gt_label": "southasiawb",
+            "tp": 21,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 21,
+            "mine_n": 21
+          },
+          "middleeastnorthafricaafghanistanandpakistanwb": {
+            "gt_label": "middleeastnorthafricaafghanistanandpakistanwb",
+            "tp": 21,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 21,
+            "mine_n": 21
+          },
+          "subsaharanafricawb": {
+            "gt_label": "subsaharanafricawb",
+            "tp": 19,
+            "fn": 2,
+            "fp": 0,
+            "gt_n": 21,
+            "mine_n": 19
+          }
+        }
+      },
+      "errbars": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "combined": {
+        "tp": 165,
+        "fn": 3,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 0.9821,
+        "f1": 0.991,
+        "jaccard": 0.9821
+      }
+    }
+  },
+  "totals": {
+    "scatter": {
+      "tp": 0,
+      "fn": 165,
+      "fp": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "jaccard": 0.0
+    },
+    "curves": {
+      "tp": 4037,
+      "fn": 3942,
+      "fp": 0,
+      "precision": 1.0,
+      "recall": 0.506,
+      "f1": 0.6719,
+      "jaccard": 0.506
+    },
+    "errbars": {
+      "tp": 0,
+      "fn": 0,
+      "fp": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "jaccard": 0.0
+    },
+    "combined": {
+      "tp": 4037,
+      "fn": 4107,
+      "fp": 0,
+      "precision": 1.0,
+      "recall": 0.4957,
+      "f1": 0.6628,
+      "jaccard": 0.4957
+    }
+  }
+}
