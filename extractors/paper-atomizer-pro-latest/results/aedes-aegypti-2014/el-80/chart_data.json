@@ -1,0 +1,182 @@
+{
+  "chart_title": "Mean number of eggs",
+  "Chart_Type": "Grouped Column Chart",
+  "Orientation": "Landscape",
+  "chart_aspect_ratio": 1.7,
+  "x_axis_label": "Temperatures (\u00b0C)",
+  "x_axis_scale": "linear",
+  "y_axis_label": "",
+  "y_axis_scale": "linear",
+  "x_axis_min": null,
+  "x_axis_max": null,
+  "Left_Y_axis_min": 0,
+  "Left_Y_axis_max": 80,
+  "Right_Y_axis_min": null,
+  "Right_Y_axis_max": null,
+  "right_y_axis_label": "",
+  "right_y_axis_scale": "linear",
+  "top_x_axis_label": "",
+  "top_x_axis_scale": "linear",
+  "top_x_axis_min": null,
+  "top_x_axis_max": null,
+  "y_axis_interval": 20,
+  "x_axis_interval": null,
+  "x_axis_ticks": [
+    "24",
+    "27",
+    "30"
+  ],
+  "y_axis_ticks": [
+    0,
+    20,
+    40,
+    60,
+    80
+  ],
+  "data": [
+    {
+      "series": "Mean number of eggs/female in GC1",
+      "x": "24",
+      "y": 41.5,
+      "color": "#666666",
+      "line_style": "none",
+      "marker_type": "none",
+      "marker_fill": "filled",
+      "marker_size": "none",
+      "error_bars": [
+        {
+          "error_plus": 22.0,
+          "error_minus": 22.0,
+          "error_direction": "vertical",
+          "error_type": "standard_deviation"
+        }
+      ]
+    },
+    {
+      "series": "Mean number of eggs/female in GC2",
+      "x": "24",
+      "y": 44.1,
+      "color": "#b3b3b3",
+      "line_style": "none",
+      "marker_type": "none",
+      "marker_fill": "filled",
+      "marker_size": "none",
+      "error_bars": [
+        {
+          "error_plus": 21.3,
+          "error_minus": 21.3,
+          "error_direction": "vertical",
+          "error_type": "standard_deviation"
+        }
+      ]
+    },
+    {
+      "series": "Mean number of eggs/female in GC1",
+      "x": "27",
+      "y": 42.4,
+      "color": "#666666",
+      "line_style": "none",
+      "marker_type": "none",
+      "marker_fill": "filled",
+      "marker_size": "none",
+      "error_bars": [
+        {
+          "error_plus": 22.1,
+          "error_minus": 21.8,
+          "error_direction": "vertical",
+          "error_type": "standard_deviation"
+        }
+      ]
+    },
+    {
+      "series": "Mean number of eggs/female in GC2",
+      "x": "27",
+      "y": 32.3,
+      "color": "#b3b3b3",
+      "line_style": "none",
+      "marker_type": "none",
+      "marker_fill": "filled",
+      "marker_size": "none",
+      "error_bars": [
+        {
+          "error_plus": 21.5,
+          "error_minus": 21.3,
+          "error_direction": "vertical",
+          "error_type": "standard_deviation"
+        }
+      ]
+    },
+    {
+      "series": "Mean number of eggs/female in GC3",
+      "x": "27",
+      "y": 48.6,
+      "color": "#e6e6e6",
+      "line_style": "none",
+      "marker_type": "none",
+      "marker_fill": "filled",
+      "marker_size": "none",
+      "error_bars": [
+        {
+          "error_plus": 24.9,
+          "error_minus": 0,
+          "error_direction": "vertical",
+          "error_type": "standard_deviation"
+        }
+      ]
+    },
+    {
+      "series": "Mean number of eggs/female in GC1",
+      "x": "30",
+      "y": 39.4,
+      "color": "#666666",
+      "line_style": "none",
+      "marker_type": "none",
+      "marker_fill": "filled",
+      "marker_size": "none",
+      "error_bars": [
+        {
+          "error_plus": 22.1,
+          "error_minus": 22.0,
+          "error_direction": "vertical",
+          "error_type": "standard_deviation"
+        }
+      ]
+    },
+    {
+      "series": "Mean number of eggs/female in GC2",
+      "x": "30",
+      "y": 34.0,
+      "color": "#b3b3b3",
+      "line_style": "none",
+      "marker_type": "none",
+      "marker_fill": "filled",
+      "marker_size": "none",
+      "error_bars": [
+        {
+          "error_plus": 21.5,
+          "error_minus": 21.3,
+          "error_direction": "vertical",
+          "error_type": "standard_deviation"
+        }
+      ]
+    },
+    {
+      "series": "Mean number of eggs/female in GC3",
+      "x": "30",
+      "y": 5.4,
+      "color": "#e6e6e6",
+      "line_style": "none",
+      "marker_type": "none",
+      "marker_fill": "filled",
+      "marker_size": "none",
+      "error_bars": [
+        {
+          "error_plus": 25.1,
+          "error_minus": 5.4,
+          "error_direction": "vertical",
+          "error_type": "standard_deviation"
+        }
+      ]
+    }
+  ]
+}

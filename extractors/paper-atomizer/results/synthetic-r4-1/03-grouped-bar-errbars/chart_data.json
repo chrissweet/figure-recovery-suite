@@ -1,0 +1,251 @@
+{
+  "chart_title": "Synthetic #3 \u2014 grouped bars, asymmetric error bars",
+  "Chart_Type": "Grouped Column Chart",
+  "Orientation": "Landscape",
+  "chart_aspect_ratio": 1.8,
+  "x_axis_label": "Benchmark window",
+  "x_axis_scale": "linear",
+  "y_axis_label": "Throughput (kops/s)",
+  "y_axis_scale": "linear",
+  "x_axis_min": null,
+  "x_axis_max": null,
+  "Left_Y_axis_min": 0,
+  "Left_Y_axis_max": 110,
+  "Right_Y_axis_min": null,
+  "Right_Y_axis_max": null,
+  "right_y_axis_label": "",
+  "right_y_axis_scale": null,
+  "top_x_axis_label": "",
+  "top_x_axis_scale": null,
+  "top_x_axis_min": null,
+  "top_x_axis_max": null,
+  "y_axis_interval": 20,
+  "x_axis_interval": null,
+  "x_axis_ticks": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5"
+  ],
+  "y_axis_ticks": [
+    0,
+    20,
+    40,
+    60,
+    80,
+    100
+  ],
+  "data": [
+    {
+      "series": "Baseline",
+      "x": "Q1",
+      "y": 42,
+      "color": "#1f77b4",
+      "error_bars": [
+        {
+          "error_plus": 3,
+          "error_minus": 3,
+          "error_direction": "vertical",
+          "error_type": "custom"
+        }
+      ]
+    },
+    {
+      "series": "Tuned",
+      "x": "Q1",
+      "y": 58,
+      "color": "#ff7f0e",
+      "error_bars": [
+        {
+          "error_plus": 4,
+          "error_minus": 4,
+          "error_direction": "vertical",
+          "error_type": "custom"
+        }
+      ]
+    },
+    {
+      "series": "Tuned+JIT",
+      "x": "Q1",
+      "y": 71,
+      "color": "#2ca02c",
+      "error_bars": [
+        {
+          "error_plus": 4,
+          "error_minus": 4,
+          "error_direction": "vertical",
+          "error_type": "custom"
+        }
+      ]
+    },
+    {
+      "series": "Baseline",
+      "x": "Q2",
+      "y": 45,
+      "color": "#1f77b4",
+      "error_bars": [
+        {
+          "error_plus": 3,
+          "error_minus": 3,
+          "error_direction": "vertical",
+          "error_type": "custom"
+        }
+      ]
+    },
+    {
+      "series": "Tuned",
+      "x": "Q2",
+      "y": 63,
+      "color": "#ff7f0e",
+      "error_bars": [
+        {
+          "error_plus": 3,
+          "error_minus": 4,
+          "error_direction": "vertical",
+          "error_type": "custom"
+        }
+      ]
+    },
+    {
+      "series": "Tuned+JIT",
+      "x": "Q2",
+      "y": 78,
+      "color": "#2ca02c",
+      "error_bars": [
+        {
+          "error_plus": 5,
+          "error_minus": 5,
+          "error_direction": "vertical",
+          "error_type": "custom"
+        }
+      ]
+    },
+    {
+      "series": "Baseline",
+      "x": "Q3",
+      "y": 49,
+      "color": "#1f77b4",
+      "error_bars": [
+        {
+          "error_plus": 4,
+          "error_minus": 3,
+          "error_direction": "vertical",
+          "error_type": "custom"
+        }
+      ]
+    },
+    {
+      "series": "Tuned",
+      "x": "Q3",
+      "y": 67,
+      "color": "#ff7f0e",
+      "error_bars": [
+        {
+          "error_plus": 5,
+          "error_minus": 5,
+          "error_direction": "vertical",
+          "error_type": "custom"
+        }
+      ]
+    },
+    {
+      "series": "Tuned+JIT",
+      "x": "Q3",
+      "y": 82,
+      "color": "#2ca02c",
+      "error_bars": [
+        {
+          "error_plus": 4,
+          "error_minus": 5,
+          "error_direction": "vertical",
+          "error_type": "custom"
+        }
+      ]
+    },
+    {
+      "series": "Baseline",
+      "x": "Q4",
+      "y": 51,
+      "color": "#1f77b4",
+      "error_bars": [
+        {
+          "error_plus": 3,
+          "error_minus": 3,
+          "error_direction": "vertical",
+          "error_type": "custom"
+        }
+      ]
+    },
+    {
+      "series": "Tuned",
+      "x": "Q4",
+      "y": 70,
+      "color": "#ff7f0e",
+      "error_bars": [
+        {
+          "error_plus": 4,
+          "error_minus": 4,
+          "error_direction": "vertical",
+          "error_type": "custom"
+        }
+      ]
+    },
+    {
+      "series": "Tuned+JIT",
+      "x": "Q4",
+      "y": 85,
+      "color": "#2ca02c",
+      "error_bars": [
+        {
+          "error_plus": 5,
+          "error_minus": 5,
+          "error_direction": "vertical",
+          "error_type": "custom"
+        }
+      ]
+    },
+    {
+      "series": "Baseline",
+      "x": "Q5",
+      "y": 54,
+      "color": "#1f77b4",
+      "error_bars": [
+        {
+          "error_plus": 4,
+          "error_minus": 4,
+          "error_direction": "vertical",
+          "error_type": "custom"
+        }
+      ]
+    },
+    {
+      "series": "Tuned",
+      "x": "Q5",
+      "y": 74,
+      "color": "#ff7f0e",
+      "error_bars": [
+        {
+          "error_plus": 4,
+          "error_minus": 4,
+          "error_direction": "vertical",
+          "error_type": "custom"
+        }
+      ]
+    },
+    {
+      "series": "Tuned+JIT",
+      "x": "Q5",
+      "y": 89,
+      "color": "#2ca02c",
+      "error_bars": [
+        {
+          "error_plus": 5,
+          "error_minus": 5,
+          "error_direction": "vertical",
+          "error_type": "custom"
+        }
+      ]
+    }
+  ]
+}

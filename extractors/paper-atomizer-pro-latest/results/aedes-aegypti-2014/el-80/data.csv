@@ -1,0 +1,9 @@
+layer_idx,layer_type,series,x,y,error_x_plus,error_x_minus,error_y_plus,error_y_minus,y_lo,y_hi
+,Grouped Column Chart,Mean number of eggs/female in GC1,24,41.5,,,22.0,22.0,19.5,63.5
+,Grouped Column Chart,Mean number of eggs/female in GC2,24,44.1,,,21.3,21.3,22.8,65.4
+,Grouped Column Chart,Mean number of eggs/female in GC1,27,42.4,,,22.1,21.8,20.599999999999998,64.5
+,Grouped Column Chart,Mean number of eggs/female in GC2,27,32.3,,,21.5,21.3,10.999999999999996,53.8
+,Grouped Column Chart,Mean number of eggs/female in GC3,27,48.6,,,24.9,0,48.6,73.5
+,Grouped Column Chart,Mean number of eggs/female in GC1,30,39.4,,,22.1,22.0,17.4,61.5
+,Grouped Column Chart,Mean number of eggs/female in GC2,30,34.0,,,21.5,21.3,12.7,55.5
+,Grouped Column Chart,Mean number of eggs/female in GC3,30,5.4,,,25.1,5.4,0.0,30.5

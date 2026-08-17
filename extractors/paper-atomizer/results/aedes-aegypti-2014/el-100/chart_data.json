@@ -1,0 +1,586 @@
+{
+  "chart_title": "Expectation of Iinfective life for 50% of females",
+  "Chart_Type": "Combo",
+  "Orientation": "Landscape",
+  "chart_aspect_ratio": 1.35,
+  "x_axis_label": "Parity rate",
+  "x_axis_scale": "linear",
+  "y_axis_label": "",
+  "y_axis_scale": "linear",
+  "x_axis_min": 0.0,
+  "x_axis_max": 1.0,
+  "Left_Y_axis_min": 0.0,
+  "Left_Y_axis_max": 25.0,
+  "Right_Y_axis_min": null,
+  "Right_Y_axis_max": null,
+  "right_y_axis_label": "",
+  "right_y_axis_scale": null,
+  "top_x_axis_label": "",
+  "top_x_axis_scale": null,
+  "top_x_axis_min": null,
+  "top_x_axis_max": null,
+  "y_axis_interval": 10.0,
+  "x_axis_interval": 0.1,
+  "x_axis_ticks": [
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0
+  ],
+  "y_axis_ticks": [
+    0.0,
+    10.0,
+    20.0
+  ],
+  "layers": [
+    {
+      "Chart_Type": "Scatter Plot",
+      "data": [
+        {
+          "series": "24\u00b0C",
+          "x": 0.0,
+          "y": 7.0,
+          "color": "#0000FF",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "24\u00b0C",
+          "x": 0.2,
+          "y": 8.0,
+          "color": "#0000FF",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "24\u00b0C",
+          "x": 0.3,
+          "y": 9.0,
+          "color": "#0000FF",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "24\u00b0C",
+          "x": 0.32,
+          "y": 9.8,
+          "color": "#0000FF",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "24\u00b0C",
+          "x": 0.33,
+          "y": 10.5,
+          "color": "#0000FF",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "24\u00b0C",
+          "x": 0.34,
+          "y": 11.5,
+          "color": "#0000FF",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "24\u00b0C",
+          "x": 0.34,
+          "y": 12.5,
+          "color": "#0000FF",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "24\u00b0C",
+          "x": 0.34,
+          "y": 13.5,
+          "color": "#0000FF",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "24\u00b0C",
+          "x": 0.34,
+          "y": 14.5,
+          "color": "#0000FF",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "24\u00b0C",
+          "x": 0.35,
+          "y": 15.5,
+          "color": "#0000FF",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "24\u00b0C",
+          "x": 0.35,
+          "y": 16.5,
+          "color": "#0000FF",
+          "line_style": "none",
+          "marker_type": "circle",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27\u00b0C",
+          "x": 0.0,
+          "y": 17.5,
+          "color": "#008000",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27\u00b0C",
+          "x": 0.02,
+          "y": 18.5,
+          "color": "#008000",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27\u00b0C",
+          "x": 0.1,
+          "y": 19.2,
+          "color": "#008000",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27\u00b0C",
+          "x": 0.22,
+          "y": 20.0,
+          "color": "#008000",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27\u00b0C",
+          "x": 0.33,
+          "y": 20.5,
+          "color": "#008000",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27\u00b0C",
+          "x": 0.45,
+          "y": 20.8,
+          "color": "#008000",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27\u00b0C",
+          "x": 0.58,
+          "y": 21.0,
+          "color": "#008000",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27\u00b0C",
+          "x": 0.59,
+          "y": 21.5,
+          "color": "#008000",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27\u00b0C",
+          "x": 0.6,
+          "y": 22.0,
+          "color": "#008000",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27\u00b0C",
+          "x": 0.62,
+          "y": 22.5,
+          "color": "#008000",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27\u00b0C",
+          "x": 0.65,
+          "y": 22.8,
+          "color": "#008000",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27\u00b0C",
+          "x": 0.66,
+          "y": 23.5,
+          "color": "#008000",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "27\u00b0C",
+          "x": 0.67,
+          "y": 24.0,
+          "color": "#008000",
+          "line_style": "none",
+          "marker_type": "square",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "30\u00b0C",
+          "x": 0.0,
+          "y": 8.0,
+          "color": "#FF0000",
+          "line_style": "none",
+          "marker_type": "diamond",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "30\u00b0C",
+          "x": 0.01,
+          "y": 8.5,
+          "color": "#FF0000",
+          "line_style": "none",
+          "marker_type": "diamond",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "30\u00b0C",
+          "x": 0.08,
+          "y": 9.5,
+          "color": "#FF0000",
+          "line_style": "none",
+          "marker_type": "diamond",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "30\u00b0C",
+          "x": 0.23,
+          "y": 10.5,
+          "color": "#FF0000",
+          "line_style": "none",
+          "marker_type": "diamond",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "30\u00b0C",
+          "x": 0.41,
+          "y": 11.5,
+          "color": "#FF0000",
+          "line_style": "none",
+          "marker_type": "diamond",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "30\u00b0C",
+          "x": 0.52,
+          "y": 13.0,
+          "color": "#FF0000",
+          "line_style": "none",
+          "marker_type": "diamond",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "30\u00b0C",
+          "x": 0.54,
+          "y": 14.0,
+          "color": "#FF0000",
+          "line_style": "none",
+          "marker_type": "diamond",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "30\u00b0C",
+          "x": 0.55,
+          "y": 15.0,
+          "color": "#FF0000",
+          "line_style": "none",
+          "marker_type": "diamond",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "30\u00b0C",
+          "x": 0.56,
+          "y": 16.0,
+          "color": "#FF0000",
+          "line_style": "none",
+          "marker_type": "diamond",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "30\u00b0C",
+          "x": 0.58,
+          "y": 17.0,
+          "color": "#FF0000",
+          "line_style": "none",
+          "marker_type": "diamond",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "30\u00b0C",
+          "x": 0.59,
+          "y": 18.0,
+          "color": "#FF0000",
+          "line_style": "none",
+          "marker_type": "diamond",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "30\u00b0C",
+          "x": 0.6,
+          "y": 19.0,
+          "color": "#FF0000",
+          "line_style": "none",
+          "marker_type": "diamond",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "30\u00b0C",
+          "x": 0.61,
+          "y": 20.0,
+          "color": "#FF0000",
+          "line_style": "none",
+          "marker_type": "diamond",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        },
+        {
+          "series": "30\u00b0C",
+          "x": 0.62,
+          "y": 21.0,
+          "color": "#FF0000",
+          "line_style": "none",
+          "marker_type": "diamond",
+          "marker_fill": "filled",
+          "marker_size": "medium"
+        }
+      ]
+    },
+    {
+      "Chart_Type": "Line Graph",
+      "data": [
+        {
+          "series": "IF for 24\u00b0C",
+          "x": 0.0,
+          "y": 7.5,
+          "color": "#0000FF",
+          "line_style": "dashed",
+          "marker_type": "none"
+        },
+        {
+          "series": "IF for 24\u00b0C",
+          "x": 0.1,
+          "y": 8.5,
+          "color": "#0000FF",
+          "line_style": "dashed",
+          "marker_type": "none"
+        },
+        {
+          "series": "IF for 24\u00b0C",
+          "x": 0.2,
+          "y": 10.0,
+          "color": "#0000FF",
+          "line_style": "dashed",
+          "marker_type": "none"
+        },
+        {
+          "series": "IF for 24\u00b0C",
+          "x": 0.3,
+          "y": 11.8,
+          "color": "#0000FF",
+          "line_style": "dashed",
+          "marker_type": "none"
+        },
+        {
+          "series": "IF for 24\u00b0C",
+          "x": 0.4,
+          "y": 13.8,
+          "color": "#0000FF",
+          "line_style": "dashed",
+          "marker_type": "none"
+        },
+        {
+          "series": "IF for 24\u00b0C",
+          "x": 0.5,
+          "y": 16.0,
+          "color": "#0000FF",
+          "line_style": "dashed",
+          "marker_type": "none"
+        },
+        {
+          "series": "IF for 24\u00b0C",
+          "x": 0.6,
+          "y": 18.5,
+          "color": "#0000FF",
+          "line_style": "dashed",
+          "marker_type": "none"
+        },
+        {
+          "series": "IF for 24\u00b0C",
+          "x": 0.65,
+          "y": 20.0,
+          "color": "#0000FF",
+          "line_style": "dashed",
+          "marker_type": "none"
+        },
+        {
+          "series": "IF for 27\u00b0C",
+          "x": 0.0,
+          "y": 17.8,
+          "color": "#008000",
+          "line_style": "solid",
+          "marker_type": "none"
+        },
+        {
+          "series": "IF for 27\u00b0C",
+          "x": 0.75,
+          "y": 24.5,
+          "color": "#008000",
+          "line_style": "solid",
+          "marker_type": "none"
+        },
+        {
+          "series": "IF for 30\u00b0C",
+          "x": 0.0,
+          "y": 8.2,
+          "color": "#FF0000",
+          "line_style": "dotted",
+          "marker_type": "none"
+        },
+        {
+          "series": "IF for 30\u00b0C",
+          "x": 0.1,
+          "y": 9.2,
+          "color": "#FF0000",
+          "line_style": "dotted",
+          "marker_type": "none"
+        },
+        {
+          "series": "IF for 30\u00b0C",
+          "x": 0.2,
+          "y": 10.5,
+          "color": "#FF0000",
+          "line_style": "dotted",
+          "marker_type": "none"
+        },
+        {
+          "series": "IF for 30\u00b0C",
+          "x": 0.3,
+          "y": 12.0,
+          "color": "#FF0000",
+          "line_style": "dotted",
+          "marker_type": "none"
+        },
+        {
+          "series": "IF for 30\u00b0C",
+          "x": 0.4,
+          "y": 13.8,
+          "color": "#FF0000",
+          "line_style": "dotted",
+          "marker_type": "none"
+        },
+        {
+          "series": "IF for 30\u00b0C",
+          "x": 0.5,
+          "y": 15.8,
+          "color": "#FF0000",
+          "line_style": "dotted",
+          "marker_type": "none"
+        },
+        {
+          "series": "IF for 30\u00b0C",
+          "x": 0.6,
+          "y": 18.5,
+          "color": "#FF0000",
+          "line_style": "dotted",
+          "marker_type": "none"
+        },
+        {
+          "series": "IF for 30\u00b0C",
+          "x": 0.7,
+          "y": 21.8,
+          "color": "#FF0000",
+          "line_style": "dotted",
+          "marker_type": "none"
+        },
+        {
+          "series": "IF for 30\u00b0C",
+          "x": 0.78,
+          "y": 24.0,
+          "color": "#FF0000",
+          "line_style": "dotted",
+          "marker_type": "none"
+        }
+      ]
+    }
+  ]
+}

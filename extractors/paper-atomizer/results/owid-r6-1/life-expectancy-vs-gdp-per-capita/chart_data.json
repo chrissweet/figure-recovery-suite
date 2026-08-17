@@ -1,0 +1,304 @@
+{
+  "chart_title": "Life expectancy vs. GDP per capita, 2022",
+  "Chart_Type": "Bubble Chart",
+  "Orientation": "Landscape",
+  "chart_aspect_ratio": 2.1,
+  "x_axis_label": "GDP per capita (international-$ in 2011 prices; plotted on a logarithmic axis)",
+  "x_axis_scale": "log",
+  "y_axis_label": "Life expectancy at birth",
+  "y_axis_scale": "linear",
+  "x_axis_min": 800,
+  "x_axis_max": 120000,
+  "Left_Y_axis_min": 20,
+  "Left_Y_axis_max": 85,
+  "Right_Y_axis_min": null,
+  "Right_Y_axis_max": null,
+  "right_y_axis_label": "",
+  "right_y_axis_scale": null,
+  "top_x_axis_label": "",
+  "top_x_axis_scale": null,
+  "top_x_axis_min": null,
+  "top_x_axis_max": null,
+  "y_axis_interval": 10,
+  "x_axis_interval": null,
+  "x_axis_ticks": [
+    1000,
+    2000,
+    5000,
+    10000,
+    20000,
+    50000,
+    100000
+  ],
+  "y_axis_ticks": [
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80
+  ],
+  "data": [
+    {
+      "series": "Africa",
+      "x": 900,
+      "y": 22,
+      "z": 5000000,
+      "color": "#9467bd",
+      "line_style": "none",
+      "marker_type": "circle",
+      "marker_fill": "filled"
+    },
+    {
+      "series": "Africa",
+      "x": 1500,
+      "y": 56,
+      "z": 17000000,
+      "color": "#9467bd",
+      "line_style": "none",
+      "marker_type": "circle",
+      "marker_fill": "filled"
+    },
+    {
+      "series": "Africa",
+      "x": 1100,
+      "y": 61,
+      "z": 95000000,
+      "color": "#9467bd",
+      "line_style": "none",
+      "marker_type": "circle",
+      "marker_fill": "filled"
+    },
+    {
+      "series": "Africa",
+      "x": 2200,
+      "y": 61,
+      "z": 21000000,
+      "color": "#9467bd",
+      "line_style": "none",
+      "marker_type": "circle",
+      "marker_fill": "filled"
+    },
+    {
+      "series": "Africa",
+      "x": 1600,
+      "y": 68,
+      "z": 20000000,
+      "color": "#9467bd",
+      "line_style": "none",
+      "marker_type": "circle",
+      "marker_fill": "filled"
+    },
+    {
+      "series": "Africa",
+      "x": 2800,
+      "y": 58,
+      "z": 2000000,
+      "color": "#9467bd",
+      "line_style": "none",
+      "marker_type": "circle",
+      "marker_fill": "filled"
+    },
+    {
+      "series": "Africa",
+      "x": 5000,
+      "y": 53,
+      "z": 218000000,
+      "color": "#9467bd",
+      "line_style": "none",
+      "marker_type": "circle",
+      "marker_fill": "filled"
+    },
+    {
+      "series": "Africa",
+      "x": 2500,
+      "y": 69,
+      "z": 123000000,
+      "color": "#9467bd",
+      "line_style": "none",
+      "marker_type": "circle",
+      "marker_fill": "filled"
+    },
+    {
+      "series": "Africa",
+      "x": 5500,
+      "y": 65,
+      "z": 54000000,
+      "color": "#9467bd",
+      "line_style": "none",
+      "marker_type": "circle",
+      "marker_fill": "filled"
+    },
+    {
+      "series": "Africa",
+      "x": 6500,
+      "y": 66,
+      "z": 35000000,
+      "color": "#9467bd",
+      "line_style": "none",
+      "marker_type": "circle",
+      "marker_fill": "filled"
+    },
+    {
+      "series": "Africa",
+      "x": 13000,
+      "y": 65,
+      "z": 59000000,
+      "color": "#9467bd",
+      "line_style": "none",
+      "marker_type": "circle",
+      "marker_fill": "filled"
+    },
+    {
+      "series": "Africa",
+      "x": 16000,
+      "y": 60,
+      "z": 1600000,
+      "color": "#9467bd",
+      "line_style": "none",
+      "marker_type": "circle",
+      "marker_fill": "filled"
+    },
+    {
+      "series": "Asia",
+      "x": 2500,
+      "y": 74,
+      "z": 26000000,
+      "color": "#17becf",
+      "line_style": "none",
+      "marker_type": "circle",
+      "marker_fill": "filled"
+    },
+    {
+      "series": "Asia",
+      "x": 6000,
+      "y": 75,
+      "z": 5000000,
+      "color": "#17becf",
+      "line_style": "none",
+      "marker_type": "circle",
+      "marker_fill": "filled"
+    },
+    {
+      "series": "Asia",
+      "x": 6000,
+      "y": 69,
+      "z": 235000000,
+      "color": "#17becf",
+      "line_style": "none",
+      "marker_type": "circle",
+      "marker_fill": "filled"
+    },
+    {
+      "series": "Asia",
+      "x": 8000,
+      "y": 72,
+      "z": 1400000000,
+      "color": "#17becf",
+      "line_style": "none",
+      "marker_type": "circle",
+      "marker_fill": "filled"
+    },
+    {
+      "series": "Asia",
+      "x": 13000,
+      "y": 72,
+      "z": 275000000,
+      "color": "#17becf",
+      "line_style": "none",
+      "marker_type": "circle",
+      "marker_fill": "filled"
+    },
+    {
+      "series": "Asia",
+      "x": 12000,
+      "y": 77,
+      "z": 45000000,
+      "color": "#17becf",
+      "line_style": "none",
+      "marker_type": "circle",
+      "marker_fill": "filled"
+    },
+    {
+      "series": "Asia",
+      "x": 21000,
+      "y": 79,
+      "z": 1410000000,
+      "color": "#17becf",
+      "line_style": "none",
+      "marker_type": "circle",
+      "marker_fill": "filled"
+    },
+    {
+      "series": "Asia",
+      "x": 42000,
+      "y": 84,
+      "z": 123000000,
+      "color": "#17becf",
+      "line_style": "none",
+      "marker_type": "circle",
+      "marker_fill": "filled"
+    },
+    {
+      "series": "Europe",
+      "x": 28000,
+      "y": 71,
+      "z": 143000000,
+      "color": "#5d8acb",
+      "line_style": "none",
+      "marker_type": "circle",
+      "marker_fill": "filled"
+    },
+    {
+      "series": "North America",
+      "x": 65000,
+      "y": 79,
+      "z": 333000000,
+      "color": "#e6918a",
+      "line_style": "none",
+      "marker_type": "circle",
+      "marker_fill": "filled"
+    },
+    {
+      "series": "South America",
+      "x": 10000,
+      "y": 74,
+      "z": 50000000,
+      "color": "#8c564b",
+      "line_style": "none",
+      "marker_type": "circle",
+      "marker_fill": "filled"
+    },
+    {
+      "series": "South America",
+      "x": 15000,
+      "y": 76,
+      "z": 40000000,
+      "color": "#8c564b",
+      "line_style": "none",
+      "marker_type": "circle",
+      "marker_fill": "filled"
+    },
+    {
+      "series": "South America",
+      "x": 22000,
+      "y": 78,
+      "z": 30000000,
+      "color": "#8c564b",
+      "line_style": "none",
+      "marker_type": "circle",
+      "marker_fill": "filled"
+    },
+    {
+      "series": "Oceania",
+      "x": 45000,
+      "y": 82,
+      "z": 25000000,
+      "color": "#8cd1e6",
+      "line_style": "none",
+      "marker_type": "circle",
+      "marker_fill": "filled"
+    }
+  ]
+}

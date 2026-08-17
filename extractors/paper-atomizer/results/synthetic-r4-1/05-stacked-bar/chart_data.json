@@ -1,0 +1,131 @@
+{
+  "chart_title": "Synthetic #5 \u2014 stacked bars",
+  "Chart_Type": "Stacked Column Chart",
+  "Orientation": "Landscape",
+  "chart_aspect_ratio": 1.5,
+  "x_axis_label": "Service",
+  "x_axis_scale": "linear",
+  "y_axis_label": "Utilisation (% of node)",
+  "y_axis_scale": "linear",
+  "x_axis_min": null,
+  "x_axis_max": null,
+  "Left_Y_axis_min": 0,
+  "Left_Y_axis_max": 100,
+  "Right_Y_axis_min": null,
+  "Right_Y_axis_max": null,
+  "right_y_axis_label": "",
+  "right_y_axis_scale": null,
+  "top_x_axis_label": "",
+  "top_x_axis_scale": null,
+  "top_x_axis_min": null,
+  "top_x_axis_max": null,
+  "y_axis_interval": 20,
+  "x_axis_interval": null,
+  "x_axis_ticks": [
+    "Web",
+    "API",
+    "Worker",
+    "Cron",
+    "DB"
+  ],
+  "y_axis_ticks": [
+    0,
+    20,
+    40,
+    60,
+    80,
+    100
+  ],
+  "data": [
+    {
+      "series": "CPU",
+      "x": "Web",
+      "y": 22,
+      "color": "#1f77b4"
+    },
+    {
+      "series": "CPU",
+      "x": "API",
+      "y": 31,
+      "color": "#1f77b4"
+    },
+    {
+      "series": "CPU",
+      "x": "Worker",
+      "y": 45,
+      "color": "#1f77b4"
+    },
+    {
+      "series": "CPU",
+      "x": "Cron",
+      "y": 18,
+      "color": "#1f77b4"
+    },
+    {
+      "series": "CPU",
+      "x": "DB",
+      "y": 28,
+      "color": "#1f77b4"
+    },
+    {
+      "series": "Memory",
+      "x": "Web",
+      "y": 15,
+      "color": "#ff7f0e"
+    },
+    {
+      "series": "Memory",
+      "x": "API",
+      "y": 22,
+      "color": "#ff7f0e"
+    },
+    {
+      "series": "Memory",
+      "x": "Worker",
+      "y": 29,
+      "color": "#ff7f0e"
+    },
+    {
+      "series": "Memory",
+      "x": "Cron",
+      "y": 12,
+      "color": "#ff7f0e"
+    },
+    {
+      "series": "Memory",
+      "x": "DB",
+      "y": 35,
+      "color": "#ff7f0e"
+    },
+    {
+      "series": "IO Wait",
+      "x": "Web",
+      "y": 8,
+      "color": "#2ca02c"
+    },
+    {
+      "series": "IO Wait",
+      "x": "API",
+      "y": 12,
+      "color": "#2ca02c"
+    },
+    {
+      "series": "IO Wait",
+      "x": "Worker",
+      "y": 18,
+      "color": "#2ca02c"
+    },
+    {
+      "series": "IO Wait",
+      "x": "Cron",
+      "y": 5,
+      "color": "#2ca02c"
+    },
+    {
+      "series": "IO Wait",
+      "x": "DB",
+      "y": 22,
+      "color": "#2ca02c"
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "chart_title": "Synthetic #04 \u2014 log-y line plot",
+  "Chart_Type": "Line Graph",
+  "Orientation": "Landscape",
+  "chart_aspect_ratio": 1.6,
+  "x_axis_label": "Time t (s)",
+  "x_axis_scale": "linear",
+  "y_axis_label": "Signal magnitude (log scale)",
+  "y_axis_scale": "log",
+  "x_axis_min": 0,
+  "x_axis_max": 10,
+  "Left_Y_axis_min": 0.1,
+  "Left_Y_axis_max": 1000,
+  "Right_Y_axis_min": null,
+  "Right_Y_axis_max": null,
+  "right_y_axis_label": "",
+  "right_y_axis_scale": null,
+  "top_x_axis_label": "",
+  "top_x_axis_scale": null,
+  "top_x_axis_min": null,
+  "top_x_axis_max": null,
+  "y_axis_interval": null,
+  "x_axis_interval": 2,
+  "x_axis_ticks": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "y_axis_ticks": [
+    0.1,
+    1,
+    10,
+    100,
+    1000
+  ],
+  "data": [
+    {
+      "series": "Exponential: 100 e^(-0.5 t)",
+      "x": 1,
+      "y": 60.7,
+      "color": "#d62728",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Exponential: 100 e^(-0.5 t)",
+      "x": 2,
+      "y": 36.8,
+      "color": "#d62728",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Exponential: 100 e^(-0.5 t)",
+      "x": 3,
+      "y": 22.3,
+      "color": "#d62728",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Exponential: 100 e^(-0.5 t)",
+      "x": 4,
+      "y": 13.5,
+      "color": "#d62728",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Exponential: 100 e^(-0.5 t)",
+      "x": 5,
+      "y": 8.2,
+      "color": "#d62728",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Exponential: 100 e^(-0.5 t)",
+      "x": 6,
+      "y": 5.0,
+      "color": "#d62728",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Exponential: 100 e^(-0.5 t)",
+      "x": 7,
+      "y": 3.0,
+      "color": "#d62728",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Exponential: 100 e^(-0.5 t)",
+      "x": 8,
+      "y": 1.8,
+      "color": "#d62728",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Exponential: 100 e^(-0.5 t)",
+      "x": 9,
+      "y": 1.1,
+      "color": "#d62728",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Exponential: 100 e^(-0.5 t)",
+      "x": 10,
+      "y": 0.7,
+      "color": "#d62728",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Power law: 500 / t^1.6",
+      "x": 0.65,
+      "y": 1000,
+      "color": "#9467bd",
+      "line_style": "dashed",
+      "marker_type": "none"
+    },
+    {
+      "series": "Power law: 500 / t^1.6",
+      "x": 1,
+      "y": 500,
+      "color": "#9467bd",
+      "line_style": "dashed",
+      "marker_type": "none"
+    },
+    {
+      "series": "Power law: 500 / t^1.6",
+      "x": 2,
+      "y": 164.9,
+      "color": "#9467bd",
+      "line_style": "dashed",
+      "marker_type": "none"
+    },
+    {
+      "series": "Power law: 500 / t^1.6",
+      "x": 3,
+      "y": 96.5,
+      "color": "#9467bd",
+      "line_style": "dashed",
+      "marker_type": "none"
+    },
+    {
+      "series": "Power law: 500 / t^1.6",
+      "x": 4,
+      "y": 65.7,
+      "color": "#9467bd",
+      "line_style": "dashed",
+      "marker_type": "none"
+    },
+    {
+      "series": "Power law: 500 / t^1.6",
+      "x": 5,
+      "y": 48.8,
+      "color": "#9467bd",
+      "line_style": "dashed",
+      "marker_type": "none"
+    },
+    {
+      "series": "Power law: 500 / t^1.6",
+      "x": 6,
+      "y": 38.3,
+      "color": "#9467bd",
+      "line_style": "dashed",
+      "marker_type": "none"
+    },
+    {
+      "series": "Power law: 500 / t^1.6",
+      "x": 7,
+      "y": 31.2,
+      "color": "#9467bd",
+      "line_style": "dashed",
+      "marker_type": "none"
+    },
+    {
+      "series": "Power law: 500 / t^1.6",
+      "x": 8,
+      "y": 26.2,
+      "color": "#9467bd",
+      "line_style": "dashed",
+      "marker_type": "none"
+    },
+    {
+      "series": "Power law: 500 / t^1.6",
+      "x": 9,
+      "y": 22.4,
+      "color": "#9467bd",
+      "line_style": "dashed",
+      "marker_type": "none"
+    },
+    {
+      "series": "Power law: 500 / t^1.6",
+      "x": 10,
+      "y": 19.9,
+      "color": "#9467bd",
+      "line_style": "dashed",
+      "marker_type": "none"
+    }
+  ]
+}

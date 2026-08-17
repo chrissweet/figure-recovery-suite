@@ -1,0 +1,802 @@
+{
+  "corpus": "aedes-aegypti-2014",
+  "extractor": "paper-atomizer",
+  "results_dir": "results",
+  "n_charts": 8,
+  "charts": {
+    "el-100": {
+      "x_tol": 0.016012,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 0.48514 (2.0% of y_range 24.257)",
+      "x_range": 0.8006,
+      "y_range": 24.256999999999998,
+      "scatter": {
+        "summary": {
+          "tp": 31,
+          "fn": 22,
+          "fp": 7,
+          "precision": 0.8158,
+          "recall": 0.5849,
+          "f1": 0.6813,
+          "jaccard": 0.5167
+        },
+        "gt_n": 53,
+        "mine_n": 38,
+        "by_series": {
+          "24c": {
+            "gt_label": "24c",
+            "tp": 9,
+            "fn": 7,
+            "fp": 2,
+            "gt_n": 16,
+            "mine_n": 11
+          },
+          "27c": {
+            "gt_label": "27c",
+            "tp": 9,
+            "fn": 9,
+            "fp": 4,
+            "gt_n": 18,
+            "mine_n": 13
+          },
+          "30c": {
+            "gt_label": "30c",
+            "tp": 13,
+            "fn": 6,
+            "fp": 1,
+            "gt_n": 19,
+            "mine_n": 14
+          }
+        }
+      },
+      "curves": {
+        "summary": {
+          "tp": 5,
+          "fn": 43,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.1042,
+          "f1": 0.1887,
+          "jaccard": 0.1042
+        },
+        "gt_n": 48,
+        "mine_n": 19,
+        "by_series": {
+          "iffor24c": {
+            "gt_label": "iffor24c",
+            "tp": 4,
+            "fn": 17,
+            "fp": 0,
+            "gt_n": 21,
+            "mine_n": 8
+          },
+          "iffor27c": {
+            "gt_label": "iffor27c",
+            "tp": 1,
+            "fn": 1,
+            "fp": 0,
+            "gt_n": 2,
+            "mine_n": 2
+          },
+          "iffor30c": {
+            "gt_label": "iffor30c",
+            "tp": 0,
+            "fn": 25,
+            "fp": 0,
+            "gt_n": 25,
+            "mine_n": 9
+          }
+        }
+      },
+      "errbars": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "combined": {
+        "tp": 36,
+        "fn": 65,
+        "fp": 7,
+        "precision": 0.8372,
+        "recall": 0.3564,
+        "f1": 0.5,
+        "jaccard": 0.3333
+      }
+    },
+    "el-60-a": {
+      "x_tol": 0.36312,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 0.01394 (2.0% of y_range 0.697)",
+      "x_range": 18.156,
+      "y_range": 0.697,
+      "scatter": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "curves": {
+        "summary": {
+          "tp": 13,
+          "fn": 13,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6667,
+          "jaccard": 0.5
+        },
+        "gt_n": 26,
+        "mine_n": 25,
+        "by_series": {
+          "24c": {
+            "gt_label": "24c",
+            "tp": 4,
+            "fn": 2,
+            "fp": 0,
+            "gt_n": 6,
+            "mine_n": 6
+          },
+          "27c": {
+            "gt_label": "27c",
+            "tp": 9,
+            "fn": 5,
+            "fp": 0,
+            "gt_n": 14,
+            "mine_n": 13
+          },
+          "30c": {
+            "gt_label": "30c",
+            "tp": 0,
+            "fn": 6,
+            "fp": 0,
+            "gt_n": 6,
+            "mine_n": 6
+          }
+        }
+      },
+      "errbars": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "combined": {
+        "tp": 13,
+        "fn": 13,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6667,
+        "jaccard": 0.5
+      }
+    },
+    "el-60-b": {
+      "x_tol": 0.34354,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 0.014218 (2.0% of y_range 0.7109)",
+      "x_range": 17.177,
+      "y_range": 0.7109000000000001,
+      "scatter": {
+        "summary": {
+          "tp": 0,
+          "fn": 3,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 3,
+        "mine_n": 3,
+        "by_series": {
+          "datapoints": {
+            "error": "no GT match",
+            "mine_n": 3
+          },
+          "unmapped:series1": {
+            "gt_label": "series1",
+            "tp": 0,
+            "fn": 1,
+            "fp": 0,
+            "gt_n": 1,
+            "mine_n": 0
+          },
+          "unmapped:series2": {
+            "gt_label": "series2",
+            "tp": 0,
+            "fn": 1,
+            "fp": 0,
+            "gt_n": 1,
+            "mine_n": 0
+          },
+          "unmapped:series3": {
+            "gt_label": "series3",
+            "tp": 0,
+            "fn": 1,
+            "fp": 0,
+            "gt_n": 1,
+            "mine_n": 0
+          }
+        }
+      },
+      "curves": {
+        "summary": {
+          "tp": 0,
+          "fn": 2,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 2,
+        "mine_n": 2,
+        "by_series": {
+          "trendline": {
+            "gt_label": "trendline",
+            "tp": 0,
+            "fn": 2,
+            "fp": 0,
+            "gt_n": 2,
+            "mine_n": 2
+          }
+        }
+      },
+      "errbars": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "combined": {
+        "tp": 0,
+        "fn": 5,
+        "fp": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "jaccard": 0.0
+      }
+    },
+    "el-62": {
+      "x_tol": 1.5,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 0.11856 (2.0% of y_range 5.928)",
+      "x_range": 6.0,
+      "y_range": 5.928000000000001,
+      "scatter": {
+        "summary": {
+          "tp": 7,
+          "fn": 1,
+          "fp": 1,
+          "precision": 0.875,
+          "recall": 0.875,
+          "f1": 0.875,
+          "jaccard": 0.7778
+        },
+        "gt_n": 8,
+        "mine_n": 8,
+        "by_series": {
+          "meandurationofgc1": {
+            "gt_label": "meandurationofgc1",
+            "tp": 3,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 3,
+            "mine_n": 3
+          },
+          "meandurationofgc2": {
+            "gt_label": "meandurationofgc2",
+            "tp": 3,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 3,
+            "mine_n": 3
+          },
+          "meandurationofgc3": {
+            "gt_label": "meandurationofgc3",
+            "tp": 1,
+            "fn": 1,
+            "fp": 1,
+            "gt_n": 2,
+            "mine_n": 2
+          }
+        }
+      },
+      "curves": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "errbars": {
+        "summary": {
+          "tp": 3,
+          "fn": 5,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.375,
+          "f1": 0.5455,
+          "jaccard": 0.375
+        },
+        "gt_n": 8,
+        "mine_n": 7,
+        "by_series": {
+          "meandurationofgc1": {
+            "schema": "y_lo/y_hi",
+            "tp": 1,
+            "fn": 2,
+            "fp": 0
+          },
+          "meandurationofgc2": {
+            "schema": "y_lo/y_hi",
+            "tp": 1,
+            "fn": 2,
+            "fp": 0
+          },
+          "meandurationofgc3": {
+            "schema": "y_lo/y_hi",
+            "tp": 1,
+            "fn": 1,
+            "fp": 0
+          }
+        }
+      },
+      "combined": {
+        "tp": 10,
+        "fn": 6,
+        "fp": 1,
+        "precision": 0.9091,
+        "recall": 0.625,
+        "f1": 0.7407,
+        "jaccard": 0.5882
+      }
+    },
+    "el-75": {
+      "x_tol": 0.703,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 0.35272 (2.0% of y_range 17.636)",
+      "x_range": 35.15,
+      "y_range": 17.636,
+      "scatter": {
+        "summary": {
+          "tp": 3,
+          "fn": 0,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "jaccard": 1.0
+        },
+        "gt_n": 3,
+        "mine_n": 3,
+        "by_series": {}
+      },
+      "curves": {
+        "summary": {
+          "tp": 1,
+          "fn": 1,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6667,
+          "jaccard": 0.5
+        },
+        "gt_n": 2,
+        "mine_n": 2,
+        "by_series": {
+          "trendline": {
+            "gt_label": "trendline",
+            "tp": 1,
+            "fn": 1,
+            "fp": 0,
+            "gt_n": 2,
+            "mine_n": 2
+          }
+        }
+      },
+      "errbars": {
+        "summary": {
+          "tp": 0,
+          "fn": 3,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 3,
+        "mine_n": 0,
+        "by_series": {
+          "datapoints": {
+            "schema": "y_lo/y_hi",
+            "tp": 0,
+            "fn": 3,
+            "fp": 0
+          }
+        }
+      },
+      "combined": {
+        "tp": 4,
+        "fn": 4,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6667,
+        "jaccard": 0.5
+      }
+    },
+    "el-80": {
+      "x_tol": 1.5,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 0.8626 (2.0% of y_range 43.13)",
+      "x_range": 6.0,
+      "y_range": 43.129999999999995,
+      "scatter": {
+        "summary": {
+          "tp": 8,
+          "fn": 0,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "jaccard": 1.0
+        },
+        "gt_n": 8,
+        "mine_n": 8,
+        "by_series": {
+          "meannumberofeggsfemaleingc1": {
+            "gt_label": "meannumberofeggsfemaleingc1",
+            "tp": 3,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 3,
+            "mine_n": 3
+          },
+          "meannumberofeggsfemaleingc2": {
+            "gt_label": "meannumberofeggsfemaleingc2",
+            "tp": 3,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 3,
+            "mine_n": 3
+          },
+          "meannumberofeggsfemaleingc3": {
+            "gt_label": "meannumberofeggsfemaleingc3",
+            "tp": 2,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 2,
+            "mine_n": 2
+          }
+        }
+      },
+      "curves": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "errbars": {
+        "summary": {
+          "tp": 4,
+          "fn": 4,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6667,
+          "jaccard": 0.5
+        },
+        "gt_n": 8,
+        "mine_n": 8,
+        "by_series": {
+          "meannumberofeggsfemaleingc1": {
+            "schema": "y_lo/y_hi",
+            "tp": 1,
+            "fn": 2,
+            "fp": 0
+          },
+          "meannumberofeggsfemaleingc2": {
+            "schema": "y_lo/y_hi",
+            "tp": 2,
+            "fn": 1,
+            "fp": 0
+          },
+          "meannumberofeggsfemaleingc3": {
+            "schema": "y_lo/y_hi",
+            "tp": 1,
+            "fn": 1,
+            "fp": 0
+          }
+        }
+      },
+      "combined": {
+        "tp": 12,
+        "fn": 4,
+        "fp": 0,
+        "precision": 1.0,
+        "recall": 0.75,
+        "f1": 0.8571,
+        "jaccard": 0.75
+      }
+    },
+    "el-88": {
+      "x_tol": 0.6213199999999999,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 0.019666 (2.0% of y_range 0.9833)",
+      "x_range": 31.065999999999995,
+      "y_range": 0.9833,
+      "scatter": {
+        "summary": {
+          "tp": 33,
+          "fn": 42,
+          "fp": 43,
+          "precision": 0.4342,
+          "recall": 0.44,
+          "f1": 0.4371,
+          "jaccard": 0.2797
+        },
+        "gt_n": 75,
+        "mine_n": 76,
+        "by_series": {
+          "24c": {
+            "gt_label": "24c",
+            "tp": 20,
+            "fn": 8,
+            "fp": 9,
+            "gt_n": 28,
+            "mine_n": 29
+          },
+          "27c": {
+            "gt_label": "27c",
+            "tp": 6,
+            "fn": 19,
+            "fp": 17,
+            "gt_n": 25,
+            "mine_n": 23
+          },
+          "30c": {
+            "gt_label": "30c",
+            "tp": 7,
+            "fn": 15,
+            "fp": 17,
+            "gt_n": 22,
+            "mine_n": 24
+          }
+        }
+      },
+      "curves": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "errbars": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "combined": {
+        "tp": 33,
+        "fn": 42,
+        "fp": 43,
+        "precision": 0.4342,
+        "recall": 0.44,
+        "f1": 0.4371,
+        "jaccard": 0.2797
+      }
+    },
+    "el-94": {
+      "x_tol": 0.9794400000000001,
+      "y_tol_kind": "absolute",
+      "y_tol_desc": "abs 0.00099734 (2.0% of y_range 0.049867)",
+      "x_range": 48.972,
+      "y_range": 0.049866999999999995,
+      "scatter": {
+        "summary": {
+          "tp": 57,
+          "fn": 18,
+          "fp": 7,
+          "precision": 0.8906,
+          "recall": 0.76,
+          "f1": 0.8201,
+          "jaccard": 0.6951
+        },
+        "gt_n": 75,
+        "mine_n": 64,
+        "by_series": {
+          "24c": {
+            "gt_label": "24c",
+            "tp": 16,
+            "fn": 13,
+            "fp": 4,
+            "gt_n": 29,
+            "mine_n": 20
+          },
+          "27c": {
+            "gt_label": "27c",
+            "tp": 24,
+            "fn": 1,
+            "fp": 1,
+            "gt_n": 25,
+            "mine_n": 25
+          },
+          "30c": {
+            "gt_label": "30c",
+            "tp": 17,
+            "fn": 4,
+            "fp": 2,
+            "gt_n": 21,
+            "mine_n": 19
+          }
+        }
+      },
+      "curves": {
+        "summary": {
+          "tp": 60,
+          "fn": 24,
+          "fp": 0,
+          "precision": 1.0,
+          "recall": 0.7143,
+          "f1": 0.8333,
+          "jaccard": 0.7143
+        },
+        "gt_n": 84,
+        "mine_n": 32,
+        "by_series": {
+          "pcurvefor24c": {
+            "gt_label": "pcurvefor24c",
+            "tp": 7,
+            "fn": 14,
+            "fp": 0,
+            "gt_n": 21,
+            "mine_n": 11
+          },
+          "pcurvefor27c": {
+            "gt_label": "pcurvefor27c",
+            "tp": 30,
+            "fn": 0,
+            "fp": 0,
+            "gt_n": 30,
+            "mine_n": 11
+          },
+          "pcurvefor30c": {
+            "gt_label": "pcurvefor30c",
+            "tp": 23,
+            "fn": 10,
+            "fp": 0,
+            "gt_n": 33,
+            "mine_n": 10
+          }
+        }
+      },
+      "errbars": {
+        "summary": {
+          "tp": 0,
+          "fn": 0,
+          "fp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "jaccard": 0.0
+        },
+        "gt_n": 0,
+        "mine_n": 0,
+        "by_series": {}
+      },
+      "combined": {
+        "tp": 117,
+        "fn": 42,
+        "fp": 7,
+        "precision": 0.9435,
+        "recall": 0.7358,
+        "f1": 0.8269,
+        "jaccard": 0.7048
+      }
+    }
+  },
+  "totals": {
+    "scatter": {
+      "tp": 139,
+      "fn": 86,
+      "fp": 58,
+      "precision": 0.7056,
+      "recall": 0.6178,
+      "f1": 0.6588,
+      "jaccard": 0.4912
+    },
+    "curves": {
+      "tp": 79,
+      "fn": 83,
+      "fp": 0,
+      "precision": 1.0,
+      "recall": 0.4877,
+      "f1": 0.6556,
+      "jaccard": 0.4877
+    },
+    "errbars": {
+      "tp": 7,
+      "fn": 12,
+      "fp": 0,
+      "precision": 1.0,
+      "recall": 0.3684,
+      "f1": 0.5385,
+      "jaccard": 0.3684
+    },
+    "combined": {
+      "tp": 225,
+      "fn": 181,
+      "fp": 58,
+      "precision": 0.7951,
+      "recall": 0.5542,
+      "f1": 0.6531,
+      "jaccard": 0.4849
+    }
+  }
+}

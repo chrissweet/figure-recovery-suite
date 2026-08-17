@@ -1,0 +1,390 @@
+{
+  "chart_title": "Population, 10,000 BCE to 2023",
+  "Chart_Type": "Line Graph",
+  "Orientation": "Landscape",
+  "chart_aspect_ratio": 1.6,
+  "x_axis_label": "",
+  "x_axis_scale": "linear",
+  "y_axis_label": "",
+  "y_axis_scale": "linear",
+  "x_axis_min": -10000,
+  "x_axis_max": 2023,
+  "Left_Y_axis_min": 0,
+  "Left_Y_axis_max": 8,
+  "Right_Y_axis_min": null,
+  "Right_Y_axis_max": null,
+  "right_y_axis_label": "",
+  "right_y_axis_scale": null,
+  "top_x_axis_label": "",
+  "top_x_axis_scale": null,
+  "top_x_axis_min": null,
+  "top_x_axis_max": null,
+  "y_axis_interval": 1,
+  "x_axis_interval": 2000,
+  "x_axis_ticks": [
+    -10000,
+    -8000,
+    -6000,
+    -4000,
+    -2000,
+    0,
+    2023
+  ],
+  "y_axis_ticks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "data": [
+    {
+      "series": "World",
+      "x": -10000,
+      "y": 0.004,
+      "color": "#006400",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "World",
+      "x": 0,
+      "y": 0.19,
+      "color": "#006400",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "World",
+      "x": 1000,
+      "y": 0.27,
+      "color": "#006400",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "World",
+      "x": 1800,
+      "y": 0.9,
+      "color": "#006400",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "World",
+      "x": 1950,
+      "y": 2.5,
+      "color": "#006400",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "World",
+      "x": 2000,
+      "y": 6.1,
+      "color": "#006400",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "World",
+      "x": 2023,
+      "y": 8.0,
+      "color": "#006400",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Asia",
+      "x": -10000,
+      "y": 0.002,
+      "color": "#2E8B57",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Asia",
+      "x": 0,
+      "y": 0.12,
+      "color": "#2E8B57",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Asia",
+      "x": 1800,
+      "y": 0.6,
+      "color": "#2E8B57",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Asia",
+      "x": 1950,
+      "y": 1.4,
+      "color": "#2E8B57",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Asia",
+      "x": 2000,
+      "y": 3.7,
+      "color": "#2E8B57",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Asia",
+      "x": 2023,
+      "y": 4.7,
+      "color": "#2E8B57",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Africa",
+      "x": -10000,
+      "y": 0.001,
+      "color": "#9932CC",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Africa",
+      "x": 0,
+      "y": 0.03,
+      "color": "#9932CC",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Africa",
+      "x": 1800,
+      "y": 0.1,
+      "color": "#9932CC",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Africa",
+      "x": 1950,
+      "y": 0.22,
+      "color": "#9932CC",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Africa",
+      "x": 2000,
+      "y": 0.81,
+      "color": "#9932CC",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Africa",
+      "x": 2023,
+      "y": 1.45,
+      "color": "#9932CC",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Europe",
+      "x": -10000,
+      "y": 0.001,
+      "color": "#4682B4",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Europe",
+      "x": 0,
+      "y": 0.03,
+      "color": "#4682B4",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Europe",
+      "x": 1800,
+      "y": 0.2,
+      "color": "#4682B4",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Europe",
+      "x": 1950,
+      "y": 0.55,
+      "color": "#4682B4",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Europe",
+      "x": 2000,
+      "y": 0.72,
+      "color": "#4682B4",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Europe",
+      "x": 2023,
+      "y": 0.74,
+      "color": "#4682B4",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "North America",
+      "x": -10000,
+      "y": 0.0001,
+      "color": "#B22222",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "North America",
+      "x": 0,
+      "y": 0.002,
+      "color": "#B22222",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "North America",
+      "x": 1800,
+      "y": 0.03,
+      "color": "#B22222",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "North America",
+      "x": 1950,
+      "y": 0.23,
+      "color": "#B22222",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "North America",
+      "x": 2000,
+      "y": 0.48,
+      "color": "#B22222",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "North America",
+      "x": 2023,
+      "y": 0.6,
+      "color": "#B22222",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "South America",
+      "x": -10000,
+      "y": 0.0001,
+      "color": "#8B4513",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "South America",
+      "x": 0,
+      "y": 0.002,
+      "color": "#8B4513",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "South America",
+      "x": 1800,
+      "y": 0.02,
+      "color": "#8B4513",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "South America",
+      "x": 1950,
+      "y": 0.17,
+      "color": "#8B4513",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "South America",
+      "x": 2000,
+      "y": 0.35,
+      "color": "#8B4513",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "South America",
+      "x": 2023,
+      "y": 0.43,
+      "color": "#8B4513",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Oceania",
+      "x": -10000,
+      "y": 0.0001,
+      "color": "#D2691E",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Oceania",
+      "x": 0,
+      "y": 0.001,
+      "color": "#D2691E",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Oceania",
+      "x": 1800,
+      "y": 0.002,
+      "color": "#D2691E",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Oceania",
+      "x": 1950,
+      "y": 0.013,
+      "color": "#D2691E",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Oceania",
+      "x": 2000,
+      "y": 0.031,
+      "color": "#D2691E",
+      "line_style": "solid",
+      "marker_type": "none"
+    },
+    {
+      "series": "Oceania",
+      "x": 2023,
+      "y": 0.045,
+      "color": "#D2691E",
+      "line_style": "solid",
+      "marker_type": "none"
+    }
+  ]
+}

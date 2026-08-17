@@ -1,0 +1,182 @@
+{
+  "chart_title": "Untitled",
+  "Chart_Type": "Grouped Column Chart",
+  "Orientation": "Portrait",
+  "chart_aspect_ratio": 1.6,
+  "x_axis_label": "Temperatures (\u00b0C)",
+  "x_axis_scale": "linear",
+  "y_axis_label": "Duration of GC (days)",
+  "y_axis_scale": "linear",
+  "x_axis_min": null,
+  "x_axis_max": null,
+  "Left_Y_axis_min": 0,
+  "Left_Y_axis_max": 16,
+  "Right_Y_axis_min": null,
+  "Right_Y_axis_max": null,
+  "right_y_axis_label": "",
+  "right_y_axis_scale": "",
+  "top_x_axis_label": "",
+  "top_x_axis_scale": "",
+  "top_x_axis_min": null,
+  "top_x_axis_max": null,
+  "y_axis_interval": 4,
+  "x_axis_interval": null,
+  "x_axis_ticks": [
+    "24",
+    "27",
+    "30"
+  ],
+  "y_axis_ticks": [
+    0,
+    4,
+    8,
+    12,
+    16
+  ],
+  "data": [
+    {
+      "series": "Mean duration of GC1",
+      "x": "24",
+      "y": 8.9,
+      "color": "#345A8A",
+      "line_style": "none",
+      "marker_type": "none",
+      "marker_fill": "filled",
+      "marker_size": "none",
+      "error_bars": [
+        {
+          "error_plus": 2.7,
+          "error_minus": 2.7,
+          "error_direction": "vertical",
+          "error_type": "standard_deviation"
+        }
+      ]
+    },
+    {
+      "series": "Mean duration of GC2",
+      "x": "24",
+      "y": 6.5,
+      "color": "#6A8D3E",
+      "line_style": "none",
+      "marker_type": "none",
+      "marker_fill": "filled",
+      "marker_size": "none",
+      "error_bars": [
+        {
+          "error_plus": 3.4,
+          "error_minus": 3.4,
+          "error_direction": "vertical",
+          "error_type": "standard_deviation"
+        }
+      ]
+    },
+    {
+      "series": "Mean duration of GC1",
+      "x": "27",
+      "y": 7.5,
+      "color": "#345A8A",
+      "line_style": "none",
+      "marker_type": "none",
+      "marker_fill": "filled",
+      "marker_size": "none",
+      "error_bars": [
+        {
+          "error_plus": 2.7,
+          "error_minus": 2.7,
+          "error_direction": "vertical",
+          "error_type": "standard_deviation"
+        }
+      ]
+    },
+    {
+      "series": "Mean duration of GC2",
+      "x": "27",
+      "y": 6.3,
+      "color": "#6A8D3E",
+      "line_style": "none",
+      "marker_type": "none",
+      "marker_fill": "filled",
+      "marker_size": "none",
+      "error_bars": [
+        {
+          "error_plus": 3.4,
+          "error_minus": 3.4,
+          "error_direction": "vertical",
+          "error_type": "standard_deviation"
+        }
+      ]
+    },
+    {
+      "series": "Mean duration of GC3",
+      "x": "27",
+      "y": 6.5,
+      "color": "#D99694",
+      "line_style": "none",
+      "marker_type": "none",
+      "marker_fill": "filled",
+      "marker_size": "none",
+      "error_bars": [
+        {
+          "error_plus": 1.1,
+          "error_minus": 1.1,
+          "error_direction": "vertical",
+          "error_type": "standard_deviation"
+        }
+      ]
+    },
+    {
+      "series": "Mean duration of GC1",
+      "x": "30",
+      "y": 5.2,
+      "color": "#345A8A",
+      "line_style": "none",
+      "marker_type": "none",
+      "marker_fill": "filled",
+      "marker_size": "none",
+      "error_bars": [
+        {
+          "error_plus": 2.7,
+          "error_minus": 2.7,
+          "error_direction": "vertical",
+          "error_type": "standard_deviation"
+        }
+      ]
+    },
+    {
+      "series": "Mean duration of GC2",
+      "x": "30",
+      "y": 4.4,
+      "color": "#6A8D3E",
+      "line_style": "none",
+      "marker_type": "none",
+      "marker_fill": "filled",
+      "marker_size": "none",
+      "error_bars": [
+        {
+          "error_plus": 3.4,
+          "error_minus": 3.4,
+          "error_direction": "vertical",
+          "error_type": "standard_deviation"
+        }
+      ]
+    },
+    {
+      "series": "Mean duration of GC3",
+      "x": "30",
+      "y": 3.0,
+      "color": "#D99694",
+      "line_style": "none",
+      "marker_type": "none",
+      "marker_fill": "filled",
+      "marker_size": "none",
+      "error_bars": [
+        {
+          "error_plus": 1.2,
+          "error_minus": 1.2,
+          "error_direction": "vertical",
+          "error_type": "standard_deviation"
+        }
+      ]
+    }
+  ]
+}
