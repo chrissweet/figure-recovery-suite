@@ -1,0 +1,18 @@
+{
+ "paper-atomizer|synthetic-r4-1": 0.6229000000000001,
+ "paper-atomizer|owid-r6-1": 0.6331666666666665,
+ "paper-atomizer|aedes-aegypti-2014": 0.7471714285714286,
+ "paper-atomizer|overall": 0.6719263157894737,
+ "suite v3|synthetic-r4-1": 0.7429428571428571,
+ "suite v3|owid-r6-1": 0.63135,
+ "suite v3|aedes-aegypti-2014": 0.8604,
+ "suite v3|overall": 0.7505750000000001,
+ "suite v4|synthetic-r4-1": 0.9032428571428571,
+ "suite v4|owid-r6-1": 0.9037200000000001,
+ "suite v4|aedes-aegypti-2014": 0.7901999999999999,
+ "suite v4|overall": 0.861721052631579,
+ "free-rein|synthetic-r4-1": 0.9423571428571428,
+ "free-rein|owid-r6-1": 0.9707499999999999,
+ "free-rein|aedes-aegypti-2014": 0.8970714285714285,
+ "free-rein|overall": 0.9350249999999999
+}
