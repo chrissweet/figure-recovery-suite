@@ -72,7 +72,7 @@ across 251 ground-truth points and 239 predicted points. Five of eight charts pe
 
 ## This repository uses LLM wiki memory
 
-figure-recovery-suite keeps a persistent, LLM-maintained knowledge base under `wiki/figure-recovery-suite.wiki/` (a separate git repo), following the [llm-wiki pattern](https://github.com/tobi/llm-wiki). It is the project's durable memory: findings, decisions, experiment results, and intermediate insights belong in the wiki and accumulate over time. Three operations, **Query** (read it), **Ingest** (write to it), and **Lint** (health-check it), are codified in `CLAUDE.md`, in `wiki/figure-recovery-suite.wiki/SCHEMA_figure-recovery-suite.md`, and in the `.claude/commands/` slash commands (`/wiki-source`, `/wiki-experiment`, `/wiki-lint`).
+figure-recovery-suite keeps a persistent, LLM-maintained knowledge base under `.llm-wiki/` (a separate git repo, maintained through the [llm-wiki plugin](https://github.com/LA3D-LLM-Agents/llm-wiki-colab)), following the [llm-wiki pattern](https://github.com/tobi/llm-wiki). It is the project's durable memory: findings, decisions, experiment results, and intermediate insights belong in the wiki and accumulate over time. Three operations, **Query** (read it), **Ingest** (write to it), and **Lint** (health-check it), are codified in `.llm-wiki/SCHEMA_figure-recovery-suite.md` and in the llm-wiki plugin's skills (`/wiki-source`, `/wiki-experiment`, `/wiki-lint`).
 
 See also [llm-wiki.md](llm-wiki.md) in this repo for the underlying pattern.
 
@@ -83,23 +83,22 @@ New to figure-recovery-suite? Clone the project repo, clone the wiki as a siblin
 ```bash
 git clone https://github.com/chrissweet/figure-recovery-suite.git
 cd figure-recovery-suite
-git clone https://github.com/chrissweet/figure-recovery-suite.wiki.git wiki/figure-recovery-suite.wiki
-./wiki/agents/claude-code/setup.sh --seed-memory
+# then, in Claude Code or Codex with the llm-wiki plugin installed, run /wiki-init to attach https://github.com/chrissweet/figure-recovery-suite.wiki.git at .llm-wiki
 ```
 
-After this, open Claude Code inside the repo. It will automatically pick up the project's slash commands (`/wiki-source` to ingest an external document, `/wiki-experiment` to file experiment results, `/wiki-lint` to health-check the wiki) along with the read/write/commit conventions in `CLAUDE.md`.
+After this, open Claude Code inside the repo. It will automatically pick up the project's slash commands (`/wiki-source` to ingest an external document, `/wiki-experiment` to file experiment results, `/wiki-lint` to health-check the wiki) along with the plugin's wiki guidance (there is no `CLAUDE.md`; the repository orientation is on the wiki's Home page).
 
-The wiki at `wiki/figure-recovery-suite.wiki/` is a separate git repo with its own history and its own remote. After any wiki edit, commit in the wiki repo (not the project repo):
+The wiki at `.llm-wiki/` is a separate git repo with its own history and its own remote. After any wiki edit, commit in the wiki repo (not the project repo):
 
 ```bash
-git -C wiki/figure-recovery-suite.wiki add <files>
-git -C wiki/figure-recovery-suite.wiki commit -m "..."
+git -C .llm-wiki add <files>
+git -C .llm-wiki commit -m "..."
 ```
 
 Push the wiki only when you intend to publish the changes:
 
 ```bash
-git -C wiki/figure-recovery-suite.wiki push origin master
+git -C .llm-wiki push origin master
 ```
 
 ## About the template

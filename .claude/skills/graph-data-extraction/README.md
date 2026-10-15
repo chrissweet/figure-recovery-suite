@@ -36,7 +36,7 @@ graph-data-extraction/
 
 ## Performance baseline
 
-F1 = 0.90 on the [Corpus aedes-aegypti-2014](../../../wiki/figure-recovery-suite.wiki/Corpus-aedes-aegypti-2014.md) initial 8-chart corpus; full per-chart numbers in the [r4 evaluation report](../../../docs/aedes-2014_eval_r4.pdf) and across all three corpora in the [r5 report](../../../docs/eval_r5.pdf). This is the **baseline the project tries to improve against** ([Analysis-Feedback-Loop-Off-Course-2026-06-21](../../../wiki/figure-recovery-suite.wiki/Analysis-Feedback-Loop-Off-Course-2026-06-21.md)).
+F1 = 0.90 on the [Corpus aedes-aegypti-2014](../../../.llm-wiki/Corpus-aedes-aegypti-2014.md) initial 8-chart corpus; full per-chart numbers in the [r4 evaluation report](../../../docs/aedes-2014_eval_r4.pdf) and across all three corpora in the [r5 report](../../../docs/eval_r5.pdf). This is the **baseline the project tries to improve against** ([Analysis-Feedback-Loop-Off-Course-2026-06-21](../../../.llm-wiki/Analysis-Feedback-Loop-Off-Course-2026-06-21.md)).
 
 ## Upstream
 
